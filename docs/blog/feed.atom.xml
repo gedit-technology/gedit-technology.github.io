@@ -1,0 +1,1824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>Gedit Technology</name>
+  </author>
+  <id>https://gedit-text-editor.org/blog/feed.atom.xml</id>
+  <link rel="self" type="application/atom+xml" href="https://gedit-text-editor.org/blog/feed.atom.xml" />
+  <link type="text/html" href="https://gedit-text-editor.org/blog/index.html" />
+  <title>Gedit Technology</title>
+  <updated>2026-03-28T10:00:00Z</updated>
+  <icon>https://gedit-text-editor.org/images/gedit-icon-16x16.png</icon>
+
+<entry>
+  <title>gedit 50.0 released</title>
+  <id>https://gedit-text-editor.org/blog/2026-03-28-gedit-50-0.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2026-03-28-gedit-50-0.html" />
+  <published>2026-03-28T10:00:00Z</published>
+  <updated>2026-03-28T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  <a href="https://gedit-text-editor.org/" target="_blank">gedit</a> 50.0 has
+  been released! Here are the highlights since version 49.0 from January.
+  (Some sections are a bit technical).
+</p>
+
+<h3>No Large Language Models AI tools</h3>
+
+<p>
+  The gedit project now
+  <a href="https://gitlab.gnome.org/World/gedit/gedit/-/commit/d2488f3179343f383d0645ce21dee3ad5cc5f665"
+     target="_blank">disallows the use of LLMs</a>
+  for contributions.
+</p>
+<p>
+  The rationales:
+</p>
+<p>
+  Programming can be seen as a discipline between art and engineering. Both art
+  and engineering require practice. It's the action of doing - modifying the
+  code - that permits a deep understanding of it, to ensure correctness and
+  quality.
+</p>
+<p>
+  When generating source code with an LLM tool, the real sources are the inputs
+  given to it: the training dataset, plus the human commands.
+</p>
+<p>
+  Adding something generated to the version control system (e.g., Git) is
+  usually frown upon. Moreover, we aim for reproducible results (to follow the
+  best-practices of reproducible builds, and reproducible science more
+  generally). Modifying afterwards something generated is also a bad practice.
+</p>
+
+<h3>Releasing earlier, releasing more often</h3>
+<p>
+  To follow more closely the
+  <a href="https://en.wikipedia.org/wiki/Release_early,_release_often"
+     target="_blank">release early, release often</a>
+  mantra, gedit aims for a faster release cadence in 2026, to have smaller
+  deltas between each version. Future will tell how it goes.
+</p>
+
+<h3>The website is now responsive</h3>
+<p>
+  Since last time, we've made some efforts to the website. Small-screen-device
+  readers should have a more pleasant experience.
+</p>
+
+<h3>libgedit-amtk becomes "The Good Morning Toolkit"</h3>
+<p>
+  Amtk originally stands for "Actions, Menus and Toolbars Kit". There was a
+  desire to expand it to include other GTK extras that are useful for gedit
+  needs.
+</p>
+<p>
+  A more appropriate name would be libgedit-gtk-extras. But renaming the module
+  - not to mention the project namespace - is more work. So we've chosen to
+  simply continue with the name Amtk, just changing its scope and definition.
+  And - while at it - sprinkle a bit of fun :-)
+</p>
+<p>
+  So there are now four libgedit-* modules:
+</p>
+<ul>
+  <li>
+    <a href="https://gedit-text-editor.org/developer-docs/libgedit-gfls-1/" target="_blank">libgedit-gfls</a>,
+    aka "libgedit-glib-extras", currently for "File Loading and Saving";
+  </li>
+  <li>
+    <a href="https://gedit-text-editor.org/developer-docs/libgedit-amtk-5/" target="_blank">libgedit-amtk</a>,
+    aka "libgedit-gtk-extras" - it extends GTK for gedit needs at the exception
+    of GtkTextView;
+  </li>
+  <li>
+    <a href="https://gedit-text-editor.org/developer-docs/libgedit-gtksourceview-300/" target="_blank">libgedit-gtksourceview</a>
+    - it extends GtkTextView and is a fork of GtkSourceView, to evolve the
+    library for gedit needs;
+  </li>
+  <li>
+    <a href="https://gedit-text-editor.org/developer-docs/libgedit-tepl-6/" target="_blank">libgedit-tepl</a>
+    - the Text Editor Product Line library, it provides a high-level API,
+    including an application framework for creating more easily new text
+    editors.
+  </li>
+</ul>
+<p>
+  Note that all of these are still constantly in construction.
+</p>
+
+<h3>Some code overhaul</h3>
+<p>
+  Work continues steadily inside libgedit-gfls and libgedit-gtksourceview to
+  streamline <strong>document loading</strong>.
+</p>
+<p>
+  You might think that it's a <em>problem solved</em> (for many years), but it's
+  actually not the case for gedit. Many improvements are still possible.
+</p>
+<p>
+  Another area of interest is the <strong>completion framework</strong> (part of
+  libgedit-gtksourceview), where changes are still needed to make it fully
+  functional under Wayland. The popup windows are sometimes misplaced. So
+  between gedit 49.0 and 50.0 some progress has been made on this. The
+  Word Completion gedit plugin works fine under Wayland, while the LaTeX
+  completion with
+  <a href="https://gitlab.gnome.org/World/gedit/enter-tex"
+     target="_blank">Enter TeX</a>
+  is still buggy since it uses more features from the completion system.
+</p>
+    </div>
+  </content>
+</entry>
+
+<entry>
+  <title>gedit 49.0 released</title>
+  <id>https://gedit-text-editor.org/blog/2026-01-16-gedit-49-0.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2026-01-16-gedit-49-0.html" />
+  <published>2026-01-16T10:00:00Z</published>
+  <updated>2026-01-16T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  <a href="https://gedit-text-editor.org/" target="_blank">gedit</a> 49.0 has
+  been released! Here are the highlights since version 48.0 which dates back
+  from September 2024. (Some sections are a bit technical).
+</p>
+
+<h3>File loading and saving enhancements</h3>
+<p>
+  A lot of work went into this area. It's mostly under-the-scene changes where
+  there was a lot of dusty code. It's not entirely finished, but there are
+  already user-visible enhancements:
+</p>
+<ul>
+  <li>Loading a big file is now much faster.</li>
+  <li>
+    gedit now refuses to load very big files, with a configurable limit
+    (<a href="https://gedit-text-editor.org/blog/2025-12-17-mid-december-news.html" target="_blank">more details</a>).
+  </li>
+</ul>
+
+<h3>Improved preferences</h3>
+<p>
+  <a href="images/2025-07-14/prefs-reset.png" target="_blank"><img
+    src="images/2025-07-14/prefs-reset.png"
+    alt="gedit screenshot - reset all preferences"
+    width="250" /></a>
+</p>
+<p>
+  <a href="images/2025-07-14/prefs-spell-checker.png" target="_blank"><img
+    src="images/2025-07-14/prefs-spell-checker.png"
+    alt="gedit screenshot - spell-checker preferences"
+    width="250" /></a>
+</p>
+<p>
+  There is now a "Reset All..." button in the Preferences dialog. And it is now
+  possible to configure the default language used by the spell-checker.
+</p>
+
+<h3>Python plugins removal</h3>
+<p>
+  Initially due to an external factor, plugins implemented in Python were no
+  longer supported.
+</p>
+<p>
+  During some time a previous version of gedit was packaged in Flathub in a way
+  that still enabled Python plugins, but it is no longer the case.
+</p>
+<p>
+  Even though the problem is fixable, having some plugins in Python meant to
+  deal with a multi-language project, which is much harder to maintain for a
+  single individual. So for now it's preferable to keep only the C language.
+</p>
+<p>
+  So the bad news is that Python plugins support has not been re-enabled in this
+  version, not even for third-party plugins.
+</p>
+<p>
+  <a href="https://gedit-text-editor.org/blog/2025-04-30-no-more-pythons-in-gedit.html" target="_blank">More details</a>.
+</p>
+
+<h3>Summary of changes for plugins</h3>
+<p>
+  The following plugins have been removed:
+</p>
+<ul>
+  <li>Bracket Completion</li>
+  <li>Character Map</li>
+  <li>Color Picker</li>
+  <li>Embedded Terminal</li>
+  <li>Join/Split Lines</li>
+  <li>Multi Edit</li>
+  <li>Session Saver</li>
+</ul>
+<p>
+  Only Python plugins have been removed, the C plugins have been kept.
+  The Code Comment plugin which was written in Python has been rewritten in C,
+  so it has not disappeared. And it is planned and desired to bring back some of
+  the removed plugins.
+</p>
+
+<h3>Summary of other news</h3>
+<ul>
+  <li>
+    Lots of code refactorings have been achieved in the gedit core and in
+    libgedit-gtksourceview.
+  </li>
+  <li>
+    A better support for Windows.
+  </li>
+  <li>
+    Web presence at gedit-text-editor.org: new domain name and several
+    iterations on the design.
+  </li>
+  <li>
+    A half-dozen
+    <a href="https://gitlab.gnome.org/World/gedit/gedit/-/tree/master/docs/guidelines" target="_blank">Gedit Development Guidelines</a>
+    documents have been written.
+  </li>
+</ul>
+
+<h3>Wrapping-up statistics for 2025</h3>
+<p>
+  The total number of commits in gedit and gedit-related git repositories in
+  2025 is: 884. More precisely:
+</p>
+<pre>
+138	enter-tex
+310	gedit
+21	gedit-plugins
+10	gspell
+4	libgedit-amtk
+41	libgedit-gfls
+290	libgedit-gtksourceview
+70	libgedit-tepl
+</pre>
+<p>
+  It counts all contributions, translation updates included.
+</p>
+<p>
+  The list contains two apps, gedit and
+  <a href="https://gitlab.gnome.org/World/gedit/enter-tex" target="_blank">Enter TeX</a>.
+  The rest are shared libraries (re-usable code available to create other text
+  editors).
+</p>
+<p>
+  If you do a comparison with
+  <a href="https://gedit-text-editor.org/blog/2025-01-07-various-news.html" target="_blank">the numbers for 2024</a>,
+  you'll see that there are fewer commits, the only module with <em>more</em>
+  commits is libgedit-gtksourceview. But 2025 was a good year nevertheless!
+</p>
+
+<h3>For future versions: superset of the subset</h3>
+<p>
+  With Python plugins removed, the new gedit version is a subset of the previous
+  version, when comparing approximately the list of features. In the future, we
+  plan to have a <em>superset of the subset</em>. That is, to bring in new
+  features and try hard to <em>not</em> remove any more functionality.
+</p>
+<p>
+  In fact, we have reached a point where we are no longer interested to remove
+  any more features from gedit. So the good news is that gedit will normally be
+  incrementally improved from now on without major regressions. We really hope
+  there won't be any new bad surprises due to external factors!
+</p>
+<p>
+  <strong>Side note:</strong> this "superset of the subset" resembles the
+  evolution of C++, but in the reverse order. Modern C++ will be a
+  <a href="https://thenewstack.io/bjarne-stroustrups-plan-for-bringing-safety-to-c/" target="_blank">subset of the superset</a>
+  to have a language
+  <a href="https://herbsutter.com/2024/03/11/safety-in-context/" target="_blank">in practice (but not in theory)
+  as safe as Rust</a>
+  (it works with compiler flags to disable the unsafe parts).
+</p>
+
+<h3>Onward to 2026</h3>
+<p>
+  Since some plugins have been removed, this makes gedit a less advanced text
+  editor. It has become a little less suitable for heavy programming workloads,
+  but for that there are lots of alternatives.
+</p>
+<p>
+  Instead, gedit could become a text editor of choice for newcomers in the
+  computing science field (students and self-learners). It can be a great tool
+  for markup languages too. It can be your daily companion for quite a while,
+  until your needs evolve for something more complete at your workplace. Or it
+  can be that you prefer its simplicity and its not-going-in-the-way default
+  setup, plus the fact that it launches quickly. In short, there are a lot of
+  reasons to still love gedit ❤️ !
+</p>
+<p>
+  If you have any feedback, even for a small thing, I would like to hear from
+  you :) ! The best places are on GNOME Discourse, or GitLab for more actionable
+  tasks (see the
+  <a href="https://gedit-text-editor.org/" target="_blank">Getting in Touch</a>
+  section).
+</p>
+    </div>
+  </content>
+</entry>
+
+<entry>
+  <title>Mid-December News</title>
+  <id>https://gedit-text-editor.org/blog/2025-12-17-mid-december-news.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2025-12-17-mid-december-news.html" />
+  <published>2025-12-17T10:00:00Z</published>
+  <updated>2025-12-17T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  Misc news for the past month about the
+  <a href="https://gedit-text-editor.org/" target="_blank">gedit text editor</a>,
+  mid-December edition!
+  (Some sections are a bit technical).
+</p>
+<p>
+  (By the way, the "mid-month" news is especially useful for December/January,
+  when one thinks about it ;-) ).
+</p>
+
+<h3>gedit now refuses to load very large files</h3>
+<p>
+  It was part of the
+  <a href="https://gitlab.gnome.org/World/gedit/gedit/-/blob/master/docs/common-bugs.md" target="_blank">common-bugs</a>,
+  and it is now fixed! New versions of gedit will refuse to load very large
+  files or content read from stdin.
+</p>
+<p>
+  The limit is configurable with the GSettings key:
+  <code>org.gnome.gedit.preferences.editor max-file-size</code>
+</p>
+<p>
+  By default the limit is set to 200 MB. The setting is not exposed in the
+  Preferences dialog (there are a few other such settings).
+</p>
+<p>
+  There are technically two cases:
+</p>
+<ul>
+  <li>
+    First the <em>file size</em> - if available - is checked. If it exceeds the
+    limit, the error is directly returned without trying to read the content.
+  </li>
+  <li>
+    Then <em>the content is read</em> and it is ensured that the maximum number
+    of bytes is not reached. The check here is necessary for reading stdin, for
+    which the file size doesn't exist. And even when the file size information
+    is available, the double-check is necessary to avoid a potential
+    <a href="https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use" target="_blank">TOC/TOU (time-of-check to time-of-use) problem</a>.
+  </li>
+</ul>
+<p>
+  It is planned to improve this and offer to load the content truncated.
+</p>
+
+<h3>Windows improvements</h3>
+<p>
+  I've fixed some compilation warnings and unit tests failures on MS Windows,
+  and done some packaging work, including contributing to MINGW-packages (part
+  of <a href="https://www.msys2.org/" target="_blank">MSYS2</a>).
+</p>
+
+<h3>Other work in libgedit-gtksourceview</h3>
+<p>
+  Various work on the completion framework, including some code simplifications.
+</p>
+<p>
+  Plus what can be called "gardening tasks": various code maintenance stuff.
+</p>
+
+<h3>gspell CI for tarballs</h3>
+<p>
+  AsciiWolf and Jordan Petridis have contributed to gspell to add CI for
+  tarballs. Thanks to them!
+</p>
+    </div>
+  </content>
+</entry>
+
+<entry>
+  <title>Mid-November News</title>
+  <id>https://gedit-text-editor.org/blog/2025-11-14-mid-november-news.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2025-11-14-mid-november-news.html" />
+  <published>2025-11-14T10:00:00Z</published>
+  <updated>2025-11-14T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  Misc news about the
+  <a href="https://gedit-text-editor.org/" target="_blank">gedit text editor</a>,
+  mid-November edition!
+  <!-- (Some sections are a bit technical). -->
+</p>
+
+<h3>Website: new design</h3>
+<p>
+  Probably the highlight this month is the new design of the
+  <a href="https://gedit-text-editor.org/" target="_blank">gedit website</a>.
+</p>
+<p>
+  If it looks familiar to some of you, it's normal, it's because it's an
+  adaptation of the previous GtkSourceView website that was developed in the old
+  <a href="https://gitlab.gnome.org/Archive/gnomeweb-wml" target="_blank">gnomeweb-wml</a>
+  repository. gnomeweb-wml (projects.gnome.org) is what predates all the wiki
+  pages for
+  <a href="https://wiki.gnome.org/Apps" target="_blank">Apps</a>
+  and
+  <a href="https://wiki.gnome.org/Projects" target="_blank">Projects</a>.
+  The wiki has been retired, so another solution had to be found.
+</p>
+<p>
+  For the timeline, projects.gnome.org was available until 2013/2014 where all
+  the content had been migrated to the wiki. Then the wiki has been retired in
+  2024.
+</p>
+<p>
+  Note that there are still rough edges on the gedit website, and more
+  importantly some efforts still need to be done to bring the old CSS stylesheet
+  forward to the new(-ish) responsive web design world.
+</p>
+
+<p>
+  For the most nostalgic of you:
+</p>
+<ul>
+  <li>
+    <p>
+      <a href="https://web.archive.org/web/20131212061032/projects.gnome.org/gedit/"
+         target="_blank">gedit website in 2013</a>
+      (<code>projects.gnome.org/gedit/</code> on web.archive.org)
+    </p>
+    <p>
+      <a href="images/2025-11-14/screenshot-gedit-website-in-2013.png"
+         target="_blank"><img src="images/2025-11-14/thumbnail-screenshot-gedit-website-in-2013.png"
+                              alt="Screenshot of gedit website in 2013" /></a>
+    </p>
+  </li>
+  <li>
+    <p>
+      <a href="https://web.archive.org/web/20131215224242/projects.gnome.org/gtksourceview/"
+         target="_blank">GtkSourceView website in 2013</a>
+      (<code>projects.gnome.org/gtksourceview/</code> on web.archive.org)
+    </p>
+    <p>
+      <a href="images/2025-11-14/screenshot-gtksourceview-website-in-2013.png"
+         target="_blank"><img src="images/2025-11-14/thumbnail-screenshot-gtksourceview-website-in-2013.png"
+                              alt="Screenshot of GtkSourceView website in 2013" /></a>
+    </p>
+  </li>
+</ul>
+
+<p>
+  And for the <em>least</em> nostalgic of you:
+</p>
+<ul>
+  <li>
+    <p>gedit website from last month (October 2025)</p>
+    <p>
+      <a href="images/2025-11-14/screenshot-gedit-website-in-october-2025.png"
+         target="_blank"><img src="images/2025-11-14/thumbnail-screenshot-gedit-website-in-october-2025.png"
+                              alt="Screenshot of gedit website in October 2025" /></a>
+    </p>
+  </li>
+</ul>
+
+<p>
+  What we can say is that the gedit project has stood the test of time!
+</p>
+
+<h3>Enter TeX: improved search and replace</h3>
+<p>
+  Some context: I would like some day to unify the search and replace feature
+  between Enter TeX and gedit. It needs to retain the best of each.
+</p>
+<p>
+  In Enter TeX it's a combined horizontal bar, something that I would like in
+  gedit too to replace the dialog window that occludes part of the text.
+</p>
+<p>
+  In gedit the strengths include: the search-as-you-type possibility, and a
+  history of past searches. Both are missing in Enter TeX. (These are not the
+  only things that need to be retained; the same workflows, keyboard shortcuts
+  etc. are also an integral part of the functionality).
+</p>
+<p>
+  So to work towards that goal, I started in Enter TeX. I merged around 50
+  commits in the git repository for this change already, rewriting in C (from
+  Vala) some parts and improving the UI along the way. The code needs to be in C
+  because it'll be moved to libgedit-tepl so that it can be consumed by gedit
+  easily.
+</p>
+<p>
+  Here is how it looks:
+</p>
+<p>
+  <a href="images/2025-11-14/screenshot-enter-tex-search-and-replace.png"
+     target="_blank"><img src="images/2025-11-14/screenshot-enter-tex-search-and-replace.png"
+                          width="250"
+                          alt="Screenshot of the search and replace in Enter TeX" /></a>
+</p>
+
+<h3>Internal refactoring for GeditWindow and its statusbar</h3>
+<p>
+  GeditWindow is what we can call a god class. It is too big, both in the number
+  of lines and the number of instance variables.
+</p>
+<p>
+  So this month I've continued to refactor it, to extract a GeditWindowStatus
+  class. There was already a GeditStatusbar class, but its features have now
+  been moved to libgedit-tepl as TeplStatusbar.
+</p>
+<p>
+  GeditWindowStatus takes up the responsibility to create the TeplStatusbar, to
+  fill it with the indicators and other buttons, and to make the connection with
+  GeditWindow and the current tab/document.
+</p>
+<p>
+  So as a result, GeditWindow is a little less omniscient ;-)
+</p>
+
+<h3>As a conclusion</h3>
+<p>
+  gedit does not materialize out of empty space; it takes time to develop and
+  maintain. To demonstrate your appreciation of this piece of software and help
+  its future development, remember that you can
+  <a href="https://gedit-text-editor.org/donations.html" target="_blank">fund the project</a>.
+  Your support is critical and much appreciated.
+</p>
+    </div>
+  </content>
+</entry>
+
+<entry>
+  <title>Mid-October News</title>
+  <id>https://gedit-text-editor.org/blog/2025-10-15-mid-october-news.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2025-10-15-mid-october-news.html" />
+  <published>2025-10-15T10:00:00Z</published>
+  <updated>2025-10-15T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  Misc news about the
+  <a href="https://gedit-text-editor.org/" target="_blank">gedit text editor</a>,
+  mid-October edition! (Some sections are a bit technical).
+</p>
+
+<h3>Rework of the file loading and saving (continued)</h3>
+<p>
+  The refactoring continues in the libgedit-gtksourceview module, this time to
+  tackle a big class that takes too much responsibilities. A utility is in
+  development which will permit to delegate a part of the work.
+</p>
+<p>
+  The utility is about character encoding conversion, with support of invalid
+  bytes. It takes as input a single GBytes (the file content), and transforms it
+  into a list of chunks. A chunk contains either valid (successfully converted)
+  bytes, or invalid bytes. The output format - the "list of chunks" - is subject
+  to change to improve memory consumption and performances.
+</p>
+<p>
+  Note that invalid bytes are allowed, to be able to open really any kind of
+  files with gedit.
+</p>
+<p>
+  I must also note that this is quite sensitive work, at the heart of document
+  loading for gedit. Normally all these refactorings and improvements will be
+  worth it!
+</p>
+
+<h3>Progress in other modules</h3>
+<p>
+  There has been some progress on other modules:
+</p>
+<ul>
+  <li>
+    <strong>gedit:</strong> version 48.1.1 has been released with a few minor
+    updates.
+  </li>
+  <li>
+    <strong>The Flatpak</strong> on Flathub: update to gedit 48.1.1 and the
+    GNOME 49 runtime.
+  </li>
+  <li>
+    <strong>gspell:</strong> version 1.14.1 has been released, mainly to pick up
+    the updated translations.
+  </li>
+</ul>
+
+<h3>GitHub Sponsors</h3>
+<p>
+  In addition to Liberapay, you can now support the work that I do on
+  GitHub Sponsors. See the
+  <a href="https://gedit-text-editor.org/donations.html" target="_blank">gedit donations</a>
+  page.
+</p>
+<p>
+  Thank you ❤️
+</p>
+    </div>
+  </content>
+</entry>
+
+<entry>
+  <title>Mid-September News</title>
+  <id>https://gedit-text-editor.org/blog/2025-09-15-mid-september-news.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2025-09-15-mid-september-news.html" />
+  <published>2025-09-15T10:00:00Z</published>
+  <updated>2025-09-15T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  Misc news about the
+  <a href="https://gedit-text-editor.org/" target="_blank">gedit</a>
+  text editor, mid-September edition! (Some sections are a bit technical).
+</p>
+
+<h3>Next version will be released when Ready</h3>
+<p>
+  While the release of GNOME 49.0 was approaching (it's this week!), I came to
+  the conclusion that it's best for gedit to wait more, and to follow the Debian
+  way of releasing software: when it's Ready. "Ready" with an uppercase letter
+  'R'!
+</p>
+<p>
+  So the question is: what is <em>not</em> ready? Two main things:
+</p>
+<ul>
+  <li>
+    The rework of the file loading and saving: it is something that takes time,
+    and I prefer to be sure that it'll be a solid solution.
+  </li>
+  <li>
+    The question about the Python support for implementing plugins. Time will
+    tell what is the answer.
+  </li>
+</ul>
+
+<h3>Rework of the file loading and saving (next steps)</h3>
+<p>
+  Work continues to refactor that part of the code, both in
+  libgedit-gtksourceview and gedit.
+</p>
+<p>
+  I won't go into too much technical details this time. But what the previous
+  developer (Ignacio Casal Quinteiro, aka nacho)
+  <a href="https://gitlab.gnome.org/World/gedit/gedit/-/commit/89fe90084cfa3c727589fafa969a9678208a8652" target="_blank">wrote</a>
+  (in 2011) in a comment at the top of a class is
+  <em>"welcome to a really big headache."</em>
+</p>
+<p>
+  And naturally, I want to improve the situation. For a long time this class was
+  used as a black box, using only its interface. Time has come to change things!
+  It takes time, but I already see the end of the tunnel and I have good hopes
+  that the code will be better structured. I intend to write about it more once
+  finished.
+</p>
+<p>
+  But I can reveal that there is already a visible improvement: loading a big
+  file (e.g. 200 MB) is now super fast! Previously, it could take one minute to
+  load such file, with a progress bar shown and a Cancel button. Now there is
+  not enough time to even click on (or to see) the Cancel button! (I'm talking
+  about local files, for remote files with a slow network connection, the
+  progress bar is still useful).
+</p>
+<p>
+  To be continued...
+</p>
+
+<p><small>
+  If you appreciate the work that I do, you can send
+  <a href="https://gedit-text-editor.org/donations.html" target="_blank">a thank-you donation</a>.
+  Your support is much appreciated! For years to come, it will be useful for the
+  project.
+</small></p>
+    </div>
+  </content>
+</entry>
+
+<entry>
+  <title>Donating to the gedit project</title>
+  <id>https://gedit-text-editor.org/blog/2025-08-30-donating-to-the-gedit-project.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2025-08-30-donating-to-the-gedit-project.html" />
+  <published>2025-08-30T10:00:00Z</published>
+  <updated>2025-08-30T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  A short news to announce that you can now donate to the
+  <a href="https://gedit-text-editor.org/" target="_blank">gedit text editor</a>
+  project!
+</p>
+<p>
+  Donations will be used to continue the development and maintenance of the
+  application and its plugins.
+</p>
+<p>
+  If you like gedit, your support is much appreciated! For years to come, it
+  will be useful for the project.
+</p>
+<p>
+  <a href="https://liberapay.com/swilmet/" target="_blank"><img src="images/liberapay-donate.svg" alt="Donate using Liberapay" /></a>
+</p>
+<p>
+  Thanks!
+</p>
+    </div>
+  </content>
+</entry>
+
+<entry>
+  <title>Mid-August News</title>
+  <id>https://gedit-text-editor.org/blog/2025-08-14-mid-august-news.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2025-08-14-mid-august-news.html" />
+  <published>2025-08-14T10:00:00Z</published>
+  <updated>2025-08-14T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  Misc news about the
+  <a href="https://gedit-text-editor.org/" target="_blank">gedit</a>
+  text editor, mid-August edition! (Some sections are a bit technical).
+</p>
+
+<h3>Code Comment plugin rewritten</h3>
+<p>
+  I forgot to talk about it in the mid-July news, but the Code Comment plugin
+  has been rewritten in C (it was previously implemented in Python) and the bulk
+  of it is implemented as re-usable code in libgedit-tepl. The implementation is
+  now shared between
+  <a href="https://gitlab.gnome.org/World/gedit/enter-tex" target="_blank">Enter TeX</a>
+  and gedit.
+</p>
+
+<h3>File loading and saving: a new GtkSourceEncoding class</h3>
+<p>
+  I've modified the GtkSourceEncoding class that is part of
+  libgedit-gtksourceview, and adapted gedit accordingly.
+  The new version of GtkSourceEncoding comes from an experiment that I did in
+  libgedit-tepl several years ago.
+</p>
+<p>
+  GtkSourceEncoding represents a character set (or "charset" for short). It is
+  used in combination with <code>iconv</code> to convert text files from one
+  encoding to another (for example from ISO-8859-15 to UTF-8).
+</p>
+<p>
+  The purpose of the experiment that was done in libgedit-tepl (the TeplEncoding
+  class) was to accomodate the needs for a
+  <a href="https://www.freedesktop.org/wiki/Software/uchardet/" target="_blank">uchardet</a>
+  usage (note that uchardet is not yet used by gedit, but it would be useful).
+  uchardet is a library to automatically detect the encoding of some input text.
+  It returns an iconv-compatible charset, as a string.
+</p>
+<p>
+  It is <em>this string</em> - returned by uchardet - that we want to store and
+  pass to <code>iconv</code> unmodified, to not lose information.
+</p>
+<p>
+  The problem with the old version of GtkSourceEncoding: there was a fixed set
+  of GtkSourceEncoding instances, all <code>const</code> (so without the need to
+  free them). When trying to get an instance for an unknown charset string, NULL
+  was returned. So this was not appropriate for a uchardet usage (or at least,
+  not a clean solution: with the charset string returned by uchardet it was not
+  guaranteed that a corresponding GtkSourceEncoding instance was available).
+</p>
+<p>
+  Since GtkSourceEncoding is used in a lot of places, we don't want to change
+  the code to represent a charset as just a string. And a simple string is
+  anyway too basic, GtkSourceEncoding provides useful features.
+</p>
+<p>
+  So, long story short: the new GtkSourceEncoding class returns new instances
+  that must be freed, and has a constructor that just makes a copy of the
+  charset string (there is the <code>get_charset()</code> method to get back the
+  string, unmodified).
+</p>
+<p>
+  So gedit can keep using the GtkSourceEncoding abstraction, and we are one step
+  closer to being able to use uchardet or something similar!
+</p>
+
+<h3>Know more about the gedit's maintainer</h3>
+<p>
+  I now have a personal web site, or more accurately a single web
+  <em>page</em>:<br />
+  <a href="https://wilmet-software.be/" target="_blank">wilmet-software.be</a>
+  (Sébastien Wilmet)
+</p>
+<p>
+  gedit is a 27-years-old project, the first lines were written in 1998
+  (and <em>normally</em> it won't be part of the
+  <a href="https://en.wikipedia.org/wiki/27_Club" target="_blank">27 Club</a>!).
+  I've been a contributor to the project for 14 years, so more than half the
+  project existence. Time flies!
+</p>
+
+<h3>Robust file loading - some progress</h3>
+<p>
+  After the rework of GtkSourceEncoding (which is part of the File Loading and
+  Saving subsystem in libgedit-gtksourceview), I've made good progress to make
+  the file loading more robust - although there is more work still to do.
+</p>
+<p>
+  It is a basis in programming to check all program input. gedit makes things a
+  bit harder to accomplish this. To open a <em>document</em>:
+</p>
+<ul>
+  <li>
+    There is first the problem of the character encoding. It is
+    not sufficient for a general-purpose text editor to accept only UTF-8. So
+    text files can be almost anything in binary form.
+  </li>
+  <li>
+    Then gedit allows to open documents containing
+    invalid characters in the specified or auto-detected
+    encoding. With this, documents can <em>really</em> be anything in binary
+    form.
+  </li>
+  <li>
+    Finally the GtkTextView widget used at the heart of gedit has several
+    limitations: (1) very big files (like log files or database dumps) are not
+    supported, a limit on the content size must be set (and if reached, still
+    allow to load the file with truncated content). (2) very long lines cause
+    performance problems and can freeze the application.
+  </li>
+</ul>
+
+<p>
+  So, the good news is that progress has been made on this. (There is only a
+  good news, let's stay positive!).
+</p>
+
+<p><small>
+  If you appreciate the work that I do in gedit, I would like to know your
+  feedback, what I should improve or which important feature is missing. You can
+  contact me
+  <a href="https://wilmet-software.be/" target="_blank">by email</a>
+  for example, or on a
+  <a href="https://gedit-text-editor.org/" target="_blank">discussion channel</a>.
+  Thank you :-) !
+</small></p>
+    </div>
+  </content>
+</entry>
+
+<entry>
+  <title>Mid-July News</title>
+  <id>https://gedit-text-editor.org/blog/2025-07-14-mid-july-news.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2025-07-14-mid-july-news.html" />
+  <published>2025-07-14T10:00:00Z</published>
+  <updated>2025-07-14T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  Misc news about the
+  <a href="https://gedit-text-editor.org/">gedit</a>
+  text editor, mid-July edition! (Some sections are a bit technical).
+</p>
+
+<h3>gedit 49 in preparation</h3>
+<p>
+  About version numbers: if all goes well, gedit 49 will match GNOME 49 and are
+  expected for September! So gedit will be back on track to follow the GNOME
+  version numbers. This is after some trials to <em>not</em> follow them, to
+  release gedit versions when ready and more often, but at the end of the day
+  this doesn't change much.
+</p>
+
+<h3>Gedit Development Guidelines</h3>
+<p>
+  I've written the
+  <a href="https://gitlab.gnome.org/World/gedit/gedit/-/tree/master/docs/guidelines">Gedit Development Guidelines</a>,
+  a series of small Markdown documents. It regroups the information in one
+  place. It also documents stuff that needed to be written in commit messages,
+  so to avoid repetition and to have more complete explanations, commit messages
+  can now refer to the guideline documents.
+</p>
+<p>
+  Be warned that some of the gedit guidelines don't follow the more modern GNOME
+  development practices. The rationales are clearly explained. In my humble
+  opinion, what is deemed "modern" doesn't automatically make something better.
+  (If you read this and <em>are</em> a developer of one of the modern things not
+  used by gedit, take it as a user feedback, and remember that what truly
+  matters is that the GTK development platform is still appreciated!).
+</p>
+
+<h3>Improved preferences</h3>
+<p>
+  <a href="images/2025-07-14/prefs-reset.png" target="_blank"><img
+    src="images/2025-07-14/prefs-reset.png"
+    alt="gedit screenshot - reset all preferences"
+    width="250" /></a>
+</p>
+<p>
+  <a href="images/2025-07-14/prefs-spell-checker.png" target="_blank"><img
+    src="images/2025-07-14/prefs-spell-checker.png"
+    alt="gedit screenshot - spell-checker preferences"
+    width="250" /></a>
+</p>
+<p>
+  There is now a "Reset All..." button in the Preferences dialog. And it is now
+  possible to configure the default language used by the spell-checker.
+</p>
+
+<h3>Python plugins</h3>
+<p>
+  Most Linux distributions ship some older versions of some GNOME modules to
+  make Python plugins in gedit (and other apps) still work. There has been some
+  disturbances in the air, but my hope is that everything will be back to normal
+  for GNOME 49.
+</p>
+
+<h3>File loading and saving</h3>
+<p>
+  There are some known issues with the file loading implementation, and I'm
+  working on it.
+</p>
+<p>
+  About the old <code>iconv()</code> function, I've created a utility class called
+  <a href="https://gitlab.gnome.org/World/gedit/libgedit-gtksourceview/-/blob/main/gtksourceview/file-loading-and-saving/gtksourceiconv.c" target="_blank">GtkSourceIconv</a>
+  to (try to) tame the beast, except that the beast <em>cannot be fully
+  tamed</em>, by design! Some aspects of its API are broken, and what I
+  recommend for new code is to look at the libICU to see if it's better.
+  (gtksourceiconv.c has a comment at the top with more details).
+</p>
+<p>
+  But instead of doing ground-breaking changes in the file loading and saving
+  code (to switch to the libICU), I prefer a more incremental approach, and this
+  means to still use <code>iconv()</code> (for the time being at least). The
+  advantage is that incremental changes are directly useful and used; progress
+  is made on gedit!
+</p>
+<p>
+  I attempted a while back a new implementation in libgedit-tepl (TeplEncoding,
+  TeplFile, etc). The problem is that I created a different API, so switching
+  the whole of gedit to it was more difficult. And the new implementation lacked
+  several important features used by gedit.
+</p>
+<p>
+  Now I'm moving some of my experiments done in libgedit-tepl back to
+  libgedit-gtksourceview, because it's the latter (GtkSourceEncoding,
+  GtkSourceFile, etc) that is used by gedit's file loading and saving machinery.
+  libgedit-gtksourceview doesn't guarantee a stable API, and I consider it part
+  of gedit, so it's more <em>malleable code</em> :-)
+</p>
+    </div>
+  </content>
+</entry>
+
+<entry>
+  <title>Some problems currently with Python and gedit plugins</title>
+  <id>https://gedit-text-editor.org/blog/2025-04-30-no-more-pythons-in-gedit.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2025-04-30-no-more-pythons-in-gedit.html" />
+  <published>2025-04-30T10:00:00Z</published>
+  <updated>2025-04-30T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  <strong>UPDATE 2026-01-17:</strong> with
+  <a href="https://gedit-text-editor.org/blog/2026-01-16-gedit-49-0.html" target="_blank">gedit 49.0 released</a>,
+  the current status is that Python is no
+  longer supported, even for third-party plugins. Third-party plugins can still
+  be implemented in the following languages: C, Vala, C++ and maybe Rust as
+  well. The plugins shipped with gedit itself are all implemented in C. The
+  "Find in Files" plugin that was part of gedit-plugins was implemented in Vala,
+  but has been removed (it can still serve as an example).
+</p>
+<p>
+  <strong>UPDATE 2025-05-02:</strong> if libpeas1 gets ported to the latest version of
+  GIRepository, then it would be possible to re-enable the Python support in
+  gedit. But <em>only for third-party plugins</em>. That way we keep the best of
+  both worlds. The plugins shipped by gedit itself (the "official" plugins) will
+  be written only in C, but Rust would be welcome too if someone figures out how
+  to write a libpeas-based plugin in Rust. For most users this means that some
+  official plugins will be missing. For third-party plugin developers, this
+  means that a full rewrite of the plugin would not be necessary. Here is the
+  <a href="https://gitlab.gnome.org/World/gedit/gedit/-/issues/618">GitLab issue</a>
+  where this is discussed.
+</p>
+
+<p><br /></p>
+
+<p>
+  The first <code>*.py</code> file in the
+  <a href="https://gedit-text-editor.org/">gedit</a> repository was added in
+  2005, 20 years ago.
+  Since then, it seems that it has always been possible to write gedit plugins
+  in Python. Well, this is no more.
+</p>
+<p>
+  It deserves some explanation.
+</p>
+
+<h3>Reducing the number of programming languages to deal with</h3>
+<p>
+  A multi-language project is much harder to manage.
+  Now gedit only uses C and a little of Objective-C for the macOS support.
+  The libgedit-* are entirely written in C.
+</p>
+<p>
+  There was a Vala plugin (Find in Files) but has been
+  <a href="https://gitlab.gnome.org/World/gedit/gedit-plugins/-/commit/7d33fb7a667c738f5089d951ea8b0bba5cc6b968">removed in 2022</a>
+  (unfortunately there is no replacement).
+  The commit message already mentions the difficulty of working with multiple
+  languages. So the problem is not new.
+</p>
+
+<h3>Other reasons</h3>
+<p>
+  Making it easier to package gedit on Windows, avoiding the need to bundle a
+  whole Python interpreter with the app. This also makes the package smaller and
+  the app launches more quickly (better performances).
+</p>
+<p>
+  There are also some inherent difficulties to maintain large Python codebases
+  in the long run. gedit plugins are not specifically large, but still, the
+  difficulties were present. (If Python is your thing, you may have a different
+  experience and opinion. That's fine, there needs to be something for
+  everybody).
+</p>
+<p>
+  So over the recent years a few plugins have been rewritten from Python to C
+  already. With the final goal of phasing out the Python support. This was a
+  slow process, until ...
+</p>
+
+<h3>Some PyGObject and GIRepository updates later</h3>
+<p>
+  GNOME 48 released in March comes with an update that basically makes all
+  Python plugins unusable in gedit. It's more related to the code dealing with
+  the <em>loading</em> of plugins, not the plugins themselves.
+</p>
+<p>
+  More precisely, the latest version of PyGObject made the Python 3 loader of
+  libpeas1 unusable (libpeas provides the plugin engine for gedit and other
+  apps). libpeas1 and gedit depend on GIRepository-2.0 while the latest version
+  of PyGObject has upgraded to GIRepository-3.0. It is not possible to use both
+  GIRepository-2.0 and 3.0 at the same time in the same process.
+  (<a href="https://gitlab.gnome.org/GNOME/pygobject/-/issues/686">Link to the issue</a>).
+</p>
+<p>
+  It's like weeds growing. If you do nothing, weeds grow and regression bugs
+  happen. Note that it doesn't mean that nothing is done in gedit, there is
+  still development done. But the GTK and GNOME platform apparently moves
+  faster.
+</p>
+<p>
+  gedit is <em>no longer</em> developed and maintained by a team of 5-6
+  dedicated hackers. So the project is no longer able to lead the peloton, but
+  the application is still there and remains useful for many people! We (or -
+  mainly - I) don't have the human resources to keep up with everything and be
+  ahead of all the things to do. Hence ...
+</p>
+
+<h3>Reducing/changing the scope of gedit</h3>
+<p>
+  gedit has for many years been between two things.
+  (1) A great and easy-to-learn tool for beginners.
+  And (2) some powerful plugins are or were available, so the text editor is
+  also suitable for more advanced users, <em>also</em> in a professional
+  context.
+</p>
+<p>
+  So the scope of gedit is a bit unclear. What is clear is that we want from
+  gedit something more than just writing quick notes. So something more than a
+  simple notepad. But not as powerful and complete as Visual Studio Code (for
+  instance, but you can pick your favorite IDE here, or Vim, Emacs).
+</p>
+<p>
+  What is also clear for the path forward is a desire to well support markup
+  languages like HTML, Markdown, etc. To support them <em>even better</em> than
+  now, by adding some useful features for such languages.
+</p>
+<p>
+  So in the context of the plugins removal, it means that some of them will
+  <em>not</em> be re-implemented in C (or Rust or whatever). The set of features
+  available through plugins will thus change. At least for the official plugins
+  that are shipped with the gedit and gedit-plugins packages.
+</p>
+
+<h3>Did I mention Rust?</h3>
+<p>
+  Even though there is a desire to deal with less programming languages, ideally
+  having a single-language project, there is <em>Rust</em>.
+</p>
+<p>
+  Rust might be the exception. Maybe (without doing any promises), third-party
+  plugins can choose Rust instead of C. That would make for a better experience.
+  Then, maybe, a Rust third-party plugin will eventually find its course into
+  gedit proper.
+</p>
+
+<h3>The impact for users</h3>
+<p>
+  <a href="https://gitlab.gnome.org/World/gedit/gedit/-/commit/3e21148fb765fcbcc27d4a00a9bb905b1bfc7e1e">This commit</a>
+  is the place to go to have the list of plugins that were implemented in Python
+  and have been removed.
+</p>
+<p>
+  But for the moment the
+  <a href="https://flathub.org/apps/org.gnome.gedit">Flatpak of gedit</a>
+  is mostly unaffected, because it can use the previous version of PyGObject
+  while using the latest GNOME runtime.
+</p>
+<p>
+  <a href="https://www.microsoft.com/store/apps/9NCQ8B0NVCW3">gedit on the Microsoft Store</a>
+  is also unaffected.
+</p>
+<p>
+  One day however, the updates of gedit and gedit-plugins will roll out.
+  Versions >= 48.2 are already affected. The idea is to re-implement in C a few
+  plugins so that the change is not too disruptive for Flatpak and Windows
+  users.
+</p>
+<p>
+  As a conclusion, let's see what the future of gedit has in stock! Be it
+  attracting Rust developers, or being a tool of choice for certain uses,
+  remaining humble at its task of being an easy-to-learn and general-purpose
+  text editor.
+</p>
+
+<p><small>
+  This article was written by Sébastien Wilmet, currently the main developer
+  behind gedit.
+</small></p>
+    </div>
+  </content>
+</entry>
+
+<entry>
+  <title>Enter TeX</title>
+  <id>https://gedit-text-editor.org/blog/2025-02-11-enter-tex.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2025-02-11-enter-tex.html" />
+  <published>2025-02-11T10:00:00Z</published>
+  <updated>2025-02-11T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  As promised, I wanted to write a blog post about this application.
+</p>
+<p>
+  <a href="https://gitlab.gnome.org/swilmet/enter-tex/">Enter TeX</a> is a
+  <a href="https://tug.org/">TeX</a> /
+  <a href="https://www.latex-project.org/">LaTeX</a>
+  text editor previously named LaTeXila and then GNOME LaTeX. It is based on the
+  same libraries as <a href="https://gedit-text-editor.org/">gedit</a>.
+</p>
+
+<h3>Renames</h3>
+<p>
+  LaTeXila was a fun name that I picked up when I was a student back in 2009.
+  Then the project was renamed to GNOME LaTeX in 2017 but it was not a great
+  choice because of the GNOME trademark. Now it is called <em>Enter TeX</em>.
+</p>
+<p>
+  By having "TeX" in the name is more future-proof than "LaTeX", because there
+  is also Plain TeX, <a href="https://wiki.contextgarden.net/">ConTeXt</a> and
+  <a href="https://www.gnu.org/software/texinfo/">GNU Texinfo</a>. Only LaTeX is
+  currently well supported by Enter TeX, but the support for other variants
+  would be a welcome addition.
+</p>
+<p>
+  Note that the settings and configuration files are automatically migrated from
+  LaTeXila or GNOME LaTeX to Enter TeX.
+</p>
+<p>
+  There is another rename: the namespace for the C code has been changed from
+  "Latexila" to "Gtex", to have a shorter and better name.
+</p>
+
+<h3>Other news</h3>
+<p>
+  If you're curious, you can read the top of the
+  <a href="https://gitlab.gnome.org/swilmet/enter-tex/-/blob/main/NEWS">NEWS file</a>,
+  it has all the details.
+</p>
+<p>
+  If I look at the
+  <a href="https://gitlab.gnome.org/swilmet/enter-tex/-/blob/main/docs/achievements.md">achievements file</a>,
+  there is also the port from Autotools to Meson that was done recently and is
+  worth mentioning.
+</p>
+
+<h3>Known issue for the icons</h3>
+<p>
+  Enter TeX unfortunately suffers from a combination of changes in
+  adwaita-icon-theme and GThemedIcon (part of GIO). Link to the
+  <a href="https://gitlab.gnome.org/GNOME/glib/-/issues/3376">issue on GitLab</a>.
+</p>
+<p>
+  Compare the two screenshots and choose the one you prefer:
+</p>
+<p>
+  <a href="images/2025-02-11/screenshot1.png" target="_blank"><img src="images/2025-02-11/screenshot1.png" alt="screenshot 1" width="300" /></a>
+</p>
+<p>
+  <a href="images/2025-02-11/screenshot2.png" target="_blank"><img src="images/2025-02-11/screenshot2.png" alt="screenshot 2" width="300" /></a>
+</p>
+<p>
+  As an interim solution, what I do is to install adwaita-icon-theme 41.0 in the
+  same prefix as where Enter TeX is installed (not a system-wide prefix).
+</p>
+
+<h3>To summarize</h3>
+<ul>
+  <li>LaTeXila -> GNOME LaTeX -> Enter TeX</li>
+  <li>C code namespace: Latexila -> Gtex</li>
+  <li>Build system: Autotools -> Meson</li>
+  <li>An old version of adwaita-icon-theme is necessary.</li>
+</ul>
+
+<p><small>
+  This article was written by Sébastien Wilmet, currently the main developer
+  behind Enter TeX.
+</small></p>
+    </div>
+  </content>
+</entry>
+
+<entry>
+  <title>Various news about gedit</title>
+  <id>https://gedit-text-editor.org/blog/2025-01-07-various-news.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2025-01-07-various-news.html" />
+  <published>2025-01-07T10:00:00Z</published>
+  <updated>2025-01-07T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  A new year begins, a good time to share some various news about
+  <a href="https://gedit-text-editor.org/">gedit</a>.
+</p>
+
+<h3>gedit-text-editor.org</h3>
+<p>
+  gedit has a new domain name for its website:
+</p>
+<p>
+  <a href="https://gedit-text-editor.org/">gedit-text-editor.org</a>
+</p>
+<p>
+  Previously, the gedit homepage was
+  <a href="https://wiki.gnome.org/Apps/Gedit">on the GNOME wiki</a>,
+  but the wiki has been retired. So a new website has been set up.
+</p>
+<p>
+  Some work on the website is still necessary, especially to better support
+  mobile devices (responsive web design), and also for printing the pages. If
+  you are a seasoned web developer and want to contribute, don't hesitate to get
+  in touch!
+</p>
+
+<h3>Wrapping-up statistics for 2024</h3>
+<p>
+  The total number of commits in gedit and gedit-related git repositories in
+  2024 is: 1042. More precisely:
+</p>
+<pre>
+300	enter-tex
+365	gedit
+52	gedit-plugins
+50	gspell
+13	libgedit-amtk
+54	libgedit-gfls
+47	libgedit-gtksourceview
+161	libgedit-tepl
+</pre>
+<p>
+  It counts all contributions, translation updates included.
+</p>
+<p>
+  The list contains two apps, gedit and
+  <a href="https://gitlab.gnome.org/swilmet/enter-tex">Enter TeX</a>.
+  The rest are shared libraries (re-usable code available to create other text
+  editors).
+</p>
+<p>
+  Enter TeX is a TeX/LaTeX editor previously named LaTeXila and GNOME LaTeX.
+  It depends on
+  <a href="https://gedit-text-editor.org/technology.html">Gedit Technology</a>
+  and drives some of its development. So it makes sense to include it alongside
+  gedit. A blog post about Enter TeX will most probably be written, to shed some
+  light on this project that started in 2009.
+</p>
+
+<h3>Onwards to 2025</h3>
+<p>
+  The development continues! To get the latest news, you can follow this blog
+  or, alternatively, you can
+  <a href="https://toot.community/@swilmet">follow me on Mastodon</a>.
+</p>
+
+<p><small>
+  This article was written by Sébastien Wilmet, currently the main developer
+  behind gedit.
+</small></p>
+    </div>
+  </content>
+</entry>
+
+<entry>
+  <title>What's new in gedit 48</title>
+  <id>https://gedit-text-editor.org/blog/2024-11-19-gedit-48.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2024-11-19-gedit-48.html" />
+  <published>2024-11-19T10:00:00Z</published>
+  <updated>2024-11-19T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  <a href="https://gedit-text-editor.org/">gedit</a> 48 has been
+  released and is available on the three main desktop operating systems. Let's
+  look at the highlights of this new version.
+</p>
+
+<h3>Dark theme</h3>
+<p>
+  <a href="images/2024-06-19/gedit-screenshot-dark-theme-main-window.png" target="_blank"><img
+    src="images/2024-06-19/thumbnail-gedit-screenshot-dark-theme-main-window.png"
+    alt="gedit screenshot of the main window with dark theme"
+    width="250" /></a>
+</p>
+<p>
+  The <a href="https://gedit-text-editor.org/blog/2024-06-19-dark-theme-support-in-gedit.html">dark theme support</a>
+  has already been covered.
+</p>
+
+<h3>World/gedit/ subgroup on GNOME's GitLab</h3>
+<p>
+  The main Git repositories of gedit are now all hosted under the
+  <a href="https://gitlab.gnome.org/World/gedit">World/gedit/</a>
+  subgroup on GNOME's GitLab. It currently includes gedit, gedit-plugins and all
+  the libgedits.
+</p>
+<p>
+  Previously, there was the problem that the libgedits - hosted on GitHub -
+  didn't receive new translations. This is now resolved, all the relevant
+  modules are on <a href="https://l10n.gnome.org/">l10n.gnome.org</a>. Thanks to
+  the amazing work done by the GNOME translation teams, gedit is available in
+  many languages with high quality translations!
+</p>
+
+<h3>Summary of changes for plugins</h3>
+<p>
+  Concerning the plugins, there is unfortunately a bad news. The following
+  plugins have been removed:
+</p>
+<ul>
+  <li>External Tools</li>
+  <li>Git</li>
+  <li>Quick Open</li>
+  <li>Snippets</li>
+</ul>
+
+<p>
+  There are several reasons:
+</p>
+<ul>
+  <li>
+    The primary reason is to have less code to maintain for the core gedit
+    developers.
+  </li>
+  <li>
+    Some of these plugins had bugs that made the application to crash. It is
+    time consuming to investigate and properly fix such issues.
+  </li>
+  <li>
+    And, it is always possible for other developers to bring a second life to a
+    removed plugin, by copying the code into another repository. See the list of
+    <a href="https://gitlab.gnome.org/World/gedit/gedit/-/blob/master/plugins/third-party-plugins.md">third-party plugins</a>
+    for some examples.
+  </li>
+</ul>
+
+<h3>Other changes</h3>
+<ul>
+  <li>
+    The Text Size plugin has been promoted: it has been moved from the
+    gedit-plugins repository to the main gedit repository, and is now enabled by
+    default. So you can now zoom in and zoom out the text more easily.
+  </li>
+  <li>
+    As always, there are a plethora of other little changes to improve the code
+    quality.
+  </li>
+</ul>
+
+<h3>To conclude</h3>
+<p>
+  Don't hesitate to get in touch, be it for providing a general feedback, or for
+  reporting specific issues, or for contributing.
+</p>
+    </div>
+  </content>
+</entry>
+
+<entry>
+  <title>Dark theme support in gedit</title>
+  <id>https://gedit-text-editor.org/blog/2024-06-19-dark-theme-support-in-gedit.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2024-06-19-dark-theme-support-in-gedit.html" />
+  <published>2024-06-19T10:00:00Z</published>
+  <updated>2024-06-19T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  The development version of
+  <a href="https://gedit-text-editor.org/">gedit</a> now has a
+  much more complete support of light and dark themes, and switching between
+  them from the desktop setting.
+</p>
+
+<h3>How it looks</h3>
+<p>
+  With the Solarized Dark color scheme for the main text area, and the Adwaita
+  dark GTK theme:
+</p>
+<p>
+  <a href="images/2024-06-19/gedit-screenshot-dark-theme-main-window.png" target="_blank"><img
+    src="images/2024-06-19/thumbnail-gedit-screenshot-dark-theme-main-window.png"
+    alt="gedit screenshot of the main window with dark theme"
+    width="250" /></a>
+</p>
+<p>
+  The Preferences dialog:
+</p>
+<p>
+  <a href="images/2024-06-19/gedit-screenshot-dark-theme-preferences-dialog.png" target="_blank"><img
+    src="images/2024-06-19/gedit-screenshot-dark-theme-preferences-dialog.png"
+    alt="gedit screenshot of the preferences dialog with dark theme"
+    width="250" /></a>
+</p>
+<p>
+  <a href="images/2024-06-19/gedit-screenshot-light-theme-preferences-dialog.png" target="_blank"><img
+    src="images/2024-06-19/gedit-screenshot-light-theme-preferences-dialog.png"
+    alt="gedit screenshot of the preferences dialog with light theme"
+    width="250" /></a>
+</p>
+
+<h3>Possibilities and limitations</h3>
+<p>
+  It's possible to follow the system style (the desktop-wide setting that is
+  applied to all the applications at once), or to force the light or dark theme
+  variant.
+</p>
+<p>
+  For the main text area a <em>color scheme</em> must be applied. There are thus
+  <em>two</em> color schemes to choose: for the light versus dark theme
+  variants, to automatically switch the color scheme.
+</p>
+<p>
+  The Preferences dialog also allows you to choose a <em>dark</em> color scheme
+  when a <em>light</em> theme variant is in effect, or vice-versa. If this was
+  not possible, it would have been annoying to some people.
+</p>
+<p>
+  There is however <strong>a minor limitation</strong>: the Classic and Tango
+  color schemes are supported only with the light theme variant, because some
+  colors are inherited from the theme and the other colors have been defined
+  with a <em>light</em> theme in mind (see
+  <a href="https://gitlab.gnome.org/GNOME/gedit/-/issues/547">this issue on GitLab</a>
+  with a screenshot of the text being unreadable).<br />
+  So when the dark theme is applied, it is not possible to select Classic or
+  Tango and their descriptions become "Unsupported for the dark theme variant"
+  (by the way, it's better to keep them in the list and show an explanation; if
+  Classic and Tango suddenly disappear from the list, you would have thought
+  that there is a bug somewhere).
+</p>
+<p>
+  It is also
+  <a href="https://gitlab.gnome.org/GNOME/gedit/-/commit/b655bd6bdf9b9fab1046960591fe823aa5aee16a">documented</a>
+  in the user manual, if you're curious.
+</p>
+
+<h3>Technical details</h3>
+<p>
+  The heavy-lifting is done by
+  <a href="https://gnome.pages.gitlab.gnome.org/libhandy/">libhandy</a>,
+  and the actual dark theme (the Adwaita one) comes from
+  <a href="https://gtk.org/">GTK</a> and its CSS engine.
+</p>
+<p>
+  Some work was left to do in libgedit-gtksourceview for the color/style
+  schemes; in libgedit-tepl for the components in the Preferences dialog plus a
+  few other things; and finally in gedit to integrate what libgedit-tepl
+  provides.
+</p>
+<p>
+  In gedit there are now two GSettings keys for the color schemes, plus another
+  key for the theme-variant, as can be seen in this <code>dconf watch</code>
+  demo session:
+</p>
+<pre>
+$ dconf watch /
+/org/gnome/gedit/preferences/editor/style-scheme-for-dark-theme-variant
+  'oblivion'
+
+/org/gnome/gedit/preferences/ui/theme-variant
+  'light'
+
+/org/gnome/gedit/preferences/editor/style-scheme-for-light-theme-variant
+  'classic'
+</pre>
+
+<h3>Conclusion</h3>
+<p>
+  This feature was asked by many people and it's finally there. It will be
+  available in gedit 48, the next stable version to be released soon if
+  everything goes well.
+</p>
+<p>
+  Do not hesitate to
+  <a href="https://gedit-text-editor.org/">get in touch</a>
+  and provide a feedback, be it for this feature or for other things.
+</p>
+
+<p><small>
+  This article was written by Sébastien Wilmet, currently the main gedit
+  developer.
+</small></p>
+    </div>
+  </content>
+</entry>
+
+<entry>
+  <title>gedit 47 released and packaged</title>
+  <id>https://gedit-text-editor.org/blog/2024-05-24-gedit-47-released-and-packaged.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2024-05-24-gedit-47-released-and-packaged.html" />
+  <published>2024-05-24T10:00:00Z</published>
+  <updated>2024-05-24T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  <a href="https://gedit-text-editor.org/">gedit</a> 47 has been
+  released and packaged recently.
+</p>
+
+<h3>What's new</h3>
+<p>
+  The <a href="https://gedit-text-editor.org/blog/2024-04-26-change-of-icons-and-logo-for-gedit.html">change of icons and logo</a>
+  was already explained.
+</p>
+
+<h4>Dark GTK theme support - some progress</h4>
+<p>
+  There is some progress to better support the dark GTK theme variant. On Linux
+  you can use the <a href="https://apps.gnome.org/DconfEditor/">Dconf Editor</a>
+  application or the <code>gsettings</code> command in a terminal to change
+  gedit to use the dark theme:
+</p>
+<pre>
+$ gsettings get org.gnome.gedit.preferences.ui theme-variant
+'light'
+$ gsettings set org.gnome.gedit.preferences.ui theme-variant "'dark'"
+
+# To reset to the default value:
+$ gsettings reset org.gnome.gedit.preferences.ui theme-variant
+</pre>
+<p>
+  Some more work is necessary to finish this feature. It is planned to add a
+  'system' setting, to follow the desktop config. To adapt the Preferences
+  dialog. And to avoid showing bugs with color schemes that don't support dark
+  GTK themes (classic and tango), or to fix those color schemes (but since they
+  inherit colors from the GTK theme, it is currently expected that these colors
+  come from a <em>light</em> theme).
+</p>
+
+<h4>For plugin developers: improved API documentation</h4>
+<p>
+  The main classes of gedit are now much better
+  <a href="https://gedit-text-editor.org/developer-docs/gedit/">documented</a>.
+</p>
+
+<h4>Translations temporarily disabled</h4>
+<p>
+  Unfortunately, the translations (or localization, l10n) is temporarily
+  disabled. So gedit is available in English only. (You can still write
+  documents in any language thanks to the Unicode support, of course).
+</p>
+<p>
+  This is because the Gedit Technology modules that are hosted on GitHub need
+  something else than <a href="https://l10n.gnome.org/">l10n.gnome.org</a>.
+</p>
+<p>
+  Work is being done to address this issue. One translation platform has already
+  been tested but was not really satisfactory, so another platform is currently
+  being tested at the time of writing this.
+</p>
+
+<h4>Refactoring and making more code re-usable, as always</h4>
+<p>
+  Code refactoring is necessary for gedit. Cleaner code permits to better see
+  bugs, to fix them and (hopefully) prevent them from re-appearing in the
+  future.
+</p>
+
+<h3>Packaging work</h3>
+<p>
+  gedit is
+  <a href="https://www.microsoft.com/store/apps/9NCQ8B0NVCW3">available on the Microsoft Store</a>.
+  It is a way to finance the project, so every purchase helps.
+</p>
+<p>
+  For Linux, the latest gedit is
+  <a href="https://flathub.org/apps/org.gnome.gedit">available on Flathub</a>.
+  It finally has the Verified badge, and the Flatpak is now directly updated by
+  the upstream developers.
+</p>
+
+<h3>Conclusion</h3>
+<p>
+  Contrarily to what is sometimes expected from a software release, this is
+  unfortunately not the best gedit release ever because of the transition for
+  the translation platform. gedit 48 will be a better version in that regard.
+</p>
+<p>
+  We wanted to release a new version instead of waiting more, because we prefer
+  more iterations instead of bigger releases. For a project like gedit, it's
+  sometimes a bit a rocky road to drive the project further. On the brighter
+  side, gedit should be more robust overall (the code has seen some bug fixes
+  and many small code improvements under the hood).
+</p>
+
+<p><small>
+  This article was written by Sébastien Wilmet, currently the main developer
+  behind gedit.
+</small></p>
+    </div>
+  </content>
+</entry>
+
+<entry>
+  <title>History of Gedit Technology</title>
+  <id>https://gedit-text-editor.org/blog/2024-05-15-history-of-gedit-technology.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2024-05-15-history-of-gedit-technology.html" />
+  <published>2024-05-15T10:00:00Z</published>
+  <updated>2024-05-15T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  The website of
+  <a href="https://gedit-text-editor.org/technology.html">Gedit Technology</a>
+  has been created in 2022 and is now hosted where the link points to. However,
+  the actual code behind it is older than that. Read on for a retrospective and
+  the important dates and milestones.
+</p>
+
+<h3>What is Gedit Technology</h3>
+<p>
+  First, what is it? The project web page describes it this way:
+</p>
+<blockquote>
+  Gedit Technology is based on the GTK graphical toolkit and provides the main
+  components behind the gedit text editor.
+</blockquote>
+<p>
+  <em>gedit</em> is the application (for end users), <em>Gedit Technology</em>
+  is the re-usable code provided as a set of libraries (for developers).
+</p>
+
+<h3>The libraries</h3>
+<p>
+  gedit is closely related to some libraries. The list, alongside the year of
+  the project creation:
+</p>
+<ul>
+  <li>2001: GtkSourceView (libgedit-gtksourceview)</li>
+  <li>2009: libpeas</li>
+  <li>2015: gspell</li>
+  <li>2016: libgedit-tepl</li>
+  <li>2018: libgedit-amtk</li>
+  <li>2023: libgedit-gfls</li>
+</ul>
+<p>
+  Initially, GtkSourceView didn't come from the gedit codebase, but once created
+  gedit has quickly adopted it. Then the two projects were developed side by
+  side. Its main feature is syntax highlighting, but lots of other features have
+  been added over the years (small ones like displaying the line numbers in the
+  margin, and bigger ones such as a completion framework).
+</p>
+<p>
+  libpeas is the plugin engine, used by other applications like the Totem video
+  player. It is a gedit developer who decided to factor out a library from the
+  gedit codebase. Before that, application authors copied (and modified) the
+  implementation from another app, so in GNOME there were lots of different
+  variants.
+</p>
+<p>
+  gspell is for the spell-checking. Its code comes from a gedit plugin. The
+  plugin still exists but is much smaller now. The purpose was to share code
+  between gedit and GNOME LaTeX (another text editor that targets the TeX/LaTeX
+  languages). The gspell library has been used by numerous other GTK
+  applications, including GNOME Software (the software center).
+</p>
+<p>
+  libgedit-tepl is not as widespread as the other projects, but is the
+  continuation of GtkSourceView with more experimental APIs. The goal is to be
+  able to iterate on the APIs more freely.
+</p>
+<p>
+  libgedit-amtk and libgedit-gfls are small additional libraries. The first one
+  is all about Actions, Menus and Toolbars (Kit). The second one is about File
+  Loading and Saving but is in its early infancy.
+</p>
+
+<h3>About the "libgedit" prefix</h3>
+<p>
+  Note the "libgedit" prefix. Some projects were first created without it and
+  have been renamed since. The prefix permits to better identify the project
+  origins or to what it belongs. Since the number of such projects was growing,
+  having more and more disparate names was not really convenient, especially for
+  packagers.
+</p>
+<p>
+  Now on an up-to-date Linux distribution, you can search the packages database
+  for "gedit" or "libgedit". Or during updates, if you see "libgedit-something",
+  you know what it is.
+</p>
+
+<h3>Re-usability, API and documentation</h3>
+<p>
+  The more recent developments in gedit focused on re-usability and refactoring.
+  By doing this little exercise, we believe that the code has a better quality:
+  a better architecture (most importantly), smaller classes with more separation
+  of concerns, fewer bugs, more unit-testable code (and unit-tested), and much
+  improved
+  <a href="https://gedit-text-editor.org/developer-docs/">documentation</a>.
+</p>
+<p>
+  Thank you for reading!
+</p>
+<p><small>
+  This article was written by Sébastien Wilmet, currently the main developer
+  behind Gedit Technology.
+</small></p>
+    </div>
+  </content>
+</entry>
+
+<entry>
+  <title>Change of icons and logo for gedit</title>
+  <id>https://gedit-text-editor.org/blog/2024-04-26-change-of-icons-and-logo-for-gedit.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2024-04-26-change-of-icons-and-logo-for-gedit.html" />
+  <published>2024-04-26T10:00:00Z</published>
+  <updated>2024-04-26T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  There will be a change of icons and logo for
+  <a href="https://gedit-text-editor.org/">gedit</a> 47.
+</p>
+
+<p>Some dates:</p>
+<ul>
+  <li>September 2018: new icon for gedit and other GNOME apps.</li>
+  <li>March 2024: restore to the previous design.</li>
+</ul>
+
+<p>The current icon, restored from a previous design:</p>
+<p><img src="images/gedit-icon-current.png" alt="Current gedit icon" width="128" /></p>
+
+<p>The old icon (2018-2024):</p>
+<p><img src="images/gedit-icon-old.svg" alt="Old gedit icon" width="128" /></p>
+
+<p>
+  The
+  <a href="https://gitlab.gnome.org/GNOME/gedit/-/commit/d444f3e6ebd42e1a9c7a58edf039667a8b472277">git commit</a>
+  message has all the details for the reasons of the change. Namely, the old
+  icon had several disadvantages:
+</p>
+<ul>
+  <li>
+    The pencil was too big.
+  </li>
+  <li>
+    The blue color at the bottom was barely visible, especially at small sizes.
+  </li>
+</ul>
+
+<p>
+  The current design has actually <em>several</em> icons that are tailored for
+  different sizes.
+  <a href="https://gitlab.gnome.org/GNOME/gedit/-/tree/master/data/icons">All the icons</a>
+  have been restored.
+</p>
+
+<p>
+  The logo has also been restored and is present in the About dialog window:
+</p>
+<p><img src="images/gedit-about-dialog.png" alt="gedit About window" /></p>
+
+<p>
+  To avoid any confusion, only the icons and logo that represent the
+  <em>application</em> (gedit) are affected. All the other icons used within
+  gedit remain the same (for example to represent a directory or a printer) and
+  rely on the icon theme used (it's a desktop-wide setting).
+</p>
+
+<p>
+  I hope that you will appreciate the change of design :)
+</p>
+    </div>
+  </content>
+</entry>
+
+</feed>

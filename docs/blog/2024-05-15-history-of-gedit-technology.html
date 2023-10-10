@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>History of Gedit Technology | Gedit Technology blog</title>
+  <link rel="stylesheet" type="text/css" media="all" href="/css/main.css" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/gedit-icon-16x16.png" />
+  <link href="feed.atom.xml" type="application/atom+xml" rel="alternate" title="Atom blog feed" />
+
+  <!-- For mobile devices and responsive websites. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+</head>
+
+<body>
+<div id="container">
+
+<header>
+  <img src="/images/gedit-icon.png" height="100" alt="gedit icon" /><h1>gedit</h1>
+</header>
+
+<nav>
+  <ul>
+    <li>
+      <a href="/index.html" title="About gedit">About</a>
+    </li>
+    <li>
+      <a href="/screenshots.html" title="A tour of gedit">Screenshots</a>
+    </li>
+    <li>
+      <a href="/features.html" title="Notable features and list of plugins">Features</a>
+    </li>
+    <li>
+      <a href="/install.html" title="How to install gedit">Installation</a>
+    </li>
+    <li class="current">
+      <a href="/blog/" title="The Gedit Technology blog">Blog</a>
+    </li>
+    <li>
+      <a href="/documentation.html" title="Read up on documentation about how to use gedit">Documentation</a>
+    </li>
+    <li>
+      <a href="/technology.html" title="Find out how you can get involved in the development of gedit">Development</a>
+    </li>
+  </ul>
+</nav>
+
+<main>
+<h2>2024-05-15 :: History of Gedit Technology</h2>
+
+<p>
+  The website of
+  <a href="https://gedit-text-editor.org/technology.html">Gedit Technology</a>
+  has been created in 2022 and is now hosted where the link points to. However,
+  the actual code behind it is older than that. Read on for a retrospective and
+  the important dates and milestones.
+</p>
+
+<h3>What is Gedit Technology</h3>
+<p>
+  First, what is it? The project web page describes it this way:
+</p>
+<blockquote>
+  Gedit Technology is based on the GTK graphical toolkit and provides the main
+  components behind the gedit text editor.
+</blockquote>
+<p>
+  <em>gedit</em> is the application (for end users), <em>Gedit Technology</em>
+  is the re-usable code provided as a set of libraries (for developers).
+</p>
+
+<h3>The libraries</h3>
+<p>
+  gedit is closely related to some libraries. The list, alongside the year of
+  the project creation:
+</p>
+<ul>
+  <li>2001: GtkSourceView (libgedit-gtksourceview)</li>
+  <li>2009: libpeas</li>
+  <li>2015: gspell</li>
+  <li>2016: libgedit-tepl</li>
+  <li>2018: libgedit-amtk</li>
+  <li>2023: libgedit-gfls</li>
+</ul>
+<p>
+  Initially, GtkSourceView didn't come from the gedit codebase, but once created
+  gedit has quickly adopted it. Then the two projects were developed side by
+  side. Its main feature is syntax highlighting, but lots of other features have
+  been added over the years (small ones like displaying the line numbers in the
+  margin, and bigger ones such as a completion framework).
+</p>
+<p>
+  libpeas is the plugin engine, used by other applications like the Totem video
+  player. It is a gedit developer who decided to factor out a library from the
+  gedit codebase. Before that, application authors copied (and modified) the
+  implementation from another app, so in GNOME there were lots of different
+  variants.
+</p>
+<p>
+  gspell is for the spell-checking. Its code comes from a gedit plugin. The
+  plugin still exists but is much smaller now. The purpose was to share code
+  between gedit and GNOME LaTeX (another text editor that targets the TeX/LaTeX
+  languages). The gspell library has been used by numerous other GTK
+  applications, including GNOME Software (the software center).
+</p>
+<p>
+  libgedit-tepl is not as widespread as the other projects, but is the
+  continuation of GtkSourceView with more experimental APIs. The goal is to be
+  able to iterate on the APIs more freely.
+</p>
+<p>
+  libgedit-amtk and libgedit-gfls are small additional libraries. The first one
+  is all about Actions, Menus and Toolbars (Kit). The second one is about File
+  Loading and Saving but is in its early infancy.
+</p>
+
+<h3>About the "libgedit" prefix</h3>
+<p>
+  Note the "libgedit" prefix. Some projects were first created without it and
+  have been renamed since. The prefix permits to better identify the project
+  origins or to what it belongs. Since the number of such projects was growing,
+  having more and more disparate names was not really convenient, especially for
+  packagers.
+</p>
+<p>
+  Now on an up-to-date Linux distribution, you can search the packages database
+  for "gedit" or "libgedit". Or during updates, if you see "libgedit-something",
+  you know what it is.
+</p>
+
+<h3>Re-usability, API and documentation</h3>
+<p>
+  The more recent developments in gedit focused on re-usability and refactoring.
+  By doing this little exercise, we believe that the code has a better quality:
+  a better architecture (most importantly), smaller classes with more separation
+  of concerns, fewer bugs, more unit-testable code (and unit-tested), and much
+  improved
+  <a href="https://gedit-text-editor.org/developer-docs/">documentation</a>.
+</p>
+<p>
+  Thank you for reading!
+</p>
+<p><small>
+  This article was written by Sébastien Wilmet, currently the main developer
+  behind Gedit Technology.
+</small></p>
+
+</main>
+</div>
+
+<footer>
+  <p>Copyright &copy; 1998-2026, The gedit team</p>
+</footer>
+</body>
+</html>

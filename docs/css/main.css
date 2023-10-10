@@ -1,0 +1,197 @@
+/* Basic tags */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #ddd;
+/*  background-color: #729fcf;*/
+}
+
+h1, h3, h4, h5, h6 {
+  color: #4e4e4e;
+}
+
+h2 {
+  color: #c00;
+  font-weight: bold;
+  line-height: 150%;
+  margin-top: 1em;
+  margin-bottom: 0.1em;
+}
+
+a {
+  text-decoration: none;
+  color: #3465a4;
+}
+
+a:hover {
+  border-bottom: 1px dotted;
+}
+
+main p {
+  margin-top: 0em;
+  margin-bottom: 0.7em;
+  vertical-align: middle;
+}
+
+pre {
+  background-color: #797b76;
+  color: #fff;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+main ul > li {
+  list-style-image: url('/images/bullet.gif');
+  list-style-type: circle;
+}
+
+/* Space out li elements (add margin _between_ elements). */
+main li:not(li:first-child) {
+  margin-top: 0.7em;
+}
+
+main img.screenshot {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+/* container to push the footer to the bottom */
+
+#container {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  max-width: 45em;
+  margin: 0 auto -2em; /* the bottom margin is the negative value of the footer's height */
+  padding: 0;
+  background-color: #fff;
+  border-left: 1px solid #babdb6;
+  border-right: 1px solid #babdb6;
+}
+
+/* header */
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center;
+
+  background: linear-gradient(#eeeeec, #fff); /* top to bottom */
+}
+
+header img {
+  padding: 10px;
+  margin-right: 2em;
+}
+
+/* navigation menu */
+
+nav {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+
+  background-color: #c00;
+  border-top: 1px solid #a40000;
+  border-bottom: 1px solid #a40000;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  /* For small screen sizes when li elements wrap on a second line, space out
+   * the elements vertically. See also the paddings for the nav element.
+   */
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0;
+  padding-right: 0;
+
+  margin: 0;
+}
+
+/* Space out li elements (add margin _between_ elements). */
+nav li:not(li:first-child) {
+  margin-left: 1em;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav .current {
+  font-weight: bold;
+}
+
+/* content */
+
+main {
+  height: 100%;
+  margin: 0;
+  padding-top: 1em;
+  padding-bottom: 4.5em;
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+  line-height: 150%;
+}
+
+@media only screen and (max-width: 45em) {
+  main {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+main a {
+  line-height: 150%;
+  font-weight: bold;
+}
+
+/* footer */
+
+footer {
+  /* Center text vertically and horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 2em;
+  max-width: 45em;
+  margin: 0 auto;
+  background-color: #c00;
+  border-top: 1px solid #a40000;
+  border-left: 1px solid #babdb6;
+  border-right: 1px solid #babdb6;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: small;
+}

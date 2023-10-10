@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>What's new in gedit 48 | Gedit Technology blog</title>
+  <link rel="stylesheet" type="text/css" media="all" href="/css/main.css" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/gedit-icon-16x16.png" />
+  <link href="feed.atom.xml" type="application/atom+xml" rel="alternate" title="Atom blog feed" />
+
+  <!-- For mobile devices and responsive websites. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+</head>
+
+<body>
+<div id="container">
+
+<header>
+  <img src="/images/gedit-icon.png" height="100" alt="gedit icon" /><h1>gedit</h1>
+</header>
+
+<nav>
+  <ul>
+    <li>
+      <a href="/index.html" title="About gedit">About</a>
+    </li>
+    <li>
+      <a href="/screenshots.html" title="A tour of gedit">Screenshots</a>
+    </li>
+    <li>
+      <a href="/features.html" title="Notable features and list of plugins">Features</a>
+    </li>
+    <li>
+      <a href="/install.html" title="How to install gedit">Installation</a>
+    </li>
+    <li class="current">
+      <a href="/blog/" title="The Gedit Technology blog">Blog</a>
+    </li>
+    <li>
+      <a href="/documentation.html" title="Read up on documentation about how to use gedit">Documentation</a>
+    </li>
+    <li>
+      <a href="/technology.html" title="Find out how you can get involved in the development of gedit">Development</a>
+    </li>
+  </ul>
+</nav>
+
+<main>
+<h2>2024-11-19 :: What's new in gedit 48</h2>
+
+<p>
+  <a href="https://gedit-text-editor.org/">gedit</a> 48 has been
+  released and is available on the three main desktop operating systems. Let's
+  look at the highlights of this new version.
+</p>
+
+<h3>Dark theme</h3>
+<p>
+  <a href="images/2024-06-19/gedit-screenshot-dark-theme-main-window.png" target="_blank"><img
+    src="images/2024-06-19/thumbnail-gedit-screenshot-dark-theme-main-window.png"
+    alt="gedit screenshot of the main window with dark theme"
+    width="250" /></a>
+</p>
+<p>
+  The <a href="https://gedit-text-editor.org/blog/2024-06-19-dark-theme-support-in-gedit.html">dark theme support</a>
+  has already been covered.
+</p>
+
+<h3>World/gedit/ subgroup on GNOME's GitLab</h3>
+<p>
+  The main Git repositories of gedit are now all hosted under the
+  <a href="https://gitlab.gnome.org/World/gedit">World/gedit/</a>
+  subgroup on GNOME's GitLab. It currently includes gedit, gedit-plugins and all
+  the libgedits.
+</p>
+<p>
+  Previously, there was the problem that the libgedits - hosted on GitHub -
+  didn't receive new translations. This is now resolved, all the relevant
+  modules are on <a href="https://l10n.gnome.org/">l10n.gnome.org</a>. Thanks to
+  the amazing work done by the GNOME translation teams, gedit is available in
+  many languages with high quality translations!
+</p>
+
+<h3>Summary of changes for plugins</h3>
+<p>
+  Concerning the plugins, there is unfortunately a bad news. The following
+  plugins have been removed:
+</p>
+<ul>
+  <li>External Tools</li>
+  <li>Git</li>
+  <li>Quick Open</li>
+  <li>Snippets</li>
+</ul>
+
+<p>
+  There are several reasons:
+</p>
+<ul>
+  <li>
+    The primary reason is to have less code to maintain for the core gedit
+    developers.
+  </li>
+  <li>
+    Some of these plugins had bugs that made the application to crash. It is
+    time consuming to investigate and properly fix such issues.
+  </li>
+  <li>
+    And, it is always possible for other developers to bring a second life to a
+    removed plugin, by copying the code into another repository. See the list of
+    <a href="https://gitlab.gnome.org/World/gedit/gedit/-/blob/master/plugins/third-party-plugins.md">third-party plugins</a>
+    for some examples.
+  </li>
+</ul>
+
+<h3>Other changes</h3>
+<ul>
+  <li>
+    The Text Size plugin has been promoted: it has been moved from the
+    gedit-plugins repository to the main gedit repository, and is now enabled by
+    default. So you can now zoom in and zoom out the text more easily.
+  </li>
+  <li>
+    As always, there are a plethora of other little changes to improve the code
+    quality.
+  </li>
+</ul>
+
+<h3>To conclude</h3>
+<p>
+  Don't hesitate to get in touch, be it for providing a general feedback, or for
+  reporting specific issues, or for contributing.
+</p>
+
+</main>
+</div>
+
+<footer>
+  <p>Copyright &copy; 1998-2026, The gedit team</p>
+</footer>
+</body>
+</html>
