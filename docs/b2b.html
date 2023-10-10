@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>B2B Services | gedit text editor</title>
+  <link rel="stylesheet" type="text/css" media="all" href="/css/main.css" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/gedit-icon-16x16.png" />
+
+  <!-- For mobile devices and responsive websites. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+</head>
+
+<body>
+<div id="container">
+
+<header>
+  <img src="/images/gedit-icon.png" height="100" alt="gedit icon" /><h1>gedit</h1>
+</header>
+
+<nav>
+  <ul>
+    <li>
+      <a href="/index.html" title="About gedit">About</a>
+    </li>
+    <li>
+      <a href="/screenshots.html" title="A tour of gedit">Screenshots</a>
+    </li>
+    <li>
+      <a href="/features.html" title="Notable features and list of plugins">Features</a>
+    </li>
+    <li>
+      <a href="/install.html" title="How to install gedit">Installation</a>
+    </li>
+    <li>
+      <a href="/blog/" title="The Gedit Technology blog">Blog</a>
+    </li>
+    <li>
+      <a href="/documentation.html" title="Read up on documentation about how to use gedit">Documentation</a>
+    </li>
+    <li>
+      <a href="/technology.html" title="Find out how you can get involved in the development of gedit">Development</a>
+    </li>
+    <li class="current">
+      <a href="/b2b.html" title="Business-to-business around gedit and libgedit">B2B Services</a>
+    </li>
+  </ul>
+</nav>
+
+<main>
+<h2>B2B Services</h2>
+
+<p>
+  Several
+  <a href="https://en.wikipedia.org/wiki/Business-to-business" target="_blank">business-to-business</a>
+  services are possible around gedit:
+</p>
+<ul>
+  <li>
+    Development of a new plugin.
+  </li>
+  <li>
+    Development of a new text editor or Integrated Development Environment (IDE)
+    based on the libgedit.
+  </li>
+  <li>
+    Code maintenance.
+  </li>
+  <li>
+    Training.
+  </li>
+  <li>
+    Support.
+  </li>
+  <li>
+    Creation of Long-Term Support (LTS) versions.
+  </li>
+  <li>
+    Developer Experience (DX) guidance.
+  </li>
+  <li>
+    […] Come with your own ideas to collaborate with the gedit project.
+  </li>
+</ul>
+
+<h2>Target audience</h2>
+<ul>
+  <li>
+    Operating System / Linux distributions: for your installed-by-default text
+    editor.
+  </li>
+  <li>
+    GTK-based desktop environments: to maintain a text editor or IDE, and to
+    adhere to your Human Interface Guidelines (HIG).
+  </li>
+  <li>
+    Scientific sector: to build developer tools.
+  </li>
+  <li>
+    Education sector: to build easy-to-learn developer tools.
+  </li>
+  <li>
+    New programming languages / development platforms: you're designing and
+    implementing a new programming language, and you need developer tools for
+    your users.
+  </li>
+  <li>
+    Older programming languages users: you're a big organization and you have a
+    lot of legacy code. You want better developer tools to be more productive.
+  </li>
+  <li>
+    Markup or domain-specific languages: to better promote your language, you
+    would like first-class support for it.
+  </li>
+</ul>
+
+<h2>The libgedit shared libraries</h2>
+<p>
+  gedit is not just a general-purpose text editor application, there is a
+  “libgedit” underneath!
+</p>
+<p>
+  A lot of gedit features are implemented as re-usable code, as a set of shared
+  libraries. So new apps - text editors and IDEs alike - can be built on top.
+  There is an ongoing effort from the gedit project to make more code re-usable.
+</p>
+<p>
+  An example of an IDE based on the libgedit is
+  <a href="https://gitlab.gnome.org/World/gedit/enter-tex" target="_blank">Enter TeX</a>.
+</p>
+<p>
+  The libgedit is in turn based on the very flexible
+  <a href="https://gtk.org/" target="_blank">GTK graphical toolkit</a>.
+</p>
+
+<h3>GTK 3 or GTK 4</h3>
+<p>
+  The libgedit currently targets GTK&nbsp;3. If you want to develop with
+  GTK&nbsp;4, there is the
+  <a href="https://gitlab.gnome.org/GNOME/gtksourceview" target="_blank">GtkSourceView</a>
+  library (but it doesn't contain all the libgedit features). Another
+  possibility is to first port the libgedit to GTK&nbsp;4.
+</p>
+
+<h2>The plugin system</h2>
+<p>
+  gedit has a powerful plugin system mechanism, to extend the application. You
+  can leverage it for prototyping additional features, or as the final solution
+  that requires less efforts than creating a new specialized text editor.
+</p>
+<p>
+  You can also combine the best of both approaches:
+</p>
+<ul>
+  <li>
+    First implement a feature that is based on libgedit.
+  </li>
+  <li>
+    Then wrap your feature in a gedit plugin so it can readily be used.
+  </li>
+  <li>
+    Finally, as an option, create a custom text editor app, re-using the same
+    implementation of your feature(s), integrating everything well together.
+  </li>
+</ul>
+
+<h2>Other developer tools</h2>
+<p>
+  The text editor part is essential, it is the central feature of an IDE. But
+  other developer tools can be developed as well.
+</p>
+<p>
+  For instance,
+  <a href="https://github.com/gdev-technology/devhelp" target="_blank">Devhelp</a>
+  can be used for browsing and searching API documentation. Almost all its code
+  is re-usable; like for gedit, there is a libdevhelp toolkit under the hood.
+</p>
+
+<h2>Advice to not start from scratch</h2>
+<p>
+  A little advice: please don't create a new text editor or IDE from scratch,
+  base your work on existing, high-level libraries like the libgedit. Even if it
+  looks simple on paper, developing a feature-full text editor <em>is</em> a lot
+  of work.
+</p>
+
+<h2>Use the libgedit from your preferred programming language</h2>
+<p>
+  libgedit and GTK can be used from a wide range of programming languages, and
+  the support for additional languages can be implemented too. This is thanks to
+  GObject Introspection. See the list of
+  <a href="https://gtk.org/docs/language-bindings/" target="_blank">language bindings</a>
+  for the GTK project.
+</p>
+
+<h2>Open-source or proprietary software</h2>
+<p>
+  libgedit and GTK are licensed under the
+  <a href="https://www.gnu.org/licenses/licenses.html" target="_blank">GNU Lesser General Public License</a>
+  (LGPL), which allows to develop proprietary software on top.
+</p>
+<p>
+  gedit plugins need to be distributed as free/<em>libre</em> software, under
+  the GPL license.
+</p>
+
+<h2>Who to collaborate with</h2>
+<ul>
+  <li>
+    <a href="https://wilmet-software.be/" target="_blank">Sébastien Wilmet</a>,
+    the current maintainer and main developer of gedit and libgedit.
+  </li>
+  <li>
+    <em>You?</em> If you're or work for a consultancy company specialized in
+    GNOME, GLib or GTK, and want to be part of this project, don't hesitate to
+    get in touch!
+  </li>
+</ul>
+</main>
+</div>
+
+<footer>
+  <p>Copyright &copy; 1998-2026, The gedit team</p>
+</footer>
+</body>
+</html>
