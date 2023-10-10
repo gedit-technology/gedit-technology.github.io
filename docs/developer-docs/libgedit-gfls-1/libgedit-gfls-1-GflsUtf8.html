@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GflsUtf8: libgedit-gfls 1 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libgedit-gfls 1 Reference Manual">
+<link rel="up" href="misc.html" title="Misc">
+<link rel="prev" href="GflsUnsavedDocumentTitles.html" title="GflsUnsavedDocumentTitles">
+<link rel="next" href="libgedit-gfls-1-GflsUtils.html" title="GflsUtils">
+<meta name="generator" content="GTK-Doc V1.37.0 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgedit-gfls-1-GflsUtf8.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="misc.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GflsUnsavedDocumentTitles.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgedit-gfls-1-GflsUtils.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgedit-gfls-1-GflsUtf8"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgedit-gfls-1-GflsUtf8.top_of_page"></a>GflsUtf8</span></h2>
+<p>GflsUtf8 — Functions for UTF-8 strings</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgedit-gfls-1-GflsUtf8.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgedit-gfls-1-GflsUtf8.html#gfls-utf8-find-very-long-line" title="gfls_utf8_find_very_long_line ()">gfls_utf8_find_very_long_line</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GflsValidatedString.html" title="GflsValidatedString"><span class="returnvalue">GflsValidatedString</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgedit-gfls-1-GflsUtf8.html#gfls-utf8-validate" title="gfls_utf8_validate ()">gfls_utf8_validate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgedit-gfls-1-GflsUtf8.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gfls/gfls.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgedit-gfls-1-GflsUtf8.description"></a><h2>Description</h2>
+<p>Additional functions for UTF-8 strings, to complement what is provided by
+GLib.</p>
+</div>
+<div class="refsect1">
+<a name="libgedit-gfls-1-GflsUtf8.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gfls-utf8-find-very-long-line"></a><h3>gfls_utf8_find_very_long_line ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gfls_utf8_find_very_long_line (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *str</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> max_n_bytes_per_line</code></em>);</pre>
+<p>Finds if a line in <em class="parameter"><code>str</code></em>
+ exceeds <em class="parameter"><code>max_n_bytes_per_line</code></em>
+.</p>
+<p>For performance reasons, <em class="parameter"><code>str</code></em>
+ is not checked whether it is a valid UTF-8
+string. So you must call for example <a href="/usr/share/gtk-doc/html/glib/glib-Unicode-Manipulation.html#g-utf8-validate"><code class="function">g_utf8_validate()</code></a> beforehand.</p>
+<div class="refsect3">
+<a name="gfls-utf8-find-very-long-line.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>a UTF-8 nul-terminated string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_n_bytes_per_line</p></td>
+<td class="parameter_description"><p>the maximum number of bytes per line, without counting
+the newline character(s).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gfls-utf8-find-very-long-line.returns"></a><h4>Returns</h4>
+<p> a pointer to the beginning of the first very long line found, or
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0-3.html#api-index-0.3">0.3</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gfls-utf8-validate"></a><h3>gfls_utf8_validate ()</h3>
+<pre class="programlisting"><a class="link" href="GflsValidatedString.html" title="GflsValidatedString"><span class="returnvalue">GflsValidatedString</span></a> *
+gfls_utf8_validate (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GBytes"><span class="type">GBytes</span></a> *bytes</code></em>);</pre>
+<p>Validates <em class="parameter"><code>bytes</code></em>
+. The invalid bytes will be escaped with
+<a class="link" href="libgedit-gfls-1-GflsUtils.html#gfls-utils-bytes-to-hex-representation" title="gfls_utils_bytes_to_hex_representation ()"><code class="function">gfls_utils_bytes_to_hex_representation()</code></a> and will be located in separate
+(invalid) <a class="link" href="GflsValidatedStringChunk.html" title="GflsValidatedStringChunk"><span class="type">GflsValidatedStringChunk</span></a>'s.</p>
+<p>The format of the input <em class="parameter"><code>bytes</code></em>
+ is important: the data contained in <em class="parameter"><code>bytes</code></em>
+
+must always be nul-terminated, but this must not be included in the <a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GBytes"><span class="type">GBytes</span></a>
+length. (The reason is to accommodate the convention of
+<a class="link" href="GflsValidatedStringChunk.html" title="GflsValidatedStringChunk"><span class="type">GflsValidatedStringChunk</span></a>, to avoid a copy if the whole <em class="parameter"><code>bytes</code></em>
+ is valid).</p>
+<p>The returned <a class="link" href="GflsValidatedString.html" title="GflsValidatedString"><span class="type">GflsValidatedString</span></a> has already been simplified; see
+<a class="link" href="libgedit-gfls-1-GflsValidatedStringBuilder.html#gfls-validated-string-builder-simplify" title="gfls_validated_string_builder_simplify ()"><code class="function">gfls_validated_string_builder_simplify()</code></a>.</p>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
+<div class="refsect3">
+<a name="gfls-utf8-validate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bytes</p></td>
+<td class="parameter_description"><p>a nul-terminated <a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GBytes"><span class="type">GBytes</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gfls-utf8-validate.returns"></a><h4>Returns</h4>
+<p>a new <a class="link" href="GflsValidatedString.html" title="GflsValidatedString"><span class="type">GflsValidatedString</span></a>, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if
+<em class="parameter"><code>bytes</code></em>
+is empty. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0-5.html#api-index-0.5">0.5</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.37.0</div>
+</body>
+</html>

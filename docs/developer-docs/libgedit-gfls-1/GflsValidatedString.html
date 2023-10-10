@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GflsValidatedString: libgedit-gfls 1 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libgedit-gfls 1 Reference Manual">
+<link rel="up" href="data-structures.html" title="Data Structures">
+<link rel="prev" href="libgedit-gfls-1-GflsByteArray.html" title="GflsByteArray">
+<link rel="next" href="libgedit-gfls-1-GflsValidatedStringBuilder.html" title="GflsValidatedStringBuilder">
+<meta name="generator" content="GTK-Doc V1.37.0 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GflsValidatedString.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GflsValidatedString.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="data-structures.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgedit-gfls-1-GflsByteArray.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgedit-gfls-1-GflsValidatedStringBuilder.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GflsValidatedString"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GflsValidatedString.top_of_page"></a>GflsValidatedString</span></h2>
+<p>GflsValidatedString — A string after a pass of validation</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GflsValidatedString.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="function_type">
+<a class="link" href="GflsValidatedStringChunk.html" title="GflsValidatedStringChunk"><span class="returnvalue">GflsValidatedStringChunk</span></a> **
+</td>
+<td class="function_name">
+<a class="link" href="GflsValidatedString.html#gfls-validated-string-get-chunks" title="gfls_validated_string_get_chunks ()">gfls_validated_string_get_chunks</a> <span class="c_punctuation">()</span>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GflsValidatedString.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GflsValidatedString.html#GflsValidatedString-struct" title="struct GflsValidatedString">GflsValidatedString</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GflsValidatedString.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> GflsValidatedString
+</pre>
+</div>
+<div class="refsect1">
+<a name="GflsValidatedString.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gfls/gfls.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GflsValidatedString.description"></a><h2>Description</h2>
+<p>A string after a pass (or several passes) of validation.</p>
+<p>The use-case for <a class="link" href="GflsValidatedString.html" title="GflsValidatedString"><span class="type">GflsValidatedString</span></a> is when you have raw data that must be
+validated before being used elsewhere (for example, to insert it into a
+<a href="/usr/share/gtk-doc/html/gtk3/GtkTextBuffer.html#GtkTextBuffer-struct"><span class="type">GtkTextBuffer</span></a>). The initially invalid regions in the data have been made
+valid and are marked as such by having separate <a class="link" href="GflsValidatedStringChunk.html" title="GflsValidatedStringChunk"><span class="type">GflsValidatedStringChunk</span></a>'s.
+See <a class="link" href="GflsValidatedStringChunk.html#gfls-validated-string-chunk-get-valid" title="gfls_validated_string_chunk_get_valid ()"><code class="function">gfls_validated_string_chunk_get_valid()</code></a>.</p>
+<p>Each chunk is also nul-terminated.</p>
+</div>
+<div class="refsect1">
+<a name="GflsValidatedString.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gfls-validated-string-get-chunks"></a><h3>gfls_validated_string_get_chunks ()</h3>
+<pre class="programlisting"><a class="link" href="GflsValidatedStringChunk.html" title="GflsValidatedStringChunk"><span class="returnvalue">GflsValidatedStringChunk</span></a> **
+gfls_validated_string_get_chunks (<em class="parameter"><code><a class="link" href="GflsValidatedString.html" title="GflsValidatedString"><span class="type">GflsValidatedString</span></a> *validated_string</code></em>);</pre>
+<div class="refsect3">
+<a name="gfls-validated-string-get-chunks.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>validated_string</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GflsValidatedString.html" title="GflsValidatedString"><span class="type">GflsValidatedString</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gfls-validated-string-get-chunks.returns"></a><h4>Returns</h4>
+<p>the chunks. </p>
+<p><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>][<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>][<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> zero-terminated=1]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0-5.html#api-index-0.5">0.5</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GflsValidatedString.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GflsValidatedString-struct"></a><h3>struct GflsValidatedString</h3>
+<pre class="programlisting">struct GflsValidatedString;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.37.0</div>
+</body>
+</html>

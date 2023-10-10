@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GflsUtf8AutoConverter: libgedit-gfls 1 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libgedit-gfls 1 Reference Manual">
+<link rel="up" href="character-encoding-conversion.html" title="Character Encoding Conversion">
+<link rel="prev" href="libgedit-gfls-1-GflsIconv.html" title="GflsIconv">
+<link rel="next" href="misc.html" title="Misc">
+<meta name="generator" content="GTK-Doc V1.37.0 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgedit-gfls-1-GflsUtf8AutoConverter.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="character-encoding-conversion.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgedit-gfls-1-GflsIconv.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="misc.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgedit-gfls-1-GflsUtf8AutoConverter"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgedit-gfls-1-GflsUtf8AutoConverter.top_of_page"></a>GflsUtf8AutoConverter</span></h2>
+<p>GflsUtf8AutoConverter — Encoding auto-detection and conversion to UTF-8</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgedit-gfls-1-GflsUtf8AutoConverter.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="libgedit-gfls-1-GflsUtf8AutoConverter.html#GflsUtf8AutoConverter" title="GflsUtf8AutoConverter"><span class="returnvalue">GflsUtf8AutoConverter</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgedit-gfls-1-GflsUtf8AutoConverter.html#gfls-utf8-auto-converter-new" title="gfls_utf8_auto_converter_new ()">gfls_utf8_auto_converter_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgedit-gfls-1-GflsUtf8AutoConverter.html#gfls-utf8-auto-converter-free" title="gfls_utf8_auto_converter_free ()">gfls_utf8_auto_converter_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GflsValidatedString.html" title="GflsValidatedString"><span class="returnvalue">GflsValidatedString</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgedit-gfls-1-GflsUtf8AutoConverter.html#gfls-utf8-auto-converter-get-validated-string" title="gfls_utf8_auto_converter_get_validated_string ()">gfls_utf8_auto_converter_get_validated_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a class="link" href="GflsEncoding.html" title="GflsEncoding"><span class="returnvalue">GflsEncoding</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgedit-gfls-1-GflsUtf8AutoConverter.html#gfls-utf8-auto-converter-get-chosen-encoding" title="gfls_utf8_auto_converter_get_chosen_encoding ()">gfls_utf8_auto_converter_get_chosen_encoding</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgedit-gfls-1-GflsUtf8AutoConverter.html#gfls-utf8-auto-converter-get-lossy-conversion" title="gfls_utf8_auto_converter_get_lossy_conversion ()">gfls_utf8_auto_converter_get_lossy_conversion</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgedit-gfls-1-GflsUtf8AutoConverter.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libgedit-gfls-1-GflsUtf8AutoConverter.html#GflsUtf8AutoConverter" title="GflsUtf8AutoConverter">GflsUtf8AutoConverter</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgedit-gfls-1-GflsUtf8AutoConverter.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gfls/gfls.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgedit-gfls-1-GflsUtf8AutoConverter.description"></a><h2>Description</h2>
+<p>Work-in-progress.</p>
+</div>
+<div class="refsect1">
+<a name="libgedit-gfls-1-GflsUtf8AutoConverter.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gfls-utf8-auto-converter-new"></a><h3>gfls_utf8_auto_converter_new ()</h3>
+<pre class="programlisting"><a class="link" href="libgedit-gfls-1-GflsUtf8AutoConverter.html#GflsUtf8AutoConverter" title="GflsUtf8AutoConverter"><span class="returnvalue">GflsUtf8AutoConverter</span></a> *
+gfls_utf8_auto_converter_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GBytes"><span class="type">GBytes</span></a> *input_bytes</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *candidate_encodings</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> allow_invalid_bytes</code></em>);</pre>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
+<div class="refsect3">
+<a name="gfls-utf8-auto-converter-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>input_bytes</p></td>
+<td class="parameter_description"><p>the input data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>candidate_encodings</p></td>
+<td class="parameter_description"><p>a list of <a class="link" href="GflsEncoding.html" title="GflsEncoding"><span class="type">GflsEncoding</span></a>'s. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GflsEncoding]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>allow_invalid_bytes</p></td>
+<td class="parameter_description"><p>whether to allow invalid bytes during the conversion.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gfls-utf8-auto-converter-new.returns"></a><h4>Returns</h4>
+<p>a new <a class="link" href="libgedit-gfls-1-GflsUtf8AutoConverter.html#GflsUtf8AutoConverter" title="GflsUtf8AutoConverter"><span class="type">GflsUtf8AutoConverter</span></a>. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0-5.html#api-index-0.5">0.5</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gfls-utf8-auto-converter-free"></a><h3>gfls_utf8_auto_converter_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gfls_utf8_auto_converter_free (<em class="parameter"><code><a class="link" href="libgedit-gfls-1-GflsUtf8AutoConverter.html#GflsUtf8AutoConverter" title="GflsUtf8AutoConverter"><span class="type">GflsUtf8AutoConverter</span></a> *auto_converter</code></em>);</pre>
+<p>Frees <em class="parameter"><code>auto_converter</code></em>
+.</p>
+<div class="refsect3">
+<a name="gfls-utf8-auto-converter-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>auto_converter</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libgedit-gfls-1-GflsUtf8AutoConverter.html#GflsUtf8AutoConverter" title="GflsUtf8AutoConverter"><span class="type">GflsUtf8AutoConverter</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0-5.html#api-index-0.5">0.5</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gfls-utf8-auto-converter-get-validated-string"></a><h3>gfls_utf8_auto_converter_get_validated_string ()</h3>
+<pre class="programlisting"><a class="link" href="GflsValidatedString.html" title="GflsValidatedString"><span class="returnvalue">GflsValidatedString</span></a> *
+gfls_utf8_auto_converter_get_validated_string
+                               (<em class="parameter"><code><a class="link" href="libgedit-gfls-1-GflsUtf8AutoConverter.html#GflsUtf8AutoConverter" title="GflsUtf8AutoConverter"><span class="type">GflsUtf8AutoConverter</span></a> *auto_converter</code></em>);</pre>
+<p>Returns the converted data.</p>
+<p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> can be returned if invalid bytes are disallowed.</p>
+<div class="refsect3">
+<a name="gfls-utf8-auto-converter-get-validated-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>auto_converter</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libgedit-gfls-1-GflsUtf8AutoConverter.html#GflsUtf8AutoConverter" title="GflsUtf8AutoConverter"><span class="type">GflsUtf8AutoConverter</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gfls-utf8-auto-converter-get-validated-string.returns"></a><h4>Returns</h4>
+<p>the converted data. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0-5.html#api-index-0.5">0.5</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gfls-utf8-auto-converter-get-chosen-encoding"></a><h3>gfls_utf8_auto_converter_get_chosen_encoding ()</h3>
+<pre class="programlisting">const <a class="link" href="GflsEncoding.html" title="GflsEncoding"><span class="returnvalue">GflsEncoding</span></a> *
+gfls_utf8_auto_converter_get_chosen_encoding
+                               (<em class="parameter"><code><a class="link" href="libgedit-gfls-1-GflsUtf8AutoConverter.html#GflsUtf8AutoConverter" title="GflsUtf8AutoConverter"><span class="type">GflsUtf8AutoConverter</span></a> *auto_converter</code></em>);</pre>
+<p>Returns the auto-detected <a class="link" href="GflsEncoding.html" title="GflsEncoding"><span class="type">GflsEncoding</span></a>.</p>
+<p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> can be returned if invalid bytes are disallowed.</p>
+<div class="refsect3">
+<a name="gfls-utf8-auto-converter-get-chosen-encoding.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>auto_converter</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libgedit-gfls-1-GflsUtf8AutoConverter.html#GflsUtf8AutoConverter" title="GflsUtf8AutoConverter"><span class="type">GflsUtf8AutoConverter</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gfls-utf8-auto-converter-get-chosen-encoding.returns"></a><h4>Returns</h4>
+<p>the auto-detected <a class="link" href="GflsEncoding.html" title="GflsEncoding"><span class="type">GflsEncoding</span></a>. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0-5.html#api-index-0.5">0.5</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gfls-utf8-auto-converter-get-lossy-conversion"></a><h3>gfls_utf8_auto_converter_get_lossy_conversion ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gfls_utf8_auto_converter_get_lossy_conversion
+                               (<em class="parameter"><code><a class="link" href="libgedit-gfls-1-GflsUtf8AutoConverter.html#GflsUtf8AutoConverter" title="GflsUtf8AutoConverter"><span class="type">GflsUtf8AutoConverter</span></a> *auto_converter</code></em>);</pre>
+<p>Returns whether the conversion was lossy for the result as returned by
+<a class="link" href="libgedit-gfls-1-GflsUtf8AutoConverter.html#gfls-utf8-auto-converter-get-validated-string" title="gfls_utf8_auto_converter_get_validated_string ()"><code class="function">gfls_utf8_auto_converter_get_validated_string()</code></a>.</p>
+<div class="refsect3">
+<a name="gfls-utf8-auto-converter-get-lossy-conversion.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>auto_converter</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libgedit-gfls-1-GflsUtf8AutoConverter.html#GflsUtf8AutoConverter" title="GflsUtf8AutoConverter"><span class="type">GflsUtf8AutoConverter</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gfls-utf8-auto-converter-get-lossy-conversion.returns"></a><h4>Returns</h4>
+<p> whether <a class="link" href="libgedit-gfls-1-GflsIconv.html#GFLS-ICONV-RESULT-LOSSY-CONVERSION:CAPS"><code class="literal">GFLS_ICONV_RESULT_LOSSY_CONVERSION</code></a> was encountered.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0-5.html#api-index-0.5">0.5</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgedit-gfls-1-GflsUtf8AutoConverter.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GflsUtf8AutoConverter"></a><h3>GflsUtf8AutoConverter</h3>
+<pre class="programlisting">typedef struct _GflsUtf8AutoConverter GflsUtf8AutoConverter;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.37.0</div>
+</body>
+</html>

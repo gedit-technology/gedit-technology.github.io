@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Spell-check your document</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="highlight.pack.js"></script><script>
+document.addEventListener('DOMContentLoaded', function() {
+  var matches = document.querySelectorAll('code.syntax')
+  for (var i = 0; i < matches.length; i++) {
+    hljs.highlightBlock(matches[i]);
+  }
+}, false);</script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><main><div class="page">
+<header><div class="inner pagewide"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="gedit">gedit</a> › <a class="trail" href="index.html#gedit-plugins" title="gedit plugins">gedit plugins</a> » <a class="trail" href="gedit-plugin-guide.html" title="Configure and use gedit plugins">Configure and use gedit plugins</a> › <a class="trail" href="gedit-plugin-guide.html#gedit-default-plugins" title="Default gedit Plugins">Default gedit Plugins</a> » </div></div></div></header><article><div class="hgroup pagewide"><h1 class="title"><span class="title">Spell-check your document</span></h1></div>
+<div class="region">
+<div class="contents pagewide"></div>
+<section id=""><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Enable the Spell Checker plugin</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      First, you need to enable the plugin:
+    </p>
+<div class="steps"><div class="inner"><div class="region"><ol class="steps">
+<li class="steps"><p class="p">
+        Go to the
+        <span class="guiseq"><span class="gui">Menu</span> ▸ <span class="gui">Preferences</span> ▸ <span class="gui">Plugins</span></span>.
+      </p></li>
+<li class="steps"><p class="p">
+        Select <span class="gui">Spell Checker</span>.
+      </p></li>
+</ol></div></div></div>
+</div></div>
+</div></section><section id=""><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Configuring the default settings</span></h2></div>
+<div class="region"><div class="contents pagewide"><p class="p">
+      You can configure the default spell-checking settings for new documents by
+      going to the
+      <span class="guiseq"><span class="gui">Menu</span> ▸ <span class="gui">Preferences</span> ▸ <span class="gui">Plugins</span> ▸ <span class="gui">Spell Checker</span> ▸ <span class="gui">Preferences</span></span>.
+    </p></div></div>
+</div></section><section id=""><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Using the spell-checker</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      To use the spell-checker, go to the
+      <span class="guiseq"><span class="gui">Menu</span> ▸ <span class="gui">Tools</span></span>.
+    </p>
+<p class="p">
+      If you activate the <span class="gui">Highlight Misspelled Words</span>
+      option, the misspelled words will be underlined in red in the document.
+      A right click on a misspelled word will show proposals.
+    </p>
+<p class="p">
+      The settings are remembered on a file-by-file basis: when you reopen a
+      document, the chosen language is restored, as well as whether the
+      misspelled words are highlighted in the text area.
+    </p>
+</div></div>
+</div></section><section id=""><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Dictionaries</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">
+      <span class="link"><a href="https://gitlab.gnome.org/GNOME/gspell" title="https://gitlab.gnome.org/GNOME/gspell">gspell</a></span>
+      is used for the spell-checking in <span class="app">gedit</span>. gspell uses
+      <span class="link"><a href="https://rrthomas.github.io/enchant/" title="https://rrthomas.github.io/enchant/">Enchant</a></span>,
+      which in turn supports several backends such as Hunspell or Aspell for the
+      dictionaries. The Aspell backend doesn't work well with gspell, Hunspell
+      is preferred. If dictionaries for both Aspell and Hunspell are installed
+      for the same language, by default Enchant prefers the Hunspell one.
+    </p>
+<p class="p">
+      If your language is not listed in <span class="app">gedit</span>, install a dictionary
+      for one of the supported Enchant backends (for most languages the best
+      choice is to install an Hunspell dictionary).
+    </p>
+</div></div>
+</div></section><section class="links" role="navigation"><div class="inner">
+<div class="hgroup pagewide"></div>
+<div class="contents pagewide"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="gedit-plugin-guide.html#gedit-default-plugins" title="Default gedit Plugins">Default gedit Plugins</a></li></ul></div>
+</div></div></div>
+</div></section>
+</div>
+<div class="clear"></div></article><footer><div class="inner pagewide"></div></footer>
+</div></main></body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GflsUtils: libgedit-gfls 1 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libgedit-gfls 1 Reference Manual">
+<link rel="up" href="misc.html" title="Misc">
+<link rel="prev" href="libgedit-gfls-1-GflsUtf8.html" title="GflsUtf8">
+<link rel="next" href="annexes.html" title="Part II. Annexes">
+<meta name="generator" content="GTK-Doc V1.37.0 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgedit-gfls-1-GflsUtils.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="misc.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgedit-gfls-1-GflsUtf8.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="annexes.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgedit-gfls-1-GflsUtils"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgedit-gfls-1-GflsUtils.top_of_page"></a>GflsUtils</span></h2>
+<p>GflsUtils — Utility functions</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgedit-gfls-1-GflsUtils.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgedit-gfls-1-GflsUtils.html#gfls-utils-bytes-to-hex-representation" title="gfls_utils_bytes_to_hex_representation ()">gfls_utils_bytes_to_hex_representation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgedit-gfls-1-GflsUtils.html#gfls-utils-find-nearest-power-of-two" title="gfls_utils_find_nearest_power_of_two ()">gfls_utils_find_nearest_power_of_two</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgedit-gfls-1-GflsUtils.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gfls/gfls.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgedit-gfls-1-GflsUtils.description"></a><h2>Description</h2>
+<p>Utility functions.</p>
+</div>
+<div class="refsect1">
+<a name="libgedit-gfls-1-GflsUtils.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gfls-utils-bytes-to-hex-representation"></a><h3>gfls_utils_bytes_to_hex_representation ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gfls_utils_bytes_to_hex_representation
+                               (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *bytes</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> n_bytes</code></em>);</pre>
+<p>Returns an ASCII string with each byte taking three characters: backslash
+followed by the two hex digits.</p>
+<p>A use-case is for inserting invalid characters into a GTK widget or anything
+else that accepts only valid UTF-8 strings.</p>
+<div class="refsect3">
+<a name="gfls-utils-bytes-to-hex-representation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bytes</p></td>
+<td class="parameter_description"><p>the bytes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n_bytes</p></td>
+<td class="parameter_description"><p>the number of bytes.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gfls-utils-bytes-to-hex-representation.returns"></a><h4>Returns</h4>
+<p>an hexadecimal string representation of <em class="parameter"><code>bytes</code></em>
+. The
+string is nul-terminated. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0-5.html#api-index-0.5">0.5</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gfls-utils-find-nearest-power-of-two"></a><h3>gfls_utils_find_nearest_power_of_two ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
+gfls_utils_find_nearest_power_of_two (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> number</code></em>);</pre>
+<p>One use-case is for memory (re-)allocations.</p>
+<div class="refsect3">
+<a name="gfls-utils-find-nearest-power-of-two.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>number</p></td>
+<td class="parameter_description"><p>a number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gfls-utils-find-nearest-power-of-two.returns"></a><h4>Returns</h4>
+<p> the smallest power of 2 greater than or equal to <em class="parameter"><code>number</code></em>
+, or 0 if
+such power does not fit in a gsize.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0-5.html#api-index-0.5">0.5</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.37.0</div>
+</body>
+</html>
