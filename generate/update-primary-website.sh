@@ -1,7 +1,7 @@
 #!/bin/sh
 
-src='../gedit-technology-website/src/'
-dest='docs/'
+src='../../gedit-technology-website/src/'
+dest='../docs/'
 
 ./check-directory-content.sh "${src}" || exit 1
 
