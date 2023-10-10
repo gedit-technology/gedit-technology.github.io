@@ -126,6 +126,7 @@ main (int    argc,
 	list_of_files = g_list_sort (list_of_files, (GCompareFunc) g_utf8_collate);
 
 	g_print ("<ul>\n");
+	g_print ("  <li><a href=\"../\">Parent Directory</a></li>\n");
 	for (l = list_of_dirs; l != NULL; l = l->next)
 	{
 		g_print ("  <li><a href=\"%s/\">%s/</a></li>\n",
