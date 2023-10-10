@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Snippets</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="highlight.pack.js"></script><script>
+document.addEventListener('DOMContentLoaded', function() {
+  var matches = document.querySelectorAll('code.syntax')
+  for (var i = 0; i < matches.length; i++) {
+    hljs.highlightBlock(matches[i]);
+  }
+}, false);</script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><main><div class="page">
+<header><div class="inner pagewide"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="gedit">gedit</a> › <a class="trail" href="index.html#gedit-plugins" title="gedit plugins">gedit plugins</a> » <a class="trail" href="gedit-plugin-guide.html" title="Configure and use gedit plugins">Configure and use gedit plugins</a> › <a class="trail" href="gedit-plugin-guide.html#gedit-default-plugins" title="Default gedit Plugins">Default gedit Plugins</a> » </div></div></div></header><article><div class="hgroup pagewide"><h1 class="title"><span class="title">Snippets</span></h1></div>
+<div class="region">
+<div class="contents pagewide"><p class="p"><span class="app">Snippets</span> provide a convenient way of inserting repetitive
+  portions of code into your files. For example, an HTML snippet for the
+  <span class="code">&lt;img&gt;</span> tag would insert the opening and closing
+  portions of the tag, as well as fixed places where you can enter image
+  attributes. This can make writing code easier and faster.</p></div>
+<section id="enable-snippets"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Enable Snippets Plugin</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">To enable the <span class="gui">Snippets</span> plugin:</p>
+<div class="steps"><div class="inner"><div class="region"><ol class="steps">
+<li class="steps"><p class="p">Select <span class="guiseq"><span class="gui">gedit</span> ▸ <span class="gui">Preferences</span> ▸ <span class="gui">Plugins</span></span>.</p></li>
+<li class="steps"><p class="p">Select <span class="gui">Snippets</span> to enable the
+        plugin.</p></li>
+</ol></div></div></div>
+</div></div>
+</div></section><section id="browse-snippets"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Browse Snippets</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">To browse available snippets:</p>
+<div class="steps"><div class="inner"><div class="region"><ol class="steps">
+<li class="steps">
+<p class="p">Select <span class="guiseq"><span class="gui">Tools</span> ▸ <span class="gui">Manage Snippets</span></span>.</p>
+<div class="note note-important" title="Important">
+<svg height="24" width="24" version="1.1">
+ <path class="yelp-svg-fill" d="m12.5 2a9.5 9.5 0 0 0 -9.5 9.5 9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5 -9.5 9.5 9.5 0 0 0 -9.5 -9.5zm0 3a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1 -1.5 1.5 1.5 1.5 0 0 1 -1.5 -1.5v-6a1.5 1.5 0 0 1 1.5 -1.5zm0 10.5a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1 -1.5 1.5 1.5 1.5 0 0 1 -1.5 -1.5 1.5 1.5 0 0 1 1.5 -1.5z"></path>
+</svg><div class="inner"><div class="region"><div class="contents">
+<p class="p">Make sure the syntax is set appropriately. The status bar at the
+          bottom of the <span class="app">gedit</span> window will show the current language
+          setting. This language setting is what allows gedit to insert the
+          proper snippets. <span class="app">Gedit</span> will normally detect the language or
+          syntax of the file that you're using, but sometimes you may need to
+          set it.</p>
+<div class="figure"><div class="inner">
+<a href="#" class="figure-zoom" data-zoom-in-title="View images at normal size" data-zoom-out-title="Scale images down"><svg width="10" height="10" class="figure-zoom-in"><rect x="0.5" y="0.5" width="9" height="9" class="yelp-svg-stroke" stroke-width="1" fill="none"></rect><rect x="0" y="5" width="5" height="5" class="yelp-svg-fill"></rect></svg><svg width="10" height="10" class="figure-zoom-out"><rect x="0.5" y="0.5" width="9" height="9" class="yelp-svg-stroke" stroke-width="1" fill="none"></rect><polygon points="0,0 10,0 10,10 5,10 5,5 10,5 0,5" class="yelp-svg-fill"></polygon></svg></a><div class="region">
+<div class="contents"><div class="media media-image"><div class="inner"><img src="figures/gedit-html-snippet.png" class="media media-block" alt=""></div></div></div>
+<div class="desc">In this example, the language is set to HTML.</div>
+</div>
+</div></div>
+</div></div></div>
+</div>
+</li>
+<li class="steps"><p class="p">Browse the snippets that are available for your language or
+        syntax.</p></li>
+</ol></div></div></div>
+</div></div>
+</div></section><section id="using-snippets"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Using Snippets</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">To insert a snippet into your current document:</p>
+<div class="steps"><div class="inner"><div class="region"><ol class="steps">
+<li class="steps"><p class="p">Type the desired snippet name anywhere in your current document.</p></li>
+<li class="steps"><p class="p">Press <span class="key"><kbd>Tab</kbd></span> to insert the snippet associated with the input
+        term.</p></li>
+</ol></div></div></div>
+</div></div>
+</div></section><section id="example-insert-snippet"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Snippet Example Usage</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">For example, if you have set the syntax to <span class="em">HTML</span>, type
+    <span class="code">head </span>, and press the <span class="key"><kbd>Tab</kbd></span> key. The text would have
+    auto completed into a snippet as:</p>
+<div class="code"><pre class="contents"><code>      &lt;head&gt;
+      &lt;meta http-equiv="Content-type" content="text/html; charset=utf-8" /&gt;
+      &lt;title&gt;Page Title&lt;/title&gt;
+      &lt;/head&gt;
+    </code></pre></div>
+</div></div>
+</div></section><section id="adding-snippets"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">Adding Snippets</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">You can add new Snippets that work either globally (that is, they are
+    language agnostic) or only in a particular syntax.</p>
+<div class="steps"><div class="inner"><div class="region"><ol class="steps">
+<li class="steps"><p class="p">Select <span class="guiseq"><span class="gui">Tools</span> ▸ <span class="gui">Manage Snippets</span></span>.</p></li>
+<li class="steps">
+<p class="p">From the <span class="gui">Manage Snippets</span> sidebar select the desired syntax
+        and click on the "+" button to list existing snippets for the selected
+        syntax.</p>
+<div class="note note-tip" title="Tip">
+<svg height="24" width="24" version="1.1">
+ <g>
+  <path class="yelp-svg-fill" style="color-rendering:auto;text-decoration-color:#000000;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;block-progression:tb;text-decoration-line:none;text-decoration-style:solid;image-rendering:auto;white-space:normal;text-indent:0;text-transform:none" d="m12 2c-3.8541 0-7 3.1459-7 7 0 1.823 0.4945 3.139 1.1641 4.133 0.6695 0.994 1.4328 1.671 2.039 2.471 0.0882 0.116 0.1749 0.656 0.2071 1.32 0.016 0.332 0.0133 0.68 0.1894 1.119 0.0881 0.22 0.2439 0.478 0.5059 0.672 0.2619 0.194 0.6028 0.285 0.8945 0.285h4c0.583 0 1.204-0.478 1.402-0.908 0.199-0.43 0.217-0.793 0.244-1.137 0.056-0.688 0.138-1.319 0.211-1.441 0.549-0.916 1.304-2.009 1.94-3.114 0.636-1.104 1.203-2.199 1.203-3.4 0-3.8541-3.146-7-7-7zm0 2c2.773 0 5 2.2267 5 5 0 0.456-0.359 1.401-0.936 2.402-0.111 0.195-0.246 0.399-0.369 0.598h-7.8825c-0.4871-0.728-0.8125-1.519-0.8125-3 0-2.7733 2.2267-5 5-5z"></path>
+  <path class="yelp-svg-fill" d="m9 20a0.5 0.5 0 0 0 -0.5 0.5 0.5 0.5 0 0 0 0.5 0.5h6a0.5 0.5 0 0 0 0.5 -0.5 0.5 0.5 0 0 0 -0.5 -0.5h-6zm0 2a0.5 0.5 0 0 0 -0.5 0.5 0.5 0.5 0 0 0 0.5 0.5h6a0.5 0.5 0 0 0 0.5 -0.5 0.5 0.5 0 0 0 -0.5 -0.5h-6z"></path>
+ </g>
+</svg><div class="inner"><div class="region"><div class="contents"><p class="p">To add a snippet that works globally (that is, when no particular
+          syntax or language has been set for the document), select
+          <span class="gui">Global</span> from the <span class="gui">Manage Snippets</span> sidebar.</p></div></div></div>
+</div>
+</li>
+<li class="steps"><p class="p">To add a new snippet, click on the "plus" icon in the
+        <span class="gui">Manage Snippets</span> sidebar.</p></li>
+<li class="steps"><p class="p">Input a name for the new snippet. The name of the snippet can be
+        different from the snippet you want to add.</p></li>
+<li class="steps">
+<p class="p">Under the <span class="gui">Activation</span> section, you must
+        input a term for the <span class="gui">Tab trigger:</span> textarea.
+        You will be using this term to insert your snippet.</p>
+<div class="note note-tip" title="Tip">
+<svg height="24" width="24" version="1.1">
+ <g>
+  <path class="yelp-svg-fill" style="color-rendering:auto;text-decoration-color:#000000;color:#000000;isolation:auto;mix-blend-mode:normal;shape-rendering:auto;solid-color:#000000;block-progression:tb;text-decoration-line:none;text-decoration-style:solid;image-rendering:auto;white-space:normal;text-indent:0;text-transform:none" d="m12 2c-3.8541 0-7 3.1459-7 7 0 1.823 0.4945 3.139 1.1641 4.133 0.6695 0.994 1.4328 1.671 2.039 2.471 0.0882 0.116 0.1749 0.656 0.2071 1.32 0.016 0.332 0.0133 0.68 0.1894 1.119 0.0881 0.22 0.2439 0.478 0.5059 0.672 0.2619 0.194 0.6028 0.285 0.8945 0.285h4c0.583 0 1.204-0.478 1.402-0.908 0.199-0.43 0.217-0.793 0.244-1.137 0.056-0.688 0.138-1.319 0.211-1.441 0.549-0.916 1.304-2.009 1.94-3.114 0.636-1.104 1.203-2.199 1.203-3.4 0-3.8541-3.146-7-7-7zm0 2c2.773 0 5 2.2267 5 5 0 0.456-0.359 1.401-0.936 2.402-0.111 0.195-0.246 0.399-0.369 0.598h-7.8825c-0.4871-0.728-0.8125-1.519-0.8125-3 0-2.7733 2.2267-5 5-5z"></path>
+  <path class="yelp-svg-fill" d="m9 20a0.5 0.5 0 0 0 -0.5 0.5 0.5 0.5 0 0 0 0.5 0.5h6a0.5 0.5 0 0 0 0.5 -0.5 0.5 0.5 0 0 0 -0.5 -0.5h-6zm0 2a0.5 0.5 0 0 0 -0.5 0.5 0.5 0.5 0 0 0 0.5 0.5h6a0.5 0.5 0 0 0 0.5 -0.5 0.5 0.5 0 0 0 -0.5 -0.5h-6z"></path>
+ </g>
+</svg><div class="inner"><div class="region"><div class="contents"><p class="p">If you wish to insert a snippet with a keyboard shortcut, then
+          click your mouse pointer on <span class="gui">Shortcut key:</span>
+          textarea and press the desired combination of keys. Once you have
+          pressed and released the keys, the keyboard shortcut will be set.</p></div></div></div>
+</div>
+</li>
+<li class="steps"><p class="p">Under the textarea for <span class="gui">Edit:</span>, input the
+        desired text for the snippet. You may use <span class="code">${n}</span> to indicate
+        variables, where <span class="em">n</span> is replaced with a number that
+        represents the numerical order of variables included.</p></li>
+</ol></div></div></div>
+</div></div>
+</div></section><section id="example-add-snippet"><div class="inner">
+<div class="hgroup pagewide"><h2 class="title"><span class="title">New Snippet Example</span></h2></div>
+<div class="region"><div class="contents pagewide">
+<p class="p">Consider you have created a snippet with the term <span class="var">greetings</span>
+    in <span class="gui">Tab trigger:</span>. The
+    <span class="gui">Edit:</span> textarea contains:</p>
+<div class="code"><pre class="contents"><code>      &lt;greetings&gt;Hello ${1:wonderful}${2:amazing} world!
+      &lt;/greetings&gt;
+    </code></pre></div>
+<p class="p">You can insert this snippet by typing <span class="var">greetings</span> in the
+    document and pressing the <span class="key"><kbd>Tab</kbd></span> key. The following text snippet
+    will be inserted:</p>
+<div class="code"><pre class="contents"><code>      &lt;greetings&gt;Hello wonderfulamazing world!&lt;/greetings&gt;
+    </code></pre></div>
+<p class="p">The words "wonderful" and "amazing" can be retained or deleted depending
+    on your choice of usage. To do so, press <span class="key"><kbd>Tab</kbd></span> to choose between
+    "wonderful" and "amazing" and press <span class="key"><kbd>Del</kbd></span> to delete the least
+    preferred option.</p>
+</div></div>
+</div></section><section class="links" role="navigation"><div class="inner">
+<div class="hgroup pagewide"></div>
+<div class="contents pagewide"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="gedit-plugin-guide.html#gedit-default-plugins" title="Default gedit Plugins">Default gedit Plugins</a></li></ul></div>
+</div></div></div>
+</div></section>
+</div>
+<div class="clear"></div></article><footer><div class="inner pagewide"></div></footer>
+</div></main></body>
+</html>
