@@ -7,5 +7,6 @@ dest='../docs/'
 
 # --archive equals -rlptgoD (keep only what's necessary).
 rsync -rlp --delete --force --progress --stats	\
+	--filter '- /developer-docs/'		\
 	--filter '- /user-manuals/'		\
 	"${src}" "${dest}"
