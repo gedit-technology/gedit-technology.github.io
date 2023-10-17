@@ -1,0 +1,768 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GspellChecker: gspell 1 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="gspell 1 Reference Manual">
+<link rel="up" href="core-classes.html" title="Core Classes">
+<link rel="prev" href="core-classes.html" title="Core Classes">
+<link rel="next" href="GspellLanguage.html" title="GspellLanguage">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GspellChecker.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GspellChecker.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GspellChecker.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GspellChecker.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="core-classes.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="core-classes.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GspellLanguage.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GspellChecker"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GspellChecker.top_of_page"></a>GspellChecker</span></h2>
+<p>GspellChecker — Spell checker</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GspellChecker.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="GspellChecker.html" title="GspellChecker"><span class="returnvalue">GspellChecker</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GspellChecker.html#gspell-checker-new" title="gspell_checker_new ()">gspell_checker_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="returnvalue">GspellLanguage</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GspellChecker.html#gspell-checker-get-language" title="gspell_checker_get_language ()">gspell_checker_get_language</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GspellChecker.html#gspell-checker-set-language" title="gspell_checker_set_language ()">gspell_checker_set_language</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GspellChecker.html#gspell-checker-check-word" title="gspell_checker_check_word ()">gspell_checker_check_word</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GspellChecker.html#gspell-checker-get-suggestions" title="gspell_checker_get_suggestions ()">gspell_checker_get_suggestions</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GspellChecker.html#gspell-checker-add-word-to-personal" title="gspell_checker_add_word_to_personal ()">gspell_checker_add_word_to_personal</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GspellChecker.html#gspell-checker-add-word-to-session" title="gspell_checker_add_word_to_session ()">gspell_checker_add_word_to_session</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GspellChecker.html#gspell-checker-clear-session" title="gspell_checker_clear_session ()">gspell_checker_clear_session</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GspellChecker.html#gspell-checker-set-correction" title="gspell_checker_set_correction ()">gspell_checker_set_correction</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">EnchantDict</span> *
+</td>
+<td class="function_name">
+<a class="link" href="GspellChecker.html#gspell-checker-get-enchant-dict" title="gspell_checker_get_enchant_dict ()">gspell_checker_get_enchant_dict</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GspellChecker.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type">
+<a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a> *</td>
+<td class="property_name"><a class="link" href="GspellChecker.html#GspellChecker--language" title="The “language” property">language</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GspellChecker.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GspellChecker.html#GspellChecker-session-cleared" title="The “session-cleared” signal">session-cleared</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GspellChecker.html#GspellChecker-word-added-to-personal" title="The “word-added-to-personal” signal">word-added-to-personal</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GspellChecker.html#GspellChecker-word-added-to-session" title="The “word-added-to-session” signal">word-added-to-session</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GspellChecker.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GspellChecker.html#GspellChecker-struct" title="GspellChecker">GspellChecker</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GspellChecker.html#GspellCheckerError" title="enum GspellCheckerError">GspellCheckerError</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="GspellChecker.html#GSPELL-CHECKER-ERROR:CAPS" title="GSPELL_CHECKER_ERROR">GSPELL_CHECKER_ERROR</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GspellChecker.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">╰──</span> GspellCheckerError
+    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> GspellChecker
+</pre>
+</div>
+<div class="refsect1">
+<a name="GspellChecker.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gspell/gspell.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GspellChecker.description"></a><h2>Description</h2>
+<p><a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a> is a spell checker.</p>
+<p>If the <a class="link" href="GspellChecker.html#GspellChecker--language" title="The “language” property"><span class="type">“language”</span></a> property is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, it means that no
+dictonaries are available, in which case the <a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a> is in a
+“disabled” (but allowed) state.</p>
+<p>gspell uses the <a class="ulink" href="https://abiword.github.io/enchant/" target="_top">Enchant</a> library. The
+use of Enchant is part of the gspell API, <a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a> exposes the
+EnchantDict with the <a class="link" href="GspellChecker.html#gspell-checker-get-enchant-dict" title="gspell_checker_get_enchant_dict ()"><code class="function">gspell_checker_get_enchant_dict()</code></a> function.</p>
+</div>
+<div class="refsect1">
+<a name="GspellChecker.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gspell-checker-new"></a><h3>gspell_checker_new ()</h3>
+<pre class="programlisting"><a class="link" href="GspellChecker.html" title="GspellChecker"><span class="returnvalue">GspellChecker</span></a> *
+gspell_checker_new (<em class="parameter"><code>const <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a> *language</code></em>);</pre>
+<p>Creates a new <a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a>. If <em class="parameter"><code>language</code></em>
+ is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, the default language is
+picked with <a class="link" href="GspellLanguage.html#gspell-language-get-default" title="gspell_language_get_default ()"><code class="function">gspell_language_get_default()</code></a>.</p>
+<div class="refsect3">
+<a name="gspell-checker-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>language</p></td>
+<td class="parameter_description"><p>the <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a> to use, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gspell-checker-new.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a> object.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-checker-get-language"></a><h3>gspell_checker_get_language ()</h3>
+<pre class="programlisting">const <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="returnvalue">GspellLanguage</span></a> *
+gspell_checker_get_language (<em class="parameter"><code><a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a> *checker</code></em>);</pre>
+<div class="refsect3">
+<a name="gspell-checker-get-language.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>checker</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gspell-checker-get-language.returns"></a><h4>Returns</h4>
+<p>the <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a> currently used, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+if no dictionaries are available. </p>
+<p><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-checker-set-language"></a><h3>gspell_checker_set_language ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gspell_checker_set_language (<em class="parameter"><code><a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a> *checker</code></em>,
+                             <em class="parameter"><code>const <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a> *language</code></em>);</pre>
+<p>Sets the language to use for the spell checking. If <em class="parameter"><code>language</code></em>
+ is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, the
+default language is picked with <a class="link" href="GspellLanguage.html#gspell-language-get-default" title="gspell_language_get_default ()"><code class="function">gspell_language_get_default()</code></a>.</p>
+<div class="refsect3">
+<a name="gspell-checker-set-language.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>checker</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>language</p></td>
+<td class="parameter_description"><p>the <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a> to use, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-checker-check-word"></a><h3>gspell_checker_check_word ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gspell_checker_check_word (<em class="parameter"><code><a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a> *checker</code></em>,
+                           <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *word</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gssize"><span class="type">gssize</span></a> word_length</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>If the <a class="link" href="GspellChecker.html#GspellChecker--language" title="The “language” property"><span class="type">“language”</span></a> is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, i.e. when no dictonaries are
+available, this function returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to limit the damage.</p>
+<div class="refsect3">
+<a name="gspell-checker-check-word.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>checker</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>word</p></td>
+<td class="parameter_description"><p>the word to check.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>word_length</p></td>
+<td class="parameter_description"><p>the byte length of <em class="parameter"><code>word</code></em>
+, or -1 if <em class="parameter"><code>word</code></em>
+is nul-terminated.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>a location to a <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="NULL may be passed instead of a pointer to a location."><span class="acronym">optional</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gspell-checker-check-word.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>word</code></em>
+is correctly spelled, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-checker-get-suggestions"></a><h3>gspell_checker_get_suggestions ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+gspell_checker_get_suggestions (<em class="parameter"><code><a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a> *checker</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *word</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gssize"><span class="type">gssize</span></a> word_length</code></em>);</pre>
+<p>Gets the suggestions for <em class="parameter"><code>word</code></em>
+. Free the return value with
+g_slist_free_full(suggestions, g_free).</p>
+<div class="refsect3">
+<a name="gspell-checker-get-suggestions.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>checker</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>word</p></td>
+<td class="parameter_description"><p>a misspelled word.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>word_length</p></td>
+<td class="parameter_description"><p>the byte length of <em class="parameter"><code>word</code></em>
+, or -1 if <em class="parameter"><code>word</code></em>
+is nul-terminated.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gspell-checker-get-suggestions.returns"></a><h4>Returns</h4>
+<p>the list of suggestions. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> utf8]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-checker-add-word-to-personal"></a><h3>gspell_checker_add_word_to_personal ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gspell_checker_add_word_to_personal (<em class="parameter"><code><a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a> *checker</code></em>,
+                                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *word</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gssize"><span class="type">gssize</span></a> word_length</code></em>);</pre>
+<p>Adds a word to the personal dictionary. It is typically saved in the user's
+home directory.</p>
+<div class="refsect3">
+<a name="gspell-checker-add-word-to-personal.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>checker</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>word</p></td>
+<td class="parameter_description"><p>a word.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>word_length</p></td>
+<td class="parameter_description"><p>the byte length of <em class="parameter"><code>word</code></em>
+, or -1 if <em class="parameter"><code>word</code></em>
+is nul-terminated.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-checker-add-word-to-session"></a><h3>gspell_checker_add_word_to_session ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gspell_checker_add_word_to_session (<em class="parameter"><code><a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a> *checker</code></em>,
+                                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *word</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gssize"><span class="type">gssize</span></a> word_length</code></em>);</pre>
+<p>Adds a word to the session dictionary. Each <a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a> instance has a
+different session dictionary. The session dictionary is lost when the
+<a class="link" href="GspellChecker.html#GspellChecker--language" title="The “language” property"><span class="type">“language”</span></a> property changes or when <em class="parameter"><code>checker</code></em>
+ is destroyed or
+when <a class="link" href="GspellChecker.html#gspell-checker-clear-session" title="gspell_checker_clear_session ()"><code class="function">gspell_checker_clear_session()</code></a> is called.</p>
+<p>This function is typically called for an “Ignore All” action.</p>
+<div class="refsect3">
+<a name="gspell-checker-add-word-to-session.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>checker</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>word</p></td>
+<td class="parameter_description"><p>a word.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>word_length</p></td>
+<td class="parameter_description"><p>the byte length of <em class="parameter"><code>word</code></em>
+, or -1 if <em class="parameter"><code>word</code></em>
+is nul-terminated.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-checker-clear-session"></a><h3>gspell_checker_clear_session ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gspell_checker_clear_session (<em class="parameter"><code><a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a> *checker</code></em>);</pre>
+<p>Clears the session dictionary.</p>
+<div class="refsect3">
+<a name="gspell-checker-clear-session.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>checker</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-checker-set-correction"></a><h3>gspell_checker_set_correction ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gspell_checker_set_correction (<em class="parameter"><code><a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a> *checker</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *word</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gssize"><span class="type">gssize</span></a> word_length</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *replacement</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gssize"><span class="type">gssize</span></a> replacement_length</code></em>);</pre>
+<p>Informs the spell checker that <em class="parameter"><code>word</code></em>
+ is replaced/corrected by <em class="parameter"><code>replacement</code></em>
+.</p>
+<div class="refsect3">
+<a name="gspell-checker-set-correction.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>checker</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>word</p></td>
+<td class="parameter_description"><p>a word.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>word_length</p></td>
+<td class="parameter_description"><p>the byte length of <em class="parameter"><code>word</code></em>
+, or -1 if <em class="parameter"><code>word</code></em>
+is nul-terminated.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>replacement</p></td>
+<td class="parameter_description"><p>the replacement word.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>replacement_length</p></td>
+<td class="parameter_description"><p>the byte length of <em class="parameter"><code>replacement</code></em>
+, or -1 if <em class="parameter"><code>replacement</code></em>
+is nul-terminated.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-checker-get-enchant-dict"></a><h3>gspell_checker_get_enchant_dict ()</h3>
+<pre class="programlisting"><span class="returnvalue">EnchantDict</span> *
+gspell_checker_get_enchant_dict (<em class="parameter"><code><a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a> *checker</code></em>);</pre>
+<p>Gets the EnchantDict currently used by <em class="parameter"><code>checker</code></em>
+. It permits to extend
+<a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a> with more features. Note that by doing so, the other classes
+in gspell may no longer work well.</p>
+<p><a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a> re-creates a new EnchantDict when the <a class="link" href="GspellChecker.html#GspellChecker--language" title="The “language” property"><span class="type">“language”</span></a>
+is changed and when the session is cleared.</p>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
+<div class="refsect3">
+<a name="gspell-checker-get-enchant-dict.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>checker</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gspell-checker-get-enchant-dict.returns"></a><h4>Returns</h4>
+<p>the EnchantDict currently used by
+<em class="parameter"><code>checker</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-1-6.html#api-index-1.6">1.6</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GspellChecker.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GspellChecker-struct"></a><h3>GspellChecker</h3>
+<pre class="programlisting">typedef struct _GspellChecker GspellChecker;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GspellCheckerError"></a><h3>enum GspellCheckerError</h3>
+<p>An error code used with <a class="link" href="GspellChecker.html#GSPELL-CHECKER-ERROR:CAPS" title="GSPELL_CHECKER_ERROR"><code class="literal">GSPELL_CHECKER_ERROR</code></a> in a <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> returned
+from a spell-checker-related function.</p>
+<div class="refsect3">
+<a name="GspellCheckerError.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GSPELL-CHECKER-ERROR-DICTIONARY:CAPS"></a>GSPELL_CHECKER_ERROR_DICTIONARY</p></td>
+<td class="enum_member_description">
+<p>dictionary error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GSPELL-CHECKER-ERROR-NO-LANGUAGE-SET:CAPS"></a>GSPELL_CHECKER_ERROR_NO_LANGUAGE_SET</p></td>
+<td class="enum_member_description">
+<p>no language set.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GSPELL-CHECKER-ERROR:CAPS"></a><h3>GSPELL_CHECKER_ERROR</h3>
+<pre class="programlisting">#define GSPELL_CHECKER_ERROR (gspell_checker_error_quark ())
+</pre>
+<p>Error domain for the spell checker. Errors in this domain will be from the
+<a class="link" href="GspellChecker.html#GspellCheckerError" title="enum GspellCheckerError"><span class="type">GspellCheckerError</span></a> enumeration. See <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> for more information on
+error domains.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GspellChecker.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GspellChecker--language"></a><h3>The <code class="literal">“language”</code> property</h3>
+<pre class="programlisting">  “language”                 <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a> *</pre>
+<p>The <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a> used.</p>
+<p>Owner: GspellChecker</p>
+<p>Flags: Read / Write / Construct</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GspellChecker.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GspellChecker-session-cleared"></a><h3>The <code class="literal">“session-cleared”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a> *spell_checker,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       user_data)</pre>
+<p>Emitted when the session dictionary is cleared.</p>
+<div class="refsect3">
+<a name="GspellChecker-session-cleared.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>spell_checker</p></td>
+<td class="parameter_description"><p>the <a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GspellChecker-word-added-to-personal"></a><h3>The <code class="literal">“word-added-to-personal”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a> *spell_checker,
+               <span class="type">char</span>          *word,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       user_data)</pre>
+<p>Emitted when a word is added to the personal dictionary.</p>
+<div class="refsect3">
+<a name="GspellChecker-word-added-to-personal.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>spell_checker</p></td>
+<td class="parameter_description"><p>the <a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>word</p></td>
+<td class="parameter_description"><p>the added word.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GspellChecker-word-added-to-session"></a><h3>The <code class="literal">“word-added-to-session”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a> *spell_checker,
+               <span class="type">char</span>          *word,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       user_data)</pre>
+<p>Emitted when a word is added to the session dictionary. See
+<a class="link" href="GspellChecker.html#gspell-checker-add-word-to-session" title="gspell_checker_add_word_to_session ()"><code class="function">gspell_checker_add_word_to_session()</code></a>.</p>
+<div class="refsect3">
+<a name="GspellChecker-word-added-to-session.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>spell_checker</p></td>
+<td class="parameter_description"><p>the <a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>word</p></td>
+<td class="parameter_description"><p>the added word.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GspellChecker.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

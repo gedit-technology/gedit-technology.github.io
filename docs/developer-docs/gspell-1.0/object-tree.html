@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Object Hierarchy: gspell 1 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="gspell 1 Reference Manual">
+<link rel="up" href="annexes.html" title="Part III. Annexes">
+<link rel="prev" href="annexes.html" title="Part III. Annexes">
+<link rel="next" href="annotation-glossary.html" title="Annotation Glossary">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="annexes.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="annexes.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="annotation-glossary.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="chapter">
+<div class="titlepage"><div><div><h2 class="title">
+<a name="object-tree"></a>Object Hierarchy</h2></div></div></div>
+<pre class="screen">
+    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct">GtkWidget</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkContainer.html#GtkContainer-struct">GtkContainer</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkBin.html#GtkBin-struct">GtkBin</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>           <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkWindow.html#GtkWindow-struct">GtkWindow</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>           <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkDialog.html#GtkDialog-struct">GtkDialog</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>           <span class="lineart">│</span>       <span class="lineart">├──</span> <a class="link" href="GspellCheckerDialog.html" title="GspellCheckerDialog">GspellCheckerDialog</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>           <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="GspellLanguageChooserDialog.html" title="GspellLanguageChooserDialog">GspellLanguageChooserDialog</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>           <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkButton.html#GtkButton-struct">GtkButton</a>
+    <span class="lineart">│</span>   <span class="lineart">│</span>               <span class="lineart">╰──</span> <a class="link" href="GspellLanguageChooserButton.html" title="GspellLanguageChooserButton">GspellLanguageChooserButton</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GspellNavigatorTextView.html" title="GspellNavigatorTextView">GspellNavigatorTextView</a>
+    <span class="lineart">├──</span> <a class="link" href="GspellChecker.html" title="GspellChecker">GspellChecker</a>
+    <span class="lineart">├──</span> <a class="link" href="GspellEntryBuffer.html" title="GspellEntryBuffer">GspellEntryBuffer</a>
+    <span class="lineart">├──</span> <a class="link" href="GspellEntry.html" title="GspellEntry">GspellEntry</a>
+    <span class="lineart">├──</span> <a class="link" href="GspellTextBuffer.html" title="GspellTextBuffer">GspellTextBuffer</a>
+    <span class="lineart">╰──</span> <a class="link" href="GspellTextView.html" title="GspellTextView">GspellTextView</a>
+    <a href="/usr/share/gtk-doc/html/gobject/GTypeModule.html">GInterface</a>
+    <span class="lineart">├──</span> <a class="link" href="GspellLanguageChooser.html" title="GspellLanguageChooser">GspellLanguageChooser</a>
+    <span class="lineart">╰──</span> <a class="link" href="GspellNavigator.html" title="GspellNavigator">GspellNavigator</a>
+    <a href="/usr/share/gtk-doc/html/gobject/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">╰──</span> <a class="link" href="GspellChecker.html#GspellCheckerError" title="enum GspellCheckerError">GspellCheckerError</a>
+    <a href="/usr/share/gtk-doc/html/gobject/gobject-Boxed-Types.html">GBoxed</a>
+    <span class="lineart">╰──</span> <a class="link" href="GspellLanguage.html" title="GspellLanguage">GspellLanguage</a>
+</pre>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

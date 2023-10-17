@@ -1,0 +1,1398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AmtkFactory: libgedit-amtk 5 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libgedit-amtk 5 Reference Manual">
+<link rel="up" href="api-reference.html" title="Part I. libgedit-amtk API Reference">
+<link rel="prev" href="libgedit-amtk-5-AmtkActionMap.html" title="AmtkActionMap">
+<link rel="next" href="libgedit-amtk-5-AmtkGmenu.html" title="AmtkGmenu">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#AmtkFactory.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#AmtkFactory.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#AmtkFactory.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="api-reference.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgedit-amtk-5-AmtkActionMap.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgedit-amtk-5-AmtkGmenu.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="AmtkFactory"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="AmtkFactory.top_of_page"></a>AmtkFactory</span></h2>
+<p>AmtkFactory — Factory functions</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="AmtkFactory.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="returnvalue">AmtkFactory</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkFactory.html#amtk-factory-new" title="amtk_factory_new ()">amtk_factory_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="returnvalue">AmtkFactory</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkFactory.html#amtk-factory-new-with-default-application" title="amtk_factory_new_with_default_application ()">amtk_factory_new_with_default_application</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#GtkApplication-struct"><span class="returnvalue">GtkApplication</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkFactory.html#amtk-factory-get-application" title="amtk_factory_get_application ()">amtk_factory_get_application</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="returnvalue">AmtkFactoryFlags</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AmtkFactory.html#amtk-factory-get-default-flags" title="amtk_factory_get_default_flags ()">amtk_factory_get_default_flags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AmtkFactory.html#amtk-factory-set-default-flags" title="amtk_factory_set_default_flags ()">amtk_factory_set_default_flags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkFactory.html#amtk-factory-create-menu-item" title="amtk_factory_create_menu_item ()">amtk_factory_create_menu_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkFactory.html#amtk-factory-create-menu-item-full" title="amtk_factory_create_menu_item_full ()">amtk_factory_create_menu_item_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkFactory.html#amtk-factory-create-check-menu-item" title="amtk_factory_create_check_menu_item ()">amtk_factory_create_check_menu_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkFactory.html#amtk-factory-create-check-menu-item-full" title="amtk_factory_create_check_menu_item_full ()">amtk_factory_create_check_menu_item_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkFactory.html#amtk-factory-create-simple-menu" title="amtk_factory_create_simple_menu ()">amtk_factory_create_simple_menu</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkFactory.html#amtk-factory-create-simple-menu-full" title="amtk_factory_create_simple_menu_full ()">amtk_factory_create_simple_menu_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gio/GMenu.html#GMenuItem-struct"><span class="returnvalue">GMenuItem</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkFactory.html#amtk-factory-create-gmenu-item" title="amtk_factory_create_gmenu_item ()">amtk_factory_create_gmenu_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gio/GMenu.html#GMenuItem-struct"><span class="returnvalue">GMenuItem</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkFactory.html#amtk-factory-create-gmenu-item-full" title="amtk_factory_create_gmenu_item_full ()">amtk_factory_create_gmenu_item_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkToolItem.html#GtkToolItem-struct"><span class="returnvalue">GtkToolItem</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkFactory.html#amtk-factory-create-tool-button" title="amtk_factory_create_tool_button ()">amtk_factory_create_tool_button</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkToolItem.html#GtkToolItem-struct"><span class="returnvalue">GtkToolItem</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkFactory.html#amtk-factory-create-tool-button-full" title="amtk_factory_create_tool_button_full ()">amtk_factory_create_tool_button_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkMenuToolButton.html#GtkMenuToolButton-struct"><span class="returnvalue">GtkMenuToolButton</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkFactory.html#amtk-factory-create-menu-tool-button" title="amtk_factory_create_menu_tool_button ()">amtk_factory_create_menu_tool_button</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkMenuToolButton.html#GtkMenuToolButton-struct"><span class="returnvalue">GtkMenuToolButton</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkFactory.html#amtk-factory-create-menu-tool-button-full" title="amtk_factory_create_menu_tool_button_full ()">amtk_factory_create_menu_tool_button_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkFactory.html#amtk-factory-create-shortcut" title="amtk_factory_create_shortcut ()">amtk_factory_create_shortcut</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkFactory.html#amtk-factory-create-shortcut-full" title="amtk_factory_create_shortcut_full ()">amtk_factory_create_shortcut_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AmtkFactory.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#GtkApplication-struct"><span class="type">GtkApplication</span></a> *</td>
+<td class="property_name"><a class="link" href="AmtkFactory.html#AmtkFactory--application" title="The “application” property">application</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a></td>
+<td class="property_name"><a class="link" href="AmtkFactory.html#AmtkFactory--default-flags" title="The “default-flags” property">default-flags</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AmtkFactory.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="AmtkFactory.html#AmtkFactory-struct" title="struct AmtkFactory">AmtkFactory</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags">AmtkFactoryFlags</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AmtkFactory.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-Enumeration-and-Flag-Types.html">GFlags</a>
+    <span class="lineart">╰──</span> AmtkFactoryFlags
+    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> AmtkFactory
+</pre>
+</div>
+<div class="refsect1">
+<a name="AmtkFactory.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;amtk/amtk.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="AmtkFactory.description"></a><h2>Description</h2>
+<p><a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a> contains functions to create various objects such as a menu
+item, a toolbar item or a <a href="/usr/share/gtk-doc/html/gtk3/GtkShortcutsShortcut.html#GtkShortcutsShortcut-struct"><span class="type">GtkShortcutsShortcut</span></a>, from the information
+provided by an <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a>. A factory function accesses an
+<a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a> from the <a class="link" href="AmtkActionInfoCentralStore.html" title="AmtkActionInfoCentralStore"><span class="type">AmtkActionInfoCentralStore</span></a>.</p>
+<p>A <a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#GtkApplication-struct"><span class="type">GtkApplication</span></a> can be associated so that factory functions can call
+<a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#gtk-application-set-accels-for-action"><code class="function">gtk_application_set_accels_for_action()</code></a> with the accelerators returned by
+<a class="link" href="AmtkActionInfo.html#amtk-action-info-get-accels" title="amtk_action_info_get_accels ()"><code class="function">amtk_action_info_get_accels()</code></a>. Note that
+<a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#gtk-application-set-accels-for-action"><code class="function">gtk_application_set_accels_for_action()</code></a> is called by factory functions and
+not by <a class="link" href="AmtkActionInfoStore.html#amtk-action-info-store-add" title="amtk_action_info_store_add ()"><code class="function">amtk_action_info_store_add()</code></a>, so that libraries can provide their own
+store and the accelerators are set to the <a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#GtkApplication-struct"><span class="type">GtkApplication</span></a> only if an
+<a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a> is actually used. For an application store,
+<a class="link" href="AmtkActionInfoStore.html#amtk-action-info-store-set-all-accels-to-app" title="amtk_action_info_store_set_all_accels_to_app ()"><code class="function">amtk_action_info_store_set_all_accels_to_app()</code></a> is an alternative.</p>
+<p><a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a> permits to control how a factory function creates the
+object, to ignore some steps. Factory functions are declined in two variants:
+a simple form which takes the value of the <a class="link" href="AmtkFactory.html#AmtkFactory--default-flags" title="The “default-flags” property"><span class="type">“default-flags”</span></a>
+property, and the same function with the <code class="literal">_full</code> suffix which takes an
+<a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a> argument and ignores the <a class="link" href="AmtkFactory.html#AmtkFactory--default-flags" title="The “default-flags” property"><span class="type">“default-flags”</span></a>. See
+for example <a class="link" href="AmtkFactory.html#amtk-factory-create-menu-item" title="amtk_factory_create_menu_item ()"><code class="function">amtk_factory_create_menu_item()</code></a> and
+<a class="link" href="AmtkFactory.html#amtk-factory-create-menu-item-full" title="amtk_factory_create_menu_item_full ()"><code class="function">amtk_factory_create_menu_item_full()</code></a>.</p>
+<div class="refsect2">
+<a name="amtk-factory-static-objects"></a><h3>Static objects</h3>
+<p>An important detail is that once a factory function has created an object,
+the object is not updated if the corresponding <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a> is modified
+afterwards. <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a> doesn't have a notify signal, and it is anyway
+discouraged to modify an <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a> after being added to an
+<a class="link" href="AmtkActionInfoStore.html" title="AmtkActionInfoStore"><span class="type">AmtkActionInfoStore</span></a>. An <a class="link" href="AmtkActionInfoStore.html" title="AmtkActionInfoStore"><span class="type">AmtkActionInfoStore</span></a> is meant to be something
+static, created on application startup. Updating automatically menu and
+toolbar items is out of scope for the Amtk library. If for example action
+accelerators can be modified at run-time, the menu needs to be re-generated.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.4.8.8.6"></a><h3>Menus</h3>
+<p>Some general notes about the functions that create <a href="/usr/share/gtk-doc/html/gtk3/GtkMenuItem.html#GtkMenuItem-struct"><span class="type">GtkMenuItem</span></a>'s:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>If not ignored by an <a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a>, the first accelerator returned by
+<a class="link" href="AmtkActionInfo.html#amtk-action-info-get-accels" title="amtk_action_info_get_accels ()"><code class="function">amtk_action_info_get_accels()</code></a> is set to the <a href="/usr/share/gtk-doc/html/gtk3/GtkAccelLabel.html#GtkAccelLabel-struct"><span class="type">GtkAccelLabel</span></a> of the
+<a href="/usr/share/gtk-doc/html/gtk3/GtkMenuItem.html#GtkMenuItem-struct"><span class="type">GtkMenuItem</span></a>.</p></li>
+<li class="listitem"><p>If not ignored by an <a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a>, the tooltip is set with
+<a class="link" href="libgedit-amtk-5-AmtkMenuItem.html#amtk-menu-item-set-long-description" title="amtk_menu_item_set_long_description ()"><code class="function">amtk_menu_item_set_long_description()</code></a>, which permits to display it in a
+<a href="/usr/share/gtk-doc/html/gtk3/GtkStatusbar.html#GtkStatusbar-struct"><span class="type">GtkStatusbar</span></a> with <a class="link" href="AmtkApplicationWindow.html#amtk-application-window-connect-menu-to-statusbar" title="amtk_application_window_connect_menu_to_statusbar ()"><code class="function">amtk_application_window_connect_menu_to_statusbar()</code></a>.</p></li>
+</ul></div>
+<div class="refsect3">
+<a name="id-1.4.8.8.6.4"></a><h4>Code example to create a menu</h4>
+<p>How to create a <a href="/usr/share/gtk-doc/html/gtk3/GtkMenuBar.html#GtkMenuBar-struct"><span class="type">GtkMenuBar</span></a> with <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>. Each submenu is created by a
+separate function, to make the code clearer.</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="k">static</span><span class="w"> </span><span class="n">GtkWidget</span><span class="w"> </span><span class="o">*</span>
+<span class="nf">create_file_submenu</span><span class="w"> </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">GtkMenuShell</span><span class="w"> </span><span class="o">*</span><span class="n">file_submenu</span><span class="p">;</span>
+<span class="w">  </span><span class="n">AmtkFactory</span><span class="w"> </span><span class="o">*</span><span class="n">factory</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">file_submenu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GTK_MENU_SHELL</span><span class="w"> </span><span class="p">(</span><span class="n">gtk_menu_new</span><span class="w"> </span><span class="p">());</span>
+
+<span class="w">  </span><span class="n">factory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">amtk_factory_new_with_default_application</span><span class="w"> </span><span class="p">();</span>
+<span class="w">  </span><span class="n">gtk_menu_shell_append</span><span class="w"> </span><span class="p">(</span><span class="n">file_submenu</span><span class="p">,</span><span class="w"> </span><span class="n">amtk_factory_create_menu_item</span><span class="w"> </span><span class="p">(</span><span class="n">factory</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;win.open&quot;</span><span class="p">));</span>
+<span class="w">  </span><span class="n">gtk_menu_shell_append</span><span class="w"> </span><span class="p">(</span><span class="n">file_submenu</span><span class="p">,</span><span class="w"> </span><span class="n">amtk_factory_create_menu_item</span><span class="w"> </span><span class="p">(</span><span class="n">factory</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;win.save&quot;</span><span class="p">));</span>
+<span class="w">  </span><span class="n">gtk_menu_shell_append</span><span class="w"> </span><span class="p">(</span><span class="n">file_submenu</span><span class="p">,</span><span class="w"> </span><span class="n">gtk_separator_menu_item_new</span><span class="w"> </span><span class="p">());</span>
+<span class="w">  </span><span class="n">gtk_menu_shell_append</span><span class="w"> </span><span class="p">(</span><span class="n">file_submenu</span><span class="p">,</span><span class="w"> </span><span class="n">amtk_factory_create_menu_item</span><span class="w"> </span><span class="p">(</span><span class="n">factory</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;app.quit&quot;</span><span class="p">));</span>
+<span class="w">  </span><span class="n">g_object_unref</span><span class="w"> </span><span class="p">(</span><span class="n">factory</span><span class="p">);</span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">GTK_WIDGET</span><span class="w"> </span><span class="p">(</span><span class="n">file_submenu</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">static</span><span class="w"> </span><span class="n">GtkWidget</span><span class="w"> </span><span class="o">*</span>
+<span class="nf">create_help_submenu</span><span class="w"> </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">GtkMenuShell</span><span class="w"> </span><span class="o">*</span><span class="n">help_submenu</span><span class="p">;</span>
+<span class="w">  </span><span class="n">AmtkFactory</span><span class="w"> </span><span class="o">*</span><span class="n">factory</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">help_submenu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GTK_MENU_SHELL</span><span class="w"> </span><span class="p">(</span><span class="n">gtk_menu_new</span><span class="w"> </span><span class="p">());</span>
+
+<span class="w">  </span><span class="n">factory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">amtk_factory_new_with_default_application</span><span class="w"> </span><span class="p">();</span>
+<span class="w">  </span><span class="n">gtk_menu_shell_append</span><span class="w"> </span><span class="p">(</span><span class="n">help_submenu</span><span class="p">,</span><span class="w"> </span><span class="n">amtk_factory_create_menu_item</span><span class="w"> </span><span class="p">(</span><span class="n">factory</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;app.about&quot;</span><span class="p">));</span>
+<span class="w">  </span><span class="n">g_object_unref</span><span class="w"> </span><span class="p">(</span><span class="n">factory</span><span class="p">);</span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">GTK_WIDGET</span><span class="w"> </span><span class="p">(</span><span class="n">help_submenu</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">static</span><span class="w"> </span><span class="n">GtkWidget</span><span class="w"> </span><span class="o">*</span>
+<span class="nf">create_menu_bar</span><span class="w"> </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">GtkWidget</span><span class="w"> </span><span class="o">*</span><span class="n">file_menu_item</span><span class="p">;</span>
+<span class="w">  </span><span class="n">GtkWidget</span><span class="w"> </span><span class="o">*</span><span class="n">help_menu_item</span><span class="p">;</span>
+<span class="w">  </span><span class="n">GtkWidget</span><span class="w"> </span><span class="o">*</span><span class="n">menu_bar</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">file_menu_item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gtk_menu_item_new_with_mnemonic</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;_File&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">gtk_menu_item_set_submenu</span><span class="w"> </span><span class="p">(</span><span class="n">GTK_MENU_ITEM</span><span class="w"> </span><span class="p">(</span><span class="n">file_menu_item</span><span class="p">),</span>
+<span class="w">                             </span><span class="n">create_file_submenu</span><span class="w"> </span><span class="p">());</span>
+
+<span class="w">  </span><span class="n">help_menu_item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gtk_menu_item_new_with_mnemonic</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;_Help&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">gtk_menu_item_set_submenu</span><span class="w"> </span><span class="p">(</span><span class="n">GTK_MENU_ITEM</span><span class="w"> </span><span class="p">(</span><span class="n">help_menu_item</span><span class="p">),</span>
+<span class="w">                             </span><span class="n">create_help_submenu</span><span class="w"> </span><span class="p">());</span>
+
+<span class="w">  </span><span class="n">menu_bar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gtk_menu_bar_new</span><span class="w"> </span><span class="p">();</span>
+<span class="w">  </span><span class="n">gtk_menu_shell_append</span><span class="w"> </span><span class="p">(</span><span class="n">GTK_MENU_SHELL</span><span class="w"> </span><span class="p">(</span><span class="n">menu_bar</span><span class="p">),</span><span class="w"> </span><span class="n">file_menu_item</span><span class="p">);</span>
+<span class="w">  </span><span class="n">gtk_menu_shell_append</span><span class="w"> </span><span class="p">(</span><span class="n">GTK_MENU_SHELL</span><span class="w"> </span><span class="p">(</span><span class="n">menu_bar</span><span class="p">),</span><span class="w"> </span><span class="n">help_menu_item</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// Additionally, it is a good place to call</span>
+<span class="w">  </span><span class="c1">// amtk_action_info_store_check_all_used() here.</span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">menu_bar</span><span class="p">;</span>
+<span class="p">}</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.4.8.8.7"></a><h3>Toolbars</h3>
+<p>Some general notes about the functions that create <a href="/usr/share/gtk-doc/html/gtk3/GtkToolItem.html#GtkToolItem-struct"><span class="type">GtkToolItem</span></a>'s:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>The accelerators returned by <a class="link" href="AmtkActionInfo.html#amtk-action-info-get-accels" title="amtk_action_info_get_accels ()"><code class="function">amtk_action_info_get_accels()</code></a> are not used for
+documentation purposes in a toolbar, so the
+<a class="link" href="AmtkFactory.html#AMTK-FACTORY-IGNORE-ACCELS-FOR-DOC:CAPS"><code class="literal">AMTK_FACTORY_IGNORE_ACCELS_FOR_DOC</code></a> flag has no impact. The accelerators
+are documented only in menu items.</p></li></ul></div>
+<div class="refsect3">
+<a name="id-1.4.8.8.7.4"></a><h4>Code example to create a toolbar</h4>
+<p>How to create a basic <a href="/usr/share/gtk-doc/html/gtk3/GtkToolbar.html#GtkToolbar-struct"><span class="type">GtkToolbar</span></a> with <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>.</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="k">static</span><span class="w"> </span><span class="n">GtkWidget</span><span class="w"> </span><span class="o">*</span>
+<span class="nf">create_toolbar</span><span class="w"> </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">GtkToolbar</span><span class="w"> </span><span class="o">*</span><span class="n">toolbar</span><span class="p">;</span>
+<span class="w">  </span><span class="n">AmtkFactory</span><span class="w"> </span><span class="o">*</span><span class="n">factory</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">toolbar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GTK_TOOLBAR</span><span class="w"> </span><span class="p">(</span><span class="n">gtk_toolbar_new</span><span class="w"> </span><span class="p">());</span>
+
+<span class="w">  </span><span class="c1">// Small performance improvement:</span>
+<span class="w">  </span><span class="c1">// Do not associate a GtkApplication, because the menu has already been</span>
+<span class="w">  </span><span class="c1">// generated, the menu contains all actions, so</span>
+<span class="w">  </span><span class="c1">// gtk_application_set_accels_for_action() has already been called for all</span>
+<span class="w">  </span><span class="c1">// actions. Another way is to set the AMTK_FACTORY_IGNORE_ACCELS_FOR_APP</span>
+<span class="w">  </span><span class="c1">// flag.</span>
+<span class="w">  </span><span class="n">factory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">amtk_factory_new</span><span class="w"> </span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
+<span class="w">  </span><span class="n">gtk_toolbar_insert</span><span class="w"> </span><span class="p">(</span><span class="n">toolbar</span><span class="p">,</span><span class="w"> </span><span class="n">amtk_factory_create_tool_button</span><span class="w"> </span><span class="p">(</span><span class="n">factory</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;win.new-file&quot;</span><span class="p">),</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span>
+<span class="w">  </span><span class="n">gtk_toolbar_insert</span><span class="w"> </span><span class="p">(</span><span class="n">toolbar</span><span class="p">,</span><span class="w"> </span><span class="n">amtk_factory_create_tool_button</span><span class="w"> </span><span class="p">(</span><span class="n">factory</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;win.open&quot;</span><span class="p">),</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span>
+<span class="w">  </span><span class="n">gtk_toolbar_insert</span><span class="w"> </span><span class="p">(</span><span class="n">toolbar</span><span class="p">,</span><span class="w"> </span><span class="n">amtk_factory_create_tool_button</span><span class="w"> </span><span class="p">(</span><span class="n">factory</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;win.save&quot;</span><span class="p">),</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span>
+<span class="w">  </span><span class="n">gtk_toolbar_insert</span><span class="w"> </span><span class="p">(</span><span class="n">toolbar</span><span class="p">,</span><span class="w"> </span><span class="n">gtk_separator_tool_item_new</span><span class="w"> </span><span class="p">(),</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span>
+<span class="w">  </span><span class="n">gtk_toolbar_insert</span><span class="w"> </span><span class="p">(</span><span class="n">toolbar</span><span class="p">,</span><span class="w"> </span><span class="n">amtk_factory_create_tool_button</span><span class="w"> </span><span class="p">(</span><span class="n">factory</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;win.cut&quot;</span><span class="p">),</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span>
+<span class="w">  </span><span class="n">gtk_toolbar_insert</span><span class="w"> </span><span class="p">(</span><span class="n">toolbar</span><span class="p">,</span><span class="w"> </span><span class="n">amtk_factory_create_tool_button</span><span class="w"> </span><span class="p">(</span><span class="n">factory</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;win.copy&quot;</span><span class="p">),</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span>
+<span class="w">  </span><span class="n">gtk_toolbar_insert</span><span class="w"> </span><span class="p">(</span><span class="n">toolbar</span><span class="p">,</span><span class="w"> </span><span class="n">amtk_factory_create_tool_button</span><span class="w"> </span><span class="p">(</span><span class="n">factory</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;win.paste&quot;</span><span class="p">),</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span>
+<span class="w">  </span><span class="n">g_object_unref</span><span class="w"> </span><span class="p">(</span><span class="n">factory</span><span class="p">);</span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">GTK_WIDGET</span><span class="w"> </span><span class="p">(</span><span class="n">toolbar</span><span class="p">);</span>
+<span class="p">}</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.4.8.8.8"></a><h3>Modern UI with a GtkHeaderBar</h3>
+<p>To have an example code, see <code class="literal">tests/interactive-tests/test-headerbar.c</code> in
+the git repository of Amtk.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="AmtkFactory.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="amtk-factory-new"></a><h3>amtk_factory_new ()</h3>
+<pre class="programlisting"><a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="returnvalue">AmtkFactory</span></a> *
+amtk_factory_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#GtkApplication-struct"><span class="type">GtkApplication</span></a> *application</code></em>);</pre>
+<p>Creates a new <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a> object. Associating a <a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#GtkApplication-struct"><span class="type">GtkApplication</span></a> is optional,
+if it is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> <a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#gtk-application-set-accels-for-action"><code class="function">gtk_application_set_accels_for_action()</code></a> won't be called.</p>
+<div class="refsect3">
+<a name="amtk-factory-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>application</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#GtkApplication-struct"><span class="type">GtkApplication</span></a>, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-factory-new.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-factory-new-with-default-application"></a><h3>amtk_factory_new_with_default_application ()</h3>
+<pre class="programlisting"><a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="returnvalue">AmtkFactory</span></a> *
+amtk_factory_new_with_default_application
+                               (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Calls <a class="link" href="AmtkFactory.html#amtk-factory-new" title="amtk_factory_new ()"><code class="function">amtk_factory_new()</code></a> with <a href="/usr/share/gtk-doc/html/gio/GApplication.html#g-application-get-default"><code class="function">g_application_get_default()</code></a> (it must be a
+<a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#GtkApplication-struct"><span class="type">GtkApplication</span></a>).</p>
+<div class="refsect3">
+<a name="amtk-factory-new-with-default-application.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a> with the default <a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#GtkApplication-struct"><span class="type">GtkApplication</span></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-factory-get-application"></a><h3>amtk_factory_get_application ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#GtkApplication-struct"><span class="returnvalue">GtkApplication</span></a> *
+amtk_factory_get_application (<em class="parameter"><code><a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a> *factory</code></em>);</pre>
+<div class="refsect3">
+<a name="amtk-factory-get-application.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-factory-get-application.returns"></a><h4>Returns</h4>
+<p>the <a class="link" href="AmtkFactory.html#AmtkFactory--application" title="The “application” property"><span class="type">“application”</span></a>. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-factory-get-default-flags"></a><h3>amtk_factory_get_default_flags ()</h3>
+<pre class="programlisting"><a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="returnvalue">AmtkFactoryFlags</span></a>
+amtk_factory_get_default_flags (<em class="parameter"><code><a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a> *factory</code></em>);</pre>
+<div class="refsect3">
+<a name="amtk-factory-get-default-flags.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-factory-get-default-flags.returns"></a><h4>Returns</h4>
+<p> the <a class="link" href="AmtkFactory.html#AmtkFactory--default-flags" title="The “default-flags” property"><span class="type">“default-flags”</span></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-factory-set-default-flags"></a><h3>amtk_factory_set_default_flags ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+amtk_factory_set_default_flags (<em class="parameter"><code><a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a> *factory</code></em>,
+                                <em class="parameter"><code><a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a> default_flags</code></em>);</pre>
+<p>Sets the <a class="link" href="AmtkFactory.html#AmtkFactory--default-flags" title="The “default-flags” property"><span class="type">“default-flags”</span></a> property.</p>
+<div class="refsect3">
+<a name="amtk-factory-set-default-flags.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_flags</p></td>
+<td class="parameter_description"><p>the new value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-factory-create-menu-item"></a><h3>amtk_factory_create_menu_item ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+amtk_factory_create_menu_item (<em class="parameter"><code><a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a> *factory</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *action_name</code></em>);</pre>
+<p>Creates a new <a href="/usr/share/gtk-doc/html/gtk3/GtkMenuItem.html#GtkMenuItem-struct"><span class="type">GtkMenuItem</span></a> for <em class="parameter"><code>action_name</code></em>
+ with the
+<a class="link" href="AmtkFactory.html#AmtkFactory--default-flags" title="The “default-flags” property"><span class="type">“default-flags”</span></a>.</p>
+<div class="refsect3">
+<a name="amtk-factory-create-menu-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action_name</p></td>
+<td class="parameter_description"><p>an action name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-factory-create-menu-item.returns"></a><h4>Returns</h4>
+<p>a new <a href="/usr/share/gtk-doc/html/gtk3/GtkMenuItem.html#GtkMenuItem-struct"><span class="type">GtkMenuItem</span></a> for <em class="parameter"><code>action_name</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-factory-create-menu-item-full"></a><h3>amtk_factory_create_menu_item_full ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+amtk_factory_create_menu_item_full (<em class="parameter"><code><a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a> *factory</code></em>,
+                                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *action_name</code></em>,
+                                    <em class="parameter"><code><a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a> flags</code></em>);</pre>
+<p>This function ignores the <a class="link" href="AmtkFactory.html#AmtkFactory--default-flags" title="The “default-flags” property"><span class="type">“default-flags”</span></a> property and takes the
+<em class="parameter"><code>flags</code></em>
+ argument instead.</p>
+<div class="refsect3">
+<a name="amtk-factory-create-menu-item-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action_name</p></td>
+<td class="parameter_description"><p>an action name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p><a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-factory-create-menu-item-full.returns"></a><h4>Returns</h4>
+<p>a new <a href="/usr/share/gtk-doc/html/gtk3/GtkMenuItem.html#GtkMenuItem-struct"><span class="type">GtkMenuItem</span></a> for <em class="parameter"><code>action_name</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-factory-create-check-menu-item"></a><h3>amtk_factory_create_check_menu_item ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+amtk_factory_create_check_menu_item (<em class="parameter"><code><a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a> *factory</code></em>,
+                                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *action_name</code></em>);</pre>
+<p>Creates a new <a href="/usr/share/gtk-doc/html/gtk3/GtkCheckMenuItem.html#GtkCheckMenuItem-struct"><span class="type">GtkCheckMenuItem</span></a> for <em class="parameter"><code>action_name</code></em>
+ with the
+<a class="link" href="AmtkFactory.html#AmtkFactory--default-flags" title="The “default-flags” property"><span class="type">“default-flags”</span></a>.</p>
+<p>See the documentation of <a class="link" href="AmtkFactory.html#amtk-factory-create-check-menu-item-full" title="amtk_factory_create_check_menu_item_full ()"><code class="function">amtk_factory_create_check_menu_item_full()</code></a> for more
+information.</p>
+<div class="refsect3">
+<a name="amtk-factory-create-check-menu-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action_name</p></td>
+<td class="parameter_description"><p>an action name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-factory-create-check-menu-item.returns"></a><h4>Returns</h4>
+<p>a new <a href="/usr/share/gtk-doc/html/gtk3/GtkCheckMenuItem.html#GtkCheckMenuItem-struct"><span class="type">GtkCheckMenuItem</span></a> for <em class="parameter"><code>action_name</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-factory-create-check-menu-item-full"></a><h3>amtk_factory_create_check_menu_item_full ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+amtk_factory_create_check_menu_item_full
+                               (<em class="parameter"><code><a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a> *factory</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *action_name</code></em>,
+                                <em class="parameter"><code><a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a> flags</code></em>);</pre>
+<p>This function ignores the <a class="link" href="AmtkFactory.html#AmtkFactory--default-flags" title="The “default-flags” property"><span class="type">“default-flags”</span></a> property and takes the
+<em class="parameter"><code>flags</code></em>
+ argument instead.</p>
+<p>Note that since it is a <a href="/usr/share/gtk-doc/html/gtk3/GtkCheckMenuItem.html#GtkCheckMenuItem-struct"><span class="type">GtkCheckMenuItem</span></a> the icon is not set, even if it
+would be possible with <a class="link" href="libgedit-amtk-5-AmtkMenuItem.html#amtk-menu-item-set-icon-name" title="amtk_menu_item_set_icon_name ()"><code class="function">amtk_menu_item_set_icon_name()</code></a>.</p>
+<p>If the action controls a boolean property, think about using
+<a href="/usr/share/gtk-doc/html/gio/GPropertyAction.html#GPropertyAction-struct"><span class="type">GPropertyAction</span></a>.</p>
+<div class="refsect3">
+<a name="amtk-factory-create-check-menu-item-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action_name</p></td>
+<td class="parameter_description"><p>an action name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p><a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-factory-create-check-menu-item-full.returns"></a><h4>Returns</h4>
+<p>a new <a href="/usr/share/gtk-doc/html/gtk3/GtkCheckMenuItem.html#GtkCheckMenuItem-struct"><span class="type">GtkCheckMenuItem</span></a> for <em class="parameter"><code>action_name</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-factory-create-simple-menu"></a><h3>amtk_factory_create_simple_menu ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+amtk_factory_create_simple_menu (<em class="parameter"><code><a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a> *factory</code></em>,
+                                 <em class="parameter"><code>const <a class="link" href="AmtkActionInfo.html#AmtkActionInfoEntry" title="struct AmtkActionInfoEntry"><span class="type">AmtkActionInfoEntry</span></a> *entries</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_entries</code></em>);</pre>
+<p>Calls <a class="link" href="AmtkFactory.html#amtk-factory-create-simple-menu-full" title="amtk_factory_create_simple_menu_full ()"><code class="function">amtk_factory_create_simple_menu_full()</code></a> with the
+<a class="link" href="AmtkFactory.html#AmtkFactory--default-flags" title="The “default-flags” property"><span class="type">“default-flags”</span></a>.</p>
+<div class="refsect3">
+<a name="amtk-factory-create-simple-menu.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>entries</p></td>
+<td class="parameter_description"><p>a
+pointer to the first item in an array of <a class="link" href="AmtkActionInfo.html#AmtkActionInfoEntry" title="struct AmtkActionInfoEntry"><span class="type">AmtkActionInfoEntry</span></a> structs. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=n_entries][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> AmtkActionInfoEntry]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n_entries</p></td>
+<td class="parameter_description"><p>the length of <em class="parameter"><code>entries</code></em>
+, or -1 if <em class="parameter"><code>entries</code></em>
+is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-factory-create-simple-menu.returns"></a><h4>Returns</h4>
+<p>a new simple <a href="/usr/share/gtk-doc/html/gtk3/GtkMenu.html#GtkMenu-struct"><span class="type">GtkMenu</span></a> for <em class="parameter"><code>entries</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-5-0.html#api-index-5.0">5.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-factory-create-simple-menu-full"></a><h3>amtk_factory_create_simple_menu_full ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+amtk_factory_create_simple_menu_full (<em class="parameter"><code><a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a> *factory</code></em>,
+                                      <em class="parameter"><code>const <a class="link" href="AmtkActionInfo.html#AmtkActionInfoEntry" title="struct AmtkActionInfoEntry"><span class="type">AmtkActionInfoEntry</span></a> *entries</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_entries</code></em>,
+                                      <em class="parameter"><code><a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a> flags</code></em>);</pre>
+<p>This function ignores the <a class="link" href="AmtkFactory.html#AmtkFactory--default-flags" title="The “default-flags” property"><span class="type">“default-flags”</span></a> property and takes the
+<em class="parameter"><code>flags</code></em>
+ argument instead.</p>
+<p>This function:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>Creates a <a href="/usr/share/gtk-doc/html/gtk3/GtkMenu.html#GtkMenu-struct"><span class="type">GtkMenu</span></a>;</p></li>
+<li class="listitem"><p>For each <a class="link" href="AmtkActionInfo.html#AmtkActionInfoEntry" title="struct AmtkActionInfoEntry"><span class="type">AmtkActionInfoEntry</span></a> action name from <em class="parameter"><code>entries</code></em>
+, creates a
+<a href="/usr/share/gtk-doc/html/gtk3/GtkMenuItem.html#GtkMenuItem-struct"><span class="type">GtkMenuItem</span></a> with <a class="link" href="AmtkFactory.html#amtk-factory-create-menu-item-full" title="amtk_factory_create_menu_item_full ()"><code class="function">amtk_factory_create_menu_item_full()</code></a> with the same <em class="parameter"><code>flags</code></em>
+
+as passed in to this function, and appends it to the <a href="/usr/share/gtk-doc/html/gtk3/GtkMenu.html#GtkMenu-struct"><span class="type">GtkMenu</span></a>, in the same
+order as provided by the <em class="parameter"><code>entries</code></em>
+ array.</p></li>
+</ul></div>
+<p>So this function is useful only if the <a href="/usr/share/gtk-doc/html/gtk3/GtkMenu.html#GtkMenu-struct"><span class="type">GtkMenu</span></a> contains only simple
+<a href="/usr/share/gtk-doc/html/gtk3/GtkMenuItem.html#GtkMenuItem-struct"><span class="type">GtkMenuItem</span></a>'s, not <a href="/usr/share/gtk-doc/html/gtk3/GtkCheckMenuItem.html#GtkCheckMenuItem-struct"><span class="type">GtkCheckMenuItem</span></a>'s nor <a href="/usr/share/gtk-doc/html/gtk3/GtkRadioMenuItem.html#GtkRadioMenuItem-struct"><span class="type">GtkRadioMenuItem</span></a>'s.</p>
+<div class="refsect3">
+<a name="amtk-factory-create-simple-menu-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>entries</p></td>
+<td class="parameter_description"><p>a
+pointer to the first item in an array of <a class="link" href="AmtkActionInfo.html#AmtkActionInfoEntry" title="struct AmtkActionInfoEntry"><span class="type">AmtkActionInfoEntry</span></a> structs. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=n_entries][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> AmtkActionInfoEntry]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n_entries</p></td>
+<td class="parameter_description"><p>the length of <em class="parameter"><code>entries</code></em>
+, or -1 if <em class="parameter"><code>entries</code></em>
+is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p><a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-factory-create-simple-menu-full.returns"></a><h4>Returns</h4>
+<p>a new simple <a href="/usr/share/gtk-doc/html/gtk3/GtkMenu.html#GtkMenu-struct"><span class="type">GtkMenu</span></a> for <em class="parameter"><code>entries</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-5-0.html#api-index-5.0">5.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-factory-create-gmenu-item"></a><h3>amtk_factory_create_gmenu_item ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gio/GMenu.html#GMenuItem-struct"><span class="returnvalue">GMenuItem</span></a> *
+amtk_factory_create_gmenu_item (<em class="parameter"><code><a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a> *factory</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *action_name</code></em>);</pre>
+<p>Calls <a class="link" href="AmtkFactory.html#amtk-factory-create-gmenu-item-full" title="amtk_factory_create_gmenu_item_full ()"><code class="function">amtk_factory_create_gmenu_item_full()</code></a> with the
+<a class="link" href="AmtkFactory.html#AmtkFactory--default-flags" title="The “default-flags” property"><span class="type">“default-flags”</span></a>.</p>
+<div class="refsect3">
+<a name="amtk-factory-create-gmenu-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action_name</p></td>
+<td class="parameter_description"><p>an action name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-factory-create-gmenu-item.returns"></a><h4>Returns</h4>
+<p>a new <a href="/usr/share/gtk-doc/html/gio/GMenu.html#GMenuItem-struct"><span class="type">GMenuItem</span></a> for <em class="parameter"><code>action_name</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-5-0.html#api-index-5.0">5.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-factory-create-gmenu-item-full"></a><h3>amtk_factory_create_gmenu_item_full ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gio/GMenu.html#GMenuItem-struct"><span class="returnvalue">GMenuItem</span></a> *
+amtk_factory_create_gmenu_item_full (<em class="parameter"><code><a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a> *factory</code></em>,
+                                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *action_name</code></em>,
+                                     <em class="parameter"><code><a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a> flags</code></em>);</pre>
+<p>This function ignores the <a class="link" href="AmtkFactory.html#AmtkFactory--default-flags" title="The “default-flags” property"><span class="type">“default-flags”</span></a> property and takes the
+<em class="parameter"><code>flags</code></em>
+ argument instead.</p>
+<p>Creates a new <a href="/usr/share/gtk-doc/html/gio/GMenu.html#GMenuItem-struct"><span class="type">GMenuItem</span></a> for <em class="parameter"><code>action_name</code></em>
+. It ignores the tooltip, i.e. the
+return value of <a class="link" href="AmtkActionInfo.html#amtk-action-info-get-tooltip" title="amtk_action_info_get_tooltip ()"><code class="function">amtk_action_info_get_tooltip()</code></a>.</p>
+<div class="refsect3">
+<a name="amtk-factory-create-gmenu-item-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action_name</p></td>
+<td class="parameter_description"><p>an action name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p><a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-factory-create-gmenu-item-full.returns"></a><h4>Returns</h4>
+<p>a new <a href="/usr/share/gtk-doc/html/gio/GMenu.html#GMenuItem-struct"><span class="type">GMenuItem</span></a> for <em class="parameter"><code>action_name</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-5-0.html#api-index-5.0">5.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-factory-create-tool-button"></a><h3>amtk_factory_create_tool_button ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkToolItem.html#GtkToolItem-struct"><span class="returnvalue">GtkToolItem</span></a> *
+amtk_factory_create_tool_button (<em class="parameter"><code><a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a> *factory</code></em>,
+                                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *action_name</code></em>);</pre>
+<p>Creates a new <a href="/usr/share/gtk-doc/html/gtk3/GtkToolButton.html#GtkToolButton-struct"><span class="type">GtkToolButton</span></a> for <em class="parameter"><code>action_name</code></em>
+ with the
+<a class="link" href="AmtkFactory.html#AmtkFactory--default-flags" title="The “default-flags” property"><span class="type">“default-flags”</span></a>.</p>
+<div class="refsect3">
+<a name="amtk-factory-create-tool-button.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action_name</p></td>
+<td class="parameter_description"><p>an action name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-factory-create-tool-button.returns"></a><h4>Returns</h4>
+<p>a new <a href="/usr/share/gtk-doc/html/gtk3/GtkToolButton.html#GtkToolButton-struct"><span class="type">GtkToolButton</span></a> for <em class="parameter"><code>action_name</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-factory-create-tool-button-full"></a><h3>amtk_factory_create_tool_button_full ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkToolItem.html#GtkToolItem-struct"><span class="returnvalue">GtkToolItem</span></a> *
+amtk_factory_create_tool_button_full (<em class="parameter"><code><a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a> *factory</code></em>,
+                                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *action_name</code></em>,
+                                      <em class="parameter"><code><a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a> flags</code></em>);</pre>
+<p>This function ignores the <a class="link" href="AmtkFactory.html#AmtkFactory--default-flags" title="The “default-flags” property"><span class="type">“default-flags”</span></a> property and takes the
+<em class="parameter"><code>flags</code></em>
+ argument instead.</p>
+<div class="refsect3">
+<a name="amtk-factory-create-tool-button-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action_name</p></td>
+<td class="parameter_description"><p>an action name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p><a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-factory-create-tool-button-full.returns"></a><h4>Returns</h4>
+<p>a new <a href="/usr/share/gtk-doc/html/gtk3/GtkToolButton.html#GtkToolButton-struct"><span class="type">GtkToolButton</span></a> for <em class="parameter"><code>action_name</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-factory-create-menu-tool-button"></a><h3>amtk_factory_create_menu_tool_button ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkMenuToolButton.html#GtkMenuToolButton-struct"><span class="returnvalue">GtkMenuToolButton</span></a> *
+amtk_factory_create_menu_tool_button (<em class="parameter"><code><a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a> *factory</code></em>,
+                                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *action_name</code></em>);</pre>
+<p>Creates a new <a href="/usr/share/gtk-doc/html/gtk3/GtkMenuToolButton.html#GtkMenuToolButton-struct"><span class="type">GtkMenuToolButton</span></a> for <em class="parameter"><code>action_name</code></em>
+ with the
+<a class="link" href="AmtkFactory.html#AmtkFactory--default-flags" title="The “default-flags” property"><span class="type">“default-flags”</span></a>.</p>
+<p>See the documentation of <a class="link" href="AmtkFactory.html#amtk-factory-create-menu-tool-button-full" title="amtk_factory_create_menu_tool_button_full ()"><code class="function">amtk_factory_create_menu_tool_button_full()</code></a> for more
+information.</p>
+<div class="refsect3">
+<a name="amtk-factory-create-menu-tool-button.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action_name</p></td>
+<td class="parameter_description"><p>an action name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-factory-create-menu-tool-button.returns"></a><h4>Returns</h4>
+<p>a new <a href="/usr/share/gtk-doc/html/gtk3/GtkMenuToolButton.html#GtkMenuToolButton-struct"><span class="type">GtkMenuToolButton</span></a> for <em class="parameter"><code>action_name</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-factory-create-menu-tool-button-full"></a><h3>amtk_factory_create_menu_tool_button_full ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkMenuToolButton.html#GtkMenuToolButton-struct"><span class="returnvalue">GtkMenuToolButton</span></a> *
+amtk_factory_create_menu_tool_button_full
+                               (<em class="parameter"><code><a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a> *factory</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *action_name</code></em>,
+                                <em class="parameter"><code><a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a> flags</code></em>);</pre>
+<p>This function ignores the <a class="link" href="AmtkFactory.html#AmtkFactory--default-flags" title="The “default-flags” property"><span class="type">“default-flags”</span></a> property and takes the
+<em class="parameter"><code>flags</code></em>
+ argument instead.</p>
+<p>After calling this function, you need to use the <a href="/usr/share/gtk-doc/html/gtk3/GtkMenuToolButton.html#GtkMenuToolButton-struct"><span class="type">GtkMenuToolButton</span></a> API to
+set the menu and also possibly set a tooltip to the arrow.</p>
+<div class="refsect3">
+<a name="amtk-factory-create-menu-tool-button-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action_name</p></td>
+<td class="parameter_description"><p>an action name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p><a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-factory-create-menu-tool-button-full.returns"></a><h4>Returns</h4>
+<p>a new <a href="/usr/share/gtk-doc/html/gtk3/GtkMenuToolButton.html#GtkMenuToolButton-struct"><span class="type">GtkMenuToolButton</span></a> for <em class="parameter"><code>action_name</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-factory-create-shortcut"></a><h3>amtk_factory_create_shortcut ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+amtk_factory_create_shortcut (<em class="parameter"><code><a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a> *factory</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *action_name</code></em>);</pre>
+<p>Calls <a class="link" href="AmtkFactory.html#amtk-factory-create-shortcut-full" title="amtk_factory_create_shortcut_full ()"><code class="function">amtk_factory_create_shortcut_full()</code></a> with the
+<a class="link" href="AmtkFactory.html#AmtkFactory--default-flags" title="The “default-flags” property"><span class="type">“default-flags”</span></a>.</p>
+<div class="refsect3">
+<a name="amtk-factory-create-shortcut.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action_name</p></td>
+<td class="parameter_description"><p>an action name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-factory-create-shortcut.returns"></a><h4>Returns</h4>
+<p>a new <a href="/usr/share/gtk-doc/html/gtk3/GtkShortcutsShortcut.html#GtkShortcutsShortcut-struct"><span class="type">GtkShortcutsShortcut</span></a> for <em class="parameter"><code>action_name</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-5-0.html#api-index-5.0">5.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-factory-create-shortcut-full"></a><h3>amtk_factory_create_shortcut_full ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+amtk_factory_create_shortcut_full (<em class="parameter"><code><a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a> *factory</code></em>,
+                                   <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *action_name</code></em>,
+                                   <em class="parameter"><code><a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a> flags</code></em>);</pre>
+<p>This function ignores the <a class="link" href="AmtkFactory.html#AmtkFactory--default-flags" title="The “default-flags” property"><span class="type">“default-flags”</span></a> property and takes the
+<em class="parameter"><code>flags</code></em>
+ argument instead.</p>
+<p>This function creates a new <a href="/usr/share/gtk-doc/html/gtk3/GtkShortcutsShortcut.html#GtkShortcutsShortcut-struct"><span class="type">GtkShortcutsShortcut</span></a> for <em class="parameter"><code>action_name</code></em>
+.</p>
+<p>For the <a href="/usr/share/gtk-doc/html/gtk3/GtkShortcutsShortcut.html#GtkShortcutsShortcut--title"><span class="type">“title”</span></a>, the tooltip has the priorioty, with the
+label as fallback if the tooltip is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> (the mnemonic is removed from the
+label with <a class="link" href="libgedit-amtk-5-AmtkUtils.html#amtk-utils-remove-mnemonic" title="amtk_utils_remove_mnemonic ()"><code class="function">amtk_utils_remove_mnemonic()</code></a>). This can be controlled with the
+<a class="link" href="AmtkFactory.html#AMTK-FACTORY-IGNORE-TOOLTIP:CAPS"><code class="literal">AMTK_FACTORY_IGNORE_TOOLTIP</code></a> and <a class="link" href="AmtkFactory.html#AMTK-FACTORY-IGNORE-LABEL:CAPS"><code class="literal">AMTK_FACTORY_IGNORE_LABEL</code></a> flags.</p>
+<p>The <a href="/usr/share/gtk-doc/html/gtk3/GtkShortcutsShortcut.html#GtkShortcutsShortcut--accelerator"><span class="type">“accelerator”</span></a> property is set with only the *first*
+accel returned by <a class="link" href="AmtkActionInfo.html#amtk-action-info-get-accels" title="amtk_action_info_get_accels ()"><code class="function">amtk_action_info_get_accels()</code></a>. This step can be ignored
+with <a class="link" href="AmtkFactory.html#AMTK-FACTORY-IGNORE-ACCELS:CAPS"><code class="literal">AMTK_FACTORY_IGNORE_ACCELS</code></a> or <a class="link" href="AmtkFactory.html#AMTK-FACTORY-IGNORE-ACCELS-FOR-DOC:CAPS"><code class="literal">AMTK_FACTORY_IGNORE_ACCELS_FOR_DOC</code></a>.</p>
+<p>The <a href="/usr/share/gtk-doc/html/gtk3/GtkShortcutsShortcut.html#GtkShortcutsShortcut--action-name"><span class="type">“action-name”</span></a> property is set to <em class="parameter"><code>action_name</code></em>
+ if the
+<a class="link" href="AmtkFactory.html#AMTK-FACTORY-IGNORE-GACTION:CAPS"><code class="literal">AMTK_FACTORY_IGNORE_GACTION</code></a> flag isn't set. Note that with
+<a href="/usr/share/gtk-doc/html/gtk3/GtkShortcutsShortcut.html#GtkShortcutsShortcut--action-name"><span class="type">“action-name”</span></a> all accelerators are displayed (if set to
+the <a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#GtkApplication-struct"><span class="type">GtkApplication</span></a>).</p>
+<p>So depending on whether you want to show only the first accelerator or all
+accelerators, you need to set <em class="parameter"><code>flags</code></em>
+ appropriately.</p>
+<div class="refsect3">
+<a name="amtk-factory-create-shortcut-full.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action_name</p></td>
+<td class="parameter_description"><p>an action name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p><a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-factory-create-shortcut-full.returns"></a><h4>Returns</h4>
+<p>a new <a href="/usr/share/gtk-doc/html/gtk3/GtkShortcutsShortcut.html#GtkShortcutsShortcut-struct"><span class="type">GtkShortcutsShortcut</span></a> for <em class="parameter"><code>action_name</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-5-0.html#api-index-5.0">5.0</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="AmtkFactory.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="AmtkFactory-struct"></a><h3>struct AmtkFactory</h3>
+<pre class="programlisting">struct AmtkFactory;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AmtkFactoryFlags"></a><h3>enum AmtkFactoryFlags</h3>
+<p><a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a> permits to control how a factory function creates the
+object, to ignore some steps.</p>
+<div class="refsect3">
+<a name="AmtkFactoryFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="AMTK-FACTORY-FLAGS-NONE:CAPS"></a>AMTK_FACTORY_FLAGS_NONE</p></td>
+<td class="enum_member_description">
+<p>No flags.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="AMTK-FACTORY-IGNORE-GACTION:CAPS"></a>AMTK_FACTORY_IGNORE_GACTION</p></td>
+<td class="enum_member_description">
+<p>Do not associate the created object with the
+<a href="/usr/share/gtk-doc/html/gio/GAction.html#GAction-struct"><span class="type">GAction</span></a>. For example if the object to create is a <a href="/usr/share/gtk-doc/html/gtk3/GtkActionable.html#GtkActionable-struct"><span class="type">GtkActionable</span></a>, do not
+call <a href="/usr/share/gtk-doc/html/gtk3/GtkActionable.html#gtk-actionable-set-detailed-action-name"><code class="function">gtk_actionable_set_detailed_action_name()</code></a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="AMTK-FACTORY-IGNORE-ICON:CAPS"></a>AMTK_FACTORY_IGNORE_ICON</p></td>
+<td class="enum_member_description">
+<p>Do not set an icon.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="AMTK-FACTORY-IGNORE-LABEL:CAPS"></a>AMTK_FACTORY_IGNORE_LABEL</p></td>
+<td class="enum_member_description">
+<p>Do not set a label/short description.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="AMTK-FACTORY-IGNORE-TOOLTIP:CAPS"></a>AMTK_FACTORY_IGNORE_TOOLTIP</p></td>
+<td class="enum_member_description">
+<p>Do not set a tooltip/long description.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="AMTK-FACTORY-IGNORE-ACCELS:CAPS"></a>AMTK_FACTORY_IGNORE_ACCELS</p></td>
+<td class="enum_member_description">
+<p>Ignore completely the accelerators.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="AMTK-FACTORY-IGNORE-ACCELS-FOR-DOC:CAPS"></a>AMTK_FACTORY_IGNORE_ACCELS_FOR_DOC</p></td>
+<td class="enum_member_description">
+<p>Ignore the accelerators for
+documentation purposes only. For example do not add/configure a
+<a href="/usr/share/gtk-doc/html/gtk3/GtkAccelLabel.html#GtkAccelLabel-struct"><span class="type">GtkAccelLabel</span></a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="AMTK-FACTORY-IGNORE-ACCELS-FOR-APP:CAPS"></a>AMTK_FACTORY_IGNORE_ACCELS_FOR_APP</p></td>
+<td class="enum_member_description">
+<p>Do not call
+<a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#gtk-application-set-accels-for-action"><code class="function">gtk_application_set_accels_for_action()</code></a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="AmtkFactory.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="AmtkFactory--application"></a><h3>The <code class="literal">“application”</code> property</h3>
+<pre class="programlisting">  “application”              <a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#GtkApplication-struct"><span class="type">GtkApplication</span></a> *</pre>
+<p>The associated <a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#GtkApplication-struct"><span class="type">GtkApplication</span></a> (it is optional, it can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).
+<a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a> has a weak reference to the <a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#GtkApplication-struct"><span class="type">GtkApplication</span></a>.</p>
+<p>Owner: AmtkFactory</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AmtkFactory--default-flags"></a><h3>The <code class="literal">“default-flags”</code> property</h3>
+<pre class="programlisting">  “default-flags”            <a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a></pre>
+<p>The default <a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a>.</p>
+<p>Owner: AmtkFactory</p>
+<p>Flags: Read / Write</p>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

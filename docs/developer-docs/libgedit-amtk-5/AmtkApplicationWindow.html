@@ -1,0 +1,493 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AmtkApplicationWindow: libgedit-amtk 5 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libgedit-amtk 5 Reference Manual">
+<link rel="up" href="api-reference.html" title="Part I. libgedit-amtk API Reference">
+<link rel="prev" href="libgedit-amtk-5-Amtk-Initialization-and-Finalization.html" title="Amtk Initialization and Finalization">
+<link rel="next" href="AmtkActionInfo.html" title="AmtkActionInfo">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#AmtkApplicationWindow.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#AmtkApplicationWindow.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#AmtkApplicationWindow.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="api-reference.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgedit-amtk-5-Amtk-Initialization-and-Finalization.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="AmtkActionInfo.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="AmtkApplicationWindow"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="AmtkApplicationWindow.top_of_page"></a>AmtkApplicationWindow</span></h2>
+<p>AmtkApplicationWindow — An extension of GtkApplicationWindow</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="AmtkApplicationWindow.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="AmtkApplicationWindow.html" title="AmtkApplicationWindow"><span class="returnvalue">AmtkApplicationWindow</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkApplicationWindow.html#amtk-application-window-get-from-gtk-application-window" title="amtk_application_window_get_from_gtk_application_window ()">amtk_application_window_get_from_gtk_application_window</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="returnvalue">GtkApplicationWindow</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkApplicationWindow.html#amtk-application-window-get-application-window" title="amtk_application_window_get_application_window ()">amtk_application_window_get_application_window</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkStatusbar.html#GtkStatusbar-struct"><span class="returnvalue">GtkStatusbar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkApplicationWindow.html#amtk-application-window-get-statusbar" title="amtk_application_window_get_statusbar ()">amtk_application_window_get_statusbar</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AmtkApplicationWindow.html#amtk-application-window-set-statusbar" title="amtk_application_window_set_statusbar ()">amtk_application_window_set_statusbar</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AmtkApplicationWindow.html#amtk-application-window-connect-menu-to-statusbar" title="amtk_application_window_connect_menu_to_statusbar ()">amtk_application_window_connect_menu_to_statusbar</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AmtkApplicationWindow.html#amtk-application-window-connect-recent-chooser-menu-to-statusbar" title="amtk_application_window_connect_recent_chooser_menu_to_statusbar ()">amtk_application_window_connect_recent_chooser_menu_to_statusbar</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkRecentChooserMenu.html#GtkRecentChooserMenu-struct"><span class="returnvalue">GtkRecentChooserMenu</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkApplicationWindow.html#amtk-application-window-create-open-recent-menu-base" title="amtk_application_window_create_open_recent_menu_base ()">amtk_application_window_create_open_recent_menu_base</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkApplicationWindow.html#amtk-application-window-create-open-recent-menu" title="amtk_application_window_create_open_recent_menu ()">amtk_application_window_create_open_recent_menu</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkApplicationWindow.html#amtk-application-window-create-open-recent-menu-item" title="amtk_application_window_create_open_recent_menu_item ()">amtk_application_window_create_open_recent_menu_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AmtkApplicationWindow.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="type">GtkApplicationWindow</span></a> *</td>
+<td class="property_name"><a class="link" href="AmtkApplicationWindow.html#AmtkApplicationWindow--application-window" title="The “application-window” property">application-window</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkStatusbar.html#GtkStatusbar-struct"><span class="type">GtkStatusbar</span></a> *</td>
+<td class="property_name"><a class="link" href="AmtkApplicationWindow.html#AmtkApplicationWindow--statusbar" title="The “statusbar” property">statusbar</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AmtkApplicationWindow.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="AmtkApplicationWindow.html#AmtkApplicationWindow-struct" title="struct AmtkApplicationWindow">AmtkApplicationWindow</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AmtkApplicationWindow.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> AmtkApplicationWindow
+</pre>
+</div>
+<div class="refsect1">
+<a name="AmtkApplicationWindow.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;amtk/amtk.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="AmtkApplicationWindow.description"></a><h2>Description</h2>
+<p><a class="link" href="AmtkApplicationWindow.html" title="AmtkApplicationWindow"><span class="type">AmtkApplicationWindow</span></a> extends the <a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="type">GtkApplicationWindow</span></a> class with a
+<a class="link" href="AmtkApplicationWindow.html#AmtkApplicationWindow--statusbar" title="The “statusbar” property"><span class="type">“statusbar”</span></a> property and functions to show longer
+descriptions of <a href="/usr/share/gtk-doc/html/gtk3/GtkMenuItem.html#GtkMenuItem-struct"><span class="type">GtkMenuItem</span></a>'s to the <a href="/usr/share/gtk-doc/html/gtk3/GtkStatusbar.html#GtkStatusbar-struct"><span class="type">GtkStatusbar</span></a>.</p>
+<p>Note that <a class="link" href="AmtkApplicationWindow.html" title="AmtkApplicationWindow"><span class="type">AmtkApplicationWindow</span></a> extends the <a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="type">GtkApplicationWindow</span></a> class but
+without subclassing it, because several libraries might want to extend
+<a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="type">GtkApplicationWindow</span></a> and an application needs to be able to use all those
+extensions at the same time.</p>
+</div>
+<div class="refsect1">
+<a name="AmtkApplicationWindow.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="amtk-application-window-get-from-gtk-application-window"></a><h3>amtk_application_window_get_from_gtk_application_window ()</h3>
+<pre class="programlisting"><a class="link" href="AmtkApplicationWindow.html" title="AmtkApplicationWindow"><span class="returnvalue">AmtkApplicationWindow</span></a> *
+amtk_application_window_get_from_gtk_application_window
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="type">GtkApplicationWindow</span></a> *gtk_window</code></em>);</pre>
+<p>Returns the <a class="link" href="AmtkApplicationWindow.html" title="AmtkApplicationWindow"><span class="type">AmtkApplicationWindow</span></a> of <em class="parameter"><code>gtk_window</code></em>
+. The returned object is
+guaranteed to be the same for the lifetime of <em class="parameter"><code>gtk_window</code></em>
+.</p>
+<div class="refsect3">
+<a name="amtk-application-window-get-from-gtk-application-window.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gtk_window</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="type">GtkApplicationWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-application-window-get-from-gtk-application-window.returns"></a><h4>Returns</h4>
+<p>the <a class="link" href="AmtkApplicationWindow.html" title="AmtkApplicationWindow"><span class="type">AmtkApplicationWindow</span></a> of <em class="parameter"><code>gtk_window</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-application-window-get-application-window"></a><h3>amtk_application_window_get_application_window ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="returnvalue">GtkApplicationWindow</span></a> *
+amtk_application_window_get_application_window
+                               (<em class="parameter"><code><a class="link" href="AmtkApplicationWindow.html" title="AmtkApplicationWindow"><span class="type">AmtkApplicationWindow</span></a> *amtk_window</code></em>);</pre>
+<div class="refsect3">
+<a name="amtk-application-window-get-application-window.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>amtk_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkApplicationWindow.html" title="AmtkApplicationWindow"><span class="type">AmtkApplicationWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-application-window-get-application-window.returns"></a><h4>Returns</h4>
+<p>the <a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="type">GtkApplicationWindow</span></a> of <em class="parameter"><code>amtk_window</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-application-window-get-statusbar"></a><h3>amtk_application_window_get_statusbar ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkStatusbar.html#GtkStatusbar-struct"><span class="returnvalue">GtkStatusbar</span></a> *
+amtk_application_window_get_statusbar (<em class="parameter"><code><a class="link" href="AmtkApplicationWindow.html" title="AmtkApplicationWindow"><span class="type">AmtkApplicationWindow</span></a> *amtk_window</code></em>);</pre>
+<div class="refsect3">
+<a name="amtk-application-window-get-statusbar.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>amtk_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkApplicationWindow.html" title="AmtkApplicationWindow"><span class="type">AmtkApplicationWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-application-window-get-statusbar.returns"></a><h4>Returns</h4>
+<p>the <a class="link" href="AmtkApplicationWindow.html#AmtkApplicationWindow--statusbar" title="The “statusbar” property"><span class="type">“statusbar”</span></a>. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-application-window-set-statusbar"></a><h3>amtk_application_window_set_statusbar ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+amtk_application_window_set_statusbar (<em class="parameter"><code><a class="link" href="AmtkApplicationWindow.html" title="AmtkApplicationWindow"><span class="type">AmtkApplicationWindow</span></a> *amtk_window</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkStatusbar.html#GtkStatusbar-struct"><span class="type">GtkStatusbar</span></a> *statusbar</code></em>);</pre>
+<p>Sets the <a class="link" href="AmtkApplicationWindow.html#AmtkApplicationWindow--statusbar" title="The “statusbar” property"><span class="type">“statusbar”</span></a> property.</p>
+<div class="refsect3">
+<a name="amtk-application-window-set-statusbar.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>amtk_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkApplicationWindow.html" title="AmtkApplicationWindow"><span class="type">AmtkApplicationWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>statusbar</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gtk3/GtkStatusbar.html#GtkStatusbar-struct"><span class="type">GtkStatusbar</span></a>, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-application-window-connect-menu-to-statusbar"></a><h3>amtk_application_window_connect_menu_to_statusbar ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+amtk_application_window_connect_menu_to_statusbar
+                               (<em class="parameter"><code><a class="link" href="AmtkApplicationWindow.html" title="AmtkApplicationWindow"><span class="type">AmtkApplicationWindow</span></a> *amtk_window</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkMenuShell.html#GtkMenuShell-struct"><span class="type">GtkMenuShell</span></a> *menu_shell</code></em>);</pre>
+<p>Connects to the <a class="link" href="AmtkMenuShell.html#AmtkMenuShell-menu-item-selected" title="The “menu-item-selected” signal"><span class="type">“menu-item-selected”</span></a> and
+<a class="link" href="AmtkMenuShell.html#AmtkMenuShell-menu-item-deselected" title="The “menu-item-deselected” signal"><span class="type">“menu-item-deselected”</span></a> signals of <em class="parameter"><code>menu_shell</code></em>
+ to push/pop the
+long description of <a href="/usr/share/gtk-doc/html/gtk3/GtkMenuItem.html#GtkMenuItem-struct"><span class="type">GtkMenuItem</span></a>'s to the <a class="link" href="AmtkApplicationWindow.html#AmtkApplicationWindow--statusbar" title="The “statusbar” property"><span class="type">“statusbar”</span></a>.</p>
+<p>The long description is retrieved with <a class="link" href="libgedit-amtk-5-AmtkMenuItem.html#amtk-menu-item-get-long-description" title="amtk_menu_item_get_long_description ()"><code class="function">amtk_menu_item_get_long_description()</code></a>.
+So <a class="link" href="libgedit-amtk-5-AmtkMenuItem.html#amtk-menu-item-set-long-description" title="amtk_menu_item_set_long_description ()"><code class="function">amtk_menu_item_set_long_description()</code></a> must have been called, which is the
+case if the <a href="/usr/share/gtk-doc/html/gtk3/GtkMenuItem.html#GtkMenuItem-struct"><span class="type">GtkMenuItem</span></a> has been created with <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>.</p>
+<div class="refsect3">
+<a name="amtk-application-window-connect-menu-to-statusbar.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>amtk_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkApplicationWindow.html" title="AmtkApplicationWindow"><span class="type">AmtkApplicationWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>menu_shell</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gtk3/GtkMenuShell.html#GtkMenuShell-struct"><span class="type">GtkMenuShell</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-application-window-connect-recent-chooser-menu-to-statusbar"></a><h3>amtk_application_window_connect_recent_chooser_menu_to_statusbar ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+amtk_application_window_connect_recent_chooser_menu_to_statusbar
+                               (<em class="parameter"><code><a class="link" href="AmtkApplicationWindow.html" title="AmtkApplicationWindow"><span class="type">AmtkApplicationWindow</span></a> *amtk_window</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkRecentChooserMenu.html#GtkRecentChooserMenu-struct"><span class="type">GtkRecentChooserMenu</span></a> *menu</code></em>);</pre>
+<p>An alternative to <a href="/usr/share/gtk-doc/html/gtk3/GtkRecentChooser.html#gtk-recent-chooser-set-show-tips"><code class="function">gtk_recent_chooser_set_show_tips()</code></a>. Shows the full path in
+the <a class="link" href="AmtkApplicationWindow.html#AmtkApplicationWindow--statusbar" title="The “statusbar” property"><span class="type">“statusbar”</span></a> when a <a href="/usr/share/gtk-doc/html/gtk3/GtkMenuItem.html#GtkMenuItem-struct"><span class="type">GtkMenuItem</span></a> of <em class="parameter"><code>menu</code></em>
+ is
+selected.</p>
+<p>The full path is retrieved with
+<a class="link" href="libgedit-amtk-5-AmtkUtils.html#amtk-utils-recent-chooser-menu-get-item-uri" title="amtk_utils_recent_chooser_menu_get_item_uri ()"><code class="function">amtk_utils_recent_chooser_menu_get_item_uri()</code></a>.</p>
+<div class="refsect3">
+<a name="amtk-application-window-connect-recent-chooser-menu-to-statusbar.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>amtk_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkApplicationWindow.html" title="AmtkApplicationWindow"><span class="type">AmtkApplicationWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>menu</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gtk3/GtkRecentChooserMenu.html#GtkRecentChooserMenu-struct"><span class="type">GtkRecentChooserMenu</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-application-window-create-open-recent-menu-base"></a><h3>amtk_application_window_create_open_recent_menu_base ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkRecentChooserMenu.html#GtkRecentChooserMenu-struct"><span class="returnvalue">GtkRecentChooserMenu</span></a> *
+amtk_application_window_create_open_recent_menu_base
+                               (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates the base of a simple and generic <a href="/usr/share/gtk-doc/html/gtk3/GtkRecentChooserMenu.html#GtkRecentChooserMenu-struct"><span class="type">GtkRecentChooserMenu</span></a>.</p>
+<p>The <a href="/usr/share/gtk-doc/html/gtk3/GtkRecentChooser.html#GtkRecentChooser-struct"><span class="type">GtkRecentChooser</span></a> is configured to show files only recently used with the
+current application, as returned by <a href="/usr/share/gtk-doc/html/glib/glib-Miscellaneous-Utility-Functions.html#g-get-application-name"><code class="function">g_get_application_name()</code></a>. If recent files
+are added to the default <a href="/usr/share/gtk-doc/html/gtk3/GtkRecentManager.html#GtkRecentManager-struct"><span class="type">GtkRecentManager</span></a> with
+<a href="/usr/share/gtk-doc/html/gtk3/GtkRecentManager.html#gtk-recent-manager-add-item"><code class="function">gtk_recent_manager_add_item()</code></a>, the files will normally show up in the
+<a href="/usr/share/gtk-doc/html/gtk3/GtkRecentChooserMenu.html#GtkRecentChooserMenu-struct"><span class="type">GtkRecentChooserMenu</span></a>.</p>
+<div class="refsect3">
+<a name="amtk-application-window-create-open-recent-menu-base.returns"></a><h4>Returns</h4>
+<p>a new <a href="/usr/share/gtk-doc/html/gtk3/GtkRecentChooserMenu.html#GtkRecentChooserMenu-struct"><span class="type">GtkRecentChooserMenu</span></a>. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-5-6.html#api-index-5.6">5.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-application-window-create-open-recent-menu"></a><h3>amtk_application_window_create_open_recent_menu ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+amtk_application_window_create_open_recent_menu
+                               (<em class="parameter"><code><a class="link" href="AmtkApplicationWindow.html" title="AmtkApplicationWindow"><span class="type">AmtkApplicationWindow</span></a> *amtk_window</code></em>);</pre>
+<p>This function creates a <a href="/usr/share/gtk-doc/html/gtk3/GtkRecentChooserMenu.html#GtkRecentChooserMenu-struct"><span class="type">GtkRecentChooserMenu</span></a> with
+<a class="link" href="AmtkApplicationWindow.html#amtk-application-window-create-open-recent-menu-base" title="amtk_application_window_create_open_recent_menu_base ()"><code class="function">amtk_application_window_create_open_recent_menu_base()</code></a>, and setup these
+additional things:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>The <a href="/usr/share/gtk-doc/html/gtk3/GtkRecentChooserMenu.html#GtkRecentChooserMenu-struct"><span class="type">GtkRecentChooserMenu</span></a> is connected to the statusbar with
+<a class="link" href="AmtkApplicationWindow.html#amtk-application-window-connect-recent-chooser-menu-to-statusbar" title="amtk_application_window_connect_recent_chooser_menu_to_statusbar ()"><code class="function">amtk_application_window_connect_recent_chooser_menu_to_statusbar()</code></a>.</p></li>
+<li class="listitem"><p>When the <a href="/usr/share/gtk-doc/html/gtk3/GtkRecentChooser.html#GtkRecentChooser-item-activated"><span class="type">“item-activated”</span></a> signal is emitted,
+<a href="/usr/share/gtk-doc/html/gio/GApplication.html#g-application-open"><code class="function">g_application_open()</code></a> is called (with an empty hint), so the <a href="/usr/share/gtk-doc/html/gio/GApplication.html#GApplication-struct"><span class="type">GApplication</span></a>
+must have the <a href="/usr/share/gtk-doc/html/gio/GApplication.html#G-APPLICATION-HANDLES-OPEN:CAPS"><code class="literal">G_APPLICATION_HANDLES_OPEN</code></a> flag set.</p></li>
+</ul></div>
+<div class="refsect3">
+<a name="amtk-application-window-create-open-recent-menu.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>amtk_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkApplicationWindow.html" title="AmtkApplicationWindow"><span class="type">AmtkApplicationWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-application-window-create-open-recent-menu.returns"></a><h4>Returns</h4>
+<p>a new <a href="/usr/share/gtk-doc/html/gtk3/GtkRecentChooserMenu.html#GtkRecentChooserMenu-struct"><span class="type">GtkRecentChooserMenu</span></a>. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-application-window-create-open-recent-menu-item"></a><h3>amtk_application_window_create_open_recent_menu_item ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+amtk_application_window_create_open_recent_menu_item
+                               (<em class="parameter"><code><a class="link" href="AmtkApplicationWindow.html" title="AmtkApplicationWindow"><span class="type">AmtkApplicationWindow</span></a> *amtk_window</code></em>);</pre>
+<p>Creates a <a href="/usr/share/gtk-doc/html/gtk3/GtkMenuItem.html#GtkMenuItem-struct"><span class="type">GtkMenuItem</span></a> with a simple and generic <a href="/usr/share/gtk-doc/html/gtk3/GtkRecentChooserMenu.html#GtkRecentChooserMenu-struct"><span class="type">GtkRecentChooserMenu</span></a> as
+submenu. The <a href="/usr/share/gtk-doc/html/gtk3/GtkRecentChooserMenu.html#GtkRecentChooserMenu-struct"><span class="type">GtkRecentChooserMenu</span></a> is created with
+<a class="link" href="AmtkApplicationWindow.html#amtk-application-window-create-open-recent-menu" title="amtk_application_window_create_open_recent_menu ()"><code class="function">amtk_application_window_create_open_recent_menu()</code></a>.</p>
+<div class="refsect3">
+<a name="amtk-application-window-create-open-recent-menu-item.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>amtk_window</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkApplicationWindow.html" title="AmtkApplicationWindow"><span class="type">AmtkApplicationWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-application-window-create-open-recent-menu-item.returns"></a><h4>Returns</h4>
+<p>a new <a href="/usr/share/gtk-doc/html/gtk3/GtkMenuItem.html#GtkMenuItem-struct"><span class="type">GtkMenuItem</span></a>. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="AmtkApplicationWindow.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="AmtkApplicationWindow-struct"></a><h3>struct AmtkApplicationWindow</h3>
+<pre class="programlisting">struct AmtkApplicationWindow;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="AmtkApplicationWindow.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="AmtkApplicationWindow--application-window"></a><h3>The <code class="literal">“application-window”</code> property</h3>
+<pre class="programlisting">  “application-window”       <a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="type">GtkApplicationWindow</span></a> *</pre>
+<p>The <a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="type">GtkApplicationWindow</span></a>.</p>
+<p>Owner: AmtkApplicationWindow</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AmtkApplicationWindow--statusbar"></a><h3>The <code class="literal">“statusbar”</code> property</h3>
+<pre class="programlisting">  “statusbar”                <a href="/usr/share/gtk-doc/html/gtk3/GtkStatusbar.html#GtkStatusbar-struct"><span class="type">GtkStatusbar</span></a> *</pre>
+<p>The <a href="/usr/share/gtk-doc/html/gtk3/GtkStatusbar.html#GtkStatusbar-struct"><span class="type">GtkStatusbar</span></a>. <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> by default.</p>
+<p>Owner: AmtkApplicationWindow</p>
+<p>Flags: Read / Write</p>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GspellLanguage: gspell 1 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="gspell 1 Reference Manual">
+<link rel="up" href="core-classes.html" title="Core Classes">
+<link rel="prev" href="GspellChecker.html" title="GspellChecker">
+<link rel="next" href="language-choosers.html" title="Language Choosers">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GspellLanguage.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GspellLanguage.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="core-classes.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GspellChecker.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="language-choosers.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GspellLanguage"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GspellLanguage.top_of_page"></a>GspellLanguage</span></h2>
+<p>GspellLanguage — Language</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GspellLanguage.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GspellLanguage.html#gspell-language-get-available" title="gspell_language_get_available ()">gspell_language_get_available</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="returnvalue">GspellLanguage</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GspellLanguage.html#gspell-language-get-default" title="gspell_language_get_default ()">gspell_language_get_default</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="returnvalue">GspellLanguage</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GspellLanguage.html#gspell-language-lookup" title="gspell_language_lookup ()">gspell_language_lookup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GspellLanguage.html#gspell-language-get-code" title="gspell_language_get_code ()">gspell_language_get_code</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GspellLanguage.html#gspell-language-get-name" title="gspell_language_get_name ()">gspell_language_get_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GspellLanguage.html#gspell-language-compare" title="gspell_language_compare ()">gspell_language_compare</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="returnvalue">GspellLanguage</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GspellLanguage.html#gspell-language-copy" title="gspell_language_copy ()">gspell_language_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GspellLanguage.html#gspell-language-free" title="gspell_language_free ()">gspell_language_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GspellLanguage.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GspellLanguage.html#GspellLanguage-struct" title="GspellLanguage">GspellLanguage</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GspellLanguage.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-Boxed-Types.html">GBoxed</a>
+    <span class="lineart">╰──</span> GspellLanguage
+</pre>
+</div>
+<div class="refsect1">
+<a name="GspellLanguage.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gspell/gspell.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GspellLanguage.description"></a><h2>Description</h2>
+<p><a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a> represents a language that can be used for the spell
+checking, i.e. a language for which a dictionary is installed.</p>
+</div>
+<div class="refsect1">
+<a name="GspellLanguage.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gspell-language-get-available"></a><h3>gspell_language_get_available ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+gspell_language_get_available (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="refsect3">
+<a name="gspell-language-get-available.returns"></a><h4>Returns</h4>
+<p>the list of available
+languages, sorted with <a class="link" href="GspellLanguage.html#gspell-language-compare" title="gspell_language_compare ()"><code class="function">gspell_language_compare()</code></a>. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GspellLanguage]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-language-get-default"></a><h3>gspell_language_get_default ()</h3>
+<pre class="programlisting">const <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="returnvalue">GspellLanguage</span></a> *
+gspell_language_get_default (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Finds the best available language based on the current locale.</p>
+<div class="refsect3">
+<a name="gspell-language-get-default.returns"></a><h4>Returns</h4>
+<p>the default <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a>, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if no dictionaries
+are available. </p>
+<p><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-language-lookup"></a><h3>gspell_language_lookup ()</h3>
+<pre class="programlisting">const <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="returnvalue">GspellLanguage</span></a> *
+gspell_language_lookup (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *language_code</code></em>);</pre>
+<div class="refsect3">
+<a name="gspell-language-lookup.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>language_code</p></td>
+<td class="parameter_description"><p>a language code.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gspell-language-lookup.returns"></a><h4>Returns</h4>
+<p>a <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a> corresponding to <em class="parameter"><code>language_code</code></em>
+, or
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found. </p>
+<p><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-language-get-code"></a><h3>gspell_language_get_code ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gspell_language_get_code (<em class="parameter"><code>const <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a> *language</code></em>);</pre>
+<div class="refsect3">
+<a name="gspell-language-get-code.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>language</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gspell-language-get-code.returns"></a><h4>Returns</h4>
+<p> the <em class="parameter"><code>language</code></em>
+code, for example fr_BE.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-language-get-name"></a><h3>gspell_language_get_name ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gspell_language_get_name (<em class="parameter"><code>const <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a> *language</code></em>);</pre>
+<p>Returns the <em class="parameter"><code>language</code></em>
+ name translated to the current locale. For example
+"French (Belgium)" is returned if the current locale is in English and the
+<em class="parameter"><code>language</code></em>
+ code is fr_BE.</p>
+<div class="refsect3">
+<a name="gspell-language-get-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>language</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gspell-language-get-name.returns"></a><h4>Returns</h4>
+<p> the <em class="parameter"><code>language</code></em>
+name.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-language-compare"></a><h3>gspell_language_compare ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gspell_language_compare (<em class="parameter"><code>const <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a> *language_a</code></em>,
+                         <em class="parameter"><code>const <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a> *language_b</code></em>);</pre>
+<p>Compares alphabetically two languages by their name, as returned by
+<a class="link" href="GspellLanguage.html#gspell-language-get-name" title="gspell_language_get_name ()"><code class="function">gspell_language_get_name()</code></a>.</p>
+<div class="refsect3">
+<a name="gspell-language-compare.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>language_a</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>language_b</p></td>
+<td class="parameter_description"><p>another <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gspell-language-compare.returns"></a><h4>Returns</h4>
+<p> an integer less than, equal to, or greater than zero, if <em class="parameter"><code>language_a</code></em>
+is &lt;, == or &gt; than <em class="parameter"><code>language_b</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-language-copy"></a><h3>gspell_language_copy ()</h3>
+<pre class="programlisting"><a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="returnvalue">GspellLanguage</span></a> *
+gspell_language_copy (<em class="parameter"><code>const <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a> *language</code></em>);</pre>
+<p>Used by language bindings.</p>
+<div class="refsect3">
+<a name="gspell-language-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>language</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gspell-language-copy.returns"></a><h4>Returns</h4>
+<p> a copy of <em class="parameter"><code>lang</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-language-free"></a><h3>gspell_language_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gspell_language_free (<em class="parameter"><code><a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a> *language</code></em>);</pre>
+<p>Used by language bindings.</p>
+<div class="refsect3">
+<a name="gspell-language-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>language</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellLanguage.html" title="GspellLanguage"><span class="type">GspellLanguage</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GspellLanguage.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GspellLanguage-struct"></a><h3>GspellLanguage</h3>
+<pre class="programlisting">typedef struct _GspellLanguage GspellLanguage;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GspellLanguage.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

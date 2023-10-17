@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GeditCommands: gedit Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="gedit Reference Manual">
+<link rel="up" href="api-reference.html" title="Part I. API Reference">
+<link rel="prev" href="GeditAppActivatable.html" title="GeditAppActivatable">
+<link rel="next" href="GeditDocument.html" title="GeditDocument">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gedit-GeditCommands.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="api-reference.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GeditAppActivatable.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GeditDocument.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gedit-GeditCommands"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gedit-GeditCommands.top_of_page"></a>GeditCommands</span></h2>
+<p>GeditCommands</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gedit-GeditCommands.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gedit-GeditCommands.html#gedit-commands-load-location" title="gedit_commands_load_location ()">gedit_commands_load_location</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gedit-GeditCommands.html#gedit-commands-load-locations" title="gedit_commands_load_locations ()">gedit_commands_load_locations</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gedit-GeditCommands.html#gedit-commands-save-document" title="gedit_commands_save_document ()">gedit_commands_save_document</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gedit-GeditCommands.html#gedit-commands-save-document-async" title="gedit_commands_save_document_async ()">gedit_commands_save_document_async</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gedit-GeditCommands.html#gedit-commands-save-document-finish" title="gedit_commands_save_document_finish ()">gedit_commands_save_document_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gedit-GeditCommands.html#gedit-commands-save-all-documents" title="gedit_commands_save_all_documents ()">gedit_commands_save_all_documents</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gedit-GeditCommands.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="gedit-GeditCommands.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gedit-commands-load-location"></a><h3>gedit_commands_load_location ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gedit_commands_load_location (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a> *location</code></em>,
+                              <em class="parameter"><code>const <a href="../libgedit-gtksourceview-300/GtkSourceEncoding.html#GtkSourceEncoding-struct"><span class="type">GtkSourceEncoding</span></a> *encoding</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> line_pos</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column_pos</code></em>);</pre>
+<p>Loads <em class="parameter"><code>location</code></em>
+. Ignores non-existing locations.</p>
+<div class="refsect3">
+<a name="gedit-commands-load-location.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>location</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a> to load</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>encoding</p></td>
+<td class="parameter_description"><p>the <a href="../libgedit-gtksourceview-300/GtkSourceEncoding.html#GtkSourceEncoding-struct"><span class="type">GtkSourceEncoding</span></a> of <em class="parameter"><code>location</code></em>
+. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>line_pos</p></td>
+<td class="parameter_description"><p>the line position to place the cursor</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>column_pos</p></td>
+<td class="parameter_description"><p>the line column to place the cursor</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-commands-load-locations"></a><h3>gedit_commands_load_locations ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+gedit_commands_load_locations (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *locations</code></em>,
+                               <em class="parameter"><code>const <a href="../libgedit-gtksourceview-300/GtkSourceEncoding.html#GtkSourceEncoding-struct"><span class="type">GtkSourceEncoding</span></a> *encoding</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> line_pos</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> column_pos</code></em>);</pre>
+<p>Loads <em class="parameter"><code>locations</code></em>
+. Ignore non-existing locations.</p>
+<div class="refsect3">
+<a name="gedit-commands-load-locations.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>locations</p></td>
+<td class="parameter_description"><p>the locations to load. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> Gio.File]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>encoding</p></td>
+<td class="parameter_description"><p>the <a href="../libgedit-gtksourceview-300/GtkSourceEncoding.html#GtkSourceEncoding-struct"><span class="type">GtkSourceEncoding</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>line_pos</p></td>
+<td class="parameter_description"><p>the line position to place the cursor</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>column_pos</p></td>
+<td class="parameter_description"><p>the line column to place the cursor</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gedit-commands-load-locations.returns"></a><h4>Returns</h4>
+<p>the locations
+that were loaded. </p>
+<p><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> Gedit.Document][<acronym title="The caller owns the data container, but not the data inside it."><span class="acronym">transfer container</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-commands-save-document"></a><h3>gedit_commands_save_document ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gedit_commands_save_document (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>,
+                              <em class="parameter"><code><a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a> *document</code></em>);</pre>
+<p>Asynchronously save <em class="parameter"><code>document</code></em>
+. <em class="parameter"><code>document</code></em>
+ must belong to <em class="parameter"><code>window</code></em>
+. If you need
+the result of the operation, use <a class="link" href="gedit-GeditCommands.html#gedit-commands-save-document-async" title="gedit_commands_save_document_async ()"><code class="function">gedit_commands_save_document_async()</code></a>.</p>
+<div class="refsect3">
+<a name="gedit-commands-save-document.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>document</p></td>
+<td class="parameter_description"><p>the <a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a> to save.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-commands-save-document-async"></a><h3>gedit_commands_save_document_async ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gedit_commands_save_document_async (<em class="parameter"><code><a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a> *document</code></em>,
+                                    <em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GCancellable.html#GCancellable-struct"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Asynchronously save the <em class="parameter"><code>document</code></em>
+. <em class="parameter"><code>document</code></em>
+ must belong to <em class="parameter"><code>window</code></em>
+. The
+source object of the async task is <em class="parameter"><code>document</code></em>
+ (which will be the first
+parameter of the <a href="/usr/share/gtk-doc/html/gio/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a>).</p>
+<p>When the operation is finished, <em class="parameter"><code>callback</code></em>
+ will be called. You can then call
+<a class="link" href="gedit-GeditCommands.html#gedit-commands-save-document-finish" title="gedit_commands_save_document_finish ()"><code class="function">gedit_commands_save_document_finish()</code></a> to get the result of the operation.</p>
+<div class="refsect3">
+<a name="gedit-commands-save-document-async.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>document</p></td>
+<td class="parameter_description"><p>the <a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a> to save.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cancellable</p></td>
+<td class="parameter_description"><p>optional <a href="/usr/share/gtk-doc/html/gio/GCancellable.html#GCancellable-struct"><span class="type">GCancellable</span></a> object, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to ignore. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> to call when the operation
+is finished. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="The callback is valid until first called."><span class="acronym">scope async</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>the data to pass to the <em class="parameter"><code>callback</code></em>
+function. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="This parameter is a 'user_data', for callbacks; many bindings can pass NULL here."><span class="acronym">closure</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="ix04.html#api-index-3.14">3.14</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-commands-save-document-finish"></a><h3>gedit_commands_save_document_finish ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gedit_commands_save_document_finish (<em class="parameter"><code><a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a> *document</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GAsyncResult.html#GAsyncResult-struct"><span class="type">GAsyncResult</span></a> *result</code></em>);</pre>
+<p>Finishes an asynchronous document saving operation started with
+<a class="link" href="gedit-GeditCommands.html#gedit-commands-save-document-async" title="gedit_commands_save_document_async ()"><code class="function">gedit_commands_save_document_async()</code></a>.</p>
+<p>Note that there is no error parameter because the errors are already handled
+by gedit.</p>
+<div class="refsect3">
+<a name="gedit-commands-save-document-finish.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>document</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GAsyncResult.html#GAsyncResult-struct"><span class="type">GAsyncResult</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gedit-commands-save-document-finish.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the document has been correctly saved, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="ix04.html#api-index-3.14">3.14</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-commands-save-all-documents"></a><h3>gedit_commands_save_all_documents ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gedit_commands_save_all_documents (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>);</pre>
+<p>Asynchronously save all documents belonging to <em class="parameter"><code>window</code></em>
+. The result of the
+operation is not available, so it's difficult to know whether all the
+documents are correctly saved.</p>
+<div class="refsect3">
+<a name="gedit-commands-save-all-documents.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

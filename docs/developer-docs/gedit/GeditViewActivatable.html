@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GeditViewActivatable: gedit Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="gedit Reference Manual">
+<link rel="up" href="api-reference.html" title="Part I. API Reference">
+<link rel="prev" href="gedit-gedit-view.html" title="GeditView">
+<link rel="next" href="GeditWindow.html" title="GeditWindow">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GeditViewActivatable.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GeditViewActivatable.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_prerequisites">  <span class="dim">|</span> 
+                  <a href="#GeditViewActivatable.prerequisites" class="shortcut">Prerequisites</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GeditViewActivatable.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="api-reference.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gedit-gedit-view.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GeditWindow.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GeditViewActivatable"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GeditViewActivatable.top_of_page"></a>GeditViewActivatable</span></h2>
+<p>GeditViewActivatable — Interface for activatable extensions on views</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GeditViewActivatable.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GeditViewActivatable.html#gedit-view-activatable-activate" title="gedit_view_activatable_activate ()">gedit_view_activatable_activate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GeditViewActivatable.html#gedit-view-activatable-deactivate" title="gedit_view_activatable_deactivate ()">gedit_view_activatable_deactivate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GeditViewActivatable.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type">
+<a class="link" href="gedit-gedit-view.html#GeditView"><span class="type">GeditView</span></a> *</td>
+<td class="property_name"><a class="link" href="GeditViewActivatable.html#GeditViewActivatable--view" title="The “view” property">view</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GeditViewActivatable.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GeditViewActivatable.html#GeditViewActivatable-struct" title="GeditViewActivatable">GeditViewActivatable</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GeditViewActivatable.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/GTypeModule.html">GInterface</a>
+    <span class="lineart">╰──</span> GeditViewActivatable
+</pre>
+</div>
+<div class="refsect1">
+<a name="GeditViewActivatable.prerequisites"></a><h2>Prerequisites</h2>
+<p>
+GeditViewActivatable requires
+ <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GeditViewActivatable.description"></a><h2>Description</h2>
+<p><a class="link" href="GeditViewActivatable.html" title="GeditViewActivatable"><span class="type">GeditViewActivatable</span></a> is an interface which should be implemented by
+extensions that should be activated on a gedit view.</p>
+</div>
+<div class="refsect1">
+<a name="GeditViewActivatable.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gedit-view-activatable-activate"></a><h3>gedit_view_activatable_activate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gedit_view_activatable_activate (<em class="parameter"><code><a class="link" href="GeditViewActivatable.html" title="GeditViewActivatable"><span class="type">GeditViewActivatable</span></a> *activatable</code></em>);</pre>
+<p>Activates the extension on the window property.</p>
+<div class="refsect3">
+<a name="gedit-view-activatable-activate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>activatable</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GeditViewActivatable.html" title="GeditViewActivatable"><span class="type">GeditViewActivatable</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-view-activatable-deactivate"></a><h3>gedit_view_activatable_deactivate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gedit_view_activatable_deactivate (<em class="parameter"><code><a class="link" href="GeditViewActivatable.html" title="GeditViewActivatable"><span class="type">GeditViewActivatable</span></a> *activatable</code></em>);</pre>
+<p>Deactivates the extension on the window property.</p>
+<div class="refsect3">
+<a name="gedit-view-activatable-deactivate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>activatable</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GeditViewActivatable.html" title="GeditViewActivatable"><span class="type">GeditViewActivatable</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GeditViewActivatable.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GeditViewActivatable-struct"></a><h3>GeditViewActivatable</h3>
+<pre class="programlisting">typedef struct _GeditViewActivatable GeditViewActivatable;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GeditViewActivatable.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GeditViewActivatable--view"></a><h3>The <code class="literal">“view”</code> property</h3>
+<pre class="programlisting">  “view”                     <a class="link" href="gedit-gedit-view.html#GeditView"><span class="type">GeditView</span></a> *</pre>
+<p>The window property contains the gedit window for this
+<a class="link" href="GeditViewActivatable.html" title="GeditViewActivatable"><span class="type">GeditViewActivatable</span></a> instance.</p>
+<p>Owner: GeditViewActivatable</p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GeditViewActivatable.see-also"></a><h2>See Also</h2>
+<p><span class="type">PeasExtensionSet</span></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

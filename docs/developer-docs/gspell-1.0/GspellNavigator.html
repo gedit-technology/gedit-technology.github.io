@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GspellNavigator: gspell 1 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="gspell 1 Reference Manual">
+<link rel="up" href="spell-checker-dialog.html" title="Spell Checker Dialog">
+<link rel="prev" href="GspellCheckerDialog.html" title="GspellCheckerDialog">
+<link rel="next" href="GtkTextView-support.html" title="GtkTextView Support">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GspellNavigator.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GspellNavigator.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_prerequisites">  <span class="dim">|</span> 
+                  <a href="#GspellNavigator.prerequisites" class="shortcut">Prerequisites</a></span><span id="nav_implementations">  <span class="dim">|</span> 
+                  <a href="#GspellNavigator.implementations" class="shortcut">Known Implementations</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="spell-checker-dialog.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GspellCheckerDialog.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GtkTextView-support.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GspellNavigator"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GspellNavigator.top_of_page"></a>GspellNavigator</span></h2>
+<p>GspellNavigator — Interface to navigate through misspelled words</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GspellNavigator.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GspellNavigator.html#gspell-navigator-goto-next" title="gspell_navigator_goto_next ()">gspell_navigator_goto_next</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GspellNavigator.html#gspell-navigator-change" title="gspell_navigator_change ()">gspell_navigator_change</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GspellNavigator.html#gspell-navigator-change-all" title="gspell_navigator_change_all ()">gspell_navigator_change_all</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GspellNavigator.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GspellNavigator.html#GspellNavigator-struct" title="GspellNavigator">GspellNavigator</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GspellNavigator.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/GTypeModule.html">GInterface</a>
+    <span class="lineart">╰──</span> GspellNavigator
+</pre>
+</div>
+<div class="refsect1">
+<a name="GspellNavigator.prerequisites"></a><h2>Prerequisites</h2>
+<p>
+GspellNavigator requires
+ <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GspellNavigator.implementations"></a><h2>Known Implementations</h2>
+<p>
+GspellNavigator is implemented by
+ <a class="link" href="GspellNavigatorTextView.html" title="GspellNavigatorTextView">GspellNavigatorTextView</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GspellNavigator.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gspell/gspell.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GspellNavigator.description"></a><h2>Description</h2>
+<p><a class="link" href="GspellNavigator.html" title="GspellNavigator"><span class="type">GspellNavigator</span></a> is an interface to navigate through misspelled words,
+and correct the mistakes.</p>
+<p>It is used by widgets like <a class="link" href="GspellCheckerDialog.html" title="GspellCheckerDialog"><span class="type">GspellCheckerDialog</span></a>. The purpose is to
+spell-check a document one word at a time.</p>
+<p>It is not mandatory to navigate through all the text. Depending on the
+context, an implementation could spell-check only the current page, or the
+selection, etc.</p>
+<p>For <a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GtkTextView-struct"><span class="type">GtkTextView</span></a>, see the <a class="link" href="GspellNavigatorTextView.html" title="GspellNavigatorTextView"><span class="type">GspellNavigatorTextView</span></a> implementation of this
+interface.</p>
+<p>The <a class="link" href="GspellNavigator.html" title="GspellNavigator"><span class="type">GspellNavigator</span></a> interface requires <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned"><span class="type">GInitiallyUnowned</span></a> because a
+<a class="link" href="GspellNavigator.html" title="GspellNavigator"><span class="type">GspellNavigator</span></a> object is meant to be passed as an argument to a <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a>
+constructor, for example <a class="link" href="GspellCheckerDialog.html#gspell-checker-dialog-new" title="gspell_checker_dialog_new ()"><code class="function">gspell_checker_dialog_new()</code></a>. This permits to
+decouple the frontend from the backend, making the <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a> re-usable for
+different <a class="link" href="GspellNavigator.html" title="GspellNavigator"><span class="type">GspellNavigator</span></a>'s.</p>
+</div>
+<div class="refsect1">
+<a name="GspellNavigator.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gspell-navigator-goto-next"></a><h3>gspell_navigator_goto_next ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gspell_navigator_goto_next (<em class="parameter"><code><a class="link" href="GspellNavigator.html" title="GspellNavigator"><span class="type">GspellNavigator</span></a> *navigator</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **word</code></em>,
+                            <em class="parameter"><code><a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a> **spell_checker</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Goes to the next misspelled word. When called the first time, goes to the
+first misspelled word.</p>
+<div class="refsect3">
+<a name="gspell-navigator-goto-next.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>navigator</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellNavigator.html" title="GspellNavigator"><span class="type">GspellNavigator</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>word</p></td>
+<td class="parameter_description"><p>a location to store an allocated string, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.
+Use <a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> to free the returned string. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="NULL may be passed instead of a pointer to a location."><span class="acronym">optional</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>spell_checker</p></td>
+<td class="parameter_description"><p>a location to store the
+<a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a> used, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. Use <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when no longer
+needed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="NULL may be passed instead of a pointer to a location."><span class="acronym">optional</span></acronym>][<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>a location to a <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="NULL may be passed instead of a pointer to a location."><span class="acronym">optional</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gspell-navigator-goto-next.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if a next misspelled word has been found, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if the spell
+checking is finished or if an error occurred.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-navigator-change"></a><h3>gspell_navigator_change ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gspell_navigator_change (<em class="parameter"><code><a class="link" href="GspellNavigator.html" title="GspellNavigator"><span class="type">GspellNavigator</span></a> *navigator</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *word</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *change_to</code></em>);</pre>
+<p>Changes the current <em class="parameter"><code>word</code></em>
+ by <em class="parameter"><code>change_to</code></em>
+ in the text. <em class="parameter"><code>word</code></em>
+ must be the same
+as returned by the last call to <a class="link" href="GspellNavigator.html#gspell-navigator-goto-next" title="gspell_navigator_goto_next ()"><code class="function">gspell_navigator_goto_next()</code></a>.</p>
+<p>This function doesn't call <a class="link" href="GspellChecker.html#gspell-checker-set-correction" title="gspell_checker_set_correction ()"><code class="function">gspell_checker_set_correction()</code></a>. A widget using a
+<a class="link" href="GspellNavigator.html" title="GspellNavigator"><span class="type">GspellNavigator</span></a> should call <a class="link" href="GspellChecker.html#gspell-checker-set-correction" title="gspell_checker_set_correction ()"><code class="function">gspell_checker_set_correction()</code></a> in addition to
+this function.</p>
+<div class="refsect3">
+<a name="gspell-navigator-change.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>navigator</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellNavigator.html" title="GspellNavigator"><span class="type">GspellNavigator</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>word</p></td>
+<td class="parameter_description"><p>the word to change.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>change_to</p></td>
+<td class="parameter_description"><p>the replacement.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-navigator-change-all"></a><h3>gspell_navigator_change_all ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gspell_navigator_change_all (<em class="parameter"><code><a class="link" href="GspellNavigator.html" title="GspellNavigator"><span class="type">GspellNavigator</span></a> *navigator</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *word</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *change_to</code></em>);</pre>
+<p>Changes all occurrences of <em class="parameter"><code>word</code></em>
+ by <em class="parameter"><code>change_to</code></em>
+ in the text.</p>
+<p>This function doesn't call <a class="link" href="GspellChecker.html#gspell-checker-set-correction" title="gspell_checker_set_correction ()"><code class="function">gspell_checker_set_correction()</code></a>. A widget using a
+<a class="link" href="GspellNavigator.html" title="GspellNavigator"><span class="type">GspellNavigator</span></a> should call <a class="link" href="GspellChecker.html#gspell-checker-set-correction" title="gspell_checker_set_correction ()"><code class="function">gspell_checker_set_correction()</code></a> in addition to
+this function.</p>
+<div class="refsect3">
+<a name="gspell-navigator-change-all.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>navigator</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellNavigator.html" title="GspellNavigator"><span class="type">GspellNavigator</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>word</p></td>
+<td class="parameter_description"><p>the word to change.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>change_to</p></td>
+<td class="parameter_description"><p>the replacement.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GspellNavigator.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GspellNavigator-struct"></a><h3>GspellNavigator</h3>
+<pre class="programlisting">typedef struct _GspellNavigator GspellNavigator;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GspellNavigator.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="GspellNavigatorTextView.html" title="GspellNavigatorTextView"><span class="type">GspellNavigatorTextView</span></a>, <a class="link" href="GspellCheckerDialog.html" title="GspellCheckerDialog"><span class="type">GspellCheckerDialog</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

@@ -1,0 +1,590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>LatexilaPostProcessor: GNOME LaTeX Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GNOME LaTeX Reference Manual">
+<link rel="up" href="ch02.html" title="Build Tools">
+<link rel="prev" href="LatexilaBuildView.html" title="LatexilaBuildView">
+<link rel="next" href="LatexilaPostProcessorAllOutput.html" title="LatexilaPostProcessorAllOutput">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#LatexilaPostProcessor.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#LatexilaPostProcessor.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#LatexilaPostProcessor.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="LatexilaBuildView.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="LatexilaPostProcessorAllOutput.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="LatexilaPostProcessor"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="LatexilaPostProcessor.top_of_page"></a>LatexilaPostProcessor</span></h2>
+<p>LatexilaPostProcessor — post-processor base class</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="LatexilaPostProcessor.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="LatexilaPostProcessor.html#latexila-post-processor-get-name-from-type" title="latexila_post_processor_get_name_from_type ()">latexila_post_processor_get_name_from_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="LatexilaPostProcessor.html#latexila-post-processor-get-type-from-name" title="latexila_post_processor_get_type_from_name ()">latexila_post_processor_get_type_from_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="LatexilaPostProcessor.html#latexila-post-processor-process-async" title="latexila_post_processor_process_async ()">latexila_post_processor_process_async</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="LatexilaPostProcessor.html#latexila-post-processor-process-finish" title="latexila_post_processor_process_finish ()">latexila_post_processor_process_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="LatexilaPostProcessor.html#latexila-post-processor-start" title="latexila_post_processor_start ()">latexila_post_processor_start</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="LatexilaPostProcessor.html#latexila-post-processor-process-line" title="latexila_post_processor_process_line ()">latexila_post_processor_process_line</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="LatexilaPostProcessor.html#latexila-post-processor-end" title="latexila_post_processor_end ()">latexila_post_processor_end</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="LatexilaPostProcessor.html#latexila-post-processor-get-messages" title="latexila_post_processor_get_messages ()">latexila_post_processor_get_messages</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Double-ended-Queues.html#GQueue"><span class="returnvalue">GQueue</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="LatexilaPostProcessor.html#latexila-post-processor-take-messages" title="latexila_post_processor_take_messages ()">latexila_post_processor_take_messages</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="LatexilaPostProcessor.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="LatexilaPostProcessor.html#LatexilaPostProcessor--has-details" title="The “has-details” property">has-details</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="LatexilaPostProcessor.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="LatexilaPostProcessor.html#LatexilaPostProcessor-struct" title="LatexilaPostProcessor">LatexilaPostProcessor</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="LatexilaPostProcessor.html#LatexilaPostProcessorType" title="enum LatexilaPostProcessorType">LatexilaPostProcessorType</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="LatexilaPostProcessor.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> LatexilaPostProcessor
+        <span class="lineart">├──</span> <a class="link" href="LatexilaPostProcessorAllOutput.html" title="LatexilaPostProcessorAllOutput">LatexilaPostProcessorAllOutput</a>
+        <span class="lineart">├──</span> <a class="link" href="LatexilaPostProcessorLatex.html" title="LatexilaPostProcessorLatex">LatexilaPostProcessorLatex</a>
+        <span class="lineart">╰──</span> <a class="link" href="LatexilaPostProcessorLatexmk.html" title="LatexilaPostProcessorLatexmk">LatexilaPostProcessorLatexmk</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="LatexilaPostProcessor.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;latexila.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="LatexilaPostProcessor.description"></a><h2>Description</h2>
+<p>When running a build tool, a post-processor is used to filter the output to
+display only the relevant messages. The output can come from the
+stdout/stderr of a build job command, or the contents of a log file, etc. In
+GNOME LaTeX only the former is currently used, but it would be more robust to
+read the LaTeX log file.</p>
+<p>For the no-output post-processor type, you should not need to create a
+<a class="link" href="LatexilaPostProcessor.html" title="LatexilaPostProcessor"><span class="type">LatexilaPostProcessor</span></a> object, since the result is empty.</p>
+<p>The implementations sometimes assume that a post-processor can be used at
+most one time.</p>
+</div>
+<div class="refsect1">
+<a name="LatexilaPostProcessor.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="latexila-post-processor-get-name-from-type"></a><h3>latexila_post_processor_get_name_from_type ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+latexila_post_processor_get_name_from_type
+                               (<em class="parameter"><code><a class="link" href="LatexilaPostProcessor.html#LatexilaPostProcessorType" title="enum LatexilaPostProcessorType"><span class="type">LatexilaPostProcessorType</span></a> type</code></em>);</pre>
+<div class="refsect3">
+<a name="latexila-post-processor-get-name-from-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>the post-processor type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="latexila-post-processor-get-name-from-type.returns"></a><h4>Returns</h4>
+<p> the post-processor name.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="latexila-post-processor-get-type-from-name"></a><h3>latexila_post_processor_get_type_from_name ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+latexila_post_processor_get_type_from_name
+                               (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                <em class="parameter"><code><a class="link" href="LatexilaPostProcessor.html#LatexilaPostProcessorType" title="enum LatexilaPostProcessorType"><span class="type">LatexilaPostProcessorType</span></a> *type</code></em>);</pre>
+<div class="refsect3">
+<a name="latexila-post-processor-get-type-from-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>the name of the post-processor.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>the output post-processor type. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="latexila-post-processor-get-type-from-name.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="latexila-post-processor-process-async"></a><h3>latexila_post_processor_process_async ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+latexila_post_processor_process_async (<em class="parameter"><code><a class="link" href="LatexilaPostProcessor.html" title="LatexilaPostProcessor"><span class="type">LatexilaPostProcessor</span></a> *pp</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a> *file</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GInputStream.html#GInputStream-struct"><span class="type">GInputStream</span></a> *stream</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GCancellable.html#GCancellable-struct"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Asynchronously process an input stream. The input stream can for example come
+from the output of a command launched with <a href="/usr/share/gtk-doc/html/gio/GSubprocess.html#GSubprocess-struct"><span class="type">GSubprocess</span></a>, or it can be the
+input stream of a file (e.g. the LaTeX log file), etc.</p>
+<p><em class="parameter"><code>callback</code></em>
+ will be called when the operation is finished. You can then call
+<a class="link" href="LatexilaPostProcessor.html#latexila-post-processor-process-finish" title="latexila_post_processor_process_finish ()"><code class="function">latexila_post_processor_process_finish()</code></a>.</p>
+<div class="refsect3">
+<a name="latexila-post-processor-process-async.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pp</p></td>
+<td class="parameter_description"><p>a post-processor.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>file</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a> on which the build tool is run.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>the input stream to process.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cancellable</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GCancellable.html#GCancellable-struct"><span class="type">GCancellable</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>the callback to call when the operation is finished.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>the data to pass to the callback.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="latexila-post-processor-process-finish"></a><h3>latexila_post_processor_process_finish ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+latexila_post_processor_process_finish
+                               (<em class="parameter"><code><a class="link" href="LatexilaPostProcessor.html" title="LatexilaPostProcessor"><span class="type">LatexilaPostProcessor</span></a> *pp</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GAsyncResult.html#GAsyncResult-struct"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> succeeded</code></em>);</pre>
+<p>Finishes an operation started with <a class="link" href="LatexilaPostProcessor.html#latexila-post-processor-process-async" title="latexila_post_processor_process_async ()"><code class="function">latexila_post_processor_process_async()</code></a>.
+After calling this function, you can get the filtered messages with
+<a class="link" href="LatexilaPostProcessor.html#latexila-post-processor-get-messages" title="latexila_post_processor_get_messages ()"><code class="function">latexila_post_processor_get_messages()</code></a>.</p>
+<div class="refsect3">
+<a name="latexila-post-processor-process-finish.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pp</p></td>
+<td class="parameter_description"><p>a post-processor.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>result</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GAsyncResult.html#GAsyncResult-struct"><span class="type">GAsyncResult</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>succeeded</p></td>
+<td class="parameter_description"><p>whether the subprocess has succeeded.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="latexila-post-processor-start"></a><h3>latexila_post_processor_start ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+latexila_post_processor_start (<em class="parameter"><code><a class="link" href="LatexilaPostProcessor.html" title="LatexilaPostProcessor"><span class="type">LatexilaPostProcessor</span></a> *pp</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a> *file</code></em>);</pre>
+<p>Manually starts the post-processor.</p>
+<p>Not needed if you use <a class="link" href="LatexilaPostProcessor.html#latexila-post-processor-process-async" title="latexila_post_processor_process_async ()"><code class="function">latexila_post_processor_process_async()</code></a>.</p>
+<div class="refsect3">
+<a name="latexila-post-processor-start.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pp</p></td>
+<td class="parameter_description"><p>a <a class="link" href="LatexilaPostProcessor.html" title="LatexilaPostProcessor"><span class="type">LatexilaPostProcessor</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>file</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a> on which the build tool is run.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="latexila-post-processor-process-line"></a><h3>latexila_post_processor_process_line ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+latexila_post_processor_process_line (<em class="parameter"><code><a class="link" href="LatexilaPostProcessor.html" title="LatexilaPostProcessor"><span class="type">LatexilaPostProcessor</span></a> *pp</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *line</code></em>);</pre>
+<p>Manually processes a line. This function takes ownership of <em class="parameter"><code>line</code></em>
+. Free with
+<a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> if you don't reuse the content.</p>
+<p>Not needed if you use <a class="link" href="LatexilaPostProcessor.html#latexila-post-processor-process-async" title="latexila_post_processor_process_async ()"><code class="function">latexila_post_processor_process_async()</code></a>.</p>
+<div class="refsect3">
+<a name="latexila-post-processor-process-line.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pp</p></td>
+<td class="parameter_description"><p>a <a class="link" href="LatexilaPostProcessor.html" title="LatexilaPostProcessor"><span class="type">LatexilaPostProcessor</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>line</p></td>
+<td class="parameter_description"><p>a line, without the newline character(s). </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="latexila-post-processor-end"></a><h3>latexila_post_processor_end ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+latexila_post_processor_end (<em class="parameter"><code><a class="link" href="LatexilaPostProcessor.html" title="LatexilaPostProcessor"><span class="type">LatexilaPostProcessor</span></a> *pp</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> succeeded</code></em>);</pre>
+<p>Manually ends the processing.</p>
+<p>Not needed if you use <a class="link" href="LatexilaPostProcessor.html#latexila-post-processor-process-async" title="latexila_post_processor_process_async ()"><code class="function">latexila_post_processor_process_async()</code></a>.</p>
+<div class="refsect3">
+<a name="latexila-post-processor-end.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pp</p></td>
+<td class="parameter_description"><p>a <a class="link" href="LatexilaPostProcessor.html" title="LatexilaPostProcessor"><span class="type">LatexilaPostProcessor</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>succeeded</p></td>
+<td class="parameter_description"><p>whether the subprocess has succeeded.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="latexila-post-processor-get-messages"></a><h3>latexila_post_processor_get_messages ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+latexila_post_processor_get_messages (<em class="parameter"><code><a class="link" href="LatexilaPostProcessor.html" title="LatexilaPostProcessor"><span class="type">LatexilaPostProcessor</span></a> *pp</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> show_details</code></em>);</pre>
+<p>Gets the filtered messages. Call this function only after calling
+<a class="link" href="LatexilaPostProcessor.html#latexila-post-processor-process-finish" title="latexila_post_processor_process_finish ()"><code class="function">latexila_post_processor_process_finish()</code></a> or <a class="link" href="LatexilaPostProcessor.html#latexila-post-processor-end" title="latexila_post_processor_end ()"><code class="function">latexila_post_processor_end()</code></a>.</p>
+<p>Another solution would have been to pass the <a class="link" href="LatexilaBuildView.html" title="LatexilaBuildView"><span class="type">LatexilaBuildView</span></a> to the
+post-processor, so the filtered messages can directly be outputed to the
+build view as they come. But some post-processors don't know what to output
+directly. The latexmk post-processor can have a simplified output with only
+the LaTeX messages, in which case the detailed messages are also available,
+but this can be known only when all the stream has been processed.</p>
+<p>Obviously if the build view is passed to the post-processor, the latexmk
+post-processor can output its messages only at the end. But another reason to
+not pass the build view is for the unit tests. It is easier for the unit
+tests to check the returned <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> than analyzing a <a href="/usr/share/gtk-doc/html/gtk3/GtkTreeView.html#GtkTreeView-struct"><span class="type">GtkTreeView</span></a>. Of course
+it would be possible to keep also the messages in a <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> and have this
+function only for the unit tests, but it takes more memory (unless a custom
+<a href="/usr/share/gtk-doc/html/gtk3/GtkTreeModel.html#GtkTreeModel-struct"><span class="type">GtkTreeModel</span></a> is implemented), or another function is needed to configure
+whether a <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> is kept in memory or not... It becomes a little too
+complicated, and doesn't really worth the effort as most users use latexmk.</p>
+<p>The current solution is "good enough". And "good enough" is... "good enough".</p>
+<div class="refsect3">
+<a name="latexila-post-processor-get-messages.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pp</p></td>
+<td class="parameter_description"><p>a post-processor.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>show_details</p></td>
+<td class="parameter_description"><p>whether to show the details. Has no effect if
+<a class="link" href="LatexilaPostProcessor.html#LatexilaPostProcessor--has-details" title="The “has-details” property"><span class="type">“has-details”</span></a> is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="latexila-post-processor-get-messages.returns"></a><h4>Returns</h4>
+<p>the tree of
+filtered messages. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> LatexilaBuildMsg]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="latexila-post-processor-take-messages"></a><h3>latexila_post_processor_take_messages ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Double-ended-Queues.html#GQueue"><span class="returnvalue">GQueue</span></a> *
+latexila_post_processor_take_messages (<em class="parameter"><code><a class="link" href="LatexilaPostProcessor.html" title="LatexilaPostProcessor"><span class="type">LatexilaPostProcessor</span></a> *pp</code></em>);</pre>
+<p>Takes ownership of all the messages. Since <a href="/usr/share/gtk-doc/html/glib/glib-Double-ended-Queues.html#GQueue"><span class="type">GQueue</span></a> is not reference counted,
+<em class="parameter"><code>pp</code></em>
+ is emptied and is thus useless after calling this function.</p>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
+<div class="refsect3">
+<a name="latexila-post-processor-take-messages.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>pp</p></td>
+<td class="parameter_description"><p>a <a class="link" href="LatexilaPostProcessor.html" title="LatexilaPostProcessor"><span class="type">LatexilaPostProcessor</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="latexila-post-processor-take-messages.returns"></a><h4>Returns</h4>
+<p>the tree of filtered messages, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.
+Element types: <a class="link" href="LatexilaBuildView.html#LatexilaBuildMsg" title="struct LatexilaBuildMsg"><span class="type">LatexilaBuildMsg</span></a>. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="LatexilaPostProcessor.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="LatexilaPostProcessor-struct"></a><h3>LatexilaPostProcessor</h3>
+<pre class="programlisting">typedef struct _LatexilaPostProcessor LatexilaPostProcessor;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="LatexilaPostProcessorType"></a><h3>enum LatexilaPostProcessorType</h3>
+<p>Types of post-processors.</p>
+<div class="refsect3">
+<a name="LatexilaPostProcessorType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="LATEXILA-POST-PROCESSOR-TYPE-NO-OUTPUT:CAPS"></a>LATEXILA_POST_PROCESSOR_TYPE_NO_OUTPUT</p></td>
+<td class="enum_member_description">
+<p>no output.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LATEXILA-POST-PROCESSOR-TYPE-ALL-OUTPUT:CAPS"></a>LATEXILA_POST_PROCESSOR_TYPE_ALL_OUTPUT</p></td>
+<td class="enum_member_description">
+<p>all output.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LATEXILA-POST-PROCESSOR-TYPE-LATEX:CAPS"></a>LATEXILA_POST_PROCESSOR_TYPE_LATEX</p></td>
+<td class="enum_member_description">
+<p>for a LaTeX command.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LATEXILA-POST-PROCESSOR-TYPE-LATEXMK:CAPS"></a>LATEXILA_POST_PROCESSOR_TYPE_LATEXMK</p></td>
+<td class="enum_member_description">
+<p>for the latexmk command.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="LATEXILA-POST-PROCESSOR-TYPE-NB-TYPES:CAPS"></a>LATEXILA_POST_PROCESSOR_TYPE_NB_TYPES</p></td>
+<td class="enum_member_description">
+<p>number of post-processor types.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="LatexilaPostProcessor.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="LatexilaPostProcessor--has-details"></a><h3>The <code class="literal">“has-details”</code> property</h3>
+<pre class="programlisting">  “has-details”              <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Owner: LatexilaPostProcessor</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: FALSE</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

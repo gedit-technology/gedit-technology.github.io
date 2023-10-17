@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Part II. API Breaks: gedit Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="gedit Reference Manual">
+<link rel="up" href="index.html" title="gedit Reference Manual">
+<link rel="prev" href="gedit-gedit-utils.html" title="gedit-utils">
+<link rel="next" href="annexes.html" title="Part III. Annexes">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="gedit-gedit-utils.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="annexes.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="part">
+<div class="titlepage"><div><div><h1 class="title">
+<a name="api-breaks"></a>Part II. API Breaks</h1></div></div></div>
+<p>
+    gedit is a quite old piece of software (created in 1998, at the beginnings
+    of the GNOME project), and as every software, the code evolves during its
+    lifetime. So there are sometimes API breaks for gedit plugins, there are no
+    API stability guarantees.
+  </p>
+<div class="refsect1">
+<a name="id-1.3.3"></a><h2>45 -&gt; 46</h2>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>
+          The <a class="link" href="GeditWindow.html#gedit-window-get-side-panel" title="gedit_window_get_side_panel ()">gedit_window_get_side_panel()</a>
+          function now returns a <a href="../tepl-6/TeplPanel.html#TeplPanel-struct">TeplPanel</a>.
+        </p></li>
+<li class="listitem"><p>
+          The <code class="code">gedit_statusbar_new()</code> and
+          <code class="code">gedit_statusbar_set_window_state()</code> functions have been
+          removed.
+        </p></li>
+<li class="listitem"><p>
+          The <code class="code">gedit_utils_set_atk_name_description()</code> function has
+          been removed.
+        </p></li>
+</ul></div>
+</div>
+<div class="refsect1">
+<a name="id-1.3.4"></a><h2>44 -&gt; 45</h2>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>
+          Vala plugins need to rely on the GObject Introspection file instead of
+          the vapi. The latter is no longer generated.
+        </p></li>
+<li class="listitem"><p>
+          The <code class="code">gedit_window_create_tab_from_location()</code> and
+          <code class="code">gedit_window_create_tab_from_stream()</code> functions have been
+          removed, use
+          <a class="link" href="GeditWindow.html#gedit-window-create-tab" title="gedit_window_create_tab ()">gedit_window_create_tab()</a>
+          followed by
+          <a class="link" href="GeditTab.html#gedit-tab-load-file" title="gedit_tab_load_file ()">gedit_tab_load_file()</a> or
+          <a class="link" href="GeditTab.html#gedit-tab-load-stream" title="gedit_tab_load_stream ()">gedit_tab_load_stream()</a>
+          instead.
+        </p></li>
+</ul></div>
+</div>
+<div class="refsect1">
+<a name="id-1.3.5"></a><h2>43 -&gt; 44</h2>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>
+          When an URI is added to the
+          <a href="/usr/share/gtk-doc/html/gtk3/GtkRecentManager.html#GtkRecentManager-struct">GtkRecentManager</a>,
+          the <code class="code">groups</code> field of
+          <a href="/usr/share/gtk-doc/html/gtk3/GtkRecentManager.html#GtkRecentData">GtkRecentData</a>
+          is no longer set. You can rely on the application name instead.
+        </p></li>
+<li class="listitem"><p>
+          The <code class="code">gedit_document_get_language()</code> function has been
+          removed, use
+          <a href="../libgedit-gtksourceview-300/GtkSourceBuffer.html#gtk-source-buffer-get-language">gtk_source_buffer_get_language()</a>
+          instead.
+        </p></li>
+<li class="listitem"><p>
+          The <code class="code">gedit_document_get_short_name_for_display()</code> function has been
+          removed, use
+          <a href="../tepl-6/TeplFile.html#tepl-file-get-short-name">tepl_file_get_short_name()</a>
+          instead.
+        </p></li>
+<li class="listitem"><p>
+          The <code class="code">gedit_document_is_untitled()</code> function has been
+          removed, use
+          <a href="../tepl-6/TeplFile.html#tepl-file-get-location">tepl_file_get_location()</a>
+          instead.
+        </p></li>
+<li class="listitem"><p>
+          The <code class="code">gedit_statusbar_set_overwrite()</code>
+          and <code class="code">gedit_statusbar_clear_overwrite()</code>
+          functions have been removed.
+        </p></li>
+</ul></div>
+</div>
+<div class="refsect1">
+<a name="id-1.3.6"></a><h2>3.38 -&gt; 40</h2>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>
+          All previously deprecated APIs have been removed.
+        </p></li>
+<li class="listitem"><p>
+          The <code class="code">GeditProgressInfoBar</code> class has been removed, you can
+          use <a href="../tepl-6/TeplProgressInfoBar.html#TeplProgressInfoBar-struct">TeplProgressInfoBar</a>
+          instead.
+        </p></li>
+<li class="listitem"><p>
+          <a class="link" href="GeditDocument.html" title="GeditDocument">GeditDocument</a> is now a subclass
+          of <a href="../tepl-6/TeplBuffer.html#TeplBuffer-struct">TeplBuffer</a>.
+        </p></li>
+<li class="listitem"><p>
+          The <code class="code">GeditDocument::cursor-moved</code> signal has been removed.
+          You can use the <a href="../tepl-6/TeplBuffer.html#TeplBuffer-struct">TeplBuffer</a> API
+          instead.
+        </p></li>
+<li class="listitem"><p>
+          The <code class="code">gedit_document_get_uri_for_display()</code> function has
+          been removed from the public API.
+        </p></li>
+<li class="listitem"><p>
+          The <code class="code">GeditDocument:shortname</code> property has been removed.
+          You can use the <a href="../tepl-6/TeplFile.html#TeplFile-struct">TeplFile</a> API instead.
+        </p></li>
+<li class="listitem"><p>
+          The <code class="code">gedit_document_is_untouched()</code> function has been
+          removed. You can use the <a href="../tepl-6/TeplBuffer.html#TeplBuffer-struct">TeplBuffer</a>
+          API instead.
+        </p></li>
+<li class="listitem"><p>
+          The <code class="code">gedit_view_set_font()</code> function has been removed.
+        </p></li>
+<li class="listitem"><p>
+          <code class="code">DEBUG_METADATA</code> has been removed.
+        </p></li>
+</ul></div>
+</div>
+<div class="refsect1">
+<a name="id-1.3.7"></a><h2>3.36.0 -&gt; 3.37.1</h2>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>
+          All previously deprecated APIs have been removed.
+        </p></li>
+<li class="listitem"><p>
+          The lockdown support has been removed (for the
+          org.gnome.desktop.lockdown GSettings). So the
+          <code class="code">gedit_app_get_lockdown()</code> function has been removed.
+        </p></li>
+<li class="listitem"><p>
+          The <code class="code">GBOOLEAN_TO_POINTER()</code> and
+          <code class="code">GPOINTER_TO_BOOLEAN()</code> macros have been removed from
+          <code class="code">gedit-utils.h</code>.
+        </p></li>
+<li class="listitem"><p>
+          The <code class="code">gedit_utils_get_current_workspace()</code>,
+          <code class="code">gedit_utils_get_window_workspace()</code> and
+          <code class="code">gedit_utils_get_current_viewport()</code> functions have been
+          removed because workspaces information is not available on Wayland.
+        </p></li>
+</ul></div>
+</div>
+<div class="refsect1">
+<a name="id-1.3.8"></a><h2>3.34.0 -&gt; 3.35.2</h2>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>
+          All previously deprecated APIs have been removed.
+        </p></li>
+<li class="listitem"><p>
+          The <code class="code">GeditDocument:use-gvfs-metadata</code> property has been
+          removed. But there was anyway a warning for not using that property in
+          a gedit plugin.
+        </p></li>
+<li class="listitem"><p>
+          For <a class="link" href="GeditDocument.html#gedit-document-get-metadata" title="gedit_document_get_metadata ()">gedit_document_get_metadata()</a>
+          and <a class="link" href="GeditDocument.html#gedit-document-set-metadata" title="gedit_document_set_metadata ()">gedit_document_set_metadata()</a>,
+          the key names should now have the prefix <code class="code">"gedit-"</code> with
+          possibly an additional namespace for the plugin name, for example
+          <code class="code">"gedit-spell-foobar"</code>. So the key names are now the same
+          regardless of the operating system, and the key names should no longer
+          start with <code class="code">"metadata::"</code>.
+        </p></li>
+</ul></div>
+</div>
+<div class="refsect1">
+<a name="id-1.3.9"></a><h2>For previous gedit versions</h2>
+<p>
+      See the
+      <a class="ulink" href="https://wiki.gnome.org/Apps/Gedit/Attic/Old_API_Changes" target="_top">Old API Changes wiki page</a>.
+    </p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="GNOME LaTeX Reference Manual" link="index.html" author="" name="gnome-latex" version="2" language="c">
+  <chapters>
+    <sub name="API reference" link="api-reference.html">
+      <sub name="Main Classes" link="ch01.html">
+        <sub name="Latexila Initialization and Finalization" link="gnome-latex-Latexila-Initialization-and-Finalization.html"/>
+        <sub name="LatexilaFactory" link="LatexilaFactory.html"/>
+        <sub name="LatexilaSettings" link="LatexilaSettings.html"/>
+        <sub name="LatexilaApp" link="LatexilaApp.html"/>
+        <sub name="LatexilaBuffer" link="gnome-latex-LatexilaBuffer.html"/>
+        <sub name="LatexilaView" link="gnome-latex-LatexilaView.html"/>
+      </sub>
+      <sub name="Build Tools" link="ch02.html">
+        <sub name="LatexilaBuildJob" link="LatexilaBuildJob.html"/>
+        <sub name="LatexilaBuildTool" link="LatexilaBuildTool.html"/>
+        <sub name="LatexilaBuildTools" link="LatexilaBuildTools.html"/>
+        <sub name="LatexilaBuildToolsDefault" link="LatexilaBuildToolsDefault.html"/>
+        <sub name="LatexilaBuildToolsPersonal" link="LatexilaBuildToolsPersonal.html"/>
+        <sub name="LatexilaBuildView" link="LatexilaBuildView.html"/>
+        <sub name="LatexilaPostProcessor" link="LatexilaPostProcessor.html"/>
+        <sub name="LatexilaPostProcessorAllOutput" link="LatexilaPostProcessorAllOutput.html"/>
+        <sub name="LatexilaPostProcessorLatex" link="LatexilaPostProcessorLatex.html"/>
+        <sub name="LatexilaPostProcessorLatexmk" link="LatexilaPostProcessorLatexmk.html"/>
+      </sub>
+      <sub name="Templates" link="ch03.html">
+        <sub name="LatexilaTemplatesDialogs" link="gnome-latex-LatexilaTemplatesDialogs.html"/>
+        <sub name="LatexilaTemplatesManageDialog" link="LatexilaTemplatesManageDialog.html"/>
+        <sub name="LatexilaTemplatesDefault" link="LatexilaTemplatesDefault.html"/>
+        <sub name="LatexilaTemplatesPersonal" link="LatexilaTemplatesPersonal.html"/>
+      </sub>
+      <sub name="Misc" link="ch04.html">
+        <sub name="LatexilaDirs" link="gnome-latex-LatexilaDirs.html"/>
+        <sub name="LaTeX commands" link="gnome-latex-LaTeX-commands.html"/>
+        <sub name="LatexilaPrefs" link="gnome-latex-LatexilaPrefs.html"/>
+        <sub name="LatexilaSynctex" link="LatexilaSynctex.html"/>
+        <sub name="LatexilaUtils" link="gnome-latex-LatexilaUtils.html"/>
+      </sub>
+    </sub>
+    <sub name="Annexes" link="annexes.html">
+      <sub name="Object Hierarchy" link="object-tree.html"/>
+      <sub name="Index of all symbols" link="ix01.html"/>
+      <sub name="Annotation Glossary" link="annotation-glossary.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <keyword type="function" name="latexila_init ()" link="gnome-latex-Latexila-Initialization-and-Finalization.html#latexila-init"/>
+    <keyword type="function" name="latexila_finalize ()" link="gnome-latex-Latexila-Initialization-and-Finalization.html#latexila-finalize"/>
+    <keyword type="function" name="latexila_factory_new ()" link="LatexilaFactory.html#latexila-factory-new"/>
+    <keyword type="struct" name="struct LatexilaFactory" link="LatexilaFactory.html#LatexilaFactory-struct"/>
+    <keyword type="function" name="latexila_settings_get_singleton ()" link="LatexilaSettings.html#latexila-settings-get-singleton"/>
+    <keyword type="function" name="latexila_settings_peek_editor_settings ()" link="LatexilaSettings.html#latexila-settings-peek-editor-settings"/>
+    <keyword type="function" name="latexila_settings_peek_latex_settings ()" link="LatexilaSettings.html#latexila-settings-peek-latex-settings"/>
+    <keyword type="struct" name="struct LatexilaSettings" link="LatexilaSettings.html#LatexilaSettings-struct"/>
+    <keyword type="function" name="latexila_app_new ()" link="LatexilaApp.html#latexila-app-new"/>
+    <keyword type="struct" name="struct LatexilaApp" link="LatexilaApp.html#LatexilaApp-struct"/>
+    <keyword type="function" name="latexila_buffer_setup ()" link="gnome-latex-LatexilaBuffer.html#latexila-buffer-setup"/>
+    <keyword type="function" name="latexila_view_setup ()" link="gnome-latex-LatexilaView.html#latexila-view-setup"/>
+    <keyword type="function" name="latexila_view_get_indentation_style ()" link="gnome-latex-LatexilaView.html#latexila-view-get-indentation-style"/>
+    <keyword type="function" name="latexila_build_job_new ()" link="LatexilaBuildJob.html#latexila-build-job-new"/>
+    <keyword type="function" name="latexila_build_job_clone ()" link="LatexilaBuildJob.html#latexila-build-job-clone"/>
+    <keyword type="function" name="latexila_build_job_to_xml ()" link="LatexilaBuildJob.html#latexila-build-job-to-xml"/>
+    <keyword type="function" name="latexila_build_job_run_async ()" link="LatexilaBuildJob.html#latexila-build-job-run-async"/>
+    <keyword type="function" name="latexila_build_job_run_finish ()" link="LatexilaBuildJob.html#latexila-build-job-run-finish"/>
+    <keyword type="struct" name="LatexilaBuildJob" link="LatexilaBuildJob.html#LatexilaBuildJob-struct"/>
+    <keyword type="property" name="The “command” property" link="LatexilaBuildJob.html#LatexilaBuildJob--command"/>
+    <keyword type="property" name="The “post-processor-type” property" link="LatexilaBuildJob.html#LatexilaBuildJob--post-processor-type"/>
+    <keyword type="function" name="latexila_build_tool_new ()" link="LatexilaBuildTool.html#latexila-build-tool-new"/>
+    <keyword type="function" name="latexila_build_tool_clone ()" link="LatexilaBuildTool.html#latexila-build-tool-clone"/>
+    <keyword type="function" name="latexila_build_tool_add_job ()" link="LatexilaBuildTool.html#latexila-build-tool-add-job"/>
+    <keyword type="function" name="latexila_build_tool_get_jobs ()" link="LatexilaBuildTool.html#latexila-build-tool-get-jobs"/>
+    <keyword type="function" name="latexila_build_tool_get_description ()" link="LatexilaBuildTool.html#latexila-build-tool-get-description"/>
+    <keyword type="function" name="latexila_build_tool_to_xml ()" link="LatexilaBuildTool.html#latexila-build-tool-to-xml"/>
+    <keyword type="function" name="latexila_build_tool_run_async ()" link="LatexilaBuildTool.html#latexila-build-tool-run-async"/>
+    <keyword type="function" name="latexila_build_tool_run_finish ()" link="LatexilaBuildTool.html#latexila-build-tool-run-finish"/>
+    <keyword type="struct" name="LatexilaBuildTool" link="LatexilaBuildTool.html#LatexilaBuildTool-struct"/>
+    <keyword type="property" name="The “description” property" link="LatexilaBuildTool.html#LatexilaBuildTool--description"/>
+    <keyword type="property" name="The “enabled” property" link="LatexilaBuildTool.html#LatexilaBuildTool--enabled"/>
+    <keyword type="property" name="The “extensions” property" link="LatexilaBuildTool.html#LatexilaBuildTool--extensions"/>
+    <keyword type="property" name="The “files-to-open” property" link="LatexilaBuildTool.html#LatexilaBuildTool--files-to-open"/>
+    <keyword type="property" name="The “icon” property" link="LatexilaBuildTool.html#LatexilaBuildTool--icon"/>
+    <keyword type="property" name="The “id” property" link="LatexilaBuildTool.html#LatexilaBuildTool--id"/>
+    <keyword type="property" name="The “label” property" link="LatexilaBuildTool.html#LatexilaBuildTool--label"/>
+    <keyword type="function" name="latexila_build_tools_load ()" link="LatexilaBuildTools.html#latexila-build-tools-load"/>
+    <keyword type="function" name="latexila_build_tools_set_enabled ()" link="LatexilaBuildTools.html#latexila-build-tools-set-enabled"/>
+    <keyword type="function" name="latexila_build_tools_nth ()" link="LatexilaBuildTools.html#latexila-build-tools-nth"/>
+    <keyword type="struct" name="LatexilaBuildTools" link="LatexilaBuildTools.html#LatexilaBuildTools-struct"/>
+    <keyword type="signal" name="The “loaded” signal" link="LatexilaBuildTools.html#LatexilaBuildTools-loaded"/>
+    <keyword type="signal" name="The “modified” signal" link="LatexilaBuildTools.html#LatexilaBuildTools-modified"/>
+    <keyword type="function" name="latexila_build_tools_default_get_instance ()" link="LatexilaBuildToolsDefault.html#latexila-build-tools-default-get-instance"/>
+    <keyword type="struct" name="LatexilaBuildToolsDefault" link="LatexilaBuildToolsDefault.html#LatexilaBuildToolsDefault-struct"/>
+    <keyword type="function" name="latexila_build_tools_personal_get_instance ()" link="LatexilaBuildToolsPersonal.html#latexila-build-tools-personal-get-instance"/>
+    <keyword type="function" name="latexila_build_tools_personal_save ()" link="LatexilaBuildToolsPersonal.html#latexila-build-tools-personal-save"/>
+    <keyword type="function" name="latexila_build_tools_personal_move_up ()" link="LatexilaBuildToolsPersonal.html#latexila-build-tools-personal-move-up"/>
+    <keyword type="function" name="latexila_build_tools_personal_move_down ()" link="LatexilaBuildToolsPersonal.html#latexila-build-tools-personal-move-down"/>
+    <keyword type="function" name="latexila_build_tools_personal_delete ()" link="LatexilaBuildToolsPersonal.html#latexila-build-tools-personal-delete"/>
+    <keyword type="function" name="latexila_build_tools_personal_add ()" link="LatexilaBuildToolsPersonal.html#latexila-build-tools-personal-add"/>
+    <keyword type="function" name="latexila_build_tools_personal_insert ()" link="LatexilaBuildToolsPersonal.html#latexila-build-tools-personal-insert"/>
+    <keyword type="function" name="latexila_build_tools_personal_replace ()" link="LatexilaBuildToolsPersonal.html#latexila-build-tools-personal-replace"/>
+    <keyword type="struct" name="LatexilaBuildToolsPersonal" link="LatexilaBuildToolsPersonal.html#LatexilaBuildToolsPersonal-struct"/>
+    <keyword type="function" name="latexila_build_msg_new ()" link="LatexilaBuildView.html#latexila-build-msg-new"/>
+    <keyword type="function" name="latexila_build_msg_free ()" link="LatexilaBuildView.html#latexila-build-msg-free"/>
+    <keyword type="function" name="latexila_build_msg_reinit ()" link="LatexilaBuildView.html#latexila-build-msg-reinit"/>
+    <keyword type="function" name="latexila_build_msg_print ()" link="LatexilaBuildView.html#latexila-build-msg-print"/>
+    <keyword type="function" name="latexila_build_view_new ()" link="LatexilaBuildView.html#latexila-build-view-new"/>
+    <keyword type="function" name="latexila_build_view_clear ()" link="LatexilaBuildView.html#latexila-build-view-clear"/>
+    <keyword type="function" name="latexila_build_view_add_main_title ()" link="LatexilaBuildView.html#latexila-build-view-add-main-title"/>
+    <keyword type="function" name="latexila_build_view_add_job_title ()" link="LatexilaBuildView.html#latexila-build-view-add-job-title"/>
+    <keyword type="function" name="latexila_build_view_set_title_state ()" link="LatexilaBuildView.html#latexila-build-view-set-title-state"/>
+    <keyword type="function" name="latexila_build_view_append_single_message ()" link="LatexilaBuildView.html#latexila-build-view-append-single-message"/>
+    <keyword type="function" name="latexila_build_view_append_messages ()" link="LatexilaBuildView.html#latexila-build-view-append-messages"/>
+    <keyword type="function" name="latexila_build_view_remove_children ()" link="LatexilaBuildView.html#latexila-build-view-remove-children"/>
+    <keyword type="struct" name="LatexilaBuildView" link="LatexilaBuildView.html#LatexilaBuildView-struct"/>
+    <keyword type="struct" name="struct LatexilaBuildMsg" link="LatexilaBuildView.html#LatexilaBuildMsg"/>
+    <keyword type="enum" name="enum LatexilaBuildMsgType" link="LatexilaBuildView.html#LatexilaBuildMsgType"/>
+    <keyword type="enum" name="enum LatexilaBuildState" link="LatexilaBuildView.html#LatexilaBuildState"/>
+    <keyword type="property" name="The “has-details” property" link="LatexilaBuildView.html#LatexilaBuildView--has-details"/>
+    <keyword type="property" name="The “show-badboxes” property" link="LatexilaBuildView.html#LatexilaBuildView--show-badboxes"/>
+    <keyword type="property" name="The “show-details” property" link="LatexilaBuildView.html#LatexilaBuildView--show-details"/>
+    <keyword type="property" name="The “show-warnings” property" link="LatexilaBuildView.html#LatexilaBuildView--show-warnings"/>
+    <keyword type="signal" name="The “jump-to-file” signal" link="LatexilaBuildView.html#LatexilaBuildView-jump-to-file"/>
+    <keyword type="function" name="latexila_post_processor_get_name_from_type ()" link="LatexilaPostProcessor.html#latexila-post-processor-get-name-from-type"/>
+    <keyword type="function" name="latexila_post_processor_get_type_from_name ()" link="LatexilaPostProcessor.html#latexila-post-processor-get-type-from-name"/>
+    <keyword type="function" name="latexila_post_processor_process_async ()" link="LatexilaPostProcessor.html#latexila-post-processor-process-async"/>
+    <keyword type="function" name="latexila_post_processor_process_finish ()" link="LatexilaPostProcessor.html#latexila-post-processor-process-finish"/>
+    <keyword type="function" name="latexila_post_processor_start ()" link="LatexilaPostProcessor.html#latexila-post-processor-start"/>
+    <keyword type="function" name="latexila_post_processor_process_line ()" link="LatexilaPostProcessor.html#latexila-post-processor-process-line"/>
+    <keyword type="function" name="latexila_post_processor_end ()" link="LatexilaPostProcessor.html#latexila-post-processor-end"/>
+    <keyword type="function" name="latexila_post_processor_get_messages ()" link="LatexilaPostProcessor.html#latexila-post-processor-get-messages"/>
+    <keyword type="function" name="latexila_post_processor_take_messages ()" link="LatexilaPostProcessor.html#latexila-post-processor-take-messages"/>
+    <keyword type="struct" name="LatexilaPostProcessor" link="LatexilaPostProcessor.html#LatexilaPostProcessor-struct"/>
+    <keyword type="enum" name="enum LatexilaPostProcessorType" link="LatexilaPostProcessor.html#LatexilaPostProcessorType"/>
+    <keyword type="property" name="The “has-details” property" link="LatexilaPostProcessor.html#LatexilaPostProcessor--has-details"/>
+    <keyword type="function" name="latexila_post_processor_all_output_new ()" link="LatexilaPostProcessorAllOutput.html#latexila-post-processor-all-output-new"/>
+    <keyword type="struct" name="LatexilaPostProcessorAllOutput" link="LatexilaPostProcessorAllOutput.html#LatexilaPostProcessorAllOutput-struct"/>
+    <keyword type="function" name="latexila_post_processor_latex_new ()" link="LatexilaPostProcessorLatex.html#latexila-post-processor-latex-new"/>
+    <keyword type="function" name="latexila_post_processor_latex_get_errors_count ()" link="LatexilaPostProcessorLatex.html#latexila-post-processor-latex-get-errors-count"/>
+    <keyword type="struct" name="LatexilaPostProcessorLatex" link="LatexilaPostProcessorLatex.html#LatexilaPostProcessorLatex-struct"/>
+    <keyword type="function" name="latexila_post_processor_latexmk_new ()" link="LatexilaPostProcessorLatexmk.html#latexila-post-processor-latexmk-new"/>
+    <keyword type="struct" name="LatexilaPostProcessorLatexmk" link="LatexilaPostProcessorLatexmk.html#LatexilaPostProcessorLatexmk-struct"/>
+    <keyword type="function" name="latexila_templates_dialogs_open ()" link="gnome-latex-LatexilaTemplatesDialogs.html#latexila-templates-dialogs-open"/>
+    <keyword type="function" name="latexila_templates_dialogs_create_template ()" link="gnome-latex-LatexilaTemplatesDialogs.html#latexila-templates-dialogs-create-template"/>
+    <keyword type="function" name="latexila_templates_manage_dialog_new ()" link="LatexilaTemplatesManageDialog.html#latexila-templates-manage-dialog-new"/>
+    <keyword type="struct" name="LatexilaTemplatesManageDialog" link="LatexilaTemplatesManageDialog.html#LatexilaTemplatesManageDialog-struct"/>
+    <keyword type="function" name="latexila_templates_default_get_instance ()" link="LatexilaTemplatesDefault.html#latexila-templates-default-get-instance"/>
+    <keyword type="function" name="latexila_templates_default_get_contents ()" link="LatexilaTemplatesDefault.html#latexila-templates-default-get-contents"/>
+    <keyword type="struct" name="LatexilaTemplatesDefault" link="LatexilaTemplatesDefault.html#LatexilaTemplatesDefault-struct"/>
+    <keyword type="function" name="latexila_templates_personal_get_instance ()" link="LatexilaTemplatesPersonal.html#latexila-templates-personal-get-instance"/>
+    <keyword type="function" name="latexila_templates_personal_get_contents ()" link="LatexilaTemplatesPersonal.html#latexila-templates-personal-get-contents"/>
+    <keyword type="function" name="latexila_templates_personal_create ()" link="LatexilaTemplatesPersonal.html#latexila-templates-personal-create"/>
+    <keyword type="function" name="latexila_templates_personal_delete ()" link="LatexilaTemplatesPersonal.html#latexila-templates-personal-delete"/>
+    <keyword type="function" name="latexila_templates_personal_move_up ()" link="LatexilaTemplatesPersonal.html#latexila-templates-personal-move-up"/>
+    <keyword type="function" name="latexila_templates_personal_move_down ()" link="LatexilaTemplatesPersonal.html#latexila-templates-personal-move-down"/>
+    <keyword type="struct" name="LatexilaTemplatesPersonal" link="LatexilaTemplatesPersonal.html#LatexilaTemplatesPersonal-struct"/>
+    <keyword type="function" name="latexila_dirs_get_app_data_dir ()" link="gnome-latex-LatexilaDirs.html#latexila-dirs-get-app-data-dir"/>
+    <keyword type="function" name="latexila_dirs_get_app_locale_dir ()" link="gnome-latex-LatexilaDirs.html#latexila-dirs-get-app-locale-dir"/>
+    <keyword type="function" name="latexila_latex_commands_add_action_infos ()" link="gnome-latex-LaTeX-commands.html#latexila-latex-commands-add-action-infos"/>
+    <keyword type="function" name="latexila_latex_commands_add_actions ()" link="gnome-latex-LaTeX-commands.html#latexila-latex-commands-add-actions"/>
+    <keyword type="function" name="latexila_latex_commands_create_edit_toolbar ()" link="gnome-latex-LaTeX-commands.html#latexila-latex-commands-create-edit-toolbar"/>
+    <keyword type="function" name="latexila_latex_commands_create_latex_menu ()" link="gnome-latex-LaTeX-commands.html#latexila-latex-commands-create-latex-menu"/>
+    <keyword type="function" name="latexila_latex_commands_create_math_menu ()" link="gnome-latex-LaTeX-commands.html#latexila-latex-commands-create-math-menu"/>
+    <keyword type="function" name="latexila_prefs_create_notebook ()" link="gnome-latex-LatexilaPrefs.html#latexila-prefs-create-notebook"/>
+    <keyword type="function" name="latexila_synctex_get_instance ()" link="LatexilaSynctex.html#latexila-synctex-get-instance"/>
+    <keyword type="function" name="latexila_synctex_connect_evince_window ()" link="LatexilaSynctex.html#latexila-synctex-connect-evince-window"/>
+    <keyword type="function" name="latexila_synctex_forward_search ()" link="LatexilaSynctex.html#latexila-synctex-forward-search"/>
+    <keyword type="struct" name="struct LatexilaSynctex" link="LatexilaSynctex.html#LatexilaSynctex-struct"/>
+    <keyword type="signal" name="The “backward-search” signal" link="LatexilaSynctex.html#LatexilaSynctex-backward-search"/>
+    <keyword type="function" name="latexila_utils_show_uri ()" link="gnome-latex-LatexilaUtils.html#latexila-utils-show-uri"/>
+    <keyword type="function" name="latexila_utils_get_dialog_component ()" link="gnome-latex-LatexilaUtils.html#latexila-utils-get-dialog-component"/>
+    <keyword type="function" name="latexila_utils_migrate_latexila_to_gnome_latex ()" link="gnome-latex-LatexilaUtils.html#latexila-utils-migrate-latexila-to-gnome-latex"/>
+    <keyword type="constant" name="LATEXILA_BUILD_MSG_TYPE_MAIN_TITLE" link="LatexilaBuildView.html#LATEXILA-BUILD-MSG-TYPE-MAIN-TITLE:CAPS"/>
+    <keyword type="constant" name="LATEXILA_BUILD_MSG_TYPE_JOB_TITLE" link="LatexilaBuildView.html#LATEXILA-BUILD-MSG-TYPE-JOB-TITLE:CAPS"/>
+    <keyword type="constant" name="LATEXILA_BUILD_MSG_TYPE_JOB_SUB_COMMAND" link="LatexilaBuildView.html#LATEXILA-BUILD-MSG-TYPE-JOB-SUB-COMMAND:CAPS"/>
+    <keyword type="constant" name="LATEXILA_BUILD_MSG_TYPE_ERROR" link="LatexilaBuildView.html#LATEXILA-BUILD-MSG-TYPE-ERROR:CAPS"/>
+    <keyword type="constant" name="LATEXILA_BUILD_MSG_TYPE_WARNING" link="LatexilaBuildView.html#LATEXILA-BUILD-MSG-TYPE-WARNING:CAPS"/>
+    <keyword type="constant" name="LATEXILA_BUILD_MSG_TYPE_BADBOX" link="LatexilaBuildView.html#LATEXILA-BUILD-MSG-TYPE-BADBOX:CAPS"/>
+    <keyword type="constant" name="LATEXILA_BUILD_MSG_TYPE_INFO" link="LatexilaBuildView.html#LATEXILA-BUILD-MSG-TYPE-INFO:CAPS"/>
+    <keyword type="constant" name="LATEXILA_BUILD_STATE_RUNNING" link="LatexilaBuildView.html#LATEXILA-BUILD-STATE-RUNNING:CAPS"/>
+    <keyword type="constant" name="LATEXILA_BUILD_STATE_SUCCEEDED" link="LatexilaBuildView.html#LATEXILA-BUILD-STATE-SUCCEEDED:CAPS"/>
+    <keyword type="constant" name="LATEXILA_BUILD_STATE_FAILED" link="LatexilaBuildView.html#LATEXILA-BUILD-STATE-FAILED:CAPS"/>
+    <keyword type="constant" name="LATEXILA_BUILD_STATE_ABORTED" link="LatexilaBuildView.html#LATEXILA-BUILD-STATE-ABORTED:CAPS"/>
+    <keyword type="constant" name="LATEXILA_POST_PROCESSOR_TYPE_NO_OUTPUT" link="LatexilaPostProcessor.html#LATEXILA-POST-PROCESSOR-TYPE-NO-OUTPUT:CAPS"/>
+    <keyword type="constant" name="LATEXILA_POST_PROCESSOR_TYPE_ALL_OUTPUT" link="LatexilaPostProcessor.html#LATEXILA-POST-PROCESSOR-TYPE-ALL-OUTPUT:CAPS"/>
+    <keyword type="constant" name="LATEXILA_POST_PROCESSOR_TYPE_LATEX" link="LatexilaPostProcessor.html#LATEXILA-POST-PROCESSOR-TYPE-LATEX:CAPS"/>
+    <keyword type="constant" name="LATEXILA_POST_PROCESSOR_TYPE_LATEXMK" link="LatexilaPostProcessor.html#LATEXILA-POST-PROCESSOR-TYPE-LATEXMK:CAPS"/>
+    <keyword type="constant" name="LATEXILA_POST_PROCESSOR_TYPE_NB_TYPES" link="LatexilaPostProcessor.html#LATEXILA-POST-PROCESSOR-TYPE-NB-TYPES:CAPS"/>
+    <keyword type="member" name="LatexilaBuildTools-struct.build-tools" link="LatexilaBuildTools.html#LatexilaBuildTools-struct.build-tools"/>
+    <keyword type="member" name="LatexilaBuildMsg.type" link="LatexilaBuildView.html#LatexilaBuildMsg.type"/>
+    <keyword type="member" name="LatexilaBuildMsg.text" link="LatexilaBuildView.html#LatexilaBuildMsg.text"/>
+    <keyword type="member" name="LatexilaBuildMsg.filename" link="LatexilaBuildView.html#LatexilaBuildMsg.filename"/>
+    <keyword type="member" name="LatexilaBuildMsg.start-line" link="LatexilaBuildView.html#LatexilaBuildMsg.start-line"/>
+    <keyword type="member" name="LatexilaBuildMsg.end-line" link="LatexilaBuildView.html#LatexilaBuildMsg.end-line"/>
+    <keyword type="member" name="LatexilaBuildMsg.children" link="LatexilaBuildView.html#LatexilaBuildMsg.children"/>
+    <keyword type="member" name="LatexilaBuildMsg.expand" link="LatexilaBuildView.html#LatexilaBuildMsg.expand"/>
+  </functions>
+</book>

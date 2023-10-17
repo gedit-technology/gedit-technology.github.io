@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="libgedit-amtk 5 Reference Manual" link="index.html" author="" name="libgedit-amtk-5" version="2" language="c">
+  <chapters>
+    <sub name="libgedit-amtk Introduction" link="libgedit-amtk-intro.html"/>
+    <sub name="Gradual Porting" link="gradual-porting.html"/>
+    <sub name="libgedit-amtk API Reference" link="api-reference.html">
+      <sub name="Amtk Initialization and Finalization" link="libgedit-amtk-5-Amtk-Initialization-and-Finalization.html"/>
+      <sub name="AmtkApplicationWindow" link="AmtkApplicationWindow.html"/>
+      <sub name="AmtkActionInfo" link="AmtkActionInfo.html"/>
+      <sub name="AmtkActionInfoStore" link="AmtkActionInfoStore.html"/>
+      <sub name="AmtkActionInfoCentralStore" link="AmtkActionInfoCentralStore.html"/>
+      <sub name="AmtkActionMap" link="libgedit-amtk-5-AmtkActionMap.html"/>
+      <sub name="AmtkFactory" link="AmtkFactory.html"/>
+      <sub name="AmtkGmenu" link="libgedit-amtk-5-AmtkGmenu.html"/>
+      <sub name="AmtkMenuItem" link="libgedit-amtk-5-AmtkMenuItem.html"/>
+      <sub name="AmtkMenuShell" link="AmtkMenuShell.html"/>
+      <sub name="AmtkShortcuts" link="libgedit-amtk-5-AmtkShortcuts.html"/>
+      <sub name="AmtkUtils" link="libgedit-amtk-5-AmtkUtils.html"/>
+    </sub>
+    <sub name="Annexes" link="annexes.html">
+      <sub name="Object Hierarchy" link="object-tree.html"/>
+      <sub name="Annotation Glossary" link="annotation-glossary.html"/>
+      <sub name="Index of all symbols" link="api-index-full.html"/>
+      <sub name="Index of new symbols in 2.0" link="api-index-2-0.html"/>
+      <sub name="Index of new symbols in 3.0" link="api-index-3-0.html"/>
+      <sub name="Index of new symbols in 4.0" link="api-index-4-0.html"/>
+      <sub name="Index of new symbols in 5.0" link="api-index-5-0.html"/>
+      <sub name="Index of new symbols in 5.6" link="api-index-5-6.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <keyword type="function" name="amtk_init ()" link="libgedit-amtk-5-Amtk-Initialization-and-Finalization.html#amtk-init" since="3.0"/>
+    <keyword type="function" name="amtk_finalize ()" link="libgedit-amtk-5-Amtk-Initialization-and-Finalization.html#amtk-finalize" since="3.0"/>
+    <keyword type="function" name="amtk_application_window_get_from_gtk_application_window ()" link="AmtkApplicationWindow.html#amtk-application-window-get-from-gtk-application-window" since="2.0"/>
+    <keyword type="function" name="amtk_application_window_get_application_window ()" link="AmtkApplicationWindow.html#amtk-application-window-get-application-window" since="2.0"/>
+    <keyword type="function" name="amtk_application_window_get_statusbar ()" link="AmtkApplicationWindow.html#amtk-application-window-get-statusbar" since="2.0"/>
+    <keyword type="function" name="amtk_application_window_set_statusbar ()" link="AmtkApplicationWindow.html#amtk-application-window-set-statusbar" since="2.0"/>
+    <keyword type="function" name="amtk_application_window_connect_menu_to_statusbar ()" link="AmtkApplicationWindow.html#amtk-application-window-connect-menu-to-statusbar" since="2.0"/>
+    <keyword type="function" name="amtk_application_window_connect_recent_chooser_menu_to_statusbar ()" link="AmtkApplicationWindow.html#amtk-application-window-connect-recent-chooser-menu-to-statusbar" since="2.0"/>
+    <keyword type="function" name="amtk_application_window_create_open_recent_menu_base ()" link="AmtkApplicationWindow.html#amtk-application-window-create-open-recent-menu-base" since="5.6"/>
+    <keyword type="function" name="amtk_application_window_create_open_recent_menu ()" link="AmtkApplicationWindow.html#amtk-application-window-create-open-recent-menu" since="3.0"/>
+    <keyword type="function" name="amtk_application_window_create_open_recent_menu_item ()" link="AmtkApplicationWindow.html#amtk-application-window-create-open-recent-menu-item" since="2.0"/>
+    <keyword type="struct" name="struct AmtkApplicationWindow" link="AmtkApplicationWindow.html#AmtkApplicationWindow-struct"/>
+    <keyword type="property" name="The “application-window” property" link="AmtkApplicationWindow.html#AmtkApplicationWindow--application-window"/>
+    <keyword type="property" name="The “statusbar” property" link="AmtkApplicationWindow.html#AmtkApplicationWindow--statusbar"/>
+    <keyword type="function" name="amtk_action_info_new ()" link="AmtkActionInfo.html#amtk-action-info-new" since="2.0"/>
+    <keyword type="function" name="amtk_action_info_new_from_entry ()" link="AmtkActionInfo.html#amtk-action-info-new-from-entry" since="2.0"/>
+    <keyword type="function" name="amtk_action_info_ref ()" link="AmtkActionInfo.html#amtk-action-info-ref" since="2.0"/>
+    <keyword type="function" name="amtk_action_info_unref ()" link="AmtkActionInfo.html#amtk-action-info-unref" since="2.0"/>
+    <keyword type="function" name="amtk_action_info_copy ()" link="AmtkActionInfo.html#amtk-action-info-copy" since="2.0"/>
+    <keyword type="function" name="amtk_action_info_get_action_name ()" link="AmtkActionInfo.html#amtk-action-info-get-action-name" since="2.0"/>
+    <keyword type="function" name="amtk_action_info_set_action_name ()" link="AmtkActionInfo.html#amtk-action-info-set-action-name" since="2.0"/>
+    <keyword type="function" name="amtk_action_info_get_icon_name ()" link="AmtkActionInfo.html#amtk-action-info-get-icon-name" since="2.0"/>
+    <keyword type="function" name="amtk_action_info_set_icon_name ()" link="AmtkActionInfo.html#amtk-action-info-set-icon-name" since="2.0"/>
+    <keyword type="function" name="amtk_action_info_get_label ()" link="AmtkActionInfo.html#amtk-action-info-get-label" since="2.0"/>
+    <keyword type="function" name="amtk_action_info_set_label ()" link="AmtkActionInfo.html#amtk-action-info-set-label" since="2.0"/>
+    <keyword type="function" name="amtk_action_info_get_tooltip ()" link="AmtkActionInfo.html#amtk-action-info-get-tooltip" since="2.0"/>
+    <keyword type="function" name="amtk_action_info_set_tooltip ()" link="AmtkActionInfo.html#amtk-action-info-set-tooltip" since="2.0"/>
+    <keyword type="function" name="amtk_action_info_get_accels ()" link="AmtkActionInfo.html#amtk-action-info-get-accels" since="2.0"/>
+    <keyword type="function" name="amtk_action_info_set_accels ()" link="AmtkActionInfo.html#amtk-action-info-set-accels" since="2.0"/>
+    <keyword type="function" name="amtk_action_info_mark_as_used ()" link="AmtkActionInfo.html#amtk-action-info-mark-as-used" since="3.0"/>
+    <keyword type="function" name="amtk_action_info_has_been_used ()" link="AmtkActionInfo.html#amtk-action-info-has-been-used" since="3.0"/>
+    <keyword type="struct" name="AmtkActionInfo" link="AmtkActionInfo.html#AmtkActionInfo-struct"/>
+    <keyword type="struct" name="struct AmtkActionInfoEntry" link="AmtkActionInfo.html#AmtkActionInfoEntry" since="2.0"/>
+    <keyword type="function" name="amtk_action_info_store_new ()" link="AmtkActionInfoStore.html#amtk-action-info-store-new" since="3.0"/>
+    <keyword type="function" name="amtk_action_info_store_add ()" link="AmtkActionInfoStore.html#amtk-action-info-store-add" since="2.0"/>
+    <keyword type="function" name="amtk_action_info_store_add_entries ()" link="AmtkActionInfoStore.html#amtk-action-info-store-add-entries" since="2.0"/>
+    <keyword type="function" name="amtk_action_info_store_lookup ()" link="AmtkActionInfoStore.html#amtk-action-info-store-lookup" since="2.0"/>
+    <keyword type="function" name="amtk_action_info_store_set_all_accels_to_app ()" link="AmtkActionInfoStore.html#amtk-action-info-store-set-all-accels-to-app" since="5.0"/>
+    <keyword type="function" name="amtk_action_info_store_check_all_used ()" link="AmtkActionInfoStore.html#amtk-action-info-store-check-all-used" since="2.0"/>
+    <keyword type="struct" name="struct AmtkActionInfoStore" link="AmtkActionInfoStore.html#AmtkActionInfoStore-struct"/>
+    <keyword type="function" name="amtk_action_info_central_store_get_singleton ()" link="AmtkActionInfoCentralStore.html#amtk-action-info-central-store-get-singleton" since="3.0"/>
+    <keyword type="function" name="amtk_action_info_central_store_lookup ()" link="AmtkActionInfoCentralStore.html#amtk-action-info-central-store-lookup" since="2.0"/>
+    <keyword type="struct" name="struct AmtkActionInfoCentralStore" link="AmtkActionInfoCentralStore.html#AmtkActionInfoCentralStore-struct"/>
+    <keyword type="function" name="amtk_action_map_add_action_entries_check_dups ()" link="libgedit-amtk-5-AmtkActionMap.html#amtk-action-map-add-action-entries-check-dups" since="2.0"/>
+    <keyword type="function" name="amtk_factory_new ()" link="AmtkFactory.html#amtk-factory-new" since="3.0"/>
+    <keyword type="function" name="amtk_factory_new_with_default_application ()" link="AmtkFactory.html#amtk-factory-new-with-default-application" since="3.0"/>
+    <keyword type="function" name="amtk_factory_get_application ()" link="AmtkFactory.html#amtk-factory-get-application" since="3.0"/>
+    <keyword type="function" name="amtk_factory_get_default_flags ()" link="AmtkFactory.html#amtk-factory-get-default-flags" since="3.0"/>
+    <keyword type="function" name="amtk_factory_set_default_flags ()" link="AmtkFactory.html#amtk-factory-set-default-flags" since="3.0"/>
+    <keyword type="function" name="amtk_factory_create_menu_item ()" link="AmtkFactory.html#amtk-factory-create-menu-item" since="3.0"/>
+    <keyword type="function" name="amtk_factory_create_menu_item_full ()" link="AmtkFactory.html#amtk-factory-create-menu-item-full" since="3.0"/>
+    <keyword type="function" name="amtk_factory_create_check_menu_item ()" link="AmtkFactory.html#amtk-factory-create-check-menu-item" since="3.0"/>
+    <keyword type="function" name="amtk_factory_create_check_menu_item_full ()" link="AmtkFactory.html#amtk-factory-create-check-menu-item-full" since="3.0"/>
+    <keyword type="function" name="amtk_factory_create_simple_menu ()" link="AmtkFactory.html#amtk-factory-create-simple-menu" since="5.0"/>
+    <keyword type="function" name="amtk_factory_create_simple_menu_full ()" link="AmtkFactory.html#amtk-factory-create-simple-menu-full" since="5.0"/>
+    <keyword type="function" name="amtk_factory_create_gmenu_item ()" link="AmtkFactory.html#amtk-factory-create-gmenu-item" since="5.0"/>
+    <keyword type="function" name="amtk_factory_create_gmenu_item_full ()" link="AmtkFactory.html#amtk-factory-create-gmenu-item-full" since="5.0"/>
+    <keyword type="function" name="amtk_factory_create_tool_button ()" link="AmtkFactory.html#amtk-factory-create-tool-button" since="3.0"/>
+    <keyword type="function" name="amtk_factory_create_tool_button_full ()" link="AmtkFactory.html#amtk-factory-create-tool-button-full" since="3.0"/>
+    <keyword type="function" name="amtk_factory_create_menu_tool_button ()" link="AmtkFactory.html#amtk-factory-create-menu-tool-button" since="3.0"/>
+    <keyword type="function" name="amtk_factory_create_menu_tool_button_full ()" link="AmtkFactory.html#amtk-factory-create-menu-tool-button-full" since="3.0"/>
+    <keyword type="function" name="amtk_factory_create_shortcut ()" link="AmtkFactory.html#amtk-factory-create-shortcut" since="5.0"/>
+    <keyword type="function" name="amtk_factory_create_shortcut_full ()" link="AmtkFactory.html#amtk-factory-create-shortcut-full" since="5.0"/>
+    <keyword type="struct" name="struct AmtkFactory" link="AmtkFactory.html#AmtkFactory-struct"/>
+    <keyword type="enum" name="enum AmtkFactoryFlags" link="AmtkFactory.html#AmtkFactoryFlags" since="3.0"/>
+    <keyword type="property" name="The “application” property" link="AmtkFactory.html#AmtkFactory--application"/>
+    <keyword type="property" name="The “default-flags” property" link="AmtkFactory.html#AmtkFactory--default-flags"/>
+    <keyword type="function" name="amtk_gmenu_append_item ()" link="libgedit-amtk-5-AmtkGmenu.html#amtk-gmenu-append-item" since="5.0"/>
+    <keyword type="function" name="amtk_gmenu_append_section ()" link="libgedit-amtk-5-AmtkGmenu.html#amtk-gmenu-append-section" since="5.0"/>
+    <keyword type="function" name="amtk_menu_item_get_long_description ()" link="libgedit-amtk-5-AmtkMenuItem.html#amtk-menu-item-get-long-description" since="2.0"/>
+    <keyword type="function" name="amtk_menu_item_set_long_description ()" link="libgedit-amtk-5-AmtkMenuItem.html#amtk-menu-item-set-long-description" since="2.0"/>
+    <keyword type="function" name="amtk_menu_item_set_icon_name ()" link="libgedit-amtk-5-AmtkMenuItem.html#amtk-menu-item-set-icon-name" since="2.0"/>
+    <keyword type="function" name="amtk_menu_shell_get_from_gtk_menu_shell ()" link="AmtkMenuShell.html#amtk-menu-shell-get-from-gtk-menu-shell" since="2.0"/>
+    <keyword type="function" name="amtk_menu_shell_get_menu_shell ()" link="AmtkMenuShell.html#amtk-menu-shell-get-menu-shell" since="2.0"/>
+    <keyword type="struct" name="struct AmtkMenuShell" link="AmtkMenuShell.html#AmtkMenuShell-struct"/>
+    <keyword type="property" name="The “menu-shell” property" link="AmtkMenuShell.html#AmtkMenuShell--menu-shell"/>
+    <keyword type="signal" name="The “menu-item-deselected” signal" link="AmtkMenuShell.html#AmtkMenuShell-menu-item-deselected"/>
+    <keyword type="signal" name="The “menu-item-selected” signal" link="AmtkMenuShell.html#AmtkMenuShell-menu-item-selected"/>
+    <keyword type="function" name="amtk_shortcuts_window_new ()" link="libgedit-amtk-5-AmtkShortcuts.html#amtk-shortcuts-window-new" since="5.0"/>
+    <keyword type="function" name="amtk_shortcuts_section_new ()" link="libgedit-amtk-5-AmtkShortcuts.html#amtk-shortcuts-section-new" since="5.0"/>
+    <keyword type="function" name="amtk_shortcuts_group_new ()" link="libgedit-amtk-5-AmtkShortcuts.html#amtk-shortcuts-group-new" since="5.0"/>
+    <keyword type="function" name="amtk_utils_remove_mnemonic ()" link="libgedit-amtk-5-AmtkUtils.html#amtk-utils-remove-mnemonic" since="5.0"/>
+    <keyword type="function" name="amtk_utils_recent_chooser_menu_get_item_uri ()" link="libgedit-amtk-5-AmtkUtils.html#amtk-utils-recent-chooser-menu-get-item-uri" since="2.0"/>
+    <keyword type="function" name="amtk_utils_bind_g_action_to_gtk_action ()" link="libgedit-amtk-5-AmtkUtils.html#amtk-utils-bind-g-action-to-gtk-action" since="4.0"/>
+    <keyword type="function" name="amtk_utils_create_gtk_action ()" link="libgedit-amtk-5-AmtkUtils.html#amtk-utils-create-gtk-action" since="4.0"/>
+    <keyword type="function" name="amtk_utils_get_shrinkable_menubar ()" link="libgedit-amtk-5-AmtkUtils.html#amtk-utils-get-shrinkable-menubar" since="5.6"/>
+    <keyword type="constant" name="AMTK_FACTORY_FLAGS_NONE" link="AmtkFactory.html#AMTK-FACTORY-FLAGS-NONE:CAPS"/>
+    <keyword type="constant" name="AMTK_FACTORY_IGNORE_GACTION" link="AmtkFactory.html#AMTK-FACTORY-IGNORE-GACTION:CAPS"/>
+    <keyword type="constant" name="AMTK_FACTORY_IGNORE_ICON" link="AmtkFactory.html#AMTK-FACTORY-IGNORE-ICON:CAPS"/>
+    <keyword type="constant" name="AMTK_FACTORY_IGNORE_LABEL" link="AmtkFactory.html#AMTK-FACTORY-IGNORE-LABEL:CAPS"/>
+    <keyword type="constant" name="AMTK_FACTORY_IGNORE_TOOLTIP" link="AmtkFactory.html#AMTK-FACTORY-IGNORE-TOOLTIP:CAPS"/>
+    <keyword type="constant" name="AMTK_FACTORY_IGNORE_ACCELS" link="AmtkFactory.html#AMTK-FACTORY-IGNORE-ACCELS:CAPS"/>
+    <keyword type="constant" name="AMTK_FACTORY_IGNORE_ACCELS_FOR_DOC" link="AmtkFactory.html#AMTK-FACTORY-IGNORE-ACCELS-FOR-DOC:CAPS"/>
+    <keyword type="constant" name="AMTK_FACTORY_IGNORE_ACCELS_FOR_APP" link="AmtkFactory.html#AMTK-FACTORY-IGNORE-ACCELS-FOR-APP:CAPS"/>
+    <keyword type="member" name="AmtkActionInfoEntry.action-name" link="AmtkActionInfo.html#AmtkActionInfoEntry.action-name"/>
+    <keyword type="member" name="AmtkActionInfoEntry.icon-name" link="AmtkActionInfo.html#AmtkActionInfoEntry.icon-name"/>
+    <keyword type="member" name="AmtkActionInfoEntry.label" link="AmtkActionInfo.html#AmtkActionInfoEntry.label"/>
+    <keyword type="member" name="AmtkActionInfoEntry.accel" link="AmtkActionInfo.html#AmtkActionInfoEntry.accel"/>
+    <keyword type="member" name="AmtkActionInfoEntry.tooltip" link="AmtkActionInfo.html#AmtkActionInfoEntry.tooltip"/>
+  </functions>
+</book>

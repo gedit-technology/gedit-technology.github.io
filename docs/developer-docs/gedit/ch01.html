@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Object Hierarchy: gedit Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="gedit Reference Manual">
+<link rel="up" href="annexes.html" title="Part III. Annexes">
+<link rel="prev" href="annexes.html" title="Part III. Annexes">
+<link rel="next" href="annotation-glossary.html" title="Annotation Glossary">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="annexes.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="annexes.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="annotation-glossary.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="chapter">
+<div class="titlepage"><div><div><h2 class="title">
+<a name="id-1.4.2"></a>Object Hierarchy</h2></div></div></div>
+<pre class="screen">
+    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gio/GApplication.html#GApplication-struct">GApplication</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#GtkApplication-struct">GtkApplication</a>
+    <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="GeditApp.html" title="GeditApp">GeditApp</a>
+    <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkTextBuffer.html#GtkTextBuffer-struct">GtkTextBuffer</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="../libgedit-gtksourceview-300/GtkSourceBuffer.html#GtkSourceBuffer-struct">GtkSourceBuffer</a>
+    <span class="lineart">│</span>       <span class="lineart">╰──</span> <a href="../tepl-6/TeplBuffer.html#TeplBuffer-struct">TeplBuffer</a>
+    <span class="lineart">│</span>           <span class="lineart">╰──</span> <a class="link" href="GeditDocument.html" title="GeditDocument">GeditDocument</a>
+    <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct">GtkWidget</a>
+    <span class="lineart">│</span>       <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkContainer.html#GtkContainer-struct">GtkContainer</a>
+    <span class="lineart">│</span>           <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkBin.html#GtkBin-struct">GtkBin</a>
+    <span class="lineart">│</span>           <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkComboBox.html#GtkComboBox-struct">GtkComboBox</a>
+    <span class="lineart">│</span>           <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GeditEncodingsComboBox.html" title="GeditEncodingsComboBox">GeditEncodingsComboBox</a>
+    <span class="lineart">│</span>           <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkWindow.html#GtkWindow-struct">GtkWindow</a>
+    <span class="lineart">│</span>           <span class="lineart">│</span>       <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct">GtkApplicationWindow</a>
+    <span class="lineart">│</span>           <span class="lineart">│</span>           <span class="lineart">╰──</span> <a class="link" href="GeditWindow.html" title="GeditWindow">GeditWindow</a>
+    <span class="lineart">│</span>           <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkBox.html#GtkBox-struct">GtkBox</a>
+    <span class="lineart">│</span>           <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkStatusbar.html#GtkStatusbar-struct">GtkStatusbar</a>
+    <span class="lineart">│</span>           <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GeditStatusbar.html" title="GeditStatusbar">GeditStatusbar</a>
+    <span class="lineart">│</span>           <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GeditTab.html" title="GeditTab">GeditTab</a>
+    <span class="lineart">│</span>           <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GtkTextView-struct">GtkTextView</a>
+    <span class="lineart">│</span>               <span class="lineart">╰──</span> <a href="../libgedit-gtksourceview-300/GtkSourceView.html#GtkSourceView-struct">GtkSourceView</a>
+    <span class="lineart">│</span>                   <span class="lineart">╰──</span> <a href="../tepl-6/TeplView.html#TeplView-struct">TeplView</a>
+    <span class="lineart">│</span>                       <span class="lineart">╰──</span> <a class="link" href="gedit-gedit-view.html#GeditView">GeditView</a>
+    <span class="lineart">├──</span> <a class="link" href="gedit-gedit-menu-extension.html#GeditMenuExtension">GeditMenuExtension</a>
+    <span class="lineart">├──</span> <a class="link" href="GeditMessageBus.html" title="GeditMessageBus">GeditMessageBus</a>
+    <span class="lineart">╰──</span> <a class="link" href="GeditMessage.html" title="GeditMessage">GeditMessage</a>
+    <a href="/usr/share/gtk-doc/html/gobject/GTypeModule.html">GInterface</a>
+    <span class="lineart">├──</span> <a class="link" href="GeditAppActivatable.html" title="GeditAppActivatable">GeditAppActivatable</a>
+    <span class="lineart">├──</span> <a class="link" href="GeditViewActivatable.html" title="GeditViewActivatable">GeditViewActivatable</a>
+    <span class="lineart">╰──</span> <a class="link" href="GeditWindowActivatable.html" title="GeditWindowActivatable">GeditWindowActivatable</a>
+    <a href="/usr/share/gtk-doc/html/gobject/gobject-Enumeration-and-Flag-Types.html">GFlags</a>
+    <span class="lineart">├──</span> <a class="link" href="gedit-gedit-debug.html#GeditDebugSection" title="enum GeditDebugSection">GeditDebugSection</a>
+    <span class="lineart">╰──</span> <a class="link" href="GeditWindow.html#GeditWindowState" title="enum GeditWindowState">GeditWindowState</a>
+    <a href="/usr/share/gtk-doc/html/gobject/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">╰──</span> <a class="link" href="GeditTab.html#GeditTabState" title="enum GeditTabState">GeditTabState</a>
+</pre>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

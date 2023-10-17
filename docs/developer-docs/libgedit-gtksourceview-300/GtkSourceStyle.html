@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GtkSourceStyle: libgedit-gtksourceview 300 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libgedit-gtksourceview 300 Reference Manual">
+<link rel="up" href="styling.html" title="Styling">
+<link rel="prev" href="styling.html" title="Styling">
+<link rel="next" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GtkSourceStyle.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GtkSourceStyle.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="styling.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="styling.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GtkSourceStyleScheme.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GtkSourceStyle"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GtkSourceStyle.top_of_page"></a>GtkSourceStyle</span></h2>
+<p>GtkSourceStyle — Represents a style</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GtkSourceStyle.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="GtkSourceStyle.html#GtkSourceStyleData" title="struct GtkSourceStyleData"><span class="returnvalue">GtkSourceStyleData</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GtkSourceStyle.html#gtk-source-style-get-data" title="gtk_source_style_get_data ()">gtk_source_style_get_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GtkSourceStyle.html" title="GtkSourceStyle"><span class="returnvalue">GtkSourceStyle</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GtkSourceStyle.html#gtk-source-style-copy" title="gtk_source_style_copy ()">gtk_source_style_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GtkSourceStyle.html#gtk-source-style-apply" title="gtk_source_style_apply ()">gtk_source_style_apply</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GtkSourceStyle.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GtkSourceStyle.html#GtkSourceStyle-struct" title="GtkSourceStyle">GtkSourceStyle</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GtkSourceStyle.html#GtkSourceStyleData" title="struct GtkSourceStyleData">GtkSourceStyleData</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GtkSourceStyle.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> GtkSourceStyle
+</pre>
+</div>
+<div class="refsect1">
+<a name="GtkSourceStyle.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gtksourceview/gtksource.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GtkSourceStyle.description"></a><h2>Description</h2>
+<p>The <a class="link" href="GtkSourceStyle.html" title="GtkSourceStyle"><span class="type">GtkSourceStyle</span></a> structure is used to describe text attributes which are
+set when the given style is used.</p>
+</div>
+<div class="refsect1">
+<a name="GtkSourceStyle.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gtk-source-style-get-data"></a><h3>gtk_source_style_get_data ()</h3>
+<pre class="programlisting"><a class="link" href="GtkSourceStyle.html#GtkSourceStyleData" title="struct GtkSourceStyleData"><span class="returnvalue">GtkSourceStyleData</span></a> *
+gtk_source_style_get_data (<em class="parameter"><code><a class="link" href="GtkSourceStyle.html" title="GtkSourceStyle"><span class="type">GtkSourceStyle</span></a> *style</code></em>);</pre>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
+<div class="refsect3">
+<a name="gtk-source-style-get-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtkSourceStyle.html" title="GtkSourceStyle"><span class="type">GtkSourceStyle</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gtk-source-style-get-data.returns"></a><h4>Returns</h4>
+<p>a new <a class="link" href="GtkSourceStyle.html#GtkSourceStyleData" title="struct GtkSourceStyleData"><span class="type">GtkSourceStyleData</span></a>. Free with <a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> when
+no longer needed. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-300-0.html#api-index-300.0">300.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtk-source-style-copy"></a><h3>gtk_source_style_copy ()</h3>
+<pre class="programlisting"><a class="link" href="GtkSourceStyle.html" title="GtkSourceStyle"><span class="returnvalue">GtkSourceStyle</span></a> *
+gtk_source_style_copy (<em class="parameter"><code>const <a class="link" href="GtkSourceStyle.html" title="GtkSourceStyle"><span class="type">GtkSourceStyle</span></a> *style</code></em>);</pre>
+<p>Creates a copy of <em class="parameter"><code>style</code></em>
+, that is a new <a class="link" href="GtkSourceStyle.html" title="GtkSourceStyle"><span class="type">GtkSourceStyle</span></a> instance which
+has the same attributes set.</p>
+<div class="refsect3">
+<a name="gtk-source-style-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtkSourceStyle.html" title="GtkSourceStyle"><span class="type">GtkSourceStyle</span></a> structure to copy.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gtk-source-style-copy.returns"></a><h4>Returns</h4>
+<p>copy of <em class="parameter"><code>style</code></em>
+, call <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>
+when you are done with it. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtk-source-style-apply"></a><h3>gtk_source_style_apply ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gtk_source_style_apply (<em class="parameter"><code><a class="link" href="GtkSourceStyle.html" title="GtkSourceStyle"><span class="type">GtkSourceStyle</span></a> *style</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkTextTag.html#GtkTextTag-struct"><span class="type">GtkTextTag</span></a> *tag</code></em>);</pre>
+<p>This function modifies the <a href="/usr/share/gtk-doc/html/gtk3/GtkTextTag.html#GtkTextTag-struct"><span class="type">GtkTextTag</span></a> properties that are related to the
+<a class="link" href="GtkSourceStyle.html" title="GtkSourceStyle"><span class="type">GtkSourceStyle</span></a> attributes. Other <a href="/usr/share/gtk-doc/html/gtk3/GtkTextTag.html#GtkTextTag-struct"><span class="type">GtkTextTag</span></a> properties are left untouched.</p>
+<p>If <em class="parameter"><code>style</code></em>
+ is non-<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, applies <em class="parameter"><code>style</code></em>
+ to <em class="parameter"><code>tag</code></em>
+.</p>
+<p>If <em class="parameter"><code>style</code></em>
+ is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, the related *-set properties of <a href="/usr/share/gtk-doc/html/gtk3/GtkTextTag.html#GtkTextTag-struct"><span class="type">GtkTextTag</span></a> are set to
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+<div class="refsect3">
+<a name="gtk-source-style-apply.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>style</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtkSourceStyle.html" title="GtkSourceStyle"><span class="type">GtkSourceStyle</span></a> to apply, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tag</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gtk3/GtkTextTag.html#GtkTextTag-struct"><span class="type">GtkTextTag</span></a> to apply styles to.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-22.html#api-index-3.22">3.22</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GtkSourceStyle.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GtkSourceStyle-struct"></a><h3>GtkSourceStyle</h3>
+<pre class="programlisting">typedef struct _GtkSourceStyle GtkSourceStyle;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GtkSourceStyleData"></a><h3>struct GtkSourceStyleData</h3>
+<pre class="programlisting">struct GtkSourceStyleData {
+	GdkRGBA foreground_color;
+	GdkRGBA background_color;
+	GdkRGBA underline_color;
+	GdkRGBA paragraph_background_color;
+	gdouble scale;
+	PangoUnderline underline;
+	guint italic : 1;
+	guint bold : 1;
+	guint strikethrough : 1;
+
+	guint use_foreground_color : 1;
+	guint use_background_color : 1;
+	guint use_underline_color : 1;
+	guint use_paragraph_background_color : 1;
+	guint use_scale : 1;
+	guint use_underline : 1;
+	guint use_italic : 1;
+	guint use_bold : 1;
+	guint use_strikethrough : 1;
+};
+</pre>
+<p>The data of a <a class="link" href="GtkSourceStyle.html" title="GtkSourceStyle"><span class="type">GtkSourceStyle</span></a> object.</p>
+<p>Before using the value of a certain field, check the boolean value of the
+corresponding "use_" field.</p>
+<div class="refsect3">
+<a name="GtkSourceStyleData.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> <em class="structfield"><code><a name="GtkSourceStyleData.foreground-color"></a>foreground_color</code></em>;</p></td>
+<td class="struct_member_description"><p>Equivalent to <a href="/usr/share/gtk-doc/html/gtk3/GtkTextTag.html#GtkTextTag--foreground-rgba"><span class="type">“foreground-rgba”</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> <em class="structfield"><code><a name="GtkSourceStyleData.background-color"></a>background_color</code></em>;</p></td>
+<td class="struct_member_description"><p>Equivalent to <a href="/usr/share/gtk-doc/html/gtk3/GtkTextTag.html#GtkTextTag--background-rgba"><span class="type">“background-rgba”</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> <em class="structfield"><code><a name="GtkSourceStyleData.underline-color"></a>underline_color</code></em>;</p></td>
+<td class="struct_member_description"><p>Equivalent to <a href="/usr/share/gtk-doc/html/gtk3/GtkTextTag.html#GtkTextTag--underline-rgba"><span class="type">“underline-rgba”</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/gdk3/gdk3-RGBA-Colors.html#GdkRGBA"><span class="type">GdkRGBA</span></a> <em class="structfield"><code><a name="GtkSourceStyleData.paragraph-background-color"></a>paragraph_background_color</code></em>;</p></td>
+<td class="struct_member_description"><p>Equivalent to <a href="/usr/share/gtk-doc/html/gtk3/GtkTextTag.html#GtkTextTag--paragraph-background-rgba"><span class="type">“paragraph-background-rgba”</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GtkSourceStyleData.scale"></a>scale</code></em>;</p></td>
+<td class="struct_member_description"><p>Equivalent to <a href="/usr/share/gtk-doc/html/gtk3/GtkTextTag.html#GtkTextTag--scale"><span class="type">“scale”</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><span class="type">PangoUnderline</span> <em class="structfield"><code><a name="GtkSourceStyleData.underline"></a>underline</code></em>;</p></td>
+<td class="struct_member_description"><p>Equivalent to <a href="/usr/share/gtk-doc/html/gtk3/GtkTextTag.html#GtkTextTag--underline"><span class="type">“underline”</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GtkSourceStyleData.italic"></a>italic</code></em> : 1;</p></td>
+<td class="struct_member_description"><p>For <a href="/usr/share/gtk-doc/html/gtk3/GtkTextTag.html#GtkTextTag--style"><span class="type">“style”</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GtkSourceStyleData.bold"></a>bold</code></em> : 1;</p></td>
+<td class="struct_member_description"><p>For <a href="/usr/share/gtk-doc/html/gtk3/GtkTextTag.html#GtkTextTag--weight"><span class="type">“weight”</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GtkSourceStyleData.strikethrough"></a>strikethrough</code></em> : 1;</p></td>
+<td class="struct_member_description"><p>Equivalent to <a href="/usr/share/gtk-doc/html/gtk3/GtkTextTag.html#GtkTextTag--strikethrough"><span class="type">“strikethrough”</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GtkSourceStyleData.use-foreground-color"></a>use_foreground_color</code></em> : 1;</p></td>
+<td class="struct_member_description"><p>Whether <em class="parameter"><code>foreground_color</code></em>
+can be taken into account.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GtkSourceStyleData.use-background-color"></a>use_background_color</code></em> : 1;</p></td>
+<td class="struct_member_description"><p>Whether <em class="parameter"><code>background_color</code></em>
+can be taken into account.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GtkSourceStyleData.use-underline-color"></a>use_underline_color</code></em> : 1;</p></td>
+<td class="struct_member_description"><p>Whether <em class="parameter"><code>underline_color</code></em>
+can be taken into account.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GtkSourceStyleData.use-paragraph-background-color"></a>use_paragraph_background_color</code></em> : 1;</p></td>
+<td class="struct_member_description"><p>Whether <em class="parameter"><code>paragraph_background_color</code></em>
+can be taken into account.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GtkSourceStyleData.use-scale"></a>use_scale</code></em> : 1;</p></td>
+<td class="struct_member_description"><p>Whether <em class="parameter"><code>scale</code></em>
+can be taken into account.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GtkSourceStyleData.use-underline"></a>use_underline</code></em> : 1;</p></td>
+<td class="struct_member_description"><p>Whether <em class="parameter"><code>underline</code></em>
+can be taken into account.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GtkSourceStyleData.use-italic"></a>use_italic</code></em> : 1;</p></td>
+<td class="struct_member_description"><p>Whether <em class="parameter"><code>italic</code></em>
+can be taken into account.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GtkSourceStyleData.use-bold"></a>use_bold</code></em> : 1;</p></td>
+<td class="struct_member_description"><p>Whether <em class="parameter"><code>bold</code></em>
+can be taken into account.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GtkSourceStyleData.use-strikethrough"></a>use_strikethrough</code></em> : 1;</p></td>
+<td class="struct_member_description"><p>Whether <em class="parameter"><code>strikethrough</code></em>
+can be taken into account.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-300-0.html#api-index-300.0">300.0</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

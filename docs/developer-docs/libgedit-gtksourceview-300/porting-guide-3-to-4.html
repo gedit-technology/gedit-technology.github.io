@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GtkSourceView 3 -&gt; 4 Porting Guide: libgedit-gtksourceview 300 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libgedit-gtksourceview 300 Reference Manual">
+<link rel="up" href="porting-guides.html" title="Part IV. Porting Guides">
+<link rel="prev" href="porting-guides.html" title="Part IV. Porting Guides">
+<link rel="next" href="porting-guide-gtksourceview-4-to-libgedit-gtksourceview-300.html" title="GtkSourceView 4 -&gt; libgedit-gtksourceview 300 Porting Guide">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="porting-guides.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="porting-guides.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="porting-guide-gtksourceview-4-to-libgedit-gtksourceview-300.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="chapter">
+<div class="titlepage"><div><div><h2 class="title">
+<a name="porting-guide-3-to-4"></a>GtkSourceView 3 -&gt; 4 Porting Guide</h2></div></div></div>
+<div class="refsect1">
+<a name="id-1.5.2.2"></a><h2>GTK dependency</h2>
+<p>
+      Both GtkSourceView 3 and GtkSourceView 4 depend on GTK 3.
+    </p>
+</div>
+<div class="refsect1">
+<a name="id-1.5.2.3"></a><h2>Preparation in GtkSourceView 3</h2>
+<p>
+      GtkSourceView 3.24 is the latest stable GtkSourceView 3 version. Before
+      continuing this porting guide, you should use the 3.24 version without
+      using any deprecated API.
+    </p>
+</div>
+<div class="refsect1">
+<a name="id-1.5.2.4"></a><h2>New pkg-config name</h2>
+<p>
+      For GtkSourceView 4, the pkg-config name is:
+      <code class="code">gtksourceview-4</code>
+    </p>
+<p>
+      To compile a program that uses GtkSourceView 4, you
+      can for example use the following command:
+    </p>
+<p>
+      <code class="code">$ gcc hello.c `pkg-config --cflags --libs gtksourceview-4` -o hello</code>
+    </p>
+</div>
+<div class="refsect1">
+<a name="id-1.5.2.5"></a><h2>GtkSourceView 3.99.1</h2>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>
+          All the deprecated APIs have been removed.
+        </p></li>
+<li class="listitem"><p>
+          Only <code class="code">&lt;gtksourceview/gtksource.h&gt;</code> can be included
+          directly. There were already warnings about it in GtkSourceView 3. The
+          warnings have been changed to errors.
+        </p></li>
+<li class="listitem"><p>
+          Only the version 2 of the <a class="link" href="lang-reference.html" title="Language Definition v2.0 Reference">GtkSourceView
+          language definition file format</a> is supported (for *.lang files,
+          used for syntax highlighting). The support for the version 1 has been
+          dropped.
+        </p></li>
+</ul></div>
+</div>
+<div class="refsect1">
+<a name="id-1.5.2.6"></a><h2>GtkSourceView 3.99.2</h2>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>
+          <code class="code">gtk_source_completion_item_new2()</code> has been renamed to
+          <a class="link" href="GtkSourceCompletionItem.html#gtk-source-completion-item-new" title="gtk_source_completion_item_new ()">gtk_source_completion_item_new()</a>.
+        </p></li>
+<li class="listitem"><p>
+          <code class="code">gtk_source_search_context_forward2()</code> has been renamed to
+          <a class="link" href="GtkSourceSearchContext.html#gtk-source-search-context-forward" title="gtk_source_search_context_forward ()">gtk_source_search_context_forward()</a>.
+        </p></li>
+<li class="listitem"><p>
+          <code class="code">gtk_source_search_context_forward_finish2()</code> has been renamed to
+          <a class="link" href="GtkSourceSearchContext.html#gtk-source-search-context-forward-finish" title="gtk_source_search_context_forward_finish ()">gtk_source_search_context_forward_finish()</a>.
+        </p></li>
+<li class="listitem"><p>
+          <code class="code">gtk_source_search_context_backward2()</code> has been renamed to
+          <a class="link" href="GtkSourceSearchContext.html#gtk-source-search-context-backward" title="gtk_source_search_context_backward ()">gtk_source_search_context_backward()</a>.
+        </p></li>
+<li class="listitem"><p>
+          <code class="code">gtk_source_search_context_backward_finish2()</code> has been renamed to
+          <a class="link" href="GtkSourceSearchContext.html#gtk-source-search-context-backward-finish" title="gtk_source_search_context_backward_finish ()">gtk_source_search_context_backward_finish()</a>.
+        </p></li>
+<li class="listitem"><p>
+          <code class="code">gtk_source_search_context_replace2()</code> has been renamed to
+          <a class="link" href="GtkSourceSearchContext.html#gtk-source-search-context-replace" title="gtk_source_search_context_replace ()">gtk_source_search_context_replace()</a>.
+        </p></li>
+<li class="listitem"><p>
+          The <a class="link" href="GtkSourceSearchContext.html#GtkSourceSearchContext--settings" title="The “settings” property">GtkSourceSearchContext:settings</a>
+          property is now construct-only.
+        </p></li>
+</ul></div>
+</div>
+<div class="refsect1">
+<a name="id-1.5.2.7"></a><h2>GtkSourceView 3.99.3</h2>
+<p>No API changes.</p>
+</div>
+<div class="refsect1">
+<a name="id-1.5.2.8"></a><h2>GtkSourceView 3.99.4</h2>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+          The API of the
+          <a class="link" href="GtkSourceView.html#GtkSourceView-move-lines" title="The “move-lines” signal">GtkSourceView::move-lines</a>
+          keybinding signal has been simplified: the <code class="code">copy</code> parameter
+          was deprecated and has been removed; and the <code class="code">count</code>
+          parameter has been replaced by the <code class="code">down</code> boolean.
+        </p></li></ul></div>
+</div>
+<div class="refsect1">
+<a name="id-1.5.2.9"></a><h2>GtkSourceView 3.99.5 and 3.99.6</h2>
+<p>No API changes.</p>
+</div>
+<div class="refsect1">
+<a name="id-1.5.2.10"></a><h2>GtkSourceView 3.99.7</h2>
+<p>
+      In order to have a better *.gir file and have less metadata to generate
+      the *.vapi for Vala, the following change has been made:
+    </p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+          <code class="code">gtk_source_completion_show()</code> has been renamed to
+          <a class="link" href="GtkSourceCompletion.html#gtk-source-completion-start" title="gtk_source_completion_start ()">gtk_source_completion_start()</a>.
+          The function conflicted with the
+          <a class="link" href="GtkSourceCompletion.html#GtkSourceCompletion-show" title="The “show” signal">GtkSourceCompletion::show</a> signal.
+          Note that in Vala this doesn't require code changes because the method
+          was already renamed to <code class="code">start()</code> in GtkSourceView 3.
+        </p></li></ul></div>
+<p>
+      Other changes in 3.99.7:
+    </p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+          For i18n initialization, the
+          <a class="link" href="libgedit-gtksourceview-300-GtkSourceView-Initialization-and-Finalization.html#gtk-source-init" title="gtk_source_init ()">gtk_source_init()</a> function
+          now needs to be called. There is also the
+          <a class="link" href="libgedit-gtksourceview-300-GtkSourceView-Initialization-and-Finalization.html#gtk-source-finalize" title="gtk_source_finalize ()">gtk_source_finalize()</a>
+          function which is convenient when using memory debugging tools.
+        </p></li></ul></div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

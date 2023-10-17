@@ -1,0 +1,491 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GspellTextView: gspell 1 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="gspell 1 Reference Manual">
+<link rel="up" href="GtkTextView-support.html" title="GtkTextView Support">
+<link rel="prev" href="GspellTextBuffer.html" title="GspellTextBuffer">
+<link rel="next" href="GspellNavigatorTextView.html" title="GspellNavigatorTextView">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GspellTextView.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GspellTextView.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GspellTextView.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="GtkTextView-support.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GspellTextBuffer.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GspellNavigatorTextView.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GspellTextView"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GspellTextView.top_of_page"></a>GspellTextView</span></h2>
+<p>GspellTextView — Spell checking support for GtkTextView</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GspellTextView.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="GspellTextView.html" title="GspellTextView"><span class="returnvalue">GspellTextView</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GspellTextView.html#gspell-text-view-get-from-gtk-text-view" title="gspell_text_view_get_from_gtk_text_view ()">gspell_text_view_get_from_gtk_text_view</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GspellTextView.html#gspell-text-view-basic-setup" title="gspell_text_view_basic_setup ()">gspell_text_view_basic_setup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GtkTextView-struct"><span class="returnvalue">GtkTextView</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GspellTextView.html#gspell-text-view-get-view" title="gspell_text_view_get_view ()">gspell_text_view_get_view</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GspellTextView.html#gspell-text-view-get-inline-spell-checking" title="gspell_text_view_get_inline_spell_checking ()">gspell_text_view_get_inline_spell_checking</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GspellTextView.html#gspell-text-view-set-inline-spell-checking" title="gspell_text_view_set_inline_spell_checking ()">gspell_text_view_set_inline_spell_checking</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GspellTextView.html#gspell-text-view-get-enable-language-menu" title="gspell_text_view_get_enable_language_menu ()">gspell_text_view_get_enable_language_menu</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GspellTextView.html#gspell-text-view-set-enable-language-menu" title="gspell_text_view_set_enable_language_menu ()">gspell_text_view_set_enable_language_menu</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GspellTextView.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GspellTextView.html#GspellTextView--enable-language-menu" title="The “enable-language-menu” property">enable-language-menu</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GspellTextView.html#GspellTextView--inline-spell-checking" title="The “inline-spell-checking” property">inline-spell-checking</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GtkTextView-struct"><span class="type">GtkTextView</span></a> *</td>
+<td class="property_name"><a class="link" href="GspellTextView.html#GspellTextView--view" title="The “view” property">view</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GspellTextView.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GspellTextView.html#GspellTextView-struct" title="GspellTextView">GspellTextView</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GspellTextView.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> GspellTextView
+</pre>
+</div>
+<div class="refsect1">
+<a name="GspellTextView.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gspell/gspell.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GspellTextView.description"></a><h2>Description</h2>
+<p><a class="link" href="GspellTextView.html" title="GspellTextView"><span class="type">GspellTextView</span></a> extends the <a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GtkTextView-struct"><span class="type">GtkTextView</span></a> class with inline spell checking.
+Misspelled words are highlighted with a red <code class="literal">PANGO_UNDERLINE_SINGLE</code>.
+Right-clicking a misspelled word pops up a context menu of suggested
+replacements. The context menu also contains an “Ignore All” item to add the
+misspelled word to the session dictionary. And an “Add” item to add the word
+to the personal dictionary.</p>
+<p>For a basic use-case, there is the <a class="link" href="GspellTextView.html#gspell-text-view-basic-setup" title="gspell_text_view_basic_setup ()"><code class="function">gspell_text_view_basic_setup()</code></a> convenience
+function.</p>
+<p>The spell is checked only on the visible region of the <a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GtkTextView-struct"><span class="type">GtkTextView</span></a>. Note
+that if a same <a href="/usr/share/gtk-doc/html/gtk3/GtkTextBuffer.html#GtkTextBuffer-struct"><span class="type">GtkTextBuffer</span></a> is used for several views, the misspelled words
+are visible in all views, because the highlighting is achieved with a
+<a href="/usr/share/gtk-doc/html/gtk3/GtkTextTag.html#GtkTextTag-struct"><span class="type">GtkTextTag</span></a> added to the buffer.</p>
+<p>If you don't use the <a class="link" href="GspellTextView.html#gspell-text-view-basic-setup" title="gspell_text_view_basic_setup ()"><code class="function">gspell_text_view_basic_setup()</code></a> function, you need to
+call <a class="link" href="GspellTextBuffer.html#gspell-text-buffer-set-spell-checker" title="gspell_text_buffer_set_spell_checker ()"><code class="function">gspell_text_buffer_set_spell_checker()</code></a> to associate a <a class="link" href="GspellChecker.html" title="GspellChecker"><span class="type">GspellChecker</span></a> to
+the <a href="/usr/share/gtk-doc/html/gtk3/GtkTextBuffer.html#GtkTextBuffer-struct"><span class="type">GtkTextBuffer</span></a>.</p>
+<p>Note that <a class="link" href="GspellTextView.html" title="GspellTextView"><span class="type">GspellTextView</span></a> extends the <a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GtkTextView-struct"><span class="type">GtkTextView</span></a> class but without
+subclassing it, because the GtkSourceView library has already a <a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GtkTextView-struct"><span class="type">GtkTextView</span></a>
+subclass.</p>
+<p>If you want a <code class="literal">PANGO_UNDERLINE_ERROR</code> instead (a wavy underline), please fix
+<a class="ulink" href="https://bugzilla.gnome.org/show_bug.cgi?id=763741" target="_top">this bug</a> first.</p>
+</div>
+<div class="refsect1">
+<a name="GspellTextView.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gspell-text-view-get-from-gtk-text-view"></a><h3>gspell_text_view_get_from_gtk_text_view ()</h3>
+<pre class="programlisting"><a class="link" href="GspellTextView.html" title="GspellTextView"><span class="returnvalue">GspellTextView</span></a> *
+gspell_text_view_get_from_gtk_text_view
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GtkTextView-struct"><span class="type">GtkTextView</span></a> *gtk_view</code></em>);</pre>
+<p>Returns the <a class="link" href="GspellTextView.html" title="GspellTextView"><span class="type">GspellTextView</span></a> of <em class="parameter"><code>gtk_view</code></em>
+. The returned object is guaranteed
+to be the same for the lifetime of <em class="parameter"><code>gtk_view</code></em>
+.</p>
+<div class="refsect3">
+<a name="gspell-text-view-get-from-gtk-text-view.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gtk_view</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GtkTextView-struct"><span class="type">GtkTextView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gspell-text-view-get-from-gtk-text-view.returns"></a><h4>Returns</h4>
+<p>the <a class="link" href="GspellTextView.html" title="GspellTextView"><span class="type">GspellTextView</span></a> of <em class="parameter"><code>gtk_view</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-text-view-basic-setup"></a><h3>gspell_text_view_basic_setup ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gspell_text_view_basic_setup (<em class="parameter"><code><a class="link" href="GspellTextView.html" title="GspellTextView"><span class="type">GspellTextView</span></a> *gspell_view</code></em>);</pre>
+<p>This function is a convenience function that does the following:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>Set a spell checker. The language chosen is the one returned by
+<a class="link" href="GspellLanguage.html#gspell-language-get-default" title="gspell_language_get_default ()"><code class="function">gspell_language_get_default()</code></a>.</p></li>
+<li class="listitem"><p>Set the <a class="link" href="GspellTextView.html#GspellTextView--inline-spell-checking" title="The “inline-spell-checking” property"><span class="type">“inline-spell-checking”</span></a> property to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p></li>
+<li class="listitem"><p>Set the <a class="link" href="GspellTextView.html#GspellTextView--enable-language-menu" title="The “enable-language-menu” property"><span class="type">“enable-language-menu”</span></a> property to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p></li>
+</ul></div>
+<p>Example:</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">GtkTextView</span><span class="w"> </span><span class="o">*</span><span class="n">gtk_view</span><span class="p">;</span>
+<span class="n">GspellTextView</span><span class="w"> </span><span class="o">*</span><span class="n">gspell_view</span><span class="p">;</span>
+
+<span class="n">gspell_view</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gspell_text_view_get_from_gtk_text_view</span><span class="w"> </span><span class="p">(</span><span class="n">gtk_view</span><span class="p">);</span>
+<span class="n">gspell_text_view_basic_setup</span><span class="w"> </span><span class="p">(</span><span class="n">gspell_view</span><span class="p">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+<p>This is equivalent to:</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">GtkTextView</span><span class="w"> </span><span class="o">*</span><span class="n">gtk_view</span><span class="p">;</span>
+<span class="n">GspellTextView</span><span class="w"> </span><span class="o">*</span><span class="n">gspell_view</span><span class="p">;</span>
+<span class="n">GspellChecker</span><span class="w"> </span><span class="o">*</span><span class="n">checker</span><span class="p">;</span>
+<span class="n">GtkTextBuffer</span><span class="w"> </span><span class="o">*</span><span class="n">gtk_buffer</span><span class="p">;</span>
+<span class="n">GspellTextBuffer</span><span class="w"> </span><span class="o">*</span><span class="n">gspell_buffer</span><span class="p">;</span>
+
+<span class="n">checker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gspell_checker_new</span><span class="w"> </span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
+<span class="n">gtk_buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gtk_text_view_get_buffer</span><span class="w"> </span><span class="p">(</span><span class="n">gtk_view</span><span class="p">);</span>
+<span class="n">gspell_buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gspell_text_buffer_get_from_gtk_text_buffer</span><span class="w"> </span><span class="p">(</span><span class="n">gtk_buffer</span><span class="p">);</span>
+<span class="n">gspell_text_buffer_set_spell_checker</span><span class="w"> </span><span class="p">(</span><span class="n">gspell_buffer</span><span class="p">,</span><span class="w"> </span><span class="n">checker</span><span class="p">);</span>
+<span class="n">g_object_unref</span><span class="w"> </span><span class="p">(</span><span class="n">checker</span><span class="p">);</span>
+
+<span class="n">gspell_view</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gspell_text_view_get_from_gtk_text_view</span><span class="w"> </span><span class="p">(</span><span class="n">gtk_view</span><span class="p">);</span>
+<span class="n">gspell_text_view_set_inline_spell_checking</span><span class="w"> </span><span class="p">(</span><span class="n">gspell_view</span><span class="p">,</span><span class="w"> </span><span class="n">TRUE</span><span class="p">);</span>
+<span class="n">gspell_text_view_set_enable_language_menu</span><span class="w"> </span><span class="p">(</span><span class="n">gspell_view</span><span class="p">,</span><span class="w"> </span><span class="n">TRUE</span><span class="p">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+<div class="refsect3">
+<a name="gspell-text-view-basic-setup.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gspell_view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellTextView.html" title="GspellTextView"><span class="type">GspellTextView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-1-2.html#api-index-1.2">1.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-text-view-get-view"></a><h3>gspell_text_view_get_view ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GtkTextView-struct"><span class="returnvalue">GtkTextView</span></a> *
+gspell_text_view_get_view (<em class="parameter"><code><a class="link" href="GspellTextView.html" title="GspellTextView"><span class="type">GspellTextView</span></a> *gspell_view</code></em>);</pre>
+<div class="refsect3">
+<a name="gspell-text-view-get-view.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gspell_view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellTextView.html" title="GspellTextView"><span class="type">GspellTextView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gspell-text-view-get-view.returns"></a><h4>Returns</h4>
+<p>the <a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GtkTextView-struct"><span class="type">GtkTextView</span></a> of <em class="parameter"><code>gspell_view</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-text-view-get-inline-spell-checking"></a><h3>gspell_text_view_get_inline_spell_checking ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gspell_text_view_get_inline_spell_checking
+                               (<em class="parameter"><code><a class="link" href="GspellTextView.html" title="GspellTextView"><span class="type">GspellTextView</span></a> *gspell_view</code></em>);</pre>
+<div class="refsect3">
+<a name="gspell-text-view-get-inline-spell-checking.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gspell_view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellTextView.html" title="GspellTextView"><span class="type">GspellTextView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gspell-text-view-get-inline-spell-checking.returns"></a><h4>Returns</h4>
+<p> whether the inline spell checking is enabled.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-text-view-set-inline-spell-checking"></a><h3>gspell_text_view_set_inline_spell_checking ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gspell_text_view_set_inline_spell_checking
+                               (<em class="parameter"><code><a class="link" href="GspellTextView.html" title="GspellTextView"><span class="type">GspellTextView</span></a> *gspell_view</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> enable</code></em>);</pre>
+<p>Enables or disables the inline spell checking.</p>
+<div class="refsect3">
+<a name="gspell-text-view-set-inline-spell-checking.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gspell_view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellTextView.html" title="GspellTextView"><span class="type">GspellTextView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>enable</p></td>
+<td class="parameter_description"><p>the new state.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-text-view-get-enable-language-menu"></a><h3>gspell_text_view_get_enable_language_menu ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gspell_text_view_get_enable_language_menu
+                               (<em class="parameter"><code><a class="link" href="GspellTextView.html" title="GspellTextView"><span class="type">GspellTextView</span></a> *gspell_view</code></em>);</pre>
+<div class="refsect3">
+<a name="gspell-text-view-get-enable-language-menu.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gspell_view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellTextView.html" title="GspellTextView"><span class="type">GspellTextView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gspell-text-view-get-enable-language-menu.returns"></a><h4>Returns</h4>
+<p> whether the language context menu is enabled.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-1-2.html#api-index-1.2">1.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gspell-text-view-set-enable-language-menu"></a><h3>gspell_text_view_set_enable_language_menu ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gspell_text_view_set_enable_language_menu
+                               (<em class="parameter"><code><a class="link" href="GspellTextView.html" title="GspellTextView"><span class="type">GspellTextView</span></a> *gspell_view</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> enable_language_menu</code></em>);</pre>
+<p>Sets whether to enable the language context menu. If enabled, doing a right
+click on the <a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GtkTextView-struct"><span class="type">GtkTextView</span></a> will show a sub-menu to choose the language for the
+spell checking. If another language is chosen, it changes the
+<a class="link" href="GspellChecker.html#GspellChecker--language" title="The “language” property"><span class="type">“language”</span></a> property of the <a class="link" href="GspellTextBuffer.html#GspellTextBuffer--spell-checker" title="The “spell-checker” property"><span class="type">“spell-checker”</span></a> of
+the <a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GtkTextView--buffer"><span class="type">“buffer”</span></a> of the <a class="link" href="GspellTextView.html#GspellTextView--view" title="The “view” property"><span class="type">“view”</span></a>.</p>
+<div class="refsect3">
+<a name="gspell-text-view-set-enable-language-menu.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gspell_view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GspellTextView.html" title="GspellTextView"><span class="type">GspellTextView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>enable_language_menu</p></td>
+<td class="parameter_description"><p>whether to enable the language context menu.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-1-2.html#api-index-1.2">1.2</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GspellTextView.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GspellTextView-struct"></a><h3>GspellTextView</h3>
+<pre class="programlisting">typedef struct _GspellTextView GspellTextView;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GspellTextView.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GspellTextView--enable-language-menu"></a><h3>The <code class="literal">“enable-language-menu”</code> property</h3>
+<pre class="programlisting">  “enable-language-menu”     <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>When the context menu is shown, whether to add a sub-menu to select
+the language for the spell checking.</p>
+<p>Owner: GspellTextView</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+<p class="since">Since: <a class="link" href="api-index-1-2.html#api-index-1.2">1.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GspellTextView--inline-spell-checking"></a><h3>The <code class="literal">“inline-spell-checking”</code> property</h3>
+<pre class="programlisting">  “inline-spell-checking”    <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether the inline spell checking is enabled.</p>
+<p>Owner: GspellTextView</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GspellTextView--view"></a><h3>The <code class="literal">“view”</code> property</h3>
+<pre class="programlisting">  “view”                     <a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GtkTextView-struct"><span class="type">GtkTextView</span></a> *</pre>
+<p>The <a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GtkTextView-struct"><span class="type">GtkTextView</span></a>.</p>
+<p>Owner: GspellTextView</p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

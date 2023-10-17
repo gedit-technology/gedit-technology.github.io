@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>LatexilaTemplatesDialogs: GNOME LaTeX Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GNOME LaTeX Reference Manual">
+<link rel="up" href="ch03.html" title="Templates">
+<link rel="prev" href="ch03.html" title="Templates">
+<link rel="next" href="LatexilaTemplatesManageDialog.html" title="LatexilaTemplatesManageDialog">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gnome-latex-LatexilaTemplatesDialogs.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch03.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch03.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="LatexilaTemplatesManageDialog.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gnome-latex-LatexilaTemplatesDialogs"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gnome-latex-LatexilaTemplatesDialogs.top_of_page"></a>LatexilaTemplatesDialogs</span></h2>
+<p>LatexilaTemplatesDialogs</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gnome-latex-LatexilaTemplatesDialogs.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-latex-LatexilaTemplatesDialogs.html#latexila-templates-dialogs-open" title="latexila_templates_dialogs_open ()">latexila_templates_dialogs_open</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-latex-LatexilaTemplatesDialogs.html#latexila-templates-dialogs-create-template" title="latexila_templates_dialogs_create_template ()">latexila_templates_dialogs_create_template</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-latex-LatexilaTemplatesDialogs.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;latexila.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="gnome-latex-LatexilaTemplatesDialogs.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="gnome-latex-LatexilaTemplatesDialogs.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="latexila-templates-dialogs-open"></a><h3>latexila_templates_dialogs_open ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+latexila_templates_dialogs_open (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkWindow.html#GtkWindow-struct"><span class="type">GtkWindow</span></a> *parent_window</code></em>);</pre>
+<p>Runs a <a href="/usr/share/gtk-doc/html/gtk3/GtkDialog.html#GtkDialog-struct"><span class="type">GtkDialog</span></a> to create a new document from a template. Only the
+template's contents is returned.</p>
+<div class="refsect3">
+<a name="latexila-templates-dialogs-open.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>parent_window</p></td>
+<td class="parameter_description"><p>transient parent window of the dialog.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="latexila-templates-dialogs-open.returns"></a><h4>Returns</h4>
+<p> the template contents, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if no templates must be opened.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="latexila-templates-dialogs-create-template"></a><h3>latexila_templates_dialogs_create_template ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+latexila_templates_dialogs_create_template
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkWindow.html#GtkWindow-struct"><span class="type">GtkWindow</span></a> *parent_window</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *template_contents</code></em>);</pre>
+<p>Runs a <a href="/usr/share/gtk-doc/html/gtk3/GtkDialog.html#GtkDialog-struct"><span class="type">GtkDialog</span></a> to create a new template. The template's contents is given.
+The <a href="/usr/share/gtk-doc/html/gtk3/GtkDialog.html#GtkDialog-struct"><span class="type">GtkDialog</span></a> asks the template's name and icon.</p>
+<div class="refsect3">
+<a name="latexila-templates-dialogs-create-template.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>parent_window</p></td>
+<td class="parameter_description"><p>transient parent window of the dialog.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>template_contents</p></td>
+<td class="parameter_description"><p>the template's contents.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

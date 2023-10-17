@@ -1,0 +1,629 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GeditDocument: gedit Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="gedit Reference Manual">
+<link rel="up" href="api-reference.html" title="Part I. API Reference">
+<link rel="prev" href="gedit-GeditCommands.html" title="GeditCommands">
+<link rel="next" href="GeditEncodingsComboBox.html" title="GeditEncodingsComboBox">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GeditDocument.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GeditDocument.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GeditDocument.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GeditDocument.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="api-reference.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gedit-GeditCommands.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GeditEncodingsComboBox.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GeditDocument"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GeditDocument.top_of_page"></a>GeditDocument</span></h2>
+<p>GeditDocument</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GeditDocument.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="GeditDocument.html" title="GeditDocument"><span class="returnvalue">GeditDocument</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GeditDocument.html#gedit-document-new" title="gedit_document_new ()">gedit_document_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../libgedit-gtksourceview-300/GtkSourceFile.html#GtkSourceFile-struct"><span class="returnvalue">GtkSourceFile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GeditDocument.html#gedit-document-get-file" title="gedit_document_get_file ()">gedit_document_get_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GeditDocument.html#gedit-document-get-mime-type" title="gedit_document_get_mime_type ()">gedit_document_get_mime_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GeditDocument.html#gedit-document-set-language" title="gedit_document_set_language ()">gedit_document_set_language</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GeditDocument.html#gedit-document-get-content-type" title="gedit_document_get_content_type ()">gedit_document_get_content_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GeditDocument.html#gedit-document-get-metadata" title="gedit_document_get_metadata ()">gedit_document_get_metadata</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GeditDocument.html#gedit-document-set-metadata" title="gedit_document_set_metadata ()">gedit_document_set_metadata</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GeditDocument.html#gedit-document-set-search-context" title="gedit_document_set_search_context ()">gedit_document_set_search_context</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../libgedit-gtksourceview-300/GtkSourceSearchContext.html#GtkSourceSearchContext-struct"><span class="returnvalue">GtkSourceSearchContext</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GeditDocument.html#gedit-document-get-search-context" title="gedit_document_get_search_context ()">gedit_document_get_search_context</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GeditDocument.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="GeditDocument.html#GeditDocument--content-type" title="The “content-type” property">content-type</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GeditDocument.html#GeditDocument--empty-search" title="The “empty-search” property">empty-search</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">char</span> *</td>
+<td class="property_name"><a class="link" href="GeditDocument.html#GeditDocument--mime-type" title="The “mime-type” property">mime-type</a></td>
+<td class="property_flags">Read</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GeditDocument.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GeditDocument.html#GeditDocument-load" title="The “load” signal">load</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GeditDocument.html#GeditDocument-loaded" title="The “loaded” signal">loaded</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GeditDocument.html#GeditDocument-save" title="The “save” signal">save</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GeditDocument.html#GeditDocument-saved" title="The “saved” signal">saved</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GeditDocument.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GeditDocument.html#GeditDocument-struct" title="GeditDocument">GeditDocument</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GeditDocument.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkTextBuffer.html#GtkTextBuffer-struct">GtkTextBuffer</a>
+        <span class="lineart">╰──</span> <a href="../libgedit-gtksourceview-300/GtkSourceBuffer.html#GtkSourceBuffer-struct">GtkSourceBuffer</a>
+            <span class="lineart">╰──</span> <a href="../tepl-6/TeplBuffer.html#TeplBuffer-struct">TeplBuffer</a>
+                <span class="lineart">╰──</span> GeditDocument
+</pre>
+</div>
+<div class="refsect1">
+<a name="GeditDocument.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="GeditDocument.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gedit-document-new"></a><h3>gedit_document_new ()</h3>
+<pre class="programlisting"><a class="link" href="GeditDocument.html" title="GeditDocument"><span class="returnvalue">GeditDocument</span></a> *
+gedit_document_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-document-get-file"></a><h3>gedit_document_get_file ()</h3>
+<pre class="programlisting"><a href="../libgedit-gtksourceview-300/GtkSourceFile.html#GtkSourceFile-struct"><span class="returnvalue">GtkSourceFile</span></a> *
+gedit_document_get_file (<em class="parameter"><code><a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a> *doc</code></em>);</pre>
+<p>Gets the associated <a href="../libgedit-gtksourceview-300/GtkSourceFile.html#GtkSourceFile-struct"><span class="type">GtkSourceFile</span></a>. You should use it only for reading
+purposes, not for creating a <a href="../libgedit-gtksourceview-300/GtkSourceFileLoader.html#GtkSourceFileLoader-struct"><span class="type">GtkSourceFileLoader</span></a> or <a href="../libgedit-gtksourceview-300/GtkSourceFileSaver.html#GtkSourceFileSaver-struct"><span class="type">GtkSourceFileSaver</span></a>,
+because gedit does some extra work when loading or saving a file and
+maintains an internal state. If you use in a plugin a file loader or saver on
+the returned <a href="../libgedit-gtksourceview-300/GtkSourceFile.html#GtkSourceFile-struct"><span class="type">GtkSourceFile</span></a>, the internal state of gedit won't be updated.</p>
+<p>If you want to save the <a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a> to a secondary file, you can create a
+new <a href="../libgedit-gtksourceview-300/GtkSourceFile.html#GtkSourceFile-struct"><span class="type">GtkSourceFile</span></a> and use a <a href="../libgedit-gtksourceview-300/GtkSourceFileSaver.html#GtkSourceFileSaver-struct"><span class="type">GtkSourceFileSaver</span></a>.</p>
+<div class="refsect3">
+<a name="gedit-document-get-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>doc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gedit-document-get-file.returns"></a><h4>Returns</h4>
+<p>the associated <a href="../libgedit-gtksourceview-300/GtkSourceFile.html#GtkSourceFile-struct"><span class="type">GtkSourceFile</span></a>. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ix04.html#api-index-3.14">3.14</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-document-get-mime-type"></a><h3>gedit_document_get_mime_type ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gedit_document_get_mime_type (<em class="parameter"><code><a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a> *doc</code></em>);</pre>
+<p>Note: this never returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+<div class="refsect3">
+<a name="gedit-document-get-mime-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>doc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-document-set-language"></a><h3>gedit_document_set_language ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gedit_document_set_language (<em class="parameter"><code><a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a> *doc</code></em>,
+                             <em class="parameter"><code><a href="../libgedit-gtksourceview-300/GtkSourceLanguage.html#GtkSourceLanguage-struct"><span class="type">GtkSourceLanguage</span></a> *lang</code></em>);</pre>
+<div class="refsect3">
+<a name="gedit-document-set-language.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>lang</p></td>
+<td class="parameter_description"><p>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-document-get-content-type"></a><h3>gedit_document_get_content_type ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gedit_document_get_content_type (<em class="parameter"><code><a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a> *doc</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-document-get-metadata"></a><h3>gedit_document_get_metadata ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gedit_document_get_metadata (<em class="parameter"><code><a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a> *doc</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *key</code></em>);</pre>
+<p>Gets the metadata assigned to <em class="parameter"><code>key</code></em>
+.</p>
+<div class="refsect3">
+<a name="gedit-document-get-metadata.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>doc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>name of the key</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gedit-document-get-metadata.returns"></a><h4>Returns</h4>
+<p> the value assigned to <em class="parameter"><code>key</code></em>
+. Free with <a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-document-set-metadata"></a><h3>gedit_document_set_metadata ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gedit_document_set_metadata (<em class="parameter"><code><a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a> *doc</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *first_key</code></em>,
+                             <em class="parameter"><code>...</code></em>);</pre>
+<p>Sets metadata on a document.</p>
+<div class="refsect3">
+<a name="gedit-document-set-metadata.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>doc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>first_key</p></td>
+<td class="parameter_description"><p>name of the first key to set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>value for the first key, followed optionally by more key/value pairs,
+followed by <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-document-set-search-context"></a><h3>gedit_document_set_search_context ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gedit_document_set_search_context (<em class="parameter"><code><a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a> *doc</code></em>,
+                                   <em class="parameter"><code><a href="../libgedit-gtksourceview-300/GtkSourceSearchContext.html#GtkSourceSearchContext-struct"><span class="type">GtkSourceSearchContext</span></a> *search_context</code></em>);</pre>
+<p>Sets the new search context for the document. Use this function only when the
+search occurrences are highlighted. So this function should not be used for
+background searches. The purpose is to have only one highlighted search
+context at a time in the document.</p>
+<p>After using this function, you should unref the <em class="parameter"><code>search_context</code></em>
+. The <em class="parameter"><code>doc</code></em>
+
+should be the only owner of the <em class="parameter"><code>search_context</code></em>
+, so that the Clear Highlight
+action works. If you need the <em class="parameter"><code>search_context</code></em>
+ after calling this function,
+use <a class="link" href="GeditDocument.html#gedit-document-get-search-context" title="gedit_document_get_search_context ()"><code class="function">gedit_document_get_search_context()</code></a>.</p>
+<div class="refsect3">
+<a name="gedit-document-set-search-context.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>doc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>search_context</p></td>
+<td class="parameter_description"><p>the new <a href="../libgedit-gtksourceview-300/GtkSourceSearchContext.html#GtkSourceSearchContext-struct"><span class="type">GtkSourceSearchContext</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-document-get-search-context"></a><h3>gedit_document_get_search_context ()</h3>
+<pre class="programlisting"><a href="../libgedit-gtksourceview-300/GtkSourceSearchContext.html#GtkSourceSearchContext-struct"><span class="returnvalue">GtkSourceSearchContext</span></a> *
+gedit_document_get_search_context (<em class="parameter"><code><a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a> *doc</code></em>);</pre>
+<p>Gets the search context. Use this function only if you have used
+<a class="link" href="GeditDocument.html#gedit-document-set-search-context" title="gedit_document_set_search_context ()"><code class="function">gedit_document_set_search_context()</code></a> before. You should not alter other search
+contexts, so you have to verify that the returned search context is yours.
+One way to verify that is to compare the search settings object, or to mark
+the search context with <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-set-data"><code class="function">g_object_set_data()</code></a>.</p>
+<div class="refsect3">
+<a name="gedit-document-get-search-context.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>doc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gedit-document-get-search-context.returns"></a><h4>Returns</h4>
+<p>the current search context of the document, or NULL
+if there is no current search context. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GeditDocument.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GeditDocument-struct"></a><h3>GeditDocument</h3>
+<pre class="programlisting">typedef struct _GeditDocument GeditDocument;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GeditDocument.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GeditDocument--content-type"></a><h3>The <code class="literal">“content-type”</code> property</h3>
+<pre class="programlisting">  “content-type”             <span class="type">char</span> *</pre>
+<p>The document's content type.</p>
+<p>Owner: GeditDocument</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GeditDocument--empty-search"></a><h3>The <code class="literal">“empty-search”</code> property</h3>
+<pre class="programlisting">  “empty-search”             <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<div class="warning">
+The property is used internally by gedit. It must not be used in a
+gedit plugin. The property can be modified or removed at any time.
+</div>
+<p>Whether the search is empty.</p>
+<p>Owner: GeditDocument</p>
+<p>Flags: Read</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GeditDocument--mime-type"></a><h3>The <code class="literal">“mime-type”</code> property</h3>
+<pre class="programlisting">  “mime-type”                <span class="type">char</span> *</pre>
+<p>The document's MIME type.</p>
+<p>Owner: GeditDocument</p>
+<p>Flags: Read</p>
+<p>Default value: "text/plain"</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GeditDocument.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GeditDocument-load"></a><h3>The <code class="literal">“load”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a> *document,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       user_data)</pre>
+<p>The "load" signal is emitted at the beginning of a file loading.</p>
+<p>Before gedit 3.14 this signal contained parameters to configure the
+file loading (the location, encoding, etc). Plugins should not need
+those parameters.</p>
+<div class="refsect3">
+<a name="GeditDocument-load.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>document</p></td>
+<td class="parameter_description"><p>the <a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GeditDocument-loaded"></a><h3>The <code class="literal">“loaded”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a> *document,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       user_data)</pre>
+<p>The "loaded" signal is emitted at the end of a successful file
+loading.</p>
+<p>Before gedit 3.14 this signal contained a <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> parameter, and the
+signal was also emitted if an error occurred. Plugins should not need
+the error parameter.</p>
+<div class="refsect3">
+<a name="GeditDocument-loaded.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>document</p></td>
+<td class="parameter_description"><p>the <a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GeditDocument-save"></a><h3>The <code class="literal">“save”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a> *document,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       user_data)</pre>
+<p>The "save" signal is emitted at the beginning of a file saving.</p>
+<p>Before gedit 3.14 this signal contained parameters to configure the
+file saving (the location, encoding, etc). Plugins should not need
+those parameters.</p>
+<div class="refsect3">
+<a name="GeditDocument-save.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>document</p></td>
+<td class="parameter_description"><p>the <a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GeditDocument-saved"></a><h3>The <code class="literal">“saved”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a> *document,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       user_data)</pre>
+<p>The "saved" signal is emitted at the end of a successful file saving.</p>
+<p>Before gedit 3.14 this signal contained a <a href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> parameter, and the
+signal was also emitted if an error occurred. To save a document, a
+plugin can use the <a class="link" href="gedit-GeditCommands.html#gedit-commands-save-document-async" title="gedit_commands_save_document_async ()"><code class="function">gedit_commands_save_document_async()</code></a> function and
+get the result of the operation with
+<a class="link" href="gedit-GeditCommands.html#gedit-commands-save-document-finish" title="gedit_commands_save_document_finish ()"><code class="function">gedit_commands_save_document_finish()</code></a>.</p>
+<div class="refsect3">
+<a name="GeditDocument-saved.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>document</p></td>
+<td class="parameter_description"><p>the <a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

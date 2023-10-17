@@ -1,0 +1,557 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TeplTabGroup: Tepl 6 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="Tepl 6 Reference Manual">
+<link rel="up" href="framework.html" title="Framework">
+<link rel="prev" href="TeplApplicationWindow.html" title="TeplApplicationWindow">
+<link rel="next" href="TeplNotebook.html" title="TeplNotebook">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#TeplTabGroup.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#TeplTabGroup.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_prerequisites">  <span class="dim">|</span> 
+                  <a href="#TeplTabGroup.prerequisites" class="shortcut">Prerequisites</a></span><span id="nav_implementations">  <span class="dim">|</span> 
+                  <a href="#TeplTabGroup.implementations" class="shortcut">Known Implementations</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#TeplTabGroup.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="framework.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="TeplApplicationWindow.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="TeplNotebook.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="TeplTabGroup"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="TeplTabGroup.top_of_page"></a>TeplTabGroup</span></h2>
+<p>TeplTabGroup — Interface for a group of <a class="link" href="TeplTab.html" title="TeplTab"><span class="type">TeplTab</span></a>'s</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="TeplTabGroup.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TeplTabGroup.html#tepl-tab-group-get-tabs" title="tepl_tab_group_get_tabs ()">tepl_tab_group_get_tabs</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TeplTabGroup.html#tepl-tab-group-get-views" title="tepl_tab_group_get_views ()">tepl_tab_group_get_views</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TeplTabGroup.html#tepl-tab-group-get-buffers" title="tepl_tab_group_get_buffers ()">tepl_tab_group_get_buffers</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="TeplTab.html" title="TeplTab"><span class="returnvalue">TeplTab</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TeplTabGroup.html#tepl-tab-group-get-active-tab" title="tepl_tab_group_get_active_tab ()">tepl_tab_group_get_active_tab</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="TeplTabGroup.html#tepl-tab-group-set-active-tab" title="tepl_tab_group_set_active_tab ()">tepl_tab_group_set_active_tab</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="TeplView.html" title="TeplView"><span class="returnvalue">TeplView</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TeplTabGroup.html#tepl-tab-group-get-active-view" title="tepl_tab_group_get_active_view ()">tepl_tab_group_get_active_view</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="TeplBuffer.html" title="TeplBuffer"><span class="returnvalue">TeplBuffer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TeplTabGroup.html#tepl-tab-group-get-active-buffer" title="tepl_tab_group_get_active_buffer ()">tepl_tab_group_get_active_buffer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="TeplTabGroup.html#tepl-tab-group-append-tab" title="tepl_tab_group_append_tab ()">tepl_tab_group_append_tab</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="TeplTabGroup.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a class="link" href="TeplBuffer.html" title="TeplBuffer"><span class="type">TeplBuffer</span></a> *</td>
+<td class="property_name"><a class="link" href="TeplTabGroup.html#TeplTabGroup--active-buffer" title="The “active-buffer” property">active-buffer</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<a class="link" href="TeplTab.html" title="TeplTab"><span class="type">TeplTab</span></a> *</td>
+<td class="property_name"><a class="link" href="TeplTabGroup.html#TeplTabGroup--active-tab" title="The “active-tab” property">active-tab</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a> *</td>
+<td class="property_name"><a class="link" href="TeplTabGroup.html#TeplTabGroup--active-view" title="The “active-view” property">active-view</a></td>
+<td class="property_flags">Read</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="TeplTabGroup.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="TeplTabGroup.html#TeplTabGroup-struct" title="TeplTabGroup">TeplTabGroup</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="TeplTabGroup.html#TeplTabGroupInterface" title="struct TeplTabGroupInterface">TeplTabGroupInterface</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="TeplTabGroup.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/GTypeModule.html">GInterface</a>
+    <span class="lineart">╰──</span> TeplTabGroup
+</pre>
+</div>
+<div class="refsect1">
+<a name="TeplTabGroup.prerequisites"></a><h2>Prerequisites</h2>
+<p>
+TeplTabGroup requires
+ <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>.</p>
+</div>
+<div class="refsect1">
+<a name="TeplTabGroup.implementations"></a><h2>Known Implementations</h2>
+<p>
+TeplTabGroup is implemented by
+ <a class="link" href="TeplApplicationWindow.html" title="TeplApplicationWindow">TeplApplicationWindow</a>,  <a class="link" href="TeplNotebook.html" title="TeplNotebook">TeplNotebook</a> and  <a class="link" href="TeplTab.html" title="TeplTab">TeplTab</a>.</p>
+</div>
+<div class="refsect1">
+<a name="TeplTabGroup.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;tepl/tepl.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="TeplTabGroup.description"></a><h2>Description</h2>
+<p>The <a class="link" href="TeplTabGroup.html#tepl-tab-group-get-tabs" title="tepl_tab_group_get_tabs ()"><code class="function">tepl_tab_group_get_tabs()</code></a> function permits to get the list of <a class="link" href="TeplTab.html" title="TeplTab"><span class="type">TeplTab</span></a>'s.
+The <a class="link" href="TeplTabGroup.html#tepl-tab-group-get-active-tab" title="tepl_tab_group_get_active_tab ()"><code class="function">tepl_tab_group_get_active_tab()</code></a> function permits to get the <a class="link" href="TeplTab.html" title="TeplTab"><span class="type">TeplTab</span></a>
+currently shown in the <a class="link" href="TeplTabGroup.html" title="TeplTabGroup"><span class="type">TeplTabGroup</span></a>.</p>
+<p><a class="link" href="TeplTabGroup.html" title="TeplTabGroup"><span class="type">TeplTabGroup</span></a> also contains convenience functions to get <a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a>'s and
+<a class="link" href="TeplBuffer.html" title="TeplBuffer"><span class="type">TeplBuffer</span></a>'s instead of <a class="link" href="TeplTab.html" title="TeplTab"><span class="type">TeplTab</span></a>'s.</p>
+</div>
+<div class="refsect1">
+<a name="TeplTabGroup.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="tepl-tab-group-get-tabs"></a><h3>tepl_tab_group_get_tabs ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+tepl_tab_group_get_tabs (<em class="parameter"><code><a class="link" href="TeplTabGroup.html" title="TeplTabGroup"><span class="type">TeplTabGroup</span></a> *tab_group</code></em>);</pre>
+<p>Gets the list of <a class="link" href="TeplTab.html" title="TeplTab"><span class="type">TeplTab</span></a>'s contained in <em class="parameter"><code>tab_group</code></em>
+.</p>
+<p>If <em class="parameter"><code>tab_group</code></em>
+ contains non-<a class="link" href="TeplTab.html" title="TeplTab"><span class="type">TeplTab</span></a> children, those will not be present in the
+returned list. In other words, it is <span class="emphasis"><em>not</em></span> guaranteed that
+the index of a <a class="link" href="TeplTab.html" title="TeplTab"><span class="type">TeplTab</span></a> in the returned <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> has the same child index in
+the <em class="parameter"><code>tab_group</code></em>
+ container.</p>
+<div class="refsect3">
+<a name="tepl-tab-group-get-tabs.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tab_group</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplTabGroup.html" title="TeplTabGroup"><span class="type">TeplTabGroup</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="tepl-tab-group-get-tabs.returns"></a><h4>Returns</h4>
+<p>the list of all the
+<a class="link" href="TeplTab.html" title="TeplTab"><span class="type">TeplTab</span></a>'s contained in <em class="parameter"><code>tab_group</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data container, but not the data inside it."><span class="acronym">transfer container</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> TeplTab]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-tab-group-get-views"></a><h3>tepl_tab_group_get_views ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+tepl_tab_group_get_views (<em class="parameter"><code><a class="link" href="TeplTabGroup.html" title="TeplTabGroup"><span class="type">TeplTabGroup</span></a> *tab_group</code></em>);</pre>
+<p>Convenience function.</p>
+<div class="refsect3">
+<a name="tepl-tab-group-get-views.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tab_group</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplTabGroup.html" title="TeplTabGroup"><span class="type">TeplTabGroup</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="tepl-tab-group-get-views.returns"></a><h4>Returns</h4>
+<p>like
+<a class="link" href="TeplTabGroup.html#tepl-tab-group-get-tabs" title="tepl_tab_group_get_tabs ()"><code class="function">tepl_tab_group_get_tabs()</code></a>, but returns <a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a>'s. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data container, but not the data inside it."><span class="acronym">transfer container</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> TeplView]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-tab-group-get-buffers"></a><h3>tepl_tab_group_get_buffers ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+tepl_tab_group_get_buffers (<em class="parameter"><code><a class="link" href="TeplTabGroup.html" title="TeplTabGroup"><span class="type">TeplTabGroup</span></a> *tab_group</code></em>);</pre>
+<p>Convenience function.</p>
+<div class="refsect3">
+<a name="tepl-tab-group-get-buffers.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tab_group</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplTabGroup.html" title="TeplTabGroup"><span class="type">TeplTabGroup</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="tepl-tab-group-get-buffers.returns"></a><h4>Returns</h4>
+<p>like
+<a class="link" href="TeplTabGroup.html#tepl-tab-group-get-tabs" title="tepl_tab_group_get_tabs ()"><code class="function">tepl_tab_group_get_tabs()</code></a>, but returns <a class="link" href="TeplBuffer.html" title="TeplBuffer"><span class="type">TeplBuffer</span></a>'s. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data container, but not the data inside it."><span class="acronym">transfer container</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> TeplBuffer]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-tab-group-get-active-tab"></a><h3>tepl_tab_group_get_active_tab ()</h3>
+<pre class="programlisting"><a class="link" href="TeplTab.html" title="TeplTab"><span class="returnvalue">TeplTab</span></a> *
+tepl_tab_group_get_active_tab (<em class="parameter"><code><a class="link" href="TeplTabGroup.html" title="TeplTabGroup"><span class="type">TeplTabGroup</span></a> *tab_group</code></em>);</pre>
+<div class="refsect3">
+<a name="tepl-tab-group-get-active-tab.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tab_group</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplTabGroup.html" title="TeplTabGroup"><span class="type">TeplTabGroup</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="tepl-tab-group-get-active-tab.returns"></a><h4>Returns</h4>
+<p>the <a class="link" href="TeplTab.html" title="TeplTab"><span class="type">TeplTab</span></a> currently shown in
+<em class="parameter"><code>tab_group</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-tab-group-set-active-tab"></a><h3>tepl_tab_group_set_active_tab ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+tepl_tab_group_set_active_tab (<em class="parameter"><code><a class="link" href="TeplTabGroup.html" title="TeplTabGroup"><span class="type">TeplTabGroup</span></a> *tab_group</code></em>,
+                               <em class="parameter"><code><a class="link" href="TeplTab.html" title="TeplTab"><span class="type">TeplTab</span></a> *tab</code></em>);</pre>
+<p>Sets the <a class="link" href="TeplTabGroup.html#TeplTabGroup--active-tab" title="The “active-tab” property"><span class="type">“active-tab”</span></a>. <em class="parameter"><code>tab</code></em>
+ must be part of <em class="parameter"><code>tab_group</code></em>
+.</p>
+<div class="refsect3">
+<a name="tepl-tab-group-set-active-tab.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tab_group</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplTabGroup.html" title="TeplTabGroup"><span class="type">TeplTabGroup</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tab</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplTab.html" title="TeplTab"><span class="type">TeplTab</span></a> part of <em class="parameter"><code>tab_group</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-tab-group-get-active-view"></a><h3>tepl_tab_group_get_active_view ()</h3>
+<pre class="programlisting"><a class="link" href="TeplView.html" title="TeplView"><span class="returnvalue">TeplView</span></a> *
+tepl_tab_group_get_active_view (<em class="parameter"><code><a class="link" href="TeplTabGroup.html" title="TeplTabGroup"><span class="type">TeplTabGroup</span></a> *tab_group</code></em>);</pre>
+<p>Convenience function.</p>
+<div class="refsect3">
+<a name="tepl-tab-group-get-active-view.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tab_group</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplTabGroup.html" title="TeplTabGroup"><span class="type">TeplTabGroup</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="tepl-tab-group-get-active-view.returns"></a><h4>Returns</h4>
+<p>the <a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a> of the active tab. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-tab-group-get-active-buffer"></a><h3>tepl_tab_group_get_active_buffer ()</h3>
+<pre class="programlisting"><a class="link" href="TeplBuffer.html" title="TeplBuffer"><span class="returnvalue">TeplBuffer</span></a> *
+tepl_tab_group_get_active_buffer (<em class="parameter"><code><a class="link" href="TeplTabGroup.html" title="TeplTabGroup"><span class="type">TeplTabGroup</span></a> *tab_group</code></em>);</pre>
+<p>Convenience function.</p>
+<div class="refsect3">
+<a name="tepl-tab-group-get-active-buffer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>tab_group</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplTabGroup.html" title="TeplTabGroup"><span class="type">TeplTabGroup</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="tepl-tab-group-get-active-buffer.returns"></a><h4>Returns</h4>
+<p>the <a class="link" href="TeplBuffer.html" title="TeplBuffer"><span class="type">TeplBuffer</span></a> of the active tab. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-tab-group-append-tab"></a><h3>tepl_tab_group_append_tab ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+tepl_tab_group_append_tab (<em class="parameter"><code><a class="link" href="TeplTabGroup.html" title="TeplTabGroup"><span class="type">TeplTabGroup</span></a> *tab_group</code></em>,
+                           <em class="parameter"><code><a class="link" href="TeplTab.html" title="TeplTab"><span class="type">TeplTab</span></a> *tab</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> jump_to</code></em>);</pre>
+<p>Appends <em class="parameter"><code>tab</code></em>
+ to <em class="parameter"><code>tab_group</code></em>
+.</p>
+<div class="refsect3">
+<a name="tepl-tab-group-append-tab.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>tab_group</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplTabGroup.html" title="TeplTabGroup"><span class="type">TeplTabGroup</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tab</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplTab.html" title="TeplTab"><span class="type">TeplTab</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>jump_to</p></td>
+<td class="parameter_description"><p>whether to set <em class="parameter"><code>tab</code></em>
+as the active tab after appending it.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="TeplTabGroup.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="TeplTabGroup-struct"></a><h3>TeplTabGroup</h3>
+<pre class="programlisting">typedef struct _TeplTabGroup TeplTabGroup;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="TeplTabGroupInterface"></a><h3>struct TeplTabGroupInterface</h3>
+<pre class="programlisting">struct TeplTabGroupInterface {
+	GTypeInterface parent_interface;
+
+	GList *		(*get_tabs)		(TeplTabGroup *tab_group);
+
+	TeplTab * (*get_active_tab) (TeplTabGroup *tab_group);
+
+	void		(*set_active_tab) (TeplTabGroup *tab_group,
+						 TeplTab      *tab);
+
+	void		(*append_tab_vfunc) (TeplTabGroup *tab_group,
+						 TeplTab      *tab);
+};
+</pre>
+<p>The virtual function table for <a class="link" href="TeplTabGroup.html" title="TeplTabGroup"><span class="type">TeplTabGroup</span></a>. When implementing one of the
+vfunc, you can assume that the pre-conditions are already checked (the
+parameters are valid).</p>
+<div class="refsect3">
+<a name="TeplTabGroupInterface.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#GTypeInterface"><span class="type">GTypeInterface</span></a> <em class="structfield"><code><a name="TeplTabGroupInterface.parent-interface"></a>parent_interface</code></em>;</p></td>
+<td class="struct_member_description"><p>The parent interface.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="TeplTabGroupInterface.get-tabs"></a>get_tabs</code></em> ()</p></td>
+<td class="struct_member_description"><p>Virtual function pointer for <a class="link" href="TeplTabGroup.html#tepl-tab-group-get-tabs" title="tepl_tab_group_get_tabs ()"><code class="function">tepl_tab_group_get_tabs()</code></a>. By default,
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is returned. When implementing this vfunc, <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> nodes must be
+created only for <a class="link" href="TeplTab.html" title="TeplTab"><span class="type">TeplTab</span></a> children; if the <a class="link" href="TeplTabGroup.html" title="TeplTabGroup"><span class="type">TeplTabGroup</span></a> contains a
+non-<a class="link" href="TeplTab.html" title="TeplTab"><span class="type">TeplTab</span></a> child, it must be skipped. See the documentation of
+<a class="link" href="TeplTabGroup.html#tepl-tab-group-get-tabs" title="tepl_tab_group_get_tabs ()"><code class="function">tepl_tab_group_get_tabs()</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="TeplTabGroupInterface.get-active-tab"></a>get_active_tab</code></em> ()</p></td>
+<td class="struct_member_description"><p>Virtual function pointer for <a class="link" href="TeplTabGroup.html#tepl-tab-group-get-active-tab" title="tepl_tab_group_get_active_tab ()"><code class="function">tepl_tab_group_get_active_tab()</code></a>.
+By default, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is returned.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="TeplTabGroupInterface.set-active-tab"></a>set_active_tab</code></em> ()</p></td>
+<td class="struct_member_description"><p>Virtual function pointer for
+<a class="link" href="TeplTabGroup.html#tepl-tab-group-set-active-tab" title="tepl_tab_group_set_active_tab ()"><code class="function">tepl_tab_group_set_active_tab()</code></a>. Does nothing by default.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="TeplTabGroupInterface.append-tab-vfunc"></a>append_tab_vfunc</code></em> ()</p></td>
+<td class="struct_member_description"><p>Virtual function pointer for <a class="link" href="TeplTabGroup.html#tepl-tab-group-append-tab" title="tepl_tab_group_append_tab ()"><code class="function">tepl_tab_group_append_tab()</code></a>,
+without the <em class="parameter"><code>jump_to</code></em>
+parameter. The default implementation prints a warning
+about the operation not being supported.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="TeplTabGroup.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="TeplTabGroup--active-buffer"></a><h3>The <code class="literal">“active-buffer”</code> property</h3>
+<pre class="programlisting">  “active-buffer”            <a class="link" href="TeplBuffer.html" title="TeplBuffer"><span class="type">TeplBuffer</span></a> *</pre>
+<p>The <a class="link" href="TeplBuffer.html" title="TeplBuffer"><span class="type">TeplBuffer</span></a> of the active tab.</p>
+<p>Owner: TeplTabGroup</p>
+<p>Flags: Read</p>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="TeplTabGroup--active-tab"></a><h3>The <code class="literal">“active-tab”</code> property</h3>
+<pre class="programlisting">  “active-tab”               <a class="link" href="TeplTab.html" title="TeplTab"><span class="type">TeplTab</span></a> *</pre>
+<p>The <a class="link" href="TeplTab.html" title="TeplTab"><span class="type">TeplTab</span></a> currently shown.</p>
+<p>Owner: TeplTabGroup</p>
+<p>Flags: Read / Write</p>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="TeplTabGroup--active-view"></a><h3>The <code class="literal">“active-view”</code> property</h3>
+<pre class="programlisting">  “active-view”              <a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a> *</pre>
+<p>The <a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a> of the active tab.</p>
+<p>Owner: TeplTabGroup</p>
+<p>Flags: Read</p>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Part I. Introduction: Tepl 6 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="Tepl 6 Reference Manual">
+<link rel="up" href="index.html" title="Tepl 6 Reference Manual">
+<link rel="prev" href="index.html" title="Tepl 6 Reference Manual">
+<link rel="next" href="api-reference-text-editor-support.html" title="Part II. API Reference - Text Editor Support">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="index.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="api-reference-text-editor-support.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="part">
+<div class="titlepage"><div><div><h1 class="title">
+<a name="intro"></a>Part I. Introduction</h1></div></div></div>
+<p>
+    Tepl is a library that eases the development of GtkSourceView-based text
+    editors and IDEs. Tepl is the acronym for “Text editor product line”.
+  </p>
+<p>
+    Tepl was previously named Gtef (GTK text editor framework). The project has
+    been renamed in June 2017 to have a more beautiful name. The end of Tepl is
+    pronounced like in “apple”.
+  </p>
+<p>
+    The Tepl library follows a product line approach, inspired by
+    <span class="emphasis"><em>Feature-Oriented Software Product Lines: Concepts and
+    Implementation</em></span> (2013 - Apel, Batory, Kästner and Saake).
+  </p>
+<p>
+    Instead of creating one general-purpose text editor or IDE with a plugin
+    system, the idea is to create several <span class="emphasis"><em>specialized</em></span> text
+    editors. For example specialized for one programming language, or one
+    development platform, or a small group of related languages. By being
+    specialized, an application is potentially better at what it does. It
+    follows more closely the UNIX philosophy to “do only one thing but do it
+    well”. And it better follows the GNOME philosophy: writing applications that
+    Just Works; when a user opens the text editor for the first time, it should
+    work out-of-the-box, without the need to find, install and configure
+    plugins. Of course it still makes sense to develop one general-purpose text
+    editor for the languages not yet covered by specialized text editors.
+  </p>
+<p>
+    Most of the features of the library are available as a toolkit, but the
+    interesting part of Tepl is that it contains also a framework (for now
+    without a plugin system). The goal of the framework is to provide
+    higher-level APIs, to be able to create a new text editor easily. An
+    application wanting to use Tepl is not forced to use the framework in its
+    entirety, it is possible to use just the toolkit parts. The library is
+    implemented this way to achieve maximum re-usability: the framework is less
+    re-usable because it makes some assumptions about the general architecture
+    of the application, but since the features are also available with a
+    lower-level API – as a toolkit – all text editors and IDEs based
+    on GtkSourceView (or even other types of applications) should be able to
+    benefit from the features implemented in Tepl.
+  </p>
+<p>
+    Initially, Tepl was created as an incubator for new GtkSourceView features,
+    but in practice the features remained in Tepl, because Tepl is considered
+    less stable for its APIs, and it's convenient to iterate on the APIs with
+    more freedom. Another reason is that renaming the namespace of all symbols
+    is difficult to do in C.
+  </p>
+<div class="refsect1">
+<a name="id-1.2.8"></a><h2>Boundary between GtkSourceView and Tepl</h2>
+<p>
+      For the framework part of Tepl (not the toolkit parts), there is a
+      somewhat clear boundary between GtkSourceView and Tepl: the top-level
+      object in GtkSourceView is the <a href="../libgedit-gtksourceview-300/GtkSourceView.html#GtkSourceView-struct">GtkSourceView</a>
+      widget (representing only one view, or one file), while the GtkSourceView
+      widget is at the bottom of the containment hierarchy in the Tepl
+      framework (it is a “somewhat” clear boundary because there is also
+      <a class="link" href="TeplBuffer.html" title="TeplBuffer">TeplBuffer</a>, a subclass of
+      <a href="../libgedit-gtksourceview-300/GtkSourceBuffer.html#GtkSourceBuffer-struct">GtkSourceBuffer</a>).
+    </p>
+<p>
+      The top-level object in Tepl is <a class="link" href="TeplApplication.html" title="TeplApplication">TeplApplication</a>,
+      representing the whole application which can contain several windows, with
+      each window containing one or several GtkSourceView widgets (typically
+      with a Tabbed Document Interface).
+    </p>
+<p>
+      So the GtkSourceView library is not aware that there can be several files
+      opened in the application, while the Tepl framework has a complete view of
+      the application with regards to the opened files/tabs. It permits to
+      implement higher-level APIs.
+    </p>
+</div>
+<div class="refsect1">
+<a name="id-1.2.9"></a><h2>API stability</h2>
+<p>
+      The API is now constantly unstable. The library soname is adapted for each
+      release.
+    </p>
+<p>
+      Tepl contains more experimental APIs than GtkSourceView, sometimes even
+      unfinished features. API design is hard, it needs an iterative process.
+      Instead of being stuck for years with a non-optimal API, the Tepl
+      developers want to be able to break the API at any time, to iteratively
+      improve it. Sometimes we see possible improvements several years later.
+    </p>
+<p>
+      The API breaks are documented in
+      <a class="link" href="api-breaks.html" title="Part IV. API Breaks">this section</a>.
+    </p>
+</div>
+<div class="refsect1">
+<a name="id-1.2.10"></a><h2>GTK dependency</h2>
+<p>
+      Tepl 6 depends on GTK 3.
+    </p>
+</div>
+<div class="refsect1">
+<a name="id-1.2.11"></a><h2>pkg-config name</h2>
+<p>
+      For Tepl 6, the pkg-config name is:
+      <code class="code">tepl-6</code>
+    </p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

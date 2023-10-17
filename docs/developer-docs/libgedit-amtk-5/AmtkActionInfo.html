@@ -1,0 +1,780 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AmtkActionInfo: libgedit-amtk 5 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libgedit-amtk 5 Reference Manual">
+<link rel="up" href="api-reference.html" title="Part I. libgedit-amtk API Reference">
+<link rel="prev" href="AmtkApplicationWindow.html" title="AmtkApplicationWindow">
+<link rel="next" href="AmtkActionInfoStore.html" title="AmtkActionInfoStore">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#AmtkActionInfo.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#AmtkActionInfo.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="api-reference.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="AmtkApplicationWindow.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="AmtkActionInfoStore.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="AmtkActionInfo"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="AmtkActionInfo.top_of_page"></a>AmtkActionInfo</span></h2>
+<p>AmtkActionInfo — <a href="/usr/share/gtk-doc/html/gio/GAction.html#GAction-struct"><span class="type">GAction</span></a> information</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="AmtkActionInfo.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="returnvalue">AmtkActionInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkActionInfo.html#amtk-action-info-new" title="amtk_action_info_new ()">amtk_action_info_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="returnvalue">AmtkActionInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkActionInfo.html#amtk-action-info-new-from-entry" title="amtk_action_info_new_from_entry ()">amtk_action_info_new_from_entry</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="returnvalue">AmtkActionInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkActionInfo.html#amtk-action-info-ref" title="amtk_action_info_ref ()">amtk_action_info_ref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AmtkActionInfo.html#amtk-action-info-unref" title="amtk_action_info_unref ()">amtk_action_info_unref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="returnvalue">AmtkActionInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkActionInfo.html#amtk-action-info-copy" title="amtk_action_info_copy ()">amtk_action_info_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkActionInfo.html#amtk-action-info-get-action-name" title="amtk_action_info_get_action_name ()">amtk_action_info_get_action_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AmtkActionInfo.html#amtk-action-info-set-action-name" title="amtk_action_info_set_action_name ()">amtk_action_info_set_action_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkActionInfo.html#amtk-action-info-get-icon-name" title="amtk_action_info_get_icon_name ()">amtk_action_info_get_icon_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AmtkActionInfo.html#amtk-action-info-set-icon-name" title="amtk_action_info_set_icon_name ()">amtk_action_info_set_icon_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkActionInfo.html#amtk-action-info-get-label" title="amtk_action_info_get_label ()">amtk_action_info_get_label</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AmtkActionInfo.html#amtk-action-info-set-label" title="amtk_action_info_set_label ()">amtk_action_info_set_label</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkActionInfo.html#amtk-action-info-get-tooltip" title="amtk_action_info_get_tooltip ()">amtk_action_info_get_tooltip</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AmtkActionInfo.html#amtk-action-info-set-tooltip" title="amtk_action_info_set_tooltip ()">amtk_action_info_set_tooltip</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> * const *
+</td>
+<td class="function_name">
+<a class="link" href="AmtkActionInfo.html#amtk-action-info-get-accels" title="amtk_action_info_get_accels ()">amtk_action_info_get_accels</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AmtkActionInfo.html#amtk-action-info-set-accels" title="amtk_action_info_set_accels ()">amtk_action_info_set_accels</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AmtkActionInfo.html#amtk-action-info-mark-as-used" title="amtk_action_info_mark_as_used ()">amtk_action_info_mark_as_used</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AmtkActionInfo.html#amtk-action-info-has-been-used" title="amtk_action_info_has_been_used ()">amtk_action_info_has_been_used</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AmtkActionInfo.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="AmtkActionInfo.html#AmtkActionInfo-struct" title="AmtkActionInfo">AmtkActionInfo</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="AmtkActionInfo.html#AmtkActionInfoEntry" title="struct AmtkActionInfoEntry">AmtkActionInfoEntry</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AmtkActionInfo.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-Boxed-Types.html">GBoxed</a>
+    <span class="lineart">╰──</span> AmtkActionInfo
+</pre>
+</div>
+<div class="refsect1">
+<a name="AmtkActionInfo.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;amtk/amtk.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="AmtkActionInfo.description"></a><h2>Description</h2>
+<p>An <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a> instance contains a set of information about a <a href="/usr/share/gtk-doc/html/gio/GAction.html#GAction-struct"><span class="type">GAction</span></a>.
+Those pieces of information are useful to create UI elements that trigger the
+<a href="/usr/share/gtk-doc/html/gio/GAction.html#GAction-struct"><span class="type">GAction</span></a>, for example a menu item or a toolbar item.</p>
+<p>The recommended way to create a set of <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a>'s is to use the
+<a class="link" href="AmtkActionInfoStore.html#amtk-action-info-store-add-entries" title="amtk_action_info_store_add_entries ()"><code class="function">amtk_action_info_store_add_entries()</code></a> function.</p>
+</div>
+<div class="refsect1">
+<a name="AmtkActionInfo.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="amtk-action-info-new"></a><h3>amtk_action_info_new ()</h3>
+<pre class="programlisting"><a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="returnvalue">AmtkActionInfo</span></a> *
+amtk_action_info_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="refsect3">
+<a name="amtk-action-info-new.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-action-info-new-from-entry"></a><h3>amtk_action_info_new_from_entry ()</h3>
+<pre class="programlisting"><a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="returnvalue">AmtkActionInfo</span></a> *
+amtk_action_info_new_from_entry (<em class="parameter"><code>const <a class="link" href="AmtkActionInfo.html#AmtkActionInfoEntry" title="struct AmtkActionInfoEntry"><span class="type">AmtkActionInfoEntry</span></a> *info_entry</code></em>,
+                                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *translation_domain</code></em>);</pre>
+<p>Creates a new <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a> from an <a class="link" href="AmtkActionInfo.html#AmtkActionInfoEntry" title="struct AmtkActionInfoEntry"><span class="type">AmtkActionInfoEntry</span></a>.</p>
+<p>If <em class="parameter"><code>translation_domain</code></em>
+ is not <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, <a href="/usr/share/gtk-doc/html/glib/glib-I18N.html#g-dgettext"><code class="function">g_dgettext()</code></a> is used to translate the
+<em class="parameter"><code>label</code></em>
+ and <em class="parameter"><code>tooltip</code></em>
+ before setting them to the <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a>.</p>
+<div class="refsect3">
+<a name="amtk-action-info-new-from-entry.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>info_entry</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkActionInfo.html#AmtkActionInfoEntry" title="struct AmtkActionInfoEntry"><span class="type">AmtkActionInfoEntry</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>translation_domain</p></td>
+<td class="parameter_description"><p>a gettext domain, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-action-info-new-from-entry.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-action-info-ref"></a><h3>amtk_action_info_ref ()</h3>
+<pre class="programlisting"><a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="returnvalue">AmtkActionInfo</span></a> *
+amtk_action_info_ref (<em class="parameter"><code><a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a> *info</code></em>);</pre>
+<p>Increments the reference count of <em class="parameter"><code>info</code></em>
+ by one.</p>
+<div class="refsect3">
+<a name="amtk-action-info-ref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-action-info-ref.returns"></a><h4>Returns</h4>
+<p> the passed in <em class="parameter"><code>info</code></em>
+.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-action-info-unref"></a><h3>amtk_action_info_unref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+amtk_action_info_unref (<em class="parameter"><code><a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a> *info</code></em>);</pre>
+<p>Decrements the reference count of <em class="parameter"><code>info</code></em>
+ by one. If the reference count drops
+to 0, <em class="parameter"><code>info</code></em>
+ is freed.</p>
+<div class="refsect3">
+<a name="amtk-action-info-unref.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-action-info-copy"></a><h3>amtk_action_info_copy ()</h3>
+<pre class="programlisting"><a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="returnvalue">AmtkActionInfo</span></a> *
+amtk_action_info_copy (<em class="parameter"><code>const <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="amtk-action-info-copy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-action-info-copy.returns"></a><h4>Returns</h4>
+<p>a copy of <em class="parameter"><code>info</code></em>
+. The copy will have a reference
+count of one. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-action-info-get-action-name"></a><h3>amtk_action_info_get_action_name ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+amtk_action_info_get_action_name (<em class="parameter"><code>const <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="amtk-action-info-get-action-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-action-info-get-action-name.returns"></a><h4>Returns</h4>
+<p>the action name, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. Example: <code class="literal">"win.save"</code>. Can be
+a detailed action name, see <a href="/usr/share/gtk-doc/html/gio/GAction.html#g-action-parse-detailed-name"><code class="function">g_action_parse_detailed_name()</code></a>. </p>
+<p><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-action-info-set-action-name"></a><h3>amtk_action_info_set_action_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+amtk_action_info_set_action_name (<em class="parameter"><code><a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a> *info</code></em>,
+                                  <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *action_name</code></em>);</pre>
+<p>Sets the action name, for example <code class="literal">"win.save"</code>. Can be a detailed action
+name, see <a href="/usr/share/gtk-doc/html/gio/GAction.html#g-action-parse-detailed-name"><code class="function">g_action_parse_detailed_name()</code></a>.</p>
+<div class="refsect3">
+<a name="amtk-action-info-set-action-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action_name</p></td>
+<td class="parameter_description"><p>the action name.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-action-info-get-icon-name"></a><h3>amtk_action_info_get_icon_name ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+amtk_action_info_get_icon_name (<em class="parameter"><code>const <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="amtk-action-info-get-icon-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-action-info-get-icon-name.returns"></a><h4>Returns</h4>
+<p>the icon name, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
+<p><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-action-info-set-icon-name"></a><h3>amtk_action_info_set_icon_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+amtk_action_info_set_icon_name (<em class="parameter"><code><a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a> *info</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *icon_name</code></em>);</pre>
+<div class="refsect3">
+<a name="amtk-action-info-set-icon-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>icon_name</p></td>
+<td class="parameter_description"><p>the icon name, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-action-info-get-label"></a><h3>amtk_action_info_get_label ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+amtk_action_info_get_label (<em class="parameter"><code>const <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a> *info</code></em>);</pre>
+<p>Gets the label. The label has normally a mnemonic. To remove the mnemonic,
+there is the <a class="link" href="libgedit-amtk-5-AmtkUtils.html#amtk-utils-remove-mnemonic" title="amtk_utils_remove_mnemonic ()"><code class="function">amtk_utils_remove_mnemonic()</code></a> function.</p>
+<div class="refsect3">
+<a name="amtk-action-info-get-label.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-action-info-get-label.returns"></a><h4>Returns</h4>
+<p>the label (i.e. a short description), or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
+<p><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-action-info-set-label"></a><h3>amtk_action_info_set_label ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+amtk_action_info_set_label (<em class="parameter"><code><a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a> *info</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *label</code></em>);</pre>
+<p>Sets the label with a mnemonic. To know how to encode the mnemonic, see the
+documentation of <a href="/usr/share/gtk-doc/html/gtk3/GtkLabel.html#gtk-label-new-with-mnemonic"><code class="function">gtk_label_new_with_mnemonic()</code></a>.</p>
+<div class="refsect3">
+<a name="amtk-action-info-set-label.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>label</p></td>
+<td class="parameter_description"><p>the label (i.e. a short description), or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-action-info-get-tooltip"></a><h3>amtk_action_info_get_tooltip ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+amtk_action_info_get_tooltip (<em class="parameter"><code>const <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="amtk-action-info-get-tooltip.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-action-info-get-tooltip.returns"></a><h4>Returns</h4>
+<p>the tooltip (i.e. a long description), or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p>
+<p><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-action-info-set-tooltip"></a><h3>amtk_action_info_set_tooltip ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+amtk_action_info_set_tooltip (<em class="parameter"><code><a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a> *info</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *tooltip</code></em>);</pre>
+<div class="refsect3">
+<a name="amtk-action-info-set-tooltip.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tooltip</p></td>
+<td class="parameter_description"><p>the tooltip (i.e. a long description), or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-action-info-get-accels"></a><h3>amtk_action_info_get_accels ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> * const *
+amtk_action_info_get_accels (<em class="parameter"><code>const <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a> *info</code></em>);</pre>
+<p>Returns the accelerators. This function never returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, it always
+returns a <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated array, to be suitable for
+<a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#gtk-application-set-accels-for-action"><code class="function">gtk_application_set_accels_for_action()</code></a>.</p>
+<div class="refsect3">
+<a name="amtk-action-info-get-accels.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-action-info-get-accels.returns"></a><h4>Returns</h4>
+<p>a <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated array
+of accelerators in the format understood by <a href="/usr/share/gtk-doc/html/gtk3/gtk3-Keyboard-Accelerators.html#gtk-accelerator-parse"><code class="function">gtk_accelerator_parse()</code></a>. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>][<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> zero-terminated=1]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-action-info-set-accels"></a><h3>amtk_action_info_set_accels ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+amtk_action_info_set_accels (<em class="parameter"><code><a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a> *info</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> * const *accels</code></em>);</pre>
+<p>A function similar to <a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#gtk-application-set-accels-for-action"><code class="function">gtk_application_set_accels_for_action()</code></a>.</p>
+<p><em class="parameter"><code>accels</code></em>
+ must not be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, it must be a <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated array, to be
+consistent with <a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#gtk-application-set-accels-for-action"><code class="function">gtk_application_set_accels_for_action()</code></a>.</p>
+<div class="refsect3">
+<a name="amtk-action-info-set-accels.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>accels</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated array of accelerators
+in the format understood by <a href="/usr/share/gtk-doc/html/gtk3/gtk3-Keyboard-Accelerators.html#gtk-accelerator-parse"><code class="function">gtk_accelerator_parse()</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> zero-terminated=1]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-action-info-mark-as-used"></a><h3>amtk_action_info_mark_as_used ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+amtk_action_info_mark_as_used (<em class="parameter"><code><a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a> *info</code></em>);</pre>
+<p>Mark <em class="parameter"><code>info</code></em>
+ as used. An <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a> function that uses an <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a>
+should call this function. See <a class="link" href="AmtkActionInfoStore.html#amtk-action-info-store-check-all-used" title="amtk_action_info_store_check_all_used ()"><code class="function">amtk_action_info_store_check_all_used()</code></a>.</p>
+<div class="refsect3">
+<a name="amtk-action-info-mark-as-used.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="amtk-action-info-has-been-used"></a><h3>amtk_action_info_has_been_used ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+amtk_action_info_has_been_used (<em class="parameter"><code>const <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a> *info</code></em>);</pre>
+<p>Returns whether <em class="parameter"><code>info</code></em>
+ has been used (for example by an <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>
+function). See also <a class="link" href="AmtkActionInfoStore.html#amtk-action-info-store-check-all-used" title="amtk_action_info_store_check_all_used ()"><code class="function">amtk_action_info_store_check_all_used()</code></a>.</p>
+<div class="refsect3">
+<a name="amtk-action-info-has-been-used.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo"><span class="type">AmtkActionInfo</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="amtk-action-info-has-been-used.returns"></a><h4>Returns</h4>
+<p> whether <em class="parameter"><code>info</code></em>
+has been used.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="AmtkActionInfo.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="AmtkActionInfo-struct"></a><h3>AmtkActionInfo</h3>
+<pre class="programlisting">typedef struct _AmtkActionInfo AmtkActionInfo;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AmtkActionInfoEntry"></a><h3>struct AmtkActionInfoEntry</h3>
+<pre class="programlisting">struct AmtkActionInfoEntry {
+	const gchar *action_name;
+	const gchar *icon_name;
+	const gchar *label;
+	const gchar *accel;
+	const gchar *tooltip;
+};
+</pre>
+<p>This struct defines a set of information for a single action. It is for use
+with <a class="link" href="AmtkActionInfoStore.html#amtk-action-info-store-add-entries" title="amtk_action_info_store_add_entries ()"><code class="function">amtk_action_info_store_add_entries()</code></a>.</p>
+<p>Like <a href="/usr/share/gtk-doc/html/gio/GActionMap.html#GActionEntry"><span class="type">GActionEntry</span></a>, it is permissible to use an incomplete initialiser in
+order to leave some of the later values as <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. Additional optional fields
+may be added in the future.</p>
+<div class="refsect3">
+<a name="AmtkActionInfoEntry.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="AmtkActionInfoEntry.action-name"></a>action_name</code></em>;</p></td>
+<td class="struct_member_description"><p>the action name. Can be a detailed action name, see
+<a href="/usr/share/gtk-doc/html/gio/GAction.html#g-action-parse-detailed-name"><code class="function">g_action_parse_detailed_name()</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="AmtkActionInfoEntry.icon-name"></a>icon_name</code></em>;</p></td>
+<td class="struct_member_description"><p>the icon name, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="AmtkActionInfoEntry.label"></a>label</code></em>;</p></td>
+<td class="struct_member_description"><p>the label (i.e. a short description) with a mnemonic, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="AmtkActionInfoEntry.accel"></a>accel</code></em>;</p></td>
+<td class="struct_member_description"><p>the accelerator, in the format understood by <a href="/usr/share/gtk-doc/html/gtk3/gtk3-Keyboard-Accelerators.html#gtk-accelerator-parse"><code class="function">gtk_accelerator_parse()</code></a>.
+Or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="AmtkActionInfoEntry.tooltip"></a>tooltip</code></em>;</p></td>
+<td class="struct_member_description"><p>the tooltip (i.e. a long description), or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="AmtkActionInfo.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="AmtkActionInfoStore.html" title="AmtkActionInfoStore"><span class="type">AmtkActionInfoStore</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AmtkActionMap: libgedit-amtk 5 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libgedit-amtk 5 Reference Manual">
+<link rel="up" href="api-reference.html" title="Part I. libgedit-amtk API Reference">
+<link rel="prev" href="AmtkActionInfoCentralStore.html" title="AmtkActionInfoCentralStore">
+<link rel="next" href="AmtkFactory.html" title="AmtkFactory">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgedit-amtk-5-AmtkActionMap.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="api-reference.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="AmtkActionInfoCentralStore.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="AmtkFactory.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgedit-amtk-5-AmtkActionMap"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgedit-amtk-5-AmtkActionMap.top_of_page"></a>AmtkActionMap</span></h2>
+<p>AmtkActionMap — <a href="/usr/share/gtk-doc/html/gio/GActionMap.html#GActionMap-struct"><span class="type">GActionMap</span></a> wrapper functions</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgedit-amtk-5-AmtkActionMap.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgedit-amtk-5-AmtkActionMap.html#amtk-action-map-add-action-entries-check-dups" title="amtk_action_map_add_action_entries_check_dups ()">amtk_action_map_add_action_entries_check_dups</a> <span class="c_punctuation">()</span>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgedit-amtk-5-AmtkActionMap.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;amtk/amtk.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgedit-amtk-5-AmtkActionMap.description"></a><h2>Description</h2>
+<p><a href="/usr/share/gtk-doc/html/gio/GActionMap.html#GActionMap-struct"><span class="type">GActionMap</span></a> wrapper functions.</p>
+</div>
+<div class="refsect1">
+<a name="libgedit-amtk-5-AmtkActionMap.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="amtk-action-map-add-action-entries-check-dups"></a><h3>amtk_action_map_add_action_entries_check_dups ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+amtk_action_map_add_action_entries_check_dups
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GActionMap.html#GActionMap-struct"><span class="type">GActionMap</span></a> *action_map</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/gio/GActionMap.html#GActionEntry"><span class="type">GActionEntry</span></a> *entries</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_entries</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>A wrapper function for <a href="/usr/share/gtk-doc/html/gio/GActionMap.html#g-action-map-add-action-entries"><code class="function">g_action_map_add_action_entries()</code></a> that checks
+duplicates.</p>
+<p>This function first checks - for each entry - that the <em class="parameter"><code>action_map</code></em>
+ doesn't
+already contain a <a href="/usr/share/gtk-doc/html/gio/GAction.html#GAction-struct"><span class="type">GAction</span></a> with the same name. A warning is printed if an old
+action will be dropped. In any case, it then calls
+<a href="/usr/share/gtk-doc/html/gio/GActionMap.html#g-action-map-add-action-entries"><code class="function">g_action_map_add_action_entries()</code></a> with the same arguments as passed to this
+function.</p>
+<p>This function also checks if there are duplicates in the <em class="parameter"><code>entries</code></em>
+ array
+itself.</p>
+<div class="refsect3">
+<a name="amtk-action-map-add-action-entries-check-dups.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>action_map</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GActionMap.html#GActionMap-struct"><span class="type">GActionMap</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>entries</p></td>
+<td class="parameter_description"><p>a pointer to
+the first item in an array of <a href="/usr/share/gtk-doc/html/gio/GActionMap.html#GActionEntry"><span class="type">GActionEntry</span></a> structs. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=n_entries][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GActionEntry]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n_entries</p></td>
+<td class="parameter_description"><p>the length of <em class="parameter"><code>entries</code></em>
+, or -1 if <em class="parameter"><code>entries</code></em>
+is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>the user data for signal connections.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

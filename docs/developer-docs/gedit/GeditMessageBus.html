@@ -1,0 +1,1335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GeditMessageBus: gedit Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="gedit Reference Manual">
+<link rel="up" href="api-reference.html" title="Part I. API Reference">
+<link rel="prev" href="gedit-gedit-menu-extension.html" title="gedit-menu-extension">
+<link rel="next" href="GeditMessage.html" title="GeditMessage">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GeditMessageBus.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GeditMessageBus.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GeditMessageBus.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="api-reference.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gedit-gedit-menu-extension.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GeditMessage.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GeditMessageBus"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GeditMessageBus.top_of_page"></a>GeditMessageBus</span></h2>
+<p>GeditMessageBus — internal message communication bus</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GeditMessageBus.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="GeditMessageBus.html#GeditMessageCallback" title="GeditMessageCallback ()">*GeditMessageCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="GeditMessageBus.html#GeditMessageBusForeach" title="GeditMessageBusForeach ()">*GeditMessageBusForeach</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="returnvalue">GeditMessageBus</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GeditMessageBus.html#gedit-message-bus-get-default" title="gedit_message_bus_get_default ()">gedit_message_bus_get_default</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="returnvalue">GeditMessageBus</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GeditMessageBus.html#gedit-message-bus-new" title="gedit_message_bus_new ()">gedit_message_bus_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GeditMessageBus.html#gedit-message-bus-lookup" title="gedit_message_bus_lookup ()">gedit_message_bus_lookup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GeditMessageBus.html#gedit-message-bus-register" title="gedit_message_bus_register ()">gedit_message_bus_register</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GeditMessageBus.html#gedit-message-bus-unregister" title="gedit_message_bus_unregister ()">gedit_message_bus_unregister</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GeditMessageBus.html#gedit-message-bus-unregister-all" title="gedit_message_bus_unregister_all ()">gedit_message_bus_unregister_all</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GeditMessageBus.html#gedit-message-bus-is-registered" title="gedit_message_bus_is_registered ()">gedit_message_bus_is_registered</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GeditMessageBus.html#gedit-message-bus-foreach" title="gedit_message_bus_foreach ()">gedit_message_bus_foreach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GeditMessageBus.html#gedit-message-bus-connect" title="gedit_message_bus_connect ()">gedit_message_bus_connect</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GeditMessageBus.html#gedit-message-bus-disconnect" title="gedit_message_bus_disconnect ()">gedit_message_bus_disconnect</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GeditMessageBus.html#gedit-message-bus-disconnect-by-func" title="gedit_message_bus_disconnect_by_func ()">gedit_message_bus_disconnect_by_func</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GeditMessageBus.html#gedit-message-bus-block" title="gedit_message_bus_block ()">gedit_message_bus_block</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GeditMessageBus.html#gedit-message-bus-block-by-func" title="gedit_message_bus_block_by_func ()">gedit_message_bus_block_by_func</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GeditMessageBus.html#gedit-message-bus-unblock" title="gedit_message_bus_unblock ()">gedit_message_bus_unblock</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GeditMessageBus.html#gedit-message-bus-unblock-by-func" title="gedit_message_bus_unblock_by_func ()">gedit_message_bus_unblock_by_func</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GeditMessageBus.html#gedit-message-bus-send-message" title="gedit_message_bus_send_message ()">gedit_message_bus_send_message</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GeditMessageBus.html#gedit-message-bus-send-message-sync" title="gedit_message_bus_send_message_sync ()">gedit_message_bus_send_message_sync</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GeditMessageBus.html#gedit-message-bus-send" title="gedit_message_bus_send ()">gedit_message_bus_send</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GeditMessage.html" title="GeditMessage"><span class="returnvalue">GeditMessage</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GeditMessageBus.html#gedit-message-bus-send-sync" title="gedit_message_bus_send_sync ()">gedit_message_bus_send_sync</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GeditMessageBus.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GeditMessageBus.html#GeditMessageBus-dispatch" title="The “dispatch” signal">dispatch</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GeditMessageBus.html#GeditMessageBus-registered" title="The “registered” signal">registered</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GeditMessageBus.html#GeditMessageBus-unregistered" title="The “unregistered” signal">unregistered</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GeditMessageBus.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GeditMessageBus.html#GeditMessageBus-struct" title="struct GeditMessageBus">GeditMessageBus</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GeditMessageBus.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> GeditMessageBus
+</pre>
+</div>
+<div class="refsect1">
+<a name="GeditMessageBus.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gedit/gedit-message-bus.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GeditMessageBus.description"></a><h2>Description</h2>
+<p>gedit has a communication bus very similar to DBus. Its primary use is to
+allow easy communication between plugins, but it can also be used to expose
+gedit functionality to external applications by providing DBus bindings for
+the internal gedit message bus.</p>
+<p>There are two different communication busses available. The default bus
+(see <a class="link" href="GeditMessageBus.html#gedit-message-bus-get-default" title="gedit_message_bus_get_default ()"><code class="function">gedit_message_bus_get_default()</code></a>) is an application wide communication
+bus. In addition, each <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> has a separate, private bus
+(see <a class="link" href="GeditWindow.html#gedit-window-get-message-bus" title="gedit_window_get_message_bus ()"><code class="function">gedit_window_get_message_bus()</code></a>). This makes it easier for plugins to
+communicate to other plugins in the same window.</p>
+<p>The concept of the message bus is very simple. You can register a message
+type on the bus, specified as a Method at a specific Object Path with a
+certain set of Method Arguments. You can then connect callback functions
+for this message type on the bus. Whenever a message with the Object Path
+and Method for which callbacks are connected is sent over the bus, the
+callbacks are called. There is no distinction between Methods and Signals
+(signals are simply messages where sender and receiver have switched places).</p>
+<div class="example">
+<a name="id-1.2.8.8.5"></a><p class="title"><b>Example 1. Registering a message type</b></p>
+<div class="example-contents">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">GeditMessageBus</span><span class="w"> </span><span class="o">*</span><span class="n">bus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gedit_message_bus_get_default</span><span class="w"> </span><span class="p">();</span>
+
+<span class="c1">// Register &#39;method&#39; at &#39;/plugins/example&#39; with one required</span>
+<span class="c1">// string argument &#39;arg1&#39;</span>
+<span class="n">gedit_message_bus_register</span><span class="w"> </span><span class="p">(</span><span class="n">bus</span><span class="p">,</span><span class="w"> </span><span class="n">EXAMPLE_TYPE_METHOD_MESSAGE</span><span class="p">,</span>
+<span class="w">                            </span><span class="s">&quot;/plugins/example&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;method&quot;</span><span class="p">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+<br class="example-break"><div class="example">
+<a name="id-1.2.8.8.6"></a><p class="title"><b>Example 2. Connecting a callback</b></p>
+<div class="example-contents">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="k">static</span><span class="w"> </span><span class="kt">void</span>
+<span class="nf">example_method_cb</span><span class="w"> </span><span class="p">(</span><span class="n">GeditMessageBus</span><span class="w"> </span><span class="o">*</span><span class="n">bus</span><span class="p">,</span>
+<span class="w">                   </span><span class="n">GeditMessage</span><span class="w">    </span><span class="o">*</span><span class="n">message</span><span class="p">,</span>
+<span class="w">                   </span><span class="n">gpointer</span><span class="w">         </span><span class="n">user_data</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">	</span><span class="n">gchar</span><span class="w"> </span><span class="o">*</span><span class="n">arg1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
+
+<span class="w">	</span><span class="n">gedit_message_get</span><span class="w"> </span><span class="p">(</span><span class="n">message</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;arg1&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">arg1</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">);</span>
+<span class="w">	</span><span class="n">g_message</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Evoked /plugins/example.method with: %s&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">arg1</span><span class="p">);</span>
+<span class="w">	</span><span class="n">g_free</span><span class="w"> </span><span class="p">(</span><span class="n">arg1</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">GeditMessageBus</span><span class="w"> </span><span class="o">*</span><span class="n">bus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gedit_message_bus_get_default</span><span class="w"> </span><span class="p">();</span>
+
+<span class="n">guint</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gedit_message_bus_connect</span><span class="w"> </span><span class="p">(</span><span class="n">bus</span><span class="p">,</span>
+<span class="w">                                      </span><span class="s">&quot;/plugins/example&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;method&quot;</span><span class="p">,</span>
+<span class="w">                                      </span><span class="n">example_method_cb</span><span class="p">,</span>
+<span class="w">                                      </span><span class="nb">NULL</span><span class="p">,</span>
+<span class="w">                                      </span><span class="nb">NULL</span><span class="p">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+<br class="example-break"><div class="example">
+<a name="id-1.2.8.8.7"></a><p class="title"><b>Example 3. Sending a message</b></p>
+<div class="example-contents">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="n">GeditMessageBus</span><span class="w"> </span><span class="o">*</span><span class="n">bus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gedit_message_bus_get_default</span><span class="w"> </span><span class="p">();</span>
+
+<span class="n">gedit_message_bus_send</span><span class="w"> </span><span class="p">(</span><span class="n">bus</span><span class="p">,</span>
+<span class="w">                        </span><span class="s">&quot;/plugins/example&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;method&quot;</span><span class="p">,</span>
+<span class="w">                        </span><span class="s">&quot;arg1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Hello World&quot;</span><span class="p">,</span>
+<span class="w">                        </span><span class="nb">NULL</span><span class="p">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+<br class="example-break">
+</div>
+<div class="refsect1">
+<a name="GeditMessageBus.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GeditMessageCallback"></a><h3>GeditMessageCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GeditMessageCallback<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> *bus</code></em>,
+                         <em class="parameter"><code><a class="link" href="GeditMessage.html" title="GeditMessage"><span class="type">GeditMessage</span></a> *message</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Callback signature used for connecting callback functions to be called
+when a message is received (see <a class="link" href="GeditMessageBus.html#gedit-message-bus-connect" title="gedit_message_bus_connect ()"><code class="function">gedit_message_bus_connect()</code></a>).</p>
+<div class="refsect3">
+<a name="GeditMessageCallback.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bus</p></td>
+<td class="parameter_description"><p>the <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> on which the message was sent</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>message</p></td>
+<td class="parameter_description"><p>the <a class="link" href="GeditMessage.html" title="GeditMessage"><span class="type">GeditMessage</span></a> which was sent</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>the supplied user data when connecting the callback</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GeditMessageBusForeach"></a><h3>GeditMessageBusForeach ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GeditMessageBusForeach<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> const *object_path</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> const *method</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-message-bus-get-default"></a><h3>gedit_message_bus_get_default ()</h3>
+<pre class="programlisting"><a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="returnvalue">GeditMessageBus</span></a> *
+gedit_message_bus_get_default (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Get the default application <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a>.</p>
+<div class="refsect3">
+<a name="gedit-message-bus-get-default.returns"></a><h4>Returns</h4>
+<p>the default <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a>. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-message-bus-new"></a><h3>gedit_message_bus_new ()</h3>
+<pre class="programlisting"><a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="returnvalue">GeditMessageBus</span></a> *
+gedit_message_bus_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Create a new message bus. Use <a class="link" href="GeditMessageBus.html#gedit-message-bus-get-default" title="gedit_message_bus_get_default ()"><code class="function">gedit_message_bus_get_default()</code></a> to get the
+default, application wide, message bus. Creating a new bus is useful for
+associating a specific bus with for instance a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a>.</p>
+<div class="refsect3">
+<a name="gedit-message-bus-new.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-message-bus-lookup"></a><h3>gedit_message_bus_lookup ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>
+gedit_message_bus_lookup (<em class="parameter"><code><a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> *bus</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *object_path</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *method</code></em>);</pre>
+<p>Get the registered <span class="type">GeditMessageType</span> for <em class="parameter"><code>method</code></em>
+ at <em class="parameter"><code>object_path</code></em>
+. The
+returned <span class="type">GeditMessageType</span> is owned by the bus and should not be unreffed.</p>
+<div class="refsect3">
+<a name="gedit-message-bus-lookup.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bus</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>object_path</p></td>
+<td class="parameter_description"><p>the object path</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>method</p></td>
+<td class="parameter_description"><p>the method</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gedit-message-bus-lookup.returns"></a><h4>Returns</h4>
+<p> the registered <span class="type">GeditMessageType</span> or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if no message type
+is registered for <em class="parameter"><code>method</code></em>
+at <em class="parameter"><code>object_path</code></em>
+</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-message-bus-register"></a><h3>gedit_message_bus_register ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gedit_message_bus_register (<em class="parameter"><code><a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> *bus</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> message_type</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *object_path</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *method</code></em>);</pre>
+<p>Register a message on the bus. A message must be registered on the bus before
+it can be send. This function registers the type for <em class="parameter"><code>method</code></em>
+ at
+<em class="parameter"><code>object_path</code></em>
+.</p>
+<p>This function emits a <a class="link" href="GeditMessageBus.html#GeditMessageBus-registered" title="The “registered” signal"><span class="type">“registered”</span></a> signal.</p>
+<div class="refsect3">
+<a name="gedit-message-bus-register.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bus</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>message_type</p></td>
+<td class="parameter_description"><p>the message type</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>object_path</p></td>
+<td class="parameter_description"><p>the object path</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>method</p></td>
+<td class="parameter_description"><p>the method to register</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-message-bus-unregister"></a><h3>gedit_message_bus_unregister ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gedit_message_bus_unregister (<em class="parameter"><code><a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> *bus</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *object_path</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *method</code></em>);</pre>
+<p>Unregisters a previously registered message type. This is especially useful
+for plugins which should unregister message types when they are deactivated.</p>
+<p>This function emits the <a class="link" href="GeditMessageBus.html#GeditMessageBus-unregistered" title="The “unregistered” signal"><span class="type">“unregistered”</span></a> signal.</p>
+<div class="refsect3">
+<a name="gedit-message-bus-unregister.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bus</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>object_path</p></td>
+<td class="parameter_description"><p>the object path</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>method</p></td>
+<td class="parameter_description"><p>the method</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-message-bus-unregister-all"></a><h3>gedit_message_bus_unregister_all ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gedit_message_bus_unregister_all (<em class="parameter"><code><a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> *bus</code></em>,
+                                  <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *object_path</code></em>);</pre>
+<p>Unregisters all message types for <em class="parameter"><code>object_path</code></em>
+. This is especially useful for
+plugins which should unregister message types when they are deactivated.</p>
+<p>This function emits the <a class="link" href="GeditMessageBus.html#GeditMessageBus-unregistered" title="The “unregistered” signal"><span class="type">“unregistered”</span></a> signal for all
+unregistered message types.</p>
+<div class="refsect3">
+<a name="gedit-message-bus-unregister-all.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bus</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>object_path</p></td>
+<td class="parameter_description"><p>the object path</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-message-bus-is-registered"></a><h3>gedit_message_bus_is_registered ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gedit_message_bus_is_registered (<em class="parameter"><code><a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> *bus</code></em>,
+                                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *object_path</code></em>,
+                                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *method</code></em>);</pre>
+<p>Check whether a message type <em class="parameter"><code>method</code></em>
+ at <em class="parameter"><code>object_path</code></em>
+ is registered on the
+bus.</p>
+<div class="refsect3">
+<a name="gedit-message-bus-is-registered.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bus</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>object_path</p></td>
+<td class="parameter_description"><p>the object path</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>method</p></td>
+<td class="parameter_description"><p>the method</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gedit-message-bus-is-registered.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the <em class="parameter"><code>method</code></em>
+at <em class="parameter"><code>object_path</code></em>
+is a registered message
+type on the bus</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-message-bus-foreach"></a><h3>gedit_message_bus_foreach ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gedit_message_bus_foreach (<em class="parameter"><code><a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> *bus</code></em>,
+                           <em class="parameter"><code><a class="link" href="GeditMessageBus.html#GeditMessageBusForeach" title="GeditMessageBusForeach ()"><span class="type">GeditMessageBusForeach</span></a> func</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Calls <em class="parameter"><code>func</code></em>
+ for each message type registered on the bus</p>
+<div class="refsect3">
+<a name="gedit-message-bus-foreach.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bus</p></td>
+<td class="parameter_description"><p>the <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>func</p></td>
+<td class="parameter_description"><p>the callback function. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="The callback is valid only during the call to the method."><span class="acronym">scope call</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>the user data to supply to the callback function</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-message-bus-connect"></a><h3>gedit_message_bus_connect ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gedit_message_bus_connect (<em class="parameter"><code><a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> *bus</code></em>,
+                           <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *object_path</code></em>,
+                           <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *method</code></em>,
+                           <em class="parameter"><code><a class="link" href="GeditMessageBus.html#GeditMessageCallback" title="GeditMessageCallback ()"><span class="type">GeditMessageCallback</span></a> callback</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> destroy_data</code></em>);</pre>
+<p>Connect a callback handler to be evoked when message <em class="parameter"><code>method</code></em>
+ at <em class="parameter"><code>object_path</code></em>
+
+is sent over the bus.</p>
+<div class="refsect3">
+<a name="gedit-message-bus-connect.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bus</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>object_path</p></td>
+<td class="parameter_description"><p>the object path</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>method</p></td>
+<td class="parameter_description"><p>the method</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>function to be called when message <em class="parameter"><code>method</code></em>
+at <em class="parameter"><code>object_path</code></em>
+is sent</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user_data to use for the callback. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>destroy_data</p></td>
+<td class="parameter_description"><p>function to evoke with <em class="parameter"><code>user_data</code></em>
+as argument when <em class="parameter"><code>user_data</code></em>
+needs to be freed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gedit-message-bus-connect.returns"></a><h4>Returns</h4>
+<p> the callback identifier</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-message-bus-disconnect"></a><h3>gedit_message_bus_disconnect ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gedit_message_bus_disconnect (<em class="parameter"><code><a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> *bus</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> id</code></em>);</pre>
+<p>Disconnects a previously connected message callback.</p>
+<div class="refsect3">
+<a name="gedit-message-bus-disconnect.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bus</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>the callback id as returned by <a class="link" href="GeditMessageBus.html#gedit-message-bus-connect" title="gedit_message_bus_connect ()"><code class="function">gedit_message_bus_connect()</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-message-bus-disconnect-by-func"></a><h3>gedit_message_bus_disconnect_by_func ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gedit_message_bus_disconnect_by_func (<em class="parameter"><code><a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> *bus</code></em>,
+                                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *object_path</code></em>,
+                                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *method</code></em>,
+                                      <em class="parameter"><code><a class="link" href="GeditMessageBus.html#GeditMessageCallback" title="GeditMessageCallback ()"><span class="type">GeditMessageCallback</span></a> callback</code></em>,
+                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Disconnects a previously connected message callback by matching the
+provided callback function and user_data. See also
+<a class="link" href="GeditMessageBus.html#gedit-message-bus-disconnect" title="gedit_message_bus_disconnect ()"><code class="function">gedit_message_bus_disconnect()</code></a>.</p>
+<div class="refsect3">
+<a name="gedit-message-bus-disconnect-by-func.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bus</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>object_path</p></td>
+<td class="parameter_description"><p>the object path</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>method</p></td>
+<td class="parameter_description"><p>the method</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>the connected callback. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="The callback is valid only during the call to the method."><span class="acronym">scope call</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>the user_data with which the callback was connected</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-message-bus-block"></a><h3>gedit_message_bus_block ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gedit_message_bus_block (<em class="parameter"><code><a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> *bus</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> id</code></em>);</pre>
+<p>Blocks evoking the callback specified by <em class="parameter"><code>id</code></em>
+. Unblock the callback by
+using <a class="link" href="GeditMessageBus.html#gedit-message-bus-unblock" title="gedit_message_bus_unblock ()"><code class="function">gedit_message_bus_unblock()</code></a>.</p>
+<div class="refsect3">
+<a name="gedit-message-bus-block.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bus</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>the callback id</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-message-bus-block-by-func"></a><h3>gedit_message_bus_block_by_func ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gedit_message_bus_block_by_func (<em class="parameter"><code><a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> *bus</code></em>,
+                                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *object_path</code></em>,
+                                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *method</code></em>,
+                                 <em class="parameter"><code><a class="link" href="GeditMessageBus.html#GeditMessageCallback" title="GeditMessageCallback ()"><span class="type">GeditMessageCallback</span></a> callback</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Blocks evoking the callback that matches provided <em class="parameter"><code>callback</code></em>
+ and <em class="parameter"><code>user_data</code></em>
+.
+Unblock the callback using <a class="link" href="GeditMessageBus.html#gedit-message-bus-unblock-by-func" title="gedit_message_bus_unblock_by_func ()"><code class="function">gedit_message_bus_unblock_by_func()</code></a>.</p>
+<div class="refsect3">
+<a name="gedit-message-bus-block-by-func.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bus</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>object_path</p></td>
+<td class="parameter_description"><p>the object path</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>method</p></td>
+<td class="parameter_description"><p>the method</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>the callback to block. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="The callback is valid only during the call to the method."><span class="acronym">scope call</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>the user_data with which the callback was connected</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-message-bus-unblock"></a><h3>gedit_message_bus_unblock ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gedit_message_bus_unblock (<em class="parameter"><code><a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> *bus</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> id</code></em>);</pre>
+<p>Unblocks the callback specified by <em class="parameter"><code>id</code></em>
+.</p>
+<div class="refsect3">
+<a name="gedit-message-bus-unblock.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bus</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p>the callback id</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-message-bus-unblock-by-func"></a><h3>gedit_message_bus_unblock_by_func ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gedit_message_bus_unblock_by_func (<em class="parameter"><code><a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> *bus</code></em>,
+                                   <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *object_path</code></em>,
+                                   <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *method</code></em>,
+                                   <em class="parameter"><code><a class="link" href="GeditMessageBus.html#GeditMessageCallback" title="GeditMessageCallback ()"><span class="type">GeditMessageCallback</span></a> callback</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Unblocks the callback that matches provided <em class="parameter"><code>callback</code></em>
+ and <em class="parameter"><code>user_data</code></em>
+.</p>
+<div class="refsect3">
+<a name="gedit-message-bus-unblock-by-func.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bus</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>object_path</p></td>
+<td class="parameter_description"><p>the object path</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>method</p></td>
+<td class="parameter_description"><p>the method</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>the callback to block. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="The callback is valid only during the call to the method."><span class="acronym">scope call</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>the user_data with which the callback was connected</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-message-bus-send-message"></a><h3>gedit_message_bus_send_message ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gedit_message_bus_send_message (<em class="parameter"><code><a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> *bus</code></em>,
+                                <em class="parameter"><code><a class="link" href="GeditMessage.html" title="GeditMessage"><span class="type">GeditMessage</span></a> *message</code></em>);</pre>
+<p>This sends the provided <em class="parameter"><code>message</code></em>
+ asynchronously over the bus. To send
+a message synchronously, use <a class="link" href="GeditMessageBus.html#gedit-message-bus-send-message-sync" title="gedit_message_bus_send_message_sync ()"><code class="function">gedit_message_bus_send_message_sync()</code></a>. The
+convenience function <a class="link" href="GeditMessageBus.html#gedit-message-bus-send" title="gedit_message_bus_send ()"><code class="function">gedit_message_bus_send()</code></a> can be used to easily send
+a message without constructing the message object explicitly first.</p>
+<div class="refsect3">
+<a name="gedit-message-bus-send-message.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bus</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>message</p></td>
+<td class="parameter_description"><p>the message to send</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-message-bus-send-message-sync"></a><h3>gedit_message_bus_send_message_sync ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gedit_message_bus_send_message_sync (<em class="parameter"><code><a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> *bus</code></em>,
+                                     <em class="parameter"><code><a class="link" href="GeditMessage.html" title="GeditMessage"><span class="type">GeditMessage</span></a> *message</code></em>);</pre>
+<p>This sends the provided <em class="parameter"><code>message</code></em>
+ synchronously over the bus. To send
+a message asynchronously, use <a class="link" href="GeditMessageBus.html#gedit-message-bus-send-message" title="gedit_message_bus_send_message ()"><code class="function">gedit_message_bus_send_message()</code></a>. The
+convenience function <a class="link" href="GeditMessageBus.html#gedit-message-bus-send-sync" title="gedit_message_bus_send_sync ()"><code class="function">gedit_message_bus_send_sync()</code></a> can be used to easily send
+a message without constructing the message object explicitly first.</p>
+<div class="refsect3">
+<a name="gedit-message-bus-send-message-sync.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bus</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>message</p></td>
+<td class="parameter_description"><p>the message to send</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-message-bus-send"></a><h3>gedit_message_bus_send ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gedit_message_bus_send (<em class="parameter"><code><a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> *bus</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *object_path</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *method</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *first_property</code></em>,
+                        <em class="parameter"><code>...</code></em>);</pre>
+<p>This provides a convenient way to quickly send a message <em class="parameter"><code>method</code></em>
+ at
+<em class="parameter"><code>object_path</code></em>
+ asynchronously over the bus. The variable argument list
+specifies key (string) value pairs used to construct the message arguments.
+To send a message synchronously use <a class="link" href="GeditMessageBus.html#gedit-message-bus-send-sync" title="gedit_message_bus_send_sync ()"><code class="function">gedit_message_bus_send_sync()</code></a>.</p>
+<div class="refsect3">
+<a name="gedit-message-bus-send.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bus</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>object_path</p></td>
+<td class="parameter_description"><p>the object path</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>method</p></td>
+<td class="parameter_description"><p>the method</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>first_property</p></td>
+<td class="parameter_description"><p>the first property</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>NULL terminated list of key/value pairs</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-message-bus-send-sync"></a><h3>gedit_message_bus_send_sync ()</h3>
+<pre class="programlisting"><a class="link" href="GeditMessage.html" title="GeditMessage"><span class="returnvalue">GeditMessage</span></a> *
+gedit_message_bus_send_sync (<em class="parameter"><code><a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> *bus</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *object_path</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *method</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *first_property</code></em>,
+                             <em class="parameter"><code>...</code></em>);</pre>
+<p>This provides a convenient way to quickly send a message <em class="parameter"><code>method</code></em>
+ at
+<em class="parameter"><code>object_path</code></em>
+ synchronously over the bus. The variable argument list
+specifies key (string) value pairs used to construct the message
+arguments. To send a message asynchronously use <a class="link" href="GeditMessageBus.html#gedit-message-bus-send" title="gedit_message_bus_send ()"><code class="function">gedit_message_bus_send()</code></a>.</p>
+<div class="refsect3">
+<a name="gedit-message-bus-send-sync.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bus</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>object_path</p></td>
+<td class="parameter_description"><p>the object path</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>method</p></td>
+<td class="parameter_description"><p>the method</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>first_property</p></td>
+<td class="parameter_description"><p>the first property</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> terminated list of key/value pairs. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gedit-message-bus-send-sync.returns"></a><h4>Returns</h4>
+<p>the constructed <a class="link" href="GeditMessage.html" title="GeditMessage"><span class="type">GeditMessage</span></a>.
+The caller owns a reference to the <a class="link" href="GeditMessage.html" title="GeditMessage"><span class="type">GeditMessage</span></a> and should
+call <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when it is no longer needed. </p>
+<p><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>][<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GeditMessageBus.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GeditMessageBus-struct"></a><h3>struct GeditMessageBus</h3>
+<pre class="programlisting">struct GeditMessageBus;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GeditMessageBus.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GeditMessageBus-dispatch"></a><h3>The <code class="literal">“dispatch”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> *bus,
+               <a class="link" href="GeditMessage.html" title="GeditMessage"><span class="type">GeditMessage</span></a>    *message,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)</pre>
+<p>The "dispatch" signal is emitted when a message is to be dispatched.
+The message is dispatched in the default handler of this signal.
+Primary use of this signal is to customize the dispatch of a message
+(for instance to automatically dispatch all messages over DBus).</p>
+<div class="refsect3">
+<a name="GeditMessageBus-dispatch.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bus</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>message</p></td>
+<td class="parameter_description"><p>the <a class="link" href="GeditMessage.html" title="GeditMessage"><span class="type">GeditMessage</span></a> to dispatch</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GeditMessageBus-registered"></a><h3>The <code class="literal">“registered”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> *bus,
+               <span class="type">char</span>            *object_path,
+               <span class="type">char</span>            *method,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)</pre>
+<p>The "registered" signal is emitted when a message has been registered
+on the bus.</p>
+<div class="refsect3">
+<a name="GeditMessageBus-registered.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bus</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>object_path</p></td>
+<td class="parameter_description"><p>the registered object path.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>method</p></td>
+<td class="parameter_description"><p>the registered method</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GeditMessageBus-unregistered"></a><h3>The <code class="literal">“unregistered”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> *bus,
+               <span class="type">char</span>            *object_path,
+               <span class="type">char</span>            *method,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)</pre>
+<p>The "unregistered" signal is emitted when a message has been
+unregistered from the bus.</p>
+<div class="refsect3">
+<a name="GeditMessageBus-unregistered.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bus</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>object_path</p></td>
+<td class="parameter_description"><p>the unregistered object path.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>method</p></td>
+<td class="parameter_description"><p>the unregistered method</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>libgedit-amtk Introduction: libgedit-amtk 5 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libgedit-amtk 5 Reference Manual">
+<link rel="up" href="index.html" title="libgedit-amtk 5 Reference Manual">
+<link rel="prev" href="index.html" title="libgedit-amtk 5 Reference Manual">
+<link rel="next" href="gradual-porting.html" title="Gradual Porting">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="index.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gradual-porting.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgedit-amtk-intro"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle">libgedit-amtk Introduction</span></h2>
+<p>libgedit-amtk Introduction — 
+    Introduction to the Actions, Menus and Toolbars Kit for GTK applications.
+  </p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<p>
+  Amtk is the acronym for “Actions, Menus and Toolbars Kit”. Amtk has been
+  initially created as a basic <a href="/usr/share/gtk-doc/html/gtk3/GtkUIManager.html#GtkUIManager-struct">GtkUIManager</a>
+  replacement based on <a href="/usr/share/gtk-doc/html/gio/GAction.html#GAction-struct">GAction</a>.
+  <a href="/usr/share/gtk-doc/html/gtk3/GtkUIManager.html#GtkUIManager-struct">GtkUIManager</a> has been deprecated in
+  GTK 3 (and removed in GTK 4), without a good replacement for
+  applications that want to keep a traditional UI (with a
+  <a href="/usr/share/gtk-doc/html/gtk3/GtkMenuBar.html#GtkMenuBar-struct">GtkMenuBar</a>, a
+  <a href="/usr/share/gtk-doc/html/gtk3/GtkToolbar.html#GtkToolbar-struct">GtkToolbar</a> and a
+  <a href="/usr/share/gtk-doc/html/gtk3/GtkStatusbar.html#GtkStatusbar-struct">GtkStatusbar</a>). libgedit-amtk is now
+  suitable for both a traditional UI and for a new UI with a
+  <a href="/usr/share/gtk-doc/html/gtk3/GtkHeaderBar.html#GtkHeaderBar-struct">GtkHeaderBar</a> and a “sandwich menu”.
+</p>
+<p>
+  With libgedit-amtk, menus, toolbars or other objects like
+  <a href="/usr/share/gtk-doc/html/gtk3/GtkShortcutsWindow.html#GtkShortcutsWindow-struct">GtkShortcutsWindow</a> are created
+  programmatically (not with a *.ui file), but with convenient APIs. The support
+  for an XML format will maybe be added in the future.
+</p>
+<p>
+  Note that the heavy-lifting is still done by GTK of course (and GIO for
+  <a href="/usr/share/gtk-doc/html/gio/GAction.html#GAction-struct">GAction</a>). This library is just a small layer on
+  top, providing an alternative way of doing things.
+</p>
+<div class="refsect1">
+<a name="id-1.2.6"></a><h2>General advantages</h2>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem">
+<p>
+        Primarily, encoding the information about an action only once, to create
+        various objects such as a menu item, a toolbar item, a
+        <a href="/usr/share/gtk-doc/html/gtk3/GtkShortcutsShortcut.html#GtkShortcutsShortcut-struct">GtkShortcutsShortcut</a>, etc.
+        The information needed about an action: a label (i.e. a short
+        description), possibly an icon, a tooltip (i.e. a longer description)
+        and keyboard shortcuts. This is implemented by
+        <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo">AmtkActionInfo</a>, with
+        <a class="link" href="AmtkFactory.html" title="AmtkFactory">AmtkFactory</a> functions to create
+        various objects.
+      </p>
+<p>
+        This also has the nice benefit that all the information about an action
+        is centralized in only one place, to keep related information close
+        together. This permits to more easily catch inconsistencies.
+      </p>
+</li>
+<li class="listitem"><p>
+        libgedit-amtk has been designed to be able to share
+        <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo">AmtkActionInfo</a>'s in a library (with
+        translations); this is a bit similar to
+        <a href="/usr/share/gtk-doc/html/gtk3/gtk3-Stock-Items.html#GtkStockItem">GtkStockItem</a>, to reduce the amount of
+        work that an application (and translators) need to do. As a result the
+        library can provide a higher-level API.
+      </p></li>
+</ul></div>
+</div>
+<div class="refsect1">
+<a name="id-1.2.7"></a><h2>Advantages for a traditional UI</h2>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>
+        When writing an XML file to create a <a href="/usr/share/gtk-doc/html/gio/GMenu.html#GMenu-struct">GMenu</a>
+        with the format understood by <a href="/usr/share/gtk-doc/html/gtk3/GtkBuilder.html#GtkBuilder-struct">GtkBuilder</a>
+        (see the class description of <a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct">GtkApplicationWindow</a>),
+        the information in the XML file can be used only to create a <a href="/usr/share/gtk-doc/html/gio/GMenu.html#GMenu-struct">GMenu</a>,
+        not a toolbar. It is not a good programming practice to duplicate the
+        information. With libgedit-amtk the information is encoded just once, in
+        <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo">AmtkActionInfo</a>'s, and menu and
+        toolbar items are created with <a class="link" href="AmtkFactory.html" title="AmtkFactory">AmtkFactory</a>
+        which uses the information provided by the
+        <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo">AmtkActionInfo</a>'s.
+      </p></li>
+<li class="listitem"><p>
+        Something that is not possible to do with the support of
+        <a href="/usr/share/gtk-doc/html/gio/GMenu.html#GMenu-struct">GMenu</a> in GTK, that libgedit-amtk solves
+        when using <a href="/usr/share/gtk-doc/html/gtk3/GtkMenuItem.html#GtkMenuItem-struct">GtkMenuItem</a>'s: when a
+        <a href="/usr/share/gtk-doc/html/gtk3/GtkMenuItem.html#GtkMenuItem-struct">GtkMenuItem</a> is selected (e.g. when
+        the mouse hovers it), showing a longer description in the
+        <a href="/usr/share/gtk-doc/html/gtk3/GtkStatusbar.html#GtkStatusbar-struct">GtkStatusbar</a>. This is implemented by
+        <a class="link" href="AmtkApplicationWindow.html" title="AmtkApplicationWindow">AmtkApplicationWindow</a>. It
+        makes the UI better self-discoverable, to improve the usability.
+      </p></li>
+<li class="listitem"><p>
+        Related to the previous point: having a
+        <a href="/usr/share/gtk-doc/html/gtk3/GtkRecentChooser.html#GtkRecentChooser-struct">GtkRecentChooser</a> menu that shows
+        in a <a href="/usr/share/gtk-doc/html/gtk3/GtkStatusbar.html#GtkStatusbar-struct">GtkStatusbar</a> the full file path
+        when a menu item is selected. This is implemented by
+        <a class="link" href="AmtkApplicationWindow.html#amtk-application-window-connect-recent-chooser-menu-to-statusbar" title="amtk_application_window_connect_recent_chooser_menu_to_statusbar ()">amtk_application_window_connect_recent_chooser_menu_to_statusbar()</a>.
+      </p></li>
+</ul></div>
+</div>
+<div class="refsect1">
+<a name="id-1.2.8"></a><h2>Sanity checks</h2>
+<p>
+    libgedit-amtk has several functions to do various sanity checks. They
+    normally don't impact too much the performances, so it is recommended to
+    always run them, although they could be disabled on production. The
+    functions:
+  </p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>
+        <a class="link" href="libgedit-amtk-5-AmtkActionMap.html#amtk-action-map-add-action-entries-check-dups" title="amtk_action_map_add_action_entries_check_dups ()">amtk_action_map_add_action_entries_check_dups()</a>
+      </p></li>
+<li class="listitem"><p>
+        <a class="link" href="AmtkActionInfoStore.html#amtk-action-info-store-check-all-used" title="amtk_action_info_store_check_all_used ()">amtk_action_info_store_check_all_used()</a>
+      </p></li>
+<li class="listitem"><p>
+        Another sanity check, but which cannot be disabled: the
+        <a class="link" href="AmtkActionInfoCentralStore.html" title="AmtkActionInfoCentralStore">AmtkActionInfoCentralStore</a>
+        checks that each <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo">AmtkActionInfo</a>
+        has a unique action name. Which means that
+        <a class="link" href="AmtkActionInfo.html" title="AmtkActionInfo">AmtkActionInfo</a>'s provided by a
+        library must be namespaced.
+      </p></li>
+</ul></div>
+</div>
+<div class="refsect1">
+<a name="id-1.2.9"></a><h2>GTK dependency</h2>
+<p>
+    libgedit-amtk 5 depends on GTK 3.
+  </p>
+</div>
+<div class="refsect1">
+<a name="id-1.2.10"></a><h2>pkg-config name</h2>
+<p>
+    For libgedit-amtk 5, the pkg-config name is:
+    <code class="code">amtk-5</code>
+  </p>
+<p>
+    To compile a program that uses libgedit-amtk 5, you
+    can for example use the following command:
+  </p>
+<p>
+    <code class="code">$ gcc hello.c `pkg-config --cflags --libs amtk-5` -o hello</code>
+  </p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

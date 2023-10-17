@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="gspell 1 Reference Manual" link="index.html" author="" name="gspell-1.0" version="2" language="c">
+  <chapters>
+    <sub name="Introduction" link="intro.html"/>
+    <sub name="API reference" link="api-reference.html">
+      <sub name="Core Classes" link="core-classes.html">
+        <sub name="GspellChecker" link="GspellChecker.html"/>
+        <sub name="GspellLanguage" link="GspellLanguage.html"/>
+      </sub>
+      <sub name="Language Choosers" link="language-choosers.html">
+        <sub name="GspellLanguageChooser" link="GspellLanguageChooser.html"/>
+        <sub name="GspellLanguageChooserButton" link="GspellLanguageChooserButton.html"/>
+        <sub name="GspellLanguageChooserDialog" link="GspellLanguageChooserDialog.html"/>
+      </sub>
+      <sub name="Spell Checker Dialog" link="spell-checker-dialog.html">
+        <sub name="GspellCheckerDialog" link="GspellCheckerDialog.html"/>
+        <sub name="GspellNavigator" link="GspellNavigator.html"/>
+      </sub>
+      <sub name="GtkTextView Support" link="GtkTextView-support.html">
+        <sub name="GspellTextBuffer" link="GspellTextBuffer.html"/>
+        <sub name="GspellTextView" link="GspellTextView.html"/>
+        <sub name="GspellNavigatorTextView" link="GspellNavigatorTextView.html"/>
+      </sub>
+      <sub name="GtkEntry Support" link="GtkEntry-support.html">
+        <sub name="GspellEntryBuffer" link="GspellEntryBuffer.html"/>
+        <sub name="GspellEntry" link="GspellEntry.html"/>
+      </sub>
+    </sub>
+    <sub name="Annexes" link="annexes.html">
+      <sub name="Object Hierarchy" link="object-tree.html"/>
+      <sub name="Annotation Glossary" link="annotation-glossary.html"/>
+      <sub name="Index of all symbols" link="api-index-full.html"/>
+      <sub name="Index of new symbols in 1.2" link="api-index-1-2.html"/>
+      <sub name="Index of new symbols in 1.4" link="api-index-1-4.html"/>
+      <sub name="Index of new symbols in 1.6" link="api-index-1-6.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <keyword type="function" name="gspell_checker_new ()" link="GspellChecker.html#gspell-checker-new"/>
+    <keyword type="function" name="gspell_checker_get_language ()" link="GspellChecker.html#gspell-checker-get-language"/>
+    <keyword type="function" name="gspell_checker_set_language ()" link="GspellChecker.html#gspell-checker-set-language"/>
+    <keyword type="function" name="gspell_checker_check_word ()" link="GspellChecker.html#gspell-checker-check-word"/>
+    <keyword type="function" name="gspell_checker_get_suggestions ()" link="GspellChecker.html#gspell-checker-get-suggestions"/>
+    <keyword type="function" name="gspell_checker_add_word_to_personal ()" link="GspellChecker.html#gspell-checker-add-word-to-personal"/>
+    <keyword type="function" name="gspell_checker_add_word_to_session ()" link="GspellChecker.html#gspell-checker-add-word-to-session"/>
+    <keyword type="function" name="gspell_checker_clear_session ()" link="GspellChecker.html#gspell-checker-clear-session"/>
+    <keyword type="function" name="gspell_checker_set_correction ()" link="GspellChecker.html#gspell-checker-set-correction"/>
+    <keyword type="function" name="gspell_checker_get_enchant_dict ()" link="GspellChecker.html#gspell-checker-get-enchant-dict" since="1.6"/>
+    <keyword type="struct" name="GspellChecker" link="GspellChecker.html#GspellChecker-struct"/>
+    <keyword type="enum" name="enum GspellCheckerError" link="GspellChecker.html#GspellCheckerError"/>
+    <keyword type="macro" name="GSPELL_CHECKER_ERROR" link="GspellChecker.html#GSPELL-CHECKER-ERROR:CAPS"/>
+    <keyword type="property" name="The “language” property" link="GspellChecker.html#GspellChecker--language"/>
+    <keyword type="signal" name="The “session-cleared” signal" link="GspellChecker.html#GspellChecker-session-cleared"/>
+    <keyword type="signal" name="The “word-added-to-personal” signal" link="GspellChecker.html#GspellChecker-word-added-to-personal"/>
+    <keyword type="signal" name="The “word-added-to-session” signal" link="GspellChecker.html#GspellChecker-word-added-to-session"/>
+    <keyword type="function" name="gspell_language_get_available ()" link="GspellLanguage.html#gspell-language-get-available"/>
+    <keyword type="function" name="gspell_language_get_default ()" link="GspellLanguage.html#gspell-language-get-default"/>
+    <keyword type="function" name="gspell_language_lookup ()" link="GspellLanguage.html#gspell-language-lookup"/>
+    <keyword type="function" name="gspell_language_get_code ()" link="GspellLanguage.html#gspell-language-get-code"/>
+    <keyword type="function" name="gspell_language_get_name ()" link="GspellLanguage.html#gspell-language-get-name"/>
+    <keyword type="function" name="gspell_language_compare ()" link="GspellLanguage.html#gspell-language-compare"/>
+    <keyword type="function" name="gspell_language_copy ()" link="GspellLanguage.html#gspell-language-copy"/>
+    <keyword type="function" name="gspell_language_free ()" link="GspellLanguage.html#gspell-language-free"/>
+    <keyword type="struct" name="GspellLanguage" link="GspellLanguage.html#GspellLanguage-struct"/>
+    <keyword type="function" name="gspell_language_chooser_get_language ()" link="GspellLanguageChooser.html#gspell-language-chooser-get-language"/>
+    <keyword type="function" name="gspell_language_chooser_set_language ()" link="GspellLanguageChooser.html#gspell-language-chooser-set-language"/>
+    <keyword type="function" name="gspell_language_chooser_get_language_code ()" link="GspellLanguageChooser.html#gspell-language-chooser-get-language-code"/>
+    <keyword type="function" name="gspell_language_chooser_set_language_code ()" link="GspellLanguageChooser.html#gspell-language-chooser-set-language-code"/>
+    <keyword type="struct" name="GspellLanguageChooser" link="GspellLanguageChooser.html#GspellLanguageChooser-struct"/>
+    <keyword type="property" name="The “language” property" link="GspellLanguageChooser.html#GspellLanguageChooser--language"/>
+    <keyword type="property" name="The “language-code” property" link="GspellLanguageChooser.html#GspellLanguageChooser--language-code"/>
+    <keyword type="function" name="gspell_language_chooser_button_new ()" link="GspellLanguageChooserButton.html#gspell-language-chooser-button-new"/>
+    <keyword type="struct" name="GspellLanguageChooserButton" link="GspellLanguageChooserButton.html#GspellLanguageChooserButton-struct"/>
+    <keyword type="function" name="gspell_language_chooser_dialog_new ()" link="GspellLanguageChooserDialog.html#gspell-language-chooser-dialog-new"/>
+    <keyword type="struct" name="GspellLanguageChooserDialog" link="GspellLanguageChooserDialog.html#GspellLanguageChooserDialog-struct"/>
+    <keyword type="function" name="gspell_checker_dialog_new ()" link="GspellCheckerDialog.html#gspell-checker-dialog-new"/>
+    <keyword type="function" name="gspell_checker_dialog_get_spell_navigator ()" link="GspellCheckerDialog.html#gspell-checker-dialog-get-spell-navigator"/>
+    <keyword type="struct" name="GspellCheckerDialog" link="GspellCheckerDialog.html#GspellCheckerDialog-struct"/>
+    <keyword type="property" name="The “spell-navigator” property" link="GspellCheckerDialog.html#GspellCheckerDialog--spell-navigator"/>
+    <keyword type="function" name="gspell_navigator_goto_next ()" link="GspellNavigator.html#gspell-navigator-goto-next"/>
+    <keyword type="function" name="gspell_navigator_change ()" link="GspellNavigator.html#gspell-navigator-change"/>
+    <keyword type="function" name="gspell_navigator_change_all ()" link="GspellNavigator.html#gspell-navigator-change-all"/>
+    <keyword type="struct" name="GspellNavigator" link="GspellNavigator.html#GspellNavigator-struct"/>
+    <keyword type="function" name="gspell_text_buffer_get_from_gtk_text_buffer ()" link="GspellTextBuffer.html#gspell-text-buffer-get-from-gtk-text-buffer"/>
+    <keyword type="function" name="gspell_text_buffer_get_buffer ()" link="GspellTextBuffer.html#gspell-text-buffer-get-buffer"/>
+    <keyword type="function" name="gspell_text_buffer_get_spell_checker ()" link="GspellTextBuffer.html#gspell-text-buffer-get-spell-checker"/>
+    <keyword type="function" name="gspell_text_buffer_set_spell_checker ()" link="GspellTextBuffer.html#gspell-text-buffer-set-spell-checker"/>
+    <keyword type="struct" name="GspellTextBuffer" link="GspellTextBuffer.html#GspellTextBuffer-struct"/>
+    <keyword type="property" name="The “buffer” property" link="GspellTextBuffer.html#GspellTextBuffer--buffer"/>
+    <keyword type="property" name="The “spell-checker” property" link="GspellTextBuffer.html#GspellTextBuffer--spell-checker"/>
+    <keyword type="function" name="gspell_text_view_get_from_gtk_text_view ()" link="GspellTextView.html#gspell-text-view-get-from-gtk-text-view"/>
+    <keyword type="function" name="gspell_text_view_basic_setup ()" link="GspellTextView.html#gspell-text-view-basic-setup" since="1.2"/>
+    <keyword type="function" name="gspell_text_view_get_view ()" link="GspellTextView.html#gspell-text-view-get-view"/>
+    <keyword type="function" name="gspell_text_view_get_inline_spell_checking ()" link="GspellTextView.html#gspell-text-view-get-inline-spell-checking"/>
+    <keyword type="function" name="gspell_text_view_set_inline_spell_checking ()" link="GspellTextView.html#gspell-text-view-set-inline-spell-checking"/>
+    <keyword type="function" name="gspell_text_view_get_enable_language_menu ()" link="GspellTextView.html#gspell-text-view-get-enable-language-menu" since="1.2"/>
+    <keyword type="function" name="gspell_text_view_set_enable_language_menu ()" link="GspellTextView.html#gspell-text-view-set-enable-language-menu" since="1.2"/>
+    <keyword type="struct" name="GspellTextView" link="GspellTextView.html#GspellTextView-struct"/>
+    <keyword type="property" name="The “enable-language-menu” property" link="GspellTextView.html#GspellTextView--enable-language-menu"/>
+    <keyword type="property" name="The “inline-spell-checking” property" link="GspellTextView.html#GspellTextView--inline-spell-checking"/>
+    <keyword type="property" name="The “view” property" link="GspellTextView.html#GspellTextView--view"/>
+    <keyword type="function" name="gspell_navigator_text_view_new ()" link="GspellNavigatorTextView.html#gspell-navigator-text-view-new"/>
+    <keyword type="function" name="gspell_navigator_text_view_get_view ()" link="GspellNavigatorTextView.html#gspell-navigator-text-view-get-view"/>
+    <keyword type="struct" name="GspellNavigatorTextView" link="GspellNavigatorTextView.html#GspellNavigatorTextView-struct"/>
+    <keyword type="property" name="The “view” property" link="GspellNavigatorTextView.html#GspellNavigatorTextView--view"/>
+    <keyword type="function" name="gspell_entry_buffer_get_from_gtk_entry_buffer ()" link="GspellEntryBuffer.html#gspell-entry-buffer-get-from-gtk-entry-buffer" since="1.4"/>
+    <keyword type="function" name="gspell_entry_buffer_get_buffer ()" link="GspellEntryBuffer.html#gspell-entry-buffer-get-buffer" since="1.4"/>
+    <keyword type="function" name="gspell_entry_buffer_get_spell_checker ()" link="GspellEntryBuffer.html#gspell-entry-buffer-get-spell-checker" since="1.4"/>
+    <keyword type="function" name="gspell_entry_buffer_set_spell_checker ()" link="GspellEntryBuffer.html#gspell-entry-buffer-set-spell-checker" since="1.4"/>
+    <keyword type="struct" name="GspellEntryBuffer" link="GspellEntryBuffer.html#GspellEntryBuffer-struct"/>
+    <keyword type="property" name="The “buffer” property" link="GspellEntryBuffer.html#GspellEntryBuffer--buffer"/>
+    <keyword type="property" name="The “spell-checker” property" link="GspellEntryBuffer.html#GspellEntryBuffer--spell-checker"/>
+    <keyword type="function" name="gspell_entry_get_from_gtk_entry ()" link="GspellEntry.html#gspell-entry-get-from-gtk-entry" since="1.4"/>
+    <keyword type="function" name="gspell_entry_basic_setup ()" link="GspellEntry.html#gspell-entry-basic-setup" since="1.4"/>
+    <keyword type="function" name="gspell_entry_get_entry ()" link="GspellEntry.html#gspell-entry-get-entry" since="1.4"/>
+    <keyword type="function" name="gspell_entry_get_inline_spell_checking ()" link="GspellEntry.html#gspell-entry-get-inline-spell-checking" since="1.4"/>
+    <keyword type="function" name="gspell_entry_set_inline_spell_checking ()" link="GspellEntry.html#gspell-entry-set-inline-spell-checking" since="1.4"/>
+    <keyword type="struct" name="GspellEntry" link="GspellEntry.html#GspellEntry-struct"/>
+    <keyword type="property" name="The “entry” property" link="GspellEntry.html#GspellEntry--entry"/>
+    <keyword type="property" name="The “inline-spell-checking” property" link="GspellEntry.html#GspellEntry--inline-spell-checking"/>
+    <keyword type="constant" name="GSPELL_CHECKER_ERROR_DICTIONARY" link="GspellChecker.html#GSPELL-CHECKER-ERROR-DICTIONARY:CAPS"/>
+    <keyword type="constant" name="GSPELL_CHECKER_ERROR_NO_LANGUAGE_SET" link="GspellChecker.html#GSPELL-CHECKER-ERROR-NO-LANGUAGE-SET:CAPS"/>
+  </functions>
+</book>

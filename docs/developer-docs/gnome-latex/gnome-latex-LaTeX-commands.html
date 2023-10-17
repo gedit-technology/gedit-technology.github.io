@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>LaTeX commands: GNOME LaTeX Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GNOME LaTeX Reference Manual">
+<link rel="up" href="ch04.html" title="Misc">
+<link rel="prev" href="gnome-latex-LatexilaDirs.html" title="LatexilaDirs">
+<link rel="next" href="gnome-latex-LatexilaPrefs.html" title="LatexilaPrefs">
+<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gnome-latex-LaTeX-commands.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch04.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gnome-latex-LatexilaDirs.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gnome-latex-LatexilaPrefs.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gnome-latex-LaTeX-commands"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gnome-latex-LaTeX-commands.top_of_page"></a>LaTeX commands</span></h2>
+<p>LaTeX commands — LaTeX menu, Math menu and Edit toolbar</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gnome-latex-LaTeX-commands.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-latex-LaTeX-commands.html#latexila-latex-commands-add-action-infos" title="latexila_latex_commands_add_action_infos ()">latexila_latex_commands_add_action_infos</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gnome-latex-LaTeX-commands.html#latexila-latex-commands-add-actions" title="latexila_latex_commands_add_actions ()">latexila_latex_commands_add_actions</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkToolbar.html#GtkToolbar-struct"><span class="returnvalue">GtkToolbar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-latex-LaTeX-commands.html#latexila-latex-commands-create-edit-toolbar" title="latexila_latex_commands_create_edit_toolbar ()">latexila_latex_commands_create_edit_toolbar</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkMenu.html#GtkMenu-struct"><span class="returnvalue">GtkMenu</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-latex-LaTeX-commands.html#latexila-latex-commands-create-latex-menu" title="latexila_latex_commands_create_latex_menu ()">latexila_latex_commands_create_latex_menu</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkMenu.html#GtkMenu-struct"><span class="returnvalue">GtkMenu</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gnome-latex-LaTeX-commands.html#latexila-latex-commands-create-math-menu" title="latexila_latex_commands_create_math_menu ()">latexila_latex_commands_create_math_menu</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gnome-latex-LaTeX-commands.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;latexila.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="gnome-latex-LaTeX-commands.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="gnome-latex-LaTeX-commands.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="latexila-latex-commands-add-action-infos"></a><h3>latexila_latex_commands_add_action_infos ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+latexila_latex_commands_add_action_infos
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#GtkApplication-struct"><span class="type">GtkApplication</span></a> *gtk_app</code></em>);</pre>
+<p>Creates the <a href="../libgedit-amtk-5/AmtkActionInfo.html#AmtkActionInfo-struct"><span class="type">AmtkActionInfo</span></a>'s related to the LaTeX and Math menus, and add
+them to the <a href="../libgedit-amtk-5/AmtkActionInfoStore.html#AmtkActionInfoStore-struct"><span class="type">AmtkActionInfoStore</span></a> as returned by
+<a href="../tepl-6/TeplApplication.html#tepl-application-get-app-action-info-store"><code class="function">tepl_application_get_app_action_info_store()</code></a>.</p>
+<div class="refsect3">
+<a name="latexila-latex-commands-add-action-infos.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gtk_app</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#GtkApplication-struct"><span class="type">GtkApplication</span></a> instance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="latexila-latex-commands-add-actions"></a><h3>latexila_latex_commands_add_actions ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+latexila_latex_commands_add_actions (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="type">GtkApplicationWindow</span></a> *gtk_window</code></em>);</pre>
+<p>Creates the <a href="/usr/share/gtk-doc/html/gio/GAction.html#GAction-struct"><span class="type">GAction</span></a>'s related to the LaTeX and Math menus, and add them to
+<em class="parameter"><code>gtk_window</code></em>
+.</p>
+<div class="refsect3">
+<a name="latexila-latex-commands-add-actions.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gtk_window</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="type">GtkApplicationWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="latexila-latex-commands-create-edit-toolbar"></a><h3>latexila_latex_commands_create_edit_toolbar ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkToolbar.html#GtkToolbar-struct"><span class="returnvalue">GtkToolbar</span></a> *
+latexila_latex_commands_create_edit_toolbar
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="type">GtkApplicationWindow</span></a> *gtk_window</code></em>);</pre>
+<div class="refsect3">
+<a name="latexila-latex-commands-create-edit-toolbar.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gtk_window</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="type">GtkApplicationWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="latexila-latex-commands-create-edit-toolbar.returns"></a><h4>Returns</h4>
+<p>a new <a href="/usr/share/gtk-doc/html/gtk3/GtkToolbar.html#GtkToolbar-struct"><span class="type">GtkToolbar</span></a> with the most common LaTeX
+actions. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="latexila-latex-commands-create-latex-menu"></a><h3>latexila_latex_commands_create_latex_menu ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkMenu.html#GtkMenu-struct"><span class="returnvalue">GtkMenu</span></a> *
+latexila_latex_commands_create_latex_menu
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="type">GtkApplicationWindow</span></a> *gtk_window</code></em>);</pre>
+<div class="refsect3">
+<a name="latexila-latex-commands-create-latex-menu.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gtk_window</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="type">GtkApplicationWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="latexila-latex-commands-create-latex-menu.returns"></a><h4>Returns</h4>
+<p>a new <a href="/usr/share/gtk-doc/html/gtk3/GtkMenu.html#GtkMenu-struct"><span class="type">GtkMenu</span></a> with a lot of LaTeX commands. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="latexila-latex-commands-create-math-menu"></a><h3>latexila_latex_commands_create_math_menu ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkMenu.html#GtkMenu-struct"><span class="returnvalue">GtkMenu</span></a> *
+latexila_latex_commands_create_math_menu
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="type">GtkApplicationWindow</span></a> *gtk_window</code></em>);</pre>
+<div class="refsect3">
+<a name="latexila-latex-commands-create-math-menu.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gtk_window</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="type">GtkApplicationWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="latexila-latex-commands-create-math-menu.returns"></a><h4>Returns</h4>
+<p>a new <a href="/usr/share/gtk-doc/html/gtk3/GtkMenu.html#GtkMenu-struct"><span class="type">GtkMenu</span></a> with a lot of math LaTeX
+commands. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.2</div>
+</body>
+</html>

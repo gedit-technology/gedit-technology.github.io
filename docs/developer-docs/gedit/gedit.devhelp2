@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="gedit Reference Manual" link="index.html" author="" name="gedit" version="2" language="c">
+  <chapters>
+    <sub name="API Reference" link="api-reference.html">
+      <sub name="GeditApp" link="GeditApp.html"/>
+      <sub name="GeditAppActivatable" link="GeditAppActivatable.html"/>
+      <sub name="GeditCommands" link="gedit-GeditCommands.html"/>
+      <sub name="GeditDocument" link="GeditDocument.html"/>
+      <sub name="GeditEncodingsComboBox" link="GeditEncodingsComboBox.html"/>
+      <sub name="gedit-menu-extension" link="gedit-gedit-menu-extension.html"/>
+      <sub name="GeditMessageBus" link="GeditMessageBus.html"/>
+      <sub name="GeditMessage" link="GeditMessage.html"/>
+      <sub name="GeditStatusbar" link="GeditStatusbar.html"/>
+      <sub name="GeditTab" link="GeditTab.html"/>
+      <sub name="GeditView" link="gedit-gedit-view.html"/>
+      <sub name="GeditViewActivatable" link="GeditViewActivatable.html"/>
+      <sub name="GeditWindow" link="GeditWindow.html"/>
+      <sub name="GeditWindowActivatable" link="GeditWindowActivatable.html"/>
+      <sub name="gedit-debug" link="gedit-gedit-debug.html"/>
+      <sub name="gedit-utils" link="gedit-gedit-utils.html"/>
+    </sub>
+    <sub name="API Breaks" link="api-breaks.html"/>
+    <sub name="Annexes" link="annexes.html">
+      <sub name="Object Hierarchy" link="ch01.html"/>
+      <sub name="Annotation Glossary" link="annotation-glossary.html"/>
+      <sub name="Index of all symbols" link="ix01.html"/>
+      <sub name="Index of deprecated symbols" link="ix02.html"/>
+      <sub name="Index of new symbols in 3.4" link="ix03.html"/>
+      <sub name="Index of new symbols in 3.14" link="ix04.html"/>
+      <sub name="Index of new symbols in 45" link="ix05.html"/>
+      <sub name="Index of new symbols in 46" link="ix06.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <keyword type="function" name="gedit_app_create_window ()" link="GeditApp.html#gedit-app-create-window"/>
+    <keyword type="function" name="gedit_app_set_window_title ()" link="GeditApp.html#gedit-app-set-window-title"/>
+    <keyword type="function" name="gedit_app_get_main_windows ()" link="GeditApp.html#gedit-app-get-main-windows"/>
+    <keyword type="function" name="gedit_app_get_documents ()" link="GeditApp.html#gedit-app-get-documents"/>
+    <keyword type="function" name="gedit_app_get_views ()" link="GeditApp.html#gedit-app-get-views"/>
+    <keyword type="function" name="gedit_app_process_window_event ()" link="GeditApp.html#gedit-app-process-window-event"/>
+    <keyword type="function" name="gedit_app_show_help ()" link="GeditApp.html#gedit-app-show-help"/>
+    <keyword type="struct" name="GeditApp" link="GeditApp.html#GeditApp-struct"/>
+    <keyword type="function" name="gedit_app_activatable_activate ()" link="GeditAppActivatable.html#gedit-app-activatable-activate"/>
+    <keyword type="function" name="gedit_app_activatable_deactivate ()" link="GeditAppActivatable.html#gedit-app-activatable-deactivate"/>
+    <keyword type="function" name="gedit_app_activatable_extend_menu ()" link="GeditAppActivatable.html#gedit-app-activatable-extend-menu"/>
+    <keyword type="struct" name="GeditAppActivatable" link="GeditAppActivatable.html#GeditAppActivatable-struct"/>
+    <keyword type="property" name="The “app” property" link="GeditAppActivatable.html#GeditAppActivatable--app"/>
+    <keyword type="function" name="gedit_commands_load_location ()" link="gedit-GeditCommands.html#gedit-commands-load-location"/>
+    <keyword type="function" name="gedit_commands_load_locations ()" link="gedit-GeditCommands.html#gedit-commands-load-locations"/>
+    <keyword type="function" name="gedit_commands_save_document ()" link="gedit-GeditCommands.html#gedit-commands-save-document"/>
+    <keyword type="function" name="gedit_commands_save_document_async ()" link="gedit-GeditCommands.html#gedit-commands-save-document-async" since="3.14"/>
+    <keyword type="function" name="gedit_commands_save_document_finish ()" link="gedit-GeditCommands.html#gedit-commands-save-document-finish" since="3.14"/>
+    <keyword type="function" name="gedit_commands_save_all_documents ()" link="gedit-GeditCommands.html#gedit-commands-save-all-documents"/>
+    <keyword type="function" name="gedit_document_new ()" link="GeditDocument.html#gedit-document-new"/>
+    <keyword type="function" name="gedit_document_get_file ()" link="GeditDocument.html#gedit-document-get-file" since="3.14"/>
+    <keyword type="function" name="gedit_document_get_mime_type ()" link="GeditDocument.html#gedit-document-get-mime-type"/>
+    <keyword type="function" name="gedit_document_set_language ()" link="GeditDocument.html#gedit-document-set-language"/>
+    <keyword type="function" name="gedit_document_get_content_type ()" link="GeditDocument.html#gedit-document-get-content-type"/>
+    <keyword type="function" name="gedit_document_get_metadata ()" link="GeditDocument.html#gedit-document-get-metadata"/>
+    <keyword type="function" name="gedit_document_set_metadata ()" link="GeditDocument.html#gedit-document-set-metadata"/>
+    <keyword type="function" name="gedit_document_set_search_context ()" link="GeditDocument.html#gedit-document-set-search-context"/>
+    <keyword type="function" name="gedit_document_get_search_context ()" link="GeditDocument.html#gedit-document-get-search-context"/>
+    <keyword type="struct" name="GeditDocument" link="GeditDocument.html#GeditDocument-struct"/>
+    <keyword type="property" name="The “content-type” property" link="GeditDocument.html#GeditDocument--content-type"/>
+    <keyword type="property" name="The “empty-search” property" link="GeditDocument.html#GeditDocument--empty-search"/>
+    <keyword type="property" name="The “mime-type” property" link="GeditDocument.html#GeditDocument--mime-type"/>
+    <keyword type="signal" name="The “load” signal" link="GeditDocument.html#GeditDocument-load"/>
+    <keyword type="signal" name="The “loaded” signal" link="GeditDocument.html#GeditDocument-loaded"/>
+    <keyword type="signal" name="The “save” signal" link="GeditDocument.html#GeditDocument-save"/>
+    <keyword type="signal" name="The “saved” signal" link="GeditDocument.html#GeditDocument-saved"/>
+    <keyword type="function" name="gedit_encodings_combo_box_new ()" link="GeditEncodingsComboBox.html#gedit-encodings-combo-box-new"/>
+    <keyword type="function" name="gedit_encodings_combo_box_get_selected_encoding ()" link="GeditEncodingsComboBox.html#gedit-encodings-combo-box-get-selected-encoding"/>
+    <keyword type="function" name="gedit_encodings_combo_box_set_selected_encoding ()" link="GeditEncodingsComboBox.html#gedit-encodings-combo-box-set-selected-encoding"/>
+    <keyword type="struct" name="GeditEncodingsComboBox" link="GeditEncodingsComboBox.html#GeditEncodingsComboBox-struct"/>
+    <keyword type="property" name="The “save-mode” property" link="GeditEncodingsComboBox.html#GeditEncodingsComboBox--save-mode"/>
+    <keyword type="function" name="gedit_menu_extension_new ()" link="gedit-gedit-menu-extension.html#gedit-menu-extension-new"/>
+    <keyword type="function" name="gedit_menu_extension_append_menu_item ()" link="gedit-gedit-menu-extension.html#gedit-menu-extension-append-menu-item"/>
+    <keyword type="function" name="gedit_menu_extension_prepend_menu_item ()" link="gedit-gedit-menu-extension.html#gedit-menu-extension-prepend-menu-item"/>
+    <keyword type="function" name="gedit_menu_extension_remove_items ()" link="gedit-gedit-menu-extension.html#gedit-menu-extension-remove-items"/>
+    <keyword type="struct" name="GeditMenuExtension" link="gedit-gedit-menu-extension.html#GeditMenuExtension-struct"/>
+    <keyword type="property" name="The “menu” property" link="gedit-gedit-menu-extension.html#GeditMenuExtension--menu"/>
+    <keyword type="function" name="GeditMessageCallback ()" link="GeditMessageBus.html#GeditMessageCallback"/>
+    <keyword type="function" name="GeditMessageBusForeach ()" link="GeditMessageBus.html#GeditMessageBusForeach"/>
+    <keyword type="function" name="gedit_message_bus_get_default ()" link="GeditMessageBus.html#gedit-message-bus-get-default"/>
+    <keyword type="function" name="gedit_message_bus_new ()" link="GeditMessageBus.html#gedit-message-bus-new"/>
+    <keyword type="function" name="gedit_message_bus_lookup ()" link="GeditMessageBus.html#gedit-message-bus-lookup"/>
+    <keyword type="function" name="gedit_message_bus_register ()" link="GeditMessageBus.html#gedit-message-bus-register"/>
+    <keyword type="function" name="gedit_message_bus_unregister ()" link="GeditMessageBus.html#gedit-message-bus-unregister"/>
+    <keyword type="function" name="gedit_message_bus_unregister_all ()" link="GeditMessageBus.html#gedit-message-bus-unregister-all"/>
+    <keyword type="function" name="gedit_message_bus_is_registered ()" link="GeditMessageBus.html#gedit-message-bus-is-registered"/>
+    <keyword type="function" name="gedit_message_bus_foreach ()" link="GeditMessageBus.html#gedit-message-bus-foreach"/>
+    <keyword type="function" name="gedit_message_bus_connect ()" link="GeditMessageBus.html#gedit-message-bus-connect"/>
+    <keyword type="function" name="gedit_message_bus_disconnect ()" link="GeditMessageBus.html#gedit-message-bus-disconnect"/>
+    <keyword type="function" name="gedit_message_bus_disconnect_by_func ()" link="GeditMessageBus.html#gedit-message-bus-disconnect-by-func"/>
+    <keyword type="function" name="gedit_message_bus_block ()" link="GeditMessageBus.html#gedit-message-bus-block"/>
+    <keyword type="function" name="gedit_message_bus_block_by_func ()" link="GeditMessageBus.html#gedit-message-bus-block-by-func"/>
+    <keyword type="function" name="gedit_message_bus_unblock ()" link="GeditMessageBus.html#gedit-message-bus-unblock"/>
+    <keyword type="function" name="gedit_message_bus_unblock_by_func ()" link="GeditMessageBus.html#gedit-message-bus-unblock-by-func"/>
+    <keyword type="function" name="gedit_message_bus_send_message ()" link="GeditMessageBus.html#gedit-message-bus-send-message"/>
+    <keyword type="function" name="gedit_message_bus_send_message_sync ()" link="GeditMessageBus.html#gedit-message-bus-send-message-sync"/>
+    <keyword type="function" name="gedit_message_bus_send ()" link="GeditMessageBus.html#gedit-message-bus-send"/>
+    <keyword type="function" name="gedit_message_bus_send_sync ()" link="GeditMessageBus.html#gedit-message-bus-send-sync"/>
+    <keyword type="struct" name="struct GeditMessageBus" link="GeditMessageBus.html#GeditMessageBus-struct"/>
+    <keyword type="signal" name="The “dispatch” signal" link="GeditMessageBus.html#GeditMessageBus-dispatch"/>
+    <keyword type="signal" name="The “registered” signal" link="GeditMessageBus.html#GeditMessageBus-registered"/>
+    <keyword type="signal" name="The “unregistered” signal" link="GeditMessageBus.html#GeditMessageBus-unregistered"/>
+    <keyword type="function" name="gedit_message_get_object_path ()" link="GeditMessage.html#gedit-message-get-object-path"/>
+    <keyword type="function" name="gedit_message_get_method ()" link="GeditMessage.html#gedit-message-get-method"/>
+    <keyword type="function" name="gedit_message_type_has ()" link="GeditMessage.html#gedit-message-type-has"/>
+    <keyword type="function" name="gedit_message_type_check ()" link="GeditMessage.html#gedit-message-type-check"/>
+    <keyword type="function" name="gedit_message_has ()" link="GeditMessage.html#gedit-message-has"/>
+    <keyword type="function" name="gedit_message_is_valid_object_path ()" link="GeditMessage.html#gedit-message-is-valid-object-path"/>
+    <keyword type="function" name="gedit_message_type_identifier ()" link="GeditMessage.html#gedit-message-type-identifier"/>
+    <keyword type="struct" name="struct GeditMessage" link="GeditMessage.html#GeditMessage-struct"/>
+    <keyword type="property" name="The “method” property" link="GeditMessage.html#GeditMessage--method"/>
+    <keyword type="property" name="The “object-path” property" link="GeditMessage.html#GeditMessage--object-path"/>
+    <keyword type="function" name="gedit_statusbar_flash_message ()" link="GeditStatusbar.html#gedit-statusbar-flash-message"/>
+    <keyword type="struct" name="GeditStatusbar" link="GeditStatusbar.html#GeditStatusbar-struct"/>
+    <keyword type="function" name="gedit_tab_load_file ()" link="GeditTab.html#gedit-tab-load-file" since="45"/>
+    <keyword type="function" name="gedit_tab_load_stream ()" link="GeditTab.html#gedit-tab-load-stream" since="45"/>
+    <keyword type="function" name="gedit_tab_get_view ()" link="GeditTab.html#gedit-tab-get-view"/>
+    <keyword type="function" name="gedit_tab_get_document ()" link="GeditTab.html#gedit-tab-get-document"/>
+    <keyword type="function" name="gedit_tab_get_from_document ()" link="GeditTab.html#gedit-tab-get-from-document"/>
+    <keyword type="function" name="gedit_tab_get_state ()" link="GeditTab.html#gedit-tab-get-state"/>
+    <keyword type="function" name="gedit_tab_get_auto_save_enabled ()" link="GeditTab.html#gedit-tab-get-auto-save-enabled"/>
+    <keyword type="function" name="gedit_tab_set_auto_save_enabled ()" link="GeditTab.html#gedit-tab-set-auto-save-enabled"/>
+    <keyword type="function" name="gedit_tab_get_auto_save_interval ()" link="GeditTab.html#gedit-tab-get-auto-save-interval"/>
+    <keyword type="function" name="gedit_tab_set_auto_save_interval ()" link="GeditTab.html#gedit-tab-set-auto-save-interval"/>
+    <keyword type="function" name="gedit_tab_set_info_bar ()" link="GeditTab.html#gedit-tab-set-info-bar"/>
+    <keyword type="struct" name="GeditTab" link="GeditTab.html#GeditTab-struct"/>
+    <keyword type="enum" name="enum GeditTabState" link="GeditTab.html#GeditTabState"/>
+    <keyword type="property" name="The “autosave” property" link="GeditTab.html#GeditTab--autosave"/>
+    <keyword type="property" name="The “autosave-interval” property" link="GeditTab.html#GeditTab--autosave-interval"/>
+    <keyword type="property" name="The “can-close” property" link="GeditTab.html#GeditTab--can-close"/>
+    <keyword type="property" name="The “name” property" link="GeditTab.html#GeditTab--name"/>
+    <keyword type="property" name="The “state” property" link="GeditTab.html#GeditTab--state"/>
+    <keyword type="signal" name="The “drop-uris” signal" link="GeditTab.html#GeditTab-drop-uris"/>
+    <keyword type="function" name="gedit_view_new ()" link="gedit-gedit-view.html#gedit-view-new"/>
+    <keyword type="struct" name="GeditViewPrivate" link="gedit-gedit-view.html#GeditViewPrivate"/>
+    <keyword type="struct" name="struct GeditView" link="gedit-gedit-view.html#GeditView-struct"/>
+    <keyword type="signal" name="The “drop-uris” signal" link="gedit-gedit-view.html#GeditView-drop-uris"/>
+    <keyword type="function" name="gedit_view_activatable_activate ()" link="GeditViewActivatable.html#gedit-view-activatable-activate"/>
+    <keyword type="function" name="gedit_view_activatable_deactivate ()" link="GeditViewActivatable.html#gedit-view-activatable-deactivate"/>
+    <keyword type="struct" name="GeditViewActivatable" link="GeditViewActivatable.html#GeditViewActivatable-struct"/>
+    <keyword type="property" name="The “view” property" link="GeditViewActivatable.html#GeditViewActivatable--view"/>
+    <keyword type="function" name="gedit_window_create_tab ()" link="GeditWindow.html#gedit-window-create-tab"/>
+    <keyword type="function" name="gedit_window_close_tab ()" link="GeditWindow.html#gedit-window-close-tab"/>
+    <keyword type="function" name="gedit_window_close_all_tabs ()" link="GeditWindow.html#gedit-window-close-all-tabs"/>
+    <keyword type="function" name="gedit_window_close_tabs ()" link="GeditWindow.html#gedit-window-close-tabs"/>
+    <keyword type="function" name="gedit_window_get_active_tab ()" link="GeditWindow.html#gedit-window-get-active-tab"/>
+    <keyword type="function" name="gedit_window_set_active_tab ()" link="GeditWindow.html#gedit-window-set-active-tab"/>
+    <keyword type="function" name="gedit_window_get_active_view ()" link="GeditWindow.html#gedit-window-get-active-view"/>
+    <keyword type="function" name="gedit_window_get_active_document ()" link="GeditWindow.html#gedit-window-get-active-document"/>
+    <keyword type="function" name="gedit_window_get_documents ()" link="GeditWindow.html#gedit-window-get-documents"/>
+    <keyword type="function" name="gedit_window_get_unsaved_documents ()" link="GeditWindow.html#gedit-window-get-unsaved-documents"/>
+    <keyword type="function" name="gedit_window_get_views ()" link="GeditWindow.html#gedit-window-get-views"/>
+    <keyword type="function" name="gedit_window_get_group ()" link="GeditWindow.html#gedit-window-get-group"/>
+    <keyword type="function" name="gedit_window_get_side_panel ()" link="GeditWindow.html#gedit-window-get-side-panel" since="46"/>
+    <keyword type="function" name="gedit_window_get_bottom_panel ()" link="GeditWindow.html#gedit-window-get-bottom-panel"/>
+    <keyword type="function" name="gedit_window_get_statusbar ()" link="GeditWindow.html#gedit-window-get-statusbar"/>
+    <keyword type="function" name="gedit_window_get_state ()" link="GeditWindow.html#gedit-window-get-state"/>
+    <keyword type="function" name="gedit_window_get_tab_from_location ()" link="GeditWindow.html#gedit-window-get-tab-from-location"/>
+    <keyword type="function" name="gedit_window_get_message_bus ()" link="GeditWindow.html#gedit-window-get-message-bus"/>
+    <keyword type="struct" name="struct GeditWindow" link="GeditWindow.html#GeditWindow-struct"/>
+    <keyword type="enum" name="enum GeditWindowState" link="GeditWindow.html#GeditWindowState"/>
+    <keyword type="property" name="The “state” property" link="GeditWindow.html#GeditWindow--state"/>
+    <keyword type="signal" name="The “active-tab-changed” signal" link="GeditWindow.html#GeditWindow-active-tab-changed"/>
+    <keyword type="signal" name="The “active-tab-state-changed” signal" link="GeditWindow.html#GeditWindow-active-tab-state-changed"/>
+    <keyword type="signal" name="The “tab-added” signal" link="GeditWindow.html#GeditWindow-tab-added"/>
+    <keyword type="signal" name="The “tab-removed” signal" link="GeditWindow.html#GeditWindow-tab-removed"/>
+    <keyword type="signal" name="The “tabs-reordered” signal" link="GeditWindow.html#GeditWindow-tabs-reordered"/>
+    <keyword type="function" name="gedit_window_activatable_activate ()" link="GeditWindowActivatable.html#gedit-window-activatable-activate"/>
+    <keyword type="function" name="gedit_window_activatable_deactivate ()" link="GeditWindowActivatable.html#gedit-window-activatable-deactivate"/>
+    <keyword type="function" name="gedit_window_activatable_update_state ()" link="GeditWindowActivatable.html#gedit-window-activatable-update-state"/>
+    <keyword type="struct" name="GeditWindowActivatable" link="GeditWindowActivatable.html#GeditWindowActivatable-struct"/>
+    <keyword type="property" name="The “window” property" link="GeditWindowActivatable.html#GeditWindowActivatable--window"/>
+    <keyword type="function" name="gedit_debug_init ()" link="gedit-gedit-debug.html#gedit-debug-init"/>
+    <keyword type="function" name="gedit_debug ()" link="gedit-gedit-debug.html#gedit-debug"/>
+    <keyword type="function" name="gedit_debug_message ()" link="gedit-gedit-debug.html#gedit-debug-message"/>
+    <keyword type="function" name="gedit_debug_plugin_message ()" link="gedit-gedit-debug.html#gedit-debug-plugin-message" since="3.4"/>
+    <keyword type="enum" name="enum GeditDebugSection" link="gedit-gedit-debug.html#GeditDebugSection"/>
+    <keyword type="macro" name="DEBUG_VIEW" link="gedit-gedit-debug.html#DEBUG-VIEW:CAPS"/>
+    <keyword type="macro" name="DEBUG_PREFS" link="gedit-gedit-debug.html#DEBUG-PREFS:CAPS"/>
+    <keyword type="macro" name="DEBUG_WINDOW" link="gedit-gedit-debug.html#DEBUG-WINDOW:CAPS"/>
+    <keyword type="macro" name="DEBUG_PANEL" link="gedit-gedit-debug.html#DEBUG-PANEL:CAPS"/>
+    <keyword type="macro" name="DEBUG_PLUGINS" link="gedit-gedit-debug.html#DEBUG-PLUGINS:CAPS"/>
+    <keyword type="macro" name="DEBUG_TAB" link="gedit-gedit-debug.html#DEBUG-TAB:CAPS"/>
+    <keyword type="macro" name="DEBUG_DOCUMENT" link="gedit-gedit-debug.html#DEBUG-DOCUMENT:CAPS"/>
+    <keyword type="macro" name="DEBUG_COMMANDS" link="gedit-gedit-debug.html#DEBUG-COMMANDS:CAPS"/>
+    <keyword type="macro" name="DEBUG_APP" link="gedit-gedit-debug.html#DEBUG-APP:CAPS"/>
+    <keyword type="macro" name="DEBUG_UTILS" link="gedit-gedit-debug.html#DEBUG-UTILS:CAPS"/>
+    <keyword type="function" name="gedit_utils_menu_position_under_tree_view ()" link="gedit-gedit-utils.html#gedit-utils-menu-position-under-tree-view"/>
+    <keyword type="function" name="gedit_utils_basename_for_display ()" link="gedit-gedit-utils.html#gedit-utils-basename-for-display"/>
+    <keyword type="function" name="gedit_utils_drop_get_uris ()" link="gedit-gedit-utils.html#gedit-utils-drop-get-uris"/>
+    <keyword type="function" name="gedit_utils_get_compression_type_from_content_type ()" link="gedit-gedit-utils.html#gedit-utils-get-compression-type-from-content-type"/>
+    <keyword type="function" name="gedit_utils_is_valid_location ()" link="gedit-gedit-utils.html#gedit-utils-is-valid-location"/>
+    <keyword type="function" name="gedit_utils_location_get_dirname_for_display ()" link="gedit-gedit-utils.html#gedit-utils-location-get-dirname-for-display"/>
+    <keyword type="function" name="gedit_utils_set_direct_save_filename ()" link="gedit-gedit-utils.html#gedit-utils-set-direct-save-filename"/>
+    <keyword type="function" name="gedit_utils_newline_type_to_string ()" link="gedit-gedit-utils.html#gedit-utils-newline-type-to-string"/>
+    <keyword type="constant" name="GEDIT_TAB_STATE_NORMAL" link="GeditTab.html#GEDIT-TAB-STATE-NORMAL:CAPS"/>
+    <keyword type="constant" name="GEDIT_TAB_STATE_LOADING" link="GeditTab.html#GEDIT-TAB-STATE-LOADING:CAPS"/>
+    <keyword type="constant" name="GEDIT_TAB_STATE_REVERTING" link="GeditTab.html#GEDIT-TAB-STATE-REVERTING:CAPS"/>
+    <keyword type="constant" name="GEDIT_TAB_STATE_SAVING" link="GeditTab.html#GEDIT-TAB-STATE-SAVING:CAPS"/>
+    <keyword type="constant" name="GEDIT_TAB_STATE_PRINTING" link="GeditTab.html#GEDIT-TAB-STATE-PRINTING:CAPS"/>
+    <keyword type="constant" name="GEDIT_TAB_STATE_SHOWING_PRINT_PREVIEW" link="GeditTab.html#GEDIT-TAB-STATE-SHOWING-PRINT-PREVIEW:CAPS"/>
+    <keyword type="constant" name="GEDIT_TAB_STATE_LOADING_ERROR" link="GeditTab.html#GEDIT-TAB-STATE-LOADING-ERROR:CAPS"/>
+    <keyword type="constant" name="GEDIT_TAB_STATE_REVERTING_ERROR" link="GeditTab.html#GEDIT-TAB-STATE-REVERTING-ERROR:CAPS"/>
+    <keyword type="constant" name="GEDIT_TAB_STATE_SAVING_ERROR" link="GeditTab.html#GEDIT-TAB-STATE-SAVING-ERROR:CAPS"/>
+    <keyword type="constant" name="GEDIT_TAB_STATE_GENERIC_ERROR" link="GeditTab.html#GEDIT-TAB-STATE-GENERIC-ERROR:CAPS"/>
+    <keyword type="constant" name="GEDIT_TAB_STATE_CLOSING" link="GeditTab.html#GEDIT-TAB-STATE-CLOSING:CAPS"/>
+    <keyword type="constant" name="GEDIT_TAB_STATE_EXTERNALLY_MODIFIED_NOTIFICATION" link="GeditTab.html#GEDIT-TAB-STATE-EXTERNALLY-MODIFIED-NOTIFICATION:CAPS"/>
+    <keyword type="constant" name="GEDIT_TAB_NUM_OF_STATES" link="GeditTab.html#GEDIT-TAB-NUM-OF-STATES:CAPS"/>
+    <keyword type="constant" name="GEDIT_WINDOW_STATE_NORMAL" link="GeditWindow.html#GEDIT-WINDOW-STATE-NORMAL:CAPS"/>
+    <keyword type="constant" name="GEDIT_WINDOW_STATE_SAVING" link="GeditWindow.html#GEDIT-WINDOW-STATE-SAVING:CAPS"/>
+    <keyword type="constant" name="GEDIT_WINDOW_STATE_PRINTING" link="GeditWindow.html#GEDIT-WINDOW-STATE-PRINTING:CAPS"/>
+    <keyword type="constant" name="GEDIT_WINDOW_STATE_LOADING" link="GeditWindow.html#GEDIT-WINDOW-STATE-LOADING:CAPS"/>
+    <keyword type="constant" name="GEDIT_WINDOW_STATE_ERROR" link="GeditWindow.html#GEDIT-WINDOW-STATE-ERROR:CAPS"/>
+    <keyword type="constant" name="GEDIT_NO_DEBUG" link="gedit-gedit-debug.html#GEDIT-NO-DEBUG:CAPS"/>
+    <keyword type="constant" name="GEDIT_DEBUG_VIEW" link="gedit-gedit-debug.html#GEDIT-DEBUG-VIEW:CAPS"/>
+    <keyword type="constant" name="GEDIT_DEBUG_PREFS" link="gedit-gedit-debug.html#GEDIT-DEBUG-PREFS:CAPS"/>
+    <keyword type="constant" name="GEDIT_DEBUG_WINDOW" link="gedit-gedit-debug.html#GEDIT-DEBUG-WINDOW:CAPS"/>
+    <keyword type="constant" name="GEDIT_DEBUG_PANEL" link="gedit-gedit-debug.html#GEDIT-DEBUG-PANEL:CAPS"/>
+    <keyword type="constant" name="GEDIT_DEBUG_PLUGINS" link="gedit-gedit-debug.html#GEDIT-DEBUG-PLUGINS:CAPS"/>
+    <keyword type="constant" name="GEDIT_DEBUG_TAB" link="gedit-gedit-debug.html#GEDIT-DEBUG-TAB:CAPS"/>
+    <keyword type="constant" name="GEDIT_DEBUG_DOCUMENT" link="gedit-gedit-debug.html#GEDIT-DEBUG-DOCUMENT:CAPS"/>
+    <keyword type="constant" name="GEDIT_DEBUG_COMMANDS" link="gedit-gedit-debug.html#GEDIT-DEBUG-COMMANDS:CAPS"/>
+    <keyword type="constant" name="GEDIT_DEBUG_APP" link="gedit-gedit-debug.html#GEDIT-DEBUG-APP:CAPS"/>
+    <keyword type="constant" name="GEDIT_DEBUG_UTILS" link="gedit-gedit-debug.html#GEDIT-DEBUG-UTILS:CAPS"/>
+  </functions>
+</book>
