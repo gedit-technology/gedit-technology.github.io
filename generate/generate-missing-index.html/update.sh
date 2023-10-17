@@ -10,3 +10,6 @@ dir='../../docs/developer-docs'
 
 dir='../../docs/developer-docs/extra'
 ./generate-list "${dir}" > "${dir}/index.html"
+
+dir='../../docs/developer-docs/extra/libgedit-gtksourceview'
+./generate-list "${dir}" > "${dir}/index.html"
