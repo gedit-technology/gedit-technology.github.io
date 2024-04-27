@@ -1,0 +1,577 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TeplSettings: libgedit-tepl 6 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libgedit-tepl 6 Reference Manual">
+<link rel="up" href="misc.html" title="Misc">
+<link rel="prev" href="TeplPrefsDialog.html" title="TeplPrefsDialog">
+<link rel="next" href="TeplSpaceDrawerPrefs.html" title="TeplSpaceDrawerPrefs">
+<meta name="generator" content="GTK-Doc V1.34.0 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#TeplSettings.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#TeplSettings.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#TeplSettings.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="misc.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="TeplPrefsDialog.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="TeplSpaceDrawerPrefs.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="TeplSettings"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="TeplSettings.top_of_page"></a>TeplSettings</span></h2>
+<p>TeplSettings — Singleton class containing <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> objects</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="TeplSettings.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="TeplSettings.html" title="TeplSettings"><span class="returnvalue">TeplSettings</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TeplSettings.html#tepl-settings-get-singleton" title="tepl_settings_get_singleton ()">tepl_settings_get_singleton</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="returnvalue">GSettings</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TeplSettings.html#tepl-settings-peek-desktop-interface-settings" title="tepl_settings_peek_desktop_interface_settings ()">tepl_settings_peek_desktop_interface_settings</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="TeplSettings.html#tepl-settings-provide-font-settings" title="tepl_settings_provide_font_settings ()">tepl_settings_provide_font_settings</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TeplSettings.html#tepl-settings-get-selected-font" title="tepl_settings_get_selected_font ()">tepl_settings_get_selected_font</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="TeplSettings.html#tepl-settings-handle-theme-variant" title="tepl_settings_handle_theme_variant ()">tepl_settings_handle_theme_variant</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="TeplSettings.html#tepl-settings-handle-simple-theme-variant" title="tepl_settings_handle_simple_theme_variant ()">tepl_settings_handle_simple_theme_variant</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="TeplSettings.html#tepl-settings-get-range-uint" title="tepl_settings_get_range_uint ()">tepl_settings_get_range_uint</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="TeplSettings.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="TeplSettings.html#TeplSettings-font-changed" title="The “font-changed” signal">font-changed</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="TeplSettings.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="TeplSettings.html#TeplSettings-struct" title="struct TeplSettings">TeplSettings</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="TeplSettings.html#TeplSettingsThemeVariant" title="enum TeplSettingsThemeVariant">TeplSettingsThemeVariant</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="TeplSettings.html#TeplSettingsSimpleThemeVariant" title="enum TeplSettingsSimpleThemeVariant">TeplSettingsSimpleThemeVariant</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="TeplSettings.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">├──</span> TeplSettingsSimpleThemeVariant
+    <span class="lineart">╰──</span> TeplSettingsThemeVariant
+    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> TeplSettings
+</pre>
+</div>
+<div class="refsect1">
+<a name="TeplSettings.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;tepl/tepl.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="TeplSettings.description"></a><h2>Description</h2>
+<p><a class="link" href="TeplSettings.html" title="TeplSettings"><span class="type">TeplSettings</span></a> is a singleton class to have a central access to some
+<a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> objects and having convenience features that are useful for a text
+editor.</p>
+<p>The central access permits to:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>Share the same <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> objects between different parts of the
+application.</p></li>
+<li class="listitem"><p>Avoid the need to store <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> objects a bit everywhere in different
+classes.</p></li>
+</ul></div>
+</div>
+<div class="refsect1">
+<a name="TeplSettings.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="tepl-settings-get-singleton"></a><h3>tepl_settings_get_singleton ()</h3>
+<pre class="programlisting"><a class="link" href="TeplSettings.html" title="TeplSettings"><span class="returnvalue">TeplSettings</span></a> *
+tepl_settings_get_singleton (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="refsect3">
+<a name="tepl-settings-get-singleton.returns"></a><h4>Returns</h4>
+<p>the <a class="link" href="TeplSettings.html" title="TeplSettings"><span class="type">TeplSettings</span></a> singleton instance. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-6-2.html#api-index-6.2">6.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-settings-peek-desktop-interface-settings"></a><h3>tepl_settings_peek_desktop_interface_settings ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="returnvalue">GSettings</span></a> *
+tepl_settings_peek_desktop_interface_settings
+                               (<em class="parameter"><code><a class="link" href="TeplSettings.html" title="TeplSettings"><span class="type">TeplSettings</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="tepl-settings-peek-desktop-interface-settings.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>the <a class="link" href="TeplSettings.html" title="TeplSettings"><span class="type">TeplSettings</span></a> instance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="tepl-settings-peek-desktop-interface-settings.returns"></a><h4>Returns</h4>
+<p>the <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> for <code class="literal">"org.gnome.desktop.interface"</code>. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-6-2.html#api-index-6.2">6.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-settings-provide-font-settings"></a><h3>tepl_settings_provide_font_settings ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+tepl_settings_provide_font_settings (<em class="parameter"><code><a class="link" href="TeplSettings.html" title="TeplSettings"><span class="type">TeplSettings</span></a> *self</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> *font_settings</code></em>,
+                                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *use_default_font_key</code></em>,
+                                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *editor_font_key</code></em>);</pre>
+<p>This function can only be called once, to provide two keys:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p><em class="parameter"><code>use_default_font_key</code></em>
+: must be of type boolean, to know whether to use the
+system's font (the default font), or the editor font.</p></li>
+<li class="listitem"><p><em class="parameter"><code>editor_font_key</code></em>
+: must be of type string, containing the font name to have
+a different font for the text editor, rather than using the system's font.</p></li>
+</ul></div>
+<p>See <a class="link" href="TeplSettings.html#tepl-settings-get-selected-font" title="tepl_settings_get_selected_font ()"><code class="function">tepl_settings_get_selected_font()</code></a>.</p>
+<div class="refsect3">
+<a name="tepl-settings-provide-font-settings.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>the <a class="link" href="TeplSettings.html" title="TeplSettings"><span class="type">TeplSettings</span></a> instance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>font_settings</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> object containing the keys.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>use_default_font_key</p></td>
+<td class="parameter_description"><p>a key of type boolean.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>editor_font_key</p></td>
+<td class="parameter_description"><p>a key of type string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-6-2.html#api-index-6.2">6.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-settings-get-selected-font"></a><h3>tepl_settings_get_selected_font ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+tepl_settings_get_selected_font (<em class="parameter"><code><a class="link" href="TeplSettings.html" title="TeplSettings"><span class="type">TeplSettings</span></a> *self</code></em>);</pre>
+<p>If <a class="link" href="TeplSettings.html#tepl-settings-provide-font-settings" title="tepl_settings_provide_font_settings ()"><code class="function">tepl_settings_provide_font_settings()</code></a> has *not* been called, this function
+always returns the current value of the system's fixed width (monospace)
+font.</p>
+<p>If <a class="link" href="TeplSettings.html#tepl-settings-provide-font-settings" title="tepl_settings_provide_font_settings ()"><code class="function">tepl_settings_provide_font_settings()</code></a> *has* been called, this function
+returns the font name depending on the boolean value of
+<em class="parameter"><code>use_default_font_key</code></em>
+.</p>
+<p>See also the <a class="link" href="TeplSettings.html#TeplSettings-font-changed" title="The “font-changed” signal"><span class="type">“font-changed”</span></a> signal,
+<a class="link" href="libgedit-tepl-6-TeplUtils.html#tepl-utils-override-font-string" title="tepl_utils_override_font_string ()"><code class="function">tepl_utils_override_font_string()</code></a> and <a class="link" href="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-font-component" title="tepl_prefs_create_font_component ()"><code class="function">tepl_prefs_create_font_component()</code></a>.</p>
+<div class="refsect3">
+<a name="tepl-settings-get-selected-font.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>the <a class="link" href="TeplSettings.html" title="TeplSettings"><span class="type">TeplSettings</span></a> instance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="tepl-settings-get-selected-font.returns"></a><h4>Returns</h4>
+<p> the selected font name.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-6-2.html#api-index-6.2">6.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-settings-handle-theme-variant"></a><h3>tepl_settings_handle_theme_variant ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+tepl_settings_handle_theme_variant (<em class="parameter"><code><a class="link" href="TeplSettings.html" title="TeplSettings"><span class="type">TeplSettings</span></a> *self</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> *theme_variant_settings</code></em>,
+                                    <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *theme_variant_setting_key</code></em>);</pre>
+<p>This function permits to setup correctly the GTK theme variant to use.</p>
+<p>If <em class="parameter"><code>theme_variant_settings</code></em>
+ and <em class="parameter"><code>theme_variant_setting_key</code></em>
+ are <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, only the
+system's settings will be taken into account.</p>
+<p>If <em class="parameter"><code>theme_variant_settings</code></em>
+ and <em class="parameter"><code>theme_variant_setting_key</code></em>
+ are provided, they
+are taken into account according to <a class="link" href="TeplSettings.html#TeplSettingsThemeVariant" title="enum TeplSettingsThemeVariant"><span class="type">TeplSettingsThemeVariant</span></a>.</p>
+<p>You should call this function or <a class="link" href="TeplSettings.html#tepl-settings-handle-simple-theme-variant" title="tepl_settings_handle_simple_theme_variant ()"><code class="function">tepl_settings_handle_simple_theme_variant()</code></a>
+only once, as subsequent calls are ignored (the setting used cannot be
+reconfigured).</p>
+<div class="refsect3">
+<a name="tepl-settings-handle-theme-variant.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>the <a class="link" href="TeplSettings.html" title="TeplSettings"><span class="type">TeplSettings</span></a> instance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>theme_variant_settings</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> object, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>theme_variant_setting_key</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> key of type enum
+<a class="link" href="TeplSettings.html#TeplSettingsThemeVariant" title="enum TeplSettingsThemeVariant"><span class="type">TeplSettingsThemeVariant</span></a>, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-6-10.html#api-index-6.10">6.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-settings-handle-simple-theme-variant"></a><h3>tepl_settings_handle_simple_theme_variant ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+tepl_settings_handle_simple_theme_variant
+                               (<em class="parameter"><code><a class="link" href="TeplSettings.html" title="TeplSettings"><span class="type">TeplSettings</span></a> *self</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> *theme_variant_settings</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *theme_variant_setting_key</code></em>);</pre>
+<p>Like <a class="link" href="TeplSettings.html#tepl-settings-handle-theme-variant" title="tepl_settings_handle_theme_variant ()"><code class="function">tepl_settings_handle_theme_variant()</code></a> but uses the
+<a class="link" href="TeplSettings.html#TeplSettingsSimpleThemeVariant" title="enum TeplSettingsSimpleThemeVariant"><span class="type">TeplSettingsSimpleThemeVariant</span></a> enum instead.</p>
+<p>If <em class="parameter"><code>theme_variant_settings</code></em>
+ and <em class="parameter"><code>theme_variant_setting_key</code></em>
+ are <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, the
+light GTK theme variant is forced.</p>
+<p>You should call this function or <a class="link" href="TeplSettings.html#tepl-settings-handle-theme-variant" title="tepl_settings_handle_theme_variant ()"><code class="function">tepl_settings_handle_theme_variant()</code></a> only
+once, as subsequent calls are ignored (the setting used cannot be
+reconfigured).</p>
+<div class="refsect3">
+<a name="tepl-settings-handle-simple-theme-variant.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>the <a class="link" href="TeplSettings.html" title="TeplSettings"><span class="type">TeplSettings</span></a> instance.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>theme_variant_settings</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> object, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>theme_variant_setting_key</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> key of type enum
+<a class="link" href="TeplSettings.html#TeplSettingsSimpleThemeVariant" title="enum TeplSettingsSimpleThemeVariant"><span class="type">TeplSettingsSimpleThemeVariant</span></a>, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-6-10.html#api-index-6.10">6.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-settings-get-range-uint"></a><h3>tepl_settings_get_range_uint ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+tepl_settings_get_range_uint (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> *settings</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *key</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *min</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *max</code></em>);</pre>
+<p>This function introspects a <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> key to get its range, if the key as a
+"u" type (unsigned integer). <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> is returned if the introspection failed.</p>
+<p>See <a href="/usr/share/gtk-doc/html/gio/gio-GSettingsSchema-GSettingsSchemaSource.html#g-settings-schema-key-get-range"><code class="function">g_settings_schema_key_get_range()</code></a> for more flexibility.</p>
+<div class="refsect3">
+<a name="tepl-settings-get-range-uint.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>settings</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>a key part of <em class="parameter"><code>settings</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>min</p></td>
+<td class="parameter_description"><p>the minimum value allowed by the range. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max</p></td>
+<td class="parameter_description"><p>the maximum value allowed by the range. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="tepl-settings-get-range-uint.returns"></a><h4>Returns</h4>
+<p> whether the operation was successful.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-6-2.html#api-index-6.2">6.2</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="TeplSettings.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="TeplSettings-struct"></a><h3>struct TeplSettings</h3>
+<pre class="programlisting">struct TeplSettings;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="TeplSettingsThemeVariant"></a><h3>enum TeplSettingsThemeVariant</h3>
+<p>This enum is intended to be used for controlling the GTK theme preference.</p>
+<p>See also <a class="link" href="TeplSettings.html#TeplSettingsSimpleThemeVariant" title="enum TeplSettingsSimpleThemeVariant"><span class="type">TeplSettingsSimpleThemeVariant</span></a>.</p>
+<div class="refsect3">
+<a name="TeplSettingsThemeVariant.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="TEPL-SETTINGS-THEME-VARIANT-SYSTEM:CAPS"></a>TEPL_SETTINGS_THEME_VARIANT_SYSTEM</p></td>
+<td class="enum_member_description">
+<p>Follow the system's preference.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="TEPL-SETTINGS-THEME-VARIANT-LIGHT:CAPS"></a>TEPL_SETTINGS_THEME_VARIANT_LIGHT</p></td>
+<td class="enum_member_description">
+<p>Force a light theme.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="TEPL-SETTINGS-THEME-VARIANT-DARK:CAPS"></a>TEPL_SETTINGS_THEME_VARIANT_DARK</p></td>
+<td class="enum_member_description">
+<p>Force a dark theme.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-6-10.html#api-index-6.10">6.10</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="TeplSettingsSimpleThemeVariant"></a><h3>enum TeplSettingsSimpleThemeVariant</h3>
+<p>This enum is intended to be used for controlling the GTK theme preference.</p>
+<p>See also <a class="link" href="TeplSettings.html#TeplSettingsThemeVariant" title="enum TeplSettingsThemeVariant"><span class="type">TeplSettingsThemeVariant</span></a>.</p>
+<div class="refsect3">
+<a name="TeplSettingsSimpleThemeVariant.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="TEPL-SETTINGS-SIMPLE-THEME-VARIANT-LIGHT:CAPS"></a>TEPL_SETTINGS_SIMPLE_THEME_VARIANT_LIGHT</p></td>
+<td class="enum_member_description">
+<p>Force a light theme.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="TEPL-SETTINGS-SIMPLE-THEME-VARIANT-DARK:CAPS"></a>TEPL_SETTINGS_SIMPLE_THEME_VARIANT_DARK</p></td>
+<td class="enum_member_description">
+<p>Force a dark theme.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-6-10.html#api-index-6.10">6.10</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="TeplSettings.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="TeplSettings-font-changed"></a><h3>The <code class="literal">“font-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="TeplSettings.html" title="TeplSettings"><span class="type">TeplSettings</span></a> *settings,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>The ::font-changed signal is emitted when the return value of
+<a class="link" href="TeplSettings.html#tepl-settings-get-selected-font" title="tepl_settings_get_selected_font ()"><code class="function">tepl_settings_get_selected_font()</code></a> has potentially changed.</p>
+<p>It takes into account the <em class="parameter"><code>use_default_font_key</code></em>
+ provided with
+<a class="link" href="TeplSettings.html#tepl-settings-provide-font-settings" title="tepl_settings_provide_font_settings ()"><code class="function">tepl_settings_provide_font_settings()</code></a> to avoid unnecessary signal
+emission. In other words, for example if <em class="parameter"><code>use_default_font_key</code></em>
+ is
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>, the signal is not emitted even if the default (system's) font
+has been modified.</p>
+<p>The relation between this signal and a potential zoom in and zoom out
+feature, to temporarily make the font larger or smaller (so the zoom
+level not being stored in <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a>): when this signal is emitted,
+it means that the user has explicitly changed the font setting, and
+as such he or she probably wants to use that font instead. So the
+expected behavior in that case is to reset the zoom level. But it's
+left as an exercise for another class, since <a class="link" href="TeplSettings.html" title="TeplSettings"><span class="type">TeplSettings</span></a> is only
+for <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a>.</p>
+<div class="refsect3">
+<a name="TeplSettings-font-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>settings</p></td>
+<td class="parameter_description"><p>the <a class="link" href="TeplSettings.html" title="TeplSettings"><span class="type">TeplSettings</span></a> emitting the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+<p class="since">Since: <a class="link" href="api-index-6-2.html#api-index-6.2">6.2</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.34.0</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="libgedit-gfls 1 Reference Manual" link="index.html" author="" name="libgedit-gfls-1" version="2" language="c">
+  <chapters>
+    <sub name="libgedit-gfls API Reference" link="api-reference.html">
+      <sub name="Gfls Initialization and Finalization" link="libgedit-gfls-1-Gfls-Initialization-and-Finalization.html"/>
+      <sub name="GflsInputStream" link="libgedit-gfls-1-GflsInputStream.html"/>
+      <sub name="GflsLoaderBasic" link="libgedit-gfls-1-GflsLoaderBasic.html"/>
+      <sub name="GflsUnsavedDocumentTitles" link="GflsUnsavedDocumentTitles.html"/>
+      <sub name="GflsUtf8" link="libgedit-gfls-1-GflsUtf8.html"/>
+    </sub>
+    <sub name="Annexes" link="annexes.html">
+      <sub name="Object Hierarchy" link="object-tree.html"/>
+      <sub name="Annotation Glossary" link="annotation-glossary.html"/>
+      <sub name="Index of all symbols" link="api-index-full.html"/>
+      <sub name="Index of new symbols in 0.1" link="api-index-0-1.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <keyword type="function" name="gfls_init ()" link="libgedit-gfls-1-Gfls-Initialization-and-Finalization.html#gfls-init" since="0.1"/>
+    <keyword type="function" name="gfls_finalize ()" link="libgedit-gfls-1-Gfls-Initialization-and-Finalization.html#gfls-finalize" since="0.1"/>
+    <keyword type="function" name="gfls_input_stream_read_async ()" link="libgedit-gfls-1-GflsInputStream.html#gfls-input-stream-read-async" since="0.1"/>
+    <keyword type="function" name="gfls_input_stream_read_finish ()" link="libgedit-gfls-1-GflsInputStream.html#gfls-input-stream-read-finish" since="0.1"/>
+    <keyword type="function" name="gfls_loader_basic_load_async ()" link="libgedit-gfls-1-GflsLoaderBasic.html#gfls-loader-basic-load-async" since="0.1"/>
+    <keyword type="function" name="gfls_loader_basic_load_finish ()" link="libgedit-gfls-1-GflsLoaderBasic.html#gfls-loader-basic-load-finish" since="0.1"/>
+    <keyword type="macro" name="GFLS_LOADER_ERROR" link="libgedit-gfls-1-GflsLoaderBasic.html#GFLS-LOADER-ERROR:CAPS"/>
+    <keyword type="enum" name="enum GflsLoaderError" link="libgedit-gfls-1-GflsLoaderBasic.html#GflsLoaderError" since="0.1"/>
+    <keyword type="function" name="GflsUnsavedDocumentTitleCallback ()" link="GflsUnsavedDocumentTitles.html#GflsUnsavedDocumentTitleCallback" since="0.1"/>
+    <keyword type="function" name="gfls_unsaved_document_titles_new ()" link="GflsUnsavedDocumentTitles.html#gfls-unsaved-document-titles-new" since="0.1"/>
+    <keyword type="function" name="gfls_unsaved_document_titles_get_default ()" link="GflsUnsavedDocumentTitles.html#gfls-unsaved-document-titles-get-default" since="0.1"/>
+    <keyword type="function" name="gfls_unsaved_document_titles_allocate_number ()" link="GflsUnsavedDocumentTitles.html#gfls-unsaved-document-titles-allocate-number" since="0.1"/>
+    <keyword type="function" name="gfls_unsaved_document_titles_release_number ()" link="GflsUnsavedDocumentTitles.html#gfls-unsaved-document-titles-release-number" since="0.1"/>
+    <keyword type="function" name="gfls_unsaved_document_titles_get_title ()" link="GflsUnsavedDocumentTitles.html#gfls-unsaved-document-titles-get-title" since="0.1"/>
+    <keyword type="function" name="gfls_unsaved_document_titles_set_title_callback ()" link="GflsUnsavedDocumentTitles.html#gfls-unsaved-document-titles-set-title-callback" since="0.1"/>
+    <keyword type="struct" name="struct GflsUnsavedDocumentTitles" link="GflsUnsavedDocumentTitles.html#GflsUnsavedDocumentTitles-struct"/>
+    <keyword type="function" name="gfls_utf8_has_very_long_line ()" link="libgedit-gfls-1-GflsUtf8.html#gfls-utf8-has-very-long-line" since="0.1"/>
+    <keyword type="constant" name="GFLS_LOADER_ERROR_TOO_BIG" link="libgedit-gfls-1-GflsLoaderBasic.html#GFLS-LOADER-ERROR-TOO-BIG:CAPS"/>
+    <keyword type="constant" name="GFLS_LOADER_ERROR_NOT_UTF8" link="libgedit-gfls-1-GflsLoaderBasic.html#GFLS-LOADER-ERROR-NOT-UTF8:CAPS"/>
+    <keyword type="constant" name="GFLS_LOADER_ERROR_HAS_VERY_LONG_LINE" link="libgedit-gfls-1-GflsLoaderBasic.html#GFLS-LOADER-ERROR-HAS-VERY-LONG-LINE:CAPS"/>
+  </functions>
+</book>

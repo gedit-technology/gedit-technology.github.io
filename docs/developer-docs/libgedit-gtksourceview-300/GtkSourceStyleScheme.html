@@ -8,7 +8,7 @@
 <link rel="up" href="styling.html" title="Styling">
 <link rel="prev" href="GtkSourceStyle.html" title="GtkSourceStyle">
 <link rel="next" href="GtkSourceStyleSchemeManager.html" title="GtkSourceStyleSchemeManager">
-<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.34.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -62,10 +62,11 @@
 </td>
 </tr>
 <tr>
-<td class="function_type">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> * const *
+<td class="function_type">
+<a class="link" href="GtkSourceStyleScheme.html#GtkSourceStyleSchemeKind" title="enum GtkSourceStyleSchemeKind"><span class="returnvalue">GtkSourceStyleSchemeKind</span></a>
 </td>
 <td class="function_name">
-<a class="link" href="GtkSourceStyleScheme.html#gtk-source-style-scheme-get-authors" title="gtk_source_style_scheme_get_authors ()">gtk_source_style_scheme_get_authors</a> <span class="c_punctuation">()</span>
+<a class="link" href="GtkSourceStyleScheme.html#gtk-source-style-scheme-get-kind" title="gtk_source_style_scheme_get_kind ()">gtk_source_style_scheme_get_kind</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
 <tr>
@@ -93,15 +94,23 @@
 <col width="150px" class="other_proto_type">
 <col class="other_proto_name">
 </colgroup>
-<tbody><tr>
+<tbody>
+<tr>
 <td class="datatype_keyword">struct</td>
 <td class="function_name"><a class="link" href="GtkSourceStyleScheme.html#GtkSourceStyleScheme-struct" title="struct GtkSourceStyleScheme">GtkSourceStyleScheme</a></td>
-</tr></tbody>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GtkSourceStyleScheme.html#GtkSourceStyleSchemeKind" title="enum GtkSourceStyleSchemeKind">GtkSourceStyleSchemeKind</a></td>
+</tr>
+</tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkSourceStyleScheme.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">╰──</span> GtkSourceStyleSchemeKind
+    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
     <span class="lineart">╰──</span> GtkSourceStyleScheme
 </pre>
 </div>
@@ -211,11 +220,11 @@ string to present to the user. </p>
 </div>
 <hr>
 <div class="refsect2">
-<a name="gtk-source-style-scheme-get-authors"></a><h3>gtk_source_style_scheme_get_authors ()</h3>
-<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> * const *
-gtk_source_style_scheme_get_authors (<em class="parameter"><code><a class="link" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme"><span class="type">GtkSourceStyleScheme</span></a> *scheme</code></em>);</pre>
+<a name="gtk-source-style-scheme-get-kind"></a><h3>gtk_source_style_scheme_get_kind ()</h3>
+<pre class="programlisting"><a class="link" href="GtkSourceStyleScheme.html#GtkSourceStyleSchemeKind" title="enum GtkSourceStyleSchemeKind"><span class="returnvalue">GtkSourceStyleSchemeKind</span></a>
+gtk_source_style_scheme_get_kind (<em class="parameter"><code><a class="link" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme"><span class="type">GtkSourceStyleScheme</span></a> *scheme</code></em>);</pre>
 <div class="refsect3">
-<a name="gtk-source-style-scheme-get-authors.parameters"></a><h4>Parameters</h4>
+<a name="gtk-source-style-scheme-get-kind.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -230,14 +239,11 @@ gtk_source_style_scheme_get_authors (<em class="parameter"><code><a class="link"
 </table></div>
 </div>
 <div class="refsect3">
-<a name="gtk-source-style-scheme-get-authors.returns"></a><h4>Returns</h4>
-<p>a
-<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated array containing the <em class="parameter"><code>scheme</code></em>
-authors, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if no
-author is specified by the style scheme. </p>
-<p><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>][<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> zero-terminated=1][<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+<a name="gtk-source-style-scheme-get-kind.returns"></a><h4>Returns</h4>
+<p> the kind of <em class="parameter"><code>scheme</code></em>
+.</p>
 </div>
-<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+<p class="since">Since: <a class="link" href="api-index-299-2.html#api-index-299.2">299.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -313,9 +319,41 @@ in the <em class="parameter"><code>scheme</code></em>
 <a name="GtkSourceStyleScheme-struct"></a><h3>struct GtkSourceStyleScheme</h3>
 <pre class="programlisting">struct GtkSourceStyleScheme;</pre>
 </div>
+<hr>
+<div class="refsect2">
+<a name="GtkSourceStyleSchemeKind"></a><h3>enum GtkSourceStyleSchemeKind</h3>
+<p>The kind (or category) of a <a class="link" href="GtkSourceStyleScheme.html" title="GtkSourceStyleScheme"><span class="type">GtkSourceStyleScheme</span></a>.</p>
+<div class="refsect3">
+<a name="GtkSourceStyleSchemeKind.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GTK-SOURCE-STYLE-SCHEME-KIND-LIGHT:CAPS"></a>GTK_SOURCE_STYLE_SCHEME_KIND_LIGHT</p></td>
+<td class="enum_member_description">
+<p>Light style.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GTK-SOURCE-STYLE-SCHEME-KIND-DARK:CAPS"></a>GTK_SOURCE_STYLE_SCHEME_KIND_DARK</p></td>
+<td class="enum_member_description">
+<p>Dark style.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-299-2.html#api-index-299.2">299.2</a></p>
+</div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.33.2</div>
+<hr>Generated by GTK-Doc V1.34.0</div>
 </body>
 </html>

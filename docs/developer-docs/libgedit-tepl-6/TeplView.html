@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TeplView: libgedit-tepl 6 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libgedit-tepl 6 Reference Manual">
+<link rel="up" href="framework.html" title="Framework">
+<link rel="prev" href="TeplTabLabel.html" title="TeplTabLabel">
+<link rel="next" href="TeplBuffer.html" title="TeplBuffer">
+<meta name="generator" content="GTK-Doc V1.34.0 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#TeplView.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#TeplView.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#TeplView.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="framework.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="TeplTabLabel.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="TeplBuffer.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="TeplView"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="TeplView.top_of_page"></a>TeplView</span></h2>
+<p>TeplView — Subclass of <a href="../libgedit-gtksourceview-300/GtkSourceView.html#GtkSourceView-struct"><span class="type">GtkSourceView</span></a></p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="TeplView.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TeplView.html#tepl-view-new" title="tepl_view_new ()">tepl_view_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TeplView.html#tepl-view-new-with-buffer" title="tepl_view_new_with_buffer ()">tepl_view_new_with_buffer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="TeplView.html#tepl-view-cut-clipboard" title="tepl_view_cut_clipboard ()">tepl_view_cut_clipboard</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="TeplView.html#tepl-view-copy-clipboard" title="tepl_view_copy_clipboard ()">tepl_view_copy_clipboard</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="TeplView.html#tepl-view-paste-clipboard" title="tepl_view_paste_clipboard ()">tepl_view_paste_clipboard</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="TeplView.html#tepl-view-delete-selection" title="tepl_view_delete_selection ()">tepl_view_delete_selection</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="TeplView.html#tepl-view-select-all" title="tepl_view_select_all ()">tepl_view_select_all</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="TeplView.html#tepl-view-scroll-to-cursor" title="tepl_view_scroll_to_cursor ()">tepl_view_scroll_to_cursor</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="TeplView.html#tepl-view-goto-line" title="tepl_view_goto_line ()">tepl_view_goto_line</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="TeplView.html#tepl-view-goto-line-offset" title="tepl_view_goto_line_offset ()">tepl_view_goto_line_offset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="TeplView.html#tepl-view-select-lines" title="tepl_view_select_lines ()">tepl_view_select_lines</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="TeplView.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="TeplView.html#TeplView-struct" title="TeplView">TeplView</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="TeplView.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct">GtkWidget</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkContainer.html#GtkContainer-struct">GtkContainer</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GtkTextView-struct">GtkTextView</a>
+                    <span class="lineart">╰──</span> <a href="../libgedit-gtksourceview-300/GtkSourceView.html#GtkSourceView-struct">GtkSourceView</a>
+                        <span class="lineart">╰──</span> TeplView
+</pre>
+</div>
+<div class="refsect1">
+<a name="TeplView.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+TeplView implements
+ AtkImplementorIface,  <a href="/usr/share/gtk-doc/html/gtk3/GtkBuildable.html#GtkBuildable-struct">GtkBuildable</a> and  <a href="/usr/share/gtk-doc/html/gtk3/GtkScrollable.html#GtkScrollable-struct">GtkScrollable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="TeplView.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;tepl/tepl.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="TeplView.description"></a><h2>Description</h2>
+<p><a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a> is a subclass of <a href="../libgedit-gtksourceview-300/GtkSourceView.html#GtkSourceView-struct"><span class="type">GtkSourceView</span></a>, to add more features useful for a
+text editor.</p>
+</div>
+<div class="refsect1">
+<a name="TeplView.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="tepl-view-new"></a><h3>tepl_view_new ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+tepl_view_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new <a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a>.</p>
+<p>By default, an empty <a class="link" href="TeplBuffer.html" title="TeplBuffer"><span class="type">TeplBuffer</span></a> will be lazily created and can be retrieved
+with <a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#gtk-text-view-get-buffer"><code class="function">gtk_text_view_get_buffer()</code></a>.</p>
+<p>If you want to specify your own buffer, either override the
+<a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GtkTextViewClass"><span class="type">GtkTextViewClass</span></a> create_buffer factory method, or use
+<a class="link" href="TeplView.html#tepl-view-new-with-buffer" title="tepl_view_new_with_buffer ()"><code class="function">tepl_view_new_with_buffer()</code></a>.</p>
+<div class="refsect3">
+<a name="tepl-view-new.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-1-0.html#api-index-1.0">1.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-view-new-with-buffer"></a><h3>tepl_view_new_with_buffer ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+tepl_view_new_with_buffer (<em class="parameter"><code><a href="../libgedit-gtksourceview-300/GtkSourceBuffer.html#GtkSourceBuffer-struct"><span class="type">GtkSourceBuffer</span></a> *buffer</code></em>);</pre>
+<p>Creates a new <a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a> widget displaying the buffer <em class="parameter"><code>buffer</code></em>
+.</p>
+<div class="refsect3">
+<a name="tepl-view-new-with-buffer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>a <a href="../libgedit-gtksourceview-300/GtkSourceBuffer.html#GtkSourceBuffer-struct"><span class="type">GtkSourceBuffer</span></a> or a subclass of it.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="tepl-view-new-with-buffer.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a>.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-5-0.html#api-index-5.0">5.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-view-cut-clipboard"></a><h3>tepl_view_cut_clipboard ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+tepl_view_cut_clipboard (<em class="parameter"><code><a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a> *view</code></em>);</pre>
+<p>Cuts the clipboard and then scrolls to the cursor position.</p>
+<div class="refsect3">
+<a name="tepl-view-cut-clipboard.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-1-0.html#api-index-1.0">1.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-view-copy-clipboard"></a><h3>tepl_view_copy_clipboard ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+tepl_view_copy_clipboard (<em class="parameter"><code><a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a> *view</code></em>);</pre>
+<p>Copies the clipboard.</p>
+<div class="refsect3">
+<a name="tepl-view-copy-clipboard.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-1-0.html#api-index-1.0">1.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-view-paste-clipboard"></a><h3>tepl_view_paste_clipboard ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+tepl_view_paste_clipboard (<em class="parameter"><code><a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a> *view</code></em>);</pre>
+<p>Pastes the clipboard and then scrolls to the cursor position.</p>
+<div class="refsect3">
+<a name="tepl-view-paste-clipboard.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-1-0.html#api-index-1.0">1.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-view-delete-selection"></a><h3>tepl_view_delete_selection ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+tepl_view_delete_selection (<em class="parameter"><code><a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a> *view</code></em>);</pre>
+<p>Deletes the text currently selected in the <a href="/usr/share/gtk-doc/html/gtk3/GtkTextBuffer.html#GtkTextBuffer-struct"><span class="type">GtkTextBuffer</span></a> associated
+to the view and then scrolls to the cursor position.</p>
+<div class="refsect3">
+<a name="tepl-view-delete-selection.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-1-0.html#api-index-1.0">1.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-view-select-all"></a><h3>tepl_view_select_all ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+tepl_view_select_all (<em class="parameter"><code><a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a> *view</code></em>);</pre>
+<p>Selects all the text.</p>
+<div class="refsect3">
+<a name="tepl-view-select-all.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-1-0.html#api-index-1.0">1.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-view-scroll-to-cursor"></a><h3>tepl_view_scroll_to_cursor ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+tepl_view_scroll_to_cursor (<em class="parameter"><code><a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a> *view</code></em>);</pre>
+<p>Scrolls the <em class="parameter"><code>view</code></em>
+ to the cursor position.</p>
+<div class="refsect3">
+<a name="tepl-view-scroll-to-cursor.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-1-0.html#api-index-1.0">1.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-view-goto-line"></a><h3>tepl_view_goto_line ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+tepl_view_goto_line (<em class="parameter"><code><a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a> *view</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> line</code></em>);</pre>
+<p>Places the cursor at the position returned by
+<a href="/usr/share/gtk-doc/html/gtk3/GtkTextBuffer.html#gtk-text-buffer-get-iter-at-line"><code class="function">gtk_text_buffer_get_iter_at_line()</code></a>, and scrolls to that position.</p>
+<div class="refsect3">
+<a name="tepl-view-goto-line.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>line</p></td>
+<td class="parameter_description"><p>a line number, counting from 0.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="tepl-view-goto-line.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the cursor has been moved exactly to <em class="parameter"><code>line</code></em>
+, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if that
+line didn't exist.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-view-goto-line-offset"></a><h3>tepl_view_goto_line_offset ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+tepl_view_goto_line_offset (<em class="parameter"><code><a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a> *view</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> line</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> line_offset</code></em>);</pre>
+<p>Places the cursor at the position returned by
+<a href="/usr/share/gtk-doc/html/gtk3/GtkTextBuffer.html#gtk-text-buffer-get-iter-at-line-offset"><code class="function">gtk_text_buffer_get_iter_at_line_offset()</code></a>, and scrolls to that position.</p>
+<div class="refsect3">
+<a name="tepl-view-goto-line-offset.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>line</p></td>
+<td class="parameter_description"><p>a line number, counting from 0.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>line_offset</p></td>
+<td class="parameter_description"><p>the line offset, in characters (not bytes).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="tepl-view-goto-line-offset.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the cursor has been moved exactly to <em class="parameter"><code>line</code></em>
+and
+<em class="parameter"><code>line_offset</code></em>
+, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if that position didn't exist.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-view-select-lines"></a><h3>tepl_view_select_lines ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+tepl_view_select_lines (<em class="parameter"><code><a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a> *view</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> start_line</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> end_line</code></em>);</pre>
+<p>Selects the lines between <em class="parameter"><code>start_line</code></em>
+ and <em class="parameter"><code>end_line</code></em>
+ included, counting from
+zero. And then scrolls to the cursor.</p>
+<p>Possible use-case: line numbers coming from a compilation output, to go to
+the place where a warning or error occurred.</p>
+<div class="refsect3">
+<a name="tepl-view-select-lines.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>start_line</p></td>
+<td class="parameter_description"><p>start of the region to select.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>end_line</p></td>
+<td class="parameter_description"><p>end of the region to select.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="TeplView.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="TeplView-struct"></a><h3>TeplView</h3>
+<pre class="programlisting">typedef struct _TeplView TeplView;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.34.0</div>
+</body>
+</html>

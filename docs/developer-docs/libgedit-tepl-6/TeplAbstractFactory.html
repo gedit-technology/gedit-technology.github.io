@@ -1,0 +1,486 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TeplAbstractFactory: libgedit-tepl 6 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libgedit-tepl 6 Reference Manual">
+<link rel="up" href="general.html" title="General">
+<link rel="prev" href="libgedit-tepl-6-Tepl-Initialization-and-Finalization.html" title="Tepl Initialization and Finalization">
+<link rel="next" href="framework.html" title="Framework">
+<meta name="generator" content="GTK-Doc V1.34.0 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#TeplAbstractFactory.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#TeplAbstractFactory.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="general.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgedit-tepl-6-Tepl-Initialization-and-Finalization.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="framework.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="TeplAbstractFactory"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="TeplAbstractFactory.top_of_page"></a>TeplAbstractFactory</span></h2>
+<p>TeplAbstractFactory — Abstract factory singleton class</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="TeplAbstractFactory.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="TeplAbstractFactory.html#tepl-abstract-factory-set-singleton" title="tepl_abstract_factory_set_singleton ()">tepl_abstract_factory_set_singleton</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="returnvalue">TeplAbstractFactory</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TeplAbstractFactory.html#tepl-abstract-factory-get-singleton" title="tepl_abstract_factory_get_singleton ()">tepl_abstract_factory_get_singleton</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="returnvalue">GtkApplicationWindow</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TeplAbstractFactory.html#tepl-abstract-factory-create-main-window" title="tepl_abstract_factory_create_main_window ()">tepl_abstract_factory_create_main_window</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="TeplTab.html" title="TeplTab"><span class="returnvalue">TeplTab</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TeplAbstractFactory.html#tepl-abstract-factory-create-tab" title="tepl_abstract_factory_create_tab ()">tepl_abstract_factory_create_tab</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TeplAbstractFactory.html#tepl-abstract-factory-create-tab-label" title="tepl_abstract_factory_create_tab_label ()">tepl_abstract_factory_create_tab_label</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="TeplFile.html" title="TeplFile"><span class="returnvalue">TeplFile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TeplAbstractFactory.html#tepl-abstract-factory-create-file" title="tepl_abstract_factory_create_file ()">tepl_abstract_factory_create_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="returnvalue">GFile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="TeplAbstractFactory.html#tepl-abstract-factory-create-metadata-manager-file" title="tepl_abstract_factory_create_metadata_manager_file ()">tepl_abstract_factory_create_metadata_manager_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="TeplAbstractFactory.html#tepl-abstract-factory-fill-prefs-dialog" title="tepl_abstract_factory_fill_prefs_dialog ()">tepl_abstract_factory_fill_prefs_dialog</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="TeplAbstractFactory.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="TeplAbstractFactory.html#TeplAbstractFactory-struct" title="struct TeplAbstractFactory">TeplAbstractFactory</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="TeplAbstractFactory.html#TeplAbstractFactoryClass" title="struct TeplAbstractFactoryClass">TeplAbstractFactoryClass</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="TeplAbstractFactory.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> TeplAbstractFactory
+</pre>
+</div>
+<div class="refsect1">
+<a name="TeplAbstractFactory.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;tepl/tepl.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="TeplAbstractFactory.description"></a><h2>Description</h2>
+<p>Tepl uses the <a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="type">TeplAbstractFactory</span></a> singleton to create some objects and
+widgets. By creating a subclass of <a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="type">TeplAbstractFactory</span></a> (to override the
+desired virtual functions) and setting the instance with
+<a class="link" href="TeplAbstractFactory.html#tepl-abstract-factory-set-singleton" title="tepl_abstract_factory_set_singleton ()"><code class="function">tepl_abstract_factory_set_singleton()</code></a>, an application can tell Tepl to create
+custom objects and widgets.</p>
+<p>Note that <a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GtkTextViewClass"><span class="type">GtkTextViewClass</span></a> has the ::create_buffer factory method, that
+<a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a> overrides to create a <a class="link" href="TeplBuffer.html" title="TeplBuffer"><span class="type">TeplBuffer</span></a>. How the <a class="link" href="TeplView.html" title="TeplView"><span class="type">TeplView</span></a> and
+<a class="link" href="TeplBuffer.html" title="TeplBuffer"><span class="type">TeplBuffer</span></a> are created can be customized with the ::create_tab vfunc of
+<a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="type">TeplAbstractFactory</span></a>.</p>
+<p>Recommendation for the subclass name: in Tepl, <a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="type">TeplAbstractFactory</span></a> is an
+abstract class, but in an application it is a concrete class. So
+“MyappFactory” is a better name than “MyappAbstractFactory”.</p>
+</div>
+<div class="refsect1">
+<a name="TeplAbstractFactory.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="tepl-abstract-factory-set-singleton"></a><h3>tepl_abstract_factory_set_singleton ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+tepl_abstract_factory_set_singleton (<em class="parameter"><code><a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="type">TeplAbstractFactory</span></a> *factory</code></em>);</pre>
+<p>Sets the <a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="type">TeplAbstractFactory</span></a> singleton. This should be called early in
+<code class="function">main()</code>, for example just after calling <a class="link" href="libgedit-tepl-6-Tepl-Initialization-and-Finalization.html#tepl-init" title="tepl_init ()"><code class="function">tepl_init()</code></a>.</p>
+<p>This function must be called only once, before the first call to
+<a class="link" href="TeplAbstractFactory.html#tepl-abstract-factory-get-singleton" title="tepl_abstract_factory_get_singleton ()"><code class="function">tepl_abstract_factory_get_singleton()</code></a>.</p>
+<p>Tepl takes ownership of the <em class="parameter"><code>factory</code></em>
+ reference.</p>
+<div class="refsect3">
+<a name="tepl-abstract-factory-set-singleton.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="type">TeplAbstractFactory</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-abstract-factory-get-singleton"></a><h3>tepl_abstract_factory_get_singleton ()</h3>
+<pre class="programlisting"><a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="returnvalue">TeplAbstractFactory</span></a> *
+tepl_abstract_factory_get_singleton (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Gets the <a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="type">TeplAbstractFactory</span></a> singleton instance.</p>
+<p>If <a class="link" href="TeplAbstractFactory.html#tepl-abstract-factory-set-singleton" title="tepl_abstract_factory_set_singleton ()"><code class="function">tepl_abstract_factory_set_singleton()</code></a> has not been called, the singleton
+is created with a <a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="type">TeplAbstractFactory</span></a> instance.</p>
+<div class="refsect3">
+<a name="tepl-abstract-factory-get-singleton.returns"></a><h4>Returns</h4>
+<p>the <a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="type">TeplAbstractFactory</span></a> singleton instance. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-abstract-factory-create-main-window"></a><h3>tepl_abstract_factory_create_main_window ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="returnvalue">GtkApplicationWindow</span></a> *
+tepl_abstract_factory_create_main_window
+                               (<em class="parameter"><code><a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="type">TeplAbstractFactory</span></a> *factory</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#GtkApplication-struct"><span class="type">GtkApplication</span></a> *app</code></em>);</pre>
+<p>Creates a main <a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="type">GtkApplicationWindow</span></a> in the sense of
+<a class="link" href="TeplApplicationWindow.html#tepl-application-window-is-main-window" title="tepl_application_window_is_main_window ()"><code class="function">tepl_application_window_is_main_window()</code></a>.</p>
+<div class="refsect3">
+<a name="tepl-abstract-factory-create-main-window.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>the <a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="type">TeplAbstractFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>app</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#GtkApplication-struct"><span class="type">GtkApplication</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="tepl-abstract-factory-create-main-window.returns"></a><h4>Returns</h4>
+<p>a new main application window, or
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the vfunc is not implemented. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-abstract-factory-create-tab"></a><h3>tepl_abstract_factory_create_tab ()</h3>
+<pre class="programlisting"><a class="link" href="TeplTab.html" title="TeplTab"><span class="returnvalue">TeplTab</span></a> *
+tepl_abstract_factory_create_tab (<em class="parameter"><code><a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="type">TeplAbstractFactory</span></a> *factory</code></em>);</pre>
+<div class="refsect3">
+<a name="tepl-abstract-factory-create-tab.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>the <a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="type">TeplAbstractFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="tepl-abstract-factory-create-tab.returns"></a><h4>Returns</h4>
+<p>a new <a class="link" href="TeplTab.html" title="TeplTab"><span class="type">TeplTab</span></a>. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-abstract-factory-create-tab-label"></a><h3>tepl_abstract_factory_create_tab_label ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+tepl_abstract_factory_create_tab_label
+                               (<em class="parameter"><code><a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="type">TeplAbstractFactory</span></a> *factory</code></em>,
+                                <em class="parameter"><code><a class="link" href="TeplTab.html" title="TeplTab"><span class="type">TeplTab</span></a> *tab</code></em>);</pre>
+<p>Creates a new tab label for <em class="parameter"><code>tab</code></em>
+, suitable for <a href="/usr/share/gtk-doc/html/gtk3/GtkNotebook.html#gtk-notebook-set-tab-label"><code class="function">gtk_notebook_set_tab_label()</code></a>.</p>
+<div class="refsect3">
+<a name="tepl-abstract-factory-create-tab-label.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>the <a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="type">TeplAbstractFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tab</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplTab.html" title="TeplTab"><span class="type">TeplTab</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="tepl-abstract-factory-create-tab-label.returns"></a><h4>Returns</h4>
+<p>a new <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a>, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for the
+default tab label (“page N” with <a href="/usr/share/gtk-doc/html/gtk3/GtkNotebook.html#GtkNotebook-struct"><span class="type">GtkNotebook</span></a>). </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-abstract-factory-create-file"></a><h3>tepl_abstract_factory_create_file ()</h3>
+<pre class="programlisting"><a class="link" href="TeplFile.html" title="TeplFile"><span class="returnvalue">TeplFile</span></a> *
+tepl_abstract_factory_create_file (<em class="parameter"><code><a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="type">TeplAbstractFactory</span></a> *factory</code></em>);</pre>
+<div class="refsect3">
+<a name="tepl-abstract-factory-create-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>the <a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="type">TeplAbstractFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="tepl-abstract-factory-create-file.returns"></a><h4>Returns</h4>
+<p>a new <a class="link" href="TeplFile.html" title="TeplFile"><span class="type">TeplFile</span></a>. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-4-0.html#api-index-4.0">4.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-abstract-factory-create-metadata-manager-file"></a><h3>tepl_abstract_factory_create_metadata_manager_file ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="returnvalue">GFile</span></a> *
+tepl_abstract_factory_create_metadata_manager_file
+                               (<em class="parameter"><code><a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="type">TeplAbstractFactory</span></a> *factory</code></em>);</pre>
+<p>Creates a new <a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a> that is then intended to be used as an argument to
+<a class="link" href="TeplMetadataManager.html#tepl-metadata-manager-load-from-disk" title="tepl_metadata_manager_load_from_disk ()"><code class="function">tepl_metadata_manager_load_from_disk()</code></a> and
+<a class="link" href="TeplMetadataManager.html#tepl-metadata-manager-save-to-disk" title="tepl_metadata_manager_save_to_disk ()"><code class="function">tepl_metadata_manager_save_to_disk()</code></a>. This function just creates the <a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a>
+object, it doesn't call any <a class="link" href="TeplMetadataManager.html" title="TeplMetadataManager"><span class="type">TeplMetadataManager</span></a> function.</p>
+<div class="refsect3">
+<a name="tepl-abstract-factory-create-metadata-manager-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>the <a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="type">TeplAbstractFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="tepl-abstract-factory-create-metadata-manager-file.returns"></a><h4>Returns</h4>
+<p>a new <a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a>, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the vfunc is
+not implemented. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-5-0.html#api-index-5.0">5.0</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-abstract-factory-fill-prefs-dialog"></a><h3>tepl_abstract_factory_fill_prefs_dialog ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+tepl_abstract_factory_fill_prefs_dialog
+                               (<em class="parameter"><code><a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="type">TeplAbstractFactory</span></a> *factory</code></em>,
+                                <em class="parameter"><code><a class="link" href="TeplPrefsDialog.html" title="TeplPrefsDialog"><span class="type">TeplPrefsDialog</span></a> *dialog</code></em>);</pre>
+<p><em class="parameter"><code>dialog</code></em>
+ is a newly-created <a class="link" href="TeplPrefsDialog.html" title="TeplPrefsDialog"><span class="type">TeplPrefsDialog</span></a>. This function fills <em class="parameter"><code>dialog</code></em>
+ with
+the intended content.</p>
+<div class="refsect3">
+<a name="tepl-abstract-factory-fill-prefs-dialog.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>the <a class="link" href="TeplAbstractFactory.html" title="TeplAbstractFactory"><span class="type">TeplAbstractFactory</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dialog</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplPrefsDialog.html" title="TeplPrefsDialog"><span class="type">TeplPrefsDialog</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-6-2.html#api-index-6.2">6.2</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="TeplAbstractFactory.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="TeplAbstractFactory-struct"></a><h3>struct TeplAbstractFactory</h3>
+<pre class="programlisting">struct TeplAbstractFactory;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="TeplAbstractFactoryClass"></a><h3>struct TeplAbstractFactoryClass</h3>
+<pre class="programlisting">struct TeplAbstractFactoryClass {
+	GObjectClass parent_class;
+
+	GtkApplicationWindow * (* create_main_window)			(TeplAbstractFactory *factory,
+									 GtkApplication      *app);
+
+	TeplTab *		(* create_tab)				(TeplAbstractFactory *factory);
+
+	GtkWidget *		(* create_tab_label)			(TeplAbstractFactory *factory,
+									 TeplTab             *tab);
+
+	TeplFile *		(* create_file)				(TeplAbstractFactory *factory);
+
+	GFile *			(* create_metadata_manager_file) (TeplAbstractFactory *factory);
+
+	void			(* fill_prefs_dialog)			(TeplAbstractFactory *factory,
+									 TeplPrefsDialog     *dialog);
+};
+</pre>
+<div class="refsect3">
+<a name="TeplAbstractFactoryClass.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="TeplAbstractFactoryClass.create-main-window"></a>create_main_window</code></em> ()</p></td>
+<td class="struct_member_description"><p>Virtual function pointer for
+<a class="link" href="TeplAbstractFactory.html#tepl-abstract-factory-create-main-window" title="tepl_abstract_factory_create_main_window ()"><code class="function">tepl_abstract_factory_create_main_window()</code></a>. It is not implemented by
+default.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="TeplAbstractFactoryClass.create-tab"></a>create_tab</code></em> ()</p></td>
+<td class="struct_member_description"><p>Virtual function pointer for <a class="link" href="TeplAbstractFactory.html#tepl-abstract-factory-create-tab" title="tepl_abstract_factory_create_tab ()"><code class="function">tepl_abstract_factory_create_tab()</code></a>.
+By default the <a class="link" href="TeplTab.html" title="TeplTab"><span class="type">TeplTab</span></a> is created with <a class="link" href="TeplTab.html#tepl-tab-new" title="tepl_tab_new ()"><code class="function">tepl_tab_new()</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="TeplAbstractFactoryClass.create-tab-label"></a>create_tab_label</code></em> ()</p></td>
+<td class="struct_member_description"><p>Virtual function pointer for
+<a class="link" href="TeplAbstractFactory.html#tepl-abstract-factory-create-tab-label" title="tepl_abstract_factory_create_tab_label ()"><code class="function">tepl_abstract_factory_create_tab_label()</code></a>. By default the tab label is
+created with <a class="link" href="TeplTabLabel.html#tepl-tab-label-new" title="tepl_tab_label_new ()"><code class="function">tepl_tab_label_new()</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="TeplAbstractFactoryClass.create-file"></a>create_file</code></em> ()</p></td>
+<td class="struct_member_description"><p>Virtual function pointer for
+<a class="link" href="TeplAbstractFactory.html#tepl-abstract-factory-create-file" title="tepl_abstract_factory_create_file ()"><code class="function">tepl_abstract_factory_create_file()</code></a>. By default the <a class="link" href="TeplFile.html" title="TeplFile"><span class="type">TeplFile</span></a> is created
+with <a class="link" href="TeplFile.html#tepl-file-new" title="tepl_file_new ()"><code class="function">tepl_file_new()</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="TeplAbstractFactoryClass.create-metadata-manager-file"></a>create_metadata_manager_file</code></em> ()</p></td>
+<td class="struct_member_description"><p>Virtual function pointer for
+<a class="link" href="TeplAbstractFactory.html#tepl-abstract-factory-create-metadata-manager-file" title="tepl_abstract_factory_create_metadata_manager_file ()"><code class="function">tepl_abstract_factory_create_metadata_manager_file()</code></a>. It is not implemented
+by default.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="TeplAbstractFactoryClass.fill-prefs-dialog"></a>fill_prefs_dialog</code></em> ()</p></td>
+<td class="struct_member_description"><p>Virtual function pointer for
+<a class="link" href="TeplAbstractFactory.html#tepl-abstract-factory-fill-prefs-dialog" title="tepl_abstract_factory_fill_prefs_dialog ()"><code class="function">tepl_abstract_factory_fill_prefs_dialog()</code></a>. It is not implemented by
+default.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.34.0</div>
+</body>
+</html>

@@ -5,10 +5,10 @@
 <title>GeditWindow: gedit Reference Manual</title>
 <meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="gedit Reference Manual">
-<link rel="up" href="api-reference.html" title="Part I. API Reference">
-<link rel="prev" href="GeditViewActivatable.html" title="GeditViewActivatable">
+<link rel="up" href="ch01.html" title="Main Classes">
+<link rel="prev" href="GeditAppActivatable.html" title="GeditAppActivatable">
 <link rel="next" href="GeditWindowActivatable.html" title="GeditWindowActivatable">
-<meta name="generator" content="GTK-Doc V1.33.2 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.34.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -22,8 +22,8 @@
                   <a href="#GeditWindow.signals" class="shortcut">Signals</a></span>
 </td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
-<td><a accesskey="u" href="api-reference.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
-<td><a accesskey="p" href="GeditViewActivatable.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GeditAppActivatable.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
 <td><a accesskey="n" href="GeditWindowActivatable.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
 </tr></table>
 <div class="refentry">
@@ -31,7 +31,7 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="GeditWindow.top_of_page"></a>GeditWindow</span></h2>
-<p>GeditWindow</p>
+<p>GeditWindow — A main window</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -77,14 +77,6 @@
 </tr>
 <tr>
 <td class="function_type">
-<a class="link" href="GeditTab.html" title="GeditTab"><span class="returnvalue">GeditTab</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="GeditWindow.html#gedit-window-get-active-tab" title="gedit_window_get_active_tab ()">gedit_window_get_active_tab</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
 <span class="returnvalue">void</span>
 </td>
 <td class="function_name">
@@ -93,7 +85,15 @@
 </tr>
 <tr>
 <td class="function_type">
-<a class="link" href="gedit-gedit-view.html#GeditView"><span class="returnvalue">GeditView</span></a> *
+<a class="link" href="GeditTab.html" title="GeditTab"><span class="returnvalue">GeditTab</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GeditWindow.html#gedit-window-get-active-tab" title="gedit_window_get_active_tab ()">gedit_window_get_active_tab</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GeditView.html" title="GeditView"><span class="returnvalue">GeditView</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="GeditWindow.html#gedit-window-get-active-view" title="gedit_window_get_active_view ()">gedit_window_get_active_view</a> <span class="c_punctuation">()</span>
@@ -105,6 +105,22 @@
 </td>
 <td class="function_name">
 <a class="link" href="GeditWindow.html#gedit-window-get-active-document" title="gedit_window_get_active_document ()">gedit_window_get_active_document</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GeditTab.html" title="GeditTab"><span class="returnvalue">GeditTab</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GeditWindow.html#gedit-window-get-tab-from-location" title="gedit_window_get_tab_from_location ()">gedit_window_get_tab_from_location</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GeditWindow.html#gedit-window-get-views" title="gedit_window_get_views ()">gedit_window_get_views</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
 <tr>
@@ -125,23 +141,7 @@
 </tr>
 <tr>
 <td class="function_type">
-<a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="GeditWindow.html#gedit-window-get-views" title="gedit_window_get_views ()">gedit_window_get_views</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<a href="/usr/share/gtk-doc/html/gtk3/GtkWindowGroup.html#GtkWindowGroup-struct"><span class="returnvalue">GtkWindowGroup</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="GeditWindow.html#gedit-window-get-group" title="gedit_window_get_group ()">gedit_window_get_group</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<a href="../tepl-6/TeplPanel.html#TeplPanel-struct"><span class="returnvalue">TeplPanel</span></a> *
+<a href="../libgedit-tepl-6/TeplPanel.html#TeplPanel-struct"><span class="returnvalue">TeplPanel</span></a> *
 </td>
 <td class="function_name">
 <a class="link" href="GeditWindow.html#gedit-window-get-side-panel" title="gedit_window_get_side_panel ()">gedit_window_get_side_panel</a> <span class="c_punctuation">()</span>
@@ -165,18 +165,10 @@
 </tr>
 <tr>
 <td class="function_type">
-<a class="link" href="GeditWindow.html#GeditWindowState" title="enum GeditWindowState"><span class="returnvalue">GeditWindowState</span></a>
+<a href="/usr/share/gtk-doc/html/gtk3/GtkWindowGroup.html#GtkWindowGroup-struct"><span class="returnvalue">GtkWindowGroup</span></a> *
 </td>
 <td class="function_name">
-<a class="link" href="GeditWindow.html#gedit-window-get-state" title="gedit_window_get_state ()">gedit_window_get_state</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<a class="link" href="GeditTab.html" title="GeditTab"><span class="returnvalue">GeditTab</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="GeditWindow.html#gedit-window-get-tab-from-location" title="gedit_window_get_tab_from_location ()">gedit_window_get_tab_from_location</a> <span class="c_punctuation">()</span>
+<a class="link" href="GeditWindow.html#gedit-window-get-group" title="gedit_window_get_group ()">gedit_window_get_group</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
 <tr>
@@ -185,6 +177,14 @@
 </td>
 <td class="function_name">
 <a class="link" href="GeditWindow.html#gedit-window-get-message-bus" title="gedit_window_get_message_bus ()">gedit_window_get_message_bus</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GeditWindow.html#GeditWindowState" title="enum GeditWindowState"><span class="returnvalue">GeditWindowState</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GeditWindow.html#gedit-window-get-state" title="gedit_window_get_state ()">gedit_window_get_state</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
 </tbody>
@@ -221,22 +221,12 @@
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
-<td class="signal_name"><a class="link" href="GeditWindow.html#GeditWindow-active-tab-state-changed" title="The “active-tab-state-changed” signal">active-tab-state-changed</a></td>
-<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
-</tr>
-<tr>
-<td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GeditWindow.html#GeditWindow-tab-added" title="The “tab-added” signal">tab-added</a></td>
 <td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 <tr>
 <td class="signal_type"><span class="returnvalue">void</span></td>
 <td class="signal_name"><a class="link" href="GeditWindow.html#GeditWindow-tab-removed" title="The “tab-removed” signal">tab-removed</a></td>
-<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
-</tr>
-<tr>
-<td class="signal_type"><span class="returnvalue">void</span></td>
-<td class="signal_name"><a class="link" href="GeditWindow.html#GeditWindow-tabs-reordered" title="The “tabs-reordered” signal">tabs-reordered</a></td>
 <td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
 </tr>
 </tbody>
@@ -283,6 +273,8 @@ GeditWindow implements
 </div>
 <div class="refsect1">
 <a name="GeditWindow.description"></a><h2>Description</h2>
+<p><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> is a main window, a subclass of <a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="type">GtkApplicationWindow</span></a>.</p>
+<p>It contains <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a>'s.</p>
 </div>
 <div class="refsect1">
 <a name="GeditWindow.functions_details"></a><h2>Functions</h2>
@@ -339,12 +331,12 @@ gedit_window_close_tab (<em class="parameter"><code><a class="link" href="GeditW
 <tbody>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>tab</p></td>
-<td class="parameter_description"><p>the <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a> to close</p></td>
+<td class="parameter_description"><p>the <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a> to close.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -356,7 +348,8 @@ gedit_window_close_tab (<em class="parameter"><code><a class="link" href="GeditW
 <a name="gedit-window-close-all-tabs"></a><h3>gedit_window_close_all_tabs ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gedit_window_close_all_tabs (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>);</pre>
-<p>Closes all opened tabs.</p>
+<p>Closes all tabs of <em class="parameter"><code>window</code></em>
+.</p>
 <div class="refsect3">
 <a name="gedit-window-close-all-tabs.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -367,7 +360,7 @@ gedit_window_close_all_tabs (<em class="parameter"><code><a class="link" href="G
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -379,7 +372,7 @@ gedit_window_close_all_tabs (<em class="parameter"><code><a class="link" href="G
 <pre class="programlisting"><span class="returnvalue">void</span>
 gedit_window_close_tabs (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>,
                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *tabs</code></em>);</pre>
-<p>Closes all tabs specified by <em class="parameter"><code>tabs</code></em>
+<p>Closes all tabs specified in <em class="parameter"><code>tabs</code></em>
 .</p>
 <div class="refsect3">
 <a name="gedit-window-close-tabs.parameters"></a><h4>Parameters</h4>
@@ -392,45 +385,16 @@ gedit_window_close_tabs (<em class="parameter"><code><a class="link" href="Gedit
 <tbody>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>tabs</p></td>
-<td class="parameter_description"><p>a list of <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a>. </p></td>
-<td class="parameter_annotations"><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> Gedit.Tab]</span></td>
+<td class="parameter_description"><p>a list of <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a>'s. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GeditTab]</span></td>
 </tr>
 </tbody>
 </table></div>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="gedit-window-get-active-tab"></a><h3>gedit_window_get_active_tab ()</h3>
-<pre class="programlisting"><a class="link" href="GeditTab.html" title="GeditTab"><span class="returnvalue">GeditTab</span></a> *
-gedit_window_get_active_tab (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>);</pre>
-<p>Gets the active <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a> in the <em class="parameter"><code>window</code></em>
-.</p>
-<div class="refsect3">
-<a name="gedit-window-get-active-tab.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a GeditWindow</p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gedit-window-get-active-tab.returns"></a><h4>Returns</h4>
-<p>the active <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a> in the <em class="parameter"><code>window</code></em>
-. </p>
-<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 </div>
 <hr>
@@ -439,7 +403,7 @@ gedit_window_get_active_tab (<em class="parameter"><code><a class="link" href="G
 <pre class="programlisting"><span class="returnvalue">void</span>
 gedit_window_set_active_tab (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>,
                              <em class="parameter"><code><a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a> *tab</code></em>);</pre>
-<p>Switches to the tab that matches with <em class="parameter"><code>tab</code></em>
+<p>Switches to <em class="parameter"><code>tab</code></em>
 .</p>
 <div class="refsect3">
 <a name="gedit-window-set-active-tab.parameters"></a><h4>Parameters</h4>
@@ -452,12 +416,12 @@ gedit_window_set_active_tab (<em class="parameter"><code><a class="link" href="G
 <tbody>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>tab</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a></p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -466,8 +430,35 @@ gedit_window_set_active_tab (<em class="parameter"><code><a class="link" href="G
 </div>
 <hr>
 <div class="refsect2">
+<a name="gedit-window-get-active-tab"></a><h3>gedit_window_get_active_tab ()</h3>
+<pre class="programlisting"><a class="link" href="GeditTab.html" title="GeditTab"><span class="returnvalue">GeditTab</span></a> *
+gedit_window_get_active_tab (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>);</pre>
+<div class="refsect3">
+<a name="gedit-window-get-active-tab.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gedit-window-get-active-tab.returns"></a><h4>Returns</h4>
+<p>the active <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a> of <em class="parameter"><code>window</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
 <a name="gedit-window-get-active-view"></a><h3>gedit_window_get_active_view ()</h3>
-<pre class="programlisting"><a class="link" href="gedit-gedit-view.html#GeditView"><span class="returnvalue">GeditView</span></a> *
+<pre class="programlisting"><a class="link" href="GeditView.html" title="GeditView"><span class="returnvalue">GeditView</span></a> *
 gedit_window_get_active_view (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>);</pre>
 <div class="refsect3">
 <a name="gedit-window-get-active-view.parameters"></a><h4>Parameters</h4>
@@ -486,8 +477,9 @@ gedit_window_get_active_view (<em class="parameter"><code><a class="link" href="
 </div>
 <div class="refsect3">
 <a name="gedit-window-get-active-view.returns"></a><h4>Returns</h4>
-<p>the active <a class="link" href="gedit-gedit-view.html#GeditView"><span class="type">GeditView</span></a>. </p>
-<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p>the active <a class="link" href="GeditView.html" title="GeditView"><span class="type">GeditView</span></a> of <em class="parameter"><code>window</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
 </div>
 </div>
 <hr>
@@ -512,233 +504,9 @@ gedit_window_get_active_document (<em class="parameter"><code><a class="link" hr
 </div>
 <div class="refsect3">
 <a name="gedit-window-get-active-document.returns"></a><h4>Returns</h4>
-<p>the active <a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a>. </p>
-<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="gedit-window-get-documents"></a><h3>gedit_window_get_documents ()</h3>
-<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
-gedit_window_get_documents (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>);</pre>
-<p>Gets a newly allocated list with all the documents in the window.
-This list must be freed.</p>
-<div class="refsect3">
-<a name="gedit-window-get-documents.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a></p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gedit-window-get-documents.returns"></a><h4>Returns</h4>
-<p>a newly
-allocated list with all the documents in the window. </p>
-<p><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> Gedit.Document][<acronym title="The caller owns the data container, but not the data inside it."><span class="acronym">transfer container</span></acronym>]</span></p>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="gedit-window-get-unsaved-documents"></a><h3>gedit_window_get_unsaved_documents ()</h3>
-<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
-gedit_window_get_unsaved_documents (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>);</pre>
-<p>Gets the list of documents that need to be saved before closing the window.</p>
-<div class="refsect3">
-<a name="gedit-window-get-unsaved-documents.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a></p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gedit-window-get-unsaved-documents.returns"></a><h4>Returns</h4>
-<p>a list of
-<a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a> that need to be saved before closing the window. </p>
-<p><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> Gedit.Document][<acronym title="The caller owns the data container, but not the data inside it."><span class="acronym">transfer container</span></acronym>]</span></p>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="gedit-window-get-views"></a><h3>gedit_window_get_views ()</h3>
-<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
-gedit_window_get_views (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>);</pre>
-<p>Gets a list with all the views in the window. This list must be freed.</p>
-<div class="refsect3">
-<a name="gedit-window-get-views.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a></p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gedit-window-get-views.returns"></a><h4>Returns</h4>
-<p>a newly allocated
-list with all the views in the window. </p>
-<p><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> Gedit.View][<acronym title="The caller owns the data container, but not the data inside it."><span class="acronym">transfer container</span></acronym>]</span></p>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="gedit-window-get-group"></a><h3>gedit_window_get_group ()</h3>
-<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWindowGroup.html#GtkWindowGroup-struct"><span class="returnvalue">GtkWindowGroup</span></a> *
-gedit_window_get_group (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>);</pre>
-<p>Gets the <a href="/usr/share/gtk-doc/html/gtk3/GtkWindowGroup.html#GtkWindowGroup-struct"><span class="type">GtkWindowGroup</span></a> in which <em class="parameter"><code>window</code></em>
- resides.</p>
-<div class="refsect3">
-<a name="gedit-window-get-group.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a></p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gedit-window-get-group.returns"></a><h4>Returns</h4>
-<p>the <a href="/usr/share/gtk-doc/html/gtk3/GtkWindowGroup.html#GtkWindowGroup-struct"><span class="type">GtkWindowGroup</span></a>. </p>
-<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="gedit-window-get-side-panel"></a><h3>gedit_window_get_side_panel ()</h3>
-<pre class="programlisting"><a href="../tepl-6/TeplPanel.html#TeplPanel-struct"><span class="returnvalue">TeplPanel</span></a> *
-gedit_window_get_side_panel (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>);</pre>
-<div class="refsect3">
-<a name="gedit-window-get-side-panel.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a></p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gedit-window-get-side-panel.returns"></a><h4>Returns</h4>
-<p>the side panel. </p>
-<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
-</div>
-<p class="since">Since: <a class="link" href="ix06.html#api-index-46">46</a></p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="gedit-window-get-bottom-panel"></a><h3>gedit_window_get_bottom_panel ()</h3>
-<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
-gedit_window_get_bottom_panel (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>);</pre>
-<p>Gets the bottom panel of the <em class="parameter"><code>window</code></em>
-.</p>
-<div class="refsect3">
-<a name="gedit-window-get-bottom-panel.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a></p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gedit-window-get-bottom-panel.returns"></a><h4>Returns</h4>
-<p>the bottom panel's <a href="/usr/share/gtk-doc/html/gtk3/GtkStack.html#GtkStack-struct"><span class="type">GtkStack</span></a>. </p>
-<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="gedit-window-get-statusbar"></a><h3>gedit_window_get_statusbar ()</h3>
-<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
-gedit_window_get_statusbar (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>);</pre>
-<p>Gets the <a class="link" href="GeditStatusbar.html" title="GeditStatusbar"><span class="type">GeditStatusbar</span></a> of the <em class="parameter"><code>window</code></em>
-.</p>
-<div class="refsect3">
-<a name="gedit-window-get-statusbar.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a></p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gedit-window-get-statusbar.returns"></a><h4>Returns</h4>
-<p>the <a class="link" href="GeditStatusbar.html" title="GeditStatusbar"><span class="type">GeditStatusbar</span></a> of the <em class="parameter"><code>window</code></em>
+<p>the active <a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a> of <em class="parameter"><code>window</code></em>
 . </p>
-<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
-</div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="gedit-window-get-state"></a><h3>gedit_window_get_state ()</h3>
-<pre class="programlisting"><a class="link" href="GeditWindow.html#GeditWindowState" title="enum GeditWindowState"><span class="returnvalue">GeditWindowState</span></a>
-gedit_window_get_state (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>);</pre>
-<p>Retrieves the state of the <em class="parameter"><code>window</code></em>
-.</p>
-<div class="refsect3">
-<a name="gedit-window-get-state.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a></p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gedit-window-get-state.returns"></a><h4>Returns</h4>
-<p> the current <a class="link" href="GeditWindow.html#GeditWindowState" title="enum GeditWindowState"><span class="type">GeditWindowState</span></a> of the <em class="parameter"><code>window</code></em>
-.</p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
 </div>
 </div>
 <hr>
@@ -747,8 +515,6 @@ gedit_window_get_state (<em class="parameter"><code><a class="link" href="GeditW
 <pre class="programlisting"><a class="link" href="GeditTab.html" title="GeditTab"><span class="returnvalue">GeditTab</span></a> *
 gedit_window_get_tab_from_location (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>,
                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a> *location</code></em>);</pre>
-<p>Gets the <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a> that matches with the given <em class="parameter"><code>location</code></em>
-.</p>
 <div class="refsect3">
 <a name="gedit-window-get-tab-from-location.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -760,12 +526,12 @@ gedit_window_get_tab_from_location (<em class="parameter"><code><a class="link" 
 <tbody>
 <tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
 <td class="parameter_name"><p>location</p></td>
-<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a></p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -773,8 +539,202 @@ gedit_window_get_tab_from_location (<em class="parameter"><code><a class="link" 
 </div>
 <div class="refsect3">
 <a name="gedit-window-get-tab-from-location.returns"></a><h4>Returns</h4>
-<p>the <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a> that matches with the given <em class="parameter"><code>location</code></em>
+<p>the <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a> that matches the given <em class="parameter"><code>location</code></em>
 . </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-window-get-views"></a><h3>gedit_window_get_views ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+gedit_window_get_views (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>);</pre>
+<div class="refsect3">
+<a name="gedit-window-get-views.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gedit-window-get-views.returns"></a><h4>Returns</h4>
+<p>a newly allocated
+list with all the <a class="link" href="GeditView.html" title="GeditView"><span class="type">GeditView</span></a>'s currently part of <em class="parameter"><code>window</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GeditView][<acronym title="The caller owns the data container, but not the data inside it."><span class="acronym">transfer container</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-window-get-documents"></a><h3>gedit_window_get_documents ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+gedit_window_get_documents (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>);</pre>
+<div class="refsect3">
+<a name="gedit-window-get-documents.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gedit-window-get-documents.returns"></a><h4>Returns</h4>
+<p>a newly allocated
+list with all the <a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a>'s currently part of <em class="parameter"><code>window</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GeditDocument][<acronym title="The caller owns the data container, but not the data inside it."><span class="acronym">transfer container</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-window-get-unsaved-documents"></a><h3>gedit_window_get_unsaved_documents ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+gedit_window_get_unsaved_documents (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>);</pre>
+<div class="refsect3">
+<a name="gedit-window-get-unsaved-documents.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gedit-window-get-unsaved-documents.returns"></a><h4>Returns</h4>
+<p>a newly allocated
+list of <a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a>'s part of <em class="parameter"><code>window</code></em>
+that currently have unsaved changes. </p>
+<p><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GeditDocument][<acronym title="The caller owns the data container, but not the data inside it."><span class="acronym">transfer container</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-window-get-side-panel"></a><h3>gedit_window_get_side_panel ()</h3>
+<pre class="programlisting"><a href="../libgedit-tepl-6/TeplPanel.html#TeplPanel-struct"><span class="returnvalue">TeplPanel</span></a> *
+gedit_window_get_side_panel (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>);</pre>
+<div class="refsect3">
+<a name="gedit-window-get-side-panel.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gedit-window-get-side-panel.returns"></a><h4>Returns</h4>
+<p>the side panel of <em class="parameter"><code>window</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="ix06.html#api-index-46">46</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-window-get-bottom-panel"></a><h3>gedit_window_get_bottom_panel ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gedit_window_get_bottom_panel (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>);</pre>
+<div class="refsect3">
+<a name="gedit-window-get-bottom-panel.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gedit-window-get-bottom-panel.returns"></a><h4>Returns</h4>
+<p>the bottom panel's <a href="/usr/share/gtk-doc/html/gtk3/GtkStack.html#GtkStack-struct"><span class="type">GtkStack</span></a> that is part of
+<em class="parameter"><code>window</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-window-get-statusbar"></a><h3>gedit_window_get_statusbar ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gedit_window_get_statusbar (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>);</pre>
+<div class="refsect3">
+<a name="gedit-window-get-statusbar.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gedit-window-get-statusbar.returns"></a><h4>Returns</h4>
+<p>the <a class="link" href="GeditStatusbar.html" title="GeditStatusbar"><span class="type">GeditStatusbar</span></a> of <em class="parameter"><code>window</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-window-get-group"></a><h3>gedit_window_get_group ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWindowGroup.html#GtkWindowGroup-struct"><span class="returnvalue">GtkWindowGroup</span></a> *
+gedit_window_get_group (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>);</pre>
+<div class="refsect3">
+<a name="gedit-window-get-group.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gedit-window-get-group.returns"></a><h4>Returns</h4>
+<p>the <a href="/usr/share/gtk-doc/html/gtk3/GtkWindowGroup.html#GtkWindowGroup-struct"><span class="type">GtkWindowGroup</span></a> in which <em class="parameter"><code>window</code></em>
+resides. </p>
 <p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 </div>
@@ -783,9 +743,6 @@ gedit_window_get_tab_from_location (<em class="parameter"><code><a class="link" 
 <a name="gedit-window-get-message-bus"></a><h3>gedit_window_get_message_bus ()</h3>
 <pre class="programlisting"><a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="returnvalue">GeditMessageBus</span></a> *
 gedit_window_get_message_bus (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>);</pre>
-<p>Gets the <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> associated with <em class="parameter"><code>window</code></em>
-. The returned reference
-is owned by the window and should not be unreffed.</p>
 <div class="refsect3">
 <a name="gedit-window-get-message-bus.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -796,7 +753,7 @@ is owned by the window and should not be unreffed.</p>
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>window</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a></p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -804,8 +761,35 @@ is owned by the window and should not be unreffed.</p>
 <div class="refsect3">
 <a name="gedit-window-get-message-bus.returns"></a><h4>Returns</h4>
 <p>the <a class="link" href="GeditMessageBus.html" title="GeditMessageBus"><span class="type">GeditMessageBus</span></a> associated with <em class="parameter"><code>window</code></em>
-. </p>
+. The
+returned reference is owned by the window and should not be unreffed. </p>
 <p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gedit-window-get-state"></a><h3>gedit_window_get_state ()</h3>
+<pre class="programlisting"><a class="link" href="GeditWindow.html#GeditWindowState" title="enum GeditWindowState"><span class="returnvalue">GeditWindowState</span></a>
+gedit_window_get_state (<em class="parameter"><code><a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window</code></em>);</pre>
+<div class="refsect3">
+<a name="gedit-window-get-state.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gedit-window-get-state.returns"></a><h4>Returns</h4>
+<p> the current <a class="link" href="GeditWindow.html#GeditWindowState" title="enum GeditWindowState"><span class="type">GeditWindowState</span></a> of <em class="parameter"><code>window</code></em>
+.</p>
 </div>
 </div>
 </div>
@@ -818,6 +802,10 @@ is owned by the window and should not be unreffed.</p>
 <hr>
 <div class="refsect2">
 <a name="GeditWindowState"></a><h3>enum GeditWindowState</h3>
+<p>Flags for the state of a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a>. The enumerators are flags and can be
+combined. <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> combines and summarizes the state of its <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a>'s
+into one <a class="link" href="GeditWindow.html#GeditWindowState" title="enum GeditWindowState"><span class="type">GeditWindowState</span></a> value. See <a class="link" href="GeditTab.html#GeditTabState" title="enum GeditTabState"><span class="type">GeditTabState</span></a> for the more precise
+states.</p>
 <div class="refsect3">
 <a name="GeditWindowState.members"></a><h4>Members</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -829,28 +817,38 @@ is owned by the window and should not be unreffed.</p>
 <tbody>
 <tr>
 <td class="enum_member_name"><p><a name="GEDIT-WINDOW-STATE-NORMAL:CAPS"></a>GEDIT_WINDOW_STATE_NORMAL</p></td>
-<td> </td>
-<td> </td>
+<td class="enum_member_description">
+<p>No flags.</p>
+</td>
+<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GEDIT-WINDOW-STATE-SAVING:CAPS"></a>GEDIT_WINDOW_STATE_SAVING</p></td>
-<td> </td>
-<td> </td>
+<td class="enum_member_description">
+<p>A tab is in saving state.</p>
+</td>
+<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GEDIT-WINDOW-STATE-PRINTING:CAPS"></a>GEDIT_WINDOW_STATE_PRINTING</p></td>
-<td> </td>
-<td> </td>
+<td class="enum_member_description">
+<p>There is a printing operation on a tab.</p>
+</td>
+<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GEDIT-WINDOW-STATE-LOADING:CAPS"></a>GEDIT_WINDOW_STATE_LOADING</p></td>
-<td> </td>
-<td> </td>
+<td class="enum_member_description">
+<p>A tab is in loading or reverting state.</p>
+</td>
+<td class="enum_member_annotations"> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GEDIT-WINDOW-STATE-ERROR:CAPS"></a>GEDIT_WINDOW_STATE_ERROR</p></td>
-<td> </td>
-<td> </td>
+<td class="enum_member_description">
+<p>A tab is in an error state.</p>
+</td>
+<td class="enum_member_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
@@ -872,48 +870,129 @@ is owned by the window and should not be unreffed.</p>
 <div class="refsect2">
 <a name="GeditWindow-active-tab-changed"></a><h3>The <code class="literal">“active-tab-changed”</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-user_function (<a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *geditwindow,
-               <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a>    *arg1,
+user_function (<a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window,
                <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
-<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+<p>The ::active-tab-changed signal is emitted when the active <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a>
+of <em class="parameter"><code>window</code></em>
+ changes (including when it becomes <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>). You can get its
+value with <a class="link" href="GeditWindow.html#gedit-window-get-active-tab" title="gedit_window_get_active_tab ()"><code class="function">gedit_window_get_active_tab()</code></a>.</p>
+<div class="refsect3">
+<a name="GeditWindow-active-tab-changed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>the <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> emitting the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
 </div>
-<hr>
-<div class="refsect2">
-<a name="GeditWindow-active-tab-state-changed"></a><h3>The <code class="literal">“active-tab-state-changed”</code> signal</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>
-user_function (<a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *geditwindow,
-               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
 <p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+<p class="since">Since: <a class="link" href="ix07.html#api-index-47">47</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GeditWindow-tab-added"></a><h3>The <code class="literal">“tab-added”</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-user_function (<a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *geditwindow,
-               <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a>    *arg1,
+user_function (<a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window,
+               <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a>    *tab,
                <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>The ::tab-added signal is emitted right after a <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a> is added to
+<em class="parameter"><code>window</code></em>
+.</p>
+<div class="refsect3">
+<a name="GeditWindow-tab-added.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>the <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> emitting the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tab</p></td>
+<td class="parameter_description"><p>the added <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
 <p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GeditWindow-tab-removed"></a><h3>The <code class="literal">“tab-removed”</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-user_function (<a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *geditwindow,
-               <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a>    *arg1,
+user_function (<a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *window,
+               <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a>    *tab,
                <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
-<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+<p>The ::tab-removed signal is emitted right after a <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a> is
+removed from <em class="parameter"><code>window</code></em>
+.</p>
+<p>During the signal emission, the <em class="parameter"><code>tab</code></em>
+'s <a class="link" href="GeditView.html" title="GeditView"><span class="type">GeditView</span></a> and <a class="link" href="GeditDocument.html" title="GeditDocument"><span class="type">GeditDocument</span></a>
+objects are absent from the lists returned by
+<a class="link" href="GeditWindow.html#gedit-window-get-views" title="gedit_window_get_views ()"><code class="function">gedit_window_get_views()</code></a> and <a class="link" href="GeditWindow.html#gedit-window-get-documents" title="gedit_window_get_documents ()"><code class="function">gedit_window_get_documents()</code></a> (<em class="parameter"><code>tab</code></em>
+ is
+not part of <em class="parameter"><code>window</code></em>
+).</p>
+<p>During the signal emission, <em class="parameter"><code>tab</code></em>
+ is still a valid object. As such you
+can call functions like <a class="link" href="GeditTab.html#gedit-tab-get-view" title="gedit_tab_get_view ()"><code class="function">gedit_tab_get_view()</code></a> and
+<a class="link" href="GeditTab.html#gedit-tab-get-document" title="gedit_tab_get_document ()"><code class="function">gedit_tab_get_document()</code></a>, for example to disconnect signal handlers.</p>
+<div class="refsect3">
+<a name="GeditWindow-tab-removed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>the <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> emitting the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tab</p></td>
+<td class="parameter_description"><p>the removed <a class="link" href="GeditTab.html" title="GeditTab"><span class="type">GeditTab</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
 </div>
-<hr>
-<div class="refsect2">
-<a name="GeditWindow-tabs-reordered"></a><h3>The <code class="literal">“tabs-reordered”</code> signal</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>
-user_function (<a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *geditwindow,
-               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
 <p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.33.2</div>
+<hr>Generated by GTK-Doc V1.34.0</div>
 </body>
 </html>

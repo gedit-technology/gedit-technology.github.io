@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Part II. API Reference - Text Editor Support: libgedit-tepl 6 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libgedit-tepl 6 Reference Manual">
+<link rel="up" href="index.html" title="libgedit-tepl 6 Reference Manual">
+<link rel="prev" href="intro.html" title="Part I. Introduction">
+<link rel="next" href="general.html" title="General">
+<meta name="generator" content="GTK-Doc V1.34.0 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="intro.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="general.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="part">
+<div class="titlepage"><div><div><h1 class="title">
+<a name="api-reference-text-editor-support"></a>Part II. API Reference - Text Editor Support</h1></div></div></div>
+<div class="toc">
+<p><b>Table of Contents</b></p>
+<dl class="toc">
+<dt><span class="chapter"><a href="general.html">General</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="libgedit-tepl-6-Tepl-Initialization-and-Finalization.html">Tepl Initialization and Finalization</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="TeplAbstractFactory.html">TeplAbstractFactory</a></span><span class="refpurpose"> — Abstract factory singleton class</span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="framework.html">Framework</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="TeplApplication.html">TeplApplication</a></span><span class="refpurpose"> — An extension of GtkApplication</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="TeplApplicationWindow.html">TeplApplicationWindow</a></span><span class="refpurpose"> — An extension of GtkApplicationWindow</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="TeplTabGroup.html">TeplTabGroup</a></span><span class="refpurpose"> — Interface for a group of <span class="type">TeplTab</span>'s</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="TeplNotebook.html">TeplNotebook</a></span><span class="refpurpose"> — Subclass of <span class="type">GtkNotebook</span> implementing the <span class="type">TeplTabGroup</span>
+interface</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="TeplTab.html">TeplTab</a></span><span class="refpurpose"> — Contains a TeplView and GtkInfoBars</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="TeplTabLabel.html">TeplTabLabel</a></span><span class="refpurpose"> — A <span class="type">TeplTab</span> label, to use with <span class="type">GtkNotebook</span></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="TeplView.html">TeplView</a></span><span class="refpurpose"> — Subclass of <span class="type">GtkSourceView</span></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="TeplBuffer.html">TeplBuffer</a></span><span class="refpurpose"> — Subclass of <span class="type">GtkSourceBuffer</span></span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="menus-and-toolbars.html">Menus</a></span></dt>
+<dd><dl><dt>
+<span class="refentrytitle"><a href="libgedit-tepl-6-TeplMenuShell.html">TeplMenuShell</a></span><span class="refpurpose"> — <span class="type">GtkMenuShell</span> functions</span>
+</dt></dl></dd>
+<dt><span class="chapter"><a href="file-loading-and-saving.html">File Loading and Saving</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="libgedit-tepl-6-TeplEncoding.html">TeplEncoding</a></span><span class="refpurpose"> — Character encoding interface</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgedit-tepl-6-TeplEncodingIconv.html">TeplEncodingIconv</a></span><span class="refpurpose"> — Character encoding for iconv</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="TeplFile.html">TeplFile</a></span><span class="refpurpose"> — On-disk representation of a <span class="type">TeplBuffer</span></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="TeplFileLoader.html">TeplFileLoader</a></span><span class="refpurpose"> — Load a file into a <span class="type">TeplBuffer</span></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="TeplFileSaver.html">TeplFileSaver</a></span><span class="refpurpose"> — Save a <span class="type">TeplBuffer</span> into a file</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgedit-tepl-6-IO-error-info-bars.html">IO error info bars</a></span><span class="refpurpose"> — Verbose error reporting for file I/O operations</span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="code-folding.html">Code Folding</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="TeplFoldRegion.html">TeplFoldRegion</a></span><span class="refpurpose"> — Foldable region in a <span class="type">GtkTextBuffer</span></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="TeplGutterRendererFolds.html">TeplGutterRendererFolds</a></span><span class="refpurpose"> — Basic gutter renderer for code folding</span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="language-choosers.html">Language Choosers</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="TeplLanguageChooser.html">TeplLanguageChooser</a></span><span class="refpurpose"> — Interface implemented by widgets for choosing a <span class="type">GtkSourceLanguage</span></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="TeplLanguageChooserDialog.html">TeplLanguageChooserDialog</a></span><span class="refpurpose"> — A dialog for choosing a <span class="type">GtkSourceLanguage</span></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="TeplLanguageChooserWidget.html">TeplLanguageChooserWidget</a></span><span class="refpurpose"> — A widget for choosing a <span class="type">GtkSourceLanguage</span></span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="misc.html">Misc</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="TeplGotoLineBar.html">TeplGotoLineBar</a></span><span class="refpurpose"> — Horizontal bar for the 'Go to line' feature</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgedit-tepl-6-TeplIter.html">TeplIter</a></span><span class="refpurpose"> — GtkTextIter utility functions</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="TeplLineColumnIndicator.html">TeplLineColumnIndicator</a></span><span class="refpurpose"> — Indicates the cursor position</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="TeplOverwriteIndicator.html">TeplOverwriteIndicator</a></span><span class="refpurpose"> — Indicates Insert or Overwrite mode for text edition</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgedit-tepl-6-TeplPrefs.html">TeplPrefs</a></span><span class="refpurpose"> — Preferences widgets to configure a text editor</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="TeplPrefsDialog.html">TeplPrefsDialog</a></span><span class="refpurpose"> — Preferences dialog</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="TeplSettings.html">TeplSettings</a></span><span class="refpurpose"> — Singleton class containing <span class="type">GSettings</span> objects</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="TeplSpaceDrawerPrefs.html">TeplSpaceDrawerPrefs</a></span><span class="refpurpose"> — Preferences widget for <span class="type">GtkSourceSpaceDrawer</span></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="TeplStyleSchemeChooserWidget.html">TeplStyleSchemeChooserWidget</a></span><span class="refpurpose"> — A simple <span class="type">GtkSourceStyleSchemeChooser</span></span>
+</dt>
+</dl></dd>
+</dl>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.34.0</div>
+</body>
+</html>
