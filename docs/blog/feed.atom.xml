@@ -7,7 +7,113 @@
   <link rel="self" type="application/atom+xml" href="https://gedit-technology.github.io/blog/feed.atom.xml" />
   <link type="text/html" href="https://gedit-technology.github.io/blog/index.html" />
   <title>Gedit Technology</title>
-  <updated>2024-05-15T10:00:00Z</updated>
+  <updated>2024-05-24T10:00:00Z</updated>
+
+<entry>
+  <title>gedit 47 released and packaged</title>
+  <id>https://gedit-technology.github.io/blog/2024-05-24-gedit-47-released-and-packaged.html</id>
+  <link type="text/html" href="https://gedit-technology.github.io/blog/2024-05-24-gedit-47-released-and-packaged.html" />
+  <updated>2024-05-24T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  <a href="https://gedit-technology.github.io/apps/gedit/">gedit</a> 47 has been
+  released and packaged recently.
+</p>
+
+<h3>What's new</h3>
+<p>
+  The <a href="https://gedit-technology.github.io/blog/2024-04-26-change-of-icons-and-logo-for-gedit.html">change of icons and logo</a>
+  was already explained.
+</p>
+
+<h4>Dark GTK theme support - some progress</h4>
+<p>
+  There is some progress to better support the dark GTK theme variant. On Linux
+  you can use the <a href="https://apps.gnome.org/DconfEditor/">Dconf Editor</a>
+  application or the <code>gsettings</code> command in a terminal to change
+  gedit to use the dark theme:
+</p>
+<pre>
+$ gsettings get org.gnome.gedit.preferences.ui theme-variant
+'light'
+$ gsettings set org.gnome.gedit.preferences.ui theme-variant "'dark'"
+
+# To reset to the default value:
+$ gsettings reset org.gnome.gedit.preferences.ui theme-variant
+</pre>
+<p>
+  Some more work is necessary to finish this feature. It is planned to add a
+  'system' setting, to follow the desktop config. To adapt the Preferences
+  dialog. And to avoid showing bugs with color schemes that don't support dark
+  GTK themes (classic and tango), or to fix those color schemes (but since they
+  inherit colors from the GTK theme, it is currently expected that these colors
+  come from a <em>light</em> theme).
+</p>
+
+<h4>For plugin developers: improved API documentation</h4>
+<p>
+  The main classes of gedit are now much better
+  <a href="https://gedit-technology.github.io/developer-docs/gedit/">documented</a>.
+</p>
+
+<h4>Translations temporarily disabled</h4>
+<p>
+  Unfortunately, the translations (or localization, l10n) is temporarily
+  disabled. So gedit is available in English only. (You can still write
+  documents in any language thanks to the Unicode support, of course).
+</p>
+<p>
+  This is because the Gedit Technology modules that are hosted on GitHub need
+  something else than <a href="https://l10n.gnome.org/">l10n.gnome.org</a>.
+</p>
+<p>
+  Work is being done to address this issue. One translation platform has already
+  been tested but was not really satisfactory, so another platform is currently
+  being tested at the time of writing this.
+</p>
+
+<h4>Refactoring and making more code re-usable, as always</h4>
+<p>
+  Code refactoring is necessary for gedit. Cleaner code permits to better see
+  bugs, to fix them and (hopefully) prevent them from re-appearing in the
+  future.
+</p>
+
+<h3>Packaging work</h3>
+<p>
+  gedit is
+  <a href="https://www.microsoft.com/store/apps/9NCQ8B0NVCW3">available on the Microsoft Store</a>.
+  It is a way to finance the project, so every purchase helps.
+</p>
+<p>
+  For Linux, the latest gedit is
+  <a href="https://flathub.org/apps/org.gnome.gedit">available on Flathub</a>.
+  It finally has the Verified badge, and the Flatpak is now directly updated by
+  the upstream developers.
+</p>
+
+<h3>Conclusion</h3>
+<p>
+  Contrarily to what is sometimes expected from a software release, this is
+  unfortunately not the best gedit release ever because of the transition for
+  the translation platform. gedit 48 will be a better version in that regard.
+</p>
+<p>
+  We wanted to release a new version instead of waiting more, because we prefer
+  more iterations instead of bigger releases. For a project like gedit, it's
+  sometimes a bit a rocky road to drive the project further. On the brighter
+  side, gedit should be more robust overall (the code has seen some bug fixes
+  and many small code improvements under the hood).
+</p>
+
+<p><small>
+  This article was written by Sébastien Wilmet, currently the main developer
+  behind gedit.
+</small></p>
+    </div>
+  </content>
+</entry>
 
 <entry>
   <title>History of Gedit Technology</title>
