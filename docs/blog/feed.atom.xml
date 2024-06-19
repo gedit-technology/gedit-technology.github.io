@@ -7,7 +7,133 @@
   <link rel="self" type="application/atom+xml" href="https://gedit-technology.github.io/blog/feed.atom.xml" />
   <link type="text/html" href="https://gedit-technology.github.io/blog/index.html" />
   <title>Gedit Technology</title>
-  <updated>2024-05-24T10:00:00Z</updated>
+  <updated>2024-06-19T10:00:00Z</updated>
+
+<entry>
+  <title>Dark theme support in gedit</title>
+  <id>https://gedit-technology.github.io/blog/2024-06-19-dark-theme-support-in-gedit.html</id>
+  <link type="text/html" href="https://gedit-technology.github.io/blog/2024-06-19-dark-theme-support-in-gedit.html" />
+  <updated>2024-06-19T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  The development version of
+  <a href="https://gedit-technology.github.io/apps/gedit/">gedit</a> now has a
+  much more complete support of light and dark themes, and switching between
+  them from the desktop setting.
+</p>
+
+<h3>How it looks</h3>
+<p>
+  With the Solarized Dark color scheme for the main text area, and the Adwaita
+  dark GTK theme:
+</p>
+<p>
+  <a href="images/2024-06-19/gedit-screenshot-dark-theme-main-window.png" target="_blank"><img
+    src="images/2024-06-19/thumbnail-gedit-screenshot-dark-theme-main-window.png"
+    alt="gedit screenshot of the main window with dark theme"
+    width="250" /></a>
+</p>
+<p>
+  The Preferences dialog:
+</p>
+<p>
+  <a href="images/2024-06-19/gedit-screenshot-dark-theme-preferences-dialog.png" target="_blank"><img
+    src="images/2024-06-19/gedit-screenshot-dark-theme-preferences-dialog.png"
+    alt="gedit screenshot of the preferences dialog with dark theme"
+    width="250" /></a>
+</p>
+<p>
+  <a href="images/2024-06-19/gedit-screenshot-light-theme-preferences-dialog.png" target="_blank"><img
+    src="images/2024-06-19/gedit-screenshot-light-theme-preferences-dialog.png"
+    alt="gedit screenshot of the preferences dialog with light theme"
+    width="250" /></a>
+</p>
+
+<h3>Possibilities and limitations</h3>
+<p>
+  It's possible to follow the system style (the desktop-wide setting that is
+  applied to all the applications at once), or to force the light or dark theme
+  variant.
+</p>
+<p>
+  For the main text area a <em>color scheme</em> must be applied. There are thus
+  <em>two</em> color schemes to choose: for the light versus dark theme
+  variants, to automatically switch the color scheme.
+</p>
+<p>
+  The Preferences dialog also allows you to choose a <em>dark</em> color scheme
+  when a <em>light</em> theme variant is in effect, or vice-versa. If this was
+  not possible, it would have been annoying to some people.
+</p>
+<p>
+  There is however <strong>a minor limitation</strong>: the Classic and Tango
+  color schemes are supported only with the light theme variant, because some
+  colors are inherited from the theme and the other colors have been defined
+  with a <em>light</em> theme in mind (see
+  <a href="https://gitlab.gnome.org/GNOME/gedit/-/issues/547">this issue on GitLab</a>
+  with a screenshot of the text being unreadable).<br />
+  So when the dark theme is applied, it is not possible to select Classic or
+  Tango and their descriptions become "Unsupported for the dark theme variant"
+  (by the way, it's better to keep them in the list and show an explanation; if
+  Classic and Tango suddenly disappear from the list, you would have thought
+  that there is a bug somewhere).
+</p>
+<p>
+  It is also
+  <a href="https://gitlab.gnome.org/GNOME/gedit/-/commit/b655bd6bdf9b9fab1046960591fe823aa5aee16a">documented</a>
+  in the user manual, if you're curious.
+</p>
+
+<h3>Technical details</h3>
+<p>
+  The heavy-lifting is done by
+  <a href="https://gnome.pages.gitlab.gnome.org/libhandy/">libhandy</a>,
+  and the actual dark theme (the Adwaita one) comes from
+  <a href="https://gtk.org/">GTK</a> and its CSS engine.
+</p>
+<p>
+  Some work was left to do in libgedit-gtksourceview for the color/style
+  schemes; in libgedit-tepl for the components in the Preferences dialog plus a
+  few other things; and finally in gedit to integrate what libgedit-tepl
+  provides.
+</p>
+<p>
+  In gedit there are now two GSettings keys for the color schemes, plus another
+  key for the theme-variant, as can be seen in this <code>dconf watch</code>
+  demo session:
+</p>
+<pre>
+$ dconf watch /
+/org/gnome/gedit/preferences/editor/style-scheme-for-dark-theme-variant
+  'oblivion'
+
+/org/gnome/gedit/preferences/ui/theme-variant
+  'light'
+
+/org/gnome/gedit/preferences/editor/style-scheme-for-light-theme-variant
+  'classic'
+</pre>
+
+<h3>Conclusion</h3>
+<p>
+  This feature was asked by many people and it's finally there. It will be
+  available in gedit 48, the next stable version to be released soon if
+  everything goes well.
+</p>
+<p>
+  Do not hesitate to
+  <a href="https://gedit-technology.github.io/apps/gedit/">get in touch</a>
+  and provide a feedback, be it for this feature or for other things.
+</p>
+
+<p><small>
+  This article was written by Sébastien Wilmet, currently the main gedit
+  developer.
+</small></p>
+    </div>
+  </content>
+</entry>
 
 <entry>
   <title>gedit 47 released and packaged</title>
