@@ -143,6 +143,11 @@ in a <a href="/usr/share/gtk-doc/html/gtk3/GtkStatusbar.html#GtkStatusbar-struct
 <pre class="programlisting"><span class="returnvalue">void</span>
 amtk_menu_item_set_icon_name (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkMenuItem.html#GtkMenuItem-struct"><span class="type">GtkMenuItem</span></a> *item</code></em>,
                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *icon_name</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">amtk_menu_item_set_icon_name</code> has been deprecated since version 5.9 and should not be used in newly-written code.</p>
+<p>Use <a href="/usr/share/gtk-doc/html/gtk3/GtkImageMenuItem.html#GtkImageMenuItem-struct"><span class="type">GtkImageMenuItem</span></a> instead, even if deprecated. This
+  function doesn't place the icon at the right place.</p>
+</div>
 <p>Sets an icon to a <a href="/usr/share/gtk-doc/html/gtk3/GtkMenuItem.html#GtkMenuItem-struct"><span class="type">GtkMenuItem</span></a>.</p>
 <p>If the child widget of <em class="parameter"><code>item</code></em>
  is already a <a href="/usr/share/gtk-doc/html/gtk3/GtkBox.html#GtkBox-struct"><span class="type">GtkBox</span></a>, all <a href="/usr/share/gtk-doc/html/gtk3/GtkImage.html#GtkImage-struct"><span class="type">GtkImage</span></a> widgets

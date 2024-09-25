@@ -1,0 +1,895 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GtexBuildView: Enter TeX Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="Enter TeX Reference Manual">
+<link rel="up" href="ch02.html" title="Build Tools">
+<link rel="prev" href="GtexBuildToolsPersonal.html" title="GtexBuildToolsPersonal">
+<link rel="next" href="GtexPostProcessor.html" title="GtexPostProcessor">
+<meta name="generator" content="GTK-Doc V1.34.0 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GtexBuildView.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GtexBuildView.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GtexBuildView.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GtexBuildView.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GtexBuildView.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GtexBuildToolsPersonal.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GtexPostProcessor.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GtexBuildView"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GtexBuildView.top_of_page"></a>GtexBuildView</span></h2>
+<p>GtexBuildView — Build view</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GtexBuildView.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="GtexBuildView.html#GtexBuildMsg" title="struct GtexBuildMsg"><span class="returnvalue">GtexBuildMsg</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GtexBuildView.html#gtex-build-msg-new" title="gtex_build_msg_new ()">gtex_build_msg_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GtexBuildView.html#gtex-build-msg-free" title="gtex_build_msg_free ()">gtex_build_msg_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GtexBuildView.html#gtex-build-msg-reinit" title="gtex_build_msg_reinit ()">gtex_build_msg_reinit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GtexBuildView.html#gtex-build-msg-print" title="gtex_build_msg_print ()">gtex_build_msg_print</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GtexBuildView.html" title="GtexBuildView"><span class="returnvalue">GtexBuildView</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GtexBuildView.html#gtex-build-view-new" title="gtex_build_view_new ()">gtex_build_view_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GtexBuildView.html#gtex-build-view-clear" title="gtex_build_view_clear ()">gtex_build_view_clear</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkTreeModel.html#GtkTreeIter-struct"><span class="returnvalue">GtkTreeIter</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GtexBuildView.html#gtex-build-view-add-main-title" title="gtex_build_view_add_main_title ()">gtex_build_view_add_main_title</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkTreeModel.html#GtkTreeIter-struct"><span class="returnvalue">GtkTreeIter</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GtexBuildView.html#gtex-build-view-add-job-title" title="gtex_build_view_add_job_title ()">gtex_build_view_add_job_title</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GtexBuildView.html#gtex-build-view-set-title-state" title="gtex_build_view_set_title_state ()">gtex_build_view_set_title_state</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkTreeModel.html#GtkTreeIter-struct"><span class="returnvalue">GtkTreeIter</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GtexBuildView.html#gtex-build-view-append-single-message" title="gtex_build_view_append_single_message ()">gtex_build_view_append_single_message</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GtexBuildView.html#gtex-build-view-append-messages" title="gtex_build_view_append_messages ()">gtex_build_view_append_messages</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GtexBuildView.html#gtex-build-view-remove-children" title="gtex_build_view_remove_children ()">gtex_build_view_remove_children</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GtexBuildView.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GtexBuildView.html#GtexBuildView--has-details" title="The “has-details” property">has-details</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GtexBuildView.html#GtexBuildView--show-badboxes" title="The “show-badboxes” property">show-badboxes</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GtexBuildView.html#GtexBuildView--show-details" title="The “show-details” property">show-details</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GtexBuildView.html#GtexBuildView--show-warnings" title="The “show-warnings” property">show-warnings</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GtexBuildView.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signal_proto_type">
+<col width="300px" class="signal_proto_name">
+<col width="200px" class="signal_proto_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GtexBuildView.html#GtexBuildView-jump-to-file" title="The “jump-to-file” signal">jump-to-file</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GtexBuildView.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GtexBuildView.html#GtexBuildView-struct" title="GtexBuildView">GtexBuildView</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GtexBuildView.html#GtexBuildMsg" title="struct GtexBuildMsg">GtexBuildMsg</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GtexBuildView.html#GtexBuildMsgType" title="enum GtexBuildMsgType">GtexBuildMsgType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GtexBuildView.html#GtexBuildState" title="enum GtexBuildState">GtexBuildState</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GtexBuildView.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct">GtkWidget</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkContainer.html#GtkContainer-struct">GtkContainer</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkTreeView.html#GtkTreeView-struct">GtkTreeView</a>
+                    <span class="lineart">╰──</span> GtexBuildView
+</pre>
+</div>
+<div class="refsect1">
+<a name="GtexBuildView.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GtexBuildView implements
+ AtkImplementorIface,  <a href="/usr/share/gtk-doc/html/gtk3/GtkBuildable.html#GtkBuildable-struct">GtkBuildable</a> and  <a href="/usr/share/gtk-doc/html/gtk3/GtkScrollable.html#GtkScrollable-struct">GtkScrollable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GtexBuildView.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gtex.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GtexBuildView.description"></a><h2>Description</h2>
+<p>A <a class="link" href="GtexBuildView.html" title="GtexBuildView"><span class="type">GtexBuildView</span></a> is a <a href="/usr/share/gtk-doc/html/gtk3/GtkTreeView.html#GtkTreeView-struct"><span class="type">GtkTreeView</span></a> containing the build messages.
+The build view is contained in the bottom panel.</p>
+</div>
+<div class="refsect1">
+<a name="GtexBuildView.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gtex-build-msg-new"></a><h3>gtex_build_msg_new ()</h3>
+<pre class="programlisting"><a class="link" href="GtexBuildView.html#GtexBuildMsg" title="struct GtexBuildMsg"><span class="returnvalue">GtexBuildMsg</span></a> *
+gtex_build_msg_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Free the return value with <a class="link" href="GtexBuildView.html#gtex-build-msg-free" title="gtex_build_msg_free ()"><code class="function">gtex_build_msg_free()</code></a> when no longer needed.</p>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
+<div class="refsect3">
+<a name="gtex-build-msg-new.returns"></a><h4>Returns</h4>
+<p> a newly-allocated <a class="link" href="GtexBuildView.html#GtexBuildMsg" title="struct GtexBuildMsg"><span class="type">GtexBuildMsg</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtex-build-msg-free"></a><h3>gtex_build_msg_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gtex_build_msg_free (<em class="parameter"><code><a class="link" href="GtexBuildView.html#GtexBuildMsg" title="struct GtexBuildMsg"><span class="type">GtexBuildMsg</span></a> *build_msg</code></em>);</pre>
+<p>Frees the <em class="parameter"><code>build_msg</code></em>
+ structure.</p>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
+<div class="refsect3">
+<a name="gtex-build-msg-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>build_msg</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtexBuildView.html#GtexBuildMsg" title="struct GtexBuildMsg"><span class="type">GtexBuildMsg</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtex-build-msg-reinit"></a><h3>gtex_build_msg_reinit ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gtex_build_msg_reinit (<em class="parameter"><code><a class="link" href="GtexBuildView.html#GtexBuildMsg" title="struct GtexBuildMsg"><span class="type">GtexBuildMsg</span></a> *build_msg</code></em>);</pre>
+<p>Reinitializes a <a class="link" href="GtexBuildView.html#GtexBuildMsg" title="struct GtexBuildMsg"><span class="type">GtexBuildMsg</span></a>.</p>
+<div class="refsect3">
+<a name="gtex-build-msg-reinit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>build_msg</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtexBuildView.html#GtexBuildMsg" title="struct GtexBuildMsg"><span class="type">GtexBuildMsg</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtex-build-msg-print"></a><h3>gtex_build_msg_print ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gtex_build_msg_print (<em class="parameter"><code><a class="link" href="GtexBuildView.html#GtexBuildMsg" title="struct GtexBuildMsg"><span class="type">GtexBuildMsg</span></a> *build_msg</code></em>);</pre>
+<p>Prints <em class="parameter"><code>build_msg</code></em>
+ on stdout, for debugging purposes.</p>
+<div class="refsect3">
+<a name="gtex-build-msg-print.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>build_msg</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtexBuildView.html#GtexBuildMsg" title="struct GtexBuildMsg"><span class="type">GtexBuildMsg</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtex-build-view-new"></a><h3>gtex_build_view_new ()</h3>
+<pre class="programlisting"><a class="link" href="GtexBuildView.html" title="GtexBuildView"><span class="returnvalue">GtexBuildView</span></a> *
+gtex_build_view_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="refsect3">
+<a name="gtex-build-view-new.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="GtexBuildView.html" title="GtexBuildView"><span class="type">GtexBuildView</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtex-build-view-clear"></a><h3>gtex_build_view_clear ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gtex_build_view_clear (<em class="parameter"><code><a class="link" href="GtexBuildView.html" title="GtexBuildView"><span class="type">GtexBuildView</span></a> *build_view</code></em>);</pre>
+<p>Clears the build view.</p>
+<div class="refsect3">
+<a name="gtex-build-view-clear.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>build_view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtexBuildView.html" title="GtexBuildView"><span class="type">GtexBuildView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtex-build-view-add-main-title"></a><h3>gtex_build_view_add_main_title ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkTreeModel.html#GtkTreeIter-struct"><span class="returnvalue">GtkTreeIter</span></a>
+gtex_build_view_add_main_title (<em class="parameter"><code><a class="link" href="GtexBuildView.html" title="GtexBuildView"><span class="type">GtexBuildView</span></a> *build_view</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *main_title</code></em>,
+                                <em class="parameter"><code><a class="link" href="GtexBuildView.html#GtexBuildState" title="enum GtexBuildState"><span class="type">GtexBuildState</span></a> state</code></em>);</pre>
+<p>Adds a build tool title. There should be only one main title.</p>
+<div class="refsect3">
+<a name="gtex-build-view-add-main-title.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>build_view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtexBuildView.html" title="GtexBuildView"><span class="type">GtexBuildView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>main_title</p></td>
+<td class="parameter_description"><p>the title.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>state</p></td>
+<td class="parameter_description"><p>the current state of the build tool.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gtex-build-view-add-main-title.returns"></a><h4>Returns</h4>
+<p> the title ID as a <a href="/usr/share/gtk-doc/html/gtk3/GtkTreeModel.html#GtkTreeIter-struct"><span class="type">GtkTreeIter</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtex-build-view-add-job-title"></a><h3>gtex_build_view_add_job_title ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkTreeModel.html#GtkTreeIter-struct"><span class="returnvalue">GtkTreeIter</span></a>
+gtex_build_view_add_job_title (<em class="parameter"><code><a class="link" href="GtexBuildView.html" title="GtexBuildView"><span class="type">GtexBuildView</span></a> *build_view</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *job_title</code></em>,
+                               <em class="parameter"><code><a class="link" href="GtexBuildView.html#GtexBuildState" title="enum GtexBuildState"><span class="type">GtexBuildState</span></a> state</code></em>);</pre>
+<p>Adds a build job title.</p>
+<div class="refsect3">
+<a name="gtex-build-view-add-job-title.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>build_view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtexBuildView.html" title="GtexBuildView"><span class="type">GtexBuildView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>job_title</p></td>
+<td class="parameter_description"><p>the title.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>state</p></td>
+<td class="parameter_description"><p>the current state of the build job.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gtex-build-view-add-job-title.returns"></a><h4>Returns</h4>
+<p> the title ID as a <a href="/usr/share/gtk-doc/html/gtk3/GtkTreeModel.html#GtkTreeIter-struct"><span class="type">GtkTreeIter</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtex-build-view-set-title-state"></a><h3>gtex_build_view_set_title_state ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gtex_build_view_set_title_state (<em class="parameter"><code><a class="link" href="GtexBuildView.html" title="GtexBuildView"><span class="type">GtexBuildView</span></a> *build_view</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkTreeModel.html#GtkTreeIter-struct"><span class="type">GtkTreeIter</span></a> *title_id</code></em>,
+                                 <em class="parameter"><code><a class="link" href="GtexBuildView.html#GtexBuildState" title="enum GtexBuildState"><span class="type">GtexBuildState</span></a> state</code></em>);</pre>
+<p>Changes the build state of a title, represented as an icon.
+If <em class="parameter"><code>title_id</code></em>
+ is the main title, <em class="parameter"><code>state</code></em>
+ is for the whole build tool. If
+<em class="parameter"><code>title_id</code></em>
+ is for a job title, <em class="parameter"><code>state</code></em>
+ is for the build job.</p>
+<div class="refsect3">
+<a name="gtex-build-view-set-title-state.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>build_view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtexBuildView.html" title="GtexBuildView"><span class="type">GtexBuildView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>title_id</p></td>
+<td class="parameter_description"><p>the title ID as a <a href="/usr/share/gtk-doc/html/gtk3/GtkTreeModel.html#GtkTreeIter-struct"><span class="type">GtkTreeIter</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>state</p></td>
+<td class="parameter_description"><p>the new state.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtex-build-view-append-single-message"></a><h3>gtex_build_view_append_single_message ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkTreeModel.html#GtkTreeIter-struct"><span class="returnvalue">GtkTreeIter</span></a>
+gtex_build_view_append_single_message (<em class="parameter"><code><a class="link" href="GtexBuildView.html" title="GtexBuildView"><span class="type">GtexBuildView</span></a> *build_view</code></em>,
+                                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkTreeModel.html#GtkTreeIter-struct"><span class="type">GtkTreeIter</span></a> *parent</code></em>,
+                                       <em class="parameter"><code><a class="link" href="GtexBuildView.html#GtexBuildMsg" title="struct GtexBuildMsg"><span class="type">GtexBuildMsg</span></a> *message</code></em>);</pre>
+<p>Appends a single message to the build view.</p>
+<div class="refsect3">
+<a name="gtex-build-view-append-single-message.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>build_view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtexBuildView.html" title="GtexBuildView"><span class="type">GtexBuildView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>the parent row in the tree.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>message</p></td>
+<td class="parameter_description"><p>the build message structure.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gtex-build-view-append-single-message.returns"></a><h4>Returns</h4>
+<p> the <a href="/usr/share/gtk-doc/html/gtk3/GtkTreeModel.html#GtkTreeIter-struct"><span class="type">GtkTreeIter</span></a> where the message has been added.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtex-build-view-append-messages"></a><h3>gtex_build_view_append_messages ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gtex_build_view_append_messages (<em class="parameter"><code><a class="link" href="GtexBuildView.html" title="GtexBuildView"><span class="type">GtexBuildView</span></a> *build_view</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkTreeModel.html#GtkTreeIter-struct"><span class="type">GtkTreeIter</span></a> *parent</code></em>,
+                                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *messages</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> expand</code></em>);</pre>
+<p>Appends a tree of messages to the build view.</p>
+<div class="refsect3">
+<a name="gtex-build-view-append-messages.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>build_view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtexBuildView.html" title="GtexBuildView"><span class="type">GtexBuildView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>the parent row in the tree.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>messages</p></td>
+<td class="parameter_description"><p>the tree of <a class="link" href="GtexBuildView.html#GtexBuildMsg" title="struct GtexBuildMsg"><span class="type">GtexBuildMsg</span></a>'s
+to append. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GtexBuildMsg]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>expand</p></td>
+<td class="parameter_description"><p>whether to expand the <em class="parameter"><code>parent</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtex-build-view-remove-children"></a><h3>gtex_build_view_remove_children ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gtex_build_view_remove_children (<em class="parameter"><code><a class="link" href="GtexBuildView.html" title="GtexBuildView"><span class="type">GtexBuildView</span></a> *build_view</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkTreeModel.html#GtkTreeIter-struct"><span class="type">GtkTreeIter</span></a> *parent</code></em>);</pre>
+<p>Removes the children of <em class="parameter"><code>parent</code></em>
+.</p>
+<div class="refsect3">
+<a name="gtex-build-view-remove-children.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>build_view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtexBuildView.html" title="GtexBuildView"><span class="type">GtexBuildView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>the row for which the children must be removed.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GtexBuildView.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GtexBuildView-struct"></a><h3>GtexBuildView</h3>
+<pre class="programlisting">typedef struct _GtexBuildView GtexBuildView;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GtexBuildMsg"></a><h3>struct GtexBuildMsg</h3>
+<pre class="programlisting">struct GtexBuildMsg {
+	GtexBuildMsgType type;
+	gchar *text;
+	gchar *filename;
+	gint start_line;
+	gint end_line;
+
+	/* There are several reasons to use a GQueue:
+	* 1. A GQueue is convenient for appending at the end of the list.
+	* 2. An external GNode containing the build messages is not convenient for
+	* running sub-post-processors, for example the latex post-processor inside
+	* latexmk. A GNode has a reference to its parent, so it's more difficult to
+	* embed the messages of a sub-post-processor. Moreover, we don't need to know
+	* the parent, a GNode uses useless memory. A GSList would use even less
+	* memory, but it's less convenient to use.
+	*/
+	GQueue *children;
+
+	guint expand : 1;
+};
+</pre>
+<p>A build message, one line in the <a href="/usr/share/gtk-doc/html/gtk3/GtkTreeView.html#GtkTreeView-struct"><span class="type">GtkTreeView</span></a>. If a <em class="parameter"><code>filename</code></em>
+ is provided,
+the file will be opened when the user clicks on the message. If <em class="parameter"><code>start_line</code></em>
+
+and <em class="parameter"><code>end_line</code></em>
+ are provided, the lines between the two positions will be
+selected (the selection stops at the end of <em class="parameter"><code>end_line</code></em>
+).</p>
+<div class="refsect3">
+<a name="GtexBuildMsg.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="GtexBuildView.html#GtexBuildMsgType" title="enum GtexBuildMsgType"><span class="type">GtexBuildMsgType</span></a> <em class="structfield"><code><a name="GtexBuildMsg.type"></a>type</code></em>;</p></td>
+<td class="struct_member_description"><p>the message type.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="GtexBuildMsg.text"></a>text</code></em>;</p></td>
+<td class="struct_member_description"><p>the text.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="GtexBuildMsg.filename"></a>filename</code></em>;</p></td>
+<td class="struct_member_description"><p>reference to a certain file.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GtexBuildMsg.start-line"></a>start_line</code></em>;</p></td>
+<td class="struct_member_description"><p>reference to a line in the file, counting from 1. -1 to unset.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GtexBuildMsg.end-line"></a>end_line</code></em>;</p></td>
+<td class="struct_member_description"><p>reference to a line in the file, counting from 1. -1 to unset.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Double-ended-Queues.html#GQueue"><span class="type">GQueue</span></a> *<em class="structfield"><code><a name="GtexBuildMsg.children"></a>children</code></em>;</p></td>
+<td class="struct_member_description"><p>list of children of type <a class="link" href="GtexBuildView.html#GtexBuildMsg" title="struct GtexBuildMsg"><span class="type">GtexBuildMsg</span></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="GtexBuildMsg.expand"></a>expand</code></em> : 1;</p></td>
+<td class="struct_member_description"><p>if the message has children, whether to initially show them.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GtexBuildMsgType"></a><h3>enum GtexBuildMsgType</h3>
+<div class="refsect3">
+<a name="GtexBuildMsgType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GTEX-BUILD-MSG-TYPE-MAIN-TITLE:CAPS"></a>GTEX_BUILD_MSG_TYPE_MAIN_TITLE</p></td>
+<td class="enum_member_description">
+<p>main title.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GTEX-BUILD-MSG-TYPE-JOB-TITLE:CAPS"></a>GTEX_BUILD_MSG_TYPE_JOB_TITLE</p></td>
+<td class="enum_member_description">
+<p>build job title.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GTEX-BUILD-MSG-TYPE-JOB-SUB-COMMAND:CAPS"></a>GTEX_BUILD_MSG_TYPE_JOB_SUB_COMMAND</p></td>
+<td class="enum_member_description">
+<p>build job sub-command.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GTEX-BUILD-MSG-TYPE-ERROR:CAPS"></a>GTEX_BUILD_MSG_TYPE_ERROR</p></td>
+<td class="enum_member_description">
+<p>error.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GTEX-BUILD-MSG-TYPE-WARNING:CAPS"></a>GTEX_BUILD_MSG_TYPE_WARNING</p></td>
+<td class="enum_member_description">
+<p>warning.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GTEX-BUILD-MSG-TYPE-BADBOX:CAPS"></a>GTEX_BUILD_MSG_TYPE_BADBOX</p></td>
+<td class="enum_member_description">
+<p>badbox.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GTEX-BUILD-MSG-TYPE-INFO:CAPS"></a>GTEX_BUILD_MSG_TYPE_INFO</p></td>
+<td class="enum_member_description">
+<p>other info.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GtexBuildState"></a><h3>enum GtexBuildState</h3>
+<div class="refsect3">
+<a name="GtexBuildState.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GTEX-BUILD-STATE-RUNNING:CAPS"></a>GTEX_BUILD_STATE_RUNNING</p></td>
+<td class="enum_member_description">
+<p>running.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GTEX-BUILD-STATE-SUCCEEDED:CAPS"></a>GTEX_BUILD_STATE_SUCCEEDED</p></td>
+<td class="enum_member_description">
+<p>succeeded.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GTEX-BUILD-STATE-FAILED:CAPS"></a>GTEX_BUILD_STATE_FAILED</p></td>
+<td class="enum_member_description">
+<p>failed.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GTEX-BUILD-STATE-ABORTED:CAPS"></a>GTEX_BUILD_STATE_ABORTED</p></td>
+<td class="enum_member_description">
+<p>aborted.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GtexBuildView.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GtexBuildView--has-details"></a><h3>The <code class="literal">“has-details”</code> property</h3>
+<pre class="programlisting">  “has-details”              <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Owner: GtexBuildView</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GtexBuildView--show-badboxes"></a><h3>The <code class="literal">“show-badboxes”</code> property</h3>
+<pre class="programlisting">  “show-badboxes”            <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Owner: GtexBuildView</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GtexBuildView--show-details"></a><h3>The <code class="literal">“show-details”</code> property</h3>
+<pre class="programlisting">  “show-details”             <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Owner: GtexBuildView</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GtexBuildView--show-warnings"></a><h3>The <code class="literal">“show-warnings”</code> property</h3>
+<pre class="programlisting">  “show-warnings”            <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Owner: GtexBuildView</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: TRUE</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GtexBuildView.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GtexBuildView-jump-to-file"></a><h3>The <code class="literal">“jump-to-file”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GtexBuildView.html" title="GtexBuildView"><span class="type">GtexBuildView</span></a> *build_view,
+               <a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a>         *file,
+               <span class="type">int</span>            start_line,
+               <span class="type">int</span>            end_line,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       user_data)</pre>
+<p>The ::jump-to-file signal is emitted when a row in the build view is
+selected. The row must contain a file, otherwise the signal is not emitted.
+The file should be opened and presented to the user. If <em class="parameter"><code>start_line</code></em>
+ and
+<em class="parameter"><code>end_line</code></em>
+ are not -1, jump to the <em class="parameter"><code>start_line</code></em>
+ and select those lines. If
+<em class="parameter"><code>start_line</code></em>
+ is provided, <em class="parameter"><code>end_line</code></em>
+ is also provided (different than -1).</p>
+<p>The selection should stop at the end of <em class="parameter"><code>end_line</code></em>
+ (not at the start of
+<em class="parameter"><code>end_line</code></em>
+).</p>
+<div class="refsect3">
+<a name="GtexBuildView-jump-to-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>build_view</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtexBuildView.html" title="GtexBuildView"><span class="type">GtexBuildView</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>file</p></td>
+<td class="parameter_description"><p>the file to open.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>start_line</p></td>
+<td class="parameter_description"><p>the start of the selection, counting from 0. Or -1 if unset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>end_line</p></td>
+<td class="parameter_description"><p>the end of the selection, counting from 0. Or -1 if unset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.34.0</div>
+</body>
+</html>

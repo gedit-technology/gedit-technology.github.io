@@ -14,7 +14,7 @@
 <div class="titlepage">
 <div>
 <div><table class="navigation" id="top" width="100%" cellpadding="2" cellspacing="0"><tr><th valign="middle"><p class="title">libgedit-tepl 6 Reference Manual</p></th></tr></table></div>
-<div><p class="releaseinfo">For libgedit-tepl 6.10.1</p></div>
+<div><p class="releaseinfo">For libgedit-tepl 6.11.0</p></div>
 </div>
 <hr>
 </div>
@@ -132,7 +132,10 @@ interface</span>
 <span class="refentrytitle"><a href="TeplSpaceDrawerPrefs.html">TeplSpaceDrawerPrefs</a></span><span class="refpurpose"> — Preferences widget for <span class="type">GtkSourceSpaceDrawer</span></span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="TeplStyleSchemeChooserWidget.html">TeplStyleSchemeChooserWidget</a></span><span class="refpurpose"> — A simple <span class="type">GtkSourceStyleSchemeChooser</span></span>
+<span class="refentrytitle"><a href="TeplStyleSchemeChooserFull.html">TeplStyleSchemeChooserFull</a></span><span class="refpurpose"> — A <span class="type">GtkSourceStyleScheme</span> chooser widget for light and dark themes</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="TeplStyleSchemeChooserSimple.html">TeplStyleSchemeChooserSimple</a></span><span class="refpurpose"> — A simple <span class="type">GtkSourceStyleScheme</span> chooser widget</span>
 </dt>
 </dl></dd>
 </dl></dd>
@@ -141,7 +144,7 @@ interface</span>
 <dt><span class="chapter"><a href="gobject-extras.html">GObject Extras</a></span></dt>
 <dd><dl>
 <dt>
-<span class="refentrytitle"><a href="libgedit-tepl-6-TeplObjectCounters.html">TeplObjectCounters</a></span><span class="refpurpose"> — Memory checking utility for object instances</span>
+<span class="refentrytitle"><a href="libgedit-tepl-6-TeplObjectCounters.html">TeplObjectCounters</a></span><span class="refpurpose"> — Utility to detect memory leaks</span>
 </dt>
 <dt>
 <span class="refentrytitle"><a href="libgedit-tepl-6-TeplSignalGroup.html">TeplSignalGroup</a></span><span class="refpurpose"> — A group of signal handlers</span>
@@ -156,6 +159,10 @@ interface</span>
 <span class="refentrytitle"><a href="TeplMetadataManager.html">TeplMetadataManager</a></span><span class="refpurpose"> — To store file metadata on disk</span>
 </dt>
 </dl></dd>
+<dt><span class="chapter"><a href="gio-extras-other.html">GIO Extras - Other</a></span></dt>
+<dd><dl><dt>
+<span class="refentrytitle"><a href="libgedit-tepl-6-TeplSettingsBindingGroup.html">TeplSettingsBindingGroup</a></span><span class="refpurpose"> — A group of <span class="type">GSettings</span> bindings</span>
+</dt></dl></dd>
 <dt><span class="chapter"><a href="gtk-extras-info-bars.html">GTK Extras - Info Bars</a></span></dt>
 <dd><dl>
 <dt>
@@ -165,28 +172,34 @@ interface</span>
 <span class="refentrytitle"><a href="TeplProgressInfoBar.html">TeplProgressInfoBar</a></span><span class="refpurpose"> — A <span class="type">TeplInfoBar</span> containing a <span class="type">GtkProgressBar</span></span>
 </dt>
 </dl></dd>
-<dt><span class="chapter"><a href="gtk-extras-other.html">GTK Extras - Other</a></span></dt>
+<dt><span class="chapter"><a href="gtk-extras-side-or-bottom-panel.html">GTK Extras - Side or Bottom Panel</a></span></dt>
 <dd><dl>
-<dt>
-<span class="refentrytitle"><a href="libgedit-tepl-6-TeplFileChooser.html">TeplFileChooser</a></span><span class="refpurpose"> — Extra functions for <span class="type">GtkFileChooser</span></span>
-</dt>
 <dt>
 <span class="refentrytitle"><a href="TeplPanel.html">TeplPanel</a></span><span class="refpurpose"> — Side or bottom panel interface</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="TeplPanelItem.html">TeplPanelItem</a></span><span class="refpurpose"> — Access to the information of a panel item</span>
+<span class="refentrytitle"><a href="TeplPanelItem.html">TeplPanelItem</a></span><span class="refpurpose"> — Panel item data</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="TeplPanelContainer.html">TeplPanelContainer</a></span><span class="refpurpose"> — Side or bottom panel container</span>
+<span class="refentrytitle"><a href="TeplPanelNotebook.html">TeplPanelNotebook</a></span><span class="refpurpose"> — Side or bottom panel container based on <span class="type">GtkNotebook</span></span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="TeplPanelSwitcherMenu.html">TeplPanelSwitcherMenu</a></span><span class="refpurpose"> — A controller for <span class="type">TeplPanelContainer</span></span>
+<span class="refentrytitle"><a href="TeplPanelSimple.html">TeplPanelSimple</a></span><span class="refpurpose"> — A set of <span class="type">TeplPanelItem</span>'s</span>
 </dt>
 <dt>
-<span class="refentrytitle"><a href="TeplPanelSwitcherNotebook.html">TeplPanelSwitcherNotebook</a></span><span class="refpurpose"> — A controller for <span class="type">TeplPanelContainer</span></span>
+<span class="refentrytitle"><a href="TeplPanelStack.html">TeplPanelStack</a></span><span class="refpurpose"> — Side or bottom panel container based on <span class="type">GtkStack</span></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="TeplPanelSwitcherMenu.html">TeplPanelSwitcherMenu</a></span><span class="refpurpose"> — A controller for <span class="type">TeplPanelSimple</span></span>
 </dt>
 <dt>
 <span class="refentrytitle"><a href="TeplPanel1.html">TeplPanel1</a></span><span class="refpurpose"> — Side or bottom panel container</span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="gtk-extras-other.html">GTK Extras - Other</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="libgedit-tepl-6-TeplFileChooser.html">TeplFileChooser</a></span><span class="refpurpose"> — Extra functions for <span class="type">GtkFileChooser</span></span>
 </dt>
 <dt>
 <span class="refentrytitle"><a href="TeplStatusMenuButton.html">TeplStatusMenuButton</a></span><span class="refpurpose"> — A <span class="type">GtkMenuButton</span> suitable for <span class="type">GtkStatusbar</span></span>
@@ -229,6 +242,7 @@ interface</span>
 <dt><span class="index"><a href="api-index-6-4.html">Index of new symbols in 6.4</a></span></dt>
 <dt><span class="index"><a href="api-index-6-8.html">Index of new symbols in 6.8</a></span></dt>
 <dt><span class="index"><a href="api-index-6-10.html">Index of new symbols in 6.10</a></span></dt>
+<dt><span class="index"><a href="api-index-6-11.html">Index of new symbols in 6.11</a></span></dt>
 </dl></dd>
 </dl></div>
 </div>

@@ -111,23 +111,7 @@
 <span class="returnvalue">void</span>
 </td>
 <td class="function_name">
-<a class="link" href="TeplBuffer.html#tepl-buffer-provide-style-scheme-id-gsetting" title="tepl_buffer_provide_style_scheme_id_gsetting ()">tepl_buffer_provide_style_scheme_id_gsetting</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="TeplBuffer.html#tepl-buffer-get-style-scheme-id" title="tepl_buffer_get_style_scheme_id ()">tepl_buffer_get_style_scheme_id</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<span class="returnvalue">void</span>
-</td>
-<td class="function_name">
-<a class="link" href="TeplBuffer.html#tepl-buffer-set-style-scheme-id" title="tepl_buffer_set_style_scheme_id ()">tepl_buffer_set_style_scheme_id</a> <span class="c_punctuation">()</span>
+<a class="link" href="TeplBuffer.html#tepl-buffer-connect-style-scheme-settings" title="tepl_buffer_connect_style_scheme_settings ()">tepl_buffer_connect_style_scheme_settings</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
 <tr>
@@ -161,12 +145,6 @@
 <span class="type">char</span> *</td>
 <td class="property_name"><a class="link" href="TeplBuffer.html#TeplBuffer--tepl-short-title" title="The “tepl-short-title” property">tepl-short-title</a></td>
 <td class="property_flags">Read</td>
-</tr>
-<tr>
-<td class="property_type">
-<span class="type">char</span> *</td>
-<td class="property_name"><a class="link" href="TeplBuffer.html#TeplBuffer--tepl-style-scheme-id" title="The “tepl-style-scheme-id” property">tepl-style-scheme-id</a></td>
-<td class="property_flags">Read / Write</td>
 </tr>
 </tbody>
 </table></div>
@@ -462,62 +440,13 @@ longer needed.</p>
 </div>
 <hr>
 <div class="refsect2">
-<a name="tepl-buffer-provide-style-scheme-id-gsetting"></a><h3>tepl_buffer_provide_style_scheme_id_gsetting ()</h3>
+<a name="tepl-buffer-connect-style-scheme-settings"></a><h3>tepl_buffer_connect_style_scheme_settings ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
-tepl_buffer_provide_style_scheme_id_gsetting
-                               (<em class="parameter"><code><a class="link" href="TeplBuffer.html" title="TeplBuffer"><span class="type">TeplBuffer</span></a> *buffer</code></em>,
-                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> *settings</code></em>,
-                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *setting_key</code></em>,
-                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> bind_to_property</code></em>);</pre>
-<p>A convenience function to provide a <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> key corresponding to the
-<a class="link" href="TeplBuffer.html#TeplBuffer--tepl-style-scheme-id" title="The “tepl-style-scheme-id” property"><span class="type">“tepl-style-scheme-id”</span></a> property.</p>
-<p>Once this function is called, calling <a class="link" href="TeplBuffer.html#tepl-buffer-set-style-scheme-id" title="tepl_buffer_set_style_scheme_id ()"><code class="function">tepl_buffer_set_style_scheme_id()</code></a> or
-setting the property will benefit from a fallback mechanism that takes the
-default value of the <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> key (see <a href="/usr/share/gtk-doc/html/gio/GSettings.html#g-settings-get-default-value"><code class="function">g_settings_get_default_value()</code></a>).</p>
-<p>If <em class="parameter"><code>bind_to_property</code></em>
- is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, then this function additionally binds the
-<a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> key to the property with the <a href="/usr/share/gtk-doc/html/gio/GSettings.html#G-SETTINGS-BIND-GET:CAPS"><code class="literal">G_SETTINGS_BIND_GET</code></a> flag.</p>
+tepl_buffer_connect_style_scheme_settings
+                               (<em class="parameter"><code><a class="link" href="TeplBuffer.html" title="TeplBuffer"><span class="type">TeplBuffer</span></a> *buffer</code></em>);</pre>
+<p>Connects <a class="link" href="TeplSettings.html#TeplSettings--style-scheme-id" title="The “style-scheme-id” property"><span class="type">“style-scheme-id”</span></a> to <a href="../libgedit-gtksourceview-300/GtkSourceBuffer.html#GtkSourceBuffer--style-scheme"><span class="type">“style-scheme”</span></a>.</p>
 <div class="refsect3">
-<a name="tepl-buffer-provide-style-scheme-id-gsetting.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>buffer</p></td>
-<td class="parameter_description"><p>a <a class="link" href="TeplBuffer.html" title="TeplBuffer"><span class="type">TeplBuffer</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>settings</p></td>
-<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> object.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>setting_key</p></td>
-<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> key of type string.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>bind_to_property</p></td>
-<td class="parameter_description"><p>whether to bind the <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> key to the property.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<p class="since">Since: <a class="link" href="api-index-6-4.html#api-index-6.4">6.4</a></p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="tepl-buffer-get-style-scheme-id"></a><h3>tepl_buffer_get_style_scheme_id ()</h3>
-<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
-tepl_buffer_get_style_scheme_id (<em class="parameter"><code><a class="link" href="TeplBuffer.html" title="TeplBuffer"><span class="type">TeplBuffer</span></a> *buffer</code></em>);</pre>
-<div class="refsect3">
-<a name="tepl-buffer-get-style-scheme-id.parameters"></a><h4>Parameters</h4>
+<a name="tepl-buffer-connect-style-scheme-settings.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -531,55 +460,7 @@ tepl_buffer_get_style_scheme_id (<em class="parameter"><code><a class="link" hre
 </tr></tbody>
 </table></div>
 </div>
-<div class="refsect3">
-<a name="tepl-buffer-get-style-scheme-id.returns"></a><h4>Returns</h4>
-<p> the <a class="link" href="TeplBuffer.html#TeplBuffer--tepl-style-scheme-id" title="The “tepl-style-scheme-id” property"><span class="type">“tepl-style-scheme-id”</span></a>. Free with <a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
-</div>
-<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="tepl-buffer-set-style-scheme-id"></a><h3>tepl_buffer_set_style_scheme_id ()</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>
-tepl_buffer_set_style_scheme_id (<em class="parameter"><code><a class="link" href="TeplBuffer.html" title="TeplBuffer"><span class="type">TeplBuffer</span></a> *buffer</code></em>,
-                                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *style_scheme_id</code></em>);</pre>
-<p>Sets the <a class="link" href="TeplBuffer.html#TeplBuffer--tepl-style-scheme-id" title="The “tepl-style-scheme-id” property"><span class="type">“tepl-style-scheme-id”</span></a> property.</p>
-<p>The <a href="../libgedit-gtksourceview-300/GtkSourceStyleScheme.html#GtkSourceStyleScheme-struct"><span class="type">GtkSourceStyleScheme</span></a> is taken from the default
-<a href="../libgedit-gtksourceview-300/GtkSourceStyleSchemeManager.html#GtkSourceStyleSchemeManager-struct"><span class="type">GtkSourceStyleSchemeManager</span></a> as returned by
-<a href="../libgedit-gtksourceview-300/GtkSourceStyleSchemeManager.html#gtk-source-style-scheme-manager-get-default"><code class="function">gtk_source_style_scheme_manager_get_default()</code></a>.</p>
-<p>Since 6.4, if there are no <a href="../libgedit-gtksourceview-300/GtkSourceStyleScheme.html#GtkSourceStyleScheme-struct"><span class="type">GtkSourceStyleScheme</span></a> for <em class="parameter"><code>style_scheme_id</code></em>
-, there
-is a fallback mechanism that takes the default value of the provided
-<a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> key (see <a class="link" href="TeplBuffer.html#tepl-buffer-provide-style-scheme-id-gsetting" title="tepl_buffer_provide_style_scheme_id_gsetting ()"><code class="function">tepl_buffer_provide_style_scheme_id_gsetting()</code></a>); if the
-<a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> key was not provided, it takes a recommended <a href="../libgedit-gtksourceview-300/GtkSourceStyleScheme.html#GtkSourceStyleScheme-struct"><span class="type">GtkSourceStyleScheme</span></a>
-provided by GtkSourceView (see the documentation of
-<a href="../libgedit-gtksourceview-300/GtkSourceBuffer.html#gtk-source-buffer-set-style-scheme"><code class="function">gtk_source_buffer_set_style_scheme()</code></a>).</p>
-<p>If more flexibility is desired, don't use the
-<a class="link" href="TeplBuffer.html#TeplBuffer--tepl-style-scheme-id" title="The “tepl-style-scheme-id” property"><span class="type">“tepl-style-scheme-id”</span></a> property, use the <a href="../libgedit-gtksourceview-300/GtkSourceBuffer.html#GtkSourceBuffer-struct"><span class="type">GtkSourceBuffer</span></a> API
-instead.</p>
-<div class="refsect3">
-<a name="tepl-buffer-set-style-scheme-id.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>buffer</p></td>
-<td class="parameter_description"><p>a <a class="link" href="TeplBuffer.html" title="TeplBuffer"><span class="type">TeplBuffer</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>style_scheme_id</p></td>
-<td class="parameter_description"><p>the new value.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
+<p class="since">Since: <a class="link" href="api-index-6-11.html#api-index-6.11">6.11</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -674,19 +555,6 @@ the same line.</p>
 <p>Flags: Read</p>
 <p>Default value: NULL</p>
 <p class="since">Since: <a class="link" href="api-index-3-0.html#api-index-3.0">3.0</a></p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="TeplBuffer--tepl-style-scheme-id"></a><h3>The <code class="literal">“tepl-style-scheme-id”</code> property</h3>
-<pre class="programlisting">  “tepl-style-scheme-id”     <span class="type">char</span> *</pre>
-<p>The <a href="../libgedit-gtksourceview-300/GtkSourceBuffer.html#GtkSourceBuffer--style-scheme"><span class="type">“style-scheme”</span></a> ID, as a string. This property is
-useful for binding it to a <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> key.</p>
-<p>When the <a href="../libgedit-gtksourceview-300/GtkSourceBuffer.html#GtkSourceBuffer--style-scheme"><span class="type">“style-scheme”</span></a> is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>,
-<a class="link" href="TeplBuffer.html#TeplBuffer--tepl-style-scheme-id" title="The “tepl-style-scheme-id” property"><span class="type">“tepl-style-scheme-id”</span></a> contains the empty string.</p>
-<p>Owner: TeplBuffer</p>
-<p>Flags: Read / Write</p>
-<p>Default value: ""</p>
-<p class="since">Since: <a class="link" href="api-index-2-0.html#api-index-2.0">2.0</a></p>
 </div>
 </div>
 <div class="refsect1">

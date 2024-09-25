@@ -225,6 +225,14 @@
 </tr>
 <tr>
 <td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgedit-tepl-6-TeplUtils.html#tepl-utils-set-widget" title="tepl_utils_set_widget ()">tepl_utils_set_widget</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
 <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 </td>
 <td class="function_name">
@@ -423,7 +431,7 @@ brought back. As long as <em class="parameter"><code>src</code></em>
 
 parameter is not present for <a class="link" href="libgedit-tepl-6-TeplUtils.html#tepl-utils-markup-escape-text" title="tepl_utils_markup_escape_text ()"><code class="function">tepl_utils_markup_escape_text()</code></a>.</p>
 <div class="refsect2">
-<a name="id-1.4.6.3.7.5.6"></a><h3>g_markup_escape_text() doesn't fully support round-trip integrity</h3>
+<a name="id-1.4.8.3.7.5.6"></a><h3>g_markup_escape_text() doesn't fully support round-trip integrity</h3>
 <p>In fact, <a href="/usr/share/gtk-doc/html/glib/glib-Simple-XML-Subset-Parser.html#g-markup-escape-text"><code class="function">g_markup_escape_text()</code></a> doesn't escape the tabstop, newline and
 carriage return characters. And the <a href="/usr/share/gtk-doc/html/glib/glib-Simple-XML-Subset-Parser.html#GMarkupParser"><span class="type">GMarkupParser</span></a> correctly processes
 whitespace and line endings according to the <a class="ulink" href="https://www.w3.org/TR/xml/#AVNormalize" target="_top">XML rules for normalization of
@@ -1170,6 +1178,38 @@ tepl_utils_setup_statusbar (<em class="parameter"><code><a href="/usr/share/gtk-
 </table></div>
 </div>
 <p class="since">Since: <a class="link" href="api-index-6-8.html#api-index-6.8">6.8</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tepl-utils-set-widget"></a><h3>tepl_utils_set_widget ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+tepl_utils_set_widget (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a> **widget_ptr</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a> *new_widget</code></em>);</pre>
+<p>Like <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-set-object"><code class="function">g_set_object()</code></a> but for a <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a> and without the return value.</p>
+<p>It connects and disconnects the <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-destroy"><span class="type">“destroy”</span></a> signal.</p>
+<div class="refsect3">
+<a name="tepl-utils-set-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>widget_ptr</p></td>
+<td class="parameter_description"><p>a pointer to a <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>new_widget</p></td>
+<td class="parameter_description"><p>the new <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="type">GtkWidget</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-6-11.html#api-index-6.11">6.11</a></p>
 </div>
 <hr>
 <div class="refsect2">

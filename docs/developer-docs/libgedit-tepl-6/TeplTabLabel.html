@@ -110,7 +110,7 @@
     <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
         <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct">GtkWidget</a>
             <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkContainer.html#GtkContainer-struct">GtkContainer</a>
-                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkGrid.html#GtkGrid-struct">GtkGrid</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkBox.html#GtkBox-struct">GtkBox</a>
                     <span class="lineart">╰──</span> TeplTabLabel
 </pre>
 </div>
@@ -227,7 +227,7 @@ function is called and the result is set with
 <div class="refsect2">
 <a name="TeplTabLabelClass"></a><h3>struct TeplTabLabelClass</h3>
 <pre class="programlisting">struct TeplTabLabelClass {
-	GtkGridClass parent_class;
+	GtkBoxClass parent_class;
 
 	gchar * (* get_tooltip_markup) (TeplTabLabel *tab_label);
 };

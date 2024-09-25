@@ -18,7 +18,6 @@
         <sub name="GtkSourceStyle" link="GtkSourceStyle.html"/>
         <sub name="GtkSourceStyleScheme" link="GtkSourceStyleScheme.html"/>
         <sub name="GtkSourceStyleSchemeManager" link="GtkSourceStyleSchemeManager.html"/>
-        <sub name="GtkSourceStyleSchemeChooser" link="GtkSourceStyleSchemeChooser.html"/>
       </sub>
       <sub name="Completion" link="completion.html">
         <sub name="GtkSourceCompletion" link="GtkSourceCompletion.html"/>
@@ -67,6 +66,7 @@
       <sub name="GtkSourceView 3 -&gt; 4 Porting Guide" link="porting-guide-3-to-4.html"/>
       <sub name="GtkSourceView 4 -&gt; libgedit-gtksourceview 299.0 Porting Guide" link="porting-guide-gtksourceview-4-to-libgedit-gtksourceview-299-0.html"/>
       <sub name="libgedit-gtksourceview 299.0 -&gt; libgedit-gtksourceview 299.2 Porting Guide" link="porting-guide-299-0-to-299-2.html"/>
+      <sub name="libgedit-gtksourceview 299.2 -&gt; libgedit-gtksourceview 299.4 Porting Guide" link="porting-guide-299-2-to-299-4.html"/>
     </sub>
     <sub name="Annexes" link="annexes.html">
       <sub name="Object Hierarchy" link="object-tree.html"/>
@@ -267,10 +267,6 @@
     <keyword type="function" name="gtk_source_style_scheme_manager_force_rescan ()" link="GtkSourceStyleSchemeManager.html#gtk-source-style-scheme-manager-force-rescan"/>
     <keyword type="struct" name="struct GtkSourceStyleSchemeManager" link="GtkSourceStyleSchemeManager.html#GtkSourceStyleSchemeManager-struct"/>
     <keyword type="signal" name="The “changed” signal" link="GtkSourceStyleSchemeManager.html#GtkSourceStyleSchemeManager-changed"/>
-    <keyword type="function" name="gtk_source_style_scheme_chooser_get_style_scheme ()" link="GtkSourceStyleSchemeChooser.html#gtk-source-style-scheme-chooser-get-style-scheme" since="3.16"/>
-    <keyword type="function" name="gtk_source_style_scheme_chooser_set_style_scheme ()" link="GtkSourceStyleSchemeChooser.html#gtk-source-style-scheme-chooser-set-style-scheme" since="3.16"/>
-    <keyword type="struct" name="GtkSourceStyleSchemeChooser" link="GtkSourceStyleSchemeChooser.html#GtkSourceStyleSchemeChooser-struct"/>
-    <keyword type="property" name="The “style-scheme” property" link="GtkSourceStyleSchemeChooser.html#GtkSourceStyleSchemeChooser--style-scheme"/>
     <keyword type="function" name="gtk_source_completion_add_provider ()" link="GtkSourceCompletion.html#gtk-source-completion-add-provider"/>
     <keyword type="function" name="gtk_source_completion_remove_provider ()" link="GtkSourceCompletion.html#gtk-source-completion-remove-provider"/>
     <keyword type="function" name="gtk_source_completion_get_providers ()" link="GtkSourceCompletion.html#gtk-source-completion-get-providers"/>
@@ -703,6 +699,8 @@
     <keyword type="constant" name="GTK_SOURCE_BACKGROUND_PATTERN_TYPE_GRID" link="GtkSourceView.html#GTK-SOURCE-BACKGROUND-PATTERN-TYPE-GRID:CAPS"/>
     <keyword type="constant" name="GTK_SOURCE_STYLE_SCHEME_KIND_LIGHT" link="GtkSourceStyleScheme.html#GTK-SOURCE-STYLE-SCHEME-KIND-LIGHT:CAPS"/>
     <keyword type="constant" name="GTK_SOURCE_STYLE_SCHEME_KIND_DARK" link="GtkSourceStyleScheme.html#GTK-SOURCE-STYLE-SCHEME-KIND-DARK:CAPS"/>
+    <keyword type="constant" name="GTK_SOURCE_STYLE_SCHEME_KIND_LIGHT_ONLY" link="GtkSourceStyleScheme.html#GTK-SOURCE-STYLE-SCHEME-KIND-LIGHT-ONLY:CAPS"/>
+    <keyword type="constant" name="GTK_SOURCE_STYLE_SCHEME_KIND_DARK_ONLY" link="GtkSourceStyleScheme.html#GTK-SOURCE-STYLE-SCHEME-KIND-DARK-ONLY:CAPS"/>
     <keyword type="constant" name="GTK_SOURCE_COMPLETION_ERROR_ALREADY_BOUND" link="GtkSourceCompletion.html#GTK-SOURCE-COMPLETION-ERROR-ALREADY-BOUND:CAPS"/>
     <keyword type="constant" name="GTK_SOURCE_COMPLETION_ERROR_NOT_BOUND" link="GtkSourceCompletion.html#GTK-SOURCE-COMPLETION-ERROR-NOT-BOUND:CAPS"/>
     <keyword type="constant" name="GTK_SOURCE_COMPLETION_ACTIVATION_NONE" link="GtkSourceCompletionContext.html#GTK-SOURCE-COMPLETION-ACTIVATION-NONE:CAPS"/>

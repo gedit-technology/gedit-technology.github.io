@@ -7,7 +7,7 @@
 <link rel="home" href="index.html" title="libgedit-gtksourceview 300 Reference Manual">
 <link rel="up" href="porting-guides.html" title="Part IV. Porting Guides">
 <link rel="prev" href="porting-guide-gtksourceview-4-to-libgedit-gtksourceview-299-0.html" title="GtkSourceView 4 -&gt; libgedit-gtksourceview 299.0 Porting Guide">
-<link rel="next" href="annexes.html" title="Part V. Annexes">
+<link rel="next" href="porting-guide-299-2-to-299-4.html" title="libgedit-gtksourceview 299.2 -&gt; libgedit-gtksourceview 299.4 Porting Guide">
 <meta name="generator" content="GTK-Doc V1.34.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
@@ -17,42 +17,13 @@
 <td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
 <td><a accesskey="u" href="porting-guides.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
 <td><a accesskey="p" href="porting-guide-gtksourceview-4-to-libgedit-gtksourceview-299-0.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
-<td><a accesskey="n" href="annexes.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+<td><a accesskey="n" href="porting-guide-299-2-to-299-4.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
 </tr></table>
 <div class="chapter">
 <div class="titlepage"><div><div><h2 class="title">
 <a name="porting-guide-299-0-to-299-2"></a>libgedit-gtksourceview 299.0 -&gt; libgedit-gtksourceview 299.2 Porting Guide</h2></div></div></div>
 <div class="refsect1">
-<a name="id-1.5.4.2"></a><h2>Style schemes file format changes</h2>
-<p>
-      The <code class="code">&lt;author&gt;</code> tags are no longer supported, so you
-      should remove them.
-    </p>
-<p>
-      The support for the <code class="code">parent-scheme</code> attribute has been removed.
-      It was unused. If you relied on it, copy and adapt the content of the
-      parent scheme.
-    </p>
-<p>
-      The support for the <code class="code">line-background</code> attribute (for the
-      <code class="code">&lt;style&gt;</code> tag) has been removed.
-    </p>
-<p>
-      You need to add the <code class="code">kind</code> attribute (for light/dark), a new
-      mandatory attribute.
-    </p>
-<p>
-      The <code class="code">version</code> attribute of the
-      <code class="code">&lt;style-scheme&gt;</code> element is no longer supported, so you
-      should remove it.
-    </p>
-<p>
-      The parser is now a bit more strict, check if there are warning messages
-      printed in the terminal if a style scheme fails to load.
-    </p>
-</div>
-<div class="refsect1">
-<a name="id-1.5.4.3"></a><h2>API breaks</h2>
+<a name="id-1.5.4.2"></a><h2>API breaks</h2>
 <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
 <p>
           The <code class="code">gtk_source_style_get_data()</code> function has been

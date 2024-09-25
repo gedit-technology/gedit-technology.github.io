@@ -27,7 +27,7 @@
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="libgedit-tepl-6-TeplObjectCounters.top_of_page"></a>TeplObjectCounters</span></h2>
-<p>TeplObjectCounters — Memory checking utility for object instances</p>
+<p>TeplObjectCounters — Utility to detect memory leaks</p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -81,9 +81,9 @@
 </div>
 <div class="refsect1">
 <a name="libgedit-tepl-6-TeplObjectCounters.description"></a><h2>Description</h2>
-<p>TeplObjectCounters is a memory checking utility, to ensure that the objects
-are freed. It counts the number of objects created and destructed, per type.</p>
-<p>This utility must be used manually by calling its functions explicitly.</p>
+<p>TeplObjectCounters is a utility to detect memory leaks, by counting the
+number of objects constructed and destructed, per type.</p>
+<p>It must be used manually by calling its functions explicitly.</p>
 <p>It is not intended to be used in performance-sensitive code areas.</p>
 </div>
 <div class="refsect1">

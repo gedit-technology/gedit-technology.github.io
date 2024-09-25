@@ -11,7 +11,9 @@
 <h1>libgedit-gtksourceview :: Style scheme file format</h1>
 <h2>Introduction</h2>
 <p>
-  See the <a href="style-schemes.html">style schemes introduction</a>.
+  See the <a href="style-schemes.html">style schemes introduction</a> and the
+  <a href="style-scheme-file-format-changes.html">list of incompatible changes
+  to the file format</a>.
 </p>
 <p>
   This page describes how to create or modify style scheme files.
@@ -75,8 +77,11 @@
 
   <dt><code>kind</code> (mandatory)</dt>
   <dd>
-    The kind of style scheme. It accepts only two possible values: "light" or
-    "dark".
+    The kind of style scheme. It accepts these possible values: "light", "dark",
+    "light-only" and "dark-only".<br />
+    A "light-only" style scheme supports only a light GTK theme.
+    A "dark-only" style scheme supports only a dark GTK theme.<br />
+    "light-only" and "dark-only" are supported since version &gt;= 299.4.
   </dd>
 </dl>
 

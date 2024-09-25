@@ -3,8 +3,11 @@
   <chapters>
     <sub name="libgedit-gfls API Reference" link="api-reference.html">
       <sub name="Gfls Initialization and Finalization" link="libgedit-gfls-1-Gfls-Initialization-and-Finalization.html"/>
+      <sub name="GflsAttributeKeys" link="GflsAttributeKeys.html"/>
       <sub name="GflsInputStream" link="libgedit-gfls-1-GflsInputStream.html"/>
       <sub name="GflsLoaderBasic" link="libgedit-gfls-1-GflsLoaderBasic.html"/>
+      <sub name="GflsLoaderConfig" link="GflsLoaderConfig.html"/>
+      <sub name="GflsLoaderConfigSimple" link="GflsLoaderConfigSimple.html"/>
       <sub name="GflsUnsavedDocumentTitles" link="GflsUnsavedDocumentTitles.html"/>
       <sub name="GflsUtf8" link="libgedit-gfls-1-GflsUtf8.html"/>
     </sub>
@@ -13,17 +16,29 @@
       <sub name="Annotation Glossary" link="annotation-glossary.html"/>
       <sub name="Index of all symbols" link="api-index-full.html"/>
       <sub name="Index of new symbols in 0.1" link="api-index-0-1.html"/>
+      <sub name="Index of new symbols in 0.2" link="api-index-0-2.html"/>
     </sub>
   </chapters>
   <functions>
     <keyword type="function" name="gfls_init ()" link="libgedit-gfls-1-Gfls-Initialization-and-Finalization.html#gfls-init" since="0.1"/>
     <keyword type="function" name="gfls_finalize ()" link="libgedit-gfls-1-Gfls-Initialization-and-Finalization.html#gfls-finalize" since="0.1"/>
+    <keyword type="function" name="gfls_attribute_keys_new ()" link="GflsAttributeKeys.html#gfls-attribute-keys-new" since="0.2"/>
+    <keyword type="function" name="gfls_attribute_keys_add ()" link="GflsAttributeKeys.html#gfls-attribute-keys-add" since="0.2"/>
+    <keyword type="function" name="gfls_attribute_keys_to_string ()" link="GflsAttributeKeys.html#gfls-attribute-keys-to-string" since="0.2"/>
+    <keyword type="struct" name="struct GflsAttributeKeys" link="GflsAttributeKeys.html#GflsAttributeKeys-struct"/>
     <keyword type="function" name="gfls_input_stream_read_async ()" link="libgedit-gfls-1-GflsInputStream.html#gfls-input-stream-read-async" since="0.1"/>
     <keyword type="function" name="gfls_input_stream_read_finish ()" link="libgedit-gfls-1-GflsInputStream.html#gfls-input-stream-read-finish" since="0.1"/>
     <keyword type="function" name="gfls_loader_basic_load_async ()" link="libgedit-gfls-1-GflsLoaderBasic.html#gfls-loader-basic-load-async" since="0.1"/>
     <keyword type="function" name="gfls_loader_basic_load_finish ()" link="libgedit-gfls-1-GflsLoaderBasic.html#gfls-loader-basic-load-finish" since="0.1"/>
     <keyword type="macro" name="GFLS_LOADER_ERROR" link="libgedit-gfls-1-GflsLoaderBasic.html#GFLS-LOADER-ERROR:CAPS"/>
     <keyword type="enum" name="enum GflsLoaderError" link="libgedit-gfls-1-GflsLoaderBasic.html#GflsLoaderError" since="0.1"/>
+    <keyword type="struct" name="GflsLoaderConfig" link="GflsLoaderConfig.html#GflsLoaderConfig-struct"/>
+    <keyword type="struct" name="struct GflsLoaderConfigInterface" link="GflsLoaderConfig.html#GflsLoaderConfigInterface" since="0.2"/>
+    <keyword type="function" name="gfls_loader_config_simple_new_from_file ()" link="GflsLoaderConfigSimple.html#gfls-loader-config-simple-new-from-file" since="0.2"/>
+    <keyword type="function" name="gfls_loader_config_simple_new_from_stream ()" link="GflsLoaderConfigSimple.html#gfls-loader-config-simple-new-from-stream" since="0.2"/>
+    <keyword type="function" name="gfls_loader_config_simple_get_file ()" link="GflsLoaderConfigSimple.html#gfls-loader-config-simple-get-file" since="0.2"/>
+    <keyword type="function" name="gfls_loader_config_simple_get_stream ()" link="GflsLoaderConfigSimple.html#gfls-loader-config-simple-get-stream" since="0.2"/>
+    <keyword type="struct" name="struct GflsLoaderConfigSimple" link="GflsLoaderConfigSimple.html#GflsLoaderConfigSimple-struct"/>
     <keyword type="function" name="GflsUnsavedDocumentTitleCallback ()" link="GflsUnsavedDocumentTitles.html#GflsUnsavedDocumentTitleCallback" since="0.1"/>
     <keyword type="function" name="gfls_unsaved_document_titles_new ()" link="GflsUnsavedDocumentTitles.html#gfls-unsaved-document-titles-new" since="0.1"/>
     <keyword type="function" name="gfls_unsaved_document_titles_get_default ()" link="GflsUnsavedDocumentTitles.html#gfls-unsaved-document-titles-get-default" since="0.1"/>
@@ -36,5 +51,6 @@
     <keyword type="constant" name="GFLS_LOADER_ERROR_TOO_BIG" link="libgedit-gfls-1-GflsLoaderBasic.html#GFLS-LOADER-ERROR-TOO-BIG:CAPS"/>
     <keyword type="constant" name="GFLS_LOADER_ERROR_NOT_UTF8" link="libgedit-gfls-1-GflsLoaderBasic.html#GFLS-LOADER-ERROR-NOT-UTF8:CAPS"/>
     <keyword type="constant" name="GFLS_LOADER_ERROR_HAS_VERY_LONG_LINE" link="libgedit-gfls-1-GflsLoaderBasic.html#GFLS-LOADER-ERROR-HAS-VERY-LONG-LINE:CAPS"/>
+    <keyword type="member" name="GflsLoaderConfigInterface.parent-interface" link="GflsLoaderConfig.html#GflsLoaderConfigInterface.parent-interface"/>
   </functions>
 </book>

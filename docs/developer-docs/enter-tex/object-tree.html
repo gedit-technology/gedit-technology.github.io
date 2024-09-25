@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Object Hierarchy: Enter TeX Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="Enter TeX Reference Manual">
+<link rel="up" href="annexes.html" title="Part II. Annexes">
+<link rel="prev" href="annexes.html" title="Part II. Annexes">
+<link rel="next" href="ix01.html" title="Index of all symbols">
+<meta name="generator" content="GTK-Doc V1.34.0 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="annexes.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="annexes.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ix01.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="chapter">
+<div class="titlepage"><div><div><h2 class="title">
+<a name="object-tree"></a>Object Hierarchy</h2></div></div></div>
+<pre class="screen">
+    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gio/GApplication.html#GApplication-struct">GApplication</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkApplication.html#GtkApplication-struct">GtkApplication</a>
+    <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="GtexApp.html" title="GtexApp">GtexApp</a>
+    <span class="lineart">├──</span> <a class="link" href="GtexBuildJob.html" title="GtexBuildJob">GtexBuildJob</a>
+    <span class="lineart">├──</span> <a class="link" href="GtexBuildTool.html" title="GtexBuildTool">GtexBuildTool</a>
+    <span class="lineart">├──</span> <a class="link" href="GtexBuildTools.html" title="GtexBuildTools">GtexBuildTools</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GtexBuildToolsDefault.html" title="GtexBuildToolsDefault">GtexBuildToolsDefault</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GtexBuildToolsPersonal.html" title="GtexBuildToolsPersonal">GtexBuildToolsPersonal</a>
+    <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct">GtkWidget</a>
+    <span class="lineart">│</span>       <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkContainer.html#GtkContainer-struct">GtkContainer</a>
+    <span class="lineart">│</span>           <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkTreeView.html#GtkTreeView-struct">GtkTreeView</a>
+    <span class="lineart">│</span>           <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GtexBuildView.html" title="GtexBuildView">GtexBuildView</a>
+    <span class="lineart">│</span>           <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkGrid.html#GtkGrid-struct">GtkGrid</a>
+    <span class="lineart">│</span>           <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GtexStructure.html" title="GtexStructure">GtexStructure</a>
+    <span class="lineart">│</span>           <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkBin.html#GtkBin-struct">GtkBin</a>
+    <span class="lineart">│</span>               <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkWindow.html#GtkWindow-struct">GtkWindow</a>
+    <span class="lineart">│</span>                   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkDialog.html#GtkDialog-struct">GtkDialog</a>
+    <span class="lineart">│</span>                       <span class="lineart">╰──</span> <a class="link" href="GtexTemplatesManageDialog.html" title="GtexTemplatesManageDialog">GtexTemplatesManageDialog</a>
+    <span class="lineart">├──</span> <a href="../libgedit-tepl-6/TeplAbstractFactory.html#TeplAbstractFactory-struct">TeplAbstractFactory</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GtexFactory.html" title="GtexFactory">GtexFactory</a>
+    <span class="lineart">├──</span> <a class="link" href="GtexPostProcessor.html" title="GtexPostProcessor">GtexPostProcessor</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GtexPostProcessorAllOutput.html" title="GtexPostProcessorAllOutput">GtexPostProcessorAllOutput</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GtexPostProcessorLatex.html" title="GtexPostProcessorLatex">GtexPostProcessorLatex</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GtexPostProcessorLatexmk.html" title="GtexPostProcessorLatexmk">GtexPostProcessorLatexmk</a>
+    <span class="lineart">├──</span> <a class="link" href="GtexSettings.html" title="GtexSettings">GtexSettings</a>
+    <span class="lineart">├──</span> <a class="link" href="GtexSynctex.html" title="GtexSynctex">GtexSynctex</a>
+    <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk3/GtkListStore.html#GtkListStore-struct">GtkListStore</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GtexTemplatesDefault.html" title="GtexTemplatesDefault">GtexTemplatesDefault</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GtexTemplatesPersonal.html" title="GtexTemplatesPersonal">GtexTemplatesPersonal</a>
+    <span class="lineart">╰──</span> <a class="link" href="GtexTreeModelNode.html" title="GtexTreeModelNode">GtexTreeModelNode</a>
+</pre>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.34.0</div>
+</body>
+</html>

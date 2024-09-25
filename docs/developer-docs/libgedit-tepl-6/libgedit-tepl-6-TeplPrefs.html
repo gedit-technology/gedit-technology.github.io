@@ -52,14 +52,6 @@
 <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
 </td>
 <td class="function_name">
-<a class="link" href="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-color-scheme-component" title="tepl_prefs_create_color_scheme_component ()">tepl_prefs_create_color_scheme_component</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
-</td>
-<td class="function_name">
 <a class="link" href="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-display-line-numbers-checkbutton" title="tepl_prefs_create_display_line_numbers_checkbutton ()">tepl_prefs_create_display_line_numbers_checkbutton</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
@@ -101,14 +93,6 @@
 </td>
 <td class="function_name">
 <a class="link" href="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-theme-variant-combo-box" title="tepl_prefs_create_theme_variant_combo_box ()">tepl_prefs_create_theme_variant_combo_box</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-simple-theme-variant-combo-box" title="tepl_prefs_create_simple_theme_variant_combo_box ()">tepl_prefs_create_simple_theme_variant_combo_box</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
 <tr>
@@ -190,46 +174,6 @@ of the key must be a string.</p></td>
 <div class="refsect3">
 <a name="tepl-prefs-create-font-component.returns"></a><h4>Returns</h4>
 <p>A component for configuring the font. </p>
-<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
-</div>
-<p class="since">Since: <a class="link" href="api-index-6-2.html#api-index-6.2">6.2</a></p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="tepl-prefs-create-color-scheme-component"></a><h3>tepl_prefs_create_color_scheme_component ()</h3>
-<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
-tepl_prefs_create_color_scheme_component
-                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> *settings</code></em>,
-                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *style_scheme_key</code></em>);</pre>
-<p>This function creates a component containing a <a class="link" href="TeplStyleSchemeChooserWidget.html" title="TeplStyleSchemeChooserWidget"><span class="type">TeplStyleSchemeChooserWidget</span></a>.</p>
-<div class="refsect3">
-<a name="tepl-prefs-create-color-scheme-component.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>settings</p></td>
-<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>style_scheme_key</p></td>
-<td class="parameter_description"><p>a key part of <em class="parameter"><code>settings</code></em>
-to store the style scheme ID. The
-type of the key must be a string.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="tepl-prefs-create-color-scheme-component.returns"></a><h4>Returns</h4>
-<p>A component for choosing the
-<a href="../libgedit-gtksourceview-300/GtkSourceStyleScheme.html#GtkSourceStyleScheme-struct"><span class="type">GtkSourceStyleScheme</span></a> to use. </p>
 <p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-6-2.html#api-index-6.2">6.2</a></p>
@@ -469,7 +413,6 @@ unsigned integer, with a range. The interval is in minutes.</p></td>
 tepl_prefs_create_theme_variant_combo_box
                                (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> *settings</code></em>,
                                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *theme_variant_key</code></em>);</pre>
-<p>See also <a class="link" href="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-simple-theme-variant-combo-box" title="tepl_prefs_create_simple_theme_variant_combo_box ()"><code class="function">tepl_prefs_create_simple_theme_variant_combo_box()</code></a>.</p>
 <div class="refsect3">
 <a name="tepl-prefs-create-theme-variant-combo-box.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -498,47 +441,6 @@ tepl_prefs_create_theme_variant_combo_box
 <a name="tepl-prefs-create-theme-variant-combo-box.returns"></a><h4>Returns</h4>
 <p>A widget containing a <a href="/usr/share/gtk-doc/html/gtk3/GtkComboBoxText.html#GtkComboBoxText-struct"><span class="type">GtkComboBoxText</span></a> intended
 to choose a <a class="link" href="TeplSettings.html#TeplSettingsThemeVariant" title="enum TeplSettingsThemeVariant"><span class="type">TeplSettingsThemeVariant</span></a>. </p>
-<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
-</div>
-<p class="since">Since: <a class="link" href="api-index-6-10.html#api-index-6.10">6.10</a></p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="tepl-prefs-create-simple-theme-variant-combo-box"></a><h3>tepl_prefs_create_simple_theme_variant_combo_box ()</h3>
-<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
-tepl_prefs_create_simple_theme_variant_combo_box
-                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> *settings</code></em>,
-                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *theme_variant_key</code></em>);</pre>
-<p>Like <a class="link" href="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-theme-variant-combo-box" title="tepl_prefs_create_theme_variant_combo_box ()"><code class="function">tepl_prefs_create_theme_variant_combo_box()</code></a> but for
-<a class="link" href="TeplSettings.html#TeplSettingsSimpleThemeVariant" title="enum TeplSettingsSimpleThemeVariant"><span class="type">TeplSettingsSimpleThemeVariant</span></a> instead.</p>
-<div class="refsect3">
-<a name="tepl-prefs-create-simple-theme-variant-combo-box.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>settings</p></td>
-<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>theme_variant_key</p></td>
-<td class="parameter_description"><p>a key part of <em class="parameter"><code>settings</code></em>
-. Its type must be an enum for
-<a class="link" href="TeplSettings.html#TeplSettingsSimpleThemeVariant" title="enum TeplSettingsSimpleThemeVariant"><span class="type">TeplSettingsSimpleThemeVariant</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="tepl-prefs-create-simple-theme-variant-combo-box.returns"></a><h4>Returns</h4>
-<p>A widget containing a <a href="/usr/share/gtk-doc/html/gtk3/GtkComboBoxText.html#GtkComboBoxText-struct"><span class="type">GtkComboBoxText</span></a> intended
-to choose a <a class="link" href="TeplSettings.html#TeplSettingsSimpleThemeVariant" title="enum TeplSettingsSimpleThemeVariant"><span class="type">TeplSettingsSimpleThemeVariant</span></a>. </p>
 <p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-6-10.html#api-index-6.10">6.10</a></p>

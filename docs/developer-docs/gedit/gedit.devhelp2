@@ -34,6 +34,7 @@
       <sub name="Index of new symbols in 45" link="ix05.html"/>
       <sub name="Index of new symbols in 46" link="ix06.html"/>
       <sub name="Index of new symbols in 47" link="ix07.html"/>
+      <sub name="Index of new symbols in 48" link="ix08.html"/>
     </sub>
   </chapters>
   <functions>
@@ -61,7 +62,7 @@
     <keyword type="function" name="gedit_window_get_documents ()" link="GeditWindow.html#gedit-window-get-documents"/>
     <keyword type="function" name="gedit_window_get_unsaved_documents ()" link="GeditWindow.html#gedit-window-get-unsaved-documents"/>
     <keyword type="function" name="gedit_window_get_side_panel ()" link="GeditWindow.html#gedit-window-get-side-panel" since="46"/>
-    <keyword type="function" name="gedit_window_get_bottom_panel ()" link="GeditWindow.html#gedit-window-get-bottom-panel"/>
+    <keyword type="function" name="gedit_window_get_bottom_panel ()" link="GeditWindow.html#gedit-window-get-bottom-panel" since="48"/>
     <keyword type="function" name="gedit_window_get_statusbar ()" link="GeditWindow.html#gedit-window-get-statusbar"/>
     <keyword type="function" name="gedit_window_get_group ()" link="GeditWindow.html#gedit-window-get-group"/>
     <keyword type="function" name="gedit_window_get_message_bus ()" link="GeditWindow.html#gedit-window-get-message-bus"/>
@@ -179,7 +180,6 @@
     <keyword type="function" name="gedit_debug_message ()" link="gedit-gedit-debug.html#gedit-debug-message"/>
     <keyword type="function" name="gedit_debug_plugin_message ()" link="gedit-gedit-debug.html#gedit-debug-plugin-message" since="3.4"/>
     <keyword type="enum" name="enum GeditDebugSection" link="gedit-gedit-debug.html#GeditDebugSection"/>
-    <keyword type="macro" name="DEBUG_VIEW" link="gedit-gedit-debug.html#DEBUG-VIEW:CAPS"/>
     <keyword type="macro" name="DEBUG_PREFS" link="gedit-gedit-debug.html#DEBUG-PREFS:CAPS"/>
     <keyword type="macro" name="DEBUG_WINDOW" link="gedit-gedit-debug.html#DEBUG-WINDOW:CAPS"/>
     <keyword type="macro" name="DEBUG_PANEL" link="gedit-gedit-debug.html#DEBUG-PANEL:CAPS"/>
@@ -214,7 +214,6 @@
     <keyword type="constant" name="GEDIT_TAB_STATE_CLOSING" link="GeditTab.html#GEDIT-TAB-STATE-CLOSING:CAPS"/>
     <keyword type="constant" name="GEDIT_TAB_STATE_EXTERNALLY_MODIFIED_NOTIFICATION" link="GeditTab.html#GEDIT-TAB-STATE-EXTERNALLY-MODIFIED-NOTIFICATION:CAPS"/>
     <keyword type="constant" name="GEDIT_NO_DEBUG" link="gedit-gedit-debug.html#GEDIT-NO-DEBUG:CAPS"/>
-    <keyword type="constant" name="GEDIT_DEBUG_VIEW" link="gedit-gedit-debug.html#GEDIT-DEBUG-VIEW:CAPS"/>
     <keyword type="constant" name="GEDIT_DEBUG_PREFS" link="gedit-gedit-debug.html#GEDIT-DEBUG-PREFS:CAPS"/>
     <keyword type="constant" name="GEDIT_DEBUG_WINDOW" link="gedit-gedit-debug.html#GEDIT-DEBUG-WINDOW:CAPS"/>
     <keyword type="constant" name="GEDIT_DEBUG_PANEL" link="gedit-gedit-debug.html#GEDIT-DEBUG-PANEL:CAPS"/>

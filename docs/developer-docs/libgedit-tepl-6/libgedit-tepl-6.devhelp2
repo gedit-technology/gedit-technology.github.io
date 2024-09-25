@@ -46,7 +46,8 @@
         <sub name="TeplPrefsDialog" link="TeplPrefsDialog.html"/>
         <sub name="TeplSettings" link="TeplSettings.html"/>
         <sub name="TeplSpaceDrawerPrefs" link="TeplSpaceDrawerPrefs.html"/>
-        <sub name="TeplStyleSchemeChooserWidget" link="TeplStyleSchemeChooserWidget.html"/>
+        <sub name="TeplStyleSchemeChooserFull" link="TeplStyleSchemeChooserFull.html"/>
+        <sub name="TeplStyleSchemeChooserSimple" link="TeplStyleSchemeChooserSimple.html"/>
       </sub>
     </sub>
     <sub name="API Reference - General Utilities" link="api-reference-general-utilities.html">
@@ -58,18 +59,24 @@
         <sub name="TeplMetadata" link="TeplMetadata.html"/>
         <sub name="TeplMetadataManager" link="TeplMetadataManager.html"/>
       </sub>
+      <sub name="GIO Extras - Other" link="gio-extras-other.html">
+        <sub name="TeplSettingsBindingGroup" link="libgedit-tepl-6-TeplSettingsBindingGroup.html"/>
+      </sub>
       <sub name="GTK Extras - Info Bars" link="gtk-extras-info-bars.html">
         <sub name="TeplInfoBar" link="TeplInfoBar.html"/>
         <sub name="TeplProgressInfoBar" link="TeplProgressInfoBar.html"/>
       </sub>
-      <sub name="GTK Extras - Other" link="gtk-extras-other.html">
-        <sub name="TeplFileChooser" link="libgedit-tepl-6-TeplFileChooser.html"/>
+      <sub name="GTK Extras - Side or Bottom Panel" link="gtk-extras-side-or-bottom-panel.html">
         <sub name="TeplPanel" link="TeplPanel.html"/>
         <sub name="TeplPanelItem" link="TeplPanelItem.html"/>
-        <sub name="TeplPanelContainer" link="TeplPanelContainer.html"/>
+        <sub name="TeplPanelNotebook" link="TeplPanelNotebook.html"/>
+        <sub name="TeplPanelSimple" link="TeplPanelSimple.html"/>
+        <sub name="TeplPanelStack" link="TeplPanelStack.html"/>
         <sub name="TeplPanelSwitcherMenu" link="TeplPanelSwitcherMenu.html"/>
-        <sub name="TeplPanelSwitcherNotebook" link="TeplPanelSwitcherNotebook.html"/>
         <sub name="TeplPanel1" link="TeplPanel1.html"/>
+      </sub>
+      <sub name="GTK Extras - Other" link="gtk-extras-other.html">
+        <sub name="TeplFileChooser" link="libgedit-tepl-6-TeplFileChooser.html"/>
         <sub name="TeplStatusMenuButton" link="TeplStatusMenuButton.html"/>
       </sub>
       <sub name="Other Extras" link="other-extras.html">
@@ -102,6 +109,7 @@
       <sub name="Index of new symbols in 6.4" link="api-index-6-4.html"/>
       <sub name="Index of new symbols in 6.8" link="api-index-6-8.html"/>
       <sub name="Index of new symbols in 6.10" link="api-index-6-10.html"/>
+      <sub name="Index of new symbols in 6.11" link="api-index-6-11.html"/>
     </sub>
   </chapters>
   <functions>
@@ -198,15 +206,12 @@
     <keyword type="function" name="tepl_buffer_is_untouched ()" link="TeplBuffer.html#tepl-buffer-is-untouched" since="1.0"/>
     <keyword type="function" name="tepl_buffer_get_short_title ()" link="TeplBuffer.html#tepl-buffer-get-short-title" since="3.0"/>
     <keyword type="function" name="tepl_buffer_get_full_title ()" link="TeplBuffer.html#tepl-buffer-get-full-title" since="3.0"/>
-    <keyword type="function" name="tepl_buffer_provide_style_scheme_id_gsetting ()" link="TeplBuffer.html#tepl-buffer-provide-style-scheme-id-gsetting" since="6.4"/>
-    <keyword type="function" name="tepl_buffer_get_style_scheme_id ()" link="TeplBuffer.html#tepl-buffer-get-style-scheme-id" since="2.0"/>
-    <keyword type="function" name="tepl_buffer_set_style_scheme_id ()" link="TeplBuffer.html#tepl-buffer-set-style-scheme-id" since="2.0"/>
+    <keyword type="function" name="tepl_buffer_connect_style_scheme_settings ()" link="TeplBuffer.html#tepl-buffer-connect-style-scheme-settings" since="6.11"/>
     <keyword type="function" name="tepl_buffer_get_selection_type ()" link="TeplBuffer.html#tepl-buffer-get-selection-type" since="1.0"/>
     <keyword type="struct" name="TeplBuffer" link="TeplBuffer.html#TeplBuffer-struct"/>
     <keyword type="enum" name="enum TeplSelectionType" link="TeplBuffer.html#TeplSelectionType" since="1.0"/>
     <keyword type="property" name="The “tepl-full-title” property" link="TeplBuffer.html#TeplBuffer--tepl-full-title"/>
     <keyword type="property" name="The “tepl-short-title” property" link="TeplBuffer.html#TeplBuffer--tepl-short-title"/>
-    <keyword type="property" name="The “tepl-style-scheme-id” property" link="TeplBuffer.html#TeplBuffer--tepl-style-scheme-id"/>
     <keyword type="signal" name="The “tepl-cursor-moved” signal" link="TeplBuffer.html#TeplBuffer-tepl-cursor-moved"/>
     <keyword type="function" name="tepl_menu_shell_append_edit_actions ()" link="libgedit-tepl-6-TeplMenuShell.html#tepl-menu-shell-append-edit-actions" since="3.0"/>
     <keyword type="function" name="tepl_encoding_get_name ()" link="libgedit-tepl-6-TeplEncoding.html#tepl-encoding-get-name" since="6.4"/>
@@ -311,14 +316,12 @@
     <keyword type="struct" name="struct TeplOverwriteIndicator" link="TeplOverwriteIndicator.html#TeplOverwriteIndicator-struct"/>
     <keyword type="property" name="The “overwrite” property" link="TeplOverwriteIndicator.html#TeplOverwriteIndicator--overwrite"/>
     <keyword type="function" name="tepl_prefs_create_font_component ()" link="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-font-component" since="6.2"/>
-    <keyword type="function" name="tepl_prefs_create_color_scheme_component ()" link="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-color-scheme-component" since="6.2"/>
     <keyword type="function" name="tepl_prefs_create_display_line_numbers_checkbutton ()" link="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-display-line-numbers-checkbutton" since="6.2"/>
     <keyword type="function" name="tepl_prefs_create_tab_width_spinbutton ()" link="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-tab-width-spinbutton" since="6.2"/>
     <keyword type="function" name="tepl_prefs_create_insert_spaces_component ()" link="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-insert-spaces-component" since="6.2"/>
     <keyword type="function" name="tepl_prefs_create_highlighting_component ()" link="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-highlighting-component" since="6.2"/>
     <keyword type="function" name="tepl_prefs_create_files_component ()" link="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-files-component" since="6.2"/>
     <keyword type="function" name="tepl_prefs_create_theme_variant_combo_box ()" link="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-theme-variant-combo-box" since="6.10"/>
-    <keyword type="function" name="tepl_prefs_create_simple_theme_variant_combo_box ()" link="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-simple-theme-variant-combo-box" since="6.10"/>
     <keyword type="function" name="tepl_prefs_create_right_margin_component ()" link="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-right-margin-component" since="6.10"/>
     <keyword type="function" name="tepl_prefs_create_display_statusbar_checkbutton ()" link="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-display-statusbar-checkbutton" since="6.10"/>
     <keyword type="function" name="tepl_prefs_create_display_grid_checkbutton ()" link="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-display-grid-checkbutton" since="6.10"/>
@@ -329,20 +332,23 @@
     <keyword type="function" name="tepl_settings_provide_font_settings ()" link="TeplSettings.html#tepl-settings-provide-font-settings" since="6.2"/>
     <keyword type="function" name="tepl_settings_get_selected_font ()" link="TeplSettings.html#tepl-settings-get-selected-font" since="6.2"/>
     <keyword type="function" name="tepl_settings_handle_theme_variant ()" link="TeplSettings.html#tepl-settings-handle-theme-variant" since="6.10"/>
-    <keyword type="function" name="tepl_settings_handle_simple_theme_variant ()" link="TeplSettings.html#tepl-settings-handle-simple-theme-variant" since="6.10"/>
+    <keyword type="function" name="tepl_settings_provide_style_scheme_settings ()" link="TeplSettings.html#tepl-settings-provide-style-scheme-settings" since="6.11"/>
+    <keyword type="function" name="tepl_settings_get_style_scheme_id ()" link="TeplSettings.html#tepl-settings-get-style-scheme-id" since="6.11"/>
     <keyword type="function" name="tepl_settings_get_range_uint ()" link="TeplSettings.html#tepl-settings-get-range-uint" since="6.2"/>
     <keyword type="struct" name="struct TeplSettings" link="TeplSettings.html#TeplSettings-struct"/>
     <keyword type="enum" name="enum TeplSettingsThemeVariant" link="TeplSettings.html#TeplSettingsThemeVariant" since="6.10"/>
-    <keyword type="enum" name="enum TeplSettingsSimpleThemeVariant" link="TeplSettings.html#TeplSettingsSimpleThemeVariant" since="6.10"/>
+    <keyword type="property" name="The “style-scheme-id” property" link="TeplSettings.html#TeplSettings--style-scheme-id"/>
     <keyword type="signal" name="The “font-changed” signal" link="TeplSettings.html#TeplSettings-font-changed"/>
     <keyword type="function" name="tepl_space_drawer_prefs_new ()" link="TeplSpaceDrawerPrefs.html#tepl-space-drawer-prefs-new" since="6.0"/>
     <keyword type="function" name="tepl_space_drawer_prefs_get_space_drawer ()" link="TeplSpaceDrawerPrefs.html#tepl-space-drawer-prefs-get-space-drawer" since="6.0"/>
     <keyword type="struct" name="struct TeplSpaceDrawerPrefs" link="TeplSpaceDrawerPrefs.html#TeplSpaceDrawerPrefs-struct"/>
-    <keyword type="function" name="tepl_style_scheme_chooser_widget_new ()" link="TeplStyleSchemeChooserWidget.html#tepl-style-scheme-chooser-widget-new" since="5.0"/>
-    <keyword type="function" name="tepl_style_scheme_chooser_widget_get_style_scheme_id ()" link="TeplStyleSchemeChooserWidget.html#tepl-style-scheme-chooser-widget-get-style-scheme-id" since="5.0"/>
-    <keyword type="function" name="tepl_style_scheme_chooser_widget_set_style_scheme_id ()" link="TeplStyleSchemeChooserWidget.html#tepl-style-scheme-chooser-widget-set-style-scheme-id" since="5.0"/>
-    <keyword type="struct" name="struct TeplStyleSchemeChooserWidget" link="TeplStyleSchemeChooserWidget.html#TeplStyleSchemeChooserWidget-struct"/>
-    <keyword type="property" name="The “tepl-style-scheme-id” property" link="TeplStyleSchemeChooserWidget.html#TeplStyleSchemeChooserWidget--tepl-style-scheme-id"/>
+    <keyword type="function" name="tepl_style_scheme_chooser_full_new ()" link="TeplStyleSchemeChooserFull.html#tepl-style-scheme-chooser-full-new" since="6.11"/>
+    <keyword type="struct" name="struct TeplStyleSchemeChooserFull" link="TeplStyleSchemeChooserFull.html#TeplStyleSchemeChooserFull-struct"/>
+    <keyword type="function" name="tepl_style_scheme_chooser_simple_new ()" link="TeplStyleSchemeChooserSimple.html#tepl-style-scheme-chooser-simple-new" since="6.11"/>
+    <keyword type="function" name="tepl_style_scheme_chooser_simple_get_style_scheme_id ()" link="TeplStyleSchemeChooserSimple.html#tepl-style-scheme-chooser-simple-get-style-scheme-id" since="6.11"/>
+    <keyword type="function" name="tepl_style_scheme_chooser_simple_set_style_scheme_id ()" link="TeplStyleSchemeChooserSimple.html#tepl-style-scheme-chooser-simple-set-style-scheme-id" since="6.11"/>
+    <keyword type="struct" name="struct TeplStyleSchemeChooserSimple" link="TeplStyleSchemeChooserSimple.html#TeplStyleSchemeChooserSimple-struct"/>
+    <keyword type="property" name="The “style-scheme-id” property" link="TeplStyleSchemeChooserSimple.html#TeplStyleSchemeChooserSimple--style-scheme-id"/>
     <keyword type="function" name="tepl_object_counters_init ()" link="libgedit-tepl-6-TeplObjectCounters.html#tepl-object-counters-init" since="6.10"/>
     <keyword type="function" name="tepl_object_counters_increment ()" link="libgedit-tepl-6-TeplObjectCounters.html#tepl-object-counters-increment" since="6.10"/>
     <keyword type="function" name="tepl_object_counters_decrement ()" link="libgedit-tepl-6-TeplObjectCounters.html#tepl-object-counters-decrement" since="6.10"/>
@@ -362,6 +368,11 @@
     <keyword type="function" name="tepl_metadata_manager_copy_from ()" link="TeplMetadataManager.html#tepl-metadata-manager-copy-from" since="5.0"/>
     <keyword type="function" name="tepl_metadata_manager_merge_into ()" link="TeplMetadataManager.html#tepl-metadata-manager-merge-into" since="5.0"/>
     <keyword type="struct" name="struct TeplMetadataManager" link="TeplMetadataManager.html#TeplMetadataManager-struct"/>
+    <keyword type="function" name="tepl_settings_binding_group_new ()" link="libgedit-tepl-6-TeplSettingsBindingGroup.html#tepl-settings-binding-group-new" since="6.11"/>
+    <keyword type="function" name="tepl_settings_binding_group_free ()" link="libgedit-tepl-6-TeplSettingsBindingGroup.html#tepl-settings-binding-group-free" since="6.11"/>
+    <keyword type="function" name="tepl_settings_binding_group_add ()" link="libgedit-tepl-6-TeplSettingsBindingGroup.html#tepl-settings-binding-group-add" since="6.11"/>
+    <keyword type="function" name="tepl_settings_binding_group_unbind ()" link="libgedit-tepl-6-TeplSettingsBindingGroup.html#tepl-settings-binding-group-unbind" since="6.11"/>
+    <keyword type="struct" name="TeplSettingsBindingGroup" link="libgedit-tepl-6-TeplSettingsBindingGroup.html#TeplSettingsBindingGroup"/>
     <keyword type="function" name="tepl_info_bar_new ()" link="TeplInfoBar.html#tepl-info-bar-new" since="1.0"/>
     <keyword type="function" name="tepl_info_bar_new_simple ()" link="TeplInfoBar.html#tepl-info-bar-new-simple" since="2.0"/>
     <keyword type="function" name="tepl_info_bar_get_icon_from_message_type ()" link="TeplInfoBar.html#tepl-info-bar-get-icon-from-message-type" since="6.0"/>
@@ -388,33 +399,45 @@
     <keyword type="function" name="tepl_progress_info_bar_pulse ()" link="TeplProgressInfoBar.html#tepl-progress-info-bar-pulse" since="6.0"/>
     <keyword type="struct" name="struct TeplProgressInfoBar" link="TeplProgressInfoBar.html#TeplProgressInfoBar-struct"/>
     <keyword type="property" name="The “has-cancel-button” property" link="TeplProgressInfoBar.html#TeplProgressInfoBar--has-cancel-button"/>
-    <keyword type="function" name="tepl_file_chooser_set_modal ()" link="libgedit-tepl-6-TeplFileChooser.html#tepl-file-chooser-set-modal" since="5.0"/>
-    <keyword type="function" name="tepl_file_chooser_set_parent ()" link="libgedit-tepl-6-TeplFileChooser.html#tepl-file-chooser-set-parent" since="5.0"/>
-    <keyword type="function" name="tepl_file_chooser_show ()" link="libgedit-tepl-6-TeplFileChooser.html#tepl-file-chooser-show" since="5.0"/>
-    <keyword type="function" name="tepl_panel_add ()" link="TeplPanel.html#tepl-panel-add" since="6.8"/>
+    <keyword type="function" name="tepl_panel_add ()" link="TeplPanel.html#tepl-panel-add" since="6.11"/>
     <keyword type="function" name="tepl_panel_remove ()" link="TeplPanel.html#tepl-panel-remove" since="6.8"/>
     <keyword type="function" name="tepl_panel_set_active ()" link="TeplPanel.html#tepl-panel-set-active" since="6.8"/>
     <keyword type="struct" name="TeplPanel" link="TeplPanel.html#TeplPanel-struct"/>
     <keyword type="struct" name="struct TeplPanelInterface" link="TeplPanel.html#TeplPanelInterface" since="6.8"/>
+    <keyword type="function" name="tepl_panel_item_new ()" link="TeplPanelItem.html#tepl-panel-item-new" since="6.11"/>
     <keyword type="function" name="tepl_panel_item_get_widget ()" link="TeplPanelItem.html#tepl-panel-item-get-widget" since="6.8"/>
     <keyword type="function" name="tepl_panel_item_get_name ()" link="TeplPanelItem.html#tepl-panel-item-get-name" since="6.8"/>
     <keyword type="function" name="tepl_panel_item_get_title ()" link="TeplPanelItem.html#tepl-panel-item-get-title" since="6.8"/>
     <keyword type="function" name="tepl_panel_item_get_icon_name ()" link="TeplPanelItem.html#tepl-panel-item-get-icon-name" since="6.8"/>
+    <keyword type="function" name="tepl_panel_item_get_position ()" link="TeplPanelItem.html#tepl-panel-item-get-position" since="6.11"/>
+    <keyword type="function" name="tepl_panel_item_compare ()" link="TeplPanelItem.html#tepl-panel-item-compare" since="6.11"/>
     <keyword type="function" name="tepl_panel_item_compare_by_title ()" link="TeplPanelItem.html#tepl-panel-item-compare-by-title" since="6.8"/>
-    <keyword type="struct" name="TeplPanelItem" link="TeplPanelItem.html#TeplPanelItem-struct"/>
-    <keyword type="struct" name="struct TeplPanelItemInterface" link="TeplPanelItem.html#TeplPanelItemInterface" since="6.8"/>
-    <keyword type="function" name="tepl_panel_container_new ()" link="TeplPanelContainer.html#tepl-panel-container-new" since="6.8"/>
-    <keyword type="function" name="tepl_panel_container_get_items ()" link="TeplPanelContainer.html#tepl-panel-container-get-items" since="6.8"/>
-    <keyword type="function" name="tepl_panel_container_get_active_item ()" link="TeplPanelContainer.html#tepl-panel-container-get-active-item" since="6.8"/>
-    <keyword type="function" name="tepl_panel_container_get_active_item_name ()" link="TeplPanelContainer.html#tepl-panel-container-get-active-item-name" since="6.8"/>
-    <keyword type="function" name="tepl_panel_container_set_active_item_name ()" link="TeplPanelContainer.html#tepl-panel-container-set-active-item-name" since="6.8"/>
-    <keyword type="function" name="tepl_panel_container_has_several_items ()" link="TeplPanelContainer.html#tepl-panel-container-has-several-items" since="6.8"/>
-    <keyword type="struct" name="struct TeplPanelContainer" link="TeplPanelContainer.html#TeplPanelContainer-struct"/>
-    <keyword type="signal" name="The “changed” signal" link="TeplPanelContainer.html#TeplPanelContainer-changed"/>
-    <keyword type="function" name="tepl_panel_switcher_menu_new ()" link="TeplPanelSwitcherMenu.html#tepl-panel-switcher-menu-new" since="6.8"/>
+    <keyword type="struct" name="struct TeplPanelItem" link="TeplPanelItem.html#TeplPanelItem-struct"/>
+    <keyword type="property" name="The “icon-name” property" link="TeplPanelItem.html#TeplPanelItem--icon-name"/>
+    <keyword type="property" name="The “name” property" link="TeplPanelItem.html#TeplPanelItem--name"/>
+    <keyword type="property" name="The “position” property" link="TeplPanelItem.html#TeplPanelItem--position"/>
+    <keyword type="property" name="The “title” property" link="TeplPanelItem.html#TeplPanelItem--title"/>
+    <keyword type="property" name="The “widget” property" link="TeplPanelItem.html#TeplPanelItem--widget"/>
+    <keyword type="function" name="tepl_panel_notebook_new ()" link="TeplPanelNotebook.html#tepl-panel-notebook-new" since="6.11"/>
+    <keyword type="struct" name="struct TeplPanelNotebook" link="TeplPanelNotebook.html#TeplPanelNotebook-struct"/>
+    <keyword type="function" name="tepl_panel_simple_new ()" link="TeplPanelSimple.html#tepl-panel-simple-new" since="6.11"/>
+    <keyword type="function" name="tepl_panel_simple_get_items ()" link="TeplPanelSimple.html#tepl-panel-simple-get-items" since="6.11"/>
+    <keyword type="function" name="tepl_panel_simple_get_active_item ()" link="TeplPanelSimple.html#tepl-panel-simple-get-active-item" since="6.11"/>
+    <keyword type="function" name="tepl_panel_simple_get_active_item_name ()" link="TeplPanelSimple.html#tepl-panel-simple-get-active-item-name" since="6.11"/>
+    <keyword type="function" name="tepl_panel_simple_set_active_item_name ()" link="TeplPanelSimple.html#tepl-panel-simple-set-active-item-name" since="6.11"/>
+    <keyword type="function" name="tepl_panel_simple_has_several_items ()" link="TeplPanelSimple.html#tepl-panel-simple-has-several-items" since="6.11"/>
+    <keyword type="struct" name="struct TeplPanelSimple" link="TeplPanelSimple.html#TeplPanelSimple-struct"/>
+    <keyword type="property" name="The “active-item” property" link="TeplPanelSimple.html#TeplPanelSimple--active-item"/>
+    <keyword type="property" name="The “active-item-name” property" link="TeplPanelSimple.html#TeplPanelSimple--active-item-name"/>
+    <keyword type="signal" name="The “add-item” signal" link="TeplPanelSimple.html#TeplPanelSimple-add-item"/>
+    <keyword type="signal" name="The “changed” signal" link="TeplPanelSimple.html#TeplPanelSimple-changed"/>
+    <keyword type="signal" name="The “remove-item” signal" link="TeplPanelSimple.html#TeplPanelSimple-remove-item"/>
+    <keyword type="function" name="tepl_panel_stack_new ()" link="TeplPanelStack.html#tepl-panel-stack-new" since="6.11"/>
+    <keyword type="function" name="tepl_panel_stack_get_panel_simple ()" link="TeplPanelStack.html#tepl-panel-stack-get-panel-simple" since="6.11"/>
+    <keyword type="function" name="tepl_panel_stack_get_stack ()" link="TeplPanelStack.html#tepl-panel-stack-get-stack" since="6.11"/>
+    <keyword type="struct" name="struct TeplPanelStack" link="TeplPanelStack.html#TeplPanelStack-struct"/>
+    <keyword type="function" name="tepl_panel_switcher_menu_new ()" link="TeplPanelSwitcherMenu.html#tepl-panel-switcher-menu-new" since="6.11"/>
     <keyword type="struct" name="struct TeplPanelSwitcherMenu" link="TeplPanelSwitcherMenu.html#TeplPanelSwitcherMenu-struct"/>
-    <keyword type="function" name="tepl_panel_switcher_notebook_new ()" link="TeplPanelSwitcherNotebook.html#tepl-panel-switcher-notebook-new" since="6.10"/>
-    <keyword type="struct" name="struct TeplPanelSwitcherNotebook" link="TeplPanelSwitcherNotebook.html#TeplPanelSwitcherNotebook-struct"/>
     <keyword type="function" name="tepl_panel1_new ()" link="TeplPanel1.html#tepl-panel1-new" since="5.0"/>
     <keyword type="function" name="tepl_panel1_new_for_left_side_panel ()" link="TeplPanel1.html#tepl-panel1-new-for-left-side-panel" since="5.0"/>
     <keyword type="function" name="tepl_panel1_get_stack ()" link="TeplPanel1.html#tepl-panel1-get-stack" since="5.0"/>
@@ -423,6 +446,9 @@
     <keyword type="function" name="tepl_panel1_restore_state_from_gsettings ()" link="TeplPanel1.html#tepl-panel1-restore-state-from-gsettings" since="5.0"/>
     <keyword type="function" name="tepl_panel1_save_state_to_gsettings ()" link="TeplPanel1.html#tepl-panel1-save-state-to-gsettings" since="5.0"/>
     <keyword type="struct" name="struct TeplPanel1" link="TeplPanel1.html#TeplPanel1-struct"/>
+    <keyword type="function" name="tepl_file_chooser_set_modal ()" link="libgedit-tepl-6-TeplFileChooser.html#tepl-file-chooser-set-modal" since="5.0"/>
+    <keyword type="function" name="tepl_file_chooser_set_parent ()" link="libgedit-tepl-6-TeplFileChooser.html#tepl-file-chooser-set-parent" since="5.0"/>
+    <keyword type="function" name="tepl_file_chooser_show ()" link="libgedit-tepl-6-TeplFileChooser.html#tepl-file-chooser-show" since="5.0"/>
     <keyword type="function" name="tepl_status_menu_button_new ()" link="TeplStatusMenuButton.html#tepl-status-menu-button-new" since="6.8"/>
     <keyword type="function" name="tepl_status_menu_button_set_label_text ()" link="TeplStatusMenuButton.html#tepl-status-menu-button-set-label-text" since="6.8"/>
     <keyword type="struct" name="struct TeplStatusMenuButton" link="TeplStatusMenuButton.html#TeplStatusMenuButton-struct"/>
@@ -450,6 +476,7 @@
     <keyword type="function" name="tepl_utils_override_font_string ()" link="libgedit-tepl-6-TeplUtils.html#tepl-utils-override-font-string" since="6.2"/>
     <keyword type="function" name="tepl_utils_get_titled_component ()" link="libgedit-tepl-6-TeplUtils.html#tepl-utils-get-titled-component" since="6.2"/>
     <keyword type="function" name="tepl_utils_setup_statusbar ()" link="libgedit-tepl-6-TeplUtils.html#tepl-utils-setup-statusbar" since="6.8"/>
+    <keyword type="function" name="tepl_utils_set_widget ()" link="libgedit-tepl-6-TeplUtils.html#tepl-utils-set-widget" since="6.11"/>
     <keyword type="function" name="tepl_utils_binding_transform_func_smart_bool ()" link="libgedit-tepl-6-TeplUtils.html#tepl-utils-binding-transform-func-smart-bool" since="5.0"/>
     <keyword type="function" name="tepl_utils_can_use_gsettings_schema ()" link="libgedit-tepl-6-TeplUtils.html#tepl-utils-can-use-gsettings-schema" since="6.2"/>
     <keyword type="function" name="tepl_utils_can_use_gsettings_key ()" link="libgedit-tepl-6-TeplUtils.html#tepl-utils-can-use-gsettings-key" since="6.2"/>
@@ -470,8 +497,6 @@
     <keyword type="constant" name="TEPL_SETTINGS_THEME_VARIANT_SYSTEM" link="TeplSettings.html#TEPL-SETTINGS-THEME-VARIANT-SYSTEM:CAPS"/>
     <keyword type="constant" name="TEPL_SETTINGS_THEME_VARIANT_LIGHT" link="TeplSettings.html#TEPL-SETTINGS-THEME-VARIANT-LIGHT:CAPS"/>
     <keyword type="constant" name="TEPL_SETTINGS_THEME_VARIANT_DARK" link="TeplSettings.html#TEPL-SETTINGS-THEME-VARIANT-DARK:CAPS"/>
-    <keyword type="constant" name="TEPL_SETTINGS_SIMPLE_THEME_VARIANT_LIGHT" link="TeplSettings.html#TEPL-SETTINGS-SIMPLE-THEME-VARIANT-LIGHT:CAPS"/>
-    <keyword type="constant" name="TEPL_SETTINGS_SIMPLE_THEME_VARIANT_DARK" link="TeplSettings.html#TEPL-SETTINGS-SIMPLE-THEME-VARIANT-DARK:CAPS"/>
     <keyword type="constant" name="TEPL_INFO_BAR_LOCATION_ALONGSIDE_ICON" link="TeplInfoBar.html#TEPL-INFO-BAR-LOCATION-ALONGSIDE-ICON:CAPS"/>
     <keyword type="constant" name="TEPL_INFO_BAR_LOCATION_BELOW_ICON" link="TeplInfoBar.html#TEPL-INFO-BAR-LOCATION-BELOW-ICON:CAPS"/>
     <keyword type="member" name="TeplAbstractFactoryClass.create-main-window" link="TeplAbstractFactory.html#TeplAbstractFactoryClass.create-main-window"/>
@@ -500,10 +525,5 @@
     <keyword type="member" name="TeplPanelInterface.add" link="TeplPanel.html#TeplPanelInterface.add"/>
     <keyword type="member" name="TeplPanelInterface.remove" link="TeplPanel.html#TeplPanelInterface.remove"/>
     <keyword type="member" name="TeplPanelInterface.set-active" link="TeplPanel.html#TeplPanelInterface.set-active"/>
-    <keyword type="member" name="TeplPanelItemInterface.parent-interface" link="TeplPanelItem.html#TeplPanelItemInterface.parent-interface"/>
-    <keyword type="member" name="TeplPanelItemInterface.get-widget" link="TeplPanelItem.html#TeplPanelItemInterface.get-widget"/>
-    <keyword type="member" name="TeplPanelItemInterface.get-name" link="TeplPanelItem.html#TeplPanelItemInterface.get-name"/>
-    <keyword type="member" name="TeplPanelItemInterface.get-title" link="TeplPanelItem.html#TeplPanelItemInterface.get-title"/>
-    <keyword type="member" name="TeplPanelItemInterface.get-icon-name" link="TeplPanelItem.html#TeplPanelItemInterface.get-icon-name"/>
   </functions>
 </book>

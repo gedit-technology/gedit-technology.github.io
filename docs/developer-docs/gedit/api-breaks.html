@@ -29,7 +29,14 @@
     API stability guarantees.
   </p>
 <div class="refsect1">
-<a name="id-1.3.3"></a><h2>46 -&gt; 47</h2>
+<a name="id-1.3.3"></a><h2>47 -&gt; 48</h2>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+          <a class="link" href="GeditWindow.html#gedit-window-get-bottom-panel" title="gedit_window_get_bottom_panel ()">gedit_window_get_bottom_panel()</a>
+          now returns a <a href="../libgedit-tepl-6/TeplPanel.html#TeplPanel-struct">TeplPanel</a>.
+        </p></li></ul></div>
+</div>
+<div class="refsect1">
+<a name="id-1.3.4"></a><h2>46 -&gt; 47</h2>
 <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
 <li class="listitem"><p>
           The <a class="link" href="GeditWindow.html#GeditWindow-active-tab-changed" title="The “active-tab-changed” signal">GeditWindow::active-tab-changed</a>
@@ -69,7 +76,7 @@
 </ul></div>
 </div>
 <div class="refsect1">
-<a name="id-1.3.4"></a><h2>45 -&gt; 46</h2>
+<a name="id-1.3.5"></a><h2>45 -&gt; 46</h2>
 <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
 <li class="listitem"><p>
           The <a class="link" href="GeditWindow.html#gedit-window-get-side-panel" title="gedit_window_get_side_panel ()">gedit_window_get_side_panel()</a>
@@ -87,7 +94,7 @@
 </ul></div>
 </div>
 <div class="refsect1">
-<a name="id-1.3.5"></a><h2>44 -&gt; 45</h2>
+<a name="id-1.3.6"></a><h2>44 -&gt; 45</h2>
 <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
 <li class="listitem"><p>
           Vala plugins need to rely on the GObject Introspection file instead of
@@ -106,7 +113,7 @@
 </ul></div>
 </div>
 <div class="refsect1">
-<a name="id-1.3.6"></a><h2>43 -&gt; 44</h2>
+<a name="id-1.3.7"></a><h2>43 -&gt; 44</h2>
 <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
 <li class="listitem"><p>
           When an URI is added to the
@@ -131,7 +138,12 @@
           The <code class="code">gedit_document_is_untitled()</code> function has been
           removed, use
           <a href="../libgedit-tepl-6/TeplFile.html#tepl-file-get-location">tepl_file_get_location()</a>
-          instead.
+          instead. If the location is <code class="code">NULL</code>, it means that the
+          document is untitled. The <a href="../libgedit-tepl-6/TeplFile.html#TeplFile-struct">TeplFile</a>
+          object should be retrieved with
+          <a href="../libgedit-tepl-6/TeplBuffer.html#tepl-buffer-get-file">tepl_buffer_get_file()</a>
+          (<a class="link" href="GeditDocument.html" title="GeditDocument">GeditDocument</a> inherits from
+          <a href="../libgedit-tepl-6/TeplBuffer.html#TeplBuffer-struct">TeplBuffer</a>).
         </p></li>
 <li class="listitem"><p>
           The <code class="code">gedit_statusbar_set_overwrite()</code>
@@ -141,7 +153,7 @@
 </ul></div>
 </div>
 <div class="refsect1">
-<a name="id-1.3.7"></a><h2>3.38 -&gt; 40</h2>
+<a name="id-1.3.8"></a><h2>3.38 -&gt; 40</h2>
 <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
 <li class="listitem"><p>
           All previously deprecated APIs have been removed.
@@ -182,7 +194,7 @@
 </ul></div>
 </div>
 <div class="refsect1">
-<a name="id-1.3.8"></a><h2>3.36.0 -&gt; 3.37.1</h2>
+<a name="id-1.3.9"></a><h2>3.36.0 -&gt; 3.37.1</h2>
 <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
 <li class="listitem"><p>
           All previously deprecated APIs have been removed.
@@ -206,7 +218,7 @@
 </ul></div>
 </div>
 <div class="refsect1">
-<a name="id-1.3.9"></a><h2>3.34.0 -&gt; 3.35.2</h2>
+<a name="id-1.3.10"></a><h2>3.34.0 -&gt; 3.35.2</h2>
 <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
 <li class="listitem"><p>
           All previously deprecated APIs have been removed.
@@ -228,7 +240,7 @@
 </ul></div>
 </div>
 <div class="refsect1">
-<a name="id-1.3.10"></a><h2>For previous gedit versions</h2>
+<a name="id-1.3.11"></a><h2>For previous gedit versions</h2>
 <p>
       See the
       <a class="ulink" href="https://wiki.gnome.org/Apps/Gedit/Attic/Old_API_Changes" target="_top">Old API Changes wiki page</a>.

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="Enter TeX Reference Manual" link="index.html" author="" name="enter-tex" version="2" language="c">
+  <chapters>
+    <sub name="API reference" link="api-reference.html">
+      <sub name="Main Classes" link="ch01.html">
+        <sub name="Gtex Initialization and Finalization" link="enter-tex-Gtex-Initialization-and-Finalization.html"/>
+        <sub name="GtexFactory" link="GtexFactory.html"/>
+        <sub name="GtexSettings" link="GtexSettings.html"/>
+        <sub name="GtexApp" link="GtexApp.html"/>
+        <sub name="GtexBuffer" link="enter-tex-GtexBuffer.html"/>
+        <sub name="GtexView" link="enter-tex-GtexView.html"/>
+      </sub>
+      <sub name="Build Tools" link="ch02.html">
+        <sub name="GtexBuildJob" link="GtexBuildJob.html"/>
+        <sub name="GtexBuildTool" link="GtexBuildTool.html"/>
+        <sub name="GtexBuildTools" link="GtexBuildTools.html"/>
+        <sub name="GtexBuildToolsDefault" link="GtexBuildToolsDefault.html"/>
+        <sub name="GtexBuildToolsPersonal" link="GtexBuildToolsPersonal.html"/>
+        <sub name="GtexBuildView" link="GtexBuildView.html"/>
+        <sub name="GtexPostProcessor" link="GtexPostProcessor.html"/>
+        <sub name="GtexPostProcessorAllOutput" link="GtexPostProcessorAllOutput.html"/>
+        <sub name="GtexPostProcessorLatex" link="GtexPostProcessorLatex.html"/>
+        <sub name="GtexPostProcessorLatexmk" link="GtexPostProcessorLatexmk.html"/>
+      </sub>
+      <sub name="Structure" link="ch03.html">
+        <sub name="GtexStructure" link="GtexStructure.html"/>
+      </sub>
+      <sub name="Templates" link="ch04.html">
+        <sub name="GtexTemplatesDialogs" link="enter-tex-GtexTemplatesDialogs.html"/>
+        <sub name="GtexTemplatesManageDialog" link="GtexTemplatesManageDialog.html"/>
+        <sub name="GtexTemplatesDefault" link="GtexTemplatesDefault.html"/>
+        <sub name="GtexTemplatesPersonal" link="GtexTemplatesPersonal.html"/>
+      </sub>
+      <sub name="Misc" link="ch05.html">
+        <sub name="GtexDirs" link="enter-tex-GtexDirs.html"/>
+        <sub name="LaTeX commands" link="enter-tex-LaTeX-commands.html"/>
+        <sub name="GtexPrefs" link="enter-tex-GtexPrefs.html"/>
+        <sub name="GtexSynctex" link="GtexSynctex.html"/>
+        <sub name="GtexTreeModelNode" link="GtexTreeModelNode.html"/>
+        <sub name="GtexUtils" link="enter-tex-GtexUtils.html"/>
+      </sub>
+    </sub>
+    <sub name="Annexes" link="annexes.html">
+      <sub name="Object Hierarchy" link="object-tree.html"/>
+      <sub name="Index of all symbols" link="ix01.html"/>
+      <sub name="Annotation Glossary" link="annotation-glossary.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <keyword type="function" name="gtex_init ()" link="enter-tex-Gtex-Initialization-and-Finalization.html#gtex-init"/>
+    <keyword type="function" name="gtex_finalize ()" link="enter-tex-Gtex-Initialization-and-Finalization.html#gtex-finalize"/>
+    <keyword type="function" name="gtex_factory_new ()" link="GtexFactory.html#gtex-factory-new"/>
+    <keyword type="struct" name="struct GtexFactory" link="GtexFactory.html#GtexFactory-struct"/>
+    <keyword type="function" name="gtex_settings_get_singleton ()" link="GtexSettings.html#gtex-settings-get-singleton"/>
+    <keyword type="function" name="gtex_settings_peek_editor_settings ()" link="GtexSettings.html#gtex-settings-peek-editor-settings"/>
+    <keyword type="function" name="gtex_settings_peek_latex_settings ()" link="GtexSettings.html#gtex-settings-peek-latex-settings"/>
+    <keyword type="struct" name="struct GtexSettings" link="GtexSettings.html#GtexSettings-struct"/>
+    <keyword type="function" name="gtex_app_new ()" link="GtexApp.html#gtex-app-new"/>
+    <keyword type="struct" name="struct GtexApp" link="GtexApp.html#GtexApp-struct"/>
+    <keyword type="function" name="gtex_buffer_setup ()" link="enter-tex-GtexBuffer.html#gtex-buffer-setup"/>
+    <keyword type="function" name="gtex_view_setup ()" link="enter-tex-GtexView.html#gtex-view-setup"/>
+    <keyword type="function" name="gtex_view_get_indentation_style ()" link="enter-tex-GtexView.html#gtex-view-get-indentation-style"/>
+    <keyword type="function" name="gtex_build_job_new ()" link="GtexBuildJob.html#gtex-build-job-new"/>
+    <keyword type="function" name="gtex_build_job_clone ()" link="GtexBuildJob.html#gtex-build-job-clone"/>
+    <keyword type="function" name="gtex_build_job_to_xml ()" link="GtexBuildJob.html#gtex-build-job-to-xml"/>
+    <keyword type="function" name="gtex_build_job_run_async ()" link="GtexBuildJob.html#gtex-build-job-run-async"/>
+    <keyword type="function" name="gtex_build_job_run_finish ()" link="GtexBuildJob.html#gtex-build-job-run-finish"/>
+    <keyword type="struct" name="GtexBuildJob" link="GtexBuildJob.html#GtexBuildJob-struct"/>
+    <keyword type="property" name="The “command” property" link="GtexBuildJob.html#GtexBuildJob--command"/>
+    <keyword type="property" name="The “post-processor-type” property" link="GtexBuildJob.html#GtexBuildJob--post-processor-type"/>
+    <keyword type="function" name="gtex_build_tool_new ()" link="GtexBuildTool.html#gtex-build-tool-new"/>
+    <keyword type="function" name="gtex_build_tool_clone ()" link="GtexBuildTool.html#gtex-build-tool-clone"/>
+    <keyword type="function" name="gtex_build_tool_add_job ()" link="GtexBuildTool.html#gtex-build-tool-add-job"/>
+    <keyword type="function" name="gtex_build_tool_get_jobs ()" link="GtexBuildTool.html#gtex-build-tool-get-jobs"/>
+    <keyword type="function" name="gtex_build_tool_get_description ()" link="GtexBuildTool.html#gtex-build-tool-get-description"/>
+    <keyword type="function" name="gtex_build_tool_to_xml ()" link="GtexBuildTool.html#gtex-build-tool-to-xml"/>
+    <keyword type="function" name="gtex_build_tool_run_async ()" link="GtexBuildTool.html#gtex-build-tool-run-async"/>
+    <keyword type="function" name="gtex_build_tool_run_finish ()" link="GtexBuildTool.html#gtex-build-tool-run-finish"/>
+    <keyword type="struct" name="GtexBuildTool" link="GtexBuildTool.html#GtexBuildTool-struct"/>
+    <keyword type="property" name="The “description” property" link="GtexBuildTool.html#GtexBuildTool--description"/>
+    <keyword type="property" name="The “enabled” property" link="GtexBuildTool.html#GtexBuildTool--enabled"/>
+    <keyword type="property" name="The “extensions” property" link="GtexBuildTool.html#GtexBuildTool--extensions"/>
+    <keyword type="property" name="The “files-to-open” property" link="GtexBuildTool.html#GtexBuildTool--files-to-open"/>
+    <keyword type="property" name="The “icon” property" link="GtexBuildTool.html#GtexBuildTool--icon"/>
+    <keyword type="property" name="The “id” property" link="GtexBuildTool.html#GtexBuildTool--id"/>
+    <keyword type="property" name="The “label” property" link="GtexBuildTool.html#GtexBuildTool--label"/>
+    <keyword type="function" name="gtex_build_tools_load ()" link="GtexBuildTools.html#gtex-build-tools-load"/>
+    <keyword type="function" name="gtex_build_tools_set_enabled ()" link="GtexBuildTools.html#gtex-build-tools-set-enabled"/>
+    <keyword type="function" name="gtex_build_tools_nth ()" link="GtexBuildTools.html#gtex-build-tools-nth"/>
+    <keyword type="struct" name="GtexBuildTools" link="GtexBuildTools.html#GtexBuildTools-struct"/>
+    <keyword type="signal" name="The “loaded” signal" link="GtexBuildTools.html#GtexBuildTools-loaded"/>
+    <keyword type="signal" name="The “modified” signal" link="GtexBuildTools.html#GtexBuildTools-modified"/>
+    <keyword type="function" name="gtex_build_tools_default_get_instance ()" link="GtexBuildToolsDefault.html#gtex-build-tools-default-get-instance"/>
+    <keyword type="struct" name="GtexBuildToolsDefault" link="GtexBuildToolsDefault.html#GtexBuildToolsDefault-struct"/>
+    <keyword type="function" name="gtex_build_tools_personal_get_instance ()" link="GtexBuildToolsPersonal.html#gtex-build-tools-personal-get-instance"/>
+    <keyword type="function" name="gtex_build_tools_personal_save ()" link="GtexBuildToolsPersonal.html#gtex-build-tools-personal-save"/>
+    <keyword type="function" name="gtex_build_tools_personal_move_up ()" link="GtexBuildToolsPersonal.html#gtex-build-tools-personal-move-up"/>
+    <keyword type="function" name="gtex_build_tools_personal_move_down ()" link="GtexBuildToolsPersonal.html#gtex-build-tools-personal-move-down"/>
+    <keyword type="function" name="gtex_build_tools_personal_delete ()" link="GtexBuildToolsPersonal.html#gtex-build-tools-personal-delete"/>
+    <keyword type="function" name="gtex_build_tools_personal_add ()" link="GtexBuildToolsPersonal.html#gtex-build-tools-personal-add"/>
+    <keyword type="function" name="gtex_build_tools_personal_insert ()" link="GtexBuildToolsPersonal.html#gtex-build-tools-personal-insert"/>
+    <keyword type="function" name="gtex_build_tools_personal_replace ()" link="GtexBuildToolsPersonal.html#gtex-build-tools-personal-replace"/>
+    <keyword type="struct" name="GtexBuildToolsPersonal" link="GtexBuildToolsPersonal.html#GtexBuildToolsPersonal-struct"/>
+    <keyword type="function" name="gtex_build_msg_new ()" link="GtexBuildView.html#gtex-build-msg-new"/>
+    <keyword type="function" name="gtex_build_msg_free ()" link="GtexBuildView.html#gtex-build-msg-free"/>
+    <keyword type="function" name="gtex_build_msg_reinit ()" link="GtexBuildView.html#gtex-build-msg-reinit"/>
+    <keyword type="function" name="gtex_build_msg_print ()" link="GtexBuildView.html#gtex-build-msg-print"/>
+    <keyword type="function" name="gtex_build_view_new ()" link="GtexBuildView.html#gtex-build-view-new"/>
+    <keyword type="function" name="gtex_build_view_clear ()" link="GtexBuildView.html#gtex-build-view-clear"/>
+    <keyword type="function" name="gtex_build_view_add_main_title ()" link="GtexBuildView.html#gtex-build-view-add-main-title"/>
+    <keyword type="function" name="gtex_build_view_add_job_title ()" link="GtexBuildView.html#gtex-build-view-add-job-title"/>
+    <keyword type="function" name="gtex_build_view_set_title_state ()" link="GtexBuildView.html#gtex-build-view-set-title-state"/>
+    <keyword type="function" name="gtex_build_view_append_single_message ()" link="GtexBuildView.html#gtex-build-view-append-single-message"/>
+    <keyword type="function" name="gtex_build_view_append_messages ()" link="GtexBuildView.html#gtex-build-view-append-messages"/>
+    <keyword type="function" name="gtex_build_view_remove_children ()" link="GtexBuildView.html#gtex-build-view-remove-children"/>
+    <keyword type="struct" name="GtexBuildView" link="GtexBuildView.html#GtexBuildView-struct"/>
+    <keyword type="struct" name="struct GtexBuildMsg" link="GtexBuildView.html#GtexBuildMsg"/>
+    <keyword type="enum" name="enum GtexBuildMsgType" link="GtexBuildView.html#GtexBuildMsgType"/>
+    <keyword type="enum" name="enum GtexBuildState" link="GtexBuildView.html#GtexBuildState"/>
+    <keyword type="property" name="The “has-details” property" link="GtexBuildView.html#GtexBuildView--has-details"/>
+    <keyword type="property" name="The “show-badboxes” property" link="GtexBuildView.html#GtexBuildView--show-badboxes"/>
+    <keyword type="property" name="The “show-details” property" link="GtexBuildView.html#GtexBuildView--show-details"/>
+    <keyword type="property" name="The “show-warnings” property" link="GtexBuildView.html#GtexBuildView--show-warnings"/>
+    <keyword type="signal" name="The “jump-to-file” signal" link="GtexBuildView.html#GtexBuildView-jump-to-file"/>
+    <keyword type="function" name="gtex_post_processor_get_name_from_type ()" link="GtexPostProcessor.html#gtex-post-processor-get-name-from-type"/>
+    <keyword type="function" name="gtex_post_processor_get_type_from_name ()" link="GtexPostProcessor.html#gtex-post-processor-get-type-from-name"/>
+    <keyword type="function" name="gtex_post_processor_process_async ()" link="GtexPostProcessor.html#gtex-post-processor-process-async"/>
+    <keyword type="function" name="gtex_post_processor_process_finish ()" link="GtexPostProcessor.html#gtex-post-processor-process-finish"/>
+    <keyword type="function" name="gtex_post_processor_start ()" link="GtexPostProcessor.html#gtex-post-processor-start"/>
+    <keyword type="function" name="gtex_post_processor_process_line ()" link="GtexPostProcessor.html#gtex-post-processor-process-line"/>
+    <keyword type="function" name="gtex_post_processor_end ()" link="GtexPostProcessor.html#gtex-post-processor-end"/>
+    <keyword type="function" name="gtex_post_processor_get_messages ()" link="GtexPostProcessor.html#gtex-post-processor-get-messages"/>
+    <keyword type="function" name="gtex_post_processor_take_messages ()" link="GtexPostProcessor.html#gtex-post-processor-take-messages"/>
+    <keyword type="struct" name="GtexPostProcessor" link="GtexPostProcessor.html#GtexPostProcessor-struct"/>
+    <keyword type="enum" name="enum GtexPostProcessorType" link="GtexPostProcessor.html#GtexPostProcessorType"/>
+    <keyword type="property" name="The “has-details” property" link="GtexPostProcessor.html#GtexPostProcessor--has-details"/>
+    <keyword type="function" name="gtex_post_processor_all_output_new ()" link="GtexPostProcessorAllOutput.html#gtex-post-processor-all-output-new"/>
+    <keyword type="struct" name="GtexPostProcessorAllOutput" link="GtexPostProcessorAllOutput.html#GtexPostProcessorAllOutput-struct"/>
+    <keyword type="function" name="gtex_post_processor_latex_new ()" link="GtexPostProcessorLatex.html#gtex-post-processor-latex-new"/>
+    <keyword type="function" name="gtex_post_processor_latex_get_errors_count ()" link="GtexPostProcessorLatex.html#gtex-post-processor-latex-get-errors-count"/>
+    <keyword type="struct" name="GtexPostProcessorLatex" link="GtexPostProcessorLatex.html#GtexPostProcessorLatex-struct"/>
+    <keyword type="function" name="gtex_post_processor_latexmk_new ()" link="GtexPostProcessorLatexmk.html#gtex-post-processor-latexmk-new"/>
+    <keyword type="struct" name="GtexPostProcessorLatexmk" link="GtexPostProcessorLatexmk.html#GtexPostProcessorLatexmk-struct"/>
+    <keyword type="function" name="gtex_structure_new ()" link="GtexStructure.html#gtex-structure-new"/>
+    <keyword type="struct" name="struct GtexStructure" link="GtexStructure.html#GtexStructure-struct"/>
+    <keyword type="function" name="gtex_templates_dialogs_open ()" link="enter-tex-GtexTemplatesDialogs.html#gtex-templates-dialogs-open"/>
+    <keyword type="function" name="gtex_templates_dialogs_create_template ()" link="enter-tex-GtexTemplatesDialogs.html#gtex-templates-dialogs-create-template"/>
+    <keyword type="function" name="gtex_templates_manage_dialog_new ()" link="GtexTemplatesManageDialog.html#gtex-templates-manage-dialog-new"/>
+    <keyword type="struct" name="GtexTemplatesManageDialog" link="GtexTemplatesManageDialog.html#GtexTemplatesManageDialog-struct"/>
+    <keyword type="function" name="gtex_templates_default_get_instance ()" link="GtexTemplatesDefault.html#gtex-templates-default-get-instance"/>
+    <keyword type="function" name="gtex_templates_default_get_contents ()" link="GtexTemplatesDefault.html#gtex-templates-default-get-contents"/>
+    <keyword type="struct" name="GtexTemplatesDefault" link="GtexTemplatesDefault.html#GtexTemplatesDefault-struct"/>
+    <keyword type="function" name="gtex_templates_personal_get_instance ()" link="GtexTemplatesPersonal.html#gtex-templates-personal-get-instance"/>
+    <keyword type="function" name="gtex_templates_personal_get_contents ()" link="GtexTemplatesPersonal.html#gtex-templates-personal-get-contents"/>
+    <keyword type="function" name="gtex_templates_personal_create ()" link="GtexTemplatesPersonal.html#gtex-templates-personal-create"/>
+    <keyword type="function" name="gtex_templates_personal_delete ()" link="GtexTemplatesPersonal.html#gtex-templates-personal-delete"/>
+    <keyword type="function" name="gtex_templates_personal_move_up ()" link="GtexTemplatesPersonal.html#gtex-templates-personal-move-up"/>
+    <keyword type="function" name="gtex_templates_personal_move_down ()" link="GtexTemplatesPersonal.html#gtex-templates-personal-move-down"/>
+    <keyword type="struct" name="GtexTemplatesPersonal" link="GtexTemplatesPersonal.html#GtexTemplatesPersonal-struct"/>
+    <keyword type="function" name="gtex_dirs_get_app_data_dir ()" link="enter-tex-GtexDirs.html#gtex-dirs-get-app-data-dir"/>
+    <keyword type="function" name="gtex_dirs_get_app_locale_dir ()" link="enter-tex-GtexDirs.html#gtex-dirs-get-app-locale-dir"/>
+    <keyword type="function" name="gtex_latex_commands_add_action_infos ()" link="enter-tex-LaTeX-commands.html#gtex-latex-commands-add-action-infos"/>
+    <keyword type="function" name="gtex_latex_commands_add_actions ()" link="enter-tex-LaTeX-commands.html#gtex-latex-commands-add-actions"/>
+    <keyword type="function" name="gtex_latex_commands_create_edit_toolbar ()" link="enter-tex-LaTeX-commands.html#gtex-latex-commands-create-edit-toolbar"/>
+    <keyword type="function" name="gtex_latex_commands_create_latex_menu ()" link="enter-tex-LaTeX-commands.html#gtex-latex-commands-create-latex-menu"/>
+    <keyword type="function" name="gtex_latex_commands_create_math_menu ()" link="enter-tex-LaTeX-commands.html#gtex-latex-commands-create-math-menu"/>
+    <keyword type="function" name="gtex_prefs_create_notebook ()" link="enter-tex-GtexPrefs.html#gtex-prefs-create-notebook"/>
+    <keyword type="function" name="gtex_synctex_get_instance ()" link="GtexSynctex.html#gtex-synctex-get-instance"/>
+    <keyword type="function" name="gtex_synctex_connect_evince_window ()" link="GtexSynctex.html#gtex-synctex-connect-evince-window"/>
+    <keyword type="function" name="gtex_synctex_forward_search ()" link="GtexSynctex.html#gtex-synctex-forward-search"/>
+    <keyword type="struct" name="struct GtexSynctex" link="GtexSynctex.html#GtexSynctex-struct"/>
+    <keyword type="signal" name="The “backward-search” signal" link="GtexSynctex.html#GtexSynctex-backward-search"/>
+    <keyword type="function" name="gtex_tree_model_node_new ()" link="GtexTreeModelNode.html#gtex-tree-model-node-new"/>
+    <keyword type="struct" name="struct GtexTreeModelNode" link="GtexTreeModelNode.html#GtexTreeModelNode-struct"/>
+    <keyword type="function" name="gtex_utils_show_uri ()" link="enter-tex-GtexUtils.html#gtex-utils-show-uri"/>
+    <keyword type="function" name="gtex_utils_get_dialog_component ()" link="enter-tex-GtexUtils.html#gtex-utils-get-dialog-component"/>
+    <keyword type="function" name="gtex_utils_migrate_settings ()" link="enter-tex-GtexUtils.html#gtex-utils-migrate-settings"/>
+    <keyword type="constant" name="GTEX_BUILD_MSG_TYPE_MAIN_TITLE" link="GtexBuildView.html#GTEX-BUILD-MSG-TYPE-MAIN-TITLE:CAPS"/>
+    <keyword type="constant" name="GTEX_BUILD_MSG_TYPE_JOB_TITLE" link="GtexBuildView.html#GTEX-BUILD-MSG-TYPE-JOB-TITLE:CAPS"/>
+    <keyword type="constant" name="GTEX_BUILD_MSG_TYPE_JOB_SUB_COMMAND" link="GtexBuildView.html#GTEX-BUILD-MSG-TYPE-JOB-SUB-COMMAND:CAPS"/>
+    <keyword type="constant" name="GTEX_BUILD_MSG_TYPE_ERROR" link="GtexBuildView.html#GTEX-BUILD-MSG-TYPE-ERROR:CAPS"/>
+    <keyword type="constant" name="GTEX_BUILD_MSG_TYPE_WARNING" link="GtexBuildView.html#GTEX-BUILD-MSG-TYPE-WARNING:CAPS"/>
+    <keyword type="constant" name="GTEX_BUILD_MSG_TYPE_BADBOX" link="GtexBuildView.html#GTEX-BUILD-MSG-TYPE-BADBOX:CAPS"/>
+    <keyword type="constant" name="GTEX_BUILD_MSG_TYPE_INFO" link="GtexBuildView.html#GTEX-BUILD-MSG-TYPE-INFO:CAPS"/>
+    <keyword type="constant" name="GTEX_BUILD_STATE_RUNNING" link="GtexBuildView.html#GTEX-BUILD-STATE-RUNNING:CAPS"/>
+    <keyword type="constant" name="GTEX_BUILD_STATE_SUCCEEDED" link="GtexBuildView.html#GTEX-BUILD-STATE-SUCCEEDED:CAPS"/>
+    <keyword type="constant" name="GTEX_BUILD_STATE_FAILED" link="GtexBuildView.html#GTEX-BUILD-STATE-FAILED:CAPS"/>
+    <keyword type="constant" name="GTEX_BUILD_STATE_ABORTED" link="GtexBuildView.html#GTEX-BUILD-STATE-ABORTED:CAPS"/>
+    <keyword type="constant" name="GTEX_POST_PROCESSOR_TYPE_NO_OUTPUT" link="GtexPostProcessor.html#GTEX-POST-PROCESSOR-TYPE-NO-OUTPUT:CAPS"/>
+    <keyword type="constant" name="GTEX_POST_PROCESSOR_TYPE_ALL_OUTPUT" link="GtexPostProcessor.html#GTEX-POST-PROCESSOR-TYPE-ALL-OUTPUT:CAPS"/>
+    <keyword type="constant" name="GTEX_POST_PROCESSOR_TYPE_LATEX" link="GtexPostProcessor.html#GTEX-POST-PROCESSOR-TYPE-LATEX:CAPS"/>
+    <keyword type="constant" name="GTEX_POST_PROCESSOR_TYPE_LATEXMK" link="GtexPostProcessor.html#GTEX-POST-PROCESSOR-TYPE-LATEXMK:CAPS"/>
+    <keyword type="constant" name="GTEX_POST_PROCESSOR_TYPE_NB_TYPES" link="GtexPostProcessor.html#GTEX-POST-PROCESSOR-TYPE-NB-TYPES:CAPS"/>
+    <keyword type="member" name="GtexBuildTools-struct.build-tools" link="GtexBuildTools.html#GtexBuildTools-struct.build-tools"/>
+    <keyword type="member" name="GtexBuildMsg.type" link="GtexBuildView.html#GtexBuildMsg.type"/>
+    <keyword type="member" name="GtexBuildMsg.text" link="GtexBuildView.html#GtexBuildMsg.text"/>
+    <keyword type="member" name="GtexBuildMsg.filename" link="GtexBuildView.html#GtexBuildMsg.filename"/>
+    <keyword type="member" name="GtexBuildMsg.start-line" link="GtexBuildView.html#GtexBuildMsg.start-line"/>
+    <keyword type="member" name="GtexBuildMsg.end-line" link="GtexBuildView.html#GtexBuildMsg.end-line"/>
+    <keyword type="member" name="GtexBuildMsg.children" link="GtexBuildView.html#GtexBuildMsg.children"/>
+    <keyword type="member" name="GtexBuildMsg.expand" link="GtexBuildView.html#GtexBuildMsg.expand"/>
+  </functions>
+</book>

@@ -21,6 +21,7 @@
       <sub name="Object Hierarchy" link="object-tree.html"/>
       <sub name="Annotation Glossary" link="annotation-glossary.html"/>
       <sub name="Index of all symbols" link="api-index-full.html"/>
+      <sub name="Index of deprecated symbols" link="ix02.html"/>
       <sub name="Index of new symbols in 2.0" link="api-index-2-0.html"/>
       <sub name="Index of new symbols in 3.0" link="api-index-3-0.html"/>
       <sub name="Index of new symbols in 4.0" link="api-index-4-0.html"/>
@@ -100,7 +101,7 @@
     <keyword type="function" name="amtk_gmenu_append_section ()" link="libgedit-amtk-5-AmtkGmenu.html#amtk-gmenu-append-section" since="5.0"/>
     <keyword type="function" name="amtk_menu_item_get_long_description ()" link="libgedit-amtk-5-AmtkMenuItem.html#amtk-menu-item-get-long-description" since="2.0"/>
     <keyword type="function" name="amtk_menu_item_set_long_description ()" link="libgedit-amtk-5-AmtkMenuItem.html#amtk-menu-item-set-long-description" since="2.0"/>
-    <keyword type="function" name="amtk_menu_item_set_icon_name ()" link="libgedit-amtk-5-AmtkMenuItem.html#amtk-menu-item-set-icon-name" since="2.0"/>
+    <keyword type="function" name="amtk_menu_item_set_icon_name ()" link="libgedit-amtk-5-AmtkMenuItem.html#amtk-menu-item-set-icon-name" deprecated="" since="2.0"/>
     <keyword type="function" name="amtk_menu_shell_get_from_gtk_menu_shell ()" link="AmtkMenuShell.html#amtk-menu-shell-get-from-gtk-menu-shell" since="2.0"/>
     <keyword type="function" name="amtk_menu_shell_get_menu_shell ()" link="AmtkMenuShell.html#amtk-menu-shell-get-menu-shell" since="2.0"/>
     <keyword type="struct" name="struct AmtkMenuShell" link="AmtkMenuShell.html#AmtkMenuShell-struct"/>

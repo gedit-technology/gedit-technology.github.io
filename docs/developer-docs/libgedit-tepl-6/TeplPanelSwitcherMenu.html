@@ -5,9 +5,9 @@
 <title>TeplPanelSwitcherMenu: libgedit-tepl 6 Reference Manual</title>
 <meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="libgedit-tepl 6 Reference Manual">
-<link rel="up" href="gtk-extras-other.html" title="GTK Extras - Other">
-<link rel="prev" href="TeplPanelContainer.html" title="TeplPanelContainer">
-<link rel="next" href="TeplPanelSwitcherNotebook.html" title="TeplPanelSwitcherNotebook">
+<link rel="up" href="gtk-extras-side-or-bottom-panel.html" title="GTK Extras - Side or Bottom Panel">
+<link rel="prev" href="TeplPanelStack.html" title="TeplPanelStack">
+<link rel="next" href="TeplPanel1.html" title="TeplPanel1">
 <meta name="generator" content="GTK-Doc V1.34.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
@@ -20,16 +20,16 @@
                   <a href="#TeplPanelSwitcherMenu.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span>
 </td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
-<td><a accesskey="u" href="gtk-extras-other.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
-<td><a accesskey="p" href="TeplPanelContainer.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
-<td><a accesskey="n" href="TeplPanelSwitcherNotebook.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+<td><a accesskey="u" href="gtk-extras-side-or-bottom-panel.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="TeplPanelStack.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="TeplPanel1.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
 </tr></table>
 <div class="refentry">
 <a name="TeplPanelSwitcherMenu"></a><div class="titlepage"></div>
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="TeplPanelSwitcherMenu.top_of_page"></a>TeplPanelSwitcherMenu</span></h2>
-<p>TeplPanelSwitcherMenu — A controller for <a class="link" href="TeplPanelContainer.html" title="TeplPanelContainer"><span class="type">TeplPanelContainer</span></a></p>
+<p>TeplPanelSwitcherMenu — A controller for <a class="link" href="TeplPanelSimple.html" title="TeplPanelSimple"><span class="type">TeplPanelSimple</span></a></p>
 </td>
 <td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
@@ -86,7 +86,7 @@ TeplPanelSwitcherMenu implements
 </div>
 <div class="refsect1">
 <a name="TeplPanelSwitcherMenu.description"></a><h2>Description</h2>
-<p>Similar to <a href="/usr/share/gtk-doc/html/gtk3/GtkStackSwitcher.html#GtkStackSwitcher-struct"><span class="type">GtkStackSwitcher</span></a>, but for a <a class="link" href="TeplPanelContainer.html" title="TeplPanelContainer"><span class="type">TeplPanelContainer</span></a>.</p>
+<p>Similar to <a href="/usr/share/gtk-doc/html/gtk3/GtkStackSwitcher.html#GtkStackSwitcher-struct"><span class="type">GtkStackSwitcher</span></a>, but for a <a class="link" href="TeplPanelSimple.html" title="TeplPanelSimple"><span class="type">TeplPanelSimple</span></a>.</p>
 <p>This switcher widget is suitable to be put in a <a href="/usr/share/gtk-doc/html/gtk3/GtkHeaderBar.html#GtkHeaderBar-struct"><span class="type">GtkHeaderBar</span></a>, to choose the
 component of a side panel (for example).</p>
 </div>
@@ -95,7 +95,7 @@ component of a side panel (for example).</p>
 <div class="refsect2">
 <a name="tepl-panel-switcher-menu-new"></a><h3>tepl_panel_switcher_menu_new ()</h3>
 <pre class="programlisting"><a class="link" href="TeplPanelSwitcherMenu.html" title="TeplPanelSwitcherMenu"><span class="returnvalue">TeplPanelSwitcherMenu</span></a> *
-tepl_panel_switcher_menu_new (<em class="parameter"><code><a class="link" href="TeplPanelContainer.html" title="TeplPanelContainer"><span class="type">TeplPanelContainer</span></a> *panel</code></em>);</pre>
+tepl_panel_switcher_menu_new (<em class="parameter"><code><a class="link" href="TeplPanelSimple.html" title="TeplPanelSimple"><span class="type">TeplPanelSimple</span></a> *panel</code></em>);</pre>
 <div class="refsect3">
 <a name="tepl-panel-switcher-menu-new.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -106,7 +106,7 @@ tepl_panel_switcher_menu_new (<em class="parameter"><code><a class="link" href="
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>panel</p></td>
-<td class="parameter_description"><p>a <a class="link" href="TeplPanelContainer.html" title="TeplPanelContainer"><span class="type">TeplPanelContainer</span></a>.</p></td>
+<td class="parameter_description"><p>a <a class="link" href="TeplPanelSimple.html" title="TeplPanelSimple"><span class="type">TeplPanelSimple</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -116,7 +116,7 @@ tepl_panel_switcher_menu_new (<em class="parameter"><code><a class="link" href="
 <p>a new <a class="link" href="TeplPanelSwitcherMenu.html" title="TeplPanelSwitcherMenu"><span class="type">TeplPanelSwitcherMenu</span></a> widget. </p>
 <p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
 </div>
-<p class="since">Since: <a class="link" href="api-index-6-8.html#api-index-6.8">6.8</a></p>
+<p class="since">Since: <a class="link" href="api-index-6-11.html#api-index-6.11">6.11</a></p>
 </div>
 </div>
 <div class="refsect1">
