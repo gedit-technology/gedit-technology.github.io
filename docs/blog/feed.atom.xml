@@ -7,7 +7,97 @@
   <link rel="self" type="application/atom+xml" href="https://gedit-technology.github.io/blog/feed.atom.xml" />
   <link type="text/html" href="https://gedit-technology.github.io/blog/index.html" />
   <title>Gedit Technology</title>
-  <updated>2024-06-19T10:00:00Z</updated>
+  <updated>2024-11-19T10:00:00Z</updated>
+
+<entry>
+  <title>What's new in gedit 48</title>
+  <id>https://gedit-technology.github.io/blog/2024-11-19-gedit-48.html</id>
+  <link type="text/html" href="https://gedit-technology.github.io/blog/2024-11-19-gedit-48.html" />
+  <updated>2024-11-19T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  <a href="https://gedit-technology.github.io/apps/gedit/">gedit</a> 48 was
+  released in September. Now that the new version is available on the three main
+  desktop operating systems, let's look at the highlights.
+</p>
+
+<p>
+  The <a href="https://gedit-technology.github.io/blog/2024-06-19-dark-theme-support-in-gedit.html">dark theme support</a>
+  has already been covered. If you see some issues, don't hesitate to
+  <a href="https://gedit-technology.github.io/apps/gedit/reporting-bugs.html">open a ticket on GitLab</a>.
+</p>
+
+<h3>Hosting the libgedit projects on the GNOME infrastructure</h3>
+<p>
+  In the blog post describing the
+  <a href="https://gedit-technology.github.io/blog/2024-05-24-gedit-47-released-and-packaged.html">release of gedit 47</a>,
+  it was explained that translations were temporarily disabled. It has now been
+  resolved by hosting all the libgedit projects on the GNOME infrastructure, to
+  benefit from <a href="https://l10n.gnome.org/">l10n.gnome.org</a> among other
+  things.
+</p>
+<p>
+  The git repositories for gedit, gedit-plugins and all the libgedits are now
+  hosted in the <a href="https://gitlab.gnome.org/World/gedit">World/gedit/</a>
+  subgroup on GNOME's GitLab!
+</p>
+
+<h3>Summary of changes for plugins</h3>
+<p>The following plugins have been <em>removed</em>:</p>
+<ul>
+  <li>External Tools</li>
+  <li>Git</li>
+  <li>Quick Open</li>
+  <li>Snippets</li>
+</ul>
+
+<p>
+  On the other hand the Text Size plugin has received a promotion: it has been
+  moved from the gedit-plugins repository to the main gedit repository, and is
+  now enabled by default.
+</p>
+
+<h3>Why some plugins have been removed?</h3>
+<p>
+  It is a combination of several reasons:
+</p>
+<ul>
+  <li>
+    Some of the removed plugins had bugs that made the application to crash. Of
+    course it would have been possible to fix the crashes, but it requires time
+    to investigate the issues and then to find proper solutions.
+  </li>
+  <li>
+    <p>
+      All removed plugins were implemented in Python, and Python code is more
+      difficult to maintain in the long run. There are still eight gedit plugins
+      written in Python, but it is hoped that Python usage will be reduced in
+      the future.
+    </p>
+    <p>
+      More on that later in a future blog post.
+    </p>
+  </li>
+  <li>
+    To simply have less code to maintain for the core gedit developers.
+  </li>
+  <li>
+    It is always possible for other developers to bring a second life to the
+    removed plugins, by copying the code into a third-party repository. See the
+    list of
+    <a href="https://gitlab.gnome.org/World/gedit/gedit/-/blob/master/plugins/third-party-plugins.md">third-party plugins</a>.
+  </li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+  Don't hesitate to get in touch, be it for providing a general feedback, or for
+  reporting specific issues, or for contributing.
+</p>
+    </div>
+  </content>
+</entry>
 
 <entry>
   <title>Dark theme support in gedit</title>
