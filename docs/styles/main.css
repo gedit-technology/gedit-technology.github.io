@@ -1,36 +1,62 @@
 body {
+  /* For the header bg color to reach the edges of the page. */
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+
+  /* Be able to scroll down a bit more. */
+  padding-bottom: 1em;
+
+  /* For reading text on a screen a sans-serif font is recommended. */
+  font-family: "Liberation Sans", Arial, sans-serif;
+  font-size: 1.05em;
+}
+
+header {
+  background-color: #eeeeec; /* Tango aluminium1 */
+  border-bottom: medium solid #555753; /* Tango aluminium5 */
+  padding-bottom: 0.5em;
+}
+
+header img {
+  margin-right: 1em;
+}
+
+header h1 {
+  color: #555753; /* Tango aluminium5 */
+  display: inline;
+}
+
+header * {
+  vertical-align: middle;
+}
+
+header div, main {
   /* Wrap around at a more comfortable reading width. */
   max-width: 72ch;
 
-  /* Center page. */
-  margin: auto;
-
-  padding: 2ch;
-
-  /* For reading text on a screen a sans-serif font is recommended. */
-  font-family: sans-serif;
-}
-
-h1 {
-  color: #555753; /* Tango aluminium5 */
-  background-color: #eeeeec; /* Tango aluminium1 */
-  text-align: center;
-  border: medium solid #555753; /* Tango aluminium5 */
-  padding: 0.2em;
+  /* Center content. */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h2 {
   color: #4e9a06; /* Tango chameleon3 */
+  /*color: #a40000;*/ /* Tango scarletred3 */
 }
 
-h3 {
+h3, h4, h5, h6 {
   color: #555753; /* Tango aluminium5 */
 }
 
-p {
+p, li {
   line-height: 1.4;
 }
 
-ul {
-  line-height: 1.8;
+/* Space out li elements (add margin _between_ elements). */
+li:not(li:first-child) {
+  margin-top: 0.8em;
 }
