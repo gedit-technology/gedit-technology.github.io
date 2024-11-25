@@ -19,34 +19,43 @@
 <h2>2024-11-19 :: What's new in gedit 48</h2>
 
 <p>
-  <a href="https://gedit-technology.github.io/apps/gedit/">gedit</a> 48 was
-  released in September. Now that the new version is available on the three main
-  desktop operating systems, let's look at the highlights.
+  <a href="https://gedit-technology.github.io/apps/gedit/">gedit</a> 48 has been
+  released and is available on the three main desktop operating systems. Let's
+  look at the highlights of this new version.
 </p>
 
+<h3>Dark theme</h3>
+<p>
+  <a href="images/2024-06-19/gedit-screenshot-dark-theme-main-window.png" target="_blank"><img
+    src="images/2024-06-19/thumbnail-gedit-screenshot-dark-theme-main-window.png"
+    alt="gedit screenshot of the main window with dark theme"
+    width="250" /></a>
+</p>
 <p>
   The <a href="https://gedit-technology.github.io/blog/2024-06-19-dark-theme-support-in-gedit.html">dark theme support</a>
-  has already been covered. If you see some issues, don't hesitate to
-  <a href="https://gedit-technology.github.io/apps/gedit/reporting-bugs.html">open a ticket on GitLab</a>.
+  has already been covered.
 </p>
 
-<h3>Hosting the libgedit projects on the GNOME infrastructure</h3>
+<h3>World/gedit/ subgroup on GNOME's GitLab</h3>
 <p>
-  In the blog post describing the
-  <a href="https://gedit-technology.github.io/blog/2024-05-24-gedit-47-released-and-packaged.html">release of gedit 47</a>,
-  it was explained that translations were temporarily disabled. It has now been
-  resolved by hosting all the libgedit projects on the GNOME infrastructure, to
-  benefit from <a href="https://l10n.gnome.org/">l10n.gnome.org</a> among other
-  things.
+  The main Git repositories of gedit are now all hosted under the
+  <a href="https://gitlab.gnome.org/World/gedit">World/gedit/</a>
+  subgroup on GNOME's GitLab. It currently includes gedit, gedit-plugins and all
+  the libgedits.
 </p>
 <p>
-  The git repositories for gedit, gedit-plugins and all the libgedits are now
-  hosted in the <a href="https://gitlab.gnome.org/World/gedit">World/gedit/</a>
-  subgroup on GNOME's GitLab!
+  Previously, there was the problem that the libgedits - hosted on GitHub -
+  didn't receive new translations. This is now resolved, all the relevant
+  modules are on <a href="https://l10n.gnome.org/">l10n.gnome.org</a>. Thanks to
+  the amazing work done by the GNOME translation teams, gedit is available in
+  many languages with high quality translations!
 </p>
 
 <h3>Summary of changes for plugins</h3>
-<p>The following plugins have been <em>removed</em>:</p>
+<p>
+  Concerning the plugins, there is unfortunately a bad news. The following
+  plugins have been removed:
+</p>
 <ul>
   <li>External Tools</li>
   <li>Git</li>
@@ -55,44 +64,39 @@
 </ul>
 
 <p>
-  On the other hand the Text Size plugin has received a promotion: it has been
-  moved from the gedit-plugins repository to the main gedit repository, and is
-  now enabled by default.
-</p>
-
-<h3>Why some plugins have been removed?</h3>
-<p>
-  It is a combination of several reasons:
+  There are several reasons:
 </p>
 <ul>
   <li>
-    Some of the removed plugins had bugs that made the application to crash. Of
-    course it would have been possible to fix the crashes, but it requires time
-    to investigate the issues and then to find proper solutions.
+    The primary reason is to have less code to maintain for the core gedit
+    developers.
   </li>
   <li>
-    <p>
-      All removed plugins were implemented in Python, and Python code is more
-      difficult to maintain in the long run. There are still eight gedit plugins
-      written in Python, but it is hoped that Python usage will be reduced in
-      the future.
-    </p>
-    <p>
-      More on that later in a future blog post.
-    </p>
+    Some of these plugins had bugs that made the application to crash. It is
+    time consuming to investigate and properly fix such issues.
   </li>
   <li>
-    To simply have less code to maintain for the core gedit developers.
-  </li>
-  <li>
-    It is always possible for other developers to bring a second life to the
-    removed plugins, by copying the code into a third-party repository. See the
-    list of
-    <a href="https://gitlab.gnome.org/World/gedit/gedit/-/blob/master/plugins/third-party-plugins.md">third-party plugins</a>.
+    And, it is always possible for other developers to bring a second life to a
+    removed plugin, by copying the code into another repository. See the list of
+    <a href="https://gitlab.gnome.org/World/gedit/gedit/-/blob/master/plugins/third-party-plugins.md">third-party plugins</a>
+    for some examples.
   </li>
 </ul>
 
-<h3>Conclusion</h3>
+<h3>Other changes</h3>
+<ul>
+  <li>
+    The Text Size plugin has been promoted: it has been moved from the
+    gedit-plugins repository to the main gedit repository, and is now enabled by
+    default. So you can now zoom in and zoom out the text more easily.
+  </li>
+  <li>
+    As always, there are a plethora of other little changes to improve the code
+    quality.
+  </li>
+</ul>
+
+<h3>To conclude</h3>
 <p>
   Don't hesitate to get in touch, be it for providing a general feedback, or for
   reporting specific issues, or for contributing.
