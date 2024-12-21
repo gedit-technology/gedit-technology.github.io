@@ -2,39 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Gedit Technology</title>
-  <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
-  <link rel="stylesheet" type="text/css" media="print" href="styles/print.css" />
+  <title>gedit, a text editor</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
 </head>
 
 <body>
 <header>
-  <div><img src="apps/gedit/images/gedit-icon.png" width="128" alt="gedit icon" /><h1>Gedit Technology</h1></div>
+  <div id="header-title"><a href="/"><img src="/images/gedit-icon.png" width="128" alt="gedit icon" /></a><h1>gedit, a text editor</h1></div>
 </header>
 
 <main>
 <p>
-  Gedit Technology is based on the <a href="https://gtk.org/">GTK</a> graphical
-  toolkit and provides the main components behind the
-  <a href="apps/gedit/">gedit</a> text editor.
+  gedit is an easy-to-use and general-purpose text editor. Its development
+  started in 1998, at the beginnings of the
+  <a href="https://www.gnome.org/">GNOME</a> project, with a good integration
+  with that desktop environment.
+</p>
+<p>
+  You can use it to write simple notes and documents, or you can enable more
+  advanced features that are useful for software development.
 </p>
 <p>
   It is released under Free/Libre Open Source software licenses.
 </p>
 
-<h2>Resources for users</h2>
+<h3>News</h3>
+<p>
+  <a href="/blog/">gedit blog</a>
+</p>
+
+<h3>Screenshot</h3>
+<p>
+  <a href="images/screenshot-gedit-main.png" target="_blank"><img src="images/thumbnail-screenshot-gedit-main.png" alt="gedit screenshot" /></a>
+</p>
+<p>
+  <a href="screenshots.html">More screenshots</a>
+</p>
+
+<h3>Notable Features</h3>
 <ul>
-  <li><a href="blog/">Blog</a></li>
-  <li><a href="user-manuals/">User manuals</a></li>
+  <li>Files are opened in tabs</li>
+  <li>Full support for internationalized text (Unicode/UTF-8)</li>
+  <li>
+    Syntax highlighting for lots of languages (Python, Shell, C, C++, HTML, CSS,
+    JavaScript, XML, Markdown and
+    <a href="/list-langs.html">many others</a>)
+  </li>
+  <li>Configurable fonts and colors</li>
+  <li>Print and print preview support</li>
+  <li>Search and replace with support of regular expressions</li>
+  <li>A side panel with an integrated file browser</li>
+  <li>Spell-checking</li>
+  <li>Word auto-completion</li>
+  <li>Undo/Redo</li>
+  <li>Auto indentation</li>
+  <li>Text wrapping</li>
+  <li>Line numbers</li>
+  <li>Right margin</li>
+  <li>Highlight current line</li>
+  <li>Highlight matching brackets</li>
+  <li>Editing files from remote locations</li>
+  <li>Backup files</li>
+  <li>
+    A flexible plugin system which can be used to dynamically add new advanced
+    features
+  </li>
+  <li><a href="https://gitlab.gnome.org/World/gedit/gedit/-/blob/master/plugins/list-of-gedit-plugins.md">List of plugins distributed with gedit</a></li>
+  <li><a href="/user-manuals/gedit/">User manual</a></li>
 </ul>
 
-<h2>Resources for developers</h2>
-<ul>
-  <li><a href="https://gitlab.gnome.org/World/gedit">GitLab repositories</a></li>
-  <li><a href="https://github.com/gedit-technology">GitHub repositories</a></li>
-  <li><a href="developer-docs/">Documentation</a></li>
-</ul>
+<h3>Installation</h3>
+<h4>On Linux</h4>
+<p>
+  You can install the gedit and gedit-plugins packages from your distribution.
+  Also available
+  <a href="https://flathub.org/apps/org.gnome.gedit">on Flathub</a>.
+</p>
 
+<h4>On macOS</h4>
+<p>
+  Packaged <a href="https://formulae.brew.sh/formula/gedit">in Homebrew</a>.
+</p>
+
+<h4>On Windows</h4>
+<p>
+  gedit is available
+  <a href="https://www.microsoft.com/store/apps/9NCQ8B0NVCW3">on the Microsoft Store</a>.
+</p>
+
+<h3>Getting in Touch</h3>
+<ul>
+  <li><a href="/reporting-bugs.html">Reporting bugs</a></li>
+  <li>
+    <a href="https://discourse.gnome.org/tag/gedit">Discourse</a>
+    (Applications category, gedit tag)
+  </li>
+  <li><a href="https://matrix.to/#/%23gedit:gnome.org">Matrix room</a></li>
+  <li><a href="https://gitlab.gnome.org/World/gedit">Git repositories</a></li>
+</ul>
 </main>
 </body>
 </html>

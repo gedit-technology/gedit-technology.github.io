@@ -17,24 +17,27 @@ body {
 
 header {
   background-color: #eeeeec; /* Tango aluminium1 */
-  border-bottom: medium solid #555753; /* Tango aluminium5 */
-  padding-bottom: 0.5em;
+  border-bottom: medium solid #888a85; /* Tango aluminium4 */
 }
 
-header img {
+#header-title {
+  margin-bottom: 0.3em;
+}
+
+#header-title img {
   margin-right: 1em;
 }
 
-header h1 {
+#header-title h1 {
   color: #555753; /* Tango aluminium5 */
   display: inline;
 }
 
-header * {
+#header-title * {
   vertical-align: middle;
 }
 
-header div, main {
+#header-title, #header-subtitle div, main {
   /* Wrap around at a more comfortable reading width. */
   max-width: 72ch;
 
@@ -43,12 +46,22 @@ header div, main {
   margin-right: auto;
 }
 
-h2 {
+#header-subtitle h2 {
+  color: #555753; /* Tango aluminium5 */
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+#header-subtitle {
+  border-top: medium solid #888a85; /* Tango aluminium4 */
+}
+
+h3 {
   color: #4e9a06; /* Tango chameleon3 */
   /*color: #a40000;*/ /* Tango scarletred3 */
 }
 
-h3, h4, h5, h6 {
+h4, h5, h6 {
   color: #555753; /* Tango aluminium5 */
 }
 
