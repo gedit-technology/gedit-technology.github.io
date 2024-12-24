@@ -1,1 +1,1 @@
-https://gedit-technology.github.io/
+https://gedit-text-editor.org/
