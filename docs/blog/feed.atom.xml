@@ -3,16 +3,16 @@
   <author>
     <name>Gedit Technology</name>
   </author>
-  <id>https://gedit-technology.github.io/blog/feed.atom.xml</id>
-  <link rel="self" type="application/atom+xml" href="https://gedit-technology.github.io/blog/feed.atom.xml" />
-  <link type="text/html" href="https://gedit-technology.github.io/blog/index.html" />
+  <id>https://gedit-text-editor.org/blog/feed.atom.xml</id>
+  <link rel="self" type="application/atom+xml" href="https://gedit-text-editor.org/blog/feed.atom.xml" />
+  <link type="text/html" href="https://gedit-text-editor.org/blog/index.html" />
   <title>Gedit Technology</title>
   <updated>2024-11-19T10:00:00Z</updated>
 
 <entry>
   <title>What's new in gedit 48</title>
-  <id>https://gedit-technology.github.io/blog/2024-11-19-gedit-48.html</id>
-  <link type="text/html" href="https://gedit-technology.github.io/blog/2024-11-19-gedit-48.html" />
+  <id>https://gedit-text-editor.org/blog/2024-11-19-gedit-48.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2024-11-19-gedit-48.html" />
   <updated>2024-11-19T10:00:00Z</updated>
   <content type="xhtml">
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -105,8 +105,8 @@
 
 <entry>
   <title>Dark theme support in gedit</title>
-  <id>https://gedit-technology.github.io/blog/2024-06-19-dark-theme-support-in-gedit.html</id>
-  <link type="text/html" href="https://gedit-technology.github.io/blog/2024-06-19-dark-theme-support-in-gedit.html" />
+  <id>https://gedit-text-editor.org/blog/2024-06-19-dark-theme-support-in-gedit.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2024-06-19-dark-theme-support-in-gedit.html" />
   <updated>2024-06-19T10:00:00Z</updated>
   <content type="xhtml">
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -231,8 +231,8 @@ $ dconf watch /
 
 <entry>
   <title>gedit 47 released and packaged</title>
-  <id>https://gedit-technology.github.io/blog/2024-05-24-gedit-47-released-and-packaged.html</id>
-  <link type="text/html" href="https://gedit-technology.github.io/blog/2024-05-24-gedit-47-released-and-packaged.html" />
+  <id>https://gedit-text-editor.org/blog/2024-05-24-gedit-47-released-and-packaged.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2024-05-24-gedit-47-released-and-packaged.html" />
   <updated>2024-05-24T10:00:00Z</updated>
   <content type="xhtml">
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -337,8 +337,8 @@ $ gsettings reset org.gnome.gedit.preferences.ui theme-variant
 
 <entry>
   <title>History of Gedit Technology</title>
-  <id>https://gedit-technology.github.io/blog/2024-05-15-history-of-gedit-technology.html</id>
-  <link type="text/html" href="https://gedit-technology.github.io/blog/2024-05-15-history-of-gedit-technology.html" />
+  <id>https://gedit-text-editor.org/blog/2024-05-15-history-of-gedit-technology.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2024-05-15-history-of-gedit-technology.html" />
   <updated>2024-05-15T10:00:00Z</updated>
   <content type="xhtml">
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -444,8 +444,8 @@ $ gsettings reset org.gnome.gedit.preferences.ui theme-variant
 
 <entry>
   <title>Change of icons and logo for gedit</title>
-  <id>https://gedit-technology.github.io/blog/2024-04-26-change-of-icons-and-logo-for-gedit.html</id>
-  <link type="text/html" href="https://gedit-technology.github.io/blog/2024-04-26-change-of-icons-and-logo-for-gedit.html" />
+  <id>https://gedit-text-editor.org/blog/2024-04-26-change-of-icons-and-logo-for-gedit.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2024-04-26-change-of-icons-and-logo-for-gedit.html" />
   <updated>2024-04-26T10:00:00Z</updated>
   <content type="xhtml">
     <div xmlns="http://www.w3.org/1999/xhtml">
