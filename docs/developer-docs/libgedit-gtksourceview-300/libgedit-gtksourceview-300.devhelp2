@@ -65,8 +65,9 @@
     <sub name="Porting Guides" link="porting-guides.html">
       <sub name="GtkSourceView 3 -&gt; 4 Porting Guide" link="porting-guide-3-to-4.html"/>
       <sub name="GtkSourceView 4 -&gt; libgedit-gtksourceview 299.0 Porting Guide" link="porting-guide-gtksourceview-4-to-libgedit-gtksourceview-299-0.html"/>
-      <sub name="libgedit-gtksourceview 299.0 -&gt; libgedit-gtksourceview 299.2 Porting Guide" link="porting-guide-299-0-to-299-2.html"/>
-      <sub name="libgedit-gtksourceview 299.2 -&gt; libgedit-gtksourceview 299.4 Porting Guide" link="porting-guide-299-2-to-299-4.html"/>
+      <sub name="libgedit-gtksourceview 299.0 -&gt; 299.2 Porting Guide" link="porting-guide-299-0-to-299-2.html"/>
+      <sub name="libgedit-gtksourceview 299.2 -&gt; 299.3 Porting Guide" link="porting-guide-299-2-to-299-3.html"/>
+      <sub name="libgedit-gtksourceview 299.3 -&gt; 299.4 Porting Guide" link="porting-guide-299-3-to-299-4.html"/>
     </sub>
     <sub name="Annexes" link="annexes.html">
       <sub name="Object Hierarchy" link="object-tree.html"/>
@@ -186,14 +187,10 @@
     <keyword type="function" name="gtk_source_view_get_mark_attributes ()" link="GtkSourceView.html#gtk-source-view-get-mark-attributes"/>
     <keyword type="function" name="gtk_source_view_set_show_line_marks ()" link="GtkSourceView.html#gtk-source-view-set-show-line-marks" since="2.2"/>
     <keyword type="function" name="gtk_source_view_get_show_line_marks ()" link="GtkSourceView.html#gtk-source-view-get-show-line-marks" since="2.2"/>
-    <keyword type="function" name="gtk_source_view_set_background_pattern ()" link="GtkSourceView.html#gtk-source-view-set-background-pattern" since="3.16"/>
-    <keyword type="function" name="gtk_source_view_get_background_pattern ()" link="GtkSourceView.html#gtk-source-view-get-background-pattern" since="3.16"/>
     <keyword type="struct" name="GtkSourceView" link="GtkSourceView.html#GtkSourceView-struct"/>
     <keyword type="enum" name="enum GtkSourceSmartHomeEndType" link="GtkSourceView.html#GtkSourceSmartHomeEndType"/>
     <keyword type="enum" name="enum GtkSourceViewGutterPosition" link="GtkSourceView.html#GtkSourceViewGutterPosition"/>
-    <keyword type="enum" name="enum GtkSourceBackgroundPatternType" link="GtkSourceView.html#GtkSourceBackgroundPatternType" since="3.16"/>
     <keyword type="property" name="The “auto-indent” property" link="GtkSourceView.html#GtkSourceView--auto-indent"/>
-    <keyword type="property" name="The “background-pattern” property" link="GtkSourceView.html#GtkSourceView--background-pattern"/>
     <keyword type="property" name="The “completion” property" link="GtkSourceView.html#GtkSourceView--completion"/>
     <keyword type="property" name="The “highlight-current-line” property" link="GtkSourceView.html#GtkSourceView--highlight-current-line"/>
     <keyword type="property" name="The “indent-on-tab” property" link="GtkSourceView.html#GtkSourceView--indent-on-tab"/>
@@ -695,8 +692,6 @@
     <keyword type="constant" name="GTK_SOURCE_SMART_HOME_END_ALWAYS" link="GtkSourceView.html#GTK-SOURCE-SMART-HOME-END-ALWAYS:CAPS"/>
     <keyword type="constant" name="GTK_SOURCE_VIEW_GUTTER_POSITION_LINES" link="GtkSourceView.html#GTK-SOURCE-VIEW-GUTTER-POSITION-LINES:CAPS"/>
     <keyword type="constant" name="GTK_SOURCE_VIEW_GUTTER_POSITION_MARKS" link="GtkSourceView.html#GTK-SOURCE-VIEW-GUTTER-POSITION-MARKS:CAPS"/>
-    <keyword type="constant" name="GTK_SOURCE_BACKGROUND_PATTERN_TYPE_NONE" link="GtkSourceView.html#GTK-SOURCE-BACKGROUND-PATTERN-TYPE-NONE:CAPS"/>
-    <keyword type="constant" name="GTK_SOURCE_BACKGROUND_PATTERN_TYPE_GRID" link="GtkSourceView.html#GTK-SOURCE-BACKGROUND-PATTERN-TYPE-GRID:CAPS"/>
     <keyword type="constant" name="GTK_SOURCE_STYLE_SCHEME_KIND_LIGHT" link="GtkSourceStyleScheme.html#GTK-SOURCE-STYLE-SCHEME-KIND-LIGHT:CAPS"/>
     <keyword type="constant" name="GTK_SOURCE_STYLE_SCHEME_KIND_DARK" link="GtkSourceStyleScheme.html#GTK-SOURCE-STYLE-SCHEME-KIND-DARK:CAPS"/>
     <keyword type="constant" name="GTK_SOURCE_STYLE_SCHEME_KIND_LIGHT_ONLY" link="GtkSourceStyleScheme.html#GTK-SOURCE-STYLE-SCHEME-KIND-LIGHT-ONLY:CAPS"/>

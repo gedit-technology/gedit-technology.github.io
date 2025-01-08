@@ -17,6 +17,7 @@
       <sub name="Index of all symbols" link="api-index-full.html"/>
       <sub name="Index of new symbols in 0.1" link="api-index-0-1.html"/>
       <sub name="Index of new symbols in 0.2" link="api-index-0-2.html"/>
+      <sub name="Index of new symbols in 0.3" link="api-index-0-3.html"/>
     </sub>
   </chapters>
   <functions>
@@ -47,7 +48,7 @@
     <keyword type="function" name="gfls_unsaved_document_titles_get_title ()" link="GflsUnsavedDocumentTitles.html#gfls-unsaved-document-titles-get-title" since="0.1"/>
     <keyword type="function" name="gfls_unsaved_document_titles_set_title_callback ()" link="GflsUnsavedDocumentTitles.html#gfls-unsaved-document-titles-set-title-callback" since="0.1"/>
     <keyword type="struct" name="struct GflsUnsavedDocumentTitles" link="GflsUnsavedDocumentTitles.html#GflsUnsavedDocumentTitles-struct"/>
-    <keyword type="function" name="gfls_utf8_has_very_long_line ()" link="libgedit-gfls-1-GflsUtf8.html#gfls-utf8-has-very-long-line" since="0.1"/>
+    <keyword type="function" name="gfls_utf8_find_very_long_line ()" link="libgedit-gfls-1-GflsUtf8.html#gfls-utf8-find-very-long-line" since="0.3"/>
     <keyword type="constant" name="GFLS_LOADER_ERROR_TOO_BIG" link="libgedit-gfls-1-GflsLoaderBasic.html#GFLS-LOADER-ERROR-TOO-BIG:CAPS"/>
     <keyword type="constant" name="GFLS_LOADER_ERROR_NOT_UTF8" link="libgedit-gfls-1-GflsLoaderBasic.html#GFLS-LOADER-ERROR-NOT-UTF8:CAPS"/>
     <keyword type="constant" name="GFLS_LOADER_ERROR_HAS_VERY_LONG_LINE" link="libgedit-gfls-1-GflsLoaderBasic.html#GFLS-LOADER-ERROR-HAS-VERY-LONG-LINE:CAPS"/>

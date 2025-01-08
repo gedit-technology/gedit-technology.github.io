@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TeplWindowState: libgedit-tepl 6 Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="libgedit-tepl 6 Reference Manual">
+<link rel="up" href="gtk-extras-other.html" title="GTK Extras - Other">
+<link rel="prev" href="TeplStatusMenuButton.html" title="TeplStatusMenuButton">
+<link rel="next" href="other-extras.html" title="Other Extras">
+<meta name="generator" content="GTK-Doc V1.34.0 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgedit-tepl-6-TeplWindowState.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="gtk-extras-other.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="TeplStatusMenuButton.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="other-extras.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgedit-tepl-6-TeplWindowState"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgedit-tepl-6-TeplWindowState.top_of_page"></a>TeplWindowState</span></h2>
+<p>TeplWindowState — Handle <a href="/usr/share/gtk-doc/html/gtk3/GtkWindow.html#GtkWindow-struct"><span class="type">GtkWindow</span></a> state settings</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgedit-tepl-6-TeplWindowState.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody><tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgedit-tepl-6-TeplWindowState.html#tepl-window-state-init" title="tepl_window_state_init ()">tepl_window_state_init</a> <span class="c_punctuation">()</span>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgedit-tepl-6-TeplWindowState.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;tepl/tepl.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libgedit-tepl-6-TeplWindowState.description"></a><h2>Description</h2>
+<p>A utility for <a href="/usr/share/gtk-doc/html/gtk3/GtkWindow.html#GtkWindow-struct"><span class="type">GtkWindow</span></a>. It permits to handle and remember some of its
+state:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>Its size.</p></li>
+<li class="listitem"><p>Whether it is maximized.</p></li>
+</ul></div>
+<p>It is especially useful for the main window of an application, where it is
+generally desirable to restore the state.</p>
+<p>It is assumed that <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> is used. When creating the first window, the
+initial state is taken from the provided <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> keys. When a window is
+closed the <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> are saved. When opening another window of the same
+type, its initial state is copied from the last focused window of that type.</p>
+</div>
+<div class="refsect1">
+<a name="libgedit-tepl-6-TeplWindowState.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="tepl-window-state-init"></a><h3>tepl_window_state_init ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+tepl_window_state_init (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkWindow.html#GtkWindow-struct"><span class="type">GtkWindow</span></a> *window</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> *settings</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> window_type</code></em>);</pre>
+<p>When creating a new <a href="/usr/share/gtk-doc/html/gtk3/GtkWindow.html#GtkWindow-struct"><span class="type">GtkWindow</span></a>, you can call this function to initialize some
+of its state. Then things will be taken care of to remember the state.</p>
+<p>The provided <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> object must have at least these keys:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p><code class="literal">"maximized"</code> of type boolean.</p></li>
+<li class="listitem"><p><code class="literal">"width"</code> of type integer.</p></li>
+<li class="listitem"><p><code class="literal">"height"</code> of type integer.</p></li>
+</ul></div>
+<p>The <em class="parameter"><code>window_type</code></em>
+ (for example a subclass of <a href="/usr/share/gtk-doc/html/gtk3/GtkApplicationWindow.html#GtkApplicationWindow-struct"><span class="type">GtkApplicationWindow</span></a> for the
+main window) permits to use this utility for different types of windows. Each
+window type will need its own set of <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> keys (in a different
+sub-schema because the key names must be the same).</p>
+<p>A good place to call this function is in the GObject <code class="literal"><code class="function">init()</code></code> function.</p>
+<div class="refsect3">
+<a name="tepl-window-state-init.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gtk3/GtkWindow.html#GtkWindow-struct"><span class="type">GtkWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>settings</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>window_type</p></td>
+<td class="parameter_description"><p>the type of <a href="/usr/share/gtk-doc/html/gtk3/GtkWindow.html#GtkWindow-struct"><span class="type">GtkWindow</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-6-12.html#api-index-6.12">6.12</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.34.0</div>
+</body>
+</html>

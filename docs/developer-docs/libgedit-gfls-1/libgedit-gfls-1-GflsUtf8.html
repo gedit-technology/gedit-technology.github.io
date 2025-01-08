@@ -39,11 +39,10 @@
 <col class="functions_proto_name">
 </colgroup>
 <tbody><tr>
-<td class="function_type">
-<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
 </td>
 <td class="function_name">
-<a class="link" href="libgedit-gfls-1-GflsUtf8.html#gfls-utf8-has-very-long-line" title="gfls_utf8_has_very_long_line ()">gfls_utf8_has_very_long_line</a> <span class="c_punctuation">()</span>
+<a class="link" href="libgedit-gfls-1-GflsUtf8.html#gfls-utf8-find-very-long-line" title="gfls_utf8_find_very_long_line ()">gfls_utf8_find_very_long_line</a> <span class="c_punctuation">()</span>
 </td>
 </tr></tbody>
 </table></div>
@@ -61,18 +60,18 @@ GLib.</p>
 <div class="refsect1">
 <a name="libgedit-gfls-1-GflsUtf8.functions_details"></a><h2>Functions</h2>
 <div class="refsect2">
-<a name="gfls-utf8-has-very-long-line"></a><h3>gfls_utf8_has_very_long_line ()</h3>
-<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
-gfls_utf8_has_very_long_line (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *str</code></em>,
-                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> max_n_bytes_per_line</code></em>);</pre>
-<p>Returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if a line in <em class="parameter"><code>str</code></em>
+<a name="gfls-utf8-find-very-long-line"></a><h3>gfls_utf8_find_very_long_line ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gfls_utf8_find_very_long_line (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *str</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> max_n_bytes_per_line</code></em>);</pre>
+<p>Finds if a line in <em class="parameter"><code>str</code></em>
  exceeds <em class="parameter"><code>max_n_bytes_per_line</code></em>
 .</p>
 <p>For performance reasons, <em class="parameter"><code>str</code></em>
  is not checked whether it is a valid UTF-8
 string. So you must call for example <a href="/usr/share/gtk-doc/html/glib/glib-Unicode-Manipulation.html#g-utf8-validate"><code class="function">g_utf8_validate()</code></a> beforehand.</p>
 <div class="refsect3">
-<a name="gfls-utf8-has-very-long-line.parameters"></a><h4>Parameters</h4>
+<a name="gfls-utf8-find-very-long-line.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
@@ -95,11 +94,11 @@ the newline character(s).</p></td>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="gfls-utf8-has-very-long-line.returns"></a><h4>Returns</h4>
-<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>str</code></em>
-contains a very long line, <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+<a name="gfls-utf8-find-very-long-line.returns"></a><h4>Returns</h4>
+<p> a pointer to the beginning of the first very long line found, or
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if not found.</p>
 </div>
-<p class="since">Since: <a class="link" href="api-index-0-1.html#api-index-0.1">0.1</a></p>
+<p class="since">Since: <a class="link" href="api-index-0-3.html#api-index-0.3">0.3</a></p>
 </div>
 </div>
 </div>

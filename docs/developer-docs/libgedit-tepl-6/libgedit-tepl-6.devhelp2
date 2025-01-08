@@ -78,6 +78,7 @@
       <sub name="GTK Extras - Other" link="gtk-extras-other.html">
         <sub name="TeplFileChooser" link="libgedit-tepl-6-TeplFileChooser.html"/>
         <sub name="TeplStatusMenuButton" link="TeplStatusMenuButton.html"/>
+        <sub name="TeplWindowState" link="libgedit-tepl-6-TeplWindowState.html"/>
       </sub>
       <sub name="Other Extras" link="other-extras.html">
         <sub name="TeplPango" link="libgedit-tepl-6-TeplPango.html"/>
@@ -110,6 +111,8 @@
       <sub name="Index of new symbols in 6.8" link="api-index-6-8.html"/>
       <sub name="Index of new symbols in 6.10" link="api-index-6-10.html"/>
       <sub name="Index of new symbols in 6.11" link="api-index-6-11.html"/>
+      <sub name="Index of new symbols in 6.12" link="api-index-6-12.html"/>
+      <sub name="Index of new symbols in 6.13" link="api-index-6-13.html"/>
     </sub>
   </chapters>
   <functions>
@@ -122,7 +125,7 @@
     <keyword type="function" name="tepl_abstract_factory_create_tab_label ()" link="TeplAbstractFactory.html#tepl-abstract-factory-create-tab-label" since="3.0"/>
     <keyword type="function" name="tepl_abstract_factory_create_file ()" link="TeplAbstractFactory.html#tepl-abstract-factory-create-file" since="4.0"/>
     <keyword type="function" name="tepl_abstract_factory_create_metadata_manager_file ()" link="TeplAbstractFactory.html#tepl-abstract-factory-create-metadata-manager-file" since="5.0"/>
-    <keyword type="function" name="tepl_abstract_factory_fill_prefs_dialog ()" link="TeplAbstractFactory.html#tepl-abstract-factory-fill-prefs-dialog" since="6.2"/>
+    <keyword type="function" name="tepl_abstract_factory_create_prefs_dialog ()" link="TeplAbstractFactory.html#tepl-abstract-factory-create-prefs-dialog" since="6.13"/>
     <keyword type="struct" name="struct TeplAbstractFactory" link="TeplAbstractFactory.html#TeplAbstractFactory-struct"/>
     <keyword type="struct" name="struct TeplAbstractFactoryClass" link="TeplAbstractFactory.html#TeplAbstractFactoryClass"/>
     <keyword type="function" name="tepl_application_get_from_gtk_application ()" link="TeplApplication.html#tepl-application-get-from-gtk-application" since="2.0"/>
@@ -315,6 +318,7 @@
     <keyword type="function" name="tepl_overwrite_indicator_set_view ()" link="TeplOverwriteIndicator.html#tepl-overwrite-indicator-set-view" since="6.4"/>
     <keyword type="struct" name="struct TeplOverwriteIndicator" link="TeplOverwriteIndicator.html#TeplOverwriteIndicator-struct"/>
     <keyword type="property" name="The “overwrite” property" link="TeplOverwriteIndicator.html#TeplOverwriteIndicator--overwrite"/>
+    <keyword type="function" name="tepl_prefs_create_checkbutton_simple ()" link="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-checkbutton-simple" since="6.13"/>
     <keyword type="function" name="tepl_prefs_create_font_component ()" link="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-font-component" since="6.2"/>
     <keyword type="function" name="tepl_prefs_create_display_line_numbers_checkbutton ()" link="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-display-line-numbers-checkbutton" since="6.2"/>
     <keyword type="function" name="tepl_prefs_create_tab_width_spinbutton ()" link="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-tab-width-spinbutton" since="6.2"/>
@@ -324,9 +328,12 @@
     <keyword type="function" name="tepl_prefs_create_theme_variant_combo_box ()" link="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-theme-variant-combo-box" since="6.10"/>
     <keyword type="function" name="tepl_prefs_create_right_margin_component ()" link="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-right-margin-component" since="6.10"/>
     <keyword type="function" name="tepl_prefs_create_display_statusbar_checkbutton ()" link="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-display-statusbar-checkbutton" since="6.10"/>
-    <keyword type="function" name="tepl_prefs_create_display_grid_checkbutton ()" link="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-display-grid-checkbutton" since="6.10"/>
+    <keyword type="function" name="tepl_prefs_dialog_new ()" link="TeplPrefsDialog.html#tepl-prefs-dialog-new" since="6.13"/>
     <keyword type="function" name="tepl_prefs_dialog_get_singleton ()" link="TeplPrefsDialog.html#tepl-prefs-dialog-get-singleton" since="6.2"/>
     <keyword type="function" name="tepl_prefs_dialog_show_for_parent ()" link="TeplPrefsDialog.html#tepl-prefs-dialog-show-for-parent" since="6.2"/>
+    <keyword type="function" name="tepl_prefs_dialog_add_reset_all_button ()" link="TeplPrefsDialog.html#tepl-prefs-dialog-add-reset-all-button" since="6.13"/>
+    <keyword type="struct" name="struct TeplPrefsDialog" link="TeplPrefsDialog.html#TeplPrefsDialog-struct"/>
+    <keyword type="signal" name="The “reset-all” signal" link="TeplPrefsDialog.html#TeplPrefsDialog-reset-all"/>
     <keyword type="function" name="tepl_settings_get_singleton ()" link="TeplSettings.html#tepl-settings-get-singleton" since="6.2"/>
     <keyword type="function" name="tepl_settings_peek_desktop_interface_settings ()" link="TeplSettings.html#tepl-settings-peek-desktop-interface-settings" since="6.2"/>
     <keyword type="function" name="tepl_settings_provide_font_settings ()" link="TeplSettings.html#tepl-settings-provide-font-settings" since="6.2"/>
@@ -335,6 +342,7 @@
     <keyword type="function" name="tepl_settings_provide_style_scheme_settings ()" link="TeplSettings.html#tepl-settings-provide-style-scheme-settings" since="6.11"/>
     <keyword type="function" name="tepl_settings_get_style_scheme_id ()" link="TeplSettings.html#tepl-settings-get-style-scheme-id" since="6.11"/>
     <keyword type="function" name="tepl_settings_get_range_uint ()" link="TeplSettings.html#tepl-settings-get-range-uint" since="6.2"/>
+    <keyword type="function" name="tepl_settings_reset_all ()" link="TeplSettings.html#tepl-settings-reset-all" since="6.13"/>
     <keyword type="struct" name="struct TeplSettings" link="TeplSettings.html#TeplSettings-struct"/>
     <keyword type="enum" name="enum TeplSettingsThemeVariant" link="TeplSettings.html#TeplSettingsThemeVariant" since="6.10"/>
     <keyword type="property" name="The “style-scheme-id” property" link="TeplSettings.html#TeplSettings--style-scheme-id"/>
@@ -452,6 +460,7 @@
     <keyword type="function" name="tepl_status_menu_button_new ()" link="TeplStatusMenuButton.html#tepl-status-menu-button-new" since="6.8"/>
     <keyword type="function" name="tepl_status_menu_button_set_label_text ()" link="TeplStatusMenuButton.html#tepl-status-menu-button-set-label-text" since="6.8"/>
     <keyword type="struct" name="struct TeplStatusMenuButton" link="TeplStatusMenuButton.html#TeplStatusMenuButton-struct"/>
+    <keyword type="function" name="tepl_window_state_init ()" link="libgedit-tepl-6-TeplWindowState.html#tepl-window-state-init" since="6.12"/>
     <keyword type="function" name="tepl_pango_font_description_to_css ()" link="libgedit-tepl-6-TeplPango.html#tepl-pango-font-description-to-css" since="6.0"/>
     <keyword type="function" name="tepl_utils_str_middle_truncate ()" link="libgedit-tepl-6-TeplUtils.html#tepl-utils-str-middle-truncate" since="4.4"/>
     <keyword type="function" name="tepl_utils_str_end_truncate ()" link="libgedit-tepl-6-TeplUtils.html#tepl-utils-str-end-truncate" since="4.4"/>
@@ -504,7 +513,7 @@
     <keyword type="member" name="TeplAbstractFactoryClass.create-tab-label" link="TeplAbstractFactory.html#TeplAbstractFactoryClass.create-tab-label"/>
     <keyword type="member" name="TeplAbstractFactoryClass.create-file" link="TeplAbstractFactory.html#TeplAbstractFactoryClass.create-file"/>
     <keyword type="member" name="TeplAbstractFactoryClass.create-metadata-manager-file" link="TeplAbstractFactory.html#TeplAbstractFactoryClass.create-metadata-manager-file"/>
-    <keyword type="member" name="TeplAbstractFactoryClass.fill-prefs-dialog" link="TeplAbstractFactory.html#TeplAbstractFactoryClass.fill-prefs-dialog"/>
+    <keyword type="member" name="TeplAbstractFactoryClass.create-prefs-dialog" link="TeplAbstractFactory.html#TeplAbstractFactoryClass.create-prefs-dialog"/>
     <keyword type="member" name="TeplTabGroupInterface.parent-interface" link="TeplTabGroup.html#TeplTabGroupInterface.parent-interface"/>
     <keyword type="member" name="TeplTabGroupInterface.get-tabs" link="TeplTabGroup.html#TeplTabGroupInterface.get-tabs"/>
     <keyword type="member" name="TeplTabGroupInterface.get-active-tab" link="TeplTabGroup.html#TeplTabGroupInterface.get-active-tab"/>

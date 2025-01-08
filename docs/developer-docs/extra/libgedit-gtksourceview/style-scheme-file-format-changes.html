@@ -14,7 +14,7 @@
   <a href="style-scheme-file-format.html">style scheme file format</a>.
 </p>
 
-<h2>libgedit-gtksourceview 299.0 --> libgedit-gtksourceview 299.2</h2>
+<h2>libgedit-gtksourceview 299.0 --> 299.2</h2>
 
 <p>
   The <code>&lt;author&gt;</code> tags are no longer supported, so you should
@@ -40,6 +40,14 @@
 <p>
   The parser is now a bit more strict, check if there are warning messages
   printed in the terminal if a style scheme fails to load.
+</p>
+
+<h2>libgedit-gtksourceview 299.3 --> 299.4</h2>
+
+<p>
+  The background-pattern feature has been removed from the library. As such,
+  a <code>&lt;style&gt;</code> tag with the name <code>background-pattern</code>
+  is no longer taken as a special value (but it's not an error to keep it).
 </p>
 
 </body>

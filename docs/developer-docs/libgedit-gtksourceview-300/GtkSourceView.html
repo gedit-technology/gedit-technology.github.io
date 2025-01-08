@@ -315,22 +315,6 @@
 <a class="link" href="GtkSourceView.html#gtk-source-view-get-show-line-marks" title="gtk_source_view_get_show_line_marks ()">gtk_source_view_get_show_line_marks</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
-<tr>
-<td class="function_type">
-<span class="returnvalue">void</span>
-</td>
-<td class="function_name">
-<a class="link" href="GtkSourceView.html#gtk-source-view-set-background-pattern" title="gtk_source_view_set_background_pattern ()">gtk_source_view_set_background_pattern</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
-<tr>
-<td class="function_type">
-<a class="link" href="GtkSourceView.html#GtkSourceBackgroundPatternType" title="enum GtkSourceBackgroundPatternType"><span class="returnvalue">GtkSourceBackgroundPatternType</span></a>
-</td>
-<td class="function_name">
-<a class="link" href="GtkSourceView.html#gtk-source-view-get-background-pattern" title="gtk_source_view_get_background_pattern ()">gtk_source_view_get_background_pattern</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
 </tbody>
 </table></div>
 </div>
@@ -346,11 +330,6 @@
 <tr>
 <td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
 <td class="property_name"><a class="link" href="GtkSourceView.html#GtkSourceView--auto-indent" title="The “auto-indent” property">auto-indent</a></td>
-<td class="property_flags">Read / Write</td>
-</tr>
-<tr>
-<td class="property_type"><a class="link" href="GtkSourceView.html#GtkSourceBackgroundPatternType" title="enum GtkSourceBackgroundPatternType"><span class="type">GtkSourceBackgroundPatternType</span></a></td>
-<td class="property_name"><a class="link" href="GtkSourceView.html#GtkSourceView--background-pattern" title="The “background-pattern” property">background-pattern</a></td>
 <td class="property_flags">Read / Write</td>
 </tr>
 <tr>
@@ -510,17 +489,12 @@
 <td class="datatype_keyword">enum</td>
 <td class="function_name"><a class="link" href="GtkSourceView.html#GtkSourceViewGutterPosition" title="enum GtkSourceViewGutterPosition">GtkSourceViewGutterPosition</a></td>
 </tr>
-<tr>
-<td class="datatype_keyword">enum</td>
-<td class="function_name"><a class="link" href="GtkSourceView.html#GtkSourceBackgroundPatternType" title="enum GtkSourceBackgroundPatternType">GtkSourceBackgroundPatternType</a></td>
-</tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="GtkSourceView.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
-    <span class="lineart">├──</span> GtkSourceBackgroundPatternType
     <span class="lineart">├──</span> GtkSourceSmartHomeEndType
     <span class="lineart">╰──</span> GtkSourceViewGutterPosition
     <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
@@ -1671,68 +1645,6 @@ gtk_source_view_get_show_line_marks (<em class="parameter"><code><a class="link"
 </div>
 <p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
-<hr>
-<div class="refsect2">
-<a name="gtk-source-view-set-background-pattern"></a><h3>gtk_source_view_set_background_pattern ()</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>
-gtk_source_view_set_background_pattern
-                               (<em class="parameter"><code><a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> *view</code></em>,
-                                <em class="parameter"><code><a class="link" href="GtkSourceView.html#GtkSourceBackgroundPatternType" title="enum GtkSourceBackgroundPatternType"><span class="type">GtkSourceBackgroundPatternType</span></a> background_pattern</code></em>);</pre>
-<p>Set if and how the background pattern should be displayed.</p>
-<div class="refsect3">
-<a name="gtk-source-view-set-background-pattern.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>view</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>background_pattern</p></td>
-<td class="parameter_description"><p>the <a class="link" href="GtkSourceView.html#GtkSourceBackgroundPatternType" title="enum GtkSourceBackgroundPatternType"><span class="type">GtkSourceBackgroundPatternType</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<p class="since">Since: <a class="link" href="api-index-3-16.html#api-index-3.16">3.16</a></p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="gtk-source-view-get-background-pattern"></a><h3>gtk_source_view_get_background_pattern ()</h3>
-<pre class="programlisting"><a class="link" href="GtkSourceView.html#GtkSourceBackgroundPatternType" title="enum GtkSourceBackgroundPatternType"><span class="returnvalue">GtkSourceBackgroundPatternType</span></a>
-gtk_source_view_get_background_pattern
-                               (<em class="parameter"><code><a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> *view</code></em>);</pre>
-<p>Returns the <a class="link" href="GtkSourceView.html#GtkSourceBackgroundPatternType" title="enum GtkSourceBackgroundPatternType"><span class="type">GtkSourceBackgroundPatternType</span></a> specifying if and how
-the background pattern should be displayed for this <em class="parameter"><code>view</code></em>
-.</p>
-<div class="refsect3">
-<a name="gtk-source-view-get-background-pattern.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody><tr>
-<td class="parameter_name"><p>view</p></td>
-<td class="parameter_description"><p>a <a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a></p></td>
-<td class="parameter_annotations"> </td>
-</tr></tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="gtk-source-view-get-background-pattern.returns"></a><h4>Returns</h4>
-<p> the <a class="link" href="GtkSourceView.html#GtkSourceBackgroundPatternType" title="enum GtkSourceBackgroundPatternType"><span class="type">GtkSourceBackgroundPatternType</span></a>.</p>
-</div>
-<p class="since">Since: <a class="link" href="api-index-3-16.html#api-index-3.16">3.16</a></p>
-</div>
 </div>
 <div class="refsect1">
 <a name="GtkSourceView.other_details"></a><h2>Types and Values</h2>
@@ -1821,37 +1733,6 @@ renderer</p>
 </table></div>
 </div>
 </div>
-<hr>
-<div class="refsect2">
-<a name="GtkSourceBackgroundPatternType"></a><h3>enum GtkSourceBackgroundPatternType</h3>
-<div class="refsect3">
-<a name="GtkSourceBackgroundPatternType.members"></a><h4>Members</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="300px" class="enum_members_name">
-<col class="enum_members_description">
-<col width="200px" class="enum_members_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="enum_member_name"><p><a name="GTK-SOURCE-BACKGROUND-PATTERN-TYPE-NONE:CAPS"></a>GTK_SOURCE_BACKGROUND_PATTERN_TYPE_NONE</p></td>
-<td class="enum_member_description">
-<p>no pattern</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-<tr>
-<td class="enum_member_name"><p><a name="GTK-SOURCE-BACKGROUND-PATTERN-TYPE-GRID:CAPS"></a>GTK_SOURCE_BACKGROUND_PATTERN_TYPE_GRID</p></td>
-<td class="enum_member_description">
-<p>grid pattern</p>
-</td>
-<td class="enum_member_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<p class="since">Since: <a class="link" href="api-index-3-16.html#api-index-3.16">3.16</a></p>
-</div>
 </div>
 <div class="refsect1">
 <a name="GtkSourceView.property-details"></a><h2>Property Details</h2>
@@ -1862,16 +1743,6 @@ renderer</p>
 <p>Owner: GtkSourceView</p>
 <p>Flags: Read / Write</p>
 <p>Default value: FALSE</p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="GtkSourceView--background-pattern"></a><h3>The <code class="literal">“background-pattern”</code> property</h3>
-<pre class="programlisting">  “background-pattern”       <a class="link" href="GtkSourceView.html#GtkSourceBackgroundPatternType" title="enum GtkSourceBackgroundPatternType"><span class="type">GtkSourceBackgroundPatternType</span></a></pre>
-<p>Draw a specific background pattern on the view.</p>
-<p>Owner: GtkSourceView</p>
-<p>Flags: Read / Write</p>
-<p>Default value: GTK_SOURCE_BACKGROUND_PATTERN_TYPE_NONE</p>
-<p class="since">Since: <a class="link" href="api-index-3-16.html#api-index-3.16">3.16</a></p>
 </div>
 <hr>
 <div class="refsect2">

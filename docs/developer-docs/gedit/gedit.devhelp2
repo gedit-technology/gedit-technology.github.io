@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <book xmlns="http://www.devhelp.net/book" title="gedit Reference Manual" link="index.html" author="" name="gedit" version="2" language="c">
   <chapters>
+    <sub name="Introduction" link="intro.html"/>
     <sub name="API Reference" link="api-reference.html">
       <sub name="Main Classes" link="ch01.html">
         <sub name="GeditApp" link="GeditApp.html"/>
@@ -180,7 +181,6 @@
     <keyword type="function" name="gedit_debug_message ()" link="gedit-gedit-debug.html#gedit-debug-message"/>
     <keyword type="function" name="gedit_debug_plugin_message ()" link="gedit-gedit-debug.html#gedit-debug-plugin-message" since="3.4"/>
     <keyword type="enum" name="enum GeditDebugSection" link="gedit-gedit-debug.html#GeditDebugSection"/>
-    <keyword type="macro" name="DEBUG_PREFS" link="gedit-gedit-debug.html#DEBUG-PREFS:CAPS"/>
     <keyword type="macro" name="DEBUG_WINDOW" link="gedit-gedit-debug.html#DEBUG-WINDOW:CAPS"/>
     <keyword type="macro" name="DEBUG_PANEL" link="gedit-gedit-debug.html#DEBUG-PANEL:CAPS"/>
     <keyword type="macro" name="DEBUG_PLUGINS" link="gedit-gedit-debug.html#DEBUG-PLUGINS:CAPS"/>
@@ -214,7 +214,6 @@
     <keyword type="constant" name="GEDIT_TAB_STATE_CLOSING" link="GeditTab.html#GEDIT-TAB-STATE-CLOSING:CAPS"/>
     <keyword type="constant" name="GEDIT_TAB_STATE_EXTERNALLY_MODIFIED_NOTIFICATION" link="GeditTab.html#GEDIT-TAB-STATE-EXTERNALLY-MODIFIED-NOTIFICATION:CAPS"/>
     <keyword type="constant" name="GEDIT_NO_DEBUG" link="gedit-gedit-debug.html#GEDIT-NO-DEBUG:CAPS"/>
-    <keyword type="constant" name="GEDIT_DEBUG_PREFS" link="gedit-gedit-debug.html#GEDIT-DEBUG-PREFS:CAPS"/>
     <keyword type="constant" name="GEDIT_DEBUG_WINDOW" link="gedit-gedit-debug.html#GEDIT-DEBUG-WINDOW:CAPS"/>
     <keyword type="constant" name="GEDIT_DEBUG_PANEL" link="gedit-gedit-debug.html#GEDIT-DEBUG-PANEL:CAPS"/>
     <keyword type="constant" name="GEDIT_DEBUG_PLUGINS" link="gedit-gedit-debug.html#GEDIT-DEBUG-PLUGINS:CAPS"/>

@@ -32,8 +32,8 @@
         <sub name="GtexTemplatesPersonal" link="GtexTemplatesPersonal.html"/>
       </sub>
       <sub name="Misc" link="ch05.html">
+        <sub name="GtexCommands" link="enter-tex-GtexCommands.html"/>
         <sub name="GtexDirs" link="enter-tex-GtexDirs.html"/>
-        <sub name="LaTeX commands" link="enter-tex-LaTeX-commands.html"/>
         <sub name="GtexPrefs" link="enter-tex-GtexPrefs.html"/>
         <sub name="GtexSynctex" link="GtexSynctex.html"/>
         <sub name="GtexTreeModelNode" link="GtexTreeModelNode.html"/>
@@ -58,6 +58,9 @@
     <keyword type="function" name="gtex_app_new ()" link="GtexApp.html#gtex-app-new"/>
     <keyword type="struct" name="struct GtexApp" link="GtexApp.html#GtexApp-struct"/>
     <keyword type="function" name="gtex_buffer_setup ()" link="enter-tex-GtexBuffer.html#gtex-buffer-setup"/>
+    <keyword type="function" name="gtex_buffer_comment_lines ()" link="enter-tex-GtexBuffer.html#gtex-buffer-comment-lines"/>
+    <keyword type="function" name="gtex_buffer_comment_selected_lines ()" link="enter-tex-GtexBuffer.html#gtex-buffer-comment-selected-lines"/>
+    <keyword type="function" name="gtex_buffer_uncomment_selected_lines ()" link="enter-tex-GtexBuffer.html#gtex-buffer-uncomment-selected-lines"/>
     <keyword type="function" name="gtex_view_setup ()" link="enter-tex-GtexView.html#gtex-view-setup"/>
     <keyword type="function" name="gtex_view_get_indentation_style ()" link="enter-tex-GtexView.html#gtex-view-get-indentation-style"/>
     <keyword type="function" name="gtex_build_job_new ()" link="GtexBuildJob.html#gtex-build-job-new"/>
@@ -157,14 +160,15 @@
     <keyword type="function" name="gtex_templates_personal_move_up ()" link="GtexTemplatesPersonal.html#gtex-templates-personal-move-up"/>
     <keyword type="function" name="gtex_templates_personal_move_down ()" link="GtexTemplatesPersonal.html#gtex-templates-personal-move-down"/>
     <keyword type="struct" name="GtexTemplatesPersonal" link="GtexTemplatesPersonal.html#GtexTemplatesPersonal-struct"/>
+    <keyword type="function" name="gtex_commands_add_action_infos ()" link="enter-tex-GtexCommands.html#gtex-commands-add-action-infos"/>
+    <keyword type="function" name="gtex_commands_add_actions ()" link="enter-tex-GtexCommands.html#gtex-commands-add-actions"/>
+    <keyword type="function" name="gtex_commands_create_edit_menu ()" link="enter-tex-GtexCommands.html#gtex-commands-create-edit-menu"/>
+    <keyword type="function" name="gtex_commands_create_latex_menu ()" link="enter-tex-GtexCommands.html#gtex-commands-create-latex-menu"/>
+    <keyword type="function" name="gtex_commands_create_math_menu ()" link="enter-tex-GtexCommands.html#gtex-commands-create-math-menu"/>
+    <keyword type="function" name="gtex_commands_create_edit_toolbar ()" link="enter-tex-GtexCommands.html#gtex-commands-create-edit-toolbar"/>
     <keyword type="function" name="gtex_dirs_get_app_data_dir ()" link="enter-tex-GtexDirs.html#gtex-dirs-get-app-data-dir"/>
     <keyword type="function" name="gtex_dirs_get_app_locale_dir ()" link="enter-tex-GtexDirs.html#gtex-dirs-get-app-locale-dir"/>
-    <keyword type="function" name="gtex_latex_commands_add_action_infos ()" link="enter-tex-LaTeX-commands.html#gtex-latex-commands-add-action-infos"/>
-    <keyword type="function" name="gtex_latex_commands_add_actions ()" link="enter-tex-LaTeX-commands.html#gtex-latex-commands-add-actions"/>
-    <keyword type="function" name="gtex_latex_commands_create_edit_toolbar ()" link="enter-tex-LaTeX-commands.html#gtex-latex-commands-create-edit-toolbar"/>
-    <keyword type="function" name="gtex_latex_commands_create_latex_menu ()" link="enter-tex-LaTeX-commands.html#gtex-latex-commands-create-latex-menu"/>
-    <keyword type="function" name="gtex_latex_commands_create_math_menu ()" link="enter-tex-LaTeX-commands.html#gtex-latex-commands-create-math-menu"/>
-    <keyword type="function" name="gtex_prefs_create_notebook ()" link="enter-tex-GtexPrefs.html#gtex-prefs-create-notebook"/>
+    <keyword type="function" name="gtex_prefs_fill_dialog ()" link="enter-tex-GtexPrefs.html#gtex-prefs-fill-dialog"/>
     <keyword type="function" name="gtex_synctex_get_instance ()" link="GtexSynctex.html#gtex-synctex-get-instance"/>
     <keyword type="function" name="gtex_synctex_connect_evince_window ()" link="GtexSynctex.html#gtex-synctex-connect-evince-window"/>
     <keyword type="function" name="gtex_synctex_forward_search ()" link="GtexSynctex.html#gtex-synctex-forward-search"/>

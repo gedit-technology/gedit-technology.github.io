@@ -44,6 +44,14 @@
 <a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
 </td>
 <td class="function_name">
+<a class="link" href="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-checkbutton-simple" title="tepl_prefs_create_checkbutton_simple ()">tepl_prefs_create_checkbutton_simple</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
 <a class="link" href="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-font-component" title="tepl_prefs_create_font_component ()">tepl_prefs_create_font_component</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
@@ -111,14 +119,6 @@
 <a class="link" href="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-display-statusbar-checkbutton" title="tepl_prefs_create_display_statusbar_checkbutton ()">tepl_prefs_create_display_statusbar_checkbutton</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
-<tr>
-<td class="function_type">
-<a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
-</td>
-<td class="function_name">
-<a class="link" href="libgedit-tepl-6-TeplPrefs.html#tepl-prefs-create-display-grid-checkbutton" title="tepl_prefs_create_display_grid_checkbutton ()">tepl_prefs_create_display_grid_checkbutton</a> <span class="c_punctuation">()</span>
-</td>
-</tr>
 </tbody>
 </table></div>
 </div>
@@ -134,6 +134,49 @@ panel. In order to configure a text editor.</p>
 </div>
 <div class="refsect1">
 <a name="libgedit-tepl-6-TeplPrefs.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="tepl-prefs-create-checkbutton-simple"></a><h3>tepl_prefs_create_checkbutton_simple ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+tepl_prefs_create_checkbutton_simple (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> *settings</code></em>,
+                                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *key</code></em>,
+                                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *mnemonic_text</code></em>);</pre>
+<div class="refsect3">
+<a name="tepl-prefs-create-checkbutton-simple.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>settings</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>key</p></td>
+<td class="parameter_description"><p>a key part of <em class="parameter"><code>settings</code></em>
+. The type of the key must be a boolean.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mnemonic_text</p></td>
+<td class="parameter_description"><p>the text (with mnemonic) for the <a href="/usr/share/gtk-doc/html/gtk3/GtkCheckButton.html#GtkCheckButton-struct"><span class="type">GtkCheckButton</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="tepl-prefs-create-checkbutton-simple.returns"></a><h4>Returns</h4>
+<p>a <a href="/usr/share/gtk-doc/html/gtk3/GtkCheckButton.html#GtkCheckButton-struct"><span class="type">GtkCheckButton</span></a> to configure <em class="parameter"><code>key</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-6-13.html#api-index-6.13">6.13</a></p>
+</div>
+<hr>
 <div class="refsect2">
 <a name="tepl-prefs-create-font-component"></a><h3>tepl_prefs_create_font_component ()</h3>
 <pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
@@ -527,45 +570,6 @@ a boolean.</p></td>
 <a name="tepl-prefs-create-display-statusbar-checkbutton.returns"></a><h4>Returns</h4>
 <p>A <a href="/usr/share/gtk-doc/html/gtk3/GtkCheckButton.html#GtkCheckButton-struct"><span class="type">GtkCheckButton</span></a> intended for configuring the
 visibility of a <a href="/usr/share/gtk-doc/html/gtk3/GtkStatusbar.html#GtkStatusbar-struct"><span class="type">GtkStatusbar</span></a>. </p>
-<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
-</div>
-<p class="since">Since: <a class="link" href="api-index-6-10.html#api-index-6.10">6.10</a></p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="tepl-prefs-create-display-grid-checkbutton"></a><h3>tepl_prefs_create_display_grid_checkbutton ()</h3>
-<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
-tepl_prefs_create_display_grid_checkbutton
-                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a> *settings</code></em>,
-                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *background_pattern_key</code></em>);</pre>
-<div class="refsect3">
-<a name="tepl-prefs-create-display-grid-checkbutton.parameters"></a><h4>Parameters</h4>
-<div class="informaltable"><table class="informaltable" width="100%" border="0">
-<colgroup>
-<col width="150px" class="parameters_name">
-<col class="parameters_description">
-<col width="200px" class="parameters_annotations">
-</colgroup>
-<tbody>
-<tr>
-<td class="parameter_name"><p>settings</p></td>
-<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GSettings.html#GSettings-struct"><span class="type">GSettings</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-<tr>
-<td class="parameter_name"><p>background_pattern_key</p></td>
-<td class="parameter_description"><p>a key part of <em class="parameter"><code>settings</code></em>
-. Its type must be an enum
-for <a href="../libgedit-gtksourceview-300/GtkSourceView.html#GtkSourceBackgroundPatternType"><span class="type">GtkSourceBackgroundPatternType</span></a>.</p></td>
-<td class="parameter_annotations"> </td>
-</tr>
-</tbody>
-</table></div>
-</div>
-<div class="refsect3">
-<a name="tepl-prefs-create-display-grid-checkbutton.returns"></a><h4>Returns</h4>
-<p>a <a href="/usr/share/gtk-doc/html/gtk3/GtkCheckButton.html#GtkCheckButton-struct"><span class="type">GtkCheckButton</span></a> intended for
-<a href="../libgedit-gtksourceview-300/GtkSourceView.html#GTK-SOURCE-BACKGROUND-PATTERN-TYPE-GRID:CAPS"><code class="literal">GTK_SOURCE_BACKGROUND_PATTERN_TYPE_GRID</code></a>. </p>
 <p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-6-10.html#api-index-6.10">6.10</a></p>
