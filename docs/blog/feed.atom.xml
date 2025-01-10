@@ -97,7 +97,7 @@
   <content type="xhtml">
     <div xmlns="http://www.w3.org/1999/xhtml">
 <p>
-  <a href="https://gedit-technology.github.io/apps/gedit/">gedit</a> 48 has been
+  <a href="https://gedit-text-editor.org/">gedit</a> 48 has been
   released and is available on the three main desktop operating systems. Let's
   look at the highlights of this new version.
 </p>
@@ -110,7 +110,7 @@
     width="250" /></a>
 </p>
 <p>
-  The <a href="https://gedit-technology.github.io/blog/2024-06-19-dark-theme-support-in-gedit.html">dark theme support</a>
+  The <a href="https://gedit-text-editor.org/blog/2024-06-19-dark-theme-support-in-gedit.html">dark theme support</a>
   has already been covered.
 </p>
 
@@ -192,7 +192,7 @@
     <div xmlns="http://www.w3.org/1999/xhtml">
 <p>
   The development version of
-  <a href="https://gedit-technology.github.io/apps/gedit/">gedit</a> now has a
+  <a href="https://gedit-text-editor.org/">gedit</a> now has a
   much more complete support of light and dark themes, and switching between
   them from the desktop setting.
 </p>
@@ -297,7 +297,7 @@ $ dconf watch /
 </p>
 <p>
   Do not hesitate to
-  <a href="https://gedit-technology.github.io/apps/gedit/">get in touch</a>
+  <a href="https://gedit-text-editor.org/">get in touch</a>
   and provide a feedback, be it for this feature or for other things.
 </p>
 
@@ -317,13 +317,13 @@ $ dconf watch /
   <content type="xhtml">
     <div xmlns="http://www.w3.org/1999/xhtml">
 <p>
-  <a href="https://gedit-technology.github.io/apps/gedit/">gedit</a> 47 has been
+  <a href="https://gedit-text-editor.org/">gedit</a> 47 has been
   released and packaged recently.
 </p>
 
 <h3>What's new</h3>
 <p>
-  The <a href="https://gedit-technology.github.io/blog/2024-04-26-change-of-icons-and-logo-for-gedit.html">change of icons and logo</a>
+  The <a href="https://gedit-text-editor.org/blog/2024-04-26-change-of-icons-and-logo-for-gedit.html">change of icons and logo</a>
   was already explained.
 </p>
 
@@ -354,7 +354,7 @@ $ gsettings reset org.gnome.gedit.preferences.ui theme-variant
 <h4>For plugin developers: improved API documentation</h4>
 <p>
   The main classes of gedit are now much better
-  <a href="https://gedit-technology.github.io/developer-docs/gedit/">documented</a>.
+  <a href="https://gedit-text-editor.org/developer-docs/gedit/">documented</a>.
 </p>
 
 <h4>Translations temporarily disabled</h4>
@@ -424,7 +424,7 @@ $ gsettings reset org.gnome.gedit.preferences.ui theme-variant
     <div xmlns="http://www.w3.org/1999/xhtml">
 <p>
   The website of
-  <a href="https://gedit-technology.github.io/">Gedit Technology</a>
+  <a href="https://gedit-text-editor.org/technology.html">Gedit Technology</a>
   has been created in 2022 and is now hosted where the link points to. However,
   the actual code behind it is older than that. Read on for a retrospective and
   the important dates and milestones.
@@ -509,7 +509,7 @@ $ gsettings reset org.gnome.gedit.preferences.ui theme-variant
   a better architecture (most importantly), smaller classes with more separation
   of concerns, fewer bugs, more unit-testable code (and unit-tested), and much
   improved
-  <a href="https://gedit-technology.github.io/developer-docs/">documentation</a>.
+  <a href="https://gedit-text-editor.org/developer-docs/">documentation</a>.
 </p>
 <p>
   Thank you for reading!
@@ -530,7 +530,8 @@ $ gsettings reset org.gnome.gedit.preferences.ui theme-variant
   <content type="xhtml">
     <div xmlns="http://www.w3.org/1999/xhtml">
 <p>
-  There will be a change of icons and logo for gedit 47.
+  There will be a change of icons and logo for
+  <a href="https://gedit-text-editor.org/">gedit</a> 47.
 </p>
 
 <p>Some dates:</p>
