@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enter TeX | Gedit Technology blog</title>
+  <link rel="stylesheet" type="text/css" media="all" href="/css/main.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/gedit-icon-16x16.png" />
+  <link href="feed.atom.xml" type="application/atom+xml" rel="alternate" title="Atom blog feed" />
+</head>
+
+<body>
+<header>
+  <div id="header-title"><a href="/blog/"><img src="/images/gedit-icon.png" width="128" alt="gedit icon" /></a><h1>Gedit Technology blog</h1></div>
+  <div id="header-subtitle"><div><h2>2025-02-11 :: Enter TeX</h2></div></div>
+</header>
+
+<main>
+<p>
+  As promised, I wanted to write a blog post about this application.
+</p>
+<p>
+  <a href="https://gitlab.gnome.org/swilmet/enter-tex/">Enter TeX</a> is a
+  <a href="https://tug.org/">TeX</a> /
+  <a href="https://www.latex-project.org/">LaTeX</a>
+  text editor previously named LaTeXila and then GNOME LaTeX. It is based on the
+  same libraries as <a href="https://gedit-text-editor.org/">gedit</a>.
+</p>
+
+<h3>Renames</h3>
+<p>
+  LaTeXila was a fun name that I picked up when I was a student back in 2009.
+  Then the project was renamed to GNOME LaTeX in 2017 but it was not a great
+  choice because of the GNOME trademark. Now it is called <em>Enter TeX</em>.
+</p>
+<p>
+  By having "TeX" in the name is more future-proof than "LaTeX", because there
+  is also Plain TeX, <a href="https://wiki.contextgarden.net/">ConTeXt</a> and
+  <a href="https://www.gnu.org/software/texinfo/">GNU Texinfo</a>. Only LaTeX is
+  currently well supported by Enter TeX, but the support for other variants
+  would be a welcome addition.
+</p>
+<p>
+  Note that the settings and configuration files are automatically migrated from
+  LaTeXila or GNOME LaTeX to Enter TeX.
+</p>
+<p>
+  There is another rename: the namespace for the C code has been changed from
+  "Latexila" to "Gtex", to have a shorter and better name.
+</p>
+
+<h3>Other news</h3>
+<p>
+  If you're curious, you can read the top of the
+  <a href="https://gitlab.gnome.org/swilmet/enter-tex/-/blob/main/NEWS">NEWS file</a>,
+  it has all the details.
+</p>
+<p>
+  If I look at the
+  <a href="https://gitlab.gnome.org/swilmet/enter-tex/-/blob/main/docs/achievements.md">achievements file</a>,
+  there is also the port from Autotools to Meson that was done recently and is
+  worth mentioning.
+</p>
+
+<h3>Known issue for the icons</h3>
+<p>
+  Enter TeX unfortunately suffers from a combination of changes in
+  adwaita-icon-theme and GThemedIcon (part of GIO). Link to the
+  <a href="https://gitlab.gnome.org/GNOME/glib/-/issues/3376">issue on GitLab</a>.
+</p>
+<p>
+  Compare the two screenshots and choose the one you prefer:
+</p>
+<p>
+  <a href="images/2025-02-11/screenshot1.png" target="_blank"><img src="images/2025-02-11/screenshot1.png" alt="screenshot 1" width="300" /></a>
+</p>
+<p>
+  <a href="images/2025-02-11/screenshot2.png" target="_blank"><img src="images/2025-02-11/screenshot2.png" alt="screenshot 2" width="300" /></a>
+</p>
+<p>
+  As an interim solution, what I do is to install adwaita-icon-theme 41.0 in the
+  same prefix as where Enter TeX is installed (not a system-wide prefix).
+</p>
+
+<h3>To summarize</h3>
+<ul>
+  <li>LaTeXila -> GNOME LaTeX -> Enter TeX</li>
+  <li>C code namespace: Latexila -> Gtex</li>
+  <li>Build system: Autotools -> Meson</li>
+  <li>An old version of adwaita-icon-theme is necessary.</li>
+</ul>
+
+<p><small>
+  This article was written by Sébastien Wilmet, currently the main developer
+  behind Enter TeX.
+</small></p>
+
+</main>
+</body>
+</html>
