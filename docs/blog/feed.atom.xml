@@ -7,8 +7,162 @@
   <link rel="self" type="application/atom+xml" href="https://gedit-text-editor.org/blog/feed.atom.xml" />
   <link type="text/html" href="https://gedit-text-editor.org/blog/index.html" />
   <title>Gedit Technology</title>
-  <updated>2025-02-11T10:00:00Z</updated>
+  <updated>2025-04-30T10:00:00Z</updated>
   <icon>https://gedit-text-editor.org/images/gedit-icon-16x16.png</icon>
+
+<entry>
+  <title>No more Pythons in gedit</title>
+  <id>https://gedit-text-editor.org/blog/2025-04-30-no-more-pythons-in-gedit.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2025-04-30-no-more-pythons-in-gedit.html" />
+  <updated>2025-04-30T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  The first <code>*.py</code> file in the
+  <a href="https://gedit-text-editor.org/">gedit</a> repository was added in
+  2005, 20 years ago.
+  Since then, it seems that it has always been possible to write gedit plugins
+  in Python. Well, this is no more.
+</p>
+<p>
+  It deserves some explanation.
+</p>
+
+<h3>Reducing the number of programming languages to deal with</h3>
+<p>
+  A multi-language project is much harder to manage.
+  Now gedit only uses C and a little of Objective-C for the macOS support.
+  The libgedit-* are entirely written in C.
+</p>
+<p>
+  There was a Vala plugin (Find in Files) but has been
+  <a href="https://gitlab.gnome.org/World/gedit/gedit-plugins/-/commit/7d33fb7a667c738f5089d951ea8b0bba5cc6b968">removed in 2022</a>
+  (unfortunately there is no replacement).
+  The commit message already mentions the difficulty of working with multiple
+  languages. So the problem is not new.
+</p>
+
+<h3>Other reasons</h3>
+<p>
+  Making it easier to package gedit on Windows, avoiding the need to bundle a
+  whole Python interpreter with the app. This also makes the package smaller and
+  the app launches more quickly (better performances).
+</p>
+<p>
+  There are also some inherent difficulties to maintain large Python codebases
+  in the long run. gedit plugins are not specifically large, but still, the
+  difficulties were present. (If Python is your thing, you may have a different
+  experience and opinion. That's fine, there needs to be something for
+  everybody).
+</p>
+<p>
+  So over the recent years a few plugins have been rewritten from Python to C
+  already. With the final goal of phasing out the Python support. This was a
+  slow process, until ...
+</p>
+
+<h3>Some PyGObject and GIRepository updates later</h3>
+<p>
+  GNOME 48 released in March comes with an update that basically makes all
+  Python plugins unusable in gedit. It's more related to the code dealing with
+  the <em>loading</em> of plugins, not the plugins themselves.
+</p>
+<p>
+  More precisely, the latest version of PyGObject made the Python 3 loader of
+  libpeas1 unusable (libpeas provides the plugin engine for gedit and other
+  apps). libpeas1 and gedit depend on GIRepository-2.0 while the latest version
+  of PyGObject has upgraded to GIRepository-3.0. It is not possible to use both
+  GIRepository-2.0 and 3.0 at the same time in the same process.
+  (<a href="https://gitlab.gnome.org/GNOME/pygobject/-/issues/686">Link to the issue</a>).
+</p>
+<p>
+  It's like weeds growing. If you do nothing, weeds grow and regression bugs
+  happen. Note that it doesn't mean that nothing is done in gedit, there is
+  still development done. But the GTK and GNOME platform apparently moves
+  faster.
+</p>
+<p>
+  gedit is <em>no longer</em> developed and maintained by a team of 5-6
+  dedicated hackers. So the project is no longer able to lead the peloton, but
+  the application is still there and remains useful for many people! We (or -
+  mainly - I) don't have the human resources to keep up with everything and be
+  ahead of all the things to do. Hence ...
+</p>
+
+<h3>Reducing/changing the scope of gedit</h3>
+<p>
+  gedit has for many years been between two things.
+  (1) A great and easy-to-learn tool for beginners.
+  And (2) some powerful plugins are or were available, so the text editor is
+  also suitable for more advanced users, <em>also</em> in a professional
+  context.
+</p>
+<p>
+  So the scope of gedit is a bit unclear. What is clear is that we want from
+  gedit something more than just writing quick notes. So something more than a
+  simple notepad. But not as powerful and complete as Visual Studio Code (for
+  instance, but you can pick your favorite IDE here, or Vim, Emacs).
+</p>
+<p>
+  What is also clear for the path forward is a desire to well support markup
+  languages like HTML, Markdown, etc. To support them <em>even better</em> than
+  now, by adding some useful features for such languages.
+</p>
+<p>
+  So in the context of the plugins removal, it means that some of them will
+  <em>not</em> be re-implemented in C (or Rust or whatever). The set of features
+  available through plugins will thus change. At least for the official plugins
+  that are shipped with the gedit and gedit-plugins packages.
+</p>
+
+<h3>Did I mention Rust?</h3>
+<p>
+  Even though there is a desire to deal with less programming languages, ideally
+  having a single-language project, there is <em>Rust</em>.
+</p>
+<p>
+  Rust might be the exception. Maybe (without doing any promises), third-party
+  plugins can choose Rust instead of C. That would make for a better experience.
+  Then, maybe, a Rust third-party plugin will eventually find its course into
+  gedit proper.
+</p>
+
+<h3>The impact for users</h3>
+<p>
+  <a href="https://gitlab.gnome.org/World/gedit/gedit/-/commit/3e21148fb765fcbcc27d4a00a9bb905b1bfc7e1e">This commit</a>
+  is the place to go to have the list of plugins that were implemented in Python
+  and have been removed.
+</p>
+<p>
+  But for the moment the
+  <a href="https://flathub.org/apps/org.gnome.gedit">Flatpak of gedit</a>
+  is mostly unaffected, because it can use the previous version of PyGObject
+  while using the latest GNOME runtime.
+</p>
+<p>
+  <a href="https://www.microsoft.com/store/apps/9NCQ8B0NVCW3">gedit on the Microsoft Store</a>
+  is also unaffected.
+</p>
+<p>
+  One day however, the updates of gedit and gedit-plugins will roll out.
+  Versions >= 48.2 are already affected. The idea is to re-implement in C a few
+  plugins so that the change is not too disruptive for Flatpak and Windows
+  users.
+</p>
+<p>
+  As a conclusion, let's see what the future of gedit has in stock! Be it
+  attracting Rust developers, or being a tool of choice for certain uses,
+  remaining humble at its task of being an easy-to-learn and general-purpose
+  text editor.
+</p>
+
+<p><small>
+  This article was written by Sébastien Wilmet, currently the main developer
+  behind gedit.
+</small></p>
+    </div>
+  </content>
+</entry>
 
 <entry>
   <title>Enter TeX</title>
