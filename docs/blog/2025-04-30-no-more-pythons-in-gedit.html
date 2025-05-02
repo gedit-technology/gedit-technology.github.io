@@ -17,6 +17,21 @@
 
 <main>
 <p>
+  <strong>UPDATE:</strong> if libpeas1 gets ported to the latest version of
+  GIRepository, then it would be possible to re-enable the Python support in
+  gedit. But <em>only for third-party plugins</em>. That way we keep the best of
+  both worlds. The plugins shipped by gedit itself (the "official" plugins) will
+  be written only in C, but Rust would be welcome too if someone figures out how
+  to write a libpeas-based plugin in Rust. For most users this means that some
+  official plugins will be missing. For third-party plugin developers, this
+  means that a full rewrite of the plugin would not be necessary. Here is the
+  <a href="https://gitlab.gnome.org/World/gedit/gedit/-/issues/618">GitLab issue</a>
+  where this is discussed.
+</p>
+
+<p><br /></p>
+
+<p>
   The first <code>*.py</code> file in the
   <a href="https://gedit-text-editor.org/">gedit</a> repository was added in
   2005, 20 years ago.
