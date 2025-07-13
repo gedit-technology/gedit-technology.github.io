@@ -7,8 +7,110 @@
   <link rel="self" type="application/atom+xml" href="https://gedit-text-editor.org/blog/feed.atom.xml" />
   <link type="text/html" href="https://gedit-text-editor.org/blog/index.html" />
   <title>Gedit Technology</title>
-  <updated>2025-02-11T10:00:00Z</updated>
+  <updated>2025-07-14T10:00:00Z</updated>
   <icon>https://gedit-text-editor.org/images/gedit-icon-16x16.png</icon>
+
+<entry>
+  <title>Mid-July News</title>
+  <id>https://gedit-text-editor.org/blog/2025-07-14-mid-july-news.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2025-07-14-mid-july-news.html" />
+  <updated>2025-07-14T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  Misc news about the
+  <a href="https://gedit-text-editor.org/">gedit</a>
+  text editor, mid-July edition! (Some sections are a bit technical).
+</p>
+
+<h3>gedit 49 in preparation</h3>
+<p>
+  About version numbers: if all goes well, gedit 49 will match GNOME 49 and are
+  expected for September! So gedit will be back on track to follow the GNOME
+  version numbers. This is after some trials to <em>not</em> follow them, to
+  release gedit versions when ready and more often, but at the end of the day
+  this doesn't change much.
+</p>
+
+<h3>Gedit Development Guidelines</h3>
+<p>
+  I've written the
+  <a href="https://gitlab.gnome.org/World/gedit/gedit/-/tree/master/docs/guidelines">Gedit Development Guidelines</a>,
+  a series of small Markdown documents. It regroups the information in one
+  place. It also documents stuff that needed to be written in commit messages,
+  so to avoid repetition and to have more complete explanations, commit messages
+  can now refer to the guideline documents.
+</p>
+<p>
+  Be warned that some of the gedit guidelines don't follow the more modern GNOME
+  development practices. The rationales are clearly explained. In my humble
+  opinion, what is deemed "modern" doesn't automatically make something better.
+  (If you read this and <em>are</em> a developer of one of the modern things not
+  used by gedit, take it as a user feedback, and remember that what truly
+  matters is that the GTK development platform is still appreciated!).
+</p>
+
+<h3>Improved preferences</h3>
+<p>
+  <a href="images/2025-07-14/prefs-reset.png" target="_blank"><img
+    src="images/2025-07-14/prefs-reset.png"
+    alt="gedit screenshot - reset all preferences"
+    width="250" /></a>
+</p>
+<p>
+  <a href="images/2025-07-14/prefs-spell-checker.png" target="_blank"><img
+    src="images/2025-07-14/prefs-spell-checker.png"
+    alt="gedit screenshot - spell-checker preferences"
+    width="250" /></a>
+</p>
+<p>
+  There is now a "Reset All..." button in the Preferences dialog. And it is now
+  possible to configure the default language used by the spell-checker.
+</p>
+
+<h3>Python plugins</h3>
+<p>
+  Most Linux distributions ship some older versions of some GNOME modules to
+  make Python plugins in gedit (and other apps) still work. There has been some
+  disturbances in the air, but my hope is that everything will be back to normal
+  for GNOME 49.
+</p>
+
+<h3>File loading and saving</h3>
+<p>
+  There are some known issues with the file loading implementation, and I'm
+  working on it.
+</p>
+<p>
+  About the old <code>iconv()</code> function, I've created a utility class called
+  <a href="https://gitlab.gnome.org/World/gedit/libgedit-gtksourceview/-/blob/main/gtksourceview/gtksourceiconv.c">GtkSourceIconv</a>
+  to (try to) tame the beast, except that the beast <em>cannot be fully
+  tamed</em>, by design! Some aspects of its API are broken, and what I
+  recommend for new code is to look at the libICU to see if it's better.
+</p>
+<p>
+  But instead of doing ground-breaking changes in the file loading and saving
+  code (to switch to the libICU), I prefer a more incremental approach, and this
+  means to still use <code>iconv()</code> (for the time being at least). The
+  advantage is that incremental changes are directly useful and used; progress
+  is made on gedit!
+</p>
+<p>
+  I attempted a while back a new implementation in libgedit-tepl (TeplEncoding,
+  TeplFile, etc). The problem is that I created a different API, so switching
+  the whole of gedit to it was more difficult. And the new implementation lacked
+  several important features used by gedit.
+</p>
+<p>
+  Now I'm moving some of my experiments done in libgedit-tepl back to
+  libgedit-gtksourceview, because it's the latter (GtkSourceEncoding,
+  GtkSourceFile, etc) that is used by gedit's file loading and saving machinery.
+  libgedit-gtksourceview doesn't guarantee a stable API, and I consider it part
+  of gedit, so it's more <em>malleable code</em> :-)
+</p>
+    </div>
+  </content>
+</entry>
 
 <entry>
   <title>Enter TeX</title>
