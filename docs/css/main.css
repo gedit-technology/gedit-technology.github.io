@@ -73,3 +73,11 @@ p, li {
 li:not(li:first-child) {
   margin-top: 0.8em;
 }
+
+a:link {
+  color: #3465a4; /* Tango skyblue2 */
+}
+
+a:visited {
+  color: #75507b; /* Tango plum2 */
+}
