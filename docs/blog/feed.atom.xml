@@ -83,10 +83,11 @@
 </p>
 <p>
   About the old <code>iconv()</code> function, I've created a utility class called
-  <a href="https://gitlab.gnome.org/World/gedit/libgedit-gtksourceview/-/blob/main/gtksourceview/gtksourceiconv.c">GtkSourceIconv</a>
+  <a href="https://gitlab.gnome.org/World/gedit/libgedit-gtksourceview/-/blob/main/gtksourceview/file-loading-and-saving/gtksourceiconv.c" target="_blank">GtkSourceIconv</a>
   to (try to) tame the beast, except that the beast <em>cannot be fully
   tamed</em>, by design! Some aspects of its API are broken, and what I
   recommend for new code is to look at the libICU to see if it's better.
+  (gtksourceiconv.c has a comment at the top with more details).
 </p>
 <p>
   But instead of doing ground-breaking changes in the file loading and saving
