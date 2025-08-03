@@ -14,6 +14,7 @@
   <title>Mid-July News</title>
   <id>https://gedit-text-editor.org/blog/2025-07-14-mid-july-news.html</id>
   <link type="text/html" href="https://gedit-text-editor.org/blog/2025-07-14-mid-july-news.html" />
+  <published>2025-07-14T10:00:00Z</published>
   <updated>2025-07-14T10:00:00Z</updated>
   <content type="xhtml">
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -117,6 +118,7 @@
   <title>Enter TeX</title>
   <id>https://gedit-text-editor.org/blog/2025-02-11-enter-tex.html</id>
   <link type="text/html" href="https://gedit-text-editor.org/blog/2025-02-11-enter-tex.html" />
+  <published>2025-02-11T10:00:00Z</published>
   <updated>2025-02-11T10:00:00Z</updated>
   <content type="xhtml">
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -206,6 +208,7 @@
   <title>Various news about gedit</title>
   <id>https://gedit-text-editor.org/blog/2025-01-07-various-news.html</id>
   <link type="text/html" href="https://gedit-text-editor.org/blog/2025-01-07-various-news.html" />
+  <published>2025-01-07T10:00:00Z</published>
   <updated>2025-01-07T10:00:00Z</updated>
   <content type="xhtml">
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -285,6 +288,7 @@
   <title>What's new in gedit 48</title>
   <id>https://gedit-text-editor.org/blog/2024-11-19-gedit-48.html</id>
   <link type="text/html" href="https://gedit-text-editor.org/blog/2024-11-19-gedit-48.html" />
+  <published>2024-11-19T10:00:00Z</published>
   <updated>2024-11-19T10:00:00Z</updated>
   <content type="xhtml">
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -379,6 +383,7 @@
   <title>Dark theme support in gedit</title>
   <id>https://gedit-text-editor.org/blog/2024-06-19-dark-theme-support-in-gedit.html</id>
   <link type="text/html" href="https://gedit-text-editor.org/blog/2024-06-19-dark-theme-support-in-gedit.html" />
+  <published>2024-06-19T10:00:00Z</published>
   <updated>2024-06-19T10:00:00Z</updated>
   <content type="xhtml">
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -505,6 +510,7 @@ $ dconf watch /
   <title>gedit 47 released and packaged</title>
   <id>https://gedit-text-editor.org/blog/2024-05-24-gedit-47-released-and-packaged.html</id>
   <link type="text/html" href="https://gedit-text-editor.org/blog/2024-05-24-gedit-47-released-and-packaged.html" />
+  <published>2024-05-24T10:00:00Z</published>
   <updated>2024-05-24T10:00:00Z</updated>
   <content type="xhtml">
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -611,6 +617,7 @@ $ gsettings reset org.gnome.gedit.preferences.ui theme-variant
   <title>History of Gedit Technology</title>
   <id>https://gedit-text-editor.org/blog/2024-05-15-history-of-gedit-technology.html</id>
   <link type="text/html" href="https://gedit-text-editor.org/blog/2024-05-15-history-of-gedit-technology.html" />
+  <published>2024-05-15T10:00:00Z</published>
   <updated>2024-05-15T10:00:00Z</updated>
   <content type="xhtml">
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -718,6 +725,7 @@ $ gsettings reset org.gnome.gedit.preferences.ui theme-variant
   <title>Change of icons and logo for gedit</title>
   <id>https://gedit-text-editor.org/blog/2024-04-26-change-of-icons-and-logo-for-gedit.html</id>
   <link type="text/html" href="https://gedit-text-editor.org/blog/2024-04-26-change-of-icons-and-logo-for-gedit.html" />
+  <published>2024-04-26T10:00:00Z</published>
   <updated>2024-04-26T10:00:00Z</updated>
   <content type="xhtml">
     <div xmlns="http://www.w3.org/1999/xhtml">
