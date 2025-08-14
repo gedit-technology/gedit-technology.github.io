@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mid-August News | Gedit Technology blog</title>
+  <link rel="stylesheet" type="text/css" media="all" href="/css/main.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/gedit-icon-16x16.png" />
+  <link href="feed.atom.xml" type="application/atom+xml" rel="alternate" title="Atom blog feed" />
+</head>
+
+<body>
+<header>
+  <div id="header-title"><a href="/blog/" title="Go to the blog index"><img src="/images/gedit-icon.png" width="128" alt="gedit icon" /></a><h1>Gedit Technology blog</h1></div>
+  <div id="header-subtitle"><div><h2>2025-08-14 :: Mid-August News</h2></div></div>
+</header>
+
+<main>
+<p>
+  Misc news about the
+  <a href="https://gedit-text-editor.org/" target="_blank">gedit</a>
+  text editor, mid-August edition! (Some sections are a bit technical).
+</p>
+
+<h3>Code Comment plugin rewritten</h3>
+<p>
+  I forgot to talk about it in the mid-July news, but the Code Comment plugin
+  has been rewritten in C (it was previously implemented in Python) and the bulk
+  of it is implemented as re-usable code in libgedit-tepl. The implementation is
+  now shared between
+  <a href="https://gitlab.gnome.org/World/gedit/enter-tex" target="_blank">Enter TeX</a>
+  and gedit.
+</p>
+
+<h3>File loading and saving: a new GtkSourceEncoding class</h3>
+<p>
+  I've modified the GtkSourceEncoding class that is part of
+  libgedit-gtksourceview, and adapted gedit accordingly.
+  The new version of GtkSourceEncoding comes from an experiment that I did in
+  libgedit-tepl several years ago.
+</p>
+<p>
+  GtkSourceEncoding represents a character set (or "charset" for short). It is
+  used in combination with <code>iconv</code> to convert text files from one
+  encoding to another (for example from ISO-8859-15 to UTF-8).
+</p>
+<p>
+  The purpose of the experiment that was done in libgedit-tepl (the TeplEncoding
+  class) was to accomodate the needs for a
+  <a href="https://www.freedesktop.org/wiki/Software/uchardet/" target="_blank">uchardet</a>
+  usage (note that uchardet is not yet used by gedit, but it would be useful).
+  uchardet is a library to automatically detect the encoding of some input text.
+  It returns an iconv-compatible charset, as a string.
+</p>
+<p>
+  It is <em>this string</em> - returned by uchardet - that we want to store and
+  pass to <code>iconv</code> unmodified, to not lose information.
+</p>
+<p>
+  The problem with the old version of GtkSourceEncoding: there was a fixed set
+  of GtkSourceEncoding instances, all <code>const</code> (so without the need to
+  free them). When trying to get an instance for an unknown charset string, NULL
+  was returned. So this was not appropriate for a uchardet usage (or at least,
+  not a clean solution: with the charset string returned by uchardet it was not
+  guaranteed that a corresponding GtkSourceEncoding instance was available).
+</p>
+<p>
+  Since GtkSourceEncoding is used in a lot of places, we don't want to change
+  the code to represent a charset as just a string. And a simple string is
+  anyway too basic, GtkSourceEncoding provides useful features.
+</p>
+<p>
+  So, long story short: the new GtkSourceEncoding class returns new instances
+  that must be freed, and has a constructor that just makes a copy of the
+  charset string (there is the <code>get_charset()</code> method to get back the
+  string, unmodified).
+</p>
+<p>
+  So gedit can keep using the GtkSourceEncoding abstraction, and we are one step
+  closer to being able to use uchardet or something similar!
+</p>
+
+<h3>Know more about the gedit's maintainer</h3>
+<p>
+  I now have a personal web site, or more accurately a single web
+  <em>page</em>:<br />
+  <a href="https://wilmet-software.be/" target="_blank">wilmet-software.be</a>
+  (Sébastien Wilmet)
+</p>
+<p>
+  gedit is a 27-years-old project, the first lines were written in 1998
+  (and <em>normally</em> it won't be part of the
+  <a href="https://en.wikipedia.org/wiki/27_Club" target="_blank">27 Club</a>!).
+  I've been a contributor to the project for 14 years, so more than half the
+  project existence. Time flies!
+</p>
+
+<h3>Robust file loading - some progress</h3>
+<p>
+  After the rework of GtkSourceEncoding (which is part of the File Loading and
+  Saving subsystem in libgedit-gtksourceview), I've made good progress to make
+  the file loading more robust - although there is more work still to do.
+</p>
+<p>
+  It is a basis in programming to check all program input. gedit makes things a
+  bit harder to accomplish this. To open a <em>document</em>:
+</p>
+<ul>
+  <li>
+    There is first the problem of the character encoding. It is
+    not sufficient for a general-purpose text editor to accept only UTF-8. So
+    text files can be almost anything in binary form.
+  </li>
+  <li>
+    Then gedit allows to open documents containing
+    invalid characters in the specified or auto-detected
+    encoding. With this, documents can <em>really</em> be anything in binary
+    form.
+  </li>
+  <li>
+    Finally the GtkTextView widget used at the heart of gedit has several
+    limitations: (1) very big files (like log files or database dumps) are not
+    supported, a limit on the content size must be set (and if reached, still
+    allow to load the file with truncated content). (2) very long lines cause
+    performance problems and can freeze the application.
+  </li>
+</ul>
+
+<p>
+  So, the good news is that progress has been made on this. (There is only a
+  good news, let's stay positive!).
+</p>
+
+<p><small>
+  If you appreciate the work that I do in gedit, I would like to know your
+  feedback, what I should improve or which important feature is missing. You can
+  contact me
+  <a href="https://wilmet-software.be/" target="_blank">by email</a>
+  for example, or on a
+  <a href="https://gedit-text-editor.org/" target="_blank">discussion channel</a>.
+  Thank you :-) !
+</small></p>
+
+</main>
+</body>
+</html>
