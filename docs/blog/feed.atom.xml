@@ -7,8 +7,39 @@
   <link rel="self" type="application/atom+xml" href="https://gedit-text-editor.org/blog/feed.atom.xml" />
   <link type="text/html" href="https://gedit-text-editor.org/blog/index.html" />
   <title>Gedit Technology</title>
-  <updated>2025-08-14T10:00:00Z</updated>
+  <updated>2025-08-30T10:00:00Z</updated>
   <icon>https://gedit-text-editor.org/images/gedit-icon-16x16.png</icon>
+
+<entry>
+  <title>Donating to the gedit project</title>
+  <id>https://gedit-text-editor.org/blog/2025-08-30-donating-to-the-gedit-project.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2025-08-30-donating-to-the-gedit-project.html" />
+  <published>2025-08-30T10:00:00Z</published>
+  <updated>2025-08-30T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  A short news to announce that you can now donate to the
+  <a href="https://gedit-text-editor.org/" target="_blank">gedit text editor</a>
+  project!
+</p>
+<p>
+  Donations will be used to continue the development and maintenance of the
+  application and its plugins.
+</p>
+<p>
+  If you like gedit, your support is much appreciated! For years to come, it
+  will be useful for the project.
+</p>
+<p>
+  <a href="https://liberapay.com/swilmet/" target="_blank"><img src="images/liberapay-donate.svg" alt="Donate using Liberapay"></a>
+</p>
+<p>
+  Thanks!
+</p>
+    </div>
+  </content>
+</entry>
 
 <entry>
   <title>Mid-August News</title>
