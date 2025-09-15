@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mid-September News | Gedit Technology blog</title>
+  <link rel="stylesheet" type="text/css" media="all" href="/css/main.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/gedit-icon-16x16.png" />
+  <link href="feed.atom.xml" type="application/atom+xml" rel="alternate" title="Atom blog feed" />
+</head>
+
+<body>
+<header>
+  <div id="header-title"><a href="/blog/" title="Go to the blog index"><img src="/images/gedit-icon.png" width="128" alt="gedit icon" /></a><h1>Gedit Technology blog</h1></div>
+  <div id="header-subtitle"><div><h2>2025-09-15 :: Mid-September News</h2></div></div>
+</header>
+
+<main>
+<p>
+  Misc news about the
+  <a href="https://gedit-text-editor.org/" target="_blank">gedit</a>
+  text editor, mid-September edition! (Some sections are a bit technical).
+</p>
+
+<h3>Next version will be released when Ready</h3>
+<p>
+  While the release of GNOME 49.0 was approaching (it's this week!), I came to
+  the conclusion that it's best for gedit to wait more, and to follow the Debian
+  way of releasing software: when it's Ready. "Ready" with an uppercase letter
+  'R'!
+</p>
+<p>
+  So the question is: what is <em>not</em> ready? Two main things:
+</p>
+<ul>
+  <li>
+    The rework of the file loading and saving: it is something that takes time,
+    and I prefer to be sure that it'll be a solid solution.
+  </li>
+  <li>
+    The question about the Python support for implementing plugins. Time will
+    tell what is the answer.
+  </li>
+</ul>
+
+<h3>Rework of the file loading and saving (next steps)</h3>
+<p>
+  Work continues to refactor that part of the code, both in
+  libgedit-gtksourceview and gedit.
+</p>
+<p>
+  I won't go into too much technical details this time. But what the previous
+  developer (Ignacio Casal Quinteiro, aka nacho)
+  <a href="https://gitlab.gnome.org/World/gedit/gedit/-/commit/89fe90084cfa3c727589fafa969a9678208a8652" target="_blank">wrote</a>
+  (in 2011) in a comment at the top of a class is
+  <em>"welcome to a really big headache."</em>
+</p>
+<p>
+  And naturally, I want to improve the situation. For a long time this class was
+  used as a black box, using only its interface. Time has come to change things!
+  It takes time, but I already see the end of the tunnel and I have good hopes
+  that the code will be better structured. I intend to write about it more once
+  finished.
+</p>
+<p>
+  But I can reveal that there is already a visible improvement: loading a big
+  file (e.g. 200 MB) is now super fast! Previously, it could take one minute to
+  load such file, with a progress bar shown and a Cancel button. Now there is
+  not enough time to even click on (or to see) the Cancel button! (I'm talking
+  about local files, for remote files with a slow network connection, the
+  progress bar is still useful).
+</p>
+<p>
+  To be continued...
+</p>
+
+<p><small>
+  If you appreciate the work that I do, you can send
+  <a href="https://gedit-text-editor.org/donations.html" target="_blank">a thank-you donation</a>.
+  Your support is much appreciated! For years to come, it will be useful for the
+  project.
+</small></p>
+
+</main>
+</body>
+</html>
