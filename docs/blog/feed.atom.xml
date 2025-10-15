@@ -7,8 +7,78 @@
   <link rel="self" type="application/atom+xml" href="https://gedit-text-editor.org/blog/feed.atom.xml" />
   <link type="text/html" href="https://gedit-text-editor.org/blog/index.html" />
   <title>Gedit Technology</title>
-  <updated>2025-09-15T10:00:00Z</updated>
+  <updated>2025-10-15T10:00:00Z</updated>
   <icon>https://gedit-text-editor.org/images/gedit-icon-16x16.png</icon>
+
+<entry>
+  <title>Mid-October News</title>
+  <id>https://gedit-text-editor.org/blog/2025-10-15-mid-october-news.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2025-10-15-mid-october-news.html" />
+  <published>2025-10-15T10:00:00Z</published>
+  <updated>2025-10-15T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  Misc news about the
+  <a href="https://gedit-text-editor.org/" target="_blank">gedit text editor</a>,
+  mid-October edition! (Some sections are a bit technical).
+</p>
+
+<h3>Rework of the file loading and saving (continued)</h3>
+<p>
+  The refactoring continues in the libgedit-gtksourceview module, this time to
+  tackle a big class that takes too much responsibilities. A utility is in
+  development which will permit to delegate a part of the work.
+</p>
+<p>
+  The utility is about character encoding conversion, with support of invalid
+  bytes. It takes as input a single GBytes (the file content), and transforms it
+  into a list of chunks. A chunk contains either valid (successfully converted)
+  bytes, or invalid bytes. The output format - the "list of chunks" - is subject
+  to change to improve memory consumption and performances.
+</p>
+<p>
+  Note that invalid bytes are allowed, to be able to open really any kind of
+  files with gedit.
+</p>
+<p>
+  I must also note that this is quite sensitive work, at the heart of document
+  loading for gedit. Normally all these refactorings and improvements will be
+  worth it!
+</p>
+
+<h3>Progress in other modules</h3>
+<p>
+  There has been some progress on other modules:
+</p>
+<ul>
+  <li>
+    <strong>gedit:</strong> version 48.1.1 has been released with a few minor
+    updates.
+  </li>
+  <li>
+    <strong>The Flatpak</strong> on Flathub: update to gedit 48.1.1 and the
+    GNOME 49 runtime.
+  </li>
+  <li>
+    <strong>gspell:</strong> version 1.14.1 has been released, mainly to pick up
+    the updated translations.
+  </li>
+</ul>
+
+<h3>GitHub Sponsors</h3>
+<p>
+  In addition to Liberapay, you can now support the work that I do on
+  GitHub Sponsors. See the
+  <a href="https://gedit-text-editor.org/donations.html" target="_blank">gedit donations</a>
+  page.
+</p>
+<p>
+  Thank you ❤️
+</p>
+    </div>
+  </content>
+</entry>
 
 <entry>
   <title>Mid-September News</title>
