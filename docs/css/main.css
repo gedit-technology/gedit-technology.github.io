@@ -85,7 +85,7 @@ table.binaries tr {
 /* header */
 
 header {
-  background: url(../images/header-bg.png);
+  background: linear-gradient(#eeeeec, #ffffff); /* top to bottom */
   height: 120px;
 }
 
