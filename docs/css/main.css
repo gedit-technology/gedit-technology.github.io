@@ -8,8 +8,20 @@ html, body {
 
 body {
   font-family: sans-serif;
-  background-color: #DDD;
+  background-color: #ddd;
 /*  background-color: #729fcf;*/
+}
+
+h1, h3, h4, h5, h6 {
+  color: #4e4e4e;
+}
+
+h2 {
+  color: #c00;
+  font-weight: bold;
+  line-height: 150%;
+  margin-top: 1em;
+  margin-bottom: 0.1em;
 }
 
 a {
@@ -21,51 +33,22 @@ a:hover {
   border-bottom: 1px dotted;
 }
 
-/* FIXME: does it work as intended? */
-a img, a:hover img {
-  border: 0 none;
-}
-
-h2, h2 a {
-  color: #cc0000;
-  font-weight: bold;
-  line-height: 150%;
-  margin-top: 1em;
-  margin-bottom: 0.1em;
-}
-
 p {
-  margin-top : 0em;
-  margin-bottom : 0.7em;
-  vertical-align : middle;
+  margin-top: 0em;
+  margin-bottom: 0.7em;
+  vertical-align: middle;
 }
 
 pre {
-  background: #797B76 none repeat scroll 0%;
-  color: #FFFFFF;
+  background-color: #797b76;
+  color: #fff;
   margin-bottom: 1em;
   padding: 0.5em;
 }
 
 ul > li {
-  list-style-image: url(../images/bullet.gif);
+  list-style-image: url('/images/bullet.gif');
   list-style-type: circle;
-}
-
-table.binaries {
-  border:0pt none;
-  margin-left:1.5em;
-}
-
-table.binaries td {
-  padding-right:1em;
-  padding-bottom:0.5em;
-  text-align:left;
-}
-
-table.binaries tr {
-  text-align:center;
-  vertical-align:top;
 }
 
 /* container to push the footer to the bottom */
@@ -74,10 +57,10 @@ table.binaries tr {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  width : 45em;
+  width: 45em;
   margin: 0 auto -2em; /* the bottom margin is the negative value of the footer's height */
   padding: 0;
-  background-color: #FFFFFF;
+  background-color: #fff;
   border-left: 1px solid #babdb6;
   border-right: 1px solid #babdb6;
 }
@@ -85,7 +68,7 @@ table.binaries tr {
 /* header */
 
 header {
-  background: linear-gradient(#eeeeec, #ffffff); /* top to bottom */
+  background: linear-gradient(#eeeeec, #fff); /* top to bottom */
   height: 120px;
 }
 
@@ -102,17 +85,13 @@ header * {
   vertical-align: middle;
 }
 
-h1, h3 {
-  color: #4e4e4e;
-}
-
 /* navigation menu */
 
 nav {
   text-align: center;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  background-color: #cc0000;
+  background-color: #c00;
 /*  background-color: #729fcf; */
   border-top: 1px solid #a40000;
   border-bottom: 1px solid #a40000;
@@ -126,12 +105,13 @@ nav ul {
 
 nav li {
   display: inline;
+  /* FIXME: space out li elements by adding a margin *between* elements, not *all* li elements. */
   margin: 0 0 0 1em;
   padding: 0;
 }
 
 nav a {
-  color: #FFF;
+  color: #fff;
 }
 
 nav .current {
@@ -180,7 +160,7 @@ footer {
   width: 45em;
   margin: 0 auto;
   padding-top: 0.5em;
-  background-color: #cc0000;
+  background-color: #c00;
   border-top: 1px solid #a40000;
   border-left: 1px solid #babdb6;
   border-right: 1px solid #babdb6;
@@ -190,7 +170,7 @@ footer p {
   margin: 0;
   padding: 0;
   border: 0;
-  color: #FFFFFF;
+  color: #fff;
   text-align: center;
   font-size: small;
 }
