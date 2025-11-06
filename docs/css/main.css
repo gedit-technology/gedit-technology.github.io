@@ -1,83 +1,196 @@
-body {
-  /* For the header bg color to reach the edges of the page. */
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 0;
-  padding-top: 0;
-  padding-left: 0;
-  padding-right: 0;
+/* Basic tags */
 
-  /* Be able to scroll down a bit more. */
-  padding-bottom: 1em;
-
-  /* For reading text on a screen a sans-serif font is recommended. */
-  font-family: "Liberation Sans", Arial, sans-serif;
-  font-size: 1.05em;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
+
+body {
+  font-family: sans-serif;
+  background-color: #DDD;
+/*  background-color: #729fcf;*/
+}
+
+a {
+  text-decoration: none;
+  color: #3465a4;
+}
+
+a:hover {
+  border-bottom: 1px dotted;
+}
+
+/* FIXME: does it work as intended? */
+a img, a:hover img {
+  border: 0 none;
+}
+
+h2, h2 a {
+  color: #cc0000;
+  font-weight: bold;
+  line-height: 150%;
+  margin-top: 1em;
+  margin-bottom: 0.1em;
+}
+
+p {
+  margin-top : 0em;
+  margin-bottom : 0.7em;
+  vertical-align : middle;
+}
+
+pre {
+  background: #797B76 none repeat scroll 0%;
+  color: #FFFFFF;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+ul > li {
+  list-style-image: url(../images/bullet.gif);
+  list-style-type: circle;
+}
+
+table.binaries {
+  border:0pt none;
+  margin-left:1.5em;
+}
+
+table.binaries td {
+  padding-right:1em;
+  padding-bottom:0.5em;
+  text-align:left;
+}
+
+table.binaries tr {
+  text-align:center;
+  vertical-align:top;
+}
+
+/* container to push the footer to the bottom */
+
+#container {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  width : 45em;
+  margin: 0 auto -2em; /* the bottom margin is the negative value of the footer's height */
+  padding: 0;
+  background-color: #FFFFFF;
+  border-left: 1px solid #babdb6;
+  border-right: 1px solid #babdb6;
+}
+
+/* header */
 
 header {
-  background-color: #eeeeec; /* Tango aluminium1 */
-  border-bottom: medium solid #888a85; /* Tango aluminium4 */
+  background: url(../images/header-bg.png);
+  height: 120px;
 }
 
-#header-title {
-  margin-bottom: 0.3em;
+header img {
+  padding: 10px;
 }
 
-#header-title img {
-  margin-right: 1em;
-}
-
-#header-title h1 {
-  color: #555753; /* Tango aluminium5 */
+header h1 {
   display: inline;
+  margin-left: 1em;
 }
 
-#header-title * {
+header * {
   vertical-align: middle;
 }
 
-#header-title, #header-subtitle div, main {
-  /* Wrap around at a more comfortable reading width. */
-  max-width: 72ch;
-
-  /* Center content. */
-  margin-left: auto;
-  margin-right: auto;
+h1, h3 {
+  color: #4e4e4e;
 }
 
-#header-subtitle h2 {
-  color: #555753; /* Tango aluminium5 */
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
+/* navigation menu */
+
+nav {
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #cc0000;
+/*  background-color: #729fcf; */
+  border-top: 1px solid #a40000;
+  border-bottom: 1px solid #a40000;
 }
 
-#header-subtitle {
-  border-top: medium solid #888a85; /* Tango aluminium4 */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-h3 {
-  color: #4e9a06; /* Tango chameleon3 */
-  /*color: #a40000;*/ /* Tango scarletred3 */
+nav li {
+  display: inline;
+  margin: 0 0 0 1em;
+  padding: 0;
 }
 
-h4, h5, h6 {
-  color: #555753; /* Tango aluminium5 */
+nav a {
+  color: #FFF;
 }
 
-p, li {
-  line-height: 1.4;
+nav .current {
+  font-weight: bold;
 }
 
-/* Space out li elements (add margin _between_ elements). */
-li:not(li:first-child) {
-  margin-top: 0.8em;
+/* content */
+
+main {
+  height: 100%;
+  margin: 0;
+  padding: 1em 3.5em 4.5em 3.5em;
+  line-height: 150%;
+  text-align: justify;
 }
 
-a:link {
-  color: #3465a4; /* Tango skyblue2 */
+main a {
+  line-height: 150%;
+  font-weight: bold;
 }
 
-a:visited {
-  color: #75507b; /* Tango plum2 */
+/* screenshots table */
+
+#screenshots {
+  width: 100%;
+}
+
+#screenshots tr {
+  vertical-align: bottom;
+  text-align: center;
+  font-size: 80%;
+}
+
+#screenshots tr td {
+  padding: 0.5em;
+}
+
+#screenshots a:hover {
+  border: 0;
+}
+
+/* footer */
+
+footer {
+  height: 2em;
+  width: 45em;
+  margin: 0 auto;
+  padding-top: 0.5em;
+  background-color: #cc0000;
+  border-top: 1px solid #a40000;
+  border-left: 1px solid #babdb6;
+  border-right: 1px solid #babdb6;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: small;
 }
