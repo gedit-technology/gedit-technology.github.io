@@ -1,5 +1,9 @@
 /* Basic tags */
 
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -33,7 +37,7 @@ a:hover {
   border-bottom: 1px dotted;
 }
 
-p {
+main p {
   margin-top: 0em;
   margin-bottom: 0.7em;
   vertical-align: middle;
@@ -69,7 +73,6 @@ ul > li {
 
 header {
   background: linear-gradient(#eeeeec, #fff); /* top to bottom */
-  height: 120px;
 }
 
 header img {
@@ -105,9 +108,13 @@ nav ul {
 
 nav li {
   display: inline;
-  /* FIXME: space out li elements by adding a margin *between* elements, not *all* li elements. */
-  margin: 0 0 0 1em;
+  margin: 0;
   padding: 0;
+}
+
+/* Space out li elements (add margin _between_ elements). */
+nav li:not(li:first-child) {
+  margin-left: 1em;
 }
 
 nav a {
@@ -133,33 +140,17 @@ main a {
   font-weight: bold;
 }
 
-/* screenshots table */
-
-#screenshots {
-  width: 100%;
-}
-
-#screenshots tr {
-  vertical-align: bottom;
-  text-align: center;
-  font-size: 80%;
-}
-
-#screenshots tr td {
-  padding: 0.5em;
-}
-
-#screenshots a:hover {
-  border: 0;
-}
-
 /* footer */
 
 footer {
+  /* Center text vertically and horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   height: 2em;
   width: 45em;
   margin: 0 auto;
-  padding-top: 0.5em;
   background-color: #c00;
   border-top: 1px solid #a40000;
   border-left: 1px solid #babdb6;
@@ -169,7 +160,6 @@ footer {
 footer p {
   margin: 0;
   padding: 0;
-  border: 0;
   color: #fff;
   text-align: center;
   font-size: small;
