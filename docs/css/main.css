@@ -50,7 +50,7 @@ pre {
   padding: 0.5em;
 }
 
-ul > li {
+main ul > li {
   list-style-image: url('/images/bullet.gif');
   list-style-type: circle;
 }
@@ -72,42 +72,42 @@ ul > li {
 /* header */
 
 header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center;
+
   background: linear-gradient(#eeeeec, #fff); /* top to bottom */
 }
 
 header img {
   padding: 10px;
-}
-
-header h1 {
-  display: inline;
-  margin-left: 1em;
-}
-
-header * {
-  vertical-align: middle;
+  margin-right: 2em;
 }
 
 /* navigation menu */
 
 nav {
-  text-align: center;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding: 0.5em;
   background-color: #c00;
-/*  background-color: #729fcf; */
   border-top: 1px solid #a40000;
   border-bottom: 1px solid #a40000;
 }
 
 nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 nav li {
-  display: inline;
   margin: 0;
   padding: 0;
 }
