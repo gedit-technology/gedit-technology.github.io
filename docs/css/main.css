@@ -55,6 +55,11 @@ main ul > li {
   list-style-type: circle;
 }
 
+/* Space out li elements (add margin _between_ elements). */
+main li:not(li:first-child) {
+  margin-top: 0.7em;
+}
+
 /* container to push the footer to the bottom */
 
 #container {
