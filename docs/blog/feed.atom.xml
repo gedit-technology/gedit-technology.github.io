@@ -7,8 +7,161 @@
   <link rel="self" type="application/atom+xml" href="https://gedit-text-editor.org/blog/feed.atom.xml" />
   <link type="text/html" href="https://gedit-text-editor.org/blog/index.html" />
   <title>Gedit Technology</title>
-  <updated>2025-10-15T10:00:00Z</updated>
+  <updated>2025-11-14T10:00:00Z</updated>
   <icon>https://gedit-text-editor.org/images/gedit-icon-16x16.png</icon>
+
+<entry>
+  <title>Mid-November News</title>
+  <id>https://gedit-text-editor.org/blog/2025-11-14-mid-november-news.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2025-11-14-mid-november-news.html" />
+  <published>2025-11-14T10:00:00Z</published>
+  <updated>2025-11-14T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  Misc news about the
+  <a href="https://gedit-text-editor.org/" target="_blank">gedit text editor</a>,
+  mid-November edition!
+  <!-- (Some sections are a bit technical). -->
+</p>
+
+<h3>Website: new design</h3>
+<p>
+  Probably the highlight this month is the new design of the
+  <a href="https://gedit-text-editor.org/" target="_blank">gedit website</a>.
+</p>
+<p>
+  If it looks familiar to some of you, it's normal, it's because it's an
+  adaptation of the previous GtkSourceView website that was developed in the old
+  <a href="https://gitlab.gnome.org/Archive/gnomeweb-wml" target="_blank">gnomeweb-wml</a>
+  repository. gnomeweb-wml (projects.gnome.org) is what predates all the wiki
+  pages for
+  <a href="https://wiki.gnome.org/Apps" target="_blank">Apps</a>
+  and
+  <a href="https://wiki.gnome.org/Projects" target="_blank">Projects</a>.
+  The wiki has been retired, so another solution had to be found.
+</p>
+<p>
+  For the timeline, projects.gnome.org was available until 2013/2014 where all
+  the content had been migrated to the wiki. Then the wiki has been retired in
+  2024.
+</p>
+<p>
+  Note that there are still rough edges on the gedit website, and more
+  importantly some efforts still need to be done to bring the old CSS stylesheet
+  forward to the new(-ish) responsive web design world.
+</p>
+
+<p>
+  For the most nostalgic of you:
+</p>
+<ul>
+  <li>
+    <p>
+      <a href="https://web.archive.org/web/20131212061032/projects.gnome.org/gedit/"
+         target="_blank">gedit website in 2013</a>
+      (<code>projects.gnome.org/gedit/</code> on web.archive.org)
+    </p>
+    <p>
+      <a href="images/2025-11-14/screenshot-gedit-website-in-2013.png"
+         target="_blank"><img src="images/2025-11-14/thumbnail-screenshot-gedit-website-in-2013.png"
+                              alt="Screenshot of gedit website in 2013" /></a>
+    </p>
+  </li>
+  <li>
+    <p>
+      <a href="https://web.archive.org/web/20131215224242/projects.gnome.org/gtksourceview/"
+         target="_blank">GtkSourceView website in 2013</a>
+      (<code>projects.gnome.org/gtksourceview/</code> on web.archive.org)
+    </p>
+    <p>
+      <a href="images/2025-11-14/screenshot-gtksourceview-website-in-2013.png"
+         target="_blank"><img src="images/2025-11-14/thumbnail-screenshot-gtksourceview-website-in-2013.png"
+                              alt="Screenshot of GtkSourceView website in 2013" /></a>
+    </p>
+  </li>
+</ul>
+
+<p>
+  And for the <em>least</em> nostalgic of you:
+</p>
+<ul>
+  <li>
+    <p>gedit website from last month (October 2025)</p>
+    <p>
+      <a href="images/2025-11-14/screenshot-gedit-website-in-october-2025.png"
+         target="_blank"><img src="images/2025-11-14/thumbnail-screenshot-gedit-website-in-october-2025.png"
+                              alt="Screenshot of gedit website in October 2025" /></a>
+    </p>
+  </li>
+</ul>
+
+<p>
+  What we can say is that the gedit project has stood the test of time!
+</p>
+
+<h3>Enter TeX: improved search and replace</h3>
+<p>
+  Some context: I would like some day to unify the search and replace feature
+  between Enter TeX and gedit. It needs to retain the best of each.
+</p>
+<p>
+  In Enter TeX it's a combined horizontal bar, something that I would like in
+  gedit too to replace the dialog window that occludes part of the text.
+</p>
+<p>
+  In gedit the strengths include: the search-as-you-type possibility, and a
+  history of past searches. Both are missing in Enter TeX. (These are not the
+  only things that need to be retained; the same workflows, keyboard shortcuts
+  etc. are also an integral part of the functionality).
+</p>
+<p>
+  So to work towards that goal, I started in Enter TeX. I merged around 50
+  commits in the git repository for this change already, rewriting in C (from
+  Vala) some parts and improving the UI along the way. The code needs to be in C
+  because it'll be moved to libgedit-tepl so that it can be consumed by gedit
+  easily.
+</p>
+<p>
+  Here is how it looks:
+</p>
+<p>
+  <a href="images/2025-11-14/screenshot-enter-tex-search-and-replace.png"
+     target="_blank"><img src="images/2025-11-14/screenshot-enter-tex-search-and-replace.png"
+                          width="250"
+                          alt="Screenshot of the search and replace in Enter TeX" /></a>
+</p>
+
+<h3>Internal refactoring for GeditWindow and its statusbar</h3>
+<p>
+  GeditWindow is what we can call a god class. It is too big, both in the number
+  of lines and the number of instance variables.
+</p>
+<p>
+  So this month I've continued to refactor it, to extract a GeditWindowStatus
+  class. There was already a GeditStatusbar class, but its features have now
+  been moved to libgedit-tepl as TeplStatusbar.
+</p>
+<p>
+  GeditWindowStatus takes up the responsibility to create the TeplStatusbar, to
+  fill it with the indicators and other buttons, and to make the connection with
+  GeditWindow and the current tab/document.
+</p>
+<p>
+  So as a result, GeditWindow is a little less omniscient ;-)
+</p>
+
+<h3>As a conclusion</h3>
+<p>
+  gedit does not materialize out of empty space; it takes time to develop and
+  maintain. To demonstrate your appreciation of this piece of software and help
+  its future development, remember that you can
+  <a href="https://gedit-text-editor.org/donations.html" target="_blank">fund the project</a>.
+  Your support is critical and much appreciated.
+</p>
+    </div>
+  </content>
+</entry>
 
 <entry>
   <title>Mid-October News</title>

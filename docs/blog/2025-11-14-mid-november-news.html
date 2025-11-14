@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mid-November News | Gedit Technology blog</title>
+  <link rel="stylesheet" type="text/css" media="all" href="/css/main.css" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/gedit-icon-16x16.png" />
+  <link href="feed.atom.xml" type="application/atom+xml" rel="alternate" title="Atom blog feed" />
+</head>
+
+<body>
+<div id="container">
+
+<header>
+  <img src="/images/gedit-icon.png" height="100" alt="gedit icon" /><h1>gedit</h1>
+</header>
+
+<nav>
+  <ul>
+    <li>
+      <a href="/index.html" title="About gedit">About</a>
+    </li>
+    <li>
+      <a href="/screenshots.html" title="A tour of gedit">Screenshots</a>
+    </li>
+    <li>
+      <a href="/features.html" title="Notable features and list of plugins">Features</a>
+    </li>
+    <li>
+      <a href="/install.html" title="How to install gedit">Install</a>
+    </li>
+    <li class="current">
+      <a href="/blog/" title="The Gedit Technology blog">Blog</a>
+    </li>
+    <li>
+      <a href="/documentation.html" title="Read up on documentation about how to use gedit">Docs</a>
+    </li>
+    <li>
+      <a href="/technology.html" title="Find out how you can get involved in the development of gedit">Dev</a>
+    </li>
+    <li>
+      <a href="/donations.html" title="Participate in the crowd-funding of gedit">Donations</a>
+    </li>
+  </ul>
+</nav>
+
+<main>
+<h2>2025-11-14 :: Mid-November News</h2>
+
+<p>
+  Misc news about the
+  <a href="https://gedit-text-editor.org/" target="_blank">gedit text editor</a>,
+  mid-November edition!
+  <!-- (Some sections are a bit technical). -->
+</p>
+
+<h3>Website: new design</h3>
+<p>
+  Probably the highlight this month is the new design of the
+  <a href="https://gedit-text-editor.org/" target="_blank">gedit website</a>.
+</p>
+<p>
+  If it looks familiar to some of you, it's normal, it's because it's an
+  adaptation of the previous GtkSourceView website that was developed in the old
+  <a href="https://gitlab.gnome.org/Archive/gnomeweb-wml" target="_blank">gnomeweb-wml</a>
+  repository. gnomeweb-wml (projects.gnome.org) is what predates all the wiki
+  pages for
+  <a href="https://wiki.gnome.org/Apps" target="_blank">Apps</a>
+  and
+  <a href="https://wiki.gnome.org/Projects" target="_blank">Projects</a>.
+  The wiki has been retired, so another solution had to be found.
+</p>
+<p>
+  For the timeline, projects.gnome.org was available until 2013/2014 where all
+  the content had been migrated to the wiki. Then the wiki has been retired in
+  2024.
+</p>
+<p>
+  Note that there are still rough edges on the gedit website, and more
+  importantly some efforts still need to be done to bring the old CSS stylesheet
+  forward to the new(-ish) responsive web design world.
+</p>
+
+<p>
+  For the most nostalgic of you:
+</p>
+<ul>
+  <li>
+    <p>
+      <a href="https://web.archive.org/web/20131212061032/projects.gnome.org/gedit/"
+         target="_blank">gedit website in 2013</a>
+      (<code>projects.gnome.org/gedit/</code> on web.archive.org)
+    </p>
+    <p>
+      <a href="images/2025-11-14/screenshot-gedit-website-in-2013.png"
+         target="_blank"><img src="images/2025-11-14/thumbnail-screenshot-gedit-website-in-2013.png"
+                              alt="Screenshot of gedit website in 2013" /></a>
+    </p>
+  </li>
+  <li>
+    <p>
+      <a href="https://web.archive.org/web/20131215224242/projects.gnome.org/gtksourceview/"
+         target="_blank">GtkSourceView website in 2013</a>
+      (<code>projects.gnome.org/gtksourceview/</code> on web.archive.org)
+    </p>
+    <p>
+      <a href="images/2025-11-14/screenshot-gtksourceview-website-in-2013.png"
+         target="_blank"><img src="images/2025-11-14/thumbnail-screenshot-gtksourceview-website-in-2013.png"
+                              alt="Screenshot of GtkSourceView website in 2013" /></a>
+    </p>
+  </li>
+</ul>
+
+<p>
+  And for the <em>least</em> nostalgic of you:
+</p>
+<ul>
+  <li>
+    <p>gedit website from last month (October 2025)</p>
+    <p>
+      <a href="images/2025-11-14/screenshot-gedit-website-in-october-2025.png"
+         target="_blank"><img src="images/2025-11-14/thumbnail-screenshot-gedit-website-in-october-2025.png"
+                              alt="Screenshot of gedit website in October 2025" /></a>
+    </p>
+  </li>
+</ul>
+
+<p>
+  What we can say is that the gedit project has stood the test of time!
+</p>
+
+<h3>Enter TeX: improved search and replace</h3>
+<p>
+  Some context: I would like some day to unify the search and replace feature
+  between Enter TeX and gedit. It needs to retain the best of each.
+</p>
+<p>
+  In Enter TeX it's a combined horizontal bar, something that I would like in
+  gedit too to replace the dialog window that occludes part of the text.
+</p>
+<p>
+  In gedit the strengths include: the search-as-you-type possibility, and a
+  history of past searches. Both are missing in Enter TeX. (These are not the
+  only things that need to be retained; the same workflows, keyboard shortcuts
+  etc. are also an integral part of the functionality).
+</p>
+<p>
+  So to work towards that goal, I started in Enter TeX. I merged around 50
+  commits in the git repository for this change already, rewriting in C (from
+  Vala) some parts and improving the UI along the way. The code needs to be in C
+  because it'll be moved to libgedit-tepl so that it can be consumed by gedit
+  easily.
+</p>
+<p>
+  Here is how it looks:
+</p>
+<p>
+  <a href="images/2025-11-14/screenshot-enter-tex-search-and-replace.png"
+     target="_blank"><img src="images/2025-11-14/screenshot-enter-tex-search-and-replace.png"
+                          width="250"
+                          alt="Screenshot of the search and replace in Enter TeX" /></a>
+</p>
+
+<h3>Internal refactoring for GeditWindow and its statusbar</h3>
+<p>
+  GeditWindow is what we can call a god class. It is too big, both in the number
+  of lines and the number of instance variables.
+</p>
+<p>
+  So this month I've continued to refactor it, to extract a GeditWindowStatus
+  class. There was already a GeditStatusbar class, but its features have now
+  been moved to libgedit-tepl as TeplStatusbar.
+</p>
+<p>
+  GeditWindowStatus takes up the responsibility to create the TeplStatusbar, to
+  fill it with the indicators and other buttons, and to make the connection with
+  GeditWindow and the current tab/document.
+</p>
+<p>
+  So as a result, GeditWindow is a little less omniscient ;-)
+</p>
+
+<h3>As a conclusion</h3>
+<p>
+  gedit does not materialize out of empty space; it takes time to develop and
+  maintain. To demonstrate your appreciation of this piece of software and help
+  its future development, remember that you can
+  <a href="https://gedit-text-editor.org/donations.html" target="_blank">fund the project</a>.
+  Your support is critical and much appreciated.
+</p>
+
+</main>
+</div>
+
+<footer>
+  <p>Copyright &copy; 1998-2025, The gedit team</p>
+</footer>
+</body>
+</html>
