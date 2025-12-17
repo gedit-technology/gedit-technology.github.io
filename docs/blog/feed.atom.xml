@@ -7,8 +7,86 @@
   <link rel="self" type="application/atom+xml" href="https://gedit-text-editor.org/blog/feed.atom.xml" />
   <link type="text/html" href="https://gedit-text-editor.org/blog/index.html" />
   <title>Gedit Technology</title>
-  <updated>2025-11-14T10:00:00Z</updated>
+  <updated>2025-12-17T10:00:00Z</updated>
   <icon>https://gedit-text-editor.org/images/gedit-icon-16x16.png</icon>
+
+<entry>
+  <title>Mid-December News</title>
+  <id>https://gedit-text-editor.org/blog/2025-12-17-mid-december-news.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2025-12-17-mid-december-news.html" />
+  <published>2025-12-17T10:00:00Z</published>
+  <updated>2025-12-17T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  Misc news for the past month about the
+  <a href="https://gedit-text-editor.org/" target="_blank">gedit text editor</a>,
+  mid-December edition!
+  (Some sections are a bit technical).
+</p>
+<p>
+  (By the way, the "mid-month" news is especially useful for December/January,
+  when one thinks about it ;-) ).
+</p>
+
+<h3>gedit now refuses to load very large files</h3>
+<p>
+  It was part of the
+  <a href="https://gitlab.gnome.org/World/gedit/gedit/-/blob/master/docs/common-bugs.md" target="_blank">common-bugs</a>,
+  and it is now fixed! New versions of gedit will refuse to load very large
+  files or content read from stdin.
+</p>
+<p>
+  The limit is configurable with the GSettings key:
+  <code>org.gnome.gedit.preferences.editor max-file-size</code>
+</p>
+<p>
+  By default the limit is set to 200 MB. The setting is not exposed in the
+  Preferences dialog (there are a few other such settings).
+</p>
+<p>
+  There are technically two cases:
+</p>
+<ul>
+  <li>
+    First the <em>file size</em> - if available - is checked. If it exceeds the
+    limit, the error is directly returned without trying to read the content.
+  </li>
+  <li>
+    Then <em>the content is read</em> and it is ensured that the maximum number
+    of bytes is not reached. The check here is necessary for reading stdin, for
+    which the file size doesn't exist. And even when the file size information
+    is available, the double-check is necessary to avoid a potential
+    <a href="https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use" target="_blank">TOC/TOU (time-of-check to time-of-use) problem</a>.
+  </li>
+</ul>
+<p>
+  It is planned to improve this and offer to load the content truncated.
+</p>
+
+<h3>Windows improvements</h3>
+<p>
+  I've fixed some compilation warnings and unit tests failures on MS Windows,
+  and done some packaging work, including contributing to MINGW-packages (part
+  of <a href="https://www.msys2.org/" target="_blank">MSYS2</a>).
+</p>
+
+<h3>Other work in libgedit-gtksourceview</h3>
+<p>
+  Various work on the completion framework, including some code simplifications.
+</p>
+<p>
+  Plus what can be called "gardening tasks": various code maintenance stuff.
+</p>
+
+<h3>gspell CI for tarballs</h3>
+<p>
+  AsciiWolf and Jordan Petridis have contributed to gspell to add CI for
+  tarballs. Thanks to them!
+</p>
+    </div>
+  </content>
+</entry>
 
 <entry>
   <title>Mid-November News</title>

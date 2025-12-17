@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mid-December News | Gedit Technology blog</title>
+  <link rel="stylesheet" type="text/css" media="all" href="/css/main.css" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/gedit-icon-16x16.png" />
+  <link href="feed.atom.xml" type="application/atom+xml" rel="alternate" title="Atom blog feed" />
+</head>
+
+<body>
+<div id="container">
+
+<header>
+  <img src="/images/gedit-icon.png" height="100" alt="gedit icon" /><h1>gedit</h1>
+</header>
+
+<nav>
+  <ul>
+    <li>
+      <a href="/index.html" title="About gedit">About</a>
+    </li>
+    <li>
+      <a href="/screenshots.html" title="A tour of gedit">Screenshots</a>
+    </li>
+    <li>
+      <a href="/features.html" title="Notable features and list of plugins">Features</a>
+    </li>
+    <li>
+      <a href="/install.html" title="How to install gedit">Install</a>
+    </li>
+    <li class="current">
+      <a href="/blog/" title="The Gedit Technology blog">Blog</a>
+    </li>
+    <li>
+      <a href="/documentation.html" title="Read up on documentation about how to use gedit">Docs</a>
+    </li>
+    <li>
+      <a href="/technology.html" title="Find out how you can get involved in the development of gedit">Dev</a>
+    </li>
+    <li>
+      <a href="/donations.html" title="Participate in the crowd-funding of gedit">Donations</a>
+    </li>
+  </ul>
+</nav>
+
+<main>
+<h2>2025-12-17 :: Mid-December News</h2>
+
+<p>
+  Misc news for the past month about the
+  <a href="https://gedit-text-editor.org/" target="_blank">gedit text editor</a>,
+  mid-December edition!
+  (Some sections are a bit technical).
+</p>
+<p>
+  (By the way, the "mid-month" news is especially useful for December/January,
+  when one thinks about it ;-) ).
+</p>
+
+<h3>gedit now refuses to load very large files</h3>
+<p>
+  It was part of the
+  <a href="https://gitlab.gnome.org/World/gedit/gedit/-/blob/master/docs/common-bugs.md" target="_blank">common-bugs</a>,
+  and it is now fixed! New versions of gedit will refuse to load very large
+  files or content read from stdin.
+</p>
+<p>
+  The limit is configurable with the GSettings key:
+  <code>org.gnome.gedit.preferences.editor max-file-size</code>
+</p>
+<p>
+  By default the limit is set to 200 MB. The setting is not exposed in the
+  Preferences dialog (there are a few other such settings).
+</p>
+<p>
+  There are technically two cases:
+</p>
+<ul>
+  <li>
+    First the <em>file size</em> - if available - is checked. If it exceeds the
+    limit, the error is directly returned without trying to read the content.
+  </li>
+  <li>
+    Then <em>the content is read</em> and it is ensured that the maximum number
+    of bytes is not reached. The check here is necessary for reading stdin, for
+    which the file size doesn't exist. And even when the file size information
+    is available, the double-check is necessary to avoid a potential
+    <a href="https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use" target="_blank">TOC/TOU (time-of-check to time-of-use) problem</a>.
+  </li>
+</ul>
+<p>
+  It is planned to improve this and offer to load the content truncated.
+</p>
+
+<h3>Windows improvements</h3>
+<p>
+  I've fixed some compilation warnings and unit tests failures on MS Windows,
+  and done some packaging work, including contributing to MINGW-packages (part
+  of <a href="https://www.msys2.org/" target="_blank">MSYS2</a>).
+</p>
+
+<h3>Other work in libgedit-gtksourceview</h3>
+<p>
+  Various work on the completion framework, including some code simplifications.
+</p>
+<p>
+  Plus what can be called "gardening tasks": various code maintenance stuff.
+</p>
+
+<h3>gspell CI for tarballs</h3>
+<p>
+  AsciiWolf and Jordan Petridis have contributed to gspell to add CI for
+  tarballs. Thanks to them!
+</p>
+
+</main>
+</div>
+
+<footer>
+  <p>Copyright &copy; 1998-2025, The gedit team</p>
+</footer>
+</body>
+</html>
