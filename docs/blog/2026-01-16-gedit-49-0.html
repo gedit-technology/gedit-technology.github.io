@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>gedit 49.0 released | Gedit Technology blog</title>
+  <link rel="stylesheet" type="text/css" media="all" href="/css/main.css" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/gedit-icon-16x16.png" />
+  <link href="feed.atom.xml" type="application/atom+xml" rel="alternate" title="Atom blog feed" />
+</head>
+
+<body>
+<div id="container">
+
+<header>
+  <img src="/images/gedit-icon.png" height="100" alt="gedit icon" /><h1>gedit</h1>
+</header>
+
+<nav>
+  <ul>
+    <li>
+      <a href="/index.html" title="About gedit">About</a>
+    </li>
+    <li>
+      <a href="/screenshots.html" title="A tour of gedit">Screenshots</a>
+    </li>
+    <li>
+      <a href="/features.html" title="Notable features and list of plugins">Features</a>
+    </li>
+    <li>
+      <a href="/install.html" title="How to install gedit">Install</a>
+    </li>
+    <li class="current">
+      <a href="/blog/" title="The Gedit Technology blog">Blog</a>
+    </li>
+    <li>
+      <a href="/documentation.html" title="Read up on documentation about how to use gedit">Docs</a>
+    </li>
+    <li>
+      <a href="/technology.html" title="Find out how you can get involved in the development of gedit">Dev</a>
+    </li>
+  </ul>
+</nav>
+
+<main>
+<h2>2026-01-16 :: gedit 49.0 released</h2>
+
+<p>
+  <a href="https://gedit-text-editor.org/" target="_blank">gedit</a> 49.0 has
+  been released! Here are the highlights since version 48.0 which dates back
+  from September 2024. (Some sections are a bit technical).
+</p>
+
+<h3>File loading and saving enhancements</h3>
+<p>
+  A lot of work went into this area. It's mostly under-the-scene changes where
+  there was a lot of dusty code. It's not entirely finished, but there are
+  already user-visible enhancements:
+</p>
+<ul>
+  <li>Loading a big file is now much faster.</li>
+  <li>
+    gedit now refuses to load very big files, with a configurable limit
+    (<a href="https://gedit-text-editor.org/blog/2025-12-17-mid-december-news.html" target="_blank">more details</a>).
+  </li>
+</ul>
+
+<h3>Improved preferences</h3>
+<p>
+  <a href="images/2025-07-14/prefs-reset.png" target="_blank"><img
+    src="images/2025-07-14/prefs-reset.png"
+    alt="gedit screenshot - reset all preferences"
+    width="250" /></a>
+</p>
+<p>
+  <a href="images/2025-07-14/prefs-spell-checker.png" target="_blank"><img
+    src="images/2025-07-14/prefs-spell-checker.png"
+    alt="gedit screenshot - spell-checker preferences"
+    width="250" /></a>
+</p>
+<p>
+  There is now a "Reset All..." button in the Preferences dialog. And it is now
+  possible to configure the default language used by the spell-checker.
+</p>
+
+<h3>Python plugins removal</h3>
+<p>
+  Initially due to an external factor, plugins implemented in Python were no
+  longer supported.
+</p>
+<p>
+  During some time a previous version of gedit was packaged in Flathub in a way
+  that still enabled Python plugins, but it is no longer the case.
+</p>
+<p>
+  Even though the problem is fixable, having some plugins in Python meant to
+  deal with a multi-language project, which is much harder to maintain for a
+  single individual. So for now it's preferable to keep only the C language.
+</p>
+<p>
+  So the bad news is that Python plugins support has not been re-enabled in this
+  version, not even for third-party plugins.
+</p>
+<p>
+  <a href="https://gedit-text-editor.org/blog/2025-04-30-no-more-pythons-in-gedit.html" target="_blank">More details</a>.
+</p>
+
+<h3>Summary of changes for plugins</h3>
+<p>
+  The following plugins have been removed:
+</p>
+<ul>
+  <li>Bracket Completion</li>
+  <li>Character Map</li>
+  <li>Color Picker</li>
+  <li>Embedded Terminal</li>
+  <li>Join/Split Lines</li>
+  <li>Multi Edit</li>
+  <li>Session Saver</li>
+</ul>
+<p>
+  Only Python plugins have been removed, the C plugins have been kept.
+  The Code Comment plugin which was written in Python has been rewritten in C,
+  so it has not disappeared. And it is planned and desired to bring back some of
+  the removed plugins.
+</p>
+
+<h3>Summary of other news</h3>
+<ul>
+  <li>
+    Lots of code refactorings have been achieved in the gedit core and in
+    libgedit-gtksourceview.
+  </li>
+  <li>
+    A better support for Windows.
+  </li>
+  <li>
+    Web presence at gedit-text-editor.org: new domain name and several
+    iterations on the design.
+  </li>
+  <li>
+    A half-dozen
+    <a href="https://gitlab.gnome.org/World/gedit/gedit/-/tree/master/docs/guidelines" target="_blank">Gedit Development Guidelines</a>
+    documents have been written.
+  </li>
+</ul>
+
+<h3>Wrapping-up statistics for 2025</h3>
+<p>
+  The total number of commits in gedit and gedit-related git repositories in
+  2025 is: 884. More precisely:
+</p>
+<pre>
+138	enter-tex
+310	gedit
+21	gedit-plugins
+10	gspell
+4	libgedit-amtk
+41	libgedit-gfls
+290	libgedit-gtksourceview
+70	libgedit-tepl
+</pre>
+<p>
+  It counts all contributions, translation updates included.
+</p>
+<p>
+  The list contains two apps, gedit and
+  <a href="https://gitlab.gnome.org/World/gedit/enter-tex" target="_blank">Enter TeX</a>.
+  The rest are shared libraries (re-usable code available to create other text
+  editors).
+</p>
+<p>
+  If you do a comparison with
+  <a href="https://gedit-text-editor.org/blog/2025-01-07-various-news.html" target="_blank">the numbers for 2024</a>,
+  you'll see that there are fewer commits, the only module with <em>more</em>
+  commits is libgedit-gtksourceview. But 2025 was a good year nevertheless!
+</p>
+
+<h3>For future versions: superset of the subset</h3>
+<p>
+  With Python plugins removed, the new gedit version is a subset of the previous
+  version, when comparing approximately the list of features. In the future, we
+  plan to have a <em>superset of the subset</em>. That is, to bring in new
+  features and try hard to <em>not</em> remove any more functionality.
+</p>
+<p>
+  In fact, we have reached a point where we are no longer interested to remove
+  any more features from gedit. So the good news is that gedit will normally be
+  incrementally improved from now on without major regressions. We really hope
+  there won't be any new bad surprises due to external factors!
+</p>
+<p>
+  <strong>Side note:</strong> this "superset of the subset" resembles the
+  evolution of C++, but in the reverse order. Modern C++ will be a
+  <a href="https://thenewstack.io/bjarne-stroustrups-plan-for-bringing-safety-to-c/" target="_blank">subset of the superset</a>
+  to have a language
+  <a href="https://herbsutter.com/2024/03/11/safety-in-context/" target="_blank">in practice (but not in theory)
+  as safe as Rust</a>
+  (it works with compiler flags to disable the unsafe parts).
+</p>
+
+<h3>Onward to 2026</h3>
+<p>
+  Since some plugins have been removed, this makes gedit a less advanced text
+  editor. It has become a little less suitable for heavy programming workloads,
+  but for that there are lots of alternatives.
+</p>
+<p>
+  Instead, gedit could become a text editor of choice for newcomers in the
+  computing science field (students and self-learners). It can be a great tool
+  for markup languages too. It can be your daily companion for quite a while,
+  until your needs evolve for something more complete at your workplace. Or it
+  can be that you prefer its simplicity and its not-going-in-the-way default
+  setup, plus the fact that it launches quickly. In short, there are a lot of
+  reasons to still love gedit ❤️ !
+</p>
+<p>
+  If you have any feedback, even for a small thing, I would like to hear from
+  you :) ! The best places are on GNOME Discourse, or GitLab for more actionable
+  tasks (see the
+  <a href="https://gedit-text-editor.org/" target="_blank">Getting in Touch</a>
+  section).
+</p>
+
+</main>
+</div>
+
+<footer>
+  <p>Copyright &copy; 1998-2026, The gedit team</p>
+</footer>
+</body>
+</html>
