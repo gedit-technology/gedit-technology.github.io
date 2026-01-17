@@ -8,7 +8,7 @@
 <link rel="up" href="file-loading-and-saving.html" title="File Loading and Saving">
 <link rel="prev" href="GtkSourceFile.html" title="GtkSourceFile">
 <link rel="next" href="GtkSourceFileSaver.html" title="GtkSourceFileSaver">
-<meta name="generator" content="GTK-Doc V1.34.0 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.35.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -63,6 +63,22 @@
 </td>
 <td class="function_name">
 <a class="link" href="GtkSourceFileLoader.html#gtk-source-file-loader-set-candidate-encodings" title="gtk_source_file_loader_set_candidate_encodings ()">gtk_source_file_loader_set_candidate_encodings</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="returnvalue">guint64</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GtkSourceFileLoader.html#gtk-source-file-loader-get-max-size" title="gtk_source_file_loader_get_max_size ()">gtk_source_file_loader_get_max_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GtkSourceFileLoader.html#gtk-source-file-loader-set-max-size" title="gtk_source_file_loader_set_max_size ()">gtk_source_file_loader_set_max_size</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
 <tr>
@@ -172,6 +188,11 @@
 <td class="property_name"><a class="link" href="GtkSourceFileLoader.html#GtkSourceFileLoader--location" title="The “location” property">location</a></td>
 <td class="property_flags">Read / Write / Construct Only</td>
 </tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></td>
+<td class="property_name"><a class="link" href="GtkSourceFileLoader.html#GtkSourceFileLoader--max-size" title="The “max-size” property">max-size</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
 </tbody>
 </table></div>
 </div>
@@ -184,8 +205,8 @@
 </colgroup>
 <tbody>
 <tr>
-<td class="datatype_keyword"> </td>
-<td class="function_name"><a class="link" href="GtkSourceFileLoader.html#GtkSourceFileLoader-struct" title="GtkSourceFileLoader">GtkSourceFileLoader</a></td>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GtkSourceFileLoader.html#GtkSourceFileLoader-struct" title="struct GtkSourceFileLoader">GtkSourceFileLoader</a></td>
 </tr>
 <tr>
 <td class="define_keyword">#define</td>
@@ -228,12 +249,6 @@ undo/redo history.</p>
 saved somewhere (for example if you load from stdin), then you should
 probably call <a href="/usr/share/gtk-doc/html/gtk3/GtkTextBuffer.html#gtk-text-buffer-set-modified"><code class="function">gtk_text_buffer_set_modified()</code></a> with <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> after calling
 <a class="link" href="GtkSourceFileLoader.html#gtk-source-file-loader-load-finish" title="gtk_source_file_loader_load_finish ()"><code class="function">gtk_source_file_loader_load_finish()</code></a>.</p>
-<div class="warning">
-This class is no longer maintained, patches are not accepted. There is work
-in progress in the
-<a class="ulink" href="https://wiki.gnome.org/Projects/Tepl" target="_top">Tepl</a> library to
-have a better implementation.
-</div>
 </div>
 <div class="refsect1">
 <a name="GtkSourceFileLoader.functions_details"></a><h2>Functions</h2>
@@ -331,11 +346,11 @@ the same order as the list.</p>
 <p>For convenience, <em class="parameter"><code>candidate_encodings</code></em>
  can contain duplicates. Only the first
 occurrence of a duplicated encoding is kept in the list.</p>
-<p>By default the candidate encodings are (in that order in the list):</p>
+<p>If you don't call this function, the default list will be (in that order):</p>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem"><p>If set, the <a class="link" href="GtkSourceFile.html" title="GtkSourceFile"><span class="type">GtkSourceFile</span></a>'s encoding as returned by
 <a class="link" href="GtkSourceFile.html#gtk-source-file-get-encoding" title="gtk_source_file_get_encoding ()"><code class="function">gtk_source_file_get_encoding()</code></a>.</p></li>
-<li class="listitem"><p>The default candidates as returned by
+<li class="listitem"><p>Plus the default candidates as returned by
 <a class="link" href="GtkSourceEncoding.html#gtk-source-encoding-get-default-candidates" title="gtk_source_encoding_get_default_candidates ()"><code class="function">gtk_source_encoding_get_default_candidates()</code></a>.</p></li>
 </ol></div>
 <div class="refsect3">
@@ -355,13 +370,70 @@ occurrence of a duplicated encoding is kept in the list.</p>
 <tr>
 <td class="parameter_name"><p>candidate_encodings</p></td>
 <td class="parameter_description"><p>a list of
-<a class="link" href="GtkSourceEncoding.html" title="GtkSourceEncoding"><span class="type">GtkSourceEncoding</span></a>s. </p></td>
+<a class="link" href="GtkSourceEncoding.html" title="GtkSourceEncoding"><span class="type">GtkSourceEncoding</span></a>'s. </p></td>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GtkSourceEncoding]</span></td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <p class="since">Since: <a class="link" href="api-index-3-14.html#api-index-3.14">3.14</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtk-source-file-loader-get-max-size"></a><h3>gtk_source_file_loader_get_max_size ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="returnvalue">guint64</span></a>
+gtk_source_file_loader_get_max_size (<em class="parameter"><code><a class="link" href="GtkSourceFileLoader.html" title="GtkSourceFileLoader"><span class="type">GtkSourceFileLoader</span></a> *loader</code></em>);</pre>
+<div class="refsect3">
+<a name="gtk-source-file-loader-get-max-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>loader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtkSourceFileLoader.html" title="GtkSourceFileLoader"><span class="type">GtkSourceFileLoader</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gtk-source-file-loader-get-max-size.returns"></a><h4>Returns</h4>
+<p> the value of the <a class="link" href="GtkSourceFileLoader.html#GtkSourceFileLoader--max-size" title="The “max-size” property"><span class="type">“max-size”</span></a> property.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-299-6.html#api-index-299.6">299.6</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtk-source-file-loader-set-max-size"></a><h3>gtk_source_file_loader_set_max_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gtk_source_file_loader_set_max_size (<em class="parameter"><code><a class="link" href="GtkSourceFileLoader.html" title="GtkSourceFileLoader"><span class="type">GtkSourceFileLoader</span></a> *loader</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a> max_size</code></em>);</pre>
+<p>Sets the <a class="link" href="GtkSourceFileLoader.html#GtkSourceFileLoader--max-size" title="The “max-size” property"><span class="type">“max-size”</span></a> property.</p>
+<div class="refsect3">
+<a name="gtk-source-file-loader-set-max-size.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>loader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtkSourceFileLoader.html" title="GtkSourceFileLoader"><span class="type">GtkSourceFileLoader</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_size</p></td>
+<td class="parameter_description"><p>the new value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-299-6.html#api-index-299.6">299.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -385,8 +457,9 @@ gtk_source_file_loader_get_buffer (<em class="parameter"><code><a class="link" h
 </div>
 <div class="refsect3">
 <a name="gtk-source-file-loader-get-buffer.returns"></a><h4>Returns</h4>
-<p>the <a class="link" href="GtkSourceBuffer.html" title="GtkSourceBuffer"><span class="type">GtkSourceBuffer</span></a> to load the contents into. </p>
-<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p>the value of the
+<a class="link" href="GtkSourceFileLoader.html#GtkSourceFileLoader--buffer" title="The “buffer” property"><span class="type">“buffer”</span></a> property. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-3-14.html#api-index-3.14">3.14</a></p>
 </div>
@@ -412,8 +485,9 @@ gtk_source_file_loader_get_file (<em class="parameter"><code><a class="link" hre
 </div>
 <div class="refsect3">
 <a name="gtk-source-file-loader-get-file.returns"></a><h4>Returns</h4>
-<p>the <a class="link" href="GtkSourceFile.html" title="GtkSourceFile"><span class="type">GtkSourceFile</span></a>. </p>
-<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p>the value of the
+<a class="link" href="GtkSourceFileLoader.html#GtkSourceFileLoader--file" title="The “file” property"><span class="type">“file”</span></a> property. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-3-14.html#api-index-3.14">3.14</a></p>
 </div>
@@ -439,9 +513,9 @@ gtk_source_file_loader_get_location (<em class="parameter"><code><a class="link"
 </div>
 <div class="refsect3">
 <a name="gtk-source-file-loader-get-location.returns"></a><h4>Returns</h4>
-<p>the <a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a> to load, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
-if an input stream is used. </p>
-<p><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>][<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p>the value of the
+<a class="link" href="GtkSourceFileLoader.html#GtkSourceFileLoader--location" title="The “location” property"><span class="type">“location”</span></a> property. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-3-14.html#api-index-3.14">3.14</a></p>
 </div>
@@ -468,9 +542,9 @@ gtk_source_file_loader_get_input_stream
 </div>
 <div class="refsect3">
 <a name="gtk-source-file-loader-get-input-stream.returns"></a><h4>Returns</h4>
-<p>the <a href="/usr/share/gtk-doc/html/gio/GInputStream.html#GInputStream-struct"><span class="type">GInputStream</span></a> to load, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
-if a <a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a> is used. </p>
-<p><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>][<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p>the value of the
+<a class="link" href="GtkSourceFileLoader.html#GtkSourceFileLoader--input-stream" title="The “input-stream” property"><span class="type">“input-stream”</span></a> property. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-3-14.html#api-index-3.14">3.14</a></p>
 </div>
@@ -618,7 +692,8 @@ gtk_source_file_loader_get_encoding (<em class="parameter"><code><a class="link"
 </div>
 <div class="refsect3">
 <a name="gtk-source-file-loader-get-encoding.returns"></a><h4>Returns</h4>
-<p> the detected file encoding.</p>
+<p>the detected encoding. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-3-14.html#api-index-3.14">3.14</a></p>
 </div>
@@ -680,13 +755,13 @@ gtk_source_file_loader_get_compression_type
 <div class="refsect1">
 <a name="GtkSourceFileLoader.other_details"></a><h2>Types and Values</h2>
 <div class="refsect2">
-<a name="GtkSourceFileLoader-struct"></a><h3>GtkSourceFileLoader</h3>
-<pre class="programlisting">typedef struct _GtkSourceFileLoader GtkSourceFileLoader;</pre>
+<a name="GtkSourceFileLoader-struct"></a><h3>struct GtkSourceFileLoader</h3>
+<pre class="programlisting">struct GtkSourceFileLoader;</pre>
 </div>
 <hr>
 <div class="refsect2">
 <a name="GTK-SOURCE-FILE-LOADER-ERROR:CAPS"></a><h3>GTK_SOURCE_FILE_LOADER_ERROR</h3>
-<pre class="programlisting">#define GTK_SOURCE_FILE_LOADER_ERROR gtk_source_file_loader_error_quark ()
+<pre class="programlisting">#define GTK_SOURCE_FILE_LOADER_ERROR (gtk_source_file_loader_error_quark())
 </pre>
 </div>
 <hr>
@@ -765,12 +840,25 @@ is set, the <a class="link" href="GtkSourceFileLoader.html#GtkSourceFileLoader--
 <div class="refsect2">
 <a name="GtkSourceFileLoader--location"></a><h3>The <code class="literal">“location”</code> property</h3>
 <pre class="programlisting">  “location”                 <a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a> *</pre>
-<p>The <a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a> to load. If the <a class="link" href="GtkSourceFileLoader.html#GtkSourceFileLoader--input-stream" title="The “input-stream” property"><span class="type">“input-stream”</span></a> is
-<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, by default the location is taken from the <a class="link" href="GtkSourceFile.html" title="GtkSourceFile"><span class="type">GtkSourceFile</span></a> at
-construction time.</p>
+<p>The <a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a> to load, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to load the contents from the
+<a class="link" href="GtkSourceFileLoader.html#GtkSourceFileLoader--input-stream" title="The “input-stream” property"><span class="type">“input-stream”</span></a>.</p>
+<p>If the <a class="link" href="GtkSourceFileLoader.html#GtkSourceFileLoader--input-stream" title="The “input-stream” property"><span class="type">“input-stream”</span></a> is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, by default the
+location is taken from the <a class="link" href="GtkSourceFile.html" title="GtkSourceFile"><span class="type">GtkSourceFile</span></a> at construction time.</p>
 <p>Owner: GtkSourceFileLoader</p>
 <p>Flags: Read / Write / Construct Only</p>
 <p class="since">Since: <a class="link" href="api-index-3-14.html#api-index-3.14">3.14</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GtkSourceFileLoader--max-size"></a><h3>The <code class="literal">“max-size”</code> property</h3>
+<pre class="programlisting">  “max-size”                 <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></pre>
+<p>The maximum number of bytes to read.</p>
+<p>If the content to load exceeds the limit,
+<a class="link" href="GtkSourceFileLoader.html#GTK-SOURCE-FILE-LOADER-ERROR-TOO-BIG:CAPS"><code class="literal">GTK_SOURCE_FILE_LOADER_ERROR_TOO_BIG</code></a> is returned.</p>
+<p>Owner: GtkSourceFileLoader</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: 200000000</p>
+<p class="since">Since: <a class="link" href="api-index-299-6.html#api-index-299.6">299.6</a></p>
 </div>
 </div>
 <div class="refsect1">
@@ -779,6 +867,6 @@ construction time.</p>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.34.0</div>
+<hr>Generated by GTK-Doc V1.35.1</div>
 </body>
 </html>

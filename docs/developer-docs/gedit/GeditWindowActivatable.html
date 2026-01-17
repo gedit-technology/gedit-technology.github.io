@@ -8,7 +8,7 @@
 <link rel="up" href="ch01.html" title="Main Classes">
 <link rel="prev" href="GeditWindow.html" title="GeditWindow">
 <link rel="next" href="GeditTab.html" title="GeditTab">
-<meta name="generator" content="GTK-Doc V1.34.0 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.35.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -92,10 +92,16 @@
 <col width="150px" class="other_proto_type">
 <col class="other_proto_name">
 </colgroup>
-<tbody><tr>
+<tbody>
+<tr>
 <td class="datatype_keyword"> </td>
 <td class="function_name"><a class="link" href="GeditWindowActivatable.html#GeditWindowActivatable-struct" title="GeditWindowActivatable">GeditWindowActivatable</a></td>
-</tr></tbody>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GeditWindowActivatable.html#GeditWindowActivatableInterface" title="struct GeditWindowActivatableInterface">GeditWindowActivatableInterface</a></td>
+</tr>
+</tbody>
 </table></div>
 </div>
 <div class="refsect1">
@@ -113,7 +119,7 @@ GeditWindowActivatable requires
 <div class="refsect1">
 <a name="GeditWindowActivatable.description"></a><h2>Description</h2>
 <p><a class="link" href="GeditWindowActivatable.html" title="GeditWindowActivatable"><span class="type">GeditWindowActivatable</span></a> is an interface which should be implemented by
-extensions that should be activated on a gedit main window.</p>
+extensions that should be activated on a <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a>.</p>
 </div>
 <div class="refsect1">
 <a name="GeditWindowActivatable.functions_details"></a><h2>Functions</h2>
@@ -121,7 +127,7 @@ extensions that should be activated on a gedit main window.</p>
 <a name="gedit-window-activatable-activate"></a><h3>gedit_window_activatable_activate ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gedit_window_activatable_activate (<em class="parameter"><code><a class="link" href="GeditWindowActivatable.html" title="GeditWindowActivatable"><span class="type">GeditWindowActivatable</span></a> *activatable</code></em>);</pre>
-<p>Activates the extension on the window property.</p>
+<p>Activates the extension on the window.</p>
 <div class="refsect3">
 <a name="gedit-window-activatable-activate.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -132,7 +138,7 @@ gedit_window_activatable_activate (<em class="parameter"><code><a class="link" h
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>activatable</p></td>
-<td class="parameter_description"><p>A <a class="link" href="GeditWindowActivatable.html" title="GeditWindowActivatable"><span class="type">GeditWindowActivatable</span></a>.</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindowActivatable.html" title="GeditWindowActivatable"><span class="type">GeditWindowActivatable</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -143,7 +149,7 @@ gedit_window_activatable_activate (<em class="parameter"><code><a class="link" h
 <a name="gedit-window-activatable-deactivate"></a><h3>gedit_window_activatable_deactivate ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gedit_window_activatable_deactivate (<em class="parameter"><code><a class="link" href="GeditWindowActivatable.html" title="GeditWindowActivatable"><span class="type">GeditWindowActivatable</span></a> *activatable</code></em>);</pre>
-<p>Deactivates the extension on the window property.</p>
+<p>Deactivates the extension from the window.</p>
 <div class="refsect3">
 <a name="gedit-window-activatable-deactivate.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -154,7 +160,7 @@ gedit_window_activatable_deactivate (<em class="parameter"><code><a class="link"
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>activatable</p></td>
-<td class="parameter_description"><p>A <a class="link" href="GeditWindowActivatable.html" title="GeditWindowActivatable"><span class="type">GeditWindowActivatable</span></a>.</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindowActivatable.html" title="GeditWindowActivatable"><span class="type">GeditWindowActivatable</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -177,7 +183,7 @@ state changes in the window, due to some event or user action.</p>
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>activatable</p></td>
-<td class="parameter_description"><p>A <a class="link" href="GeditWindowActivatable.html" title="GeditWindowActivatable"><span class="type">GeditWindowActivatable</span></a>.</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditWindowActivatable.html" title="GeditWindowActivatable"><span class="type">GeditWindowActivatable</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -190,14 +196,63 @@ state changes in the window, due to some event or user action.</p>
 <a name="GeditWindowActivatable-struct"></a><h3>GeditWindowActivatable</h3>
 <pre class="programlisting">typedef struct _GeditWindowActivatable GeditWindowActivatable;</pre>
 </div>
+<hr>
+<div class="refsect2">
+<a name="GeditWindowActivatableInterface"></a><h3>struct GeditWindowActivatableInterface</h3>
+<pre class="programlisting">struct GeditWindowActivatableInterface {
+	GTypeInterface parent_interface;
+
+	void (*activate) (GeditWindowActivatable *activatable);
+
+	void (*deactivate) (GeditWindowActivatable *activatable);
+
+	void (*update_state) (GeditWindowActivatable *activatable);
+};
+</pre>
+<p>The virtual function table for <a class="link" href="GeditWindowActivatable.html" title="GeditWindowActivatable"><span class="type">GeditWindowActivatable</span></a>.</p>
+<div class="refsect3">
+<a name="GeditWindowActivatableInterface.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#GTypeInterface"><span class="type">GTypeInterface</span></a> <em class="structfield"><code><a name="GeditWindowActivatableInterface.parent-interface"></a>parent_interface</code></em>;</p></td>
+<td class="struct_member_description"><p>The parent interface.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GeditWindowActivatableInterface.activate"></a>activate</code></em> ()</p></td>
+<td class="struct_member_description"><p>The virtual function pointer for
+<a class="link" href="GeditWindowActivatable.html#gedit-window-activatable-activate" title="gedit_window_activatable_activate ()"><code class="function">gedit_window_activatable_activate()</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GeditWindowActivatableInterface.deactivate"></a>deactivate</code></em> ()</p></td>
+<td class="struct_member_description"><p>The virtual function pointer for
+<a class="link" href="GeditWindowActivatable.html#gedit-window-activatable-deactivate" title="gedit_window_activatable_deactivate ()"><code class="function">gedit_window_activatable_deactivate()</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GeditWindowActivatableInterface.update-state"></a>update_state</code></em> ()</p></td>
+<td class="struct_member_description"><p>The virtual function pointer for
+<a class="link" href="GeditWindowActivatable.html#gedit-window-activatable-update-state" title="gedit_window_activatable_update_state ()"><code class="function">gedit_window_activatable_update_state()</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
 </div>
 <div class="refsect1">
 <a name="GeditWindowActivatable.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="GeditWindowActivatable--window"></a><h3>The <code class="literal">“window”</code> property</h3>
 <pre class="programlisting">  “window”                   <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a> *</pre>
-<p>The window property contains the gedit window for this
-<a class="link" href="GeditWindowActivatable.html" title="GeditWindowActivatable"><span class="type">GeditWindowActivatable</span></a> instance.</p>
+<p>The <a class="link" href="GeditWindow.html" title="GeditWindow"><span class="type">GeditWindow</span></a>.</p>
 <p>Owner: GeditWindowActivatable</p>
 <p>Flags: Read / Write / Construct Only</p>
 </div>
@@ -208,6 +263,6 @@ state changes in the window, due to some event or user action.</p>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.34.0</div>
+<hr>Generated by GTK-Doc V1.35.1</div>
 </body>
 </html>

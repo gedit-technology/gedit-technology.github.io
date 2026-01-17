@@ -22,16 +22,20 @@
         <sub name="GtexPostProcessorLatex" link="GtexPostProcessorLatex.html"/>
         <sub name="GtexPostProcessorLatexmk" link="GtexPostProcessorLatexmk.html"/>
       </sub>
-      <sub name="Structure" link="ch03.html">
+      <sub name="Find and Replace" link="ch03.html">
+        <sub name="GtexFindBar" link="GtexFindBar.html"/>
+      </sub>
+      <sub name="Structure" link="ch04.html">
         <sub name="GtexStructure" link="GtexStructure.html"/>
       </sub>
-      <sub name="Templates" link="ch04.html">
+      <sub name="Templates" link="ch05.html">
         <sub name="GtexTemplatesDialogs" link="enter-tex-GtexTemplatesDialogs.html"/>
         <sub name="GtexTemplatesManageDialog" link="GtexTemplatesManageDialog.html"/>
         <sub name="GtexTemplatesDefault" link="GtexTemplatesDefault.html"/>
         <sub name="GtexTemplatesPersonal" link="GtexTemplatesPersonal.html"/>
       </sub>
-      <sub name="Misc" link="ch05.html">
+      <sub name="Misc" link="ch06.html">
+        <sub name="GtexBottomPanel" link="enter-tex-GtexBottomPanel.html"/>
         <sub name="GtexCommands" link="enter-tex-GtexCommands.html"/>
         <sub name="GtexDirs" link="enter-tex-GtexDirs.html"/>
         <sub name="GtexPrefs" link="enter-tex-GtexPrefs.html"/>
@@ -58,9 +62,6 @@
     <keyword type="function" name="gtex_app_new ()" link="GtexApp.html#gtex-app-new"/>
     <keyword type="struct" name="struct GtexApp" link="GtexApp.html#GtexApp-struct"/>
     <keyword type="function" name="gtex_buffer_setup ()" link="enter-tex-GtexBuffer.html#gtex-buffer-setup"/>
-    <keyword type="function" name="gtex_buffer_comment_lines ()" link="enter-tex-GtexBuffer.html#gtex-buffer-comment-lines"/>
-    <keyword type="function" name="gtex_buffer_comment_selected_lines ()" link="enter-tex-GtexBuffer.html#gtex-buffer-comment-selected-lines"/>
-    <keyword type="function" name="gtex_buffer_uncomment_selected_lines ()" link="enter-tex-GtexBuffer.html#gtex-buffer-uncomment-selected-lines"/>
     <keyword type="function" name="gtex_view_setup ()" link="enter-tex-GtexView.html#gtex-view-setup"/>
     <keyword type="function" name="gtex_view_get_indentation_style ()" link="enter-tex-GtexView.html#gtex-view-get-indentation-style"/>
     <keyword type="function" name="gtex_build_job_new ()" link="GtexBuildJob.html#gtex-build-job-new"/>
@@ -68,7 +69,7 @@
     <keyword type="function" name="gtex_build_job_to_xml ()" link="GtexBuildJob.html#gtex-build-job-to-xml"/>
     <keyword type="function" name="gtex_build_job_run_async ()" link="GtexBuildJob.html#gtex-build-job-run-async"/>
     <keyword type="function" name="gtex_build_job_run_finish ()" link="GtexBuildJob.html#gtex-build-job-run-finish"/>
-    <keyword type="struct" name="GtexBuildJob" link="GtexBuildJob.html#GtexBuildJob-struct"/>
+    <keyword type="struct" name="struct GtexBuildJob" link="GtexBuildJob.html#GtexBuildJob-struct"/>
     <keyword type="property" name="The “command” property" link="GtexBuildJob.html#GtexBuildJob--command"/>
     <keyword type="property" name="The “post-processor-type” property" link="GtexBuildJob.html#GtexBuildJob--post-processor-type"/>
     <keyword type="function" name="gtex_build_tool_new ()" link="GtexBuildTool.html#gtex-build-tool-new"/>
@@ -79,7 +80,7 @@
     <keyword type="function" name="gtex_build_tool_to_xml ()" link="GtexBuildTool.html#gtex-build-tool-to-xml"/>
     <keyword type="function" name="gtex_build_tool_run_async ()" link="GtexBuildTool.html#gtex-build-tool-run-async"/>
     <keyword type="function" name="gtex_build_tool_run_finish ()" link="GtexBuildTool.html#gtex-build-tool-run-finish"/>
-    <keyword type="struct" name="GtexBuildTool" link="GtexBuildTool.html#GtexBuildTool-struct"/>
+    <keyword type="struct" name="struct GtexBuildTool" link="GtexBuildTool.html#GtexBuildTool-struct"/>
     <keyword type="property" name="The “description” property" link="GtexBuildTool.html#GtexBuildTool--description"/>
     <keyword type="property" name="The “enabled” property" link="GtexBuildTool.html#GtexBuildTool--enabled"/>
     <keyword type="property" name="The “extensions” property" link="GtexBuildTool.html#GtexBuildTool--extensions"/>
@@ -90,11 +91,11 @@
     <keyword type="function" name="gtex_build_tools_load ()" link="GtexBuildTools.html#gtex-build-tools-load"/>
     <keyword type="function" name="gtex_build_tools_set_enabled ()" link="GtexBuildTools.html#gtex-build-tools-set-enabled"/>
     <keyword type="function" name="gtex_build_tools_nth ()" link="GtexBuildTools.html#gtex-build-tools-nth"/>
-    <keyword type="struct" name="GtexBuildTools" link="GtexBuildTools.html#GtexBuildTools-struct"/>
+    <keyword type="struct" name="struct GtexBuildTools" link="GtexBuildTools.html#GtexBuildTools-struct"/>
     <keyword type="signal" name="The “loaded” signal" link="GtexBuildTools.html#GtexBuildTools-loaded"/>
     <keyword type="signal" name="The “modified” signal" link="GtexBuildTools.html#GtexBuildTools-modified"/>
     <keyword type="function" name="gtex_build_tools_default_get_instance ()" link="GtexBuildToolsDefault.html#gtex-build-tools-default-get-instance"/>
-    <keyword type="struct" name="GtexBuildToolsDefault" link="GtexBuildToolsDefault.html#GtexBuildToolsDefault-struct"/>
+    <keyword type="struct" name="struct GtexBuildToolsDefault" link="GtexBuildToolsDefault.html#GtexBuildToolsDefault-struct"/>
     <keyword type="function" name="gtex_build_tools_personal_get_instance ()" link="GtexBuildToolsPersonal.html#gtex-build-tools-personal-get-instance"/>
     <keyword type="function" name="gtex_build_tools_personal_save ()" link="GtexBuildToolsPersonal.html#gtex-build-tools-personal-save"/>
     <keyword type="function" name="gtex_build_tools_personal_move_up ()" link="GtexBuildToolsPersonal.html#gtex-build-tools-personal-move-up"/>
@@ -103,7 +104,7 @@
     <keyword type="function" name="gtex_build_tools_personal_add ()" link="GtexBuildToolsPersonal.html#gtex-build-tools-personal-add"/>
     <keyword type="function" name="gtex_build_tools_personal_insert ()" link="GtexBuildToolsPersonal.html#gtex-build-tools-personal-insert"/>
     <keyword type="function" name="gtex_build_tools_personal_replace ()" link="GtexBuildToolsPersonal.html#gtex-build-tools-personal-replace"/>
-    <keyword type="struct" name="GtexBuildToolsPersonal" link="GtexBuildToolsPersonal.html#GtexBuildToolsPersonal-struct"/>
+    <keyword type="struct" name="struct GtexBuildToolsPersonal" link="GtexBuildToolsPersonal.html#GtexBuildToolsPersonal-struct"/>
     <keyword type="function" name="gtex_build_msg_new ()" link="GtexBuildView.html#gtex-build-msg-new"/>
     <keyword type="function" name="gtex_build_msg_free ()" link="GtexBuildView.html#gtex-build-msg-free"/>
     <keyword type="function" name="gtex_build_msg_reinit ()" link="GtexBuildView.html#gtex-build-msg-reinit"/>
@@ -116,7 +117,7 @@
     <keyword type="function" name="gtex_build_view_append_single_message ()" link="GtexBuildView.html#gtex-build-view-append-single-message"/>
     <keyword type="function" name="gtex_build_view_append_messages ()" link="GtexBuildView.html#gtex-build-view-append-messages"/>
     <keyword type="function" name="gtex_build_view_remove_children ()" link="GtexBuildView.html#gtex-build-view-remove-children"/>
-    <keyword type="struct" name="GtexBuildView" link="GtexBuildView.html#GtexBuildView-struct"/>
+    <keyword type="struct" name="struct GtexBuildView" link="GtexBuildView.html#GtexBuildView-struct"/>
     <keyword type="struct" name="struct GtexBuildMsg" link="GtexBuildView.html#GtexBuildMsg"/>
     <keyword type="enum" name="enum GtexBuildMsgType" link="GtexBuildView.html#GtexBuildMsgType"/>
     <keyword type="enum" name="enum GtexBuildState" link="GtexBuildView.html#GtexBuildState"/>
@@ -134,16 +135,30 @@
     <keyword type="function" name="gtex_post_processor_end ()" link="GtexPostProcessor.html#gtex-post-processor-end"/>
     <keyword type="function" name="gtex_post_processor_get_messages ()" link="GtexPostProcessor.html#gtex-post-processor-get-messages"/>
     <keyword type="function" name="gtex_post_processor_take_messages ()" link="GtexPostProcessor.html#gtex-post-processor-take-messages"/>
-    <keyword type="struct" name="GtexPostProcessor" link="GtexPostProcessor.html#GtexPostProcessor-struct"/>
+    <keyword type="struct" name="struct GtexPostProcessor" link="GtexPostProcessor.html#GtexPostProcessor-struct"/>
     <keyword type="enum" name="enum GtexPostProcessorType" link="GtexPostProcessor.html#GtexPostProcessorType"/>
     <keyword type="property" name="The “has-details” property" link="GtexPostProcessor.html#GtexPostProcessor--has-details"/>
     <keyword type="function" name="gtex_post_processor_all_output_new ()" link="GtexPostProcessorAllOutput.html#gtex-post-processor-all-output-new"/>
-    <keyword type="struct" name="GtexPostProcessorAllOutput" link="GtexPostProcessorAllOutput.html#GtexPostProcessorAllOutput-struct"/>
+    <keyword type="struct" name="struct GtexPostProcessorAllOutput" link="GtexPostProcessorAllOutput.html#GtexPostProcessorAllOutput-struct"/>
     <keyword type="function" name="gtex_post_processor_latex_new ()" link="GtexPostProcessorLatex.html#gtex-post-processor-latex-new"/>
     <keyword type="function" name="gtex_post_processor_latex_get_errors_count ()" link="GtexPostProcessorLatex.html#gtex-post-processor-latex-get-errors-count"/>
-    <keyword type="struct" name="GtexPostProcessorLatex" link="GtexPostProcessorLatex.html#GtexPostProcessorLatex-struct"/>
+    <keyword type="struct" name="struct GtexPostProcessorLatex" link="GtexPostProcessorLatex.html#GtexPostProcessorLatex-struct"/>
     <keyword type="function" name="gtex_post_processor_latexmk_new ()" link="GtexPostProcessorLatexmk.html#gtex-post-processor-latexmk-new"/>
-    <keyword type="struct" name="GtexPostProcessorLatexmk" link="GtexPostProcessorLatexmk.html#GtexPostProcessorLatexmk-struct"/>
+    <keyword type="struct" name="struct GtexPostProcessorLatexmk" link="GtexPostProcessorLatexmk.html#GtexPostProcessorLatexmk-struct"/>
+    <keyword type="function" name="gtex_find_bar_new ()" link="GtexFindBar.html#gtex-find-bar-new"/>
+    <keyword type="function" name="gtex_find_bar_set_mode ()" link="GtexFindBar.html#gtex-find-bar-set-mode"/>
+    <keyword type="function" name="gtex_find_bar_get_find_entry ()" link="GtexFindBar.html#gtex-find-bar-get-find-entry"/>
+    <keyword type="function" name="gtex_find_bar_get_previous_button ()" link="GtexFindBar.html#gtex-find-bar-get-previous-button"/>
+    <keyword type="function" name="gtex_find_bar_get_next_button ()" link="GtexFindBar.html#gtex-find-bar-get-next-button"/>
+    <keyword type="function" name="gtex_find_bar_get_close_button ()" link="GtexFindBar.html#gtex-find-bar-get-close-button"/>
+    <keyword type="function" name="gtex_find_bar_get_info_label ()" link="GtexFindBar.html#gtex-find-bar-get-info-label"/>
+    <keyword type="function" name="gtex_find_bar_get_check_menu_item ()" link="GtexFindBar.html#gtex-find-bar-get-check-menu-item"/>
+    <keyword type="function" name="gtex_find_bar_get_replace_grid ()" link="GtexFindBar.html#gtex-find-bar-get-replace-grid"/>
+    <keyword type="function" name="gtex_find_bar_get_replace_entry ()" link="GtexFindBar.html#gtex-find-bar-get-replace-entry"/>
+    <keyword type="function" name="gtex_find_bar_get_replace_button ()" link="GtexFindBar.html#gtex-find-bar-get-replace-button"/>
+    <keyword type="function" name="gtex_find_bar_get_replace_all_button ()" link="GtexFindBar.html#gtex-find-bar-get-replace-all-button"/>
+    <keyword type="struct" name="struct GtexFindBar" link="GtexFindBar.html#GtexFindBar-struct"/>
+    <keyword type="enum" name="enum GtexFindBarMode" link="GtexFindBar.html#GtexFindBarMode"/>
     <keyword type="function" name="gtex_structure_new ()" link="GtexStructure.html#gtex-structure-new"/>
     <keyword type="struct" name="struct GtexStructure" link="GtexStructure.html#GtexStructure-struct"/>
     <keyword type="function" name="gtex_templates_dialogs_open ()" link="enter-tex-GtexTemplatesDialogs.html#gtex-templates-dialogs-open"/>
@@ -160,6 +175,7 @@
     <keyword type="function" name="gtex_templates_personal_move_up ()" link="GtexTemplatesPersonal.html#gtex-templates-personal-move-up"/>
     <keyword type="function" name="gtex_templates_personal_move_down ()" link="GtexTemplatesPersonal.html#gtex-templates-personal-move-down"/>
     <keyword type="struct" name="GtexTemplatesPersonal" link="GtexTemplatesPersonal.html#GtexTemplatesPersonal-struct"/>
+    <keyword type="function" name="gtex_bottom_panel_new ()" link="enter-tex-GtexBottomPanel.html#gtex-bottom-panel-new"/>
     <keyword type="function" name="gtex_commands_add_action_infos ()" link="enter-tex-GtexCommands.html#gtex-commands-add-action-infos"/>
     <keyword type="function" name="gtex_commands_add_actions ()" link="enter-tex-GtexCommands.html#gtex-commands-add-actions"/>
     <keyword type="function" name="gtex_commands_create_edit_menu ()" link="enter-tex-GtexCommands.html#gtex-commands-create-edit-menu"/>
@@ -174,8 +190,16 @@
     <keyword type="function" name="gtex_synctex_forward_search ()" link="GtexSynctex.html#gtex-synctex-forward-search"/>
     <keyword type="struct" name="struct GtexSynctex" link="GtexSynctex.html#GtexSynctex-struct"/>
     <keyword type="signal" name="The “backward-search” signal" link="GtexSynctex.html#GtexSynctex-backward-search"/>
-    <keyword type="function" name="gtex_tree_model_node_new ()" link="GtexTreeModelNode.html#gtex-tree-model-node-new"/>
+    <keyword type="function" name="gtex_tree_model_node_set_column_types ()" link="GtexTreeModelNode.html#gtex-tree-model-node-set-column-types"/>
+    <keyword type="function" name="gtex_tree_model_node_set_tree ()" link="GtexTreeModelNode.html#gtex-tree-model-node-set-tree"/>
+    <keyword type="function" name="gtex_tree_model_node_column_index_is_valid ()" link="GtexTreeModelNode.html#gtex-tree-model-node-column-index-is-valid"/>
+    <keyword type="function" name="gtex_tree_model_node_change_stamp ()" link="GtexTreeModelNode.html#gtex-tree-model-node-change-stamp"/>
+    <keyword type="function" name="gtex_tree_model_node_get_iter_at_node ()" link="GtexTreeModelNode.html#gtex-tree-model-node-get-iter-at-node"/>
+    <keyword type="function" name="gtex_tree_model_node_get_node_from_iter ()" link="GtexTreeModelNode.html#gtex-tree-model-node-get-node-from-iter"/>
+    <keyword type="function" name="gtex_tree_model_node_iter_is_valid ()" link="GtexTreeModelNode.html#gtex-tree-model-node-iter-is-valid"/>
     <keyword type="struct" name="struct GtexTreeModelNode" link="GtexTreeModelNode.html#GtexTreeModelNode-struct"/>
+    <keyword type="function" name="gtex_utils_char_is_escaped ()" link="enter-tex-GtexUtils.html#gtex-utils-char-is-escaped"/>
+    <keyword type="function" name="gtex_utils_get_relative_path ()" link="enter-tex-GtexUtils.html#gtex-utils-get-relative-path"/>
     <keyword type="function" name="gtex_utils_show_uri ()" link="enter-tex-GtexUtils.html#gtex-utils-show-uri"/>
     <keyword type="function" name="gtex_utils_get_dialog_component ()" link="enter-tex-GtexUtils.html#gtex-utils-get-dialog-component"/>
     <keyword type="function" name="gtex_utils_migrate_settings ()" link="enter-tex-GtexUtils.html#gtex-utils-migrate-settings"/>
@@ -195,6 +219,8 @@
     <keyword type="constant" name="GTEX_POST_PROCESSOR_TYPE_LATEX" link="GtexPostProcessor.html#GTEX-POST-PROCESSOR-TYPE-LATEX:CAPS"/>
     <keyword type="constant" name="GTEX_POST_PROCESSOR_TYPE_LATEXMK" link="GtexPostProcessor.html#GTEX-POST-PROCESSOR-TYPE-LATEXMK:CAPS"/>
     <keyword type="constant" name="GTEX_POST_PROCESSOR_TYPE_NB_TYPES" link="GtexPostProcessor.html#GTEX-POST-PROCESSOR-TYPE-NB-TYPES:CAPS"/>
+    <keyword type="constant" name="GTEX_FIND_BAR_MODE_FIND_ONLY" link="GtexFindBar.html#GTEX-FIND-BAR-MODE-FIND-ONLY:CAPS"/>
+    <keyword type="constant" name="GTEX_FIND_BAR_MODE_FIND_AND_REPLACE" link="GtexFindBar.html#GTEX-FIND-BAR-MODE-FIND-AND-REPLACE:CAPS"/>
     <keyword type="member" name="GtexBuildTools-struct.build-tools" link="GtexBuildTools.html#GtexBuildTools-struct.build-tools"/>
     <keyword type="member" name="GtexBuildMsg.type" link="GtexBuildView.html#GtexBuildMsg.type"/>
     <keyword type="member" name="GtexBuildMsg.text" link="GtexBuildView.html#GtexBuildMsg.text"/>

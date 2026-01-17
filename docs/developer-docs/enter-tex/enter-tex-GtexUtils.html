@@ -5,10 +5,10 @@
 <title>GtexUtils: Enter TeX Reference Manual</title>
 <meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="Enter TeX Reference Manual">
-<link rel="up" href="ch05.html" title="Misc">
+<link rel="up" href="ch06.html" title="Misc">
 <link rel="prev" href="GtexTreeModelNode.html" title="GtexTreeModelNode">
 <link rel="next" href="annexes.html" title="Part II. Annexes">
-<meta name="generator" content="GTK-Doc V1.34.0 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.35.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -18,7 +18,7 @@
                   <a href="#enter-tex-GtexUtils.description" class="shortcut">Description</a></span>
 </td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
-<td><a accesskey="u" href="ch05.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="u" href="ch06.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
 <td><a accesskey="p" href="GtexTreeModelNode.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
 <td><a accesskey="n" href="annexes.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
 </tr></table>
@@ -39,6 +39,22 @@
 <col class="functions_proto_name">
 </colgroup>
 <tbody>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="enter-tex-GtexUtils.html#gtex-utils-char-is-escaped" title="gtex_utils_char_is_escaped ()">gtex_utils_char_is_escaped</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="enter-tex-GtexUtils.html#gtex-utils-get-relative-path" title="gtex_utils_get_relative_path ()">gtex_utils_get_relative_path</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
 <tr>
 <td class="function_type">
 <span class="returnvalue">void</span>
@@ -77,6 +93,84 @@
 </div>
 <div class="refsect1">
 <a name="enter-tex-GtexUtils.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gtex-utils-char-is-escaped"></a><h3>gtex_utils_char_is_escaped ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gtex_utils_char_is_escaped (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *str</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> char_index</code></em>);</pre>
+<div class="refsect3">
+<a name="gtex-utils-char-is-escaped.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>a UTF-8 string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>char_index</p></td>
+<td class="parameter_description"><p>index of the character within <em class="parameter"><code>str</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gtex-utils-char-is-escaped.returns"></a><h4>Returns</h4>
+<p> whether the character is escaped according to the TeX rules.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtex-utils-get-relative-path"></a><h3>gtex_utils_get_relative_path ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gtex_utils_get_relative_path (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a> *origin</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> origin_is_a_directory</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a> *target</code></em>);</pre>
+<div class="refsect3">
+<a name="gtex-utils-get-relative-path.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>origin</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>origin_is_a_directory</p></td>
+<td class="parameter_description"><p>whether <em class="parameter"><code>origin</code></em>
+is a directory.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gtex-utils-get-relative-path.returns"></a><h4>Returns</h4>
+<p>the relative path that goes from <em class="parameter"><code>origin</code></em>
+to <em class="parameter"><code>target</code></em>
+. Can be <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the two files do not belong to the same
+filesystem hierarchy. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
 <div class="refsect2">
 <a name="gtex-utils-show-uri"></a><h3>gtex_utils_show_uri ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
@@ -173,6 +267,6 @@ GNOME LaTeX to Enter TeX, so that users don't lose all their settings.</p>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.34.0</div>
+<hr>Generated by GTK-Doc V1.35.1</div>
 </body>
 </html>

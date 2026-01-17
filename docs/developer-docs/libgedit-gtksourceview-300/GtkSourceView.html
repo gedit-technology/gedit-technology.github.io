@@ -8,7 +8,7 @@
 <link rel="up" href="main-classes.html" title="Main Classes">
 <link rel="prev" href="GtkSourceBuffer.html" title="GtkSourceBuffer">
 <link rel="next" href="syntax-highlighting.html" title="Syntax Highlighting">
-<meta name="generator" content="GTK-Doc V1.34.0 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.35.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -518,9 +518,9 @@ GtkSourceView implements
 </div>
 <div class="refsect1">
 <a name="GtkSourceView.description"></a><h2>Description</h2>
-<p><a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> is the main class of the GtkSourceView library.
+<p><a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> is the main class of the libgedit-gtksourceview library.
 Use a <a class="link" href="GtkSourceBuffer.html" title="GtkSourceBuffer"><span class="type">GtkSourceBuffer</span></a> to display text with a <a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a>.</p>
-<p>This class provides:</p>
+<p>This class provides the following features:</p>
 <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
 <li class="listitem"><p>Show the line numbers;</p></li>
 <li class="listitem"><p>Show a right margin;</p></li>
@@ -531,41 +531,7 @@ Use a <a class="link" href="GtkSourceBuffer.html" title="GtkSourceBuffer"><span 
 <li class="listitem"><p>And a few other things.</p></li>
 </ul></div>
 <p>An easy way to test all these features is to use the test-widget mini-program
-provided in the GtkSourceView repository, in the tests/ directory.</p>
-<div class="refsect2">
-<a name="id-1.3.3.3.10.6"></a><h3>GtkSourceView as GtkBuildable</h3>
-<p>The GtkSourceView implementation of the <a href="/usr/share/gtk-doc/html/gtk3/GtkBuildable.html#GtkBuildable-struct"><span class="type">GtkBuildable</span></a> interface exposes the
-<a class="link" href="GtkSourceView.html#GtkSourceView--completion" title="The “completion” property"><span class="type">“completion”</span></a> object with the internal-child "completion".</p>
-<p>An example of a UI definition fragment with GtkSourceView:</p>
-<div class="informalexample">
-  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
-    <tbody>
-      <tr>
-        <td class="listing_lines" align="right"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="o">&lt;</span><span class="n">object</span><span class="w"> </span><span class="n">class</span><span class="o">=</span><span class="s">&quot;GtkSourceView&quot;</span><span class="w"> </span><span class="n">id</span><span class="o">=</span><span class="s">&quot;source_view&quot;</span><span class="o">&gt;</span>
-<span class="w">  </span><span class="o">&lt;</span><span class="n">property</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="s">&quot;tab_width&quot;</span><span class="o">&gt;</span><span class="mi">4</span><span class="o">&lt;/</span><span class="n">property</span><span class="o">&gt;</span>
-<span class="w">  </span><span class="o">&lt;</span><span class="n">property</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="s">&quot;auto_indent&quot;</span><span class="o">&gt;</span><span class="n">True</span><span class="o">&lt;/</span><span class="n">property</span><span class="o">&gt;</span>
-<span class="w">  </span><span class="o">&lt;</span><span class="n">child</span><span class="w"> </span><span class="n">internal</span><span class="o">-</span><span class="n">child</span><span class="o">=</span><span class="s">&quot;completion&quot;</span><span class="o">&gt;</span>
-<span class="w">    </span><span class="o">&lt;</span><span class="n">object</span><span class="w"> </span><span class="n">class</span><span class="o">=</span><span class="s">&quot;GtkSourceCompletion&quot;</span><span class="o">&gt;</span>
-<span class="w">      </span><span class="o">&lt;</span><span class="n">property</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="s">&quot;select_on_show&quot;</span><span class="o">&gt;</span><span class="n">False</span><span class="o">&lt;/</span><span class="n">property</span><span class="o">&gt;</span>
-<span class="w">    </span><span class="o">&lt;/</span><span class="n">object</span><span class="o">&gt;</span>
-<span class="w">  </span><span class="o">&lt;/</span><span class="n">child</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">object</span><span class="o">&gt;</span></pre></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<p></p>
-</div>
+provided in the libgedit-gtksourceview repository, in the tests/ directory.</p>
 </div>
 <div class="refsect1">
 <a name="GtkSourceView.functions_details"></a><h2>Functions</h2>
@@ -573,15 +539,15 @@ provided in the GtkSourceView repository, in the tests/ directory.</p>
 <a name="gtk-source-view-new"></a><h3>gtk_source_view_new ()</h3>
 <pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
 gtk_source_view_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
-<p>Creates a new <a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a>.</p>
+<p>Creates a new <a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> widget.</p>
 <p>By default, an empty <a class="link" href="GtkSourceBuffer.html" title="GtkSourceBuffer"><span class="type">GtkSourceBuffer</span></a> will be lazily created and can be
 retrieved with <a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#gtk-text-view-get-buffer"><code class="function">gtk_text_view_get_buffer()</code></a>.</p>
-<p>If you want to specify your own buffer, either override the
-<a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GtkTextViewClass"><span class="type">GtkTextViewClass</span></a> create_buffer factory method, or use
-<a class="link" href="GtkSourceView.html#gtk-source-view-new-with-buffer" title="gtk_source_view_new_with_buffer ()"><code class="function">gtk_source_view_new_with_buffer()</code></a>.</p>
+<p>If you want to specify your own buffer, either override the <a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GtkTextViewClass"><span class="type">GtkTextViewClass</span></a>
+create_buffer factory method, or use <a class="link" href="GtkSourceView.html#gtk-source-view-new-with-buffer" title="gtk_source_view_new_with_buffer ()"><code class="function">gtk_source_view_new_with_buffer()</code></a>.</p>
 <div class="refsect3">
 <a name="gtk-source-view-new.returns"></a><h4>Returns</h4>
-<p> a new <a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a>.</p>
+<p>a new <a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> widget. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
 </div>
 </div>
 <hr>
@@ -589,9 +555,8 @@ retrieved with <a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#gtk-text-v
 <a name="gtk-source-view-new-with-buffer"></a><h3>gtk_source_view_new_with_buffer ()</h3>
 <pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk3/GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
 gtk_source_view_new_with_buffer (<em class="parameter"><code><a class="link" href="GtkSourceBuffer.html" title="GtkSourceBuffer"><span class="type">GtkSourceBuffer</span></a> *buffer</code></em>);</pre>
-<p>Creates a new <a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> widget displaying the buffer
-<em class="parameter"><code>buffer</code></em>
-. One buffer can be shared among many widgets.</p>
+<p>Creates a new <a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> widget displaying <em class="parameter"><code>buffer</code></em>
+.</p>
 <div class="refsect3">
 <a name="gtk-source-view-new-with-buffer.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -609,7 +574,8 @@ gtk_source_view_new_with_buffer (<em class="parameter"><code><a class="link" hre
 </div>
 <div class="refsect3">
 <a name="gtk-source-view-new-with-buffer.returns"></a><h4>Returns</h4>
-<p> a new <a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a>.</p>
+<p>a new <a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> widget. </p>
+<p><span class="annotation">[<acronym title="Alias for transfer none, used for objects with floating refs."><span class="acronym">transfer floating</span></acronym>]</span></p>
 </div>
 </div>
 <hr>
@@ -617,11 +583,6 @@ gtk_source_view_new_with_buffer (<em class="parameter"><code><a class="link" hre
 <a name="gtk-source-view-get-completion"></a><h3>gtk_source_view_get_completion ()</h3>
 <pre class="programlisting"><a class="link" href="GtkSourceCompletion.html" title="GtkSourceCompletion"><span class="returnvalue">GtkSourceCompletion</span></a> *
 gtk_source_view_get_completion (<em class="parameter"><code><a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> *view</code></em>);</pre>
-<p>Gets the <a class="link" href="GtkSourceCompletion.html" title="GtkSourceCompletion"><span class="type">GtkSourceCompletion</span></a> associated with <em class="parameter"><code>view</code></em>
-. The returned object is
-guaranteed to be the same for the lifetime of <em class="parameter"><code>view</code></em>
-. Each <a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a>
-object has a different <a class="link" href="GtkSourceCompletion.html" title="GtkSourceCompletion"><span class="type">GtkSourceCompletion</span></a>.</p>
 <div class="refsect3">
 <a name="gtk-source-view-get-completion.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -639,8 +600,8 @@ object has a different <a class="link" href="GtkSourceCompletion.html" title="Gt
 </div>
 <div class="refsect3">
 <a name="gtk-source-view-get-completion.returns"></a><h4>Returns</h4>
-<p>the <a class="link" href="GtkSourceCompletion.html" title="GtkSourceCompletion"><span class="type">GtkSourceCompletion</span></a> associated with <em class="parameter"><code>view</code></em>
-. </p>
+<p>the value of the <a class="link" href="GtkSourceView.html#GtkSourceView--completion" title="The “completion” property"><span class="type">“completion”</span></a>
+property. </p>
 <p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 </div>
@@ -652,10 +613,10 @@ gtk_source_view_get_gutter (<em class="parameter"><code><a class="link" href="Gt
                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GtkTextWindowType"><span class="type">GtkTextWindowType</span></a> window_type</code></em>);</pre>
 <p>Returns the <a class="link" href="GtkSourceGutter.html" title="GtkSourceGutter"><span class="type">GtkSourceGutter</span></a> object associated with <em class="parameter"><code>window_type</code></em>
  for <em class="parameter"><code>view</code></em>
-.
-Only GTK_TEXT_WINDOW_LEFT and GTK_TEXT_WINDOW_RIGHT are supported,
-respectively corresponding to the left and right gutter. The line numbers
-and mark category icons are rendered in the left gutter.</p>
+.</p>
+<p>Only <a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GTK-TEXT-WINDOW-LEFT:CAPS"><code class="literal">GTK_TEXT_WINDOW_LEFT</code></a> and <a href="/usr/share/gtk-doc/html/gtk3/GtkTextView.html#GTK-TEXT-WINDOW-RIGHT:CAPS"><code class="literal">GTK_TEXT_WINDOW_RIGHT</code></a> are supported,
+respectively corresponding to the left and right gutter.</p>
+<p>The line numbers and mark category icons are rendered in the left gutter.</p>
 <div class="refsect3">
 <a name="gtk-source-view-get-gutter.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -690,11 +651,6 @@ and mark category icons are rendered in the left gutter.</p>
 <a name="gtk-source-view-get-space-drawer"></a><h3>gtk_source_view_get_space_drawer ()</h3>
 <pre class="programlisting"><a class="link" href="GtkSourceSpaceDrawer.html" title="GtkSourceSpaceDrawer"><span class="returnvalue">GtkSourceSpaceDrawer</span></a> *
 gtk_source_view_get_space_drawer (<em class="parameter"><code><a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> *view</code></em>);</pre>
-<p>Gets the <a class="link" href="GtkSourceSpaceDrawer.html" title="GtkSourceSpaceDrawer"><span class="type">GtkSourceSpaceDrawer</span></a> associated with <em class="parameter"><code>view</code></em>
-. The returned object is
-guaranteed to be the same for the lifetime of <em class="parameter"><code>view</code></em>
-. Each <a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a>
-object has a different <a class="link" href="GtkSourceSpaceDrawer.html" title="GtkSourceSpaceDrawer"><span class="type">GtkSourceSpaceDrawer</span></a>.</p>
 <div class="refsect3">
 <a name="gtk-source-view-get-space-drawer.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -712,8 +668,8 @@ object has a different <a class="link" href="GtkSourceSpaceDrawer.html" title="G
 </div>
 <div class="refsect3">
 <a name="gtk-source-view-get-space-drawer.returns"></a><h4>Returns</h4>
-<p>the <a class="link" href="GtkSourceSpaceDrawer.html" title="GtkSourceSpaceDrawer"><span class="type">GtkSourceSpaceDrawer</span></a> associated with <em class="parameter"><code>view</code></em>
-. </p>
+<p>the value of the <a class="link" href="GtkSourceView.html#GtkSourceView--space-drawer" title="The “space-drawer” property"><span class="type">“space-drawer”</span></a>
+property. </p>
 <p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-3-24.html#api-index-3.24">3.24</a></p>
@@ -724,7 +680,7 @@ object has a different <a class="link" href="GtkSourceSpaceDrawer.html" title="G
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_source_view_set_show_line_numbers (<em class="parameter"><code><a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> *view</code></em>,
                                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> show</code></em>);</pre>
-<p>If <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> line numbers will be displayed beside the text.</p>
+<p>Sets the <a class="link" href="GtkSourceView.html#GtkSourceView--show-line-numbers" title="The “show-line-numbers” property"><span class="type">“show-line-numbers”</span></a> property.</p>
 <div class="refsect3">
 <a name="gtk-source-view-set-show-line-numbers.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -741,7 +697,7 @@ gtk_source_view_set_show_line_numbers (<em class="parameter"><code><a class="lin
 </tr>
 <tr>
 <td class="parameter_name"><p>show</p></td>
-<td class="parameter_description"><p>whether line numbers should be displayed.</p></td>
+<td class="parameter_description"><p>the new value.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -753,7 +709,6 @@ gtk_source_view_set_show_line_numbers (<em class="parameter"><code><a class="lin
 <a name="gtk-source-view-get-show-line-numbers"></a><h3>gtk_source_view_get_show_line_numbers ()</h3>
 <pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gtk_source_view_get_show_line_numbers (<em class="parameter"><code><a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> *view</code></em>);</pre>
-<p>Returns whether line numbers are displayed beside the text.</p>
 <div class="refsect3">
 <a name="gtk-source-view-get-show-line-numbers.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -771,7 +726,7 @@ gtk_source_view_get_show_line_numbers (<em class="parameter"><code><a class="lin
 </div>
 <div class="refsect3">
 <a name="gtk-source-view-get-show-line-numbers.returns"></a><h4>Returns</h4>
-<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the line numbers are displayed.</p>
+<p> the current value of the <a class="link" href="GtkSourceView.html#GtkSourceView--show-line-numbers" title="The “show-line-numbers” property"><span class="type">“show-line-numbers”</span></a> property.</p>
 </div>
 </div>
 <hr>
@@ -780,7 +735,7 @@ gtk_source_view_get_show_line_numbers (<em class="parameter"><code><a class="lin
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_source_view_set_show_right_margin (<em class="parameter"><code><a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> *view</code></em>,
                                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> show</code></em>);</pre>
-<p>If <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> a right margin is displayed.</p>
+<p>Sets the <a class="link" href="GtkSourceView.html#GtkSourceView--show-right-margin" title="The “show-right-margin” property"><span class="type">“show-right-margin”</span></a> property.</p>
 <div class="refsect3">
 <a name="gtk-source-view-set-show-right-margin.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -797,7 +752,7 @@ gtk_source_view_set_show_right_margin (<em class="parameter"><code><a class="lin
 </tr>
 <tr>
 <td class="parameter_name"><p>show</p></td>
-<td class="parameter_description"><p>whether to show a right margin.</p></td>
+<td class="parameter_description"><p>the new value.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -809,7 +764,6 @@ gtk_source_view_set_show_right_margin (<em class="parameter"><code><a class="lin
 <a name="gtk-source-view-get-show-right-margin"></a><h3>gtk_source_view_get_show_right_margin ()</h3>
 <pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gtk_source_view_get_show_right_margin (<em class="parameter"><code><a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> *view</code></em>);</pre>
-<p>Returns whether a right margin is displayed.</p>
 <div class="refsect3">
 <a name="gtk-source-view-get-show-right-margin.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -827,7 +781,7 @@ gtk_source_view_get_show_right_margin (<em class="parameter"><code><a class="lin
 </div>
 <div class="refsect3">
 <a name="gtk-source-view-get-show-right-margin.returns"></a><h4>Returns</h4>
-<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the right margin is shown.</p>
+<p> the current value of the <a class="link" href="GtkSourceView.html#GtkSourceView--show-right-margin" title="The “show-right-margin” property"><span class="type">“show-right-margin”</span></a> property.</p>
 </div>
 </div>
 <hr>
@@ -837,8 +791,7 @@ gtk_source_view_get_show_right_margin (<em class="parameter"><code><a class="lin
 gtk_source_view_set_right_margin_position
                                (<em class="parameter"><code><a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> *view</code></em>,
                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> pos</code></em>);</pre>
-<p>Sets the position of the right margin in the given <em class="parameter"><code>view</code></em>
-.</p>
+<p>Sets the <a class="link" href="GtkSourceView.html#GtkSourceView--right-margin-position" title="The “right-margin-position” property"><span class="type">“right-margin-position”</span></a> property.</p>
 <div class="refsect3">
 <a name="gtk-source-view-set-right-margin-position.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -855,7 +808,7 @@ gtk_source_view_set_right_margin_position
 </tr>
 <tr>
 <td class="parameter_name"><p>pos</p></td>
-<td class="parameter_description"><p>the width in characters where to position the right margin.</p></td>
+<td class="parameter_description"><p>the new value.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -868,8 +821,6 @@ gtk_source_view_set_right_margin_position
 <pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
 gtk_source_view_get_right_margin_position
                                (<em class="parameter"><code><a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> *view</code></em>);</pre>
-<p>Gets the position of the right margin in the given <em class="parameter"><code>view</code></em>
-.</p>
 <div class="refsect3">
 <a name="gtk-source-view-get-right-margin-position.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -887,7 +838,8 @@ gtk_source_view_get_right_margin_position
 </div>
 <div class="refsect3">
 <a name="gtk-source-view-get-right-margin-position.returns"></a><h4>Returns</h4>
-<p> the position of the right margin.</p>
+<p> the current value of the <a class="link" href="GtkSourceView.html#GtkSourceView--right-margin-position" title="The “right-margin-position” property"><span class="type">“right-margin-position”</span></a>
+property.</p>
 </div>
 </div>
 <hr>
@@ -897,8 +849,7 @@ gtk_source_view_get_right_margin_position
 gtk_source_view_set_highlight_current_line
                                (<em class="parameter"><code><a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> *view</code></em>,
                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> highlight</code></em>);</pre>
-<p>If <em class="parameter"><code>highlight</code></em>
- is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> the current line will be highlighted.</p>
+<p>Sets the <a class="link" href="GtkSourceView.html#GtkSourceView--highlight-current-line" title="The “highlight-current-line” property"><span class="type">“highlight-current-line”</span></a> property.</p>
 <div class="refsect3">
 <a name="gtk-source-view-set-highlight-current-line.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -915,7 +866,7 @@ gtk_source_view_set_highlight_current_line
 </tr>
 <tr>
 <td class="parameter_name"><p>highlight</p></td>
-<td class="parameter_description"><p>whether to highlight the current line.</p></td>
+<td class="parameter_description"><p>the new value.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -928,7 +879,6 @@ gtk_source_view_set_highlight_current_line
 <pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gtk_source_view_get_highlight_current_line
                                (<em class="parameter"><code><a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> *view</code></em>);</pre>
-<p>Returns whether the current line is highlighted.</p>
 <div class="refsect3">
 <a name="gtk-source-view-get-highlight-current-line.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -946,7 +896,8 @@ gtk_source_view_get_highlight_current_line
 </div>
 <div class="refsect3">
 <a name="gtk-source-view-get-highlight-current-line.returns"></a><h4>Returns</h4>
-<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the current line is highlighted.</p>
+<p> the current value of the <a class="link" href="GtkSourceView.html#GtkSourceView--highlight-current-line" title="The “highlight-current-line” property"><span class="type">“highlight-current-line”</span></a>
+property.</p>
 </div>
 </div>
 <hr>
@@ -1078,9 +1029,7 @@ should get indented instead of replaced with the \t character.</p>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_source_view_set_tab_width (<em class="parameter"><code><a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> *view</code></em>,
                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> width</code></em>);</pre>
-<p>Sets the width of tabulation in characters. The <a href="/usr/share/gtk-doc/html/gtk3/GtkTextBuffer.html#GtkTextBuffer-struct"><span class="type">GtkTextBuffer</span></a> still contains
-\t characters, but they can take a different visual width in a <a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a>
-widget.</p>
+<p>Sets the <a class="link" href="GtkSourceView.html#GtkSourceView--tab-width" title="The “tab-width” property"><span class="type">“tab-width”</span></a> property.</p>
 <div class="refsect3">
 <a name="gtk-source-view-set-tab-width.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -1097,7 +1046,7 @@ widget.</p>
 </tr>
 <tr>
 <td class="parameter_name"><p>width</p></td>
-<td class="parameter_description"><p>width of tab in characters.</p></td>
+<td class="parameter_description"><p>the new value.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -1109,7 +1058,6 @@ widget.</p>
 <a name="gtk-source-view-get-tab-width"></a><h3>gtk_source_view_get_tab_width ()</h3>
 <pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
 gtk_source_view_get_tab_width (<em class="parameter"><code><a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> *view</code></em>);</pre>
-<p>Returns the width of tabulation in characters.</p>
 <div class="refsect3">
 <a name="gtk-source-view-get-tab-width.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -1127,7 +1075,7 @@ gtk_source_view_get_tab_width (<em class="parameter"><code><a class="link" href=
 </div>
 <div class="refsect3">
 <a name="gtk-source-view-get-tab-width.returns"></a><h4>Returns</h4>
-<p> width of tab.</p>
+<p> the current value of the <a class="link" href="GtkSourceView.html#GtkSourceView--tab-width" title="The “tab-width” property"><span class="type">“tab-width”</span></a> property.</p>
 </div>
 </div>
 <hr>
@@ -1593,7 +1541,7 @@ The object belongs to <em class="parameter"><code>view</code></em>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_source_view_set_show_line_marks (<em class="parameter"><code><a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> *view</code></em>,
                                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> show</code></em>);</pre>
-<p>If <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> line marks will be displayed beside the text.</p>
+<p>Sets the <a class="link" href="GtkSourceView.html#GtkSourceView--show-line-marks" title="The “show-line-marks” property"><span class="type">“show-line-marks”</span></a> property.</p>
 <div class="refsect3">
 <a name="gtk-source-view-set-show-line-marks.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -1610,7 +1558,7 @@ gtk_source_view_set_show_line_marks (<em class="parameter"><code><a class="link"
 </tr>
 <tr>
 <td class="parameter_name"><p>show</p></td>
-<td class="parameter_description"><p>whether line marks should be displayed.</p></td>
+<td class="parameter_description"><p>the new value.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -1623,7 +1571,6 @@ gtk_source_view_set_show_line_marks (<em class="parameter"><code><a class="link"
 <a name="gtk-source-view-get-show-line-marks"></a><h3>gtk_source_view_get_show_line_marks ()</h3>
 <pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gtk_source_view_get_show_line_marks (<em class="parameter"><code><a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> *view</code></em>);</pre>
-<p>Returns whether line marks are displayed beside the text.</p>
 <div class="refsect3">
 <a name="gtk-source-view-get-show-line-marks.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -1641,7 +1588,7 @@ gtk_source_view_get_show_line_marks (<em class="parameter"><code><a class="link"
 </div>
 <div class="refsect3">
 <a name="gtk-source-view-get-show-line-marks.returns"></a><h4>Returns</h4>
-<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the line marks are displayed.</p>
+<p> the current value of the <a class="link" href="GtkSourceView.html#GtkSourceView--show-line-marks" title="The “show-line-marks” property"><span class="type">“show-line-marks”</span></a> property.</p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-2-2.html#api-index-2.2">2.2</a></p>
 </div>
@@ -1748,7 +1695,9 @@ renderer</p>
 <div class="refsect2">
 <a name="GtkSourceView--completion"></a><h3>The <code class="literal">“completion”</code> property</h3>
 <pre class="programlisting">  “completion”               <a class="link" href="GtkSourceCompletion.html" title="GtkSourceCompletion"><span class="type">GtkSourceCompletion</span></a> *</pre>
-<p>The completion object associated with the view</p>
+<p>The completion object associated with the view.</p>
+<p>The completion object is guaranteed to be the same for the lifetime
+of the view. Each view has a different completion object.</p>
 <p>Owner: GtkSourceView</p>
 <p>Flags: Read</p>
 </div>
@@ -1793,7 +1742,7 @@ renderer</p>
 <div class="refsect2">
 <a name="GtkSourceView--right-margin-position"></a><h3>The <code class="literal">“right-margin-position”</code> property</h3>
 <pre class="programlisting">  “right-margin-position”    <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
-<p>Position of the right margin.</p>
+<p>The width in characters where to position the right margin.</p>
 <p>Owner: GtkSourceView</p>
 <p>Flags: Read / Write</p>
 <p>Allowed values: [1,1000]</p>
@@ -1803,7 +1752,7 @@ renderer</p>
 <div class="refsect2">
 <a name="GtkSourceView--show-line-marks"></a><h3>The <code class="literal">“show-line-marks”</code> property</h3>
 <pre class="programlisting">  “show-line-marks”          <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
-<p>Whether to display line mark pixbufs</p>
+<p>Whether to display line mark pixbufs beside the text.</p>
 <p>Owner: GtkSourceView</p>
 <p>Flags: Read / Write</p>
 <p>Default value: FALSE</p>
@@ -1812,7 +1761,7 @@ renderer</p>
 <div class="refsect2">
 <a name="GtkSourceView--show-line-numbers"></a><h3>The <code class="literal">“show-line-numbers”</code> property</h3>
 <pre class="programlisting">  “show-line-numbers”        <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
-<p>Whether to display line numbers</p>
+<p>Whether to display line numbers beside the text.</p>
 <p>Owner: GtkSourceView</p>
 <p>Flags: Read / Write</p>
 <p>Default value: FALSE</p>
@@ -1851,6 +1800,9 @@ renderer</p>
 <a name="GtkSourceView--space-drawer"></a><h3>The <code class="literal">“space-drawer”</code> property</h3>
 <pre class="programlisting">  “space-drawer”             <a class="link" href="GtkSourceSpaceDrawer.html" title="GtkSourceSpaceDrawer"><span class="type">GtkSourceSpaceDrawer</span></a> *</pre>
 <p>The <a class="link" href="GtkSourceSpaceDrawer.html" title="GtkSourceSpaceDrawer"><span class="type">GtkSourceSpaceDrawer</span></a> object associated with the view.</p>
+<p>The <a class="link" href="GtkSourceSpaceDrawer.html" title="GtkSourceSpaceDrawer"><span class="type">GtkSourceSpaceDrawer</span></a> object is guaranteed to be the same for the
+lifetime of the view. Each view has a different <a class="link" href="GtkSourceSpaceDrawer.html" title="GtkSourceSpaceDrawer"><span class="type">GtkSourceSpaceDrawer</span></a>
+object.</p>
 <p>Owner: GtkSourceView</p>
 <p>Flags: Read</p>
 <p class="since">Since: <a class="link" href="api-index-3-24.html#api-index-3.24">3.24</a></p>
@@ -1859,7 +1811,9 @@ renderer</p>
 <div class="refsect2">
 <a name="GtkSourceView--tab-width"></a><h3>The <code class="literal">“tab-width”</code> property</h3>
 <pre class="programlisting">  “tab-width”                <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
-<p>Width of a tab character expressed in number of spaces.</p>
+<p>The width of a tabulation character expressed in number of spaces.</p>
+<p>The <a href="/usr/share/gtk-doc/html/gtk3/GtkTextBuffer.html#GtkTextBuffer-struct"><span class="type">GtkTextBuffer</span></a> still contains <code class="literal">\t</code> characters, but they can take
+a different visual width in a <a class="link" href="GtkSourceView.html" title="GtkSourceView"><span class="type">GtkSourceView</span></a> widget.</p>
 <p>Owner: GtkSourceView</p>
 <p>Flags: Read / Write</p>
 <p>Allowed values: [1,32]</p>
@@ -2249,6 +2203,6 @@ user_function (<a class="link" href="GtkSourceView.html" title="GtkSourceView"><
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.34.0</div>
+<hr>Generated by GTK-Doc V1.35.1</div>
 </body>
 </html>

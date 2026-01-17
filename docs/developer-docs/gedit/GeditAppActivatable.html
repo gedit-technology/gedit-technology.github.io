@@ -8,7 +8,7 @@
 <link rel="up" href="ch01.html" title="Main Classes">
 <link rel="prev" href="GeditApp.html" title="GeditApp">
 <link rel="next" href="GeditWindow.html" title="GeditWindow">
-<meta name="generator" content="GTK-Doc V1.34.0 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.35.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -92,10 +92,16 @@
 <col width="150px" class="other_proto_type">
 <col class="other_proto_name">
 </colgroup>
-<tbody><tr>
+<tbody>
+<tr>
 <td class="datatype_keyword"> </td>
 <td class="function_name"><a class="link" href="GeditAppActivatable.html#GeditAppActivatable-struct" title="GeditAppActivatable">GeditAppActivatable</a></td>
-</tr></tbody>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GeditAppActivatable.html#GeditAppActivatableInterface" title="struct GeditAppActivatableInterface">GeditAppActivatableInterface</a></td>
+</tr>
+</tbody>
 </table></div>
 </div>
 <div class="refsect1">
@@ -113,7 +119,7 @@ GeditAppActivatable requires
 <div class="refsect1">
 <a name="GeditAppActivatable.description"></a><h2>Description</h2>
 <p><a class="link" href="GeditAppActivatable.html" title="GeditAppActivatable"><span class="type">GeditAppActivatable</span></a> is an interface which should be implemented by
-extensions that should be activated on a gedit application.</p>
+extensions that should be activated on a <a class="link" href="GeditApp.html" title="GeditApp"><span class="type">GeditApp</span></a>.</p>
 </div>
 <div class="refsect1">
 <a name="GeditAppActivatable.functions_details"></a><h2>Functions</h2>
@@ -132,7 +138,7 @@ gedit_app_activatable_activate (<em class="parameter"><code><a class="link" href
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>activatable</p></td>
-<td class="parameter_description"><p>A <a class="link" href="GeditAppActivatable.html" title="GeditAppActivatable"><span class="type">GeditAppActivatable</span></a>.</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditAppActivatable.html" title="GeditAppActivatable"><span class="type">GeditAppActivatable</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -154,7 +160,7 @@ gedit_app_activatable_deactivate (<em class="parameter"><code><a class="link" hr
 </colgroup>
 <tbody><tr>
 <td class="parameter_name"><p>activatable</p></td>
-<td class="parameter_description"><p>A <a class="link" href="GeditAppActivatable.html" title="GeditAppActivatable"><span class="type">GeditAppActivatable</span></a>.</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditAppActivatable.html" title="GeditAppActivatable"><span class="type">GeditAppActivatable</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr></tbody>
 </table></div>
@@ -181,7 +187,7 @@ depending on the platform.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>activatable</p></td>
-<td class="parameter_description"><p>A <a class="link" href="GeditAppActivatable.html" title="GeditAppActivatable"><span class="type">GeditAppActivatable</span></a>.</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GeditAppActivatable.html" title="GeditAppActivatable"><span class="type">GeditAppActivatable</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -206,14 +212,54 @@ or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><c
 <a name="GeditAppActivatable-struct"></a><h3>GeditAppActivatable</h3>
 <pre class="programlisting">typedef struct _GeditAppActivatable GeditAppActivatable;</pre>
 </div>
+<hr>
+<div class="refsect2">
+<a name="GeditAppActivatableInterface"></a><h3>struct GeditAppActivatableInterface</h3>
+<pre class="programlisting">struct GeditAppActivatableInterface {
+	GTypeInterface parent_interface;
+
+	void (*activate) (GeditAppActivatable *activatable);
+
+	void (*deactivate) (GeditAppActivatable *activatable);
+};
+</pre>
+<p>The virtual function table for <a class="link" href="GeditAppActivatable.html" title="GeditAppActivatable"><span class="type">GeditAppActivatable</span></a>.</p>
+<div class="refsect3">
+<a name="GeditAppActivatableInterface.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/gobject/gobject-Type-Information.html#GTypeInterface"><span class="type">GTypeInterface</span></a> <em class="structfield"><code><a name="GeditAppActivatableInterface.parent-interface"></a>parent_interface</code></em>;</p></td>
+<td class="struct_member_description"><p>The parent interface.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GeditAppActivatableInterface.activate"></a>activate</code></em> ()</p></td>
+<td class="struct_member_description"><p>The virtual function pointer for <a class="link" href="GeditAppActivatable.html#gedit-app-activatable-activate" title="gedit_app_activatable_activate ()"><code class="function">gedit_app_activatable_activate()</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="GeditAppActivatableInterface.deactivate"></a>deactivate</code></em> ()</p></td>
+<td class="struct_member_description"><p>The virtual function pointer for
+<a class="link" href="GeditAppActivatable.html#gedit-app-activatable-deactivate" title="gedit_app_activatable_deactivate ()"><code class="function">gedit_app_activatable_deactivate()</code></a>.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
 </div>
 <div class="refsect1">
 <a name="GeditAppActivatable.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="GeditAppActivatable--app"></a><h3>The <code class="literal">“app”</code> property</h3>
 <pre class="programlisting">  “app”                      <a class="link" href="GeditApp.html" title="GeditApp"><span class="type">GeditApp</span></a> *</pre>
-<p>The app property contains the gedit app for this
-<a class="link" href="GeditAppActivatable.html" title="GeditAppActivatable"><span class="type">GeditAppActivatable</span></a> instance.</p>
+<p>The <a class="link" href="GeditApp.html" title="GeditApp"><span class="type">GeditApp</span></a>.</p>
 <p>Owner: GeditAppActivatable</p>
 <p>Flags: Read / Write / Construct Only</p>
 </div>
@@ -224,6 +270,6 @@ or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><c
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.34.0</div>
+<hr>Generated by GTK-Doc V1.35.1</div>
 </body>
 </html>

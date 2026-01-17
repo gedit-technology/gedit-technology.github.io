@@ -19,7 +19,6 @@
         <sub name="gedit-menu-extension" link="gedit-gedit-menu-extension.html"/>
         <sub name="GeditMessageBus" link="GeditMessageBus.html"/>
         <sub name="GeditMessage" link="GeditMessage.html"/>
-        <sub name="GeditStatusbar" link="GeditStatusbar.html"/>
         <sub name="gedit-debug" link="gedit-gedit-debug.html"/>
         <sub name="gedit-utils" link="gedit-gedit-utils.html"/>
       </sub>
@@ -49,6 +48,7 @@
     <keyword type="function" name="gedit_app_activatable_deactivate ()" link="GeditAppActivatable.html#gedit-app-activatable-deactivate"/>
     <keyword type="function" name="gedit_app_activatable_extend_menu ()" link="GeditAppActivatable.html#gedit-app-activatable-extend-menu"/>
     <keyword type="struct" name="GeditAppActivatable" link="GeditAppActivatable.html#GeditAppActivatable-struct"/>
+    <keyword type="struct" name="struct GeditAppActivatableInterface" link="GeditAppActivatable.html#GeditAppActivatableInterface"/>
     <keyword type="property" name="The “app” property" link="GeditAppActivatable.html#GeditAppActivatable--app"/>
     <keyword type="function" name="gedit_window_create_tab ()" link="GeditWindow.html#gedit-window-create-tab"/>
     <keyword type="function" name="gedit_window_close_tab ()" link="GeditWindow.html#gedit-window-close-tab"/>
@@ -78,6 +78,7 @@
     <keyword type="function" name="gedit_window_activatable_deactivate ()" link="GeditWindowActivatable.html#gedit-window-activatable-deactivate"/>
     <keyword type="function" name="gedit_window_activatable_update_state ()" link="GeditWindowActivatable.html#gedit-window-activatable-update-state"/>
     <keyword type="struct" name="GeditWindowActivatable" link="GeditWindowActivatable.html#GeditWindowActivatable-struct"/>
+    <keyword type="struct" name="struct GeditWindowActivatableInterface" link="GeditWindowActivatable.html#GeditWindowActivatableInterface"/>
     <keyword type="property" name="The “window” property" link="GeditWindowActivatable.html#GeditWindowActivatable--window"/>
     <keyword type="function" name="gedit_tab_load_file ()" link="GeditTab.html#gedit-tab-load-file" since="45"/>
     <keyword type="function" name="gedit_tab_load_stream ()" link="GeditTab.html#gedit-tab-load-stream" since="45"/>
@@ -104,6 +105,7 @@
     <keyword type="function" name="gedit_view_activatable_activate ()" link="GeditViewActivatable.html#gedit-view-activatable-activate"/>
     <keyword type="function" name="gedit_view_activatable_deactivate ()" link="GeditViewActivatable.html#gedit-view-activatable-deactivate"/>
     <keyword type="struct" name="GeditViewActivatable" link="GeditViewActivatable.html#GeditViewActivatable-struct"/>
+    <keyword type="struct" name="struct GeditViewActivatableInterface" link="GeditViewActivatable.html#GeditViewActivatableInterface"/>
     <keyword type="property" name="The “view” property" link="GeditViewActivatable.html#GeditViewActivatable--view"/>
     <keyword type="function" name="gedit_document_new ()" link="GeditDocument.html#gedit-document-new"/>
     <keyword type="function" name="gedit_document_get_file ()" link="GeditDocument.html#gedit-document-get-file" since="3.14"/>
@@ -174,8 +176,6 @@
     <keyword type="struct" name="struct GeditMessage" link="GeditMessage.html#GeditMessage-struct"/>
     <keyword type="property" name="The “method” property" link="GeditMessage.html#GeditMessage--method"/>
     <keyword type="property" name="The “object-path” property" link="GeditMessage.html#GeditMessage--object-path"/>
-    <keyword type="function" name="gedit_statusbar_flash_message ()" link="GeditStatusbar.html#gedit-statusbar-flash-message"/>
-    <keyword type="struct" name="GeditStatusbar" link="GeditStatusbar.html#GeditStatusbar-struct"/>
     <keyword type="function" name="gedit_debug_init ()" link="gedit-gedit-debug.html#gedit-debug-init"/>
     <keyword type="function" name="gedit_debug ()" link="gedit-gedit-debug.html#gedit-debug"/>
     <keyword type="function" name="gedit_debug_message ()" link="gedit-gedit-debug.html#gedit-debug-message"/>
@@ -222,5 +222,15 @@
     <keyword type="constant" name="GEDIT_DEBUG_COMMANDS" link="gedit-gedit-debug.html#GEDIT-DEBUG-COMMANDS:CAPS"/>
     <keyword type="constant" name="GEDIT_DEBUG_APP" link="gedit-gedit-debug.html#GEDIT-DEBUG-APP:CAPS"/>
     <keyword type="constant" name="GEDIT_DEBUG_UTILS" link="gedit-gedit-debug.html#GEDIT-DEBUG-UTILS:CAPS"/>
+    <keyword type="member" name="GeditAppActivatableInterface.parent-interface" link="GeditAppActivatable.html#GeditAppActivatableInterface.parent-interface"/>
+    <keyword type="member" name="GeditAppActivatableInterface.activate" link="GeditAppActivatable.html#GeditAppActivatableInterface.activate"/>
+    <keyword type="member" name="GeditAppActivatableInterface.deactivate" link="GeditAppActivatable.html#GeditAppActivatableInterface.deactivate"/>
+    <keyword type="member" name="GeditWindowActivatableInterface.parent-interface" link="GeditWindowActivatable.html#GeditWindowActivatableInterface.parent-interface"/>
+    <keyword type="member" name="GeditWindowActivatableInterface.activate" link="GeditWindowActivatable.html#GeditWindowActivatableInterface.activate"/>
+    <keyword type="member" name="GeditWindowActivatableInterface.deactivate" link="GeditWindowActivatable.html#GeditWindowActivatableInterface.deactivate"/>
+    <keyword type="member" name="GeditWindowActivatableInterface.update-state" link="GeditWindowActivatable.html#GeditWindowActivatableInterface.update-state"/>
+    <keyword type="member" name="GeditViewActivatableInterface.parent-interface" link="GeditViewActivatable.html#GeditViewActivatableInterface.parent-interface"/>
+    <keyword type="member" name="GeditViewActivatableInterface.activate" link="GeditViewActivatable.html#GeditViewActivatableInterface.activate"/>
+    <keyword type="member" name="GeditViewActivatableInterface.deactivate" link="GeditViewActivatable.html#GeditViewActivatableInterface.deactivate"/>
   </functions>
 </book>

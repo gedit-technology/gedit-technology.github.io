@@ -21,8 +21,6 @@
         <sub name="TeplMenuShell" link="libgedit-tepl-6-TeplMenuShell.html"/>
       </sub>
       <sub name="File Loading and Saving" link="file-loading-and-saving.html">
-        <sub name="TeplEncoding" link="libgedit-tepl-6-TeplEncoding.html"/>
-        <sub name="TeplEncodingIconv" link="libgedit-tepl-6-TeplEncodingIconv.html"/>
         <sub name="TeplFile" link="TeplFile.html"/>
         <sub name="TeplFileLoader" link="TeplFileLoader.html"/>
         <sub name="TeplFileSaver" link="TeplFileSaver.html"/>
@@ -37,9 +35,11 @@
         <sub name="TeplLanguageChooserDialog" link="TeplLanguageChooserDialog.html"/>
         <sub name="TeplLanguageChooserWidget" link="TeplLanguageChooserWidget.html"/>
       </sub>
+      <sub name="Code Comment" link="code-comment.html">
+        <sub name="TeplCodeCommentView" link="TeplCodeCommentView.html"/>
+      </sub>
       <sub name="Misc" link="misc.html">
         <sub name="TeplGotoLineBar" link="TeplGotoLineBar.html"/>
-        <sub name="TeplIter" link="libgedit-tepl-6-TeplIter.html"/>
         <sub name="TeplLineColumnIndicator" link="TeplLineColumnIndicator.html"/>
         <sub name="TeplOverwriteIndicator" link="TeplOverwriteIndicator.html"/>
         <sub name="TeplPrefs" link="libgedit-tepl-6-TeplPrefs.html"/>
@@ -77,6 +77,7 @@
       </sub>
       <sub name="GTK Extras - Other" link="gtk-extras-other.html">
         <sub name="TeplFileChooser" link="libgedit-tepl-6-TeplFileChooser.html"/>
+        <sub name="TeplStatusbar" link="TeplStatusbar.html"/>
         <sub name="TeplStatusMenuButton" link="TeplStatusMenuButton.html"/>
         <sub name="TeplWindowState" link="libgedit-tepl-6-TeplWindowState.html"/>
       </sub>
@@ -113,6 +114,7 @@
       <sub name="Index of new symbols in 6.11" link="api-index-6-11.html"/>
       <sub name="Index of new symbols in 6.12" link="api-index-6-12.html"/>
       <sub name="Index of new symbols in 6.13" link="api-index-6-13.html"/>
+      <sub name="Index of new symbols in 6.14" link="api-index-6-14.html"/>
     </sub>
   </chapters>
   <functions>
@@ -217,22 +219,6 @@
     <keyword type="property" name="The “tepl-short-title” property" link="TeplBuffer.html#TeplBuffer--tepl-short-title"/>
     <keyword type="signal" name="The “tepl-cursor-moved” signal" link="TeplBuffer.html#TeplBuffer-tepl-cursor-moved"/>
     <keyword type="function" name="tepl_menu_shell_append_edit_actions ()" link="libgedit-tepl-6-TeplMenuShell.html#tepl-menu-shell-append-edit-actions" since="3.0"/>
-    <keyword type="function" name="tepl_encoding_get_name ()" link="libgedit-tepl-6-TeplEncoding.html#tepl-encoding-get-name" since="6.4"/>
-    <keyword type="function" name="tepl_encoding_get_category_name ()" link="libgedit-tepl-6-TeplEncoding.html#tepl-encoding-get-category-name" since="6.4"/>
-    <keyword type="struct" name="struct TeplEncoding" link="libgedit-tepl-6-TeplEncoding.html#TeplEncoding" since="6.4"/>
-    <keyword type="struct" name="struct TeplEncodingVtable" link="libgedit-tepl-6-TeplEncoding.html#TeplEncodingVtable" since="6.4"/>
-    <keyword type="function" name="tepl_encoding_iconv_to_base_type ()" link="libgedit-tepl-6-TeplEncodingIconv.html#tepl-encoding-iconv-to-base-type" since="6.4"/>
-    <keyword type="function" name="tepl_encoding_iconv_new ()" link="libgedit-tepl-6-TeplEncodingIconv.html#tepl-encoding-iconv-new" since="6.4"/>
-    <keyword type="function" name="tepl_encoding_iconv_new_utf8 ()" link="libgedit-tepl-6-TeplEncodingIconv.html#tepl-encoding-iconv-new-utf8" since="6.4"/>
-    <keyword type="function" name="tepl_encoding_iconv_new_from_locale ()" link="libgedit-tepl-6-TeplEncodingIconv.html#tepl-encoding-iconv-new-from-locale" since="6.4"/>
-    <keyword type="function" name="tepl_encoding_iconv_copy ()" link="libgedit-tepl-6-TeplEncodingIconv.html#tepl-encoding-iconv-copy" since="6.4"/>
-    <keyword type="function" name="tepl_encoding_iconv_free ()" link="libgedit-tepl-6-TeplEncodingIconv.html#tepl-encoding-iconv-free" since="6.4"/>
-    <keyword type="function" name="tepl_encoding_iconv_to_string ()" link="libgedit-tepl-6-TeplEncodingIconv.html#tepl-encoding-iconv-to-string" since="6.4"/>
-    <keyword type="function" name="tepl_encoding_iconv_is_utf8 ()" link="libgedit-tepl-6-TeplEncodingIconv.html#tepl-encoding-iconv-is-utf8" since="6.4"/>
-    <keyword type="function" name="tepl_encoding_iconv_equals ()" link="libgedit-tepl-6-TeplEncodingIconv.html#tepl-encoding-iconv-equals" since="6.4"/>
-    <keyword type="function" name="tepl_encoding_iconv_get_all ()" link="libgedit-tepl-6-TeplEncodingIconv.html#tepl-encoding-iconv-get-all" since="6.4"/>
-    <keyword type="function" name="tepl_encoding_iconv_get_default_candidates ()" link="libgedit-tepl-6-TeplEncodingIconv.html#tepl-encoding-iconv-get-default-candidates" since="6.4"/>
-    <keyword type="struct" name="TeplEncodingIconv" link="libgedit-tepl-6-TeplEncodingIconv.html#TeplEncodingIconv"/>
     <keyword type="function" name="TeplMountOperationFactory ()" link="TeplFile.html#TeplMountOperationFactory" since="1.0"/>
     <keyword type="function" name="tepl_file_new ()" link="TeplFile.html#tepl-file-new" since="1.0"/>
     <keyword type="function" name="tepl_file_get_location ()" link="TeplFile.html#tepl-file-get-location" since="1.0"/>
@@ -303,11 +289,19 @@
     <keyword type="struct" name="struct TeplLanguageChooserDialog" link="TeplLanguageChooserDialog.html#TeplLanguageChooserDialog-struct"/>
     <keyword type="function" name="tepl_language_chooser_widget_new ()" link="TeplLanguageChooserWidget.html#tepl-language-chooser-widget-new" since="6.0"/>
     <keyword type="struct" name="struct TeplLanguageChooserWidget" link="TeplLanguageChooserWidget.html#TeplLanguageChooserWidget-struct"/>
+    <keyword type="function" name="tepl_code_comment_view_new ()" link="TeplCodeCommentView.html#tepl-code-comment-view-new" since="6.14"/>
+    <keyword type="function" name="tepl_code_comment_view_get_source_view ()" link="TeplCodeCommentView.html#tepl-code-comment-view-get-source-view" since="6.14"/>
+    <keyword type="function" name="tepl_code_comment_view_code_comment_is_supported ()" link="TeplCodeCommentView.html#tepl-code-comment-view-code-comment-is-supported" since="6.14"/>
+    <keyword type="function" name="tepl_code_comment_view_comment_lines ()" link="TeplCodeCommentView.html#tepl-code-comment-view-comment-lines" since="6.14"/>
+    <keyword type="function" name="tepl_code_comment_view_comment_selected_lines ()" link="TeplCodeCommentView.html#tepl-code-comment-view-comment-selected-lines" since="6.14"/>
+    <keyword type="function" name="tepl_code_comment_view_uncomment_selection ()" link="TeplCodeCommentView.html#tepl-code-comment-view-uncomment-selection" since="6.14"/>
+    <keyword type="struct" name="struct TeplCodeCommentView" link="TeplCodeCommentView.html#TeplCodeCommentView-struct"/>
+    <keyword type="property" name="The “code-comment-is-supported” property" link="TeplCodeCommentView.html#TeplCodeCommentView--code-comment-is-supported"/>
+    <keyword type="property" name="The “source-view” property" link="TeplCodeCommentView.html#TeplCodeCommentView--source-view"/>
     <keyword type="function" name="tepl_goto_line_bar_new ()" link="TeplGotoLineBar.html#tepl-goto-line-bar-new" since="5.0"/>
     <keyword type="function" name="tepl_goto_line_bar_set_view ()" link="TeplGotoLineBar.html#tepl-goto-line-bar-set-view" since="5.0"/>
     <keyword type="function" name="tepl_goto_line_bar_grab_focus_to_entry ()" link="TeplGotoLineBar.html#tepl-goto-line-bar-grab-focus-to-entry" since="5.0"/>
     <keyword type="struct" name="struct TeplGotoLineBar" link="TeplGotoLineBar.html#TeplGotoLineBar-struct"/>
-    <keyword type="function" name="tepl_iter_get_line_indentation ()" link="libgedit-tepl-6-TeplIter.html#tepl-iter-get-line-indentation" since="2.0"/>
     <keyword type="function" name="tepl_line_column_indicator_new ()" link="TeplLineColumnIndicator.html#tepl-line-column-indicator-new" since="6.4"/>
     <keyword type="function" name="tepl_line_column_indicator_set_view ()" link="TeplLineColumnIndicator.html#tepl-line-column-indicator-set-view" since="6.4"/>
     <keyword type="function" name="tepl_line_column_indicator_set_tab_group ()" link="TeplLineColumnIndicator.html#tepl-line-column-indicator-set-tab-group" since="6.4"/>
@@ -457,6 +451,10 @@
     <keyword type="function" name="tepl_file_chooser_set_modal ()" link="libgedit-tepl-6-TeplFileChooser.html#tepl-file-chooser-set-modal" since="5.0"/>
     <keyword type="function" name="tepl_file_chooser_set_parent ()" link="libgedit-tepl-6-TeplFileChooser.html#tepl-file-chooser-set-parent" since="5.0"/>
     <keyword type="function" name="tepl_file_chooser_show ()" link="libgedit-tepl-6-TeplFileChooser.html#tepl-file-chooser-show" since="5.0"/>
+    <keyword type="function" name="tepl_statusbar_new ()" link="TeplStatusbar.html#tepl-statusbar-new" since="6.14"/>
+    <keyword type="function" name="tepl_statusbar_flash_message ()" link="TeplStatusbar.html#tepl-statusbar-flash-message" since="6.14"/>
+    <keyword type="function" name="tepl_statusbar_flash_generic_message ()" link="TeplStatusbar.html#tepl-statusbar-flash-generic-message" since="6.14"/>
+    <keyword type="struct" name="struct TeplStatusbar" link="TeplStatusbar.html#TeplStatusbar-struct"/>
     <keyword type="function" name="tepl_status_menu_button_new ()" link="TeplStatusMenuButton.html#tepl-status-menu-button-new" since="6.8"/>
     <keyword type="function" name="tepl_status_menu_button_set_label_text ()" link="TeplStatusMenuButton.html#tepl-status-menu-button-set-label-text" since="6.8"/>
     <keyword type="struct" name="struct TeplStatusMenuButton" link="TeplStatusMenuButton.html#TeplStatusMenuButton-struct"/>
@@ -486,6 +484,7 @@
     <keyword type="function" name="tepl_utils_get_titled_component ()" link="libgedit-tepl-6-TeplUtils.html#tepl-utils-get-titled-component" since="6.2"/>
     <keyword type="function" name="tepl_utils_setup_statusbar ()" link="libgedit-tepl-6-TeplUtils.html#tepl-utils-setup-statusbar" since="6.8"/>
     <keyword type="function" name="tepl_utils_set_widget ()" link="libgedit-tepl-6-TeplUtils.html#tepl-utils-set-widget" since="6.11"/>
+    <keyword type="function" name="tepl_utils_get_toplevel_window ()" link="libgedit-tepl-6-TeplUtils.html#tepl-utils-get-toplevel-window" since="6.13"/>
     <keyword type="function" name="tepl_utils_binding_transform_func_smart_bool ()" link="libgedit-tepl-6-TeplUtils.html#tepl-utils-binding-transform-func-smart-bool" since="5.0"/>
     <keyword type="function" name="tepl_utils_can_use_gsettings_schema ()" link="libgedit-tepl-6-TeplUtils.html#tepl-utils-can-use-gsettings-schema" since="6.2"/>
     <keyword type="function" name="tepl_utils_can_use_gsettings_key ()" link="libgedit-tepl-6-TeplUtils.html#tepl-utils-can-use-gsettings-key" since="6.2"/>
@@ -524,9 +523,6 @@
     <keyword type="member" name="TeplTabClass.pack-goto-line-bar" link="TeplTab.html#TeplTabClass.pack-goto-line-bar"/>
     <keyword type="member" name="TeplTabClass.close-request" link="TeplTab.html#TeplTabClass.close-request"/>
     <keyword type="member" name="TeplTabLabelClass.get-tooltip-markup" link="TeplTabLabel.html#TeplTabLabelClass.get-tooltip-markup"/>
-    <keyword type="member" name="TeplEncoding.vtable" link="libgedit-tepl-6-TeplEncoding.html#TeplEncoding.vtable"/>
-    <keyword type="member" name="TeplEncodingVtable.get-name" link="libgedit-tepl-6-TeplEncoding.html#TeplEncodingVtable.get-name"/>
-    <keyword type="member" name="TeplEncodingVtable.get-category-name" link="libgedit-tepl-6-TeplEncoding.html#TeplEncodingVtable.get-category-name"/>
     <keyword type="member" name="TeplLanguageChooserInterface.parent-interface" link="TeplLanguageChooser.html#TeplLanguageChooserInterface.parent-interface"/>
     <keyword type="member" name="TeplLanguageChooserInterface.select-language" link="TeplLanguageChooser.html#TeplLanguageChooserInterface.select-language"/>
     <keyword type="member" name="TeplLanguageChooserInterface.language-activated" link="TeplLanguageChooser.html#TeplLanguageChooserInterface.language-activated"/>

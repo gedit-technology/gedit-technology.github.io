@@ -8,7 +8,7 @@
 <link rel="up" href="completion.html" title="Completion">
 <link rel="prev" href="GtkSourceCompletionItem.html" title="GtkSourceCompletionItem">
 <link rel="next" href="GtkSourceCompletionProvider.html" title="GtkSourceCompletionProvider">
-<meta name="generator" content="GTK-Doc V1.34.0 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.35.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -188,14 +188,16 @@ GtkSourceCompletionProposal is implemented by
 It provides information on how to display the completion item and what action
 should be taken when the completion item is activated.</p>
 <p>The proposal is displayed in the completion window with a label and
-optionally an icon.
-The label may be specified using plain text or markup by implementing
-the corresponding get function. Only one of those get functions
-should return a value different from <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.
-The icon may be specified as a <span class="type">GdkPixbuf</span>, as an icon name or as a <a href="/usr/share/gtk-doc/html/gio/GIcon.html#GIcon-struct"><span class="type">GIcon</span></a> by
-implementing the corresponding get function. At most one of those get functions
-should return a value different from <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, if they all return <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> no icon
-will be used.</p>
+optionally an icon:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>The label may be specified using plain text or markup by implementing the
+corresponding getter function. Only one of those getter functions should
+return a value different from <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p></li>
+<li class="listitem"><p>The icon may be specified as a <span class="type">GdkPixbuf</span>, as an icon name or as a <a href="/usr/share/gtk-doc/html/gio/GIcon.html#GIcon-struct"><span class="type">GIcon</span></a>
+by implementing the corresponding getter function. At most one of those
+getter functions should return a value different from <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. If they all
+return <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> no icon will be used.</p></li>
+</ul></div>
 </div>
 <div class="refsect1">
 <a name="GtkSourceCompletionProposal.functions_details"></a><h2>Functions</h2>
@@ -206,9 +208,8 @@ gtk_source_completion_proposal_get_label
                                (<em class="parameter"><code><a class="link" href="GtkSourceCompletionProposal.html" title="GtkSourceCompletionProposal"><span class="type">GtkSourceCompletionProposal</span></a> *proposal</code></em>);</pre>
 <p>Gets the label of <em class="parameter"><code>proposal</code></em>
 . The label is shown in the list of proposals as
-plain text. If you need any markup (such as bold or italic text), you have
-to implement <a class="link" href="GtkSourceCompletionProposal.html#gtk-source-completion-proposal-get-markup" title="gtk_source_completion_proposal_get_markup ()"><code class="function">gtk_source_completion_proposal_get_markup()</code></a>. The returned string
-must be freed with <a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
+plain text. If you need any markup (such as bold or italic text), you have to
+implement <a class="link" href="GtkSourceCompletionProposal.html#gtk-source-completion-proposal-get-markup" title="gtk_source_completion_proposal_get_markup ()"><code class="function">gtk_source_completion_proposal_get_markup()</code></a>.</p>
 <div class="refsect3">
 <a name="gtk-source-completion-proposal-get-label.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -226,8 +227,10 @@ must be freed with <a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.
 </div>
 <div class="refsect3">
 <a name="gtk-source-completion-proposal-get-label.returns"></a><h4>Returns</h4>
-<p> a new string containing the label of <em class="parameter"><code>proposal</code></em>
-.</p>
+<p>a new string containing the label of
+<em class="parameter"><code>proposal</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
 </div>
 </div>
 <hr>
@@ -239,8 +242,7 @@ gtk_source_completion_proposal_get_markup
 <p>Gets the label of <em class="parameter"><code>proposal</code></em>
  with markup. The label is shown in the list of
 proposals and may contain markup. This will be used instead of
-<a class="link" href="GtkSourceCompletionProposal.html#gtk-source-completion-proposal-get-label" title="gtk_source_completion_proposal_get_label ()"><code class="function">gtk_source_completion_proposal_get_label()</code></a> if implemented. The returned string
-must be freed with <a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
+<a class="link" href="GtkSourceCompletionProposal.html#gtk-source-completion-proposal-get-label" title="gtk_source_completion_proposal_get_label ()"><code class="function">gtk_source_completion_proposal_get_label()</code></a> if implemented.</p>
 <div class="refsect3">
 <a name="gtk-source-completion-proposal-get-markup.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -258,8 +260,10 @@ must be freed with <a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.
 </div>
 <div class="refsect3">
 <a name="gtk-source-completion-proposal-get-markup.returns"></a><h4>Returns</h4>
-<p> a new string containing the label of <em class="parameter"><code>proposal</code></em>
-with markup.</p>
+<p>a new string containing the label of
+<em class="parameter"><code>proposal</code></em>
+with markup. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
 </div>
 </div>
 <hr>
@@ -269,12 +273,11 @@ with markup.</p>
 gtk_source_completion_proposal_get_text
                                (<em class="parameter"><code><a class="link" href="GtkSourceCompletionProposal.html" title="GtkSourceCompletionProposal"><span class="type">GtkSourceCompletionProposal</span></a> *proposal</code></em>);</pre>
 <p>Gets the text of <em class="parameter"><code>proposal</code></em>
-. The text that is inserted into
-the text buffer when the proposal is activated by the default activation.
-You are free to implement a custom activation handler in the provider and
-not implement this function. For more information, see
-<a class="link" href="GtkSourceCompletionProvider.html#gtk-source-completion-provider-activate-proposal" title="gtk_source_completion_provider_activate_proposal ()"><code class="function">gtk_source_completion_provider_activate_proposal()</code></a>. The returned string must
-be freed with <a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
+. The text that is inserted into the text buffer
+when the proposal is activated by the default activation.</p>
+<p>You are free to implement a custom activation handler in the provider and not
+implement this function. For more information, see
+<a class="link" href="GtkSourceCompletionProvider.html#gtk-source-completion-provider-activate-proposal" title="gtk_source_completion_provider_activate_proposal ()"><code class="function">gtk_source_completion_provider_activate_proposal()</code></a>.</p>
 <div class="refsect3">
 <a name="gtk-source-completion-proposal-get-text.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -292,8 +295,10 @@ be freed with <a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#
 </div>
 <div class="refsect3">
 <a name="gtk-source-completion-proposal-get-text.returns"></a><h4>Returns</h4>
-<p> a new string containing the text of <em class="parameter"><code>proposal</code></em>
-.</p>
+<p>a new string containing the text of
+<em class="parameter"><code>proposal</code></em>
+. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
 </div>
 </div>
 <hr>
@@ -302,8 +307,6 @@ be freed with <a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#
 <pre class="programlisting"><span class="returnvalue">GdkPixbuf</span> *
 gtk_source_completion_proposal_get_icon
                                (<em class="parameter"><code><a class="link" href="GtkSourceCompletionProposal.html" title="GtkSourceCompletionProposal"><span class="type">GtkSourceCompletionProposal</span></a> *proposal</code></em>);</pre>
-<p>Gets the <span class="type">GdkPixbuf</span> for the icon of <em class="parameter"><code>proposal</code></em>
-.</p>
 <div class="refsect3">
 <a name="gtk-source-completion-proposal-get-icon.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -321,7 +324,7 @@ gtk_source_completion_proposal_get_icon
 </div>
 <div class="refsect3">
 <a name="gtk-source-completion-proposal-get-icon.returns"></a><h4>Returns</h4>
-<p>A <span class="type">GdkPixbuf</span> with the icon of <em class="parameter"><code>proposal</code></em>
+<p>a <span class="type">GdkPixbuf</span> with the icon of <em class="parameter"><code>proposal</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>][<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -332,8 +335,6 @@ gtk_source_completion_proposal_get_icon
 <pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
 gtk_source_completion_proposal_get_icon_name
                                (<em class="parameter"><code><a class="link" href="GtkSourceCompletionProposal.html" title="GtkSourceCompletionProposal"><span class="type">GtkSourceCompletionProposal</span></a> *proposal</code></em>);</pre>
-<p>Gets the icon name of <em class="parameter"><code>proposal</code></em>
-.</p>
 <div class="refsect3">
 <a name="gtk-source-completion-proposal-get-icon-name.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -351,7 +352,7 @@ gtk_source_completion_proposal_get_icon_name
 </div>
 <div class="refsect3">
 <a name="gtk-source-completion-proposal-get-icon-name.returns"></a><h4>Returns</h4>
-<p>The icon name of <em class="parameter"><code>proposal</code></em>
+<p>the icon name of <em class="parameter"><code>proposal</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>][<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -363,8 +364,6 @@ gtk_source_completion_proposal_get_icon_name
 <pre class="programlisting"><a href="/usr/share/gtk-doc/html/gio/GIcon.html#GIcon-struct"><span class="returnvalue">GIcon</span></a> *
 gtk_source_completion_proposal_get_gicon
                                (<em class="parameter"><code><a class="link" href="GtkSourceCompletionProposal.html" title="GtkSourceCompletionProposal"><span class="type">GtkSourceCompletionProposal</span></a> *proposal</code></em>);</pre>
-<p>Gets the <a href="/usr/share/gtk-doc/html/gio/GIcon.html#GIcon-struct"><span class="type">GIcon</span></a> for the icon of <em class="parameter"><code>proposal</code></em>
-.</p>
 <div class="refsect3">
 <a name="gtk-source-completion-proposal-get-gicon.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -382,7 +381,7 @@ gtk_source_completion_proposal_get_gicon
 </div>
 <div class="refsect3">
 <a name="gtk-source-completion-proposal-get-gicon.returns"></a><h4>Returns</h4>
-<p>A <a href="/usr/share/gtk-doc/html/gio/GIcon.html#GIcon-struct"><span class="type">GIcon</span></a> with the icon of <em class="parameter"><code>proposal</code></em>
+<p>the <a href="/usr/share/gtk-doc/html/gio/GIcon.html#GIcon-struct"><span class="type">GIcon</span></a> for the icon of <em class="parameter"><code>proposal</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>][<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
@@ -396,7 +395,7 @@ gtk_source_completion_proposal_get_info
                                (<em class="parameter"><code><a class="link" href="GtkSourceCompletionProposal.html" title="GtkSourceCompletionProposal"><span class="type">GtkSourceCompletionProposal</span></a> *proposal</code></em>);</pre>
 <p>Gets extra information associated to the proposal. This information will be
 used to present the user with extra, detailed information about the
-selected proposal. The returned string must be freed with <a href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>.</p>
+selected proposal.</p>
 <div class="refsect3">
 <a name="gtk-source-completion-proposal-get-info.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -416,8 +415,8 @@ selected proposal. The returned string must be freed with <a href="/usr/share/gt
 <a name="gtk-source-completion-proposal-get-info.returns"></a><h4>Returns</h4>
 <p>a newly-allocated string containing
 extra information of <em class="parameter"><code>proposal</code></em>
-or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if no extra information is associated
-to <em class="parameter"><code>proposal</code></em>
+, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if no extra information is
+associated to <em class="parameter"><code>proposal</code></em>
 . </p>
 <p><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>][<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
@@ -428,10 +427,10 @@ to <em class="parameter"><code>proposal</code></em>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_source_completion_proposal_changed
                                (<em class="parameter"><code><a class="link" href="GtkSourceCompletionProposal.html" title="GtkSourceCompletionProposal"><span class="type">GtkSourceCompletionProposal</span></a> *proposal</code></em>);</pre>
-<p>Emits the "changed" signal on <em class="parameter"><code>proposal</code></em>
-. This should be called by
-implementations whenever the name, icon or info of the proposal has
-changed.</p>
+<p>Emits the <a class="link" href="GtkSourceCompletionProposal.html#GtkSourceCompletionProposal-changed" title="The “changed” signal"><span class="type">“changed”</span></a> signal on <em class="parameter"><code>proposal</code></em>
+. This
+should be called by implementations whenever the label, icon or info of the
+proposal has changed.</p>
 <div class="refsect3">
 <a name="gtk-source-completion-proposal-changed.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -453,10 +452,10 @@ changed.</p>
 <a name="gtk-source-completion-proposal-hash"></a><h3>gtk_source_completion_proposal_hash ()</h3>
 <pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
 gtk_source_completion_proposal_hash (<em class="parameter"><code><a class="link" href="GtkSourceCompletionProposal.html" title="GtkSourceCompletionProposal"><span class="type">GtkSourceCompletionProposal</span></a> *proposal</code></em>);</pre>
-<p>Get the hash value of <em class="parameter"><code>proposal</code></em>
+<p>Gets the hash value of <em class="parameter"><code>proposal</code></em>
 . This is used to (together with
 <a class="link" href="GtkSourceCompletionProposal.html#gtk-source-completion-proposal-equal" title="gtk_source_completion_proposal_equal ()"><code class="function">gtk_source_completion_proposal_equal()</code></a>) to match proposals in the completion
-model. By default, it uses a direct hash (<a href="/usr/share/gtk-doc/html/glib/glib-Hash-Tables.html#g-direct-hash"><code class="function">g_direct_hash()</code></a>).</p>
+model.</p>
 <div class="refsect3">
 <a name="gtk-source-completion-proposal-hash.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -474,7 +473,7 @@ model. By default, it uses a direct hash (<a href="/usr/share/gtk-doc/html/glib/
 </div>
 <div class="refsect3">
 <a name="gtk-source-completion-proposal-hash.returns"></a><h4>Returns</h4>
-<p> The hash value of <em class="parameter"><code>proposal</code></em>
+<p> the hash value of <em class="parameter"><code>proposal</code></em>
 .</p>
 </div>
 </div>
@@ -484,9 +483,9 @@ model. By default, it uses a direct hash (<a href="/usr/share/gtk-doc/html/glib/
 <pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gtk_source_completion_proposal_equal (<em class="parameter"><code><a class="link" href="GtkSourceCompletionProposal.html" title="GtkSourceCompletionProposal"><span class="type">GtkSourceCompletionProposal</span></a> *proposal</code></em>,
                                       <em class="parameter"><code><a class="link" href="GtkSourceCompletionProposal.html" title="GtkSourceCompletionProposal"><span class="type">GtkSourceCompletionProposal</span></a> *other</code></em>);</pre>
-<p>Get whether two proposal objects are the same.  This is used to (together
+<p>Gets whether two proposal objects are the same. This is used to (together
 with <a class="link" href="GtkSourceCompletionProposal.html#gtk-source-completion-proposal-hash" title="gtk_source_completion_proposal_hash ()"><code class="function">gtk_source_completion_proposal_hash()</code></a>) to match proposals in the
-completion model. By default, it uses direct equality (<a href="/usr/share/gtk-doc/html/glib/glib-Hash-Tables.html#g-direct-equal"><code class="function">g_direct_equal()</code></a>).</p>
+completion model.</p>
 <div class="refsect3">
 <a name="gtk-source-completion-proposal-equal.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -511,9 +510,9 @@ completion model. By default, it uses direct equality (<a href="/usr/share/gtk-d
 </div>
 <div class="refsect3">
 <a name="gtk-source-completion-proposal-equal.returns"></a><h4>Returns</h4>
-<p> <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>proposal</code></em>
-and <em class="parameter"><code>object</code></em>
-are the same proposal</p>
+<p> whether <em class="parameter"><code>proposal</code></em>
+and <em class="parameter"><code>other</code></em>
+are the same proposal.</p>
 </div>
 </div>
 </div>
@@ -530,21 +529,28 @@ are the same proposal</p>
 	GTypeInterface parent;
 
 	/* Interface functions */
-	gchar		*(*get_label)		(GtkSourceCompletionProposal *proposal);
-	gchar		*(*get_markup)		(GtkSourceCompletionProposal *proposal);
-	gchar		*(*get_text)		(GtkSourceCompletionProposal *proposal);
 
-	GdkPixbuf *(*get_icon)		(GtkSourceCompletionProposal *proposal);
-	const gchar *(*get_icon_name) (GtkSourceCompletionProposal *proposal);
-	GIcon		*(*get_gicon)		(GtkSourceCompletionProposal *proposal);
+	gchar *		(*get_label)		(GtkSourceCompletionProposal *proposal);
 
-	gchar		*(*get_info)		(GtkSourceCompletionProposal *proposal);
+	gchar *		(*get_markup)		(GtkSourceCompletionProposal *proposal);
 
-	guint		 (*hash)		(GtkSourceCompletionProposal *proposal);
-	gboolean	 (*equal)		(GtkSourceCompletionProposal *proposal,
+	gchar *		(*get_text)		(GtkSourceCompletionProposal *proposal);
+
+	GdkPixbuf * (*get_icon)		(GtkSourceCompletionProposal *proposal);
+
+	const gchar * (*get_icon_name) (GtkSourceCompletionProposal *proposal);
+
+	GIcon *		(*get_gicon)		(GtkSourceCompletionProposal *proposal);
+
+	gchar *		(*get_info)		(GtkSourceCompletionProposal *proposal);
+
+	guint		(*hash)			(GtkSourceCompletionProposal *proposal);
+
+	gboolean (*equal)		(GtkSourceCompletionProposal *proposal,
 						 GtkSourceCompletionProposal *other);
 
 	/* Signals */
+
 	void		 (*changed)		(GtkSourceCompletionProposal *proposal);
 };
 </pre>
@@ -647,7 +653,7 @@ will react to this by updating the shown information.</p>
 <tbody>
 <tr>
 <td class="parameter_name"><p>proposal</p></td>
-<td class="parameter_description"><p>The <a class="link" href="GtkSourceCompletionProposal.html" title="GtkSourceCompletionProposal"><span class="type">GtkSourceCompletionProposal</span></a></p></td>
+<td class="parameter_description"><p>the <a class="link" href="GtkSourceCompletionProposal.html" title="GtkSourceCompletionProposal"><span class="type">GtkSourceCompletionProposal</span></a>.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 <tr>
@@ -663,6 +669,6 @@ will react to this by updating the shown information.</p>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.34.0</div>
+<hr>Generated by GTK-Doc V1.35.1</div>
 </body>
 </html>

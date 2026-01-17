@@ -8,7 +8,7 @@
 <link rel="up" href="file-loading-and-saving.html" title="File Loading and Saving">
 <link rel="prev" href="GtkSourceEncoding.html" title="GtkSourceEncoding">
 <link rel="next" href="GtkSourceFileLoader.html" title="GtkSourceFileLoader">
-<meta name="generator" content="GTK-Doc V1.34.0 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.35.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -195,8 +195,8 @@
 </colgroup>
 <tbody>
 <tr>
-<td class="datatype_keyword"> </td>
-<td class="function_name"><a class="link" href="GtkSourceFile.html#GtkSourceFile-struct" title="GtkSourceFile">GtkSourceFile</a></td>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GtkSourceFile.html#GtkSourceFile-struct" title="struct GtkSourceFile">GtkSourceFile</a></td>
 </tr>
 <tr>
 <td class="datatype_keyword">enum</td>
@@ -236,11 +236,6 @@ and <a class="link" href="GtkSourceFileSaver.html" title="GtkSourceFileSaver"><s
 properties). On a successful load or save operation, the <a class="link" href="GtkSourceFile.html" title="GtkSourceFile"><span class="type">GtkSourceFile</span></a>
 properties are updated. If an operation fails, the <a class="link" href="GtkSourceFile.html" title="GtkSourceFile"><span class="type">GtkSourceFile</span></a> properties
 have still the previous valid values.</p>
-<div class="warning">
-This class is no longer maintained, patches are not accepted. There is a
-better implementation in the
-<a class="ulink" href="https://wiki.gnome.org/Projects/Tepl" target="_top">Tepl</a> library.
-</div>
 </div>
 <div class="refsect1">
 <a name="GtkSourceFile.functions_details"></a><h2>Functions</h2>
@@ -267,7 +262,7 @@ better implementation in the
 </tr>
 <tr>
 <td class="parameter_name"><p>userdata</p></td>
-<td class="parameter_description"><p>user data</p></td>
+<td class="parameter_description"><p>user data.</p></td>
 <td class="parameter_annotations"> </td>
 </tr>
 </tbody>
@@ -282,7 +277,8 @@ better implementation in the
 gtk_source_file_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <div class="refsect3">
 <a name="gtk-source-file-new.returns"></a><h4>Returns</h4>
-<p> a new <a class="link" href="GtkSourceFile.html" title="GtkSourceFile"><span class="type">GtkSourceFile</span></a> object.</p>
+<p>a new <a class="link" href="GtkSourceFile.html" title="GtkSourceFile"><span class="type">GtkSourceFile</span></a> object. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-3-14.html#api-index-3.14">3.14</a></p>
 </div>
@@ -308,8 +304,9 @@ gtk_source_file_get_location (<em class="parameter"><code><a class="link" href="
 </div>
 <div class="refsect3">
 <a name="gtk-source-file-get-location.returns"></a><h4>Returns</h4>
-<p>the <a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a>. </p>
-<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>]</span></p>
+<p>the current value of the
+<a class="link" href="GtkSourceFile.html#GtkSourceFile--location" title="The “location” property"><span class="type">“location”</span></a> property. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-3-14.html#api-index-3.14">3.14</a></p>
 </div>
@@ -319,7 +316,7 @@ gtk_source_file_get_location (<em class="parameter"><code><a class="link" href="
 <pre class="programlisting"><span class="returnvalue">void</span>
 gtk_source_file_set_location (<em class="parameter"><code><a class="link" href="GtkSourceFile.html" title="GtkSourceFile"><span class="type">GtkSourceFile</span></a> *file</code></em>,
                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a> *location</code></em>);</pre>
-<p>Sets the location.</p>
+<p>Sets the <a class="link" href="GtkSourceFile.html#GtkSourceFile--location" title="The “location” property"><span class="type">“location”</span></a> property.</p>
 <div class="refsect3">
 <a name="gtk-source-file-set-location.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -349,8 +346,6 @@ gtk_source_file_set_location (<em class="parameter"><code><a class="link" href="
 <a name="gtk-source-file-get-encoding"></a><h3>gtk_source_file_get_encoding ()</h3>
 <pre class="programlisting">const <a class="link" href="GtkSourceEncoding.html" title="GtkSourceEncoding"><span class="returnvalue">GtkSourceEncoding</span></a> *
 gtk_source_file_get_encoding (<em class="parameter"><code><a class="link" href="GtkSourceFile.html" title="GtkSourceFile"><span class="type">GtkSourceFile</span></a> *file</code></em>);</pre>
-<p>The encoding is initially <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. After a successful file loading or saving
-operation, the encoding is non-<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
 <div class="refsect3">
 <a name="gtk-source-file-get-encoding.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -368,7 +363,9 @@ operation, the encoding is non-<a href="/usr/share/gtk-doc/html/glib/glib-Standa
 </div>
 <div class="refsect3">
 <a name="gtk-source-file-get-encoding.returns"></a><h4>Returns</h4>
-<p> the character encoding.</p>
+<p>the current value of the
+<a class="link" href="GtkSourceFile.html#GtkSourceFile--encoding" title="The “encoding” property"><span class="type">“encoding”</span></a> property. </p>
+<p><span class="annotation">[<acronym title="The data is owned by the callee, which is responsible of freeing it."><span class="acronym">transfer none</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-3-14.html#api-index-3.14">3.14</a></p>
 </div>
@@ -394,7 +391,7 @@ gtk_source_file_get_newline_type (<em class="parameter"><code><a class="link" hr
 </div>
 <div class="refsect3">
 <a name="gtk-source-file-get-newline-type.returns"></a><h4>Returns</h4>
-<p> the newline type.</p>
+<p> the current value of the <a class="link" href="GtkSourceFile.html#GtkSourceFile--newline-type" title="The “newline-type” property"><span class="type">“newline-type”</span></a> property.</p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-3-14.html#api-index-3.14">3.14</a></p>
 </div>
@@ -420,7 +417,7 @@ gtk_source_file_get_compression_type (<em class="parameter"><code><a class="link
 </div>
 <div class="refsect3">
 <a name="gtk-source-file-get-compression-type.returns"></a><h4>Returns</h4>
-<p> the compression type.</p>
+<p> the current value of the <a class="link" href="GtkSourceFile.html#GtkSourceFile--compression-type" title="The “compression-type” property"><span class="type">“compression-type”</span></a> property.</p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-3-14.html#api-index-3.14">3.14</a></p>
 </div>
@@ -547,10 +544,6 @@ gtk_source_file_is_deleted (<em class="parameter"><code><a class="link" href="Gt
 <a name="gtk-source-file-is-readonly"></a><h3>gtk_source_file_is_readonly ()</h3>
 <pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
 gtk_source_file_is_readonly (<em class="parameter"><code><a class="link" href="GtkSourceFile.html" title="GtkSourceFile"><span class="type">GtkSourceFile</span></a> *file</code></em>);</pre>
-<p>Returns whether the file is read-only. If the
-<a class="link" href="GtkSourceFile.html#GtkSourceFile--location" title="The “location” property"><span class="type">“location”</span></a> is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, returns <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
-<p>To have an up-to-date value, you must first call
-<a class="link" href="GtkSourceFile.html#gtk-source-file-check-file-on-disk" title="gtk_source_file_check_file_on_disk ()"><code class="function">gtk_source_file_check_file_on_disk()</code></a>.</p>
 <div class="refsect3">
 <a name="gtk-source-file-is-readonly.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -568,7 +561,7 @@ gtk_source_file_is_readonly (<em class="parameter"><code><a class="link" href="G
 </div>
 <div class="refsect3">
 <a name="gtk-source-file-is-readonly.returns"></a><h4>Returns</h4>
-<p> whether the file is read-only.</p>
+<p> the current value of the <a class="link" href="GtkSourceFile.html#GtkSourceFile--read-only" title="The “read-only” property"><span class="type">“read-only”</span></a> property.</p>
 </div>
 <p class="since">Since: <a class="link" href="api-index-3-18.html#api-index-3.18">3.18</a></p>
 </div>
@@ -629,8 +622,8 @@ longer needed, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.htm
 <div class="refsect1">
 <a name="GtkSourceFile.other_details"></a><h2>Types and Values</h2>
 <div class="refsect2">
-<a name="GtkSourceFile-struct"></a><h3>GtkSourceFile</h3>
-<pre class="programlisting">typedef struct _GtkSourceFile GtkSourceFile;</pre>
+<a name="GtkSourceFile-struct"></a><h3>struct GtkSourceFile</h3>
+<pre class="programlisting">struct GtkSourceFile;</pre>
 </div>
 <hr>
 <div class="refsect2">
@@ -647,21 +640,21 @@ longer needed, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.htm
 <tr>
 <td class="enum_member_name"><p><a name="GTK-SOURCE-NEWLINE-TYPE-LF:CAPS"></a>GTK_SOURCE_NEWLINE_TYPE_LF</p></td>
 <td class="enum_member_description">
-<p>line feed, used on UNIX.</p>
+<p>Line feed, used on UNIX.</p>
 </td>
 <td class="enum_member_annotations"> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GTK-SOURCE-NEWLINE-TYPE-CR:CAPS"></a>GTK_SOURCE_NEWLINE_TYPE_CR</p></td>
 <td class="enum_member_description">
-<p>carriage return, used on Mac.</p>
+<p>Carriage return, used on macOS.</p>
 </td>
 <td class="enum_member_annotations"> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GTK-SOURCE-NEWLINE-TYPE-CR-LF:CAPS"></a>GTK_SOURCE_NEWLINE_TYPE_CR_LF</p></td>
 <td class="enum_member_description">
-<p>carriage return followed by a line feed, used
+<p>Carriage return followed by a line feed, used
 on Windows.</p>
 </td>
 <td class="enum_member_annotations"> </td>
@@ -674,7 +667,7 @@ on Windows.</p>
 <hr>
 <div class="refsect2">
 <a name="GTK-SOURCE-NEWLINE-TYPE-DEFAULT:CAPS"></a><h3>GTK_SOURCE_NEWLINE_TYPE_DEFAULT</h3>
-<pre class="programlisting">#define GTK_SOURCE_NEWLINE_TYPE_DEFAULT GTK_SOURCE_NEWLINE_TYPE_CR_LF
+<pre class="programlisting">#define GTK_SOURCE_NEWLINE_TYPE_DEFAULT GTK_SOURCE_NEWLINE_TYPE_LF
 </pre>
 <p>The default newline type on the current OS.</p>
 <p class="since">Since: <a class="link" href="api-index-3-14.html#api-index-3.14">3.14</a></p>
@@ -694,14 +687,14 @@ on Windows.</p>
 <tr>
 <td class="enum_member_name"><p><a name="GTK-SOURCE-COMPRESSION-TYPE-NONE:CAPS"></a>GTK_SOURCE_COMPRESSION_TYPE_NONE</p></td>
 <td class="enum_member_description">
-<p>plain text.</p>
+<p>Plain text.</p>
 </td>
 <td class="enum_member_annotations"> </td>
 </tr>
 <tr>
 <td class="enum_member_name"><p><a name="GTK-SOURCE-COMPRESSION-TYPE-GZIP:CAPS"></a>GTK_SOURCE_COMPRESSION_TYPE_GZIP</p></td>
 <td class="enum_member_description">
-<p>gzip compression.</p>
+<p>Gzip compression.</p>
 </td>
 <td class="enum_member_annotations"> </td>
 </tr>
@@ -726,7 +719,7 @@ on Windows.</p>
 <div class="refsect2">
 <a name="GtkSourceFile--encoding"></a><h3>The <code class="literal">“encoding”</code> property</h3>
 <pre class="programlisting">  “encoding”                 <a class="link" href="GtkSourceEncoding.html" title="GtkSourceEncoding"><span class="type">GtkSourceEncoding</span></a> *</pre>
-<p>The character encoding, initially <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. After a successful file
+<p>The <a class="link" href="GtkSourceEncoding.html" title="GtkSourceEncoding"><span class="type">GtkSourceEncoding</span></a>, initially <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. After a successful file
 loading or saving operation, the encoding is non-<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
 <p>Owner: GtkSourceFile</p>
 <p>Flags: Read</p>
@@ -736,7 +729,7 @@ loading or saving operation, the encoding is non-<a href="/usr/share/gtk-doc/htm
 <div class="refsect2">
 <a name="GtkSourceFile--location"></a><h3>The <code class="literal">“location”</code> property</h3>
 <pre class="programlisting">  “location”                 <a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a> *</pre>
-<p>The location.</p>
+<p>The <a href="/usr/share/gtk-doc/html/gio/GFile.html#GFile-struct"><span class="type">GFile</span></a>.</p>
 <p>Owner: GtkSourceFile</p>
 <p>Flags: Read / Write / Construct</p>
 <p class="since">Since: <a class="link" href="api-index-3-14.html#api-index-3.14">3.14</a></p>
@@ -755,8 +748,11 @@ loading or saving operation, the encoding is non-<a href="/usr/share/gtk-doc/htm
 <div class="refsect2">
 <a name="GtkSourceFile--read-only"></a><h3>The <code class="literal">“read-only”</code> property</h3>
 <pre class="programlisting">  “read-only”                <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
-<p>Whether the file is read-only or not. The value of this property is
-not updated automatically (there is no file monitors).</p>
+<p>Whether the file is read-only. If the <a class="link" href="GtkSourceFile.html#GtkSourceFile--location" title="The “location” property"><span class="type">“location”</span></a> is
+<a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, this property is <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>.</p>
+<p>The value of this property is not updated automatically (there are no
+file monitors). To have an up-to-date value, you must first call
+<a class="link" href="GtkSourceFile.html#gtk-source-file-check-file-on-disk" title="gtk_source_file_check_file_on_disk ()"><code class="function">gtk_source_file_check_file_on_disk()</code></a>.</p>
 <p>Owner: GtkSourceFile</p>
 <p>Flags: Read</p>
 <p>Default value: FALSE</p>
@@ -765,10 +761,10 @@ not updated automatically (there is no file monitors).</p>
 </div>
 <div class="refsect1">
 <a name="GtkSourceFile.see-also"></a><h2>See Also</h2>
-<p><a class="link" href="GtkSourceFileLoader.html" title="GtkSourceFileLoader"><span class="type">GtkSourceFileLoader</span></a>, <a class="link" href="GtkSourceFileSaver.html" title="GtkSourceFileSaver"><span class="type">GtkSourceFileSaver</span></a></p>
+<p><a class="link" href="GtkSourceEncoding.html" title="GtkSourceEncoding"><span class="type">GtkSourceEncoding</span></a>, <a class="link" href="GtkSourceFileLoader.html" title="GtkSourceFileLoader"><span class="type">GtkSourceFileLoader</span></a>, <a class="link" href="GtkSourceFileSaver.html" title="GtkSourceFileSaver"><span class="type">GtkSourceFileSaver</span></a></p>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.34.0</div>
+<hr>Generated by GTK-Doc V1.35.1</div>
 </body>
 </html>
