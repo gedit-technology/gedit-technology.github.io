@@ -45,7 +45,17 @@
 <h2>2025-04-30 :: Some problems currently with Python and gedit plugins</h2>
 
 <p>
-  <strong>UPDATE:</strong> if libpeas1 gets ported to the latest version of
+  <strong>UPDATE 2026-01-17:</strong> with
+  <a href="https://gedit-text-editor.org/blog/2026-01-16-gedit-49-0.html" target="_blank">gedit 49.0 released</a>,
+  the current status is that Python is no
+  longer supported, even for third-party plugins. Third-party plugins can still
+  be implemented in the following languages: C, Vala, C++ and maybe Rust as
+  well. The plugins shipped with gedit itself are all implemented in C. The
+  "Find in Files" plugin that was part of gedit-plugins was implemented in Vala,
+  but has been removed (it can still serve as an example).
+</p>
+<p>
+  <strong>UPDATE 2025-05-02:</strong> if libpeas1 gets ported to the latest version of
   GIRepository, then it would be possible to re-enable the Python support in
   gedit. But <em>only for third-party plugins</em>. That way we keep the best of
   both worlds. The plugins shipped by gedit itself (the "official" plugins) will
