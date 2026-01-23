@@ -60,7 +60,7 @@ main li:not(li:first-child) {
   margin-top: 0.7em;
 }
 
-main img {
+main img.screenshot {
   width: 100%;
   max-width: 400px;
   height: auto;
