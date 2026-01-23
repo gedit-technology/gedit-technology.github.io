@@ -60,13 +60,19 @@ main li:not(li:first-child) {
   margin-top: 0.7em;
 }
 
+main img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
 /* container to push the footer to the bottom */
 
 #container {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  width: 45em;
+  max-width: 45em;
   margin: 0 auto -2em; /* the bottom margin is the negative value of the footer's height */
   padding: 0;
   background-color: #fff;
@@ -95,7 +101,11 @@ header img {
 /* navigation menu */
 
 nav {
-  padding: 0.5em;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+
   background-color: #c00;
   border-top: 1px solid #a40000;
   border-bottom: 1px solid #a40000;
@@ -113,8 +123,15 @@ nav ul {
 }
 
 nav li {
+  /* For small screen sizes when li elements wrap on a second line, space out
+   * the elements vertically. See also the paddings for the nav element.
+   */
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0;
+  padding-right: 0;
+
   margin: 0;
-  padding: 0;
 }
 
 /* Space out li elements (add margin _between_ elements). */
@@ -135,9 +152,18 @@ nav .current {
 main {
   height: 100%;
   margin: 0;
-  padding: 1em 3.5em 4.5em 3.5em;
+  padding-top: 1em;
+  padding-bottom: 4.5em;
+  padding-left: 3.5em;
+  padding-right: 3.5em;
   line-height: 150%;
-  text-align: justify;
+}
+
+@media only screen and (max-width: 45em) {
+  main {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 
 main a {
@@ -154,7 +180,7 @@ footer {
   justify-content: center;
 
   height: 2em;
-  width: 45em;
+  max-width: 45em;
   margin: 0 auto;
   background-color: #c00;
   border-top: 1px solid #a40000;
