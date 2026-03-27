@@ -2,9 +2,12 @@
 <book xmlns="http://www.devhelp.net/book" title="libgedit-amtk 5 Reference Manual" link="index.html" author="" name="libgedit-amtk-5" version="2" language="c">
   <chapters>
     <sub name="libgedit-amtk Introduction" link="libgedit-amtk-intro.html"/>
-    <sub name="Gradual Porting" link="gradual-porting.html"/>
-    <sub name="libgedit-amtk API Reference" link="api-reference.html">
+    <sub name="API Reference - Common Parts" link="api-reference-common.html">
       <sub name="Amtk Initialization and Finalization" link="libgedit-amtk-5-Amtk-Initialization-and-Finalization.html"/>
+    </sub>
+    <sub name="API Reference - Actions, Menus and Toolbars Kit" link="api-reference-actions-menus-toolbars.html">
+      <sub name="Actions, Menus and Toolbars - Introduction" link="actions-menus-toolbars-intro.html"/>
+      <sub name="Actions, Menus and Toolbars - Gradual Porting" link="actions-menus-toolbars-gradual-porting.html"/>
       <sub name="AmtkApplicationWindow" link="AmtkApplicationWindow.html"/>
       <sub name="AmtkActionInfo" link="AmtkActionInfo.html"/>
       <sub name="AmtkActionInfoStore" link="AmtkActionInfoStore.html"/>
@@ -17,6 +20,9 @@
       <sub name="AmtkShortcuts" link="libgedit-amtk-5-AmtkShortcuts.html"/>
       <sub name="AmtkUtils" link="libgedit-amtk-5-AmtkUtils.html"/>
     </sub>
+    <sub name="API Reference - Other GTK Extras" link="api-reference-other.html">
+      <sub name="AmtkTreeViewScrolledWindowSizing" link="AmtkTreeViewScrolledWindowSizing.html"/>
+    </sub>
     <sub name="Annexes" link="annexes.html">
       <sub name="Object Hierarchy" link="object-tree.html"/>
       <sub name="Annotation Glossary" link="annotation-glossary.html"/>
@@ -27,6 +33,7 @@
       <sub name="Index of new symbols in 4.0" link="api-index-4-0.html"/>
       <sub name="Index of new symbols in 5.0" link="api-index-5-0.html"/>
       <sub name="Index of new symbols in 5.6" link="api-index-5-6.html"/>
+      <sub name="Index of new symbols in 5.10" link="api-index-5-10.html"/>
     </sub>
   </chapters>
   <functions>
@@ -116,6 +123,12 @@
     <keyword type="function" name="amtk_utils_bind_g_action_to_gtk_action ()" link="libgedit-amtk-5-AmtkUtils.html#amtk-utils-bind-g-action-to-gtk-action" since="4.0"/>
     <keyword type="function" name="amtk_utils_create_gtk_action ()" link="libgedit-amtk-5-AmtkUtils.html#amtk-utils-create-gtk-action" since="4.0"/>
     <keyword type="function" name="amtk_utils_get_shrinkable_menubar ()" link="libgedit-amtk-5-AmtkUtils.html#amtk-utils-get-shrinkable-menubar" since="5.6"/>
+    <keyword type="function" name="amtk_tree_view_scrolled_window_sizing_new ()" link="AmtkTreeViewScrolledWindowSizing.html#amtk-tree-view-scrolled-window-sizing-new" since="5.10"/>
+    <keyword type="function" name="amtk_tree_view_scrolled_window_sizing_get_tree_view ()" link="AmtkTreeViewScrolledWindowSizing.html#amtk-tree-view-scrolled-window-sizing-get-tree-view" since="5.10"/>
+    <keyword type="function" name="amtk_tree_view_scrolled_window_sizing_get_monitor_limit ()" link="AmtkTreeViewScrolledWindowSizing.html#amtk-tree-view-scrolled-window-sizing-get-monitor-limit" since="5.10"/>
+    <keyword type="function" name="amtk_tree_view_scrolled_window_sizing_set_monitor_limit ()" link="AmtkTreeViewScrolledWindowSizing.html#amtk-tree-view-scrolled-window-sizing-set-monitor-limit" since="5.10"/>
+    <keyword type="struct" name="struct AmtkTreeViewScrolledWindowSizing" link="AmtkTreeViewScrolledWindowSizing.html#AmtkTreeViewScrolledWindowSizing-struct"/>
+    <keyword type="property" name="The “monitor-limit-enabled” property" link="AmtkTreeViewScrolledWindowSizing.html#AmtkTreeViewScrolledWindowSizing--monitor-limit-enabled"/>
     <keyword type="constant" name="AMTK_FACTORY_FLAGS_NONE" link="AmtkFactory.html#AMTK-FACTORY-FLAGS-NONE:CAPS"/>
     <keyword type="constant" name="AMTK_FACTORY_IGNORE_GACTION" link="AmtkFactory.html#AMTK-FACTORY-IGNORE-GACTION:CAPS"/>
     <keyword type="constant" name="AMTK_FACTORY_IGNORE_ICON" link="AmtkFactory.html#AMTK-FACTORY-IGNORE-ICON:CAPS"/>

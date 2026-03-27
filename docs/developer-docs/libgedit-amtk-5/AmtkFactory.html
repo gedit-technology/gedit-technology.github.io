@@ -5,10 +5,10 @@
 <title>AmtkFactory: libgedit-amtk 5 Reference Manual</title>
 <meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="libgedit-amtk 5 Reference Manual">
-<link rel="up" href="api-reference.html" title="Part I. libgedit-amtk API Reference">
+<link rel="up" href="api-reference-actions-menus-toolbars.html" title="Part II. API Reference - Actions, Menus and Toolbars Kit">
 <link rel="prev" href="libgedit-amtk-5-AmtkActionMap.html" title="AmtkActionMap">
 <link rel="next" href="libgedit-amtk-5-AmtkGmenu.html" title="AmtkGmenu">
-<meta name="generator" content="GTK-Doc V1.35.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.36.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -20,7 +20,7 @@
                   <a href="#AmtkFactory.properties" class="shortcut">Properties</a></span>
 </td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
-<td><a accesskey="u" href="api-reference.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="u" href="api-reference-actions-menus-toolbars.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
 <td><a accesskey="p" href="libgedit-amtk-5-AmtkActionMap.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
 <td><a accesskey="n" href="libgedit-amtk-5-AmtkGmenu.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
 </tr></table>
@@ -285,7 +285,7 @@ accelerators can be modified at run-time, the menu needs to be re-generated.</p>
 </div>
 <hr>
 <div class="refsect2">
-<a name="id-1.4.8.8.6"></a><h3>Menus</h3>
+<a name="id-1.4.9.8.6"></a><h3>Menus</h3>
 <p>Some general notes about the functions that create <a href="/usr/share/gtk-doc/html/gtk3/GtkMenuItem.html#GtkMenuItem-struct"><span class="type">GtkMenuItem</span></a>'s:</p>
 <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
 <li class="listitem"><p>If not ignored by an <a class="link" href="AmtkFactory.html#AmtkFactoryFlags" title="enum AmtkFactoryFlags"><span class="type">AmtkFactoryFlags</span></a>, the first accelerator returned by
@@ -296,7 +296,7 @@ accelerators can be modified at run-time, the menu needs to be re-generated.</p>
 <a href="/usr/share/gtk-doc/html/gtk3/GtkStatusbar.html#GtkStatusbar-struct"><span class="type">GtkStatusbar</span></a> with <a class="link" href="AmtkApplicationWindow.html#amtk-application-window-connect-menu-to-statusbar" title="amtk_application_window_connect_menu_to_statusbar ()"><code class="function">amtk_application_window_connect_menu_to_statusbar()</code></a>.</p></li>
 </ul></div>
 <div class="refsect3">
-<a name="id-1.4.8.8.6.4"></a><h4>Code example to create a menu</h4>
+<a name="id-1.4.9.8.6.4"></a><h4>Code example to create a menu</h4>
 <p>How to create a <a href="/usr/share/gtk-doc/html/gtk3/GtkMenuBar.html#GtkMenuBar-struct"><span class="type">GtkMenuBar</span></a> with <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>. Each submenu is created by a
 separate function, to make the code clearer.</p>
 <div class="informalexample">
@@ -427,14 +427,14 @@ separate function, to make the code clearer.</p>
 </div>
 <hr>
 <div class="refsect2">
-<a name="id-1.4.8.8.7"></a><h3>Toolbars</h3>
+<a name="id-1.4.9.8.7"></a><h3>Toolbars</h3>
 <p>Some general notes about the functions that create <a href="/usr/share/gtk-doc/html/gtk3/GtkToolItem.html#GtkToolItem-struct"><span class="type">GtkToolItem</span></a>'s:</p>
 <div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>The accelerators returned by <a class="link" href="AmtkActionInfo.html#amtk-action-info-get-accels" title="amtk_action_info_get_accels ()"><code class="function">amtk_action_info_get_accels()</code></a> are not used for
 documentation purposes in a toolbar, so the
 <a class="link" href="AmtkFactory.html#AMTK-FACTORY-IGNORE-ACCELS-FOR-DOC:CAPS"><code class="literal">AMTK_FACTORY_IGNORE_ACCELS_FOR_DOC</code></a> flag has no impact. The accelerators
 are documented only in menu items.</p></li></ul></div>
 <div class="refsect3">
-<a name="id-1.4.8.8.7.4"></a><h4>Code example to create a toolbar</h4>
+<a name="id-1.4.9.8.7.4"></a><h4>Code example to create a toolbar</h4>
 <p>How to create a basic <a href="/usr/share/gtk-doc/html/gtk3/GtkToolbar.html#GtkToolbar-struct"><span class="type">GtkToolbar</span></a> with <a class="link" href="AmtkFactory.html" title="AmtkFactory"><span class="type">AmtkFactory</span></a>.</p>
 <div class="informalexample">
   <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
@@ -502,7 +502,7 @@ are documented only in menu items.</p></li></ul></div>
 </div>
 <hr>
 <div class="refsect2">
-<a name="id-1.4.8.8.8"></a><h3>Modern UI with a GtkHeaderBar</h3>
+<a name="id-1.4.9.8.8"></a><h3>Modern UI with a GtkHeaderBar</h3>
 <p>To have an example code, see <code class="literal">tests/interactive-tests/test-headerbar.c</code> in
 the git repository of Amtk.</p>
 </div>
@@ -1393,6 +1393,6 @@ documentation purposes only. For example do not add/configure a
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.35.1</div>
+<hr>Generated by GTK-Doc V1.36.0</div>
 </body>
 </html>

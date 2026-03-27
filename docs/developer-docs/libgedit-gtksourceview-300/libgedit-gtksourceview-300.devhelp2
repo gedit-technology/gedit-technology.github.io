@@ -34,10 +34,6 @@
         <sub name="GtkSourceFileLoader" link="GtkSourceFileLoader.html"/>
         <sub name="GtkSourceFileSaver" link="GtkSourceFileSaver.html"/>
       </sub>
-      <sub name="Low-Level File Loading and Saving" link="low-level-file-loading-and-saving.html">
-        <sub name="GtkSourceIconv" link="libgedit-gtksourceview-300-GtkSourceIconv.html"/>
-        <sub name="GtkSourceInputStream" link="libgedit-gtksourceview-300-GtkSourceInputStream.html"/>
-      </sub>
       <sub name="Gutter and Marks" link="gutter.html">
         <sub name="GtkSourceGutter" link="GtkSourceGutter.html"/>
         <sub name="GtkSourceGutterRenderer" link="GtkSourceGutterRenderer.html"/>
@@ -100,6 +96,7 @@
       <sub name="Index of new symbols in 299.0" link="api-index-299-0.html"/>
       <sub name="Index of new symbols in 299.2" link="api-index-299-2.html"/>
       <sub name="Index of new symbols in 299.6" link="api-index-299-6.html"/>
+      <sub name="Index of new symbols in 299.7" link="api-index-299-7.html"/>
     </sub>
   </chapters>
   <functions>
@@ -142,6 +139,7 @@
     <keyword type="function" name="gtk_source_buffer_sort_lines ()" link="GtkSourceBuffer.html#gtk-source-buffer-sort-lines" since="3.18"/>
     <keyword type="function" name="gtk_source_buffer_set_implicit_trailing_newline ()" link="GtkSourceBuffer.html#gtk-source-buffer-set-implicit-trailing-newline" since="3.14"/>
     <keyword type="function" name="gtk_source_buffer_get_implicit_trailing_newline ()" link="GtkSourceBuffer.html#gtk-source-buffer-get-implicit-trailing-newline" since="3.14"/>
+    <keyword type="function" name="gtk_source_buffer_remove_trailing_newline ()" link="GtkSourceBuffer.html#gtk-source-buffer-remove-trailing-newline" since="299.7"/>
     <keyword type="struct" name="GtkSourceBuffer" link="GtkSourceBuffer.html#GtkSourceBuffer-struct"/>
     <keyword type="enum" name="enum GtkSourceBracketMatchType" link="GtkSourceBuffer.html#GtkSourceBracketMatchType"/>
     <keyword type="enum" name="enum GtkSourceChangeCaseType" link="GtkSourceBuffer.html#GtkSourceChangeCaseType" since="3.12"/>
@@ -449,17 +447,6 @@
     <keyword type="property" name="The “flags” property" link="GtkSourceFileSaver.html#GtkSourceFileSaver--flags"/>
     <keyword type="property" name="The “location” property" link="GtkSourceFileSaver.html#GtkSourceFileSaver--location"/>
     <keyword type="property" name="The “newline-type” property" link="GtkSourceFileSaver.html#GtkSourceFileSaver--newline-type"/>
-    <keyword type="function" name="gtk_source_iconv_new ()" link="libgedit-gtksourceview-300-GtkSourceIconv.html#gtk-source-iconv-new" since="299.6"/>
-    <keyword type="function" name="gtk_source_iconv_open ()" link="libgedit-gtksourceview-300-GtkSourceIconv.html#gtk-source-iconv-open" since="299.6"/>
-    <keyword type="function" name="gtk_source_iconv_feed ()" link="libgedit-gtksourceview-300-GtkSourceIconv.html#gtk-source-iconv-feed" since="299.6"/>
-    <keyword type="function" name="gtk_source_iconv_feed_discard_output ()" link="libgedit-gtksourceview-300-GtkSourceIconv.html#gtk-source-iconv-feed-discard-output" since="299.6"/>
-    <keyword type="function" name="gtk_source_iconv_close ()" link="libgedit-gtksourceview-300-GtkSourceIconv.html#gtk-source-iconv-close" since="299.6"/>
-    <keyword type="function" name="gtk_source_iconv_free ()" link="libgedit-gtksourceview-300-GtkSourceIconv.html#gtk-source-iconv-free" since="299.6"/>
-    <keyword type="struct" name="GtkSourceIconv" link="libgedit-gtksourceview-300-GtkSourceIconv.html#GtkSourceIconv"/>
-    <keyword type="enum" name="enum GtkSourceIconvResult" link="libgedit-gtksourceview-300-GtkSourceIconv.html#GtkSourceIconvResult" since="299.6"/>
-    <keyword type="function" name="GtkSourceSimpleProgressCallback ()" link="libgedit-gtksourceview-300-GtkSourceInputStream.html#GtkSourceSimpleProgressCallback" since="299.6"/>
-    <keyword type="function" name="gtk_source_input_stream_read_async ()" link="libgedit-gtksourceview-300-GtkSourceInputStream.html#gtk-source-input-stream-read-async" since="299.6"/>
-    <keyword type="function" name="gtk_source_input_stream_read_finish ()" link="libgedit-gtksourceview-300-GtkSourceInputStream.html#gtk-source-input-stream-read-finish" since="299.6"/>
     <keyword type="function" name="gtk_source_gutter_get_view ()" link="GtkSourceGutter.html#gtk-source-gutter-get-view" since="3.24"/>
     <keyword type="function" name="gtk_source_gutter_get_window_type ()" link="GtkSourceGutter.html#gtk-source-gutter-get-window-type" since="3.24"/>
     <keyword type="function" name="gtk_source_gutter_insert ()" link="GtkSourceGutter.html#gtk-source-gutter-insert" since="3.0"/>
@@ -744,12 +731,6 @@
     <keyword type="constant" name="GTK_SOURCE_FILE_SAVER_FLAGS_IGNORE_INVALID_CHARS" link="GtkSourceFileSaver.html#GTK-SOURCE-FILE-SAVER-FLAGS-IGNORE-INVALID-CHARS:CAPS"/>
     <keyword type="constant" name="GTK_SOURCE_FILE_SAVER_FLAGS_IGNORE_MODIFICATION_TIME" link="GtkSourceFileSaver.html#GTK-SOURCE-FILE-SAVER-FLAGS-IGNORE-MODIFICATION-TIME:CAPS"/>
     <keyword type="constant" name="GTK_SOURCE_FILE_SAVER_FLAGS_CREATE_BACKUP" link="GtkSourceFileSaver.html#GTK-SOURCE-FILE-SAVER-FLAGS-CREATE-BACKUP:CAPS"/>
-    <keyword type="constant" name="GTK_SOURCE_ICONV_RESULT_OK" link="libgedit-gtksourceview-300-GtkSourceIconv.html#GTK-SOURCE-ICONV-RESULT-OK:CAPS"/>
-    <keyword type="constant" name="GTK_SOURCE_ICONV_RESULT_ERROR" link="libgedit-gtksourceview-300-GtkSourceIconv.html#GTK-SOURCE-ICONV-RESULT-ERROR:CAPS"/>
-    <keyword type="constant" name="GTK_SOURCE_ICONV_RESULT_ILLEGAL_SEQUENCE" link="libgedit-gtksourceview-300-GtkSourceIconv.html#GTK-SOURCE-ICONV-RESULT-ILLEGAL-SEQUENCE:CAPS"/>
-    <keyword type="constant" name="GTK_SOURCE_ICONV_RESULT_INCOMPLETE_INPUT" link="libgedit-gtksourceview-300-GtkSourceIconv.html#GTK-SOURCE-ICONV-RESULT-INCOMPLETE-INPUT:CAPS"/>
-    <keyword type="constant" name="GTK_SOURCE_ICONV_RESULT_OUTPUT_BUFFER_FULL" link="libgedit-gtksourceview-300-GtkSourceIconv.html#GTK-SOURCE-ICONV-RESULT-OUTPUT-BUFFER-FULL:CAPS"/>
-    <keyword type="constant" name="GTK_SOURCE_ICONV_RESULT_LOSSY_CONVERSION" link="libgedit-gtksourceview-300-GtkSourceIconv.html#GTK-SOURCE-ICONV-RESULT-LOSSY-CONVERSION:CAPS"/>
     <keyword type="constant" name="GTK_SOURCE_GUTTER_RENDERER_STATE_NORMAL" link="GtkSourceGutterRenderer.html#GTK-SOURCE-GUTTER-RENDERER-STATE-NORMAL:CAPS"/>
     <keyword type="constant" name="GTK_SOURCE_GUTTER_RENDERER_STATE_CURSOR" link="GtkSourceGutterRenderer.html#GTK-SOURCE-GUTTER-RENDERER-STATE-CURSOR:CAPS"/>
     <keyword type="constant" name="GTK_SOURCE_GUTTER_RENDERER_STATE_PRELIT" link="GtkSourceGutterRenderer.html#GTK-SOURCE-GUTTER-RENDERER-STATE-PRELIT:CAPS"/>

@@ -6,9 +6,9 @@
 <meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
 <link rel="home" href="index.html" title="libgedit-gfls 1 Reference Manual">
 <link rel="up" href="api-reference.html" title="Part I. libgedit-gfls API Reference">
-<link rel="prev" href="GflsAttributeKeys.html" title="GflsAttributeKeys">
+<link rel="prev" href="libgedit-gfls-1-GflsIconv.html" title="GflsIconv">
 <link rel="next" href="libgedit-gfls-1-GflsLoaderBasic.html" title="GflsLoaderBasic">
-<meta name="generator" content="GTK-Doc V1.35.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.36.0 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -19,7 +19,7 @@
 </td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
 <td><a accesskey="u" href="api-reference.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
-<td><a accesskey="p" href="GflsAttributeKeys.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="p" href="libgedit-gfls-1-GflsIconv.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
 <td><a accesskey="n" href="libgedit-gfls-1-GflsLoaderBasic.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
 </tr></table>
 <div class="refentry">
@@ -39,6 +39,14 @@
 <col class="functions_proto_name">
 </colgroup>
 <tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libgedit-gfls-1-GflsInputStream.html#GflsSimpleProgressCallback" title="GflsSimpleProgressCallback ()">*GflsSimpleProgressCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
 <tr>
 <td class="function_type">
 <span class="returnvalue">void</span>
@@ -70,6 +78,37 @@
 <div class="refsect1">
 <a name="libgedit-gfls-1-GflsInputStream.functions_details"></a><h2>Functions</h2>
 <div class="refsect2">
+<a name="GflsSimpleProgressCallback"></a><h3>GflsSimpleProgressCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GflsSimpleProgressCallback<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> number</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Like <a href="/usr/share/gtk-doc/html/gio/GFile.html#GFileProgressCallback"><span class="type">GFileProgressCallback</span></a> but without the total.</p>
+<div class="refsect3">
+<a name="GflsSimpleProgressCallback.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>number</p></td>
+<td class="parameter_description"><p>the number.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0-4.html#api-index-0.4">0.4</a></p>
+</div>
+<hr>
+<div class="refsect2">
 <a name="gfls-input-stream-read-async"></a><h3>gfls_input_stream_read_async ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>
 gfls_input_stream_read_async (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GInputStream.html#GInputStream-struct"><span class="type">GInputStream</span></a> *input_stream</code></em>,
@@ -77,6 +116,8 @@ gfls_input_stream_read_async (<em class="parameter"><code><a href="/usr/share/gt
                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> max_size</code></em>,
                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> io_priority</code></em>,
                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GCancellable.html#GCancellable-struct"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                              <em class="parameter"><code><a class="link" href="libgedit-gfls-1-GflsInputStream.html#GflsSimpleProgressCallback" title="GflsSimpleProgressCallback ()"><span class="type">GflsSimpleProgressCallback</span></a> progress_callback</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> progress_callback_data</code></em>,
                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gio/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
 <p>This function starts a read operation on <em class="parameter"><code>input_stream</code></em>
@@ -92,7 +133,10 @@ contain a different number of bytes than what was expected (the
 TOC/TOU problem: time of check to time of use). <em class="parameter"><code>expected_size</code></em>
  is used as an
 indication to how much memory to allocate initially.</p>
+<p>This function also closes <em class="parameter"><code>input_stream</code></em>
+ after reading the content.</p>
 <p>See the <a href="/usr/share/gtk-doc/html/gio/GAsyncResult.html#GAsyncResult-struct"><span class="type">GAsyncResult</span></a> documentation to know how to use this function.</p>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
 <div class="refsect3">
 <a name="gfls-input-stream-read-async.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -130,6 +174,18 @@ indication to how much memory to allocate initially.</p>
 <td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
 </tr>
 <tr>
+<td class="parameter_name"><p>progress_callback</p></td>
+<td class="parameter_description"><p>function to call back with progress
+information, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if progress information is not needed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>progress_callback_data</p></td>
+<td class="parameter_description"><p>user data to pass to <em class="parameter"><code>progress_callback</code></em>
+.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
 <td class="parameter_name"><p>callback</p></td>
 <td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gio/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> to call when the operation
 is finished. </p></td>
@@ -144,7 +200,7 @@ is finished. </p></td>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since: <a class="link" href="api-index-0-1.html#api-index-0.1">0.1</a></p>
+<p class="since">Since: <a class="link" href="api-index-0-4.html#api-index-0.4">0.4</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -158,14 +214,14 @@ gfls_input_stream_read_finish (<em class="parameter"><code><a href="/usr/share/g
 <p>If <em class="parameter"><code>is_truncated</code></em>
  is set to <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, it is not an error (<em class="parameter"><code>error</code></em>
  is not set), and
-a <a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GBytes"><span class="type">GBytes</span></a> is returned. However, since <a class="link" href="libgedit-gfls-1-GflsInputStream.html#gfls-input-stream-read-async" title="gfls_input_stream_read_async ()"><code class="function">gfls_input_stream_read_async()</code></a> is meant
-to be used as the only read operation on <em class="parameter"><code>input_stream</code></em>
-, it is an undefined
-behavior if you try to read more content from <em class="parameter"><code>input_stream</code></em>
+a <a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GBytes"><span class="type">GBytes</span></a> is returned. However, since <a class="link" href="libgedit-gfls-1-GflsInputStream.html#gfls-input-stream-read-async" title="gfls_input_stream_read_async ()"><code class="function">gfls_input_stream_read_async()</code></a> is
+meant to be used as the only read operation on <em class="parameter"><code>input_stream</code></em>
+, it is an
+undefined behavior if you try to read more content from <em class="parameter"><code>input_stream</code></em>
 .</p>
 <p>The data contained in the resulting <a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GBytes"><span class="type">GBytes</span></a> is always zero-terminated, but
-this is not included in the <a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GBytes"><span class="type">GBytes</span></a> length. The resulting <a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GBytes"><span class="type">GBytes</span></a> should be
-freed with <a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#g-bytes-unref"><code class="function">g_bytes_unref()</code></a> when no longer in use.</p>
+this is not included in the <a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GBytes"><span class="type">GBytes</span></a> length.</p>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
 <div class="refsect3">
 <a name="gfls-input-stream-read-finish.parameters"></a><h4>Parameters</h4>
 <div class="informaltable"><table class="informaltable" width="100%" border="0">
@@ -202,13 +258,15 @@ to be read, but the maximum number of bytes to read has been reached.</p></td>
 </div>
 <div class="refsect3">
 <a name="gfls-input-stream-read-finish.returns"></a><h4>Returns</h4>
-<p> a <a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GBytes"><span class="type">GBytes</span></a>, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> on error.</p>
+<p>a <a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#GBytes"><span class="type">GBytes</span></a>, or <a href="/usr/share/gtk-doc/html/glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> on error. Free with
+<a href="/usr/share/gtk-doc/html/glib/glib-Byte-Arrays.html#g-bytes-unref"><code class="function">g_bytes_unref()</code></a>. </p>
+<p><span class="annotation">[<acronym title="The caller owns the data, and is responsible for free it."><span class="acronym">transfer full</span></acronym>][<acronym title="NULL may be passed as the value in, out, in-out; or as a return value."><span class="acronym">nullable</span></acronym>]</span></p>
 </div>
-<p class="since">Since: <a class="link" href="api-index-0-1.html#api-index-0.1">0.1</a></p>
+<p class="since">Since: <a class="link" href="api-index-0-4.html#api-index-0.4">0.4</a></p>
 </div>
 </div>
 </div>
 <div class="footer">
-<hr>Generated by GTK-Doc V1.35.1</div>
+<hr>Generated by GTK-Doc V1.36.0</div>
 </body>
 </html>
