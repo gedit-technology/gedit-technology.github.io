@@ -7,8 +7,130 @@
   <link rel="self" type="application/atom+xml" href="https://gedit-text-editor.org/blog/feed.atom.xml" />
   <link type="text/html" href="https://gedit-text-editor.org/blog/index.html" />
   <title>Gedit Technology</title>
-  <updated>2026-01-16T10:00:00Z</updated>
+  <updated>2026-03-28T10:00:00Z</updated>
   <icon>https://gedit-text-editor.org/images/gedit-icon-16x16.png</icon>
+
+<entry>
+  <title>gedit 50.0 released</title>
+  <id>https://gedit-text-editor.org/blog/2026-03-28-gedit-50-0.html</id>
+  <link type="text/html" href="https://gedit-text-editor.org/blog/2026-03-28-gedit-50-0.html" />
+  <published>2026-03-28T10:00:00Z</published>
+  <updated>2026-03-28T10:00:00Z</updated>
+  <content type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+  <a href="https://gedit-text-editor.org/" target="_blank">gedit</a> 50.0 has
+  been released! Here are the highlights since version 49.0 from January.
+  (Some sections are a bit technical).
+</p>
+
+<h3>No Large Language Models AI tools</h3>
+
+<p>
+  The gedit project now
+  <a href="https://gitlab.gnome.org/World/gedit/gedit/-/commit/d2488f3179343f383d0645ce21dee3ad5cc5f665"
+     target="_blank">disallows the use of LLMs</a>
+  for contributions.
+</p>
+<p>
+  The rationales:
+</p>
+<p>
+  Programming can be seen as a discipline between art and engineering. Both art
+  and engineering require practice. It's the action of doing - modifying the
+  code - that permits a deep understanding of it, to ensure correctness and
+  quality.
+</p>
+<p>
+  When generating source code with an LLM tool, the real sources are the inputs
+  given to it: the training dataset, plus the human commands.
+</p>
+<p>
+  Adding something generated to the version control system (e.g., Git) is
+  usually frown upon. Moreover, we aim for reproducible results (to follow the
+  best-practices of reproducible builds, and reproducible science more
+  generally). Modifying afterwards something generated is also a bad practice.
+</p>
+
+<h3>Releasing earlier, releasing more often</h3>
+<p>
+  To follow more closely the
+  <a href="https://en.wikipedia.org/wiki/Release_early,_release_often"
+     target="_blank">release early, release often</a>
+  mantra, gedit aims for a faster release cadence in 2026, to have smaller
+  deltas between each version. Future will tell how it goes.
+</p>
+
+<h3>The website is now responsive</h3>
+<p>
+  Since last time, we've made some efforts to the website. Small-screen-device
+  readers should have a more pleasant experience.
+</p>
+
+<h3>libgedit-amtk becomes "The Good Morning Toolkit"</h3>
+<p>
+  Amtk originally stands for "Actions, Menus and Toolbars Kit". There was a
+  desire to expand it to include other GTK extras that are useful for gedit
+  needs.
+</p>
+<p>
+  A more appropriate name would be libgedit-gtk-extras. But renaming the module
+  - not to mention the project namespace - is more work. So we've chosen to
+  simply continue with the name Amtk, just changing its scope and definition.
+  And - while at it - sprinkle a bit of fun :-)
+</p>
+<p>
+  So there are now four libgedit-* modules:
+</p>
+<ul>
+  <li>
+    <a href="https://gedit-text-editor.org/developer-docs/libgedit-gfls-1/" target="_blank">libgedit-gfls</a>,
+    aka "libgedit-glib-extras", currently for "File Loading and Saving";
+  </li>
+  <li>
+    <a href="https://gedit-text-editor.org/developer-docs/libgedit-amtk-5/" target="_blank">libgedit-amtk</a>,
+    aka "libgedit-gtk-extras" - it extends GTK for gedit needs at the exception
+    of GtkTextView;
+  </li>
+  <li>
+    <a href="https://gedit-text-editor.org/developer-docs/libgedit-gtksourceview-300/" target="_blank">libgedit-gtksourceview</a>
+    - it extends GtkTextView and is a fork of GtkSourceView, to evolve the
+    library for gedit needs;
+  </li>
+  <li>
+    <a href="https://gedit-text-editor.org/developer-docs/libgedit-tepl-6/" target="_blank">libgedit-tepl</a>
+    - the Text Editor Product Line library, it provides a high-level API,
+    including an application framework for creating more easily new text
+    editors.
+  </li>
+</ul>
+<p>
+  Note that all of these are still constantly in construction.
+</p>
+
+<h3>Some code overhaul</h3>
+<p>
+  Work continues steadily inside libgedit-gfls and libgedit-gtksourceview to
+  streamline <strong>document loading</strong>.
+</p>
+<p>
+  You might think that it's a <em>problem solved</em> (for many years), but it's
+  actually not the case for gedit. Many improvements are still possible.
+</p>
+<p>
+  Another area of interest is the <strong>completion framework</strong> (part of
+  libgedit-gtksourceview), where changes are still needed to make it fully
+  functional under Wayland. The popup windows are sometimes misplaced. So
+  between gedit 49.0 and 50.0 some progress has been made on this. The
+  Word Completion gedit plugin works fine under Wayland, while the LaTeX
+  completion with
+  <a href="https://gitlab.gnome.org/World/gedit/enter-tex"
+     target="_blank">Enter TeX</a>
+  is still buggy since it uses more features from the completion system.
+</p>
+    </div>
+  </content>
+</entry>
 
 <entry>
   <title>gedit 49.0 released</title>
